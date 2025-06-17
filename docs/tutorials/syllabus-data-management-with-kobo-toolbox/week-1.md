@@ -2,8 +2,11 @@
 
 ## **🎯 Objectives**
 
+We will use this first week to get to know Kobo Toolbox.
+
+By the end of the week, you will:
 * Understand the purpose and features of KoboToolbox.
-* Navigate the KoboToolbox interface.
+* Get to navigate the KoboToolbox interface.
 * Create and deploy a basic survey.
 
 ## **📘 Introduction**
@@ -24,3 +27,4 @@ KoboToolbox is a free, open-source tool for data collection and analysis, widely
 2. **Survey Creation:** Design a simple survey using the form builder.
 3. **Deployment:** Deploy the survey and test it by submitting sample data.
 4. **Navigation Practice:** Explore the dashboard and familiarize yourself with different sections.
+5. **Share your experience** Take screenshots or photos of your experience and upload them on [**the survey linked here**](https://ee.kobotoolbox.org/aavp2ljn).

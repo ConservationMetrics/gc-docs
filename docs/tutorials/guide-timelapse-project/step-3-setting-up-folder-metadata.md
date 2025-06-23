@@ -1,4 +1,4 @@
-# Step 3: Set Up Folder-Level Metadata
+# Step 3: Setting Up Folder-Level Metadata
 
 :::note
 

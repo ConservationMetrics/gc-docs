@@ -22,6 +22,16 @@ In this example, a new retrieval folder is created for each camera check. The re
 ![Screenshot of imagery organization in the Timelapse practice image set](images/organizing-imagery.jpg)
 _Example of a Timelapse project folder structure, using the practice image set._
 
+:::info
+
+Once you start a project in Timelapse, the software will create several files in your root folder:
+
+* A project template database (`TimelapseTemplate.tdb`)
+* A project data database (`TimelapseData.ddb`)
+* A `backups/` directory where Timelapse will periodically make data backups
+
+:::
+
 :::important
 
 Once you begin analysis in Timelapse, do not rename, move, or reorganize any folders or files within the root folder. You _can_ move or copy the root folder itself.

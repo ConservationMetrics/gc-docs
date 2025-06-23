@@ -2,7 +2,7 @@
 
 The process of reviewing and tagging photos will vary depending on your image dataset and project goals. The steps below outline a generalized workflow for tagging images.
 
-1. **Start the Timelapse software.** (This is the `Timelapse.exe` file in your Timelapse directory.)****
+1. **Start the Timelapse software.** (This is the `Timelapse.exe` file in your Timelapse directory.)
 
 2. **Load your template:**
    - Go to **File → Load template, images, and videos**.

@@ -1,13 +1,13 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Guardian Connector Documentation',
-  tagline: '',
-  favicon: 'img/favicon.ico',
+  title: "Guardian Connector Documentation",
+  tagline: "",
+  favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -15,42 +15,42 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://conservationmetrics.github.io/',
+  url: "https://conservationmetrics.github.io/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/gc-docs/',
+  baseUrl: "/gc-docs/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'ConservationMetrics', // Usually your GitHub org/user name.
-  projectName: 'gc-docs', // Usually your repo name.
+  organizationName: "ConservationMetrics", // Usually your GitHub org/user name.
+  projectName: "gc-docs", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
-  plugins: [require.resolve('docusaurus-lunr-search')],
+  plugins: [require.resolve("docusaurus-lunr-search")],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          routeBasePath: '/',
-          sidebarPath: './sidebars.ts',
+          routeBasePath: "/", // Serve the docs at the site's root
+          sidebarPath: "./sidebars.ts",
+
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/ConservationMetrics/gc-docs/tree/main',
+          editUrl: "https://github.com/ConservationMetrics/gc-docs/tree/main",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
@@ -58,46 +58,53 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: 'Guardian Connector Documentation',
+      title: "Guardian Connector Documentation",
       logo: {
-        alt: 'Guardian Connector Logo',
-        src: 'img/logo.svg',
+        alt: "Guardian Connector Logo",
+        src: "img/logo.svg",
       },
       items: [
         {
-          to: '/',
-          label: 'Getting Started',
-          position: 'left',
+          type: "docSidebar",
+          sidebarId: "referenceSidebar",
+          position: "left",
+          label: "Reference",
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'overviewSidebar',
-          position: 'left',
-          label: 'Overview',
+          type: "docSidebar",
+          sidebarId: "integratedToolsSidebar",
+          position: "left",
+          label: "Integrated Tools",
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'referenceSidebar',
-          position: 'left',
-          label: 'Reference',
+          type: "docSidebar",
+          sidebarId: "hostingSidebar",
+          position: "left",
+          label: "Hosting Options",
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialsSidebar',
-          position: 'left',
-          label: 'Guides and Tutorials',
+          type: "docSidebar",
+          sidebarId: "howToSidebar",
+          position: "left",
+          label: "How-Tos",
         },
         {
-          href: 'https://github.com/ConservationMetrics/gc-docs',
-          label: 'GitHub',
-          position: 'right',
+          type: "docSidebar",
+          sidebarId: "tutorialsSidebar",
+          position: "left",
+          label: "Tutorials",
+        },
+        {
+          href: "https://github.com/ConservationMetrics/gc-docs",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [],
       copyright: `Copyright © ${new Date().getFullYear()} Conservation Metrics, Inc. Built with Docusaurus.`,
     },

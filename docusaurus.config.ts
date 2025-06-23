@@ -43,9 +43,8 @@ const config: Config = {
       'classic',
       {
         docs: {
-          routeBasePath: '/', // Serve the docs at the site's root
+          routeBasePath: '/',
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/ConservationMetrics/gc-docs/tree/main',
@@ -68,6 +67,17 @@ const config: Config = {
       },
       items: [
         {
+          to: '/',
+          label: 'Getting Started',
+          position: 'left',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'overviewSidebar',
+          position: 'left',
+          label: 'Overview',
+        },
+        {
           type: 'docSidebar',
           sidebarId: 'referenceSidebar',
           position: 'left',
@@ -75,27 +85,9 @@ const config: Config = {
         },
         {
           type: 'docSidebar',
-          sidebarId: 'integratedToolsSidebar',
-          position: 'left',
-          label: 'Integrated Tools',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'hostingSidebar',
-          position: 'left',
-          label: 'Hosting Options',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'howToSidebar',
-          position: 'left',
-          label: 'How-Tos',
-        },
-        {
-          type: 'docSidebar',
           sidebarId: 'tutorialsSidebar',
           position: 'left',
-          label: 'Tutorials',
+          label: 'Guides and Tutorials',
         },
         {
           href: 'https://github.com/ConservationMetrics/gc-docs',

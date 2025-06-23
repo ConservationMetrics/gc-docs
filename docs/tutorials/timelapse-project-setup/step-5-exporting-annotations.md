@@ -1,4 +1,4 @@
-# Step 4: Exporting Annotations
+# Step 5: Exporting Annotations
 
 All data generated during review is stored locally on your machine. To export:
 

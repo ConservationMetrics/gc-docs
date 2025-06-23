@@ -2,7 +2,7 @@
 
 ## **🎯 Objectives**
 
-We will use this first week to get to know Kobo Toolbox.
+We will use this first week to get to know KoboToolbox.
 
 By the end of the week, you will:
 * Understand the purpose and features of KoboToolbox.

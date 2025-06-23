@@ -12,7 +12,7 @@ Effective survey management ensures data integrity and accessibility. This week 
 ## **📄 Learning Materials**
 
 * **User Management:**[Managing Permissions in KoboToolbox](https://support.kobotoolbox.org/managing_permissions.html)
-* **Video Tutorial:**[Export KoboToolBox Data to Excel](https://www.youtube.com/watch?v=Nqsveh_UcRo)
+* **Video Tutorial:**[Export KoboToolbox Data to Excel](https://www.youtube.com/watch?v=Nqsveh_UcRo)
 * **Data Export Guide:**[Exporting and Uploading Data to GIS Software](https://support.kobotoolbox.org/upload_to_gis.html)
 
 ## **📝 Activities**

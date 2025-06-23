@@ -1,3 +1,3 @@
-# Kobo Toolbox
+# KoboToolbox
 
 🚧 Under construction.

@@ -68,27 +68,15 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
+          sidebarId: "overviewSidebar",
+          position: "left",
+          label: "Overview",
+        },
+        {
+          type: "docSidebar",
           sidebarId: "referenceSidebar",
           position: "left",
           label: "Reference",
-        },
-        {
-          type: "docSidebar",
-          sidebarId: "integratedToolsSidebar",
-          position: "left",
-          label: "Integrated Tools",
-        },
-        {
-          type: "docSidebar",
-          sidebarId: "hostingSidebar",
-          position: "left",
-          label: "Hosting Options",
-        },
-        {
-          type: "docSidebar",
-          sidebarId: "howToSidebar",
-          position: "left",
-          label: "How-Tos",
         },
         {
           type: "docSidebar",

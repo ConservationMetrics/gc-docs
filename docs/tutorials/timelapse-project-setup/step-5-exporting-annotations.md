@@ -1,8 +1,16 @@
 # Step 5: Exporting Annotations
 
+## Export as CSV
+
 All data generated during review is stored locally on your machine. To export:
 
-- Use **File → Export to Spreadsheet** within Timelapse.
-- Choose your desired file format (e.g., CSV, Excel).
+- Use **File → Export or import data to/from a csv file** within Timelapse.
+- You can either choose to export a current selection of your data, or export all data.
+- Now your annotations are available as a CSV file for further analysis. Or, you can re-import the data back into a Timelapse project.
 
-Now your annotated data can be analyzed or integrated into external tools or systems.
+![Export as CSV](images/export-csv.jpg)
+_The Timelapse "Export or import data to/from a csv file" menu._
+
+## Integrate with Guardian Connector
+
+🚧 Under construction

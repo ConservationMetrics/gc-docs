@@ -8,7 +8,18 @@ For detailed instructions, see the [Timelapse Template Guide](https://timelapse.
 
 This step is where you create custom database fields for your project. The Timelapse interface uses the fields defined in the template to structure the database during the image review process. The template must be stored in the root folder of your image dataset (following the folder structure above, this will be the latest retrieval folder).
 
-1. **Start the Timelapse Template Editor** software.
+:::tip
+
+You can use the **Timelapse practice image set** as a basis for getting started. See [Key Resources](./index.md#key-resources) for a link to download this.
+
+:::
+
+![Creating a Timelapse Template](images/creating-timelapse-template.jpg)
+_Example of a Timelapse template, using the practice image set._
+
+## How to create a Timelapse Template
+
+1. **Start the Timelapse Template Editor** software. (This is the `TimelapseTemplateEditor.exe` file in your Timelapse directory.)
 
 2. To create a new template: go to **File → New Template**, navigate to the root folder of your image dataset, and save the template with a unique name.
 
@@ -22,14 +33,20 @@ This step is where you create custom database fields for your project. The Timel
 
 **Suggested fields:**
 
-- `Species` (**Choices**)
-- `Count` (**Counts**)
+- `Species` (**Choices**) — count the species found in the image
+- `Count` (**Counts**) — count the number of species
 - `Notes` (**Notes**) — for reviewer comments
 - `Highlight` (**Flag**) — to mark notable images
 - Additional `Notes` field — for general observations
 
-:::important
+:::tip
 
-Ensure your `.tdb` template file is saved in the root folder of the image dataset.
+You don't have to use scientific names for your species dropdown if you don't want to. You can use Indigenous names instead, and later join those with scientific names (if so desired.)
+
+:::
+
+:::info
+
+Your project template data is stored in a file called `TimelapseTemplate.tdb`. Please make sure this file is always at the root level of your imagery set. (Timelapse will create it there when you start a new project.)
 
 :::

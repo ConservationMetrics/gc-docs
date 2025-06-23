@@ -1,6 +1,8 @@
 # 🐾 Guide: Setting up a Project in Timelapse
 
-[Timelapse](https://timelapse.ucalgary.ca/) is a Windows OS software for reviewing camera trap data and transforming raw image and video files into structured data that can provide insights into species presence and population trends. This is a quick introduction to using the software.
+## Introduction
+
+[Timelapse](https://timelapse.ucalgary.ca/) is a **Windows OS software for reviewing camera trap data and transforming raw image and video files into structured data** that can provide insights into species presence and population trends. This is a quick introduction to using the software.
 
 ![Timelapse Software screenshot](images/timelapse.jpg)
 
@@ -14,6 +16,9 @@ Timelapse is actively developed, open source ([GitHub repo](https://github.com/s
 
 - :house: [Timelapse Home Page](https://timelapse.ucalgary.ca/)
 - :arrow_down: [Download and Installation](https://timelapse.ucalgary.ca/download/)
+- :bar_chart: [Timelapse practice image set](https://timelapse.ucalgary.ca/wp-content/uploads/Guides/PracticeImageSet.zip)  
+  This is really useful as a template for building your own Timelapse project.
+
 - :open_book: [User Guides and Tutorials](https://timelapse.ucalgary.ca/guides/)
   - **[QuickStart Guide (PDF)](https://timelapse.ucalgary.ca/wp-content/uploads/Guides/TimelapseQuickStartGuide.pdf)**  
     A hands-on guide that walks you through loading, inspecting, and tagging a practice set of images and videos.

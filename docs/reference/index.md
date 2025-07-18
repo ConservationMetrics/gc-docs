@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Reference Documentation
+# Introduction
 
 This reference section provides detailed technical information, specifications, and practical guidance to help you implement, configure, and use Guardian Connector effectively. Whether you're planning a deployment, integrating tools, or managing day-to-day operations, you'll find the comprehensive information you need here.
 

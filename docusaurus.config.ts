@@ -81,7 +81,7 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialsSidebar",
           position: "left",
-          label: "Guides &Tutorials",
+          label: "Guides & Tutorials",
         },
         {
           href: "https://github.com/ConservationMetrics/gc-docs",

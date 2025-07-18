@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Guides and Tutorials
+# Introduction
 
 Welcome to the GuardianConnector tutorials section! Here you'll find comprehensive, step-by-step guides designed to help Indigenous community organizations make the most of the integrated tools in the GuardianConnector ecosystem.
 

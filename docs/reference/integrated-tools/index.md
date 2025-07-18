@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Integrated Tools
 
 GuardianConnector integrates with several powerful tools to provide a comprehensive platform for community-based monitoring, data collection, and analysis. Each tool serves specific purposes while working together to create a unified workflow for conservation and advocacy work.

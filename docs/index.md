@@ -12,7 +12,7 @@ Welcome to the Guardian Connector documentation hub! This comprehensive guide wi
 This documentation provides comprehensive guidance for:
 
 ### 🏗️ **[Overview](./overview/)**
-Understanding Guardian Connector's architecture, purpose, and how it fits into your community's broader monitoring and advocacy work.
+Understanding Guardian Connector's purpose, design principles, and how it fits into your community's broader monitoring and advocacy work.
 
 ### 📚 **[Reference](./reference/)**
 Detailed information about integrated tools, hosting options, and technical specifications to help you make informed decisions about implementation.
@@ -30,16 +30,14 @@ This documentation is designed for:
 - **Technical Coordinators** implementing and maintaining Guardian Connector systems
 - **Advocates** using data for conservation and rights-based campaigns
 
-No advanced technical expertise is required – our guides emphasize accessibility and community control over complex technical details.
-
 ## Getting Started
 
 Use the top navigation bar to explore each section of this documentation site:
 
-1. **Start with [Overview](./overview/)** to understand Guardian Connector's purpose and architecture
+1. **Start with [Overview](./overview/)** to understand Guardian Connector's purpose and design principles
 2. **Review [Reference](./reference/)** to learn about integrated tools and implementation options  
 3. **Follow [Guides and Tutorials](./tutorials/)** for hands-on learning and practical skills development
 
 ---
 
-*Guardian Connector represents a commitment to Indigenous data sovereignty and community-controlled  monitoring. These docs will help you harness its full potential for your community's conservation and advocacy work.*
+*Guardian Connector represents a commitment to Indigenous data sovereignty and community-controlled monitoring. These docs will help you harness its full potential for your community's conservation and advocacy work.*

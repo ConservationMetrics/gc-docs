@@ -18,7 +18,7 @@ A basic form for recording camera trap deployment information in the field.
 
 **Use Case**: Document camera trap locations, setup details, and deployment conditions for wildlife monitoring projects.
 
-**[Download Template](/docs/reference/integrated-tools/kobotoolbox/templates/camera_trap_deployment_(basic).xlsx/Camera%20trap%20basic.xlsx)**
+**[Download Template](/xlsform-templates/camera_trap_deployment_(basic).xlsx)**
 
 ### 💬 Place-Based Oral Histories
 
@@ -26,7 +26,7 @@ A comprehensive form for collecting place-based oral histories, focused on gathe
 
 **Use Case**: Build datasets for [Terrastories](https://terrastories.app), a platform for mapping and sharing place-based stories. This template helps communities systematically collect and organize oral histories with geographic context.
 
-**[Download Template](/docs/reference/integrated-tools/kobotoolbox/templates/place-based_oral_histories_form.xlsx)**
+**[Download Template](/xlsform-templates/place-based_oral_histories.xlsx)**
 
 ### 🌿 Biocultural Monitoring
 
@@ -34,7 +34,7 @@ An example form with questions designed for biocultural monitoring, measuring we
 
 **Use Case**: Monitor the interconnected relationships between biological diversity and cultural practices, assessing community wellbeing through an Indigenous lens that recognizes the inseparable connection between people and place.
 
-**[Download Template](/docs/reference/integrated-tools/kobotoolbox/templates/biocultural_monitoring_form.xlsx)**
+**[Download Template](/xlsform-templates/biocultural_monitoring.xlsx)**
 
 ## How to Use These Templates
 

@@ -17,6 +17,10 @@
 
 For detailed information about using KoboToolbox, visit the [official KoboToolbox documentation](https://support.kobotoolbox.org/).
 
+## Templates
+
+* For ready-to-use XLS form templates designed for Indigenous communities, see the [XLSForm Templates](./templates.md).
+
 ## Troubleshooting
 
 For common issues and solutions, see the [KoboToolbox Troubleshooting Guide](./troubleshooting.md).

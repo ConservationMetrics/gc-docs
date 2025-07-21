@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # KoboToolbox Troubleshooting Guide
 
 ## Kobo Collect failed submission

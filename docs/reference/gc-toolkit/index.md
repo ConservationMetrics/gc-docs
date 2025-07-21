@@ -2,6 +2,6 @@
 sidebar_position: 2
 ---
 
-# Using Guardian Connector
+# Guardian Connector Toolkit
 
 🚧 Under construction

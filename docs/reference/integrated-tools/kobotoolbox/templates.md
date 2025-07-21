@@ -2,12 +2,12 @@
 sidebar_position: 3
 ---
 
-# XLSForm Templates
+# Available Templates
 
 This page provides links to XLSForm templates designed for common data collection objectives by Indigenous community organizations. These templates can be used in KoboToolbox, ODK Central, or any other XLSForm-compatible platform.
 
 :::info Growing Library
-This is a growing library of templates and we welcome contributions! If you have templates that would be useful for Indigenous communities, please consider sharing them with us.
+This is a growing library of templates and we welcome contributions! If you have templates that would be useful for Indigenous communities, please consider sharing them with us by submitting a pull request or contacting us.
 :::
 
 ## Available Templates
@@ -39,10 +39,22 @@ An example form with questions designed for biocultural monitoring, measuring we
 ## How to Use These Templates
 
 1. **Download** the XLS file for your chosen template
-2. **Review and customize** the questions to match your specific needs and context
-3. **Upload** the modified XLS file to KoboToolbox or your preferred XLSForm platform
-4. **Test** the form thoroughly before deploying for data collection
-5. **Train** your data collectors on the form structure and objectives
+
+2. **Choose your customization approach:**
+
+   **Option A: Edit in KoboToolbox Form Builder**
+   - Upload the template to KoboToolbox as-is
+   - Use the visual form builder to review and customize questions, logic, and settings
+   - Deploy when ready
+
+   **Option B: Edit the XLS File Directly**  
+   - Review and customize the XLS file offline (questions, logic, translations, etc.)
+   - Upload your customized XLS file to KoboToolbox or your preferred platform
+   - Deploy when ready
+
+3. **Test** the form thoroughly before deploying for data collection
+
+4. **Train** your data collectors on the form structure and objectives
 
 ## Customization Guidelines
 

@@ -20,7 +20,7 @@ Prefer short-lived feature branches.
   the long-running feature branch (instead of review when merging the long-running branch to
   `main`)
 
-## Contributing to the Documentation
+# Contributing to the Documentation
 
 We use [Docusaurus](https://docusaurus.io/) to build and host our documentation.
 
@@ -35,3 +35,15 @@ To contribute to the documentation, you can edit the files in the `docs` directo
 ### Contribution Standards
 
 Not everything in this repository needs to be perfect or polished. Our documentation is meant to be a living resource — something we can build on iteratively to meet partner needs in the moment, with plenty of opportunity for future refinement and improvement.
+
+# Coding Style
+
+## Prettier for JavaScript
+
+All developers are expected to use [prettier](https://prettier.io/) to format their JavaScript 
+code. Currently, we use the standard Prettier [configuration](https://prettier.io/docs/en/configuration.html).
+
+> To apply Prettier autoformatting you can configure your text editor to format on save [according
+> to these docs](https://prettier.io/docs/en/editors.html)
+> - For VS Code, set `editor.formatOnSave` to true in your editor config.
+> or in a pre-commit hook [according to these docs](https://prettier.io/docs/en/precommit.html).

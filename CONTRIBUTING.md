@@ -31,3 +31,7 @@ To contribute to the documentation, you can edit the files in the `docs` directo
 **External Contributors**: Unless you are a Conservation Metrics Inc. (CMI) team member, all contributions must be submitted as a pull request for review.
 
 **CMI Team Members**: Core CMI team members may submit pull requests and merge without review, or commit directly to the main branch, at their discretion.
+
+### Contribution Standards
+
+Not everything in this repository needs to be perfect or polished. Our documentation is meant to be a living resource — something we can build on iteratively to meet partner needs in the moment, with plenty of opportunity for future refinement and improvement.

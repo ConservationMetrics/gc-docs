@@ -16,4 +16,4 @@
 
 For detailed information about using Timelapse, visit the [official Timelapse documentation](https://saul.cpsc.ucalgary.ca/timelapse/).
 
-We also provide a step-by-step guide for working with Timelapse in GuardianConnector: see [our Timelapse project guide](../../../tutorials/guide-timelapse-project/index.md).
+We also provide a step-by-step guide for working with Timelapse in GuardianConnector: see [our Timelapse project guide](/tutorials/guide-timelapse-project/index.md).

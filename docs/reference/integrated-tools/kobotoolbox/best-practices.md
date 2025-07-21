@@ -69,6 +69,8 @@ This 10MB per-file limitation is not clearly documented in the [official KoboToo
 
 **Issue**: Modifying form structure after data collection has begun can lead to data fragmentation, where the same logical field appears in multiple columns across your dataset.
 
+Additionally, when using the Kobo Form builder, even simple edits to existing questions (such as changing the question name or adding comments) will create a new column at the end of your dataset rather than modifying the existing column. This can make data appear "missing" when it's actually located in new columns at the end of your export.
+
 **Example**: If you have a question `what_is_your_age` but later decide to move it into a group called `demographics` (making it `demographics/what_is_your_age`), submissions collected before and after the change will have age data in different columns. This creates cleanup work and potential data analysis complications.
 
 **Best Practice**:
@@ -79,6 +81,10 @@ This 10MB per-file limitation is not clearly documented in the [official KoboToo
   - Plan for data consolidation during analysis
   - Consider whether it's worth creating a new form version versus data cleanup effort
 - Test your form structure thoroughly with pilot data to identify organizational issues early
+
+:::tip
+When working with the KoboToolbox form builder, it is a good idea to download your form as an XLSForm and clean up/consolidate columns names for consistency as much as possible before you start collecting data.
+:::
 
 ### Testing Workflows
 

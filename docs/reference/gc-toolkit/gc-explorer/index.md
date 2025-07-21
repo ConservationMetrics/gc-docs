@@ -8,11 +8,11 @@ Guardian Connector Explorer (GC Explorer) is a web-based data visualization tool
 
 ## 🗺️ Available Views
 
-**Map View**: Visualize your geospatial data on an interactive map with pop-up information panels and embedded media attachments.
+**📍 Map View**: Visualize your geospatial data on an interactive map with pop-up information panels and embedded media attachments.
 
-**Gallery View**: Browse through photo, audio, and video content collected in the field, organized by date or location.
+**📸 Gallery View**: Browse through photo, audio, and video content collected in the field, organized by date or location.
 
-**Alerts Dashboard**: Monitor environmental changes and threats with change detection alerts and before-and-after satellite imagery.
+**⚠️ Alerts Dashboard**: Monitor environmental changes and threats with change detection alerts and before-and-after satellite imagery.
 
 ## 🔄 Data Integration
 

@@ -21,6 +21,10 @@ sidebar_position: 1
 
 For detailed information about using KoboToolbox, visit the [official KoboToolbox documentation](https://support.kobotoolbox.org/).
 
+## Templates
+
+* For ready-to-use XLS form templates designed for Indigenous communities, see the [XLSForm Templates](./templates.md).
+
 ## Best Practices & Troubleshooting
 
 _These are not official KoboToolbox documentation, but rather documentation that CMI has put together based on our experiences to help you get the most out of KoboToolbox. If you have anything to add or correct, please feel free to submit a pull request or contact us._

@@ -132,3 +132,7 @@ When working with the KoboToolbox form builder, it is a good practice to downloa
 :::tip
 Try searching the community forum first, as many common issues and questions have already been addressed. If you can't find an answer, post your question there before contacting support directly.
 :::
+
+## Related Resources
+
+- [ODK Form Design Tips and Best Practices](https://docs.getodk.org/form-best-practices/)

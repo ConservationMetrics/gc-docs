@@ -2,11 +2,7 @@
 sidebar_position: 2
 ---
 
-# About Guardian Connector
-
-🚧 Under construction
-
-## Design Principles
+# Design Principles
 
 In designing Guardian Connector for long-term viability and sustainability, Conservation Metrics adheres to a strict set of principles. The tools included in the solution must meet the following criteria:
 

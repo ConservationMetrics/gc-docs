@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # KoboToolbox
 
 [KoboToolbox](https://www.kobotoolbox.org/) is a free, open-source suite of tools for mobile data collection. It allows users to build forms, collect data in the field using mobile devices, and analyze the collected data through web-based interfaces. Originally developed for humanitarian contexts, KoboToolbox excels at creating surveys, questionnaires, and data collection forms that work reliably in challenging environments with limited connectivity.
@@ -17,6 +21,9 @@
 
 For detailed information about using KoboToolbox, visit the [official KoboToolbox documentation](https://support.kobotoolbox.org/).
 
-## Troubleshooting
+## Best Practices & Troubleshooting
 
-For common issues and solutions, see the [KoboToolbox Troubleshooting Guide](./troubleshooting.md).
+_These are not official KoboToolbox documentation, but rather documentation that CMI has put together based on our experiences to help you get the most out of KoboToolbox. If you have anything to add or correct, please feel free to submit a pull request or contact us._
+
+* For best practices, lessons learned, and usage tips, see the [KoboToolbox Best Practices and Usage Tips](./best-practices.md).
+* For common issues and solutions, see the [KoboToolbox Troubleshooting Guide](./troubleshooting.md).

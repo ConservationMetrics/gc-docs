@@ -13,7 +13,7 @@ As much as possible, we prioritize tools that are free to use and hardware or cl
 While translating an entire tool interface may not always be feasible or necessary, the most mission-critical elements should be translatable to local languages to ensure comprehension and usability.
 
 ### 🔒 Data Sovereignty and Control
-In alignment with the OCAP principles, our partners must be able to:
+In alignment with the [OCAP principles](https://en.wikipedia.org/wiki/First_Nations_principles_of_OCAP), our partners must be able to:
 - Own the infrastructure where data is stored
 - Control data collection, storage, and transmission across the project lifecycle
 - Access their data at all times

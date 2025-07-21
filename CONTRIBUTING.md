@@ -1,0 +1,33 @@
+# Contributor License Agreement
+
+By submitting a pull request to this project, you agree to license your contribution under the terms of the MIT License.
+
+Please make sure that you have the right to license the code under the MIT License and that your contributions do not infringe on the rights of others.
+
+# Using Git
+
+We use GitHub to host code, track issues, and accept pull requests.
+
+## Git Branching
+
+**We build and release from the `main` branch, so code merged here should always be stable.**
+
+Prefer short-lived feature branches.
+- Piecemeal progress towards broad code changes should merge to long-running branches until
+  everything there is stable and deployable, at which point the long-running branch gets merged
+  to `main`.
+- Since short, coherent patches are easier to review, we code-review the individual PRs into
+  the long-running feature branch (instead of review when merging the long-running branch to
+  `main`)
+
+## Contributing to the Documentation
+
+We use [Docusaurus](https://docusaurus.io/) to build and host our documentation.
+
+To contribute to the documentation, you can edit the files in the `docs` directory.
+
+### Contribution Process
+
+**External Contributors**: Unless you are a Conservation Metrics Inc. (CMI) team member, all contributions must be submitted as a pull request for review.
+
+**CMI Team Members**: Core CMI team members may submit pull requests and merge without review, or commit directly to the main branch, at their discretion.

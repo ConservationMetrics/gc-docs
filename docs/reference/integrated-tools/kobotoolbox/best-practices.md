@@ -14,7 +14,6 @@ This page covers practical lessons learned from using KoboToolbox in real-world 
 
 **Best Practice**: 
 - Use Android devices with the official KoboCollect app for surveys requiring media attachments (photos, audio, video)
-- If iOS devices are necessary, consider alternative data collection workflows that don't rely on media submissions through the browser
 - Test thoroughly in your target browser environment before deploying forms that require media uploads
 
 ### Enketo Duplicate Submission Issues on Some Browsers
@@ -37,17 +36,18 @@ This page covers practical lessons learned from using KoboToolbox in real-world 
 
 ### Background Audio Recording Limits (10MB per file)
 
-**Critical Limitation**: KoboToolbox has a **10MB file size limit per individual file**, which significantly impacts background audio recordings for interviews that may exceed 2 hours.
+**Critical Limitation**: KoboToolbox has a **10MB file size limit per individual file**, which significantly impacts background audio recordings for interviews that may exceed 90 minutes, or videos.
 
 **File Format Recommendations**:
-- Use `.amr` format for the longest recording duration (≈2 hours at 10MB limit)
+- Use `.amr` format for the longest recording duration (≈90 minutes at 10MB limit)
 - Avoid higher quality formats for long interviews, as they will exceed the limit faster
 - Plan interview segments to stay under the 2-hour threshold
 
 **Planning Considerations**:
 - Split long interviews into multiple shorter sessions
 - Inform interviewers about the time limitation before starting
-- Have a backup recording method for interviews expected to exceed 2 hours
+- Have a backup recording method for interviews expected to exceed 90 minutes
+- You can also use multiple audio questions for long interviews
 
 :::note
 This 10MB per-file limitation is not clearly documented in the [official KoboToolbox background audio documentation](https://support.kobotoolbox.org/recording-interviews.html).
@@ -55,7 +55,7 @@ This 10MB per-file limitation is not clearly documented in the [official KoboToo
 
 ### Overall Submission Size Limits
 
-**Limit**: Each survey submission has a **100MB total size limit** across all attached files.
+**Limit**: Each survey submission has a **100MB total size limit** across all attached files (source: correspondence with KoboToolbox support).
 
 **Best Practices**:
 - Calculate total file sizes before submission, especially for surveys with multiple media attachments
@@ -83,7 +83,7 @@ Additionally, when using the Kobo Form builder, even simple edits to existing qu
 - Test your form structure thoroughly with pilot data to identify organizational issues early
 
 :::tip
-When working with the KoboToolbox form builder, it is a good idea to download your form as an XLSForm and clean up/consolidate columns names for consistency as much as possible before you start collecting data.
+When working with the KoboToolbox form builder, it is a good practice to download your form as an XLSForm and clean up/consolidate columns names for consistency as much as possible before you start collecting data.
 :::
 
 ### Testing Workflows

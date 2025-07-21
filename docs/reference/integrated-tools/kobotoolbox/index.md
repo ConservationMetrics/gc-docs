@@ -19,4 +19,4 @@ For detailed information about using KoboToolbox, visit the [official KoboToolbo
 
 ## Troubleshooting
 
-For common issues and solutions, see the [KoboToolbox Troubleshooting Guide](./troubleshoot.md).
+For common issues and solutions, see the [KoboToolbox Troubleshooting Guide](./troubleshooting.md).

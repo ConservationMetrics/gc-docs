@@ -15,3 +15,5 @@
 ## Documentation
 
 For detailed information about using Apache Superset, visit the [official Apache Superset documentation](https://superset.apache.org/docs/intro/). 
+
+We also have a [repository focused on specific deployment for GuardianConnector](https://github.com/conservationmetrics/superset-deployment).

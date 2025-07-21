@@ -8,23 +8,13 @@ This reference section provides detailed technical information, specifications, 
 
 ## Reference Sections
 
-### 📋 **[Using Guardian Connector](./using-gc/)**
+### 📋 **[Guardian Connector Toolkit](./gc-toolkit/)**
 
-Practical guidance for day-to-day use of Guardian Connector, including user management, data workflows, and system administration.
-
-**What you'll find:**
-- User roles and permissions management
-- Data import and export procedures
-- Workflow setup and automation
-- Dashboard configuration and customization
-- Troubleshooting common issues
-- Best practices for community-controlled data management
-
-**Best for:** Data managers, community researchers, and anyone involved in the regular operation and use of Guardian Connector systems.
+Comprehensive documentation for the Guardian Connector platform, including the [GC Scripts Hub](./gc-toolkit/gc-scripts-hub/index.md), [GC Explorer](./gc-toolkit/gc-explorer/index.md), and more.
 
 ### 🔧 **[Integrated Tools](./integrated-tools/)**
 
-Comprehensive documentation for all tools integrated within the Guardian Connector ecosystem. This section covers both core integrated platforms and additional data integration capabilities.
+Documentation for all tools integrated within the Guardian Connector ecosystem. This section covers both core integrated platforms and additional data integration capabilities.
 
 **What you'll find:**
 - Detailed descriptions of KoboToolbox, CoMapeo, Superset, and Timelapse
@@ -34,7 +24,7 @@ Comprehensive documentation for all tools integrated within the Guardian Connect
 
 **Best for:** Understanding tool capabilities, planning workflows, and learning how different tools work together in the Guardian Connector ecosystem.
 
-### 🌐 **[Hosting & Deployment](./hosting/)**
+### 🌐 **[Hosting & Costs](./hosting/)**
 
 Technical guidance for deploying and hosting Guardian Connector infrastructure to meet your community's data sovereignty requirements.
 
@@ -47,6 +37,16 @@ Technical guidance for deploying and hosting Guardian Connector infrastructure t
 - Maintenance and update procedures
 
 **Best for:** Technical coordinators planning deployments, community leaders evaluating hosting options, and administrators managing Guardian Connector infrastructure.
+
+### 🔧 **[For Developers](./for-developers/)**
+
+Information for developers interested in contributing to Guardian Connector or building custom integrations.
+
+**What you'll find:**
+- Links to core repositories
+- Development environment setup
+- Deployment and hosting instructions
+- Contribution guidelines
 
 ---
 

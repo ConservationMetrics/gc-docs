@@ -12,6 +12,12 @@ This reference section provides detailed technical information, specifications, 
 
 Comprehensive documentation for the Guardian Connector platform, including the [GC Scripts Hub](./gc-toolkit/gc-scripts-hub/index.md), [GC Explorer](./gc-toolkit/gc-explorer/index.md), and more.
 
+**What you'll find:**
+- Reference documentation for the GC Scripts Hub, GC Explorer, and more
+- Common workflows and use cases for the Guardian Connector platform
+
+**Best for:** Understanding the Guardian Connector platform, planning workflows, and learning how different tools work together in the Guardian Connector ecosystem.
+
 ### 🔧 **[Integrated Tools](./integrated-tools/)**
 
 Documentation for all tools integrated within the Guardian Connector ecosystem. This section covers both core integrated platforms and additional data integration capabilities.
@@ -30,7 +36,6 @@ Technical guidance for deploying and hosting Guardian Connector infrastructure t
 
 **What you'll find:**
 - Hosting options and requirements
-- On-premises deployment guides
 - Cloud infrastructure considerations
 - Cost estimates and planning resources
 - Security and data sovereignty considerations

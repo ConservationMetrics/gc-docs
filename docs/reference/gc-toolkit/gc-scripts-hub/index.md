@@ -6,10 +6,6 @@ sidebar_position: 1
 
 The [Guardian Connector (GC) Scripts Hub](https://github.com/conservationmetrics/gc-scripts-hub) is a growing collection of automation scripts designed to help communities guard and manage their land through data integration and workflow automation. Built on the [Windmill](https://www.windmill.dev/) platform, these scripts empower communities to connect different tools, automate data collection, and streamline their conservation workflows without requiring deep technical expertise.
 
-![A Windmill Workspace populated with some of the tools in the GC Scripts Hub.](./images/gc-scripts-hub.jpg)
-_A Windmill Workspace populated with some of the tools in the GC Scripts Hub._
-
-
 ## 🔗 Data Connectors
 
 The GC Scripts Hub includes connectors that automatically gather data from various platforms and tools commonly used by communities:
@@ -49,3 +45,7 @@ These scripts can be scheduled to run automatically, creating workflows such as:
 The Scripts Hub recognizes that every community has unique needs and workflows. Scripts can be customized and combined to create automated processes that support your specific conservation goals, whether that's monitoring biodiversity, documenting cultural sites, or tracking environmental threats.
 
 This resource continues to grow based on community needs and feedback, ensuring that the tools evolve to better serve grassroots conservation efforts worldwide. 
+
+![A Windmill Workspace populated with some of the tools in the GC Scripts Hub.](./images/gc-scripts-hub.jpg)
+_A Windmill Workspace populated with some of the tools in the GC Scripts Hub._
+

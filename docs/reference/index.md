@@ -30,17 +30,6 @@ Documentation for all tools integrated within the Guardian Connector ecosystem. 
 
 **Best for:** Understanding tool capabilities, planning workflows, and learning how different tools work together in the Guardian Connector ecosystem.
 
-### 🔗 **[Third-Party Tools](./third-party-tools/)**
-
-Documentation for external services and tools that complement Guardian Connector deployments but are not directly integrated with the platform.
-
-**What you'll find:**
-- Monitoring and operational support tools
-- External services recommended for Guardian Connector deployments
-- Setup guides and best practices for third-party integrations
-
-**Best for:** System administrators looking to enhance their Guardian Connector deployment with external monitoring and support tools.
-
 ### 🌐 **[Hosting & Costs](./hosting/)**
 
 Technical guidance for deploying and hosting Guardian Connector infrastructure to meet your community's data sovereignty requirements.

@@ -28,6 +28,12 @@ We also provide a syllabus for comprehensive 4-week self-paced learning program 
 
 * For ready-to-use XLS form templates designed for Indigenous communities, see the [XLSForm Templates](./templates.md).
 
+## KoboToolbox or ODK?
+
+KoboToolbox and ODK are both excellent tools for survey data collection. They are both compatible with XLSForm templates, and the Kobo Collect app is actually a fork of ODK Collect. However, the KoboToolbox and ODK servers have a different feature set. For example, KoboToolbox has a form builder and basic data visualization, whereas ODK Central supports a feature for longitudinal data collection called [Entities](https://docs.getodk.org/entities-intro/) that could be useful for monitoring an incident over time.
+
+Guardian Connector is integrated with both KoboToolbox and ODK, but we frequently recommend KoboToolbox because of the form builder and data visualization features, and also because it has a relatively generous free tier where users can meet their data collection needs without needing to pay for a subscription, or deploy their own server as is required for ODK.
+
 ## Best Practices & Troubleshooting
 
 _These are not official KoboToolbox documentation, but rather documentation that CMI has put together based on our experiences to help you get the most out of KoboToolbox. If you have anything to add or correct, please feel free to submit a pull request or contact us._

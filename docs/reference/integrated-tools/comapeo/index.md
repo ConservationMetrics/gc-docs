@@ -23,5 +23,6 @@ For detailed information about using CoMapeo, visit the [official CoMapeo docume
 
 ## Other Resources
 
+- [Mapeo Icons Generator](https://icons.earthdefenderstoolkit.com/)
 - [Generate CoMapeo config directly from Google Spreadsheet](https://github.com/digidem/comapeo-config-spreadsheet-plugin)
 - [Generate a KML file (with images) from Mapeo Whatsapp shares](https://rudokemper.github.io/mapeo-kml-generator/)

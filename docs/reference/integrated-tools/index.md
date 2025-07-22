@@ -22,7 +22,7 @@ In addition to the core integrated tools above, GuardianConnector supports data 
 - **[ArcGIS Online](https://www.arcgis.com/)** - Esri's comprehensive cloud-based GIS platform for geospatial data management and analysis
 - **[Global Forest Watch](https://www.globalforestwatch.org/)** - Real-time forest monitoring system providing deforestation alerts and satellite imagery
 - **[Locus Map](https://www.locusmap.app/)** - Mobile mapping application for outdoor navigation and GPS data collection
-- **[ODK](https://getodk.org/)** - Open-source mobile data collection platform for creating and deploying surveys
+- **[ODK](https://getodk.org/)** - Open-source mobile data collection platform for creating and deploying surveys. (Read about the differences between KoboToolbox and ODK [here](/reference/integrated-tools/kobotoolbox/#kobotoolbox-or-odk).)
 - **[OpenStreetMap](https://www.openstreetmap.org/)** - Community-driven collaborative mapping project creating free geographic data
 - **[QGIS](https://qgis.org/)** - Open-source desktop GIS application for advanced spatial analysis and cartography
 

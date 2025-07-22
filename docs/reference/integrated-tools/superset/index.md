@@ -17,3 +17,7 @@
 For detailed information about using Apache Superset, visit the [official Apache Superset documentation](https://superset.apache.org/docs/intro/). 
 
 We also have a [repository focused on specific deployment for GuardianConnector](https://github.com/conservationmetrics/superset-deployment).
+
+## Other Resources
+
+- [Helpful Superset SQL Queries for Charts](./queries.md) - Recipes for common SQL queries to improve your Superset charts

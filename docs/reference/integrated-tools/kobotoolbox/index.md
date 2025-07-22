@@ -21,14 +21,9 @@ sidebar_position: 1
 
 For detailed information about using KoboToolbox, visit the [official KoboToolbox documentation](https://support.kobotoolbox.org/).
 
-
 We also provide a syllabus for comprehensive 4-week self-paced learning program that takes you from KoboToolbox basics to advanced data management techniques: see [our KoboToolbox Syllabus](/tutorials/syllabus-data-management-with-kobotoolbox/).
 
-## Templates
-
-* For ready-to-use XLS form templates designed for Indigenous communities, see the [XLSForm Templates](./templates.md).
-
-## KoboToolbox or ODK?
+### KoboToolbox or ODK?
 
 KoboToolbox and ODK are both excellent tools for survey data collection. They are both compatible with XLSForm templates, and the Kobo Collect app is actually a fork of ODK Collect. However, the KoboToolbox and ODK servers have a different feature set. For example, KoboToolbox has a form builder and basic data visualization, whereas ODK Central supports a feature for longitudinal data collection called [Entities](https://docs.getodk.org/entities-intro/) that could be useful for monitoring an incident over time.
 
@@ -40,3 +35,12 @@ _These are not official KoboToolbox documentation, but rather documentation that
 
 * For best practices, lessons learned, and usage tips, see the [KoboToolbox Best Practices and Usage Tips](./best-practices.md).
 * For common issues and solutions, see the [KoboToolbox Troubleshooting Guide](./troubleshooting.md).
+
+
+## Templates
+
+* For ready-to-use XLS form templates designed for Indigenous communities, see the [XLSForm Templates](./templates.md).
+
+## Other Resources
+
+- [MapPacker](https://github.com/conservationmetrics/mappacker) - Generate offline maps in `mbtiles` format for use in KoboToolbox (NOTE: CMI maintains MapPacker, and deploys a server for our users)

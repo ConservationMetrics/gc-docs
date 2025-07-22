@@ -53,7 +53,7 @@ Folder-level metadata is optional, but it enables richer, more structured datase
 
 Timelapse lets you set up folder-level metadata fields and enter the data, but it does **not** provide a method for actually collecting this information in the field.
 
-How you choose to collect and manage project metadata — such as the GPS coordinates of your camera traps, the name of the site, or the SD card retrieval workflow — is up to you. However, we recommend using a standardized form-based tool like [KoboToolbox](/reference/integrated-tools/kobotoolbox), ODK, or [CoMapeo](/reference/integrated-tools/comapeo) to ensure consistency and minimize errors.
+How you choose to collect and manage project metadata — such as the GPS coordinates of your camera traps, the name of the site, or the SD card retrieval workflow — is up to you. However, we recommend using a standardized form-based tool like [KoboToolbox](/reference/connected-applications/kobotoolbox), ODK, or [CoMapeo](/reference/connected-applications/comapeo) to ensure consistency and minimize errors.
 
 Examples of useful metadata fields might include (but you may want to refer to the metadata standards linked above):
 

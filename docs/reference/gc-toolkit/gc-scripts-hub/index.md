@@ -11,7 +11,7 @@ The [Guardian Connector (GC) Scripts Hub](https://github.com/conservationmetrics
 The GC Scripts Hub includes connectors that automatically gather data from various platforms and tools commonly used by communities:
 
 ### 📋 Survey & Data Collection
-- **[KoboToolbox](/reference/integrated-tools/kobotoolbox/)**: Fetch survey responses and form data, including support for multilingual forms and media attachments
+- **[KoboToolbox](/reference/connected-applications/kobotoolbox/)**: Fetch survey responses and form data, including support for multilingual forms and media attachments
 - **ODK Central**: Fetch survey responses and form data from ODK Central, including media attachments
 
 ### 🌍 Environmental Monitoring
@@ -19,7 +19,7 @@ The GC Scripts Hub includes connectors that automatically gather data from vario
 - **Google Cloud Alerts**: Retrieve change detection alerts and satellite imagery showing before-and-after comparisons
 
 ### 🗺️ Mapping & Location
-- **[CoMapeo](/reference/integrated-tools/comapeo/)**: Import community mapping data and observations, with support for photos and other attachments
+- **[CoMapeo](/reference/connected-applications/comapeo/)**: Import community mapping data and observations, with support for photos and other attachments
 - **ArcGIS**: Download data from ArcGIS Online, including from tools such as Survey123
 - **Locus Map**: Import GPS tracks and mapping data
 

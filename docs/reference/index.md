@@ -18,7 +18,7 @@ Comprehensive documentation for the Guardian Connector platform, including the [
 
 **Best for:** Understanding the Guardian Connector platform, planning workflows, and learning how different tools work together in the Guardian Connector ecosystem.
 
-### 🔧 **[Integrated Tools](./integrated-tools/)**
+### 🔧 **[Connected Applications & Data Sources](./connected-applications/)**
 
 Documentation for all tools integrated within the Guardian Connector ecosystem. This section covers both core integrated platforms and additional data integration capabilities.
 

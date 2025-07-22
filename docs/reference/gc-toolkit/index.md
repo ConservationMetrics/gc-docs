@@ -13,11 +13,11 @@ The [GC Scripts Hub](./gc-scripts-hub/) is a collection of automation scripts de
 The [GC Explorer](./gc-explorer/) is a web-based data visualization tool that transforms your community's tabular data into interactive maps, galleries, and dashboards. Built specifically for Guardian Connector, it connects directly to your PostgreSQL database to display data collected from tools like CoMapeo, KoboToolbox, and other data collection platforms.
 
 
-## Third Party Services
+## Externally Hosted Services
 
 Guardian Connector also relies on several third party services (that are not hosted on a Guardian Connector instance) to provide additional functionality:
 
-- [Auth0](./third-party/auth0/) - Authentication and authorization platform
-- [Mapbox](./third-party/mapbox/) - Mapping and geospatial data visualization platform
-- [Twilio](./third-party/twilio/) - SMS and voice communication platform
-- [Uptime Robot](./third-party/uptime-robot/) - Website monitoring and uptime tracking
+- [Auth0](./externally-hosted/auth0/) - Authentication and authorization platform
+- [Mapbox](./externally-hosted/mapbox/) - Mapping and geospatial data visualization platform
+- [Twilio](./externally-hosted/twilio/) - SMS and voice communication platform
+- [Uptime Robot](./externally-hosted/uptime-robot/) - Website monitoring and uptime tracking

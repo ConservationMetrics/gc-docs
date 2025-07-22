@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Filebrowser
 
 [Filebrowser](https://filebrowser.org/) is a web-based file manager that allows users to browse, upload, download, and share files from their Guardian Connector instance.

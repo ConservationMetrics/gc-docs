@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Timelapse
 
 [Timelapse](https://saul.cpsc.ucalgary.ca/timelapse/) is a specialized software tool designed for analyzing camera trap images and videos in wildlife research and conservation. It provides powerful features for organizing, viewing, and analyzing large collections of wildlife images, including species identification, behavior analysis, and temporal pattern recognition. Designed to be accessible to users without scientific expertise, Timelapse is particularly valuable for long-term wildlife monitoring studies and biodiversity assessments.

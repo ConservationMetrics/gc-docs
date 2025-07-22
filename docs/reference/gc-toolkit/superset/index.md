@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Apache Superset
 
 [Apache Superset](https://superset.apache.org/) is a modern, enterprise-ready business intelligence platform that provides rich data visualization and exploration capabilities. It supports a wide variety of visualizations, from simple to complex charts, and allows users to create interactive dashboards. Superset is designed to be intuitive for both technical and non-technical users, making it ideal for sharing insights across diverse stakeholder groups.

@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Externally Hosted Services
 
 Guardian Connector also relies on several third party services (that are not hosted on a Guardian Connector instance) to provide additional functionality:

@@ -47,7 +47,7 @@ Alpha users can work with data and create content but cannot manage system setti
 - Cannot edit dashboards and charts that are not their own
 - Cannot add new data sources to the system
 
-*Best for: Data analysts, community coordinators, and active dashboard creators*
+*Best for: Community coordinators, data analyists, and active dashboard creators*
 
 ### 📖 Gamma
 **Read-only access with selective permissions**
@@ -58,7 +58,7 @@ Gamma users have limited, read-only access to specific content:
 - Cannot access data exploration tools
 - Ideal for users who only need to view specific reports
 
-*Best for: Community members who need access to specific dashboards only*
+*Best for: Community members or allies who need access to specific dashboards only*
 
 ### 🌐 Public
 **Access for users who are not logged in**

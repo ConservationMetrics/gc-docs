@@ -13,27 +13,25 @@ This reference section provides detailed technical information, specifications, 
 Comprehensive documentation for the Guardian Connector platform, including the [GC Scripts Hub](./gc-toolkit/gc-scripts-hub/), [GC Explorer](./gc-toolkit/gc-explorer/), and more.
 
 **What you'll find:**
-- Reference documentation for the GC Scripts Hub, GC Explorer, and more
-- Common workflows and use cases for the Guardian Connector platform
+- Reference documentation for usage of GC Scripts Hub, GC Explorer, Apache Superset, Filebrowser, and other tools
+- How we use external services to provide additional functionality to Guardian Connector
 
 **Best for:** Understanding the Guardian Connector platform, planning workflows, and learning how different tools work together in the Guardian Connector ecosystem.
 
-### 🔧 **[Connected Applications & Data Sources](./connected-applications/)**
+### 🔗 **[Connected Applications](./connected-applications/)**
 
-Documentation for all tools integrated within the Guardian Connector ecosystem. This section covers both core integrated platforms and additional data integration capabilities.
+Documentation for data collection tools and external platforms that Guardian Connector can integrate with as a centralized data hub.
 
 **What you'll find:**
-- Detailed descriptions of KoboToolbox, CoMapeo, Superset, and Timelapse
-- Integration rationales and use cases for each tool
-- Links to official documentation and resources
-- Information about data integrations from ArcGIS, ODK, Global Forest Watch, and other platforms
+- Core data collection tools (KoboToolbox, CoMapeo, Timelapse) that are supported in Guardian Connector 
+- External platforms that Guardian Connector can integrate with as a centralized data hub
 
-**Best for:** Understanding tool capabilities, planning workflows, and learning how different tools work together in the Guardian Connector ecosystem.
+**Best for:** Understanding data collection workflows, planning integrations, and learning how Guardian Connector aggregates data from multiple sources.
 
 ### 🌐 **[Hosting & Costs](./hosting/)**
 
 Technical guidance for deploying and hosting Guardian Connector infrastructure to meet your community's data sovereignty requirements.
-
+ 
 **What you'll find:**
 - Hosting options and requirements
 - Cloud infrastructure considerations

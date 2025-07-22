@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-Welcome to the GuardianConnector tutorials section! Here you'll find comprehensive, step-by-step guides designed to help Indigenous community organizations make the most of the integrated tools in the GuardianConnector ecosystem.
+Welcome to the Guardian Connector tutorials section! Here you'll find comprehensive, step-by-step guides designed to help Indigenous community organizations make the most of the integrated tools in the Guardian Connector ecosystem.
 
 ## What You'll Find Here
 
@@ -21,7 +21,7 @@ A comprehensive 4-week self-paced learning program that takes you from KoboToolb
 - Managing data quality and validation
 - Advanced form design with skip logic and calculations
 - Data analysis and export strategies
-- Integration workflows with other GuardianConnector tools
+- Integration workflows with other Guardian Connector tools
 
 **Format:** Weekly modules with video tutorials, reading materials, and practical exercises.
 

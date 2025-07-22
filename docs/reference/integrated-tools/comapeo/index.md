@@ -2,7 +2,7 @@
 
 [CoMapeo](https://www.comapeo.app/) is an offline-first mapping and data collection tool designed specifically for indigenous communities and grassroots organizations. Built with a focus on data sovereignty and community control, CoMapeo allows communities to map their territories, document environmental changes, and collect evidence of environmental impacts without relying on external internet infrastructure.
 
-## Why CoMapeo is Integrated with GuardianConnector
+## Why CoMapeo is Integrated with Guardian Connector
 
 - **Data Sovereignty**: Gives communities full control over their data and mapping processes
 - **Offline-First Design**: Works completely offline, essential for remote areas without internet access

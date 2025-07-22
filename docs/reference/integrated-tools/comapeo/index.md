@@ -11,6 +11,7 @@
 - **Evidence Collection**: Facilitates gathering of evidence for advocacy and legal proceedings
 - **Cultural Preservation**: Allows communities to document traditional ecological knowledge and cultural sites
 - **Peer-to-Peer Sync**: Enables data sharing between devices without requiring central servers
+- **Archive Server**: A CoMapeo archive server (a.k.a. Comapeo Cloud) can be deployed to synchronize data to and from devices, and provides an API to connect with Guardian Connector
 - **Customizable**: Supports community-specific categories and data structures
 
 ## Category Collections

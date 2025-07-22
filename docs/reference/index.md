@@ -10,7 +10,7 @@ This reference section provides detailed technical information, specifications, 
 
 ### 📋 **[Guardian Connector Toolkit](./gc-toolkit/)**
 
-Comprehensive documentation for the Guardian Connector platform, including the [GC Scripts Hub](./gc-toolkit/gc-scripts-hub/index.md), [GC Explorer](./gc-toolkit/gc-explorer/index.md), and more.
+Comprehensive documentation for the Guardian Connector platform, including the [GC Scripts Hub](./gc-toolkit/gc-scripts-hub/), [GC Explorer](./gc-toolkit/gc-explorer/), and more.
 
 **What you'll find:**
 - Reference documentation for the GC Scripts Hub, GC Explorer, and more

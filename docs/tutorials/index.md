@@ -12,7 +12,7 @@ Our tutorials are crafted with community needs in mind, focusing on practical sk
 
 ## Available Learning Resources
 
-### 📚 [Data Management with KoboToolbox Syllabus](./syllabus-data-management-with-kobo-toolbox/)
+### 📚 [Data Management with KoboToolbox Syllabus](./syllabus-data-management-with-kobotoolbox/)
 
 A comprehensive 4-week self-paced learning program that takes you from KoboToolbox basics to advanced data management techniques. Perfect for communities looking to establish robust mobile data collection workflows.
 

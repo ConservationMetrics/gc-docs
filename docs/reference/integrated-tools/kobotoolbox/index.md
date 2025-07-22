@@ -21,6 +21,9 @@ sidebar_position: 1
 
 For detailed information about using KoboToolbox, visit the [official KoboToolbox documentation](https://support.kobotoolbox.org/).
 
+
+We also provide a syllabus for comprehensive 4-week self-paced learning program that takes you from KoboToolbox basics to advanced data management techniques: see [our KoboToolbox Syllabus](/tutorials/syllabus-data-management-with-kobotoolbox/).
+
 ## Templates
 
 * For ready-to-use XLS form templates designed for Indigenous communities, see the [XLSForm Templates](./templates.md).

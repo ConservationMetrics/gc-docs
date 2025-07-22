@@ -20,3 +20,8 @@
 ## Documentation
 
 For detailed information about using CoMapeo, visit the [official CoMapeo documentation](https://lab.digital-democracy.org/comapeo-docs/).
+
+## Other Resources
+
+- [Generate CoMapeo config directly from Google Spreadsheet](https://github.com/digidem/comapeo-config-spreadsheet-plugin)
+- [Generate a KML file (with images) from Mapeo Whatsapp shares](https://rudokemper.github.io/mapeo-kml-generator/)

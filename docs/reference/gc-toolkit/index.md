@@ -4,14 +4,21 @@ sidebar_position: 2
 
 # Guardian Connector Toolkit
 
-## GC Scripts Hub
+### GC Scripts Hub
 
 The [GC Scripts Hub](./gc-scripts-hub/) is a collection of automation scripts designed to help communities guard and manage their land through data integration and workflow automation. Built on the [Windmill](https://www.windmill.dev/) platform, these scripts empower communities to connect different tools, automate data collection, and streamline their conservation workflows without requiring deep technical expertise.
 
-## GC Explorer
+### GC Explorer
 
 The [GC Explorer](./gc-explorer/) is a web-based data visualization tool that transforms your community's tabular data into interactive maps, galleries, and dashboards. Built specifically for Guardian Connector, it connects directly to your PostgreSQL database to display data collected from tools like CoMapeo, KoboToolbox, and other data collection platforms.
 
+### Superset
+
+[Apache Superset](./superset/) is a modern, enterprise-ready business intelligence platform that provides rich data visualization and exploration capabilities. It supports a wide variety of visualizations, from simple to complex charts, and allows users to create interactive dashboards. Superset is designed to be intuitive for both technical and non-technical users, making it ideal for sharing insights across diverse stakeholder groups.
+
+### Filebrowser
+
+[Filebrowser](./filebrowser/) is a web-based file manager that allows users to browse, upload, download, and share files from their Guardian Connector instance.
 
 ## Externally Hosted Services
 

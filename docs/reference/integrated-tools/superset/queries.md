@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Helpful Superset SQL queries for charts
+# Helpful Superset SQL Queries for Charts
 
 ## String Formatting and Manipulation
 

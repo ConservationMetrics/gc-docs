@@ -12,9 +12,18 @@ Digital technology plays a key role in helping people gather information needed 
 
 Guardian Connector is designed to meet the unique needs and challenges of Indigenous partners, including:
 
-- **Data Sovereignty**: Complete ownership and control over community data
-- **Biocultural Metrics**: Access to indicators that reflect Indigenous perspectives on well-being
-- **Multi-tool Integration**: Easy use of datasets from multiple monitoring and data collection tools
-- **Real-time Alerts**: Near real-time notifications about territorial incursions and environmental changes
-- **On-premises Storage**: Data stored on infrastructure that communities own entirely
-- **Long-term Sustainability**: A platform designed to serve communities independently without dependency on outside support
+🛡️ **Data Sovereignty**: Complete ownership and control over community data
+
+📊 **Biocultural Metrics**: Access to indicators that reflect Indigenous perspectives on well-being
+
+🔗 **Multi-tool Integration**: Easy use of datasets from multiple monitoring and data collection tools
+
+⚡ **Real-time Alerts**: Near real-time notifications about territorial incursions and environmental changes
+
+🏠 **On-premises Storage**: Data stored on infrastructure that communities own entirely
+
+♻️ **Long-term Sustainability**: A platform designed to serve communities independently without dependency on outside support
+
+## Who is Building Guardian Connector
+
+Guardian Connector is being co-created by [Conservation Metrics, Inc.](https://conservationmetrics.com/) in close partnership with (and with funding from) [Nia Tero](https://niatero.org/), and a number of Indigenous partner organizations.

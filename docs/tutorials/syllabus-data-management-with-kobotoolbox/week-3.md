@@ -12,7 +12,8 @@ Analyzing collected data is crucial for informed decision-making. It is a comple
 ## **📄 Learning Materials**
 
 * Data analysis with Spreadsheet tool:[ https://www.youtube.com/watch?v=_g5roKHj95o ](https://www.youtube.com/watch?v=_g5roKHj95o)
-* [Note: ](https://www.youtube.com/watch?v=_g5roKHj95o)Aalthough this video is focused on Microsoft Excel, the same techniques apply to Google Spreadsheets or LibreOffice Calc.
+  
+  Note: Although this video is focused on Microsoft Excel, the same techniques apply to Google Spreadsheets or LibreOffice Calc.
 * Export and Report Data from KoboToolbox:[ https://www.youtube.com/watch?v=Vo9IbQvm8Rg](https://www.youtube.com/watch?v=Vo9IbQvm8Rg)
 * Pivot tables in Excel:[ https://www.youtube.com/watch?v=dvbLrwD2SpA](https://www.youtube.com/watch?v=dvbLrwD2SpA) . It is a powerful tool to analyze tabular data like the one produced through KoboToolbox. 
 * Note: Aalthough this video is focused on Microsoft Excel, the same techniques apply to Google Spreadsheets or LibreOffice Calc.

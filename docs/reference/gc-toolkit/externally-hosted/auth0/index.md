@@ -29,6 +29,10 @@ For detailed setup and configuration, see the [Auth0 documentation](https://auth
 
 ## Configuring an Auth0 Tenant
 
+An Auth0 tenant is a dedicated instance of the Auth0 identity management platform that belongs to a specific organization or application. It acts as a container for all configurations, user data, and security settings related to your identity management needs. Each tenant operates independently, ensuring that the configurations and data within it are isolated from other tenants. This setup allows organizations to manage user authentication, authorization, and security policies centrally for their applications.
+
+Follow these steps to set it up for your instance:
+
 1. In **Settings**, select "Production" as the Environment Tag.
 2. In **Actions**, set up a Flow for user approval.
 3. In **Branding**, make any customizations such as adding a logo and setting the background color.

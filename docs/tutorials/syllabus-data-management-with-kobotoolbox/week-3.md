@@ -65,7 +65,7 @@ The Library function allows users to save groups of questions as templates for r
 
 You can find out more about this feature in the [Question Library documentation](https://support.kobotoolbox.org/question_library.html).
 
-## **Form edits and Data persistence**
+### **Form edits and Data persistence**
 
  data is never lost when a form is edited; instead, Kobo creates new columns for updated questions, effectively separating the data for different versions
 
@@ -73,7 +73,7 @@ You can find out more about this feature in the [Question Library documentation]
 
  Either way, the suggested workflow assumes that Data Cleaning and Visualization happens outside of KoboToolbox.
 
-## **Data Cleaning and External Tools**
+### **Data Cleaning and External Tools**
 
 Data cleaning is a necessary post-collection process, as KoboToolbox provides simple mechanisms that generally fall short or very labour intensive for the task. 
 Other tools for exploring external tools like Spreadsheet tools (LibreOffice, Microsoft Office, Google Spreadsheets), specialized Data Cleaning tools like OpenRefine assist with this process.

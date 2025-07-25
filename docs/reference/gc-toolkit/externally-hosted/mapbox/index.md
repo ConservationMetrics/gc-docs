@@ -89,6 +89,8 @@ Mapbox offers multiple ways to add data to your account, each with different imp
 - **Result**: Preserves both raw data (dataset) and optimized data (tileset)
 - **Benefits**: Data remains editable and recoverable
 
+For more information on the differences between these approaches, see [Mapbox's "Upload data to Mapbox" documentation](https://docs.mapbox.com/help/troubleshooting/uploads/).
+
 ### Recommended Workflow
 
 ```mermaid

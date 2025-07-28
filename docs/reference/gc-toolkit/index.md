@@ -26,20 +26,9 @@ The [GC Explorer](./gc-explorer/) is a web-based data visualization tool that tr
 
 [Filebrowser](./filebrowser/) is a web-based file manager that allows users to browse, upload, download, and share files from their Guardian Connector instance.
 
-
 ### 🔧 Other Tools
 
 As needed, you can add additional tools to a Guardian Connector instance. For example, if you are using [CoMapeo](/reference/connected-applications/comapeo/) to collect data, you can add a CoMapeo archive server to your Guardian Connector instance to allow users to synchronize their data with the CoMapeo archive server and for Guardian Connector to access that server's API to fetch and store the data in the private data warehouse.
-
-## 🌐 Hosting & Costs
-
-We provide technical guidance for [deploying and hosting Guardian Connector infrastructure](./hosting/) to meet your community's data sovereignty requirements, including:
- 
-- Hosting options and requirements
-- Cloud infrastructure considerations
-- Cost estimates and planning resources
-- Security and data sovereignty considerations
-- Maintenance and update procedures
 
 ## Externally Hosted Services
 

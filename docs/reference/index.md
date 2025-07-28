@@ -10,7 +10,7 @@ This reference section provides detailed technical information, specifications, 
 
 ### 📋 **[Guardian Connector Toolkit](./gc-toolkit/)**
 
-Comprehensive documentation for the Guardian Connector platform, including the [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/), [GC Explorer](/reference/gc-toolkit/gc-explorer/), and more.
+Comprehensive documentation for the Guardian Connector platform, including the [GC Scripts Hub](./gc-toolkit/gc-scripts-hub/), [GC Explorer](./gc-toolkit/gc-explorer/), and more.
 
 **What you'll find:**
 - Reference documentation for usage of GC Scripts Hub, GC Explorer, Apache Superset, Filebrowser, and other tools
@@ -28,12 +28,18 @@ Documentation for data collection tools and external platforms that Guardian Con
 
 **Best for:** Understanding data collection workflows, planning integrations, and learning how Guardian Connector aggregates data from multiple sources.
 
-### 🌐 **[Recommended Applications](./recommended-applications/)**
+### 🌐 **[Hosting & Costs](./hosting/)**
 
-Documentation for recommended applications that are useful for common tasks and workflows.
-
+Technical guidance for deploying and hosting Guardian Connector infrastructure to meet your community's data sovereignty requirements.
+ 
 **What you'll find:**
-- Guidance on using tools that we have found to be useful such as [QGIS](/reference/recommended-applications/qgis) and [OpenRefine](/reference/recommended-applications/openrefine)
+- Hosting options and requirements
+- Cloud infrastructure considerations
+- Cost estimates and planning resources
+- Security and data sovereignty considerations
+- Maintenance and update procedures
+
+**Best for:** Technical coordinators planning deployments, community leaders evaluating hosting options, and administrators managing Guardian Connector infrastructure.
 
 ### 🔧 **[For Developers](./for-developers/)**
 

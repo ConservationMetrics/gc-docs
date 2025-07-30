@@ -39,9 +39,9 @@ Follow these steps to set it up for your instance:
 4. In **Authentication / Database**, ensure Sign Ups are enabled (they are by default).
 5. In **Authentication / Social**, enable `google-oauth2`. Configure a Client ID and Client Secret for an OAuth 2.0 Client from a Google Cloud Platform project. See [this section on `gc-deploy` for more information](https://github.com/ConservationMetrics/gc-deploy/tree/main/auth0#gcp-oauth-client-configuration).
 
-## Creating an Auth0 Flow Action for User Approval
+## Creating an Auth0 Trigger Action for User Approval
 
-To handle user approval in Auth0, a Flow Action (named "Check Approval") serves as middleware between logging in and token issuance.
+To handle user approval in Auth0, a Trigger Action (named "Check Approval") serves as middleware between logging in and token issuance.
 
 ![Login flow](./images/login-flow.png)
 
@@ -57,5 +57,7 @@ exports.onExecutePostLogin = async (event, api) => {
   }
 };
 ```
+
+This Trigger Action should be added to the **Post Login** Flow on the Auth0 **Actions -> Triggers** page.
 
 The Action checks if the boolean property `user.app_metadata.approved` is true and allows the user to proceed. Otherwise, it returns the message "Your approval to access the app is pending", which is also passed as a query parameter in the browser and used by applications like GC Explorer to indicate to the user that they need approval.

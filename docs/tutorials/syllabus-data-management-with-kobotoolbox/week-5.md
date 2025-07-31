@@ -7,7 +7,7 @@ Design and execute a complete survey project:
 
 1. **Design:** Create a survey addressing a relevant topic.
     * This involves applying your understanding of KoboToolbox's purpose and features from [Week 1](./week-1), where you learned to **create and deploy a basic survey using the form builder**.
-    * You should consider incorporating more advanced design elements, [such as **grouping questions** that have the same meaning or purpose, and applying **skip logic** to these groups or individual questions to control their visibility](/week-2#question-grouping-and-skip-logic).
+    * You should consider incorporating more advanced design elements, [such as **grouping questions** that have the same meaning or purpose, and applying **skip logic** to these groups or individual questions to control their visibility](./week-2#question-grouping-and-skip-logic).
     * Remember to explore the [**different question types available in KoboToolbox**](./week-3#kobo-question-types).
     * For efficiency and consistency, you can leverage the [**Question Library function**(./week-3#question-library)] to save groups of questions as templates for reuse across different forms, which is valuable for frequently asked questions or long lists of options.
     * As a good practice for experimentation and safely making edits, you can [**clone an existing survey into a completely new project**](./week-3#cloning-surveys-for-practice) to leave the original project and its submissions untouched.

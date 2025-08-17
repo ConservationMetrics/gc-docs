@@ -32,6 +32,9 @@ Timelapse is actively developed, open source ([GitHub repo](https://github.com/s
   - **[Metadata Guide (PDF)](https://timelapse.ucalgary.ca/wp-content/uploads/Guides/TimelapseImageRecognitionGuide.pdf)**  
     This guide explains how to associate folder-level metadata with your image set and how to fill it in. It also includes several metadata standards.
 
+  - **[Image Recognition Guide (PDF)](https://timelapse.ucalgary.ca/wp-content/uploads/Guides/TimelapseImageRecognitionGuide.pdf)**  
+    This guide explains how to use the automated image recognition feature in Timelapse.
+
   - **[Database Guide (PDF)](https://timelapse.ucalgary.ca/wp-content/uploads/Guides/TimelapseDatabaseGuide.pdf)**  
     Details the internal database structure. Useful if you plan to access the database directly.
 

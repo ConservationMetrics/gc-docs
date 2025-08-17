@@ -18,10 +18,6 @@ sidebar_position: 1
 - **Archive Server**: A CoMapeo archive server (a.k.a. Comapeo Cloud) can be deployed to synchronize data to and from devices, and provides an API to connect with Guardian Connector
 - **Customizable**: Supports community-specific categories and data structures
 
-## Documentation
-
-For detailed information about using CoMapeo, visit the [official CoMapeo documentation](https://lab.digital-democracy.org/comapeo-docs/).
-
 ## Category Collections
 
 * For ready-to-use category collections, see the [Category Collections](./templates.md).

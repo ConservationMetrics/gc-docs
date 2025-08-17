@@ -1,4 +1,4 @@
-# Step 5: Exporting Annotations
+# Step 6: Exporting Annotations
 
 ## Export as CSV
 

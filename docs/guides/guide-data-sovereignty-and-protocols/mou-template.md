@@ -53,4 +53,4 @@ Date: <span style={{ backgroundColor: "#FFFF00" }}>[Date]</span>
 
 ## :floppy_disk: Save This
 
-Download this template as a Word document [here](https://docs.google.com/document/d/1FlvqHbxl3i-rSwubc5kO20m5QFT7x1fLAsEgDA50i7w/edit?tab=t.0#heading=h.dgd7ets8dzya).
+Download this template as a Word document [**here**](/doc-templates/template_mou_data_sharing.doc).

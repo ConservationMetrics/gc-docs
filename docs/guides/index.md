@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # Introduction
@@ -37,6 +37,18 @@ A detailed, hands-on guide for setting up camera trap data analysis projects usi
 - Exporting data for further analysis and reporting
 
 **Format:** Step-by-step tutorial with screenshots, practical examples, and downloadable resources.
+
+### 📜 [Data Sharing Protocols Grounded in Indigenous Data Sovereignty](./guide-data-sovereignty-and-protocols/)
+
+A comprehensive guide for creating data sharing protocols grounded in Indigenous Data Sovereignty principles, designed for communities looking to establish ethical and community-controlled data governance frameworks.
+
+**What you'll learn:**
+- Understanding Indigenous Data Sovereignty and the CARE Principles
+- Establishing community-controlled data sharing protocols
+- Implementing Free, Prior, and Informed Consent (FPIC) frameworks
+- Creating Memorandums of Understanding for data partnerships
+- Protecting sensitive cultural and territorial information
+- Building capacity for community data governance
 
 ## Support and Community
 

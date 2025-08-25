@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # 🐾 Guide: Setting up a Project in Timelapse
 
 ## Introduction

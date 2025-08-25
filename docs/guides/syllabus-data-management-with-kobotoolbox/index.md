@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # 📚 Syllabus: Data Management with KoboToolbox
 
 ## **Overview**

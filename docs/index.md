@@ -17,8 +17,8 @@ Understanding Guardian Connector's purpose, design principles, and how it fits i
 ### 📚 **[Reference](./reference/)**
 Detailed information about integrated tools, hosting options, and technical specifications to help you make informed decisions about implementation.
 
-### 🎓 **[Guides and Tutorials](./tutorials/)**
-Step-by-step guides and learning resources to help you master the tools in the Guardian Connector ecosystem, from basic data collection to advanced analysis.
+### 🎓 **[Guides](./guides/)**
+Comprehensive guides for implementing Guardian Connector tools and establishing community-centered data practices, including Indigenous data sovereignty protocols and tool-specific workflows.
 
 ## Who This Documentation Is For
 
@@ -36,7 +36,7 @@ Use the top navigation bar to explore each section of this documentation site:
 
 1. **Start with [Overview](./overview/)** to understand Guardian Connector's purpose and design principles
 2. **Review [Reference](./reference/)** to learn about integrated tools and implementation options  
-3. **Follow [Guides and Tutorials](./tutorials/)** for hands-on learning and practical skills development
+3. **Follow [Guides and Tutorials](./guides/)** for hands-on learning and practical skills development
 
 ---
 

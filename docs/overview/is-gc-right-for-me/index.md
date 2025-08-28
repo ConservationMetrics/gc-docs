@@ -42,7 +42,7 @@ Guardian Connector acts like a **secure central repository for all your organiza
 - **Maps and Location Data:** This includes GPS points, maps made with tools like Locus Map or CoMapeo, and spatial data that show your territory, sacred sites, and resource use.
 - **Survey Answers:** Information collected from surveys using tools like KoboToolbox, ODK, or Survey123.
 - **Satellite Alerts:** Warnings about changes in your territory, like illegal gold mining, logging, or deforestation.
-- **Wildlife Data:** Information from camera traps.
+- **Wildlife Data:** Information from camera traps and bioacoustic sensors.
 - **Photos and Videos:** Images and video clips from camera traps, drones, or collected during fieldwork.
 - **Old Project Data:** Any information from past studies or projects that you want to keep safe.
 

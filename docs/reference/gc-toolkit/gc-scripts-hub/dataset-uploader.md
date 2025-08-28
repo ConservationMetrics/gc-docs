@@ -105,6 +105,7 @@ If you uploaded a spatial data file, you can download it here to use in a tool l
 * **“⚠️ Dataset name is already in usage.”** Pick a different dataset name. The table name must be unique in the warehouse.
 * **Unsupported file type.** Convert it locally to one of the supported formats, then re-upload.
 * **Large files.** If the upload stalls, the file might be too large. Try resizing the file to a smaller size. A recommended maximum size for a file is 5MB on a computer, or 1-2MB on a mobile device.
+* **Accidental upload.** If you accidentally upload a file, but did not click **Save & Finish**, you can just refresh the page. (It will be cleaned up automatically.) If you did click **Save & Finish**, the database table will have to be deleted manually. (In the future, we will add a way to delete the table.)
 
 _For any other issues, please contact us at [guardianconnector@conservationmetrics.com](mailto:guardianconnector@conservationmetrics.com) or file an issue on [GitHub](https://github.com/ConservationMetrics/gc-scripts-hub/issues)._
 

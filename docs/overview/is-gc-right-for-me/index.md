@@ -8,11 +8,11 @@ This page is for you if you're interested in seeing whether Guardian Connector i
 
 Guardian Connector is more than just a software tool; it's a **system built to empower Indigenous communities to take charge of their own data**. Grounded in principles of data sovereignty, community-driven design, and long-term sustainability (see [Design Principles](/overview/design-principles)), Guardian Connector is designed to be a tool that is owned and operated by Indigenous communities.
 
-### What kind of organization is a good fit for Guardian Connector?
+## What kind of organization is a good fit for Guardian Connector?
 
 Guardian Connector is designed for Indigenous communities and organizations that are committed to **data sovereignty** and are looking for strong, flexible, and lasting ways to manage their information. Its suitability for your organization is assessed by how well it aligns with your goals and resources.
 
-#### 1. Projects and goals that benefit from Guardian Connector
+### 1. Projects and goals that benefit from Guardian Connector
 
 Your organization is poised to benefit from using Guardian Connector if it has clear goals that involve using data.
 
@@ -26,7 +26,7 @@ Guardian Connector is particularly helpful for projects like:
 - **Creating powerful reports:** Producing actionable reports for advocating for your rights, for legal needs, for sharing within your community, or for fundraising. 
 - **Preventing data loss:** Ensuring that valuable information collected by your community is backed up and safe from being lost due to device problems or staff changes.
 
-#### 2. People in your organization who will use Guardian Connector
+### 2. People in your organization who will use Guardian Connector
 
 For Guardian Connector to be most successful, your organization should have:
 
@@ -35,7 +35,7 @@ For Guardian Connector to be most successful, your organization should have:
 - **Ability to Organize Projects:** Your team should be able to organize and carry out data collection projects (like mapping or surveys) with some independence. Our goal is to empower your team to use these tools on their own, with our support.
 - **Interest in Local Experts:** A desire to grow your own Indigenous data analysts within the community, ensuring that data is truly understood and used by your the community's own people.
 
-#### 3. What kind of information can Guardian Connector store?
+### 3. What kind of information can Guardian Connector store?
 
 Guardian Connector acts like a **secure central repository for all your organization's important information**, bringing together data that might otherwise be scattered and at risk of being lost. It can safely store:
 
@@ -48,7 +48,7 @@ Guardian Connector acts like a **secure central repository for all your organiza
 
 Guardian Connector can hold **huge amounts of diverse data in one private and secure place**, helping to prevent data loss that often happens with lost devices or unorganized files.
 
-#### 4. Technology that you will need
+### 4. Technology that you will need
 
 To use Guardian Connector effectively, you'll need some basic technology:
 
@@ -63,7 +63,7 @@ It's good to also know what Guardian Connector isn't, so you have a clear pictur
 - **Not a full mapping program like QGIS or ArcGIS:** While Guardian Connector can store and organize your map data for use in other tools, it's not a complete map-making or editing software on its own. However, it can feed data to these tools.
 - **Moving towards self-hosting:** Right now, most Guardian Connector systems are set up by CMI in the cloud (online). But we are actively working towards making it easy for communities to host it themselves. The goal is always for you to own and control your data, no matter where it's hosted.
 
-### How you can work with CMI to use Guardian Connector
+## How you can work with CMI to use Guardian Connector
 
 Guardian Connector is open-source software, and can be self-hosted. However, CMI can also work with you to set it up to meet your needs, and provide ongoing support. Currently, we are doing this for the partner organizations of [Nia Tero](https://niatero.org).
 

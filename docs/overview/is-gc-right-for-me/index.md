@@ -52,7 +52,7 @@ Guardian Connector can hold **huge amounts of diverse data in one private and se
 
 To use Guardian Connector effectively, you'll need some basic technology:
 
-- **Internet Access:** A regular internet connection is helpful, even if it's not always perfect. With Starlink becoming more common, this is easier for many communities. However, we know that remote areas often have unreliable internet, so Guardian Connector is also being designed to work well by integrating with offline-first tools such as [CoMapeo](/reference/connected-tools/comapeo) and [KoboToolbox](/reference/connected-tools/kobotoolbox), meaning you can do a lot of your work without being connected and sync the data later.
+- **Internet Access:** A regular internet connection is helpful, even if it's not always perfect. With Starlink becoming more common, this is easier for many communities. However, we know that remote areas often have unreliable internet, so Guardian Connector is also being designed to work well by integrating with offline-first tools such as [CoMapeo](/reference/connected-applications/comapeo) and [KoboToolbox](/reference/connected-applications/kobotoolbox), meaning you can do a lot of your work without being connected and sync the data later.
 - **Computers and Phones:** Access to desktop computers and mobile phones is needed for collecting, managing, and viewing your data. It's best if your main data person has their own dedicated computer.
 - **Ability to Meet Online:** Being able to participate in regular online meetings helps provide ongoing support and work together.
 

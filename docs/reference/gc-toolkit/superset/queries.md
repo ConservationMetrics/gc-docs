@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Helpful Superset SQL Queries for Charts
+# Helpful SQL Queries for Superset
 
 This page contains helpful SQL queries for improving your Superset datasets and charts.
 

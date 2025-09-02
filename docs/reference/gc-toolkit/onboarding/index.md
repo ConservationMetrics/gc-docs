@@ -12,11 +12,6 @@ Welcome to your Guardian Connector instance!
 
 This space is your and yours alone, maintained for you by Conservation Metrics Inc.
 
-Guardian Connector is:
-
-- where you keep your data safe (a Data Warehouse),
-- tools to get your data into it,
-- tools to use your data for your benefit.
 
 Each instance will have an **alias**. Within the Guardian Connector ecosystem, we refer to your instance through this codeword of your choosing. That adds an extra level of opaqueness on how to access a partner's infrastructure. The idea is for you to name your instance, and can be called however you want.
 
@@ -27,7 +22,7 @@ In order to access, you will use its web address: https://alias.guardianconnecto
 The different tools will be available at https://*.alias.guardianconnector.net/ where * can be one of the services currently available:
 
 - Explorer: https://explorer.alias.guardianconnector.net/ 
-- Files: https://files.alias.guardianconnector.net/ 
+- Filebrowser: https://files.alias.guardianconnector.net/ 
 - Superset: https://superset.alias.guardianconnector.net/
 - Comapeo: https://comapeo.alias.guardianconnector.net/ 
 - Windmill: https://windmill.alias.guardianconnector.net/ 
@@ -38,7 +33,7 @@ All the services are protected so no one can access them without your permission
 
 The first barrier is your Alias. Please do not share this with anyone outside of your organization, as it is the first door to your infrastructure.
 
-We also have a user access list that we will experience in just a second.
+We also utilize user authentication and authorization to only allow approved users to access the resources.
 
 For some services, we might have a predefined user/password combination that I will share with you when we get to them.
 
@@ -72,10 +67,10 @@ You can find more information about Explorer in our documentation: https://conse
 
 #### Ways this space will grow
 
-As you grow in usage of the system, Explorer will host:
+As you grow in usage of the system, Explorer may host things like:
 
 - Your remote sensing alerts: logging, mining, airstrips and roads
-- Your views of the CoMapeo projects (both maps and media you share within it)
+- Your views of mapping projects collected using tools like CoMapeo or KoboToolbox (both maps and media you share within it)
 
 #### Customization
 
@@ -83,9 +78,9 @@ The way the map looks like in the alerts dashboard can be customizable.
 
 Let’s discuss what would be relevant for you to have there.
 
-### Files
+### Filebrowser
 
-Files is where you can safely store your files. It is a less structured means for you to preserve your data, whatever it may be.
+Filebrowser is a tool that you can use to safely store your files. It is a less structured means for you to preserve your data, whatever it may be.
 Your current access credentials are:
 
 - URL: https://files.alias.guardianconnector.net/ 
@@ -96,8 +91,8 @@ You can find more information about it in our documentation: https://conservatio
 
 #### Existing data
 
-You will notice that there are a few folders already available in your Files view, and that more might appear without you doing it.
-This happens because Files is also used for Guardian Connector tools to preserve data that you get from other services.
+You will notice that there are a few folders already available in your Filebrowser view, and that more might appear without you doing it.
+This happens because Filebrowser is also used for Guardian Connector tools to preserve data that you get from other services.
 
 Examples of this would be:
 - Alerts’ images and data
@@ -120,7 +115,7 @@ CoMapeo is a collaborative mapping tool that works primarily without internet co
 
 Guardian Connector can preserve your CoMapeo projects through its Archive Server, and make its data available for you through the tools that we’ve seen already.
 
-To sync with Guardian Connector, you will need your CoMapeo Archive Server address:
+To exchange data with Guardian Connector, you will need your CoMapeo Archive Server address:
 https://comapeo.alias.guardianconnector.net/
 
 ### Windmill

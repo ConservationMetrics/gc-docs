@@ -13,7 +13,7 @@ As much as possible, we prioritize tools that are free to use and hardware or cl
 While translating an entire tool interface may not always be feasible or necessary, the most mission-critical elements should be translatable to local languages to ensure comprehension and usability.
 
 ### 🔒 Data Sovereignty and Control
-In alignment with the [CARE Principles for Indigenous Data Governance](/guides/guide-data-sovereignty-and-protocols/#what-are-the-care-principles-for-indigenous-data-governance), our partners must be able to:
+In alignment with the [CARE Principles for Indigenous Data Governance](/guides/guide-data-sovereignty-and-protocols/#what-are-the-care-principles-for-indigenous-data-governance) and the UN Human Rights Council's Expert Mechanism on the Rights of Indigenous Peoples [Right of Indigenous Peoples to data, including with regard to data collection and disaggregation](https://digitallibrary.un.org/record/4087217?v=pdf) study, our partners must be able to:
 - Own the infrastructure where data is stored
 - Control data collection, storage, and transmission across the project lifecycle
 - Access their data at all times
@@ -22,6 +22,12 @@ In alignment with the [CARE Principles for Indigenous Data Governance](/guides/g
 - Opt out or remove their data from the system at any time with minimal friction
 
 These rights are fundamental and non-negotiable.
+
+:::info
+Indigenous data sovereignty means the inherent rights and interests that Indigenous Peoples have in relation to the creation, collection, access, analysis, interpretation, management, dissemination, reuse and control of data relating to Indigenous Peoples. In the context of Indigenous data sovereignty, data are considered a strategic resource, and a framework for their ethical use is required to advance Indigenous Peoples’ collective well-being and self-determination. Restoring control over data, including that which was previously collected from Indigenous Peoples without their consent, should be recognized as a form of remedy for addressing historical injustices and correcting false narratives. This includes the establishment of effective mechanisms for data repatriation.
+
+_From the UN Human Rights Council's Expert Mechanism on the Rights of Indigenous Peoples ["Right of Indigenous Peoples to data, including with regard to data collection and disaggregation"](https://digitallibrary.un.org/record/4087217?v=pdf)_  
+:::
 
 ### 👥 Community-Operable Software Stack
 While not every persona will be able to use every tool, we will not include tools that cannot realistically be operated by anyone within our co-creation partner teams without external support. Initial setup may require the involvement of a technical service provider, but ongoing operation should be feasible for local users. We aim to select tools that are accessible, user-friendly, and straightforward to learn and maintain.

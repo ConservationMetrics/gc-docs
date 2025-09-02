@@ -26,6 +26,12 @@ sidebar_position: 2
 
 ## 📊 Reports and Case Studies
 
+### UN Human Rights Council, Expert Mechanism on the Rights of Indigenous Peoples. "Right of Indigenous Peoples to data, including with regard to data collection and disaggregation." (2025)
+
+**Link**: [https://digitallibrary.un.org/record/4087217?v=pdf](https://digitallibrary.un.org/record/4087217?v=pdf)
+
+**Summary**: The Expert Mechanism on the Rights of Indigenous Peoples has prepared the present study pursuant to Human Rights Council resolution 33/25, analysing the right of Indigenous Peoples to data, including with regard to data collection and disaggregation. Expert Mechanism Advice No. 18 (2025) on the right of Indigenous Peoples to data is annexed to the study.
+
 ### Foster, L, Schonwetter, T. "Technocultural Data Protocols: Safeguarding Local Community and Indigenous Peoples’ Rights to Data Sovereignty." _Tenure Facility_. (2024)
 
 **Link**: [https://thetenurefacility.org/wp-content/uploads/2024/06/Technocultural-Data-Protocols-March-2024.pdf](https://thetenurefacility.org/wp-content/uploads/2024/06/Technocultural-Data-Protocols-March-2024.pdf) 

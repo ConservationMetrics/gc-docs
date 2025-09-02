@@ -2,11 +2,21 @@
 sidebar_position: 3
 ---
 
-# Helpful Superset SQL Queries for Charts
+# Helpful SQL Queries for Superset
+
+This page contains helpful SQL queries for improving your Superset datasets and charts.
+
+You can either use these to create a [virtual dataset](https://docs.preset.io/docs/virtual-datasets) which will apply your query to the entire dataset, or you can use them in a single chart. 
+
+It is recommended to create a virtual dataset if you plan to apply the same query to multiple charts. That way, you don't have to repeat the query for each chart.
+
+:::tip
+These queries are written in SQL, which is a language for querying databases. If you are not familiar with SQL, you can learn more about it [here](https://www.w3schools.com/sql/).
+:::
 
 ## String Formatting and Manipulation
 
-### Remove underscore and capitalize first letter of the string:
+### Remove underscore and capitalize first letter of the string
 
 ```sql
 CONCAT(UPPER(SUBSTRING(REPLACE("Column_string", '_', ' ') FROM 1 FOR 1)),
@@ -31,7 +41,7 @@ INITCAP(REPLACE("Column_string", '_', ' '))
 
 ---
 
-### Unnest values based on regex, and then capitalize each first letter of each word.
+### Unnest values based on regex, and then capitalize each first letter of each word
 
 ```sql
 REGEXP_REPLACE(INITCAP(unnest(ARRAY_REMOVE(string_to_array(Column_string, ' '), ''))), '_', ' ', 'g')
@@ -43,7 +53,7 @@ REGEXP_REPLACE(INITCAP(unnest(ARRAY_REMOVE(string_to_array(Column_string, ' '), 
 
 ---
 
-### Combine the values of two fields, and then apply regex to replace _ with ", " and capitalize the first letter of each word.
+### Combine the values of two fields, and then apply regex to replace _ with ", " and capitalize the first letter of each word
 
 ```sql
 CASE
@@ -87,7 +97,7 @@ MAX(TO_TIMESTAMP(_submission_time, 'YYYY-MM-DD"T"HH24:MI:SS'))
 
 ## Creating Categories and Ranges
 
-### Recast a string column as numeric, and use specific ranges for the values:
+### Recast a string column as numeric, and use specific ranges for the values
 
 ```sql
 CASE 
@@ -120,7 +130,7 @@ END
 
 ---
 
-### Recast a birthdate text field that is "YYYY-MM-DD" to only YYYY.
+### Recast a birthdate text field that is "YYYY-MM-DD" to only YYYY
 
 ```sql
 CASE

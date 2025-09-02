@@ -24,4 +24,4 @@ We also have a [repository focused on specific deployment for Guardian Connector
 
 ## Other Resources
 
-- [Helpful Superset SQL Queries for Charts](./queries.md) - Recipes for common SQL queries to improve your Superset charts
+- [Helpful Superset SQL Queries for Charts](./queries.md) - Recipes for common SQL queries to improve your Superset datasets and charts

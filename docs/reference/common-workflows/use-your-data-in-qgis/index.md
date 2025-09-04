@@ -1,0 +1,12 @@
+---
+sidebar_position: 1
+---
+
+# Use your data in QGIS
+
+QGIS is a powerful open-source application for working with geographic data, such as shapefiles, geopackages, data collected using [CoMapeo](/reference/connected-applications/comapeo), and other spatial data formats. It allows you to create, edit, and visualize maps in countless ways. 
+
+You can integrate QGIS with Guardian Connector in two main ways:
+
+1. **Importing data** from Guardian Connector into QGIS for spatial analysis or visualization.
+2. **Exporting processed data** or map outputs from QGIS back into Guardian Connector to enrich your datasets with geographic insights.

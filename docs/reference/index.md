@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # Introduction
@@ -35,6 +35,14 @@ Documentation for recommended applications that are useful for common tasks and 
 **What you'll find:**
 - Guidance on using tools that we have found to be useful such as [QGIS](/reference/recommended-applications/qgis) and [OpenRefine](/reference/recommended-applications/openrefine)
 
+### 📚 **[Common Workflows](./common-workflows/)**
+
+Guidance for common workflows when using Guardian Connector.
+
+**What you'll find:**
+- Guidance on how to use your data in [QGIS](/reference/recommended-applications/qgis) or other GIS software
+- Information on how to download all of your data
+
 ### 🔧 **[For Developers](./for-developers/)**
 
 Information for developers interested in contributing to Guardian Connector or building custom integrations.
@@ -44,6 +52,7 @@ Information for developers interested in contributing to Guardian Connector or b
 - Development environment setup
 - Deployment and hosting instructions
 - Contribution guidelines
+
 
 ---
 

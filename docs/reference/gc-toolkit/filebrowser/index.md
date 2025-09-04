@@ -28,7 +28,7 @@ Filebrowser provides essential file management capabilities for Guardian Connect
    If you plan to embed media content e.g. in a GC Explorer view, do not enter a password, as embedding media will not work with a password set.
    :::
 
-3. The modal will provide you with a share "hash" and a link to copy for your file / directory. The link will be in the format `https://files.<community_slug>.guardianconnector.net/share/<hash>`.
+3. The modal will provide you with a share "hash" and a link to copy for your file / directory. The link will be in the format `https://files.<community_alias>.guardianconnector.net/share/<hash>`.
 
    ![Hash link shown in the share modal](./images/filebrowser-3.jpg)
 
@@ -37,7 +37,17 @@ Filebrowser provides essential file management capabilities for Guardian Connect
 :::tip
 To use the share link for a GC Explorer view where you want to embed media (like images or audio), you need to format the link somewhat differently. 
 
-Instead of the share link as shown above, use the following format: `https://files.<community_slug>.guardianconnector.net/api/public/dl/<hash>`
+Instead of the share link as shown above, use the following format: `https://files.<community_alias>.guardianconnector.net/api/public/dl/<hash>`
+:::
+
+:::warning
+When you generate a share link in Filebrowser, the link will include your community's unique keyword (the "alias") in the URL (e.g., `https://files.<community_alias>.guardianconnector.net/share/<hash>`). If you share this link publicly (for example, by embedding a photo in a blog), your community's alias becomes visible to anyone with access to the link.
+
+For most Guardian Connector services, this does **not** allow outsiders to access your existing projects or data — they would still need to be invited to a project or have an access token. However, for some services (such as CoMapeo), knowing the alias could allow someone to create a new project on your archive server, which could be exploited by a bad actor (though this is considered very unlikely).
+
+**Recommendation:**  
+- Only share Filebrowser links with trusted parties.
+- If you are hosting a CoMapeo archive server, be aware of this risk and consider additional safeguards like setting a maximum limit for the number of projects that can be created.
 :::
 
 ## Documentation

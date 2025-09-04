@@ -15,7 +15,7 @@ Twilio enables automated WhatsApp notifications from Guardian Connector scripts 
 
 The following message is sent when new change detection alerts are detected in a user's territory:
 
-> `${total_alerts} new change detection alert(s) have been published on your alerts dashboard for the date of ${month_year}. The following activities have been detected in your region: ${description_alerts}. Visit your alerts dashboard here: https://explorer.${community_slug}.guardianconnector.net/alerts/alerts. If you are using CoMapeo with an archive server enabled, you can receive the alerts by synchronizing.`
+> `${total_alerts} new change detection alert(s) have been published on your alerts dashboard for the date of ${month_year}. The following activities have been detected in your region: ${description_alerts}. Visit your alerts dashboard here: https://explorer.${community_alias}.guardianconnector.net/alerts/alerts. If you are using CoMapeo with an archive server enabled, you can receive the alerts by synchronizing.`
 
 ## Getting Started
 

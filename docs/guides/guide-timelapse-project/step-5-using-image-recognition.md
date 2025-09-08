@@ -8,7 +8,7 @@ Please see the [Timelapse Image Recognition Guide](https://timelapse.ucalgary.ca
 
 Image recognition can dramatically speed up your camera trap workflow by automatically detecting and classifying animals, people, and vehicles in your images. While not perfect, it helps you quickly identify empty images, focus on specific species, and bulk-tag similar detections.
 
-![Image recognition workflow](images/image-recognition.jpg)
+![Image recognition workflow](images/image-recognition.jpg)  
 _Example of Timelapse showing bounding boxes around detected entities, using the practice image set._
 
 :::tip

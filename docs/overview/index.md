@@ -8,13 +8,15 @@ Guardian Connector is a free and open-source **Indigenous data sovereignty platf
 
 ## Why Guardian Connector Exists
 
-Digital technology plays a key role in helping people gather information needed to make better decisions about community well-being and ecosystem health. However, many off-the-shelf tech solutions fail to meet the needs of Indigenous and other local communities with place-anchored relationships that protect over 80% of the world's biodiversity and over 35% of the world's intact forest landscapes.
+Digital technology can play a vital role in helping people gather the information they need to make better decisions about community well-being and ecosystem health. Yet many off-the-shelf solutions fall short for Indigenous and local communities, who protect over 80% of the world’s biodiversity and more than 35% of intact forest landscapes. These tools are often overly complex, built around Western data frameworks, dependent on external servers, and difficult to use in remote or low-connectivity environments. Just as critical, little attention is paid to where the data resides once collected, leaving communities without true ownership or control.
 
-Additionally, as mentioned in the UN Human Rights Council's Expert Mechanism on the Rights of Indigenous Peoples [Right of Indigenous Peoples to data, including with regard to data collection and disaggregation](https://digitallibrary.un.org/record/4087217?v=pdf) study, 
+As highlighted in the UN Human Rights Council’s Expert Mechanism on the Rights of Indigenous Peoples [Study on the Right of Indigenous Peoples to data, including with regard to data collection and disaggregation](https://digitallibrary.un.org/record/4087217?v=pdf):
 
 > Indigenous Peoples remain largely excluded from the collection, use and application of data about them, their lands and their cultures. Existing data and data infrastructure fail to recognize Indigenous knowledge and world views and do not meet Indigenous Peoples’ current and future data needs.
 
-Guardian Connector is designed to meet the unique data needs and challenges of Indigenous partners, including:
+Guardian Connector is being built with Indigenous partners to help close this gap, guided by the principles of Indigenous Data Sovereignty (IDSov).
+
+### What Guardian Connector Offers
 
 🛡️ **Data Sovereignty**: Complete ownership and control over community data
 
@@ -27,6 +29,13 @@ Guardian Connector is designed to meet the unique data needs and challenges of I
 🏠 **On-premises Storage**: Data stored on infrastructure that communities own entirely
 
 ♻️ **Long-term Sustainability**: A platform designed to serve communities independently without dependency on outside support
+
+## How Guardian Connector Works
+
+Guardian Connector serves as a bridge between diverse data sources — from mapping and remote sensing to wildlife monitoring and surveys — and the outputs communities need, such as maps, dashboards, alerts, and reports. By transforming and storing information in a secure warehouse, the platform ensures that communities can explore, share, and act on their data with confidence.
+
+![A diagram of the Guardian Connector system](images/system-diagram-sept-2025.jpg)
+_A diagram of the Guardian Connector system_
 
 ## Who is Building Guardian Connector
 

@@ -66,7 +66,7 @@ Downloads/
 4. Rename it for consistency, e.g.:
 
    ```
-   umdc-a2j.csv
+   mydata.csv
    ```
 
 ### 5. Install DuckDB CLI (optional)
@@ -81,7 +81,7 @@ Your `data` folder should now have:
 
 ```
 data/
-├── umdc-a2j.csv
+├── mydata.csv
 └── duckdb.exe
 ```
 
@@ -95,20 +95,20 @@ data/
 2. Create a DuckDB database and import the CSV:
 
    ```sh
-   duckdb umdc-a2j.db
+   duckdb mydata.db
    ```
 
    Inside the DuckDB shell, run:
 
    ```sql
-   CREATE TABLE access_to_justice AS
-   SELECT * FROM read_csv_auto('umdc-a2j.csv');
+   CREATE TABLE my_data AS
+   SELECT * FROM read_csv_auto('mydata.csv');
    ```
 
    Confirm it worked:
 
    ```sql
-   SELECT * FROM access_to_justice LIMIT 10;
+   SELECT * FROM my_data LIMIT 10;
    ```
 
    Then quit:
@@ -117,7 +117,7 @@ data/
    .quit
    ```
 
-You now have a `umdc-a2j.db` file in your `data` folder.
+You now have a `mydata.db` file in your `data` folder.
 
 ### 7. Run Metabase
 
@@ -152,17 +152,17 @@ You now have a `umdc-a2j.db` file in your `data` folder.
 2. Choose **DuckDB** from the list.
 3. Fill in:
 
-   * **Display Name:** `UMDC Access to Justice`
-   * **Database File Path:** full path to `umdc-a2j.db`
-     (e.g. `C:\Users\YourName\Downloads\metabase\data\umdc-a2j.db`)
+   * **Display Name:** `Your database name of preferrence`
+   * **Database File Path:** full path to `mydata.db`
+     (e.g. `C:\Users\YourName\Downloads\metabase\data\mydata.db`)
 4. Save — you should now see your database and table in Metabase.
 
 ### 10. Explore Your Data
 
-* Go to **Data → Browse Data → UMDC Access to Justice → access\_to\_justice**.
+* Go to **Data → Browse Data → Your database name of preferrence**.
 * Click **Explore** or use **X-Ray** to let Metabase auto-generate insights.
 * Optionally, create **Models**, **Questions**, or **Dashboards**.
-* You can also use the DuckDB driver, and create Models that query CSV files directly, like "SELECT * from 'umdc-a2j.csv'" will actually use DuckDB to query the CSV straight away.
+* You can also use the DuckDB driver, and create Models that query CSV files directly, like "SELECT * from 'mydata.csv'" will actually use DuckDB to query the CSV straight away.
 
 ✅ **You now have a full local analytics setup with Metabase + DuckDB!**
 You can repeat steps 4–6 whenever you have new CSV data.

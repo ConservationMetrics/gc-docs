@@ -8,7 +8,7 @@ This document is your onboarding document to a fresh Guardian Connector instance
 
 :::note
 
-This is a template to be used to help onboard a community, so the only requirement to go through it is to be familiarized with [what Guardian Connector is](../../../overview/high-level-summary/) and [what it has to offer](../).
+This is a template to be used to help onboard a community, so the only requirement to go through it is to be familiarized with [what Guardian Connector is](../../../overview/) and [what it has to offer](../).
 
 :::
 

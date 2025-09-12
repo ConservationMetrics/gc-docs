@@ -2,6 +2,9 @@
 sidebar_position: 0
 ---
 
+import ParamText from '@site/src/components/ParamText';
+import ParamLink from '@site/src/components/ParamLink';
+
 # Onboarding Template
 
 This document is your onboarding document to a fresh Guardian Connector instance.
@@ -25,15 +28,17 @@ Each instance will have an **alias**. Within the Guardian Connector ecosystem, w
 
 From now on, we will refer to it as *alias*.
 
-In order to access, you will use its web address: https://alias.guardianconnector.net/
+In order to access, you will use its web address: 
+<ParamLink template="https://{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">https://<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net/</ParamLink>
 
-The different tools will be available at `https://*.alias.guardianconnector.net/` where * can be one of the services currently available, such as:
 
-- Explorer: https://explorer.alias.guardianconnector.net/ 
-- Filebrowser: https://files.alias.guardianconnector.net/ 
-- Superset: https://superset.alias.guardianconnector.net/
-- Comapeo: https://comapeo.alias.guardianconnector.net/ 
-- Windmill: https://windmill.alias.guardianconnector.net/ 
+The different tools will be available at https://*.alias.guardianconnector.net/ where * can be one of the services currently available, such as:
+
+- Explorer: <ParamLink template="https://explorer.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">explorer.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net</ParamLink>
+- Filebrowser: <ParamLink template="https://files.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">files.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net</ParamLink>
+- Superset: <ParamLink template="https://superset.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">superset.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net</ParamLink>
+- Comapeo: <ParamLink template="https://comapeo.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">comapeo.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net</ParamLink>  
+- Windmill: <ParamLink template="https://windmill.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">windmill.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net</ParamLink>
 
 ## Authentication
 
@@ -53,7 +58,7 @@ Guardian Connector is equipped with a suite of tools designed to help communitie
 
 It is a versatile tool designed for visualizing various types of community data within your Guardian Connector instance, mainly through Maps and Galleries. While it can present change detection alerts (like those for mining or logging), it also visualizes field observations from mapping tools like CoMapeo, and could be used to visualize other datasets like survey data from KoboToolbox, mapping data from Locus Map, and other information.
 
-Let’s go into https://explorer.alias.guardianconnector.net/ 
+Let’s go into <ParamLink template="https://explorer.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">explorer.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net</ParamLink>
 
 #### First time login
 
@@ -89,7 +94,7 @@ Let’s discuss what would be relevant for you to have there.
 [Filebrowser](../filebrowser/) is a tool that you can use to safely store your files. It is a less structured means for you to preserve your data, whatever it may be.
 Your current access credentials are:
 
-- URL: https://files.alias.guardianconnector.net/ 
+- URL: <ParamLink template="https://files.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">files.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net</ParamLink>
 - User: 
 - Password: 
 
@@ -109,7 +114,7 @@ Examples of this would be:
 
 [Apache Superset](../superset/) is a data visualization tool integrated with Guardian Connector to help you create customizable dashboards, charts, and graphs for analyzing your data.
 
-You can get to it through this web address: https://superset.alias.guardianconnector.net/
+You can get to it through this web address: <ParamLink template="https://superset.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">superset.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net</ParamLink>
 
 As your Data Warehouse grows, you will want to learn more about the patterns in your data.
 You can find more about it in the [Superset documentation](../superset/).
@@ -123,7 +128,7 @@ Let’s give you access to it now. It will look a little empty, and that is fine
 Guardian Connector can preserve your CoMapeo projects through its Archive Server, and make its data available for you through the tools that we’ve seen already.
 
 To exchange data with Guardian Connector, you will need your CoMapeo Archive Server address:
-https://comapeo.alias.guardianconnector.net/
+<ParamLink template="https://comapeo.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">comapeo.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net</ParamLink>
 
 ### Windmill
 

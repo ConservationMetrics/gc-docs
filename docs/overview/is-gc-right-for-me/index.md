@@ -26,7 +26,7 @@ Guardian Connector is particularly helpful for projects like:
 - **Creating powerful reports:** Producing actionable reports for advocating for your rights, for legal needs, for sharing within your community, or for fundraising. 
 - **Preventing data loss:** Ensuring that valuable information collected by your community is backed up and safe from being lost due to device problems or staff changes.
 
-### 2. People in your organization who will use Guardian Connector
+### 2. What Your Organization Needs
 
 For Guardian Connector to be most successful, your organization should have:
 

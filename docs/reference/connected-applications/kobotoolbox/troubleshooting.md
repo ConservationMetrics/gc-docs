@@ -36,3 +36,20 @@ The failed submission will then appear on the "Ready to send" screen with a red 
 If the pop-up in step 2 does not appear, or if your phone cannot connect to the computer for any reason, you can still retrieve project data from your phone using alternative methods. However, this process requires someone with technical experience who is comfortable using the command line and a tool called `adb` (Android Debug Bridge).
 
 :::
+
+## Shrink images from a KoboToolbox Project
+
+It is quite frequent that if the project involves images as attachments, that users of a free Kobo Toolbox account might run into storage limits. And when that happens, it is difficult to address. One way about it is to shrink the images that are attached to each of the submissions and re-upload the images in their minimized size.
+
+That way you can reduce the weight of a Kobo Toolbox. significantly.
+
+To reduce the size of images in your KoboToolbox project, follow these steps:
+
+1. Open your project in KoboToolbox
+2. Navigate to the "Data" section, and then "Downloads"
+3. Select the export type "Media Attachments (ZIP)"
+![download media attachments screenshot](images/download-media-attachments.png)
+4. Download the images as a ZIP file
+4. Shrink all images with any local tool, like ImageMagik or Pillow, o in Windows you can use the [Microsoft PowerTool's Image Resizer](https://learn.microsoft.com/en-us/windows/powertoys/image-resizer).
+5. Edit each of the form submissions and reupload the shrinked image, making sure you upload the image that matches the name of the already uploaded.
+![edit a submission screenshot](images/edit-entry.png).

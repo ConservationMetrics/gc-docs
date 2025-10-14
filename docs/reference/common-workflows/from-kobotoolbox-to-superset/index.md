@@ -19,11 +19,37 @@ The workflow involves the following tools:
 
 ## 1. Data Collection: KoboToolbox
 
-1. **Create a KoboToolbox account and project**  
-   If you don’t have one yet, follow the official [KoboToolbox documentation](https://support.kobotoolbox.org/creating_account.html) to register and create a project.
+### One time setup
+
+You will do this once per instance, you won't have to repeat this for each project you create.
+
+1. **Create a KoboToolbox account**  
+
+   If you don’t have one yet, follow the official KoboToolbox documentation to [register a user](https://support.kobotoolbox.org/quick_start.html#creating-an-account-and-signing-in).
+
+:::info
+
+Make sure you create a Kobotoolbox user that is tied to your Guardian Connector instance, as it will have access to all the projects that it belongs. Make sure you keep this user's credentials safe.
+
+:::
+   
+
+2. **Set Windmill variables for KoboToolbox**
+
+   The Windmill tool will be used later to fetch the data from Kobotoolbox and into your Data Warehouse.
+   In order to set it up, you will need to send the following information to your `Windmill Admin`:
+   - Your KoboToolbox server: Either kc.kobotoolbox.org or kf.kobotoolbox.org .
+   - Your user's API Key: You can get to it in the `Account Settings`, `Security` tab, `API Key`. You show it by clicking on the `DISPLAY` button to the right of that label.
+
+### Data Collection workflow
+
+1. **Create a KoboToolbox project**  
+   
+   Follow the instructions to [create a project](https://support.kobotoolbox.org/quick_start.html#creating-your-first-project).
 
 2. **Add the replication user**  
-   Add the user `kobouser` to your KoboToolbox project, here is the [documentation to sharing projects](https://support.kobotoolbox.org/managing_permissions.html).
+
+   In case the owner of the project is not the same as the user used for Guardian Connector defined in the setup, Add it to the KoboToolbox project, here is the [documentation to sharing projects](https://support.kobotoolbox.org/managing_permissions.html).
    Make sure you provide it with `Manage project` permissions in order for it to be able to pull the data.
    This account allows Guardian Connector to replicate your data.
 
@@ -54,20 +80,32 @@ Configure a new schedule with the following parameters:
 | Parameter | Description |
 |------------|-------------|
 | **Summary** | Short description of the task |
-| **Path** | `/f/connectors/kobotoolbox/` |
+| **Path** | `/f/connectors/kobotoolbox/...` |
 | **Description** | Optional detailed explanation |
 | **Schedule** | How often the task should run |
 | **Runnable** | Choose **Script**, then select `f/connectors/kobotoolbox/kobotoolbox_responses` |
-| **kobotoolbox** | A server and API key pair |
+| **kobotoolbox** | A server and API key pair already set up by your Windmill admin |
 | **form_id** | Your Kobo form ID |
 | **db_table_name** | The database table name for the imported data |
 
-> **Note:**  
-> If you use a `db_table_name` that already exists, new rows and columns will be appended to that table.  
-> To avoid conflicts, we recommend using this naming scheme:  
-> ```
-> {schema} = {project_id}_{form_id}
-> ```
+:::info
+
+If you use a `db_table_name` that already exists, new rows and columns will be appended to that table.  
+To avoid conflicts, we recommend using your formTitle as a base for your naming scheme, and respecting these nameing conventions:
+- must begin with a letter
+- can include letters, underscore, digits or the dollar sign ($)
+- it's maximum length is 63 characters
+
+:::
+
+:::info
+
+There are some conventions that we found are useful to keep your Windmill instance tidy:
+- **Summary**: `Kobotoolbox: formTitle`, where formTitle is the title of the KoboToolbox Form.
+- **Path**: `/f/connectors/kobotoolbox/formTitle`, same formTitle as in the Summary
+- **Schedule**: you can use the `simplified builder` button, it makes it easy to write the schedule config
+
+:::
 
 Once saved, you’ll see your schedule in the **Schedules** page.
 
@@ -94,7 +132,7 @@ https://superset.<ParamText paramName="alias" defaultValue="alias" />.guardianco
 
 After logging in, you can create **Datasets**, **Charts**, and **Dashboards** using the `+` button on the top-right corner.
 
-### Step 1: Create a Dataset
+### Create a Dataset
 
 1. Click the `+` button → **Data** → **Create dataset**  
 2. Choose:
@@ -106,7 +144,7 @@ After logging in, you can create **Datasets**, **Charts**, and **Dashboards** us
 
 You’ll be redirected to the chart creation screen.
 
-### Step 2: Create a Chart
+### Create a Chart
 
 1. From the Superset homepage, click the `+` button → **Chart**.  
 2. Choose a dataset (the one you just created).  
@@ -122,7 +160,7 @@ In the chart editor:
 You can further customize your chart in the **DATA** and **CUSTOMIZE** tabs.  
 When done, click **CREATE CHART**, then **SAVE** in the top-right corner.
 
-## 4. Create a Dashboard
+### Create a Dashboard
 
 1. Click the `+` button → **Dashboard**.  
 2. You’ll see an empty canvas where you can add charts and layout elements.  

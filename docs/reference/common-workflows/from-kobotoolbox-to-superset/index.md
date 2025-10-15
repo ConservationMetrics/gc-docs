@@ -37,9 +37,40 @@ Make sure you create a Kobotoolbox user that is tied to your Guardian Connector 
 2. **Set Windmill variables for KoboToolbox**
 
    The Windmill tool will be used later to fetch the data from Kobotoolbox and into your Data Warehouse.
-   In order to set it up, you will need to send the following information to your `Windmill Admin`:
+
+   You will need to send the following information to your `Windmill Admin`:
    - Your KoboToolbox server: Either kc.kobotoolbox.org or kf.kobotoolbox.org .
    - Your user's API Key: You can get to it in the `Account Settings`, `Security` tab, `API Key`. You show it by clicking on the `DISPLAY` button to the right of that label.
+
+:::info
+
+If you are the `Windmill Admin`, you will have to receive this data and set the account up in Windmill.
+
+This is done by creating a `variable` within Windmill that describes how to access to your KoboToolbox account.
+
+In order to set it up, you need to:
+1. access your Windmill instance, as described below.
+2. Go to the `Variables` section in the left tabs menu.
+3. Create a new variable with the `+ New variable` button in the top right corner of the page and add the following information in the variable form:
+   
+   | Parameter | Value |
+   |------------|-------------|
+   | **Path** | `f/connectors/kobotoolbox` |
+   | **Variable value** | The obtained API Key |
+   | **Description** | Optional detailed explanation |
+
+4. Go to the `Resources` section in the left tabs menu.
+5. Create a new resource with the `Add resource` button in the top right corner of the page and add the following information in the resource form:
+
+   | Parameter | Value |
+   |------------|-------------|
+   | **Resource type**| 
+   | **Path** | `f/connectors/kobotoolbox` |
+   | **Description** | Optional detailed explanation |
+   | **server_url** | `https://kf.kobotoolbox.org` or `https://kc.kobotoolbox.org` |
+   | **api_key** | `$var:f/connectors/kobotoolbox` |
+
+:::
 
 ### Data Collection workflow
 

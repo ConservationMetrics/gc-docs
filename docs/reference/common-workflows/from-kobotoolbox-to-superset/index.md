@@ -8,14 +8,14 @@ import ParamLink from '@site/src/components/ParamLink';
 # From KoboToolbox to Superset
 
 This document describes how to move data from **KoboToolbox** to **Superset** using **Windmill** and the **PostgreSQL** data warehouse included in **Guardian Connector**.  
-The goal is to preserve and visualize your survey data through dashboards — useful for monitoring ongoing surveys and creating clear visualizations for completed ones.
+The goal is to preserve your survey data and visualize it through dashboards — useful for monitoring ongoing surveys and creating clear visualizations for completed ones.
 
 The workflow involves the following tools:
 
-- **KoboToolbox** – The survey collection tool. Similar workflows can be adapted for ODK or Survey123, but here we’ll focus on KoboToolbox.  
+- **[KoboToolbox](../../connected-applications/kobotoolbox/)** – The survey collection tool. Similar workflows can be adapted for ODK or Survey123, but here we’ll focus on KoboToolbox.  
 - **Windmill** – Handles data ingestion and processing, transferring it from KoboToolbox to the data warehouse.  
 - **PostgreSQL** – The database where Guardian Connector stores and makes your data available for analysis.  
-- **Superset** – The visualization tool used to create dashboards and charts based on the stored data.
+- **[Superset](../../gc-toolkit/superset/)** – The visualization tool used to create dashboards and charts based on the stored data.
 
 ## 1. Data Collection: KoboToolbox
 

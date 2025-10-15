@@ -39,7 +39,7 @@ Make sure you create a Kobotoolbox user that is tied to your Guardian Connector 
    The Windmill tool will be used later to fetch the data from Kobotoolbox and into your Data Warehouse.
 
    You will need to send the following information to your `Windmill Admin`:
-   - Your KoboToolbox server: Either kc.kobotoolbox.org or kf.kobotoolbox.org .
+   - Your KoboToolbox server: Either `kc.kobotoolbox.org` or `kf.kobotoolbox.org` .
    - Your user's API Key: You can get to it in the `Account Settings`, `Security` tab, `API Key`. You show it by clicking on the `DISPLAY` button to the right of that label.
 
 :::info

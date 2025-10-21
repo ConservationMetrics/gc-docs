@@ -92,9 +92,7 @@ Once you have this information, continue to the Windmill configuration.
 
 Access your Windmill instance at:
 
-**<ParamLink template="https://windmill.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">**
-https://windmill.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net/
-</ParamLink>
+**<ParamLink template="https://windmill.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">https://windmill.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net/</ParamLink>**
 
 In Windmill, **Schedules** are automated tasks that run at specific intervals — for example, regularly fetching new data from KoboToolbox.
 
@@ -151,9 +149,7 @@ Once the scheduled script has run successfully, your data will be available in t
 
 Access your Superset instance at:
 
-**<ParamLink template="https://superset.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">**
-https://superset.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net/
-</ParamLink>
+**<ParamLink template="https://superset.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">https://superset.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net/</ParamLink>**
 
 After logging in, you can create **Datasets**, **Charts**, and **Dashboards** using the `+` button on the top-right corner.
 

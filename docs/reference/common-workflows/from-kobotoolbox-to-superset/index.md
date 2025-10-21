@@ -195,7 +195,8 @@ To publish it for your team:
 - Click the **Draft** label next to the title → it changes to **Published**.  
 - The dashboard will now appear under **Dashboards** in your Superset instance.
 
-::: tip
+:::tip
+
 For more details on how to create charts and dashboards, you can refer to the [specific Superset documentation](../../gc-toolkit/superset/).
 :::
 

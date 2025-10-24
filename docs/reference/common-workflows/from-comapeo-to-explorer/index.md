@@ -3,7 +3,7 @@ import ParamLink from '@site/src/components/ParamLink';
 
 # From CoMapeo to Explorer
 
-This guide is for Guardian Connector operators to be able to create a data workflow from **CoMapeo** to an **GuardianConnector Explorer** map view. This process starts with CoMapeo data collection and ends with a configurable interactive map visualization.  
+This guide is for Guardian Connector operators to be able to create a data workflow from **CoMapeo** to an **GuardianConnector Explorer** map and gallery views. This process starts with CoMapeo data collection and ends with a configurable map and gallery visualizations.
 The goal is to preserve your CoMapeo data, and to visualize it through interactive maps. This is useful for monitoring ongoing data collection and creating clear visualizations for analysis.
 
 The workflow involves the following tools:
@@ -128,7 +128,16 @@ To configure your Explorer view, your user needs to have admin access. You can a
 | **Views** | Map, Gallery |
 | **Mapbox Style** | You will need a Mapbox account to access a Map Style. Get the Style URL in the format `mapbox://styles/{username}/{styleId}`. You can find this URL in your Mapbox Studio account, under the **Styles** section. Click the options menu for your desired style and select the **Style URL** option to copy it. |
 | **Mapbox Access Token** | You can get this from your Mapbox account page. Go to the **Tokens** section and click **+ Create a token**. Give it a meaningful name, click **Create token**, and then copy the generated token to use in Explorer. |
+| **Zoom level** |  |
+| **Center latitude** | The latitude of the center point for the map view. |
+| **Center longitude** | The longitude of the center point for the map view. |
 | **Base path for media** | This is the URL used to share images and audio files downloaded from CoMapeo. To get this URL, go to your Filebrowser at **<ParamLink template="https://filebrowser.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">https://filebrowser.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net/</ParamLink>**, locate the folder configured in your Windmill instance, and click the **Share** button. Please see the [Filebrowser: generating share links](/reference/gc-toolkit/filebrowser/#generating-share-links) section for more guidance on how to format the share link for use in GC Explorer. |
+
+:::info
+
+To determine zoom levels, as cell as center latitude and longitude, you can benefit from using tools like [Mapbox Location Helper](https://labs.mapbox.com/location-helper/) to find coordinates and Zoom Levels.
+
+:::
 
 5.  **Publish the Views**
 

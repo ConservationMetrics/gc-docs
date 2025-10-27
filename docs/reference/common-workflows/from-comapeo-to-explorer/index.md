@@ -128,7 +128,7 @@ To configure your Explorer view, your user needs to have admin access. You can a
 | **Views** | Map, Gallery |
 | **Mapbox Style** | You will need a Mapbox account to access a Map Style. Get the Style URL in the format `mapbox://styles/{username}/{styleId}`. You can find this URL in your Mapbox Studio account, under the **Styles** section. Click the options menu for your desired style and select the **Style URL** option to copy it. |
 | **Mapbox Access Token** | You can get this from your Mapbox account page. Go to the **Tokens** section and click **+ Create a token**. Give it a meaningful name, click **Create token**, and then copy the generated token to use in Explorer. |
-| **Zoom level** |  |
+| **Zoom level** | The zoom level for the map view (0-22). |
 | **Center latitude** | The latitude of the center point for the map view. |
 | **Center longitude** | The longitude of the center point for the map view. |
 | **Base path for media** | This is the URL used to share images and audio files downloaded from CoMapeo. To get this URL, go to your Filebrowser at **<ParamLink template="https://filebrowser.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">https://filebrowser.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net/</ParamLink>**, locate the folder configured in your Windmill instance, and click the **Share** button. Please see the [Filebrowser: generating share links](/reference/gc-toolkit/filebrowser/#generating-share-links) section for more guidance on how to format the share link for use in GC Explorer. |

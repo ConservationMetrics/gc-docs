@@ -141,7 +141,7 @@ To determine map parameters like the zoom level and center latitude/longitude, y
 
 5.  **Publish the Views**
 
-    Once saved, your new map and gallery views will be visible to users who access the Explorer instance.
+Once saved, your new map and gallery views will be visible to users who access the Explorer instance.
 
 ---
 

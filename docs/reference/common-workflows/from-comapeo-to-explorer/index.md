@@ -135,7 +135,7 @@ To configure your Explorer view, your user needs to have admin access. You can a
 
 :::info
 
-To determine zoom levels, as cell as center latitude and longitude, you can benefit from using tools like [Mapbox Location Helper](https://labs.mapbox.com/location-helper/) to find coordinates and Zoom Levels.
+To determine map parameters like the zoom level and center latitude/longitude, you can benefit from using [Mapbox's Location Helper](https://labs.mapbox.com/location-helper/) tool.
 
 :::
 

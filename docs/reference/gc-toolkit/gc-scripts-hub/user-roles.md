@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # User Roles
 
-In Windmill (the platform that powers the GC Scripts Hub), there are a number of roles that can be assigned to users, each with different permissions and responsibilities.
+In **[Windmill](https://www.windmill.dev/)** (the platform that powers the GC Scripts Hub), there are a number of roles that can be assigned to users, each with different permissions and responsibilities.
 
 Windmill has an [official documentation page](https://www.windmill.dev/docs/core_concepts/roles_and_permissions) that covers the core concepts of roles and permissions in Windmill. However, below, we'll cover the roles that are most relevant to the GC Scripts Hub.
 

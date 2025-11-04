@@ -3,7 +3,7 @@ import ParamLink from '@site/src/components/ParamLink';
 
 # From CoMapeo to Explorer
 
-This guide is for Guardian Connector operators to be able to create a data workflow from **CoMapeo** to an **GuardianConnector Explorer** map and gallery views. This process starts with CoMapeo data collection and ends with a configurable map and gallery visualizations.
+This guide is for Guardian Connector [operators](/reference/gc-toolkit/gc-scripts-hub/user-roles/#-operator) to be able to create a data workflow from **CoMapeo** to an **GuardianConnector Explorer** map and gallery views. This process starts with CoMapeo data collection and ends with a configurable map and gallery visualizations.
 The goal is to preserve your CoMapeo data, and to visualize it through interactive maps. This is useful for monitoring ongoing data collection and creating clear visualizations for analysis.
 
 The workflow involves the following tools:
@@ -52,7 +52,7 @@ Once the CoMapeo app confirms that you successfully added your CoMapeo archive s
 
 ## 2. Data Processing: Windmill
 
-If you are the **Windmill Admin** within your Guardian Connector instance, there's an extra step that you need to do **one time per Guardian Connector instance**.
+If you are the **Windmill [Admin](/reference/gc-toolkit/gc-scripts-hub/user-roles/#-admin)** within your Guardian Connector instance, there's an extra step that you need to do **one time per Guardian Connector instance**.
 
 You need to configure your Windmill script to get your data from the CoMapeo archive server into your data warehouse.
 

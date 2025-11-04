@@ -38,7 +38,7 @@ Make sure you create a Kobotoolbox account that you want to use for your Guardia
 
 Windmill will be used to fetch the data from Kobotoolbox, and store the data in your data warehouse.
 
-   You will need to share the following information with your **Windmill Admin**:
+   You will need to share the following information with your **Windmill [Admin](/reference/gc-toolkit/gc-scripts-hub/user-roles/#-admin)**:
    - Your KoboToolbox server: Either `kc.kobotoolbox.org` or `kf.kobotoolbox.org` .
    - Your account API Key: You can find this in `Account Settings` → `Security` tab → `API Key`, and pressing the `DISPLAY` button to the right of that label.
 
@@ -47,7 +47,7 @@ Windmill will be used to fetch the data from Kobotoolbox, and store the data in 
 
 ### For Windmill Admins only
 
-If you are a **Windmill Admin**, you will use this data to to set up the account in Windmill.
+If you are a **Windmill [Admin](/reference/gc-toolkit/gc-scripts-hub/user-roles/#-admin)**, you will use this data to to set up the account in Windmill.
 
 This is done by creating a **Resource** within Windmill that stores the information needed to access to your KoboToolbox account.
 

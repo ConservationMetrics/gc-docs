@@ -3,7 +3,7 @@ import ParamLink from '@site/src/components/ParamLink';
 
 # From CoMapeo to Explorer
 
-This guide is for Guardian Connector [operators](/reference/gc-toolkit/gc-scripts-hub/user-roles/#-operator) to be able to create a data workflow from **CoMapeo** to an **GuardianConnector Explorer** map and gallery views. This process starts with CoMapeo data collection and ends with a configurable map and gallery visualizations.
+This guide is for Guardian Connector [operators](/reference/gc-toolkit/gc-scripts-hub/user-roles/#-operator) to be able to create a data workflow from **CoMapeo** to a **GuardianConnector Explorer** map and gallery views. This process starts with CoMapeo data collection and ends with a configurable map and gallery visualizations.
 The goal is to preserve your CoMapeo data, and to visualize it through interactive maps. This is useful for monitoring ongoing data collection and creating clear visualizations for analysis.
 
 The workflow involves the following tools:

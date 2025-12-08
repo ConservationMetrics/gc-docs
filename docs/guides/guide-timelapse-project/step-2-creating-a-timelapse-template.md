@@ -42,7 +42,7 @@ _Example of a Timelapse template, using the practice image set._
 
 :::tip
 
-You don't have to use scientific names for your species dropdown if you don't want to. You can use Indigenous names instead, and later join those with scientific names (if so desired.)
+You don't have to use scientific names for your species dropdown if you don't want to. You can use indigenous names instead, and later join those with scientific names (if so desired).
 
 :::
 

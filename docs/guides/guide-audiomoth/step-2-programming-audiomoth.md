@@ -108,3 +108,43 @@ most deployment failures.
 
 6.   Any device that fails a sanity check should not be deployed until
     the issue is resolved.
+    
+## Choosing Sample Rate, Gain, and Schedule Settings
+
+Selecting the appropriate recording settings depends on the target taxa, background noise levels, storage constraints, and project goals.
+
+### Sample Rate Selection
+
+| Study Aim / Target Taxa | Recommended Sample Rate | Notes |
+|-------------------------|--------------------------|-------|
+| General biodiversity (birds, mammals) | **24–32 kHz** | Balanced file size vs. frequency coverage. |
+| Songbirds, frogs | **32–48 kHz** | Captures energy up to ~24 kHz, useful for harmonics. |
+| Bats or very high-frequency insects | **≥192 kHz** | Required for ultrasonic signals; large storage and battery impact. |
+| Low-frequency noise or marine use | **8–16 kHz** | Sufficient for low-frequency signals; minimizes battery and storage use. |
+
+**Rule of thumb:** Choose the *lowest* sample rate that still captures the highest frequency of interest (sample rate ≥ 2 × maximum frequency).
+
+---
+
+### Gain Setting Guidance
+
+- **Low gain** is best for high-noise environments or loud species.
+- **Medium or high gain** may be useful for:
+  - quiet forests,
+  - distant calls,
+  - faint signals (small passerines, rodents, some frogs).
+- High gain increases the risk of **clipping**, especially during rain, wind, or loud species (hornbills, baboons, gunshots).
+
+If unsure, run two devices with different gain settings for 24 hours and compare SNR.
+
+---
+
+### Scheduling Considerations
+
+- **Continuous recording:** Best for unknown vocalization patterns; highest battery and storage cost.  
+- **Duty-cycled recording:** Useful for long-term monitoring (e.g., 1 min every 10 min).  
+- **Time-of-day schedules:** Target crepuscular or nocturnal species (owls, bats, some insects).  
+- Avoid **very short cycles** (<1 min files), which increase file fragmentation and SD card wear.
+
+**Tip:** Match the schedule to when the species vocalizes — dawn chorus, nocturnal peaks, rainfall cycles, etc.
+

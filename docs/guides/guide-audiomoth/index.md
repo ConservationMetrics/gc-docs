@@ -10,7 +10,13 @@ widely in ecological monitoring. This guide walks through best practices
 for preparing devices, configuring firmware and recording schedules,
 conducting field deployments, managing redeployments, and processing
 retrieved data. The goal is to ensure consistent, reliable data
-collection across projects and teams.
+collection across projects and teams. 
+
+:::tip
+
+See Tessa Rhienhart's [AudioMoth Guide](https://github.com/rhine3/audiomoth-guide/tree/master?tab=readme-ov-file#about-the-practical-audiomoth-guide) for more detail information on setting up an AudioMoth project.
+
+:::
 
 Use this index as the starting point for navigation.
 

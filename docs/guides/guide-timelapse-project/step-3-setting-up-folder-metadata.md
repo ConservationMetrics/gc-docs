@@ -64,7 +64,9 @@ Examples of useful metadata fields might include (but you may want to refer to t
 * Camera Trap ID
 * Site or Station Name
 * Latitude and Longitude
-* Deployment Start and End Dates
+* Camera Height
+* Camera Field of View
+* Deployment Start and End Dates/Times
 * SD Card Retrieval Notes
 * Observer or Team Member Name
 

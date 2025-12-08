@@ -75,7 +75,7 @@ not require frequent updates.
 ## Update Firmware
 
 Use the most up-to-date firmware version unless you need an old version
-for some reason. The versions will be listed in the "Flash App"
+for some reason. The versions will be listed in the "Flash App".
 
 1.  Open the Flash App.
 

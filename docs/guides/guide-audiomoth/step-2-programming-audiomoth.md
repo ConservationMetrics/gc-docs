@@ -4,6 +4,8 @@
 
 1.  Open the **Configuration App**.
 
+    ![](images/am_configurator.jpg)
+
 2.  Load your configuration file: **File → Open Configuration**.
 
 3.  Set the device clock display: **Time → Local**.

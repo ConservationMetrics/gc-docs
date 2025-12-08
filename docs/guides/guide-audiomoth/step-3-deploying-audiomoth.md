@@ -38,9 +38,13 @@ Record the following on the deployment datasheet:
 
 ## Deploy the Sensor
 
-1.  Return the sensor to its housing. **Make sure the microphone hole on
-    the AudioMoth circuit board is oriented correctly in the case and
-    lines up with the microphone hole on the case.**
+1.  Return the sensor to its housing. **Make sure the microphone
+    hole(orange box below) on the AudioMoth circuit board is oriented
+    correctly in the case and lines up with the microphone hole on the
+    case.**
+
+    ![Audiomoth with orange box showing where the microphone is on the
+    device.](images/am_mic_and_switch.jpg)
 
 2.  Ensure SD card remains fully clicked in.
 

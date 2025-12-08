@@ -36,6 +36,8 @@ not require frequent updates.
 
     3.  Right-click the microSD card and select **Format…**.
 
+        ![Windows Drive Formater](images/windows_card_formater.jpg)
+
     4.  In the **File System** dropdown, choose **exFAT**.
 
     5.  Leave **Allocation unit size** set to **Default**.
@@ -59,6 +61,9 @@ not require frequent updates.
 
 2.  Move the switch to **USB/Off**.
 
+    ![image of the audiomoth with the switch in the off
+    position](images/am_switch.jpg)
+
 3.  Remove old batteries and microSD card.
 
 4.  Insert **three new AA batteries** (same brand and type).
@@ -73,6 +78,8 @@ Use the most up-to-date firmware version unless you need an old version
 for some reason. The versions will be listed in the "Flash App"
 
 1.  Open the Flash App.
+
+    ![](images/1_am_flash_app.jpg)
 
 2.  Download the latest firmware.
 

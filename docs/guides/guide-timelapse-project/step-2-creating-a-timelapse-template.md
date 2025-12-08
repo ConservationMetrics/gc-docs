@@ -33,11 +33,12 @@ _Example of a Timelapse template, using the practice image set._
 
 **Suggested fields:**
 
-- `Species` (**Choices**) — count the species found in the image
+- `Indiginous Name` (**Choices**) — count the species found in the image
+- `English Name` (**Choices**) — English name for the species found in the image (optional)
+- `Scientific Name` (**Choices**) — Scientific name for the species found in the image (optional)
 - `Count` (**Counts**) — count the number of species
 - `Notes` (**Notes**) — for reviewer comments
-- `Highlight` (**Flag**) — to mark notable images
-- Additional `Notes` field — for general observations
+- `Favorite` (**Flag**) — to mark notable images
 
 :::tip
 

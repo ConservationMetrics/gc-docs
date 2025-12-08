@@ -64,3 +64,47 @@ If you have already programmed the audio moth and the batteries have been instal
 
 If you see a warning about fast clock drift, verify manually—this
 warning is often incorrect.
+
+## Pre-deployment Sanity Check / Test
+
+Before sending any AudioMoth into the field, perform a quick functional
+check to ensure the device, SD card, and configuration are working as
+expected. These tests take less than two minutes per unit and prevent
+most deployment failures.
+
+1.  **Insert batteries and SD card**\
+    Confirm the SD card clicks securely into place and the battery
+    contacts are clean.
+
+2.   **Confirm correct configuration**\
+    Connect the device to the AudioMoth Config App and ensure the
+    intended *sample rate*, *gain*, *schedule*, and *timezone* are
+    applied. Verify that the device time is within a few seconds of the
+    computer clock.
+
+3.   **Arm the device**\
+    Switch to **CUSTOM**, check that the LED flashes the expected
+    “armed” pattern, and that the start time matches your schedule.
+
+4.   **Record a short ambient test clip**\
+    Leave the unit running for \~10–20 seconds. Then switch to USB/OFF
+    and inspect the SD card:
+
+    -    A new WAV file should be present.
+
+    -    The file should have the correct timestamp.
+
+    -    Playback should contain audible ambient sound and clear
+        triggering.
+
+5.   **Inspect housing fit**\
+    Place the device in its intended housing and confirm that:
+
+    -   No rattling occurs.
+
+    -    The microphone port is unobstructed.
+
+    -    Orientation marks are visible or labeled.
+
+6.   Any device that fails a sanity check should not be deployed until
+    the issue is resolved.

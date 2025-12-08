@@ -11,8 +11,12 @@ Timelapse supports folder-level metadata, which allows you to associate project,
 ![Folder-level metadata](images/folder-level-metadata.jpg)
 _Example of Timelapse project folder-level metadata, using the practice image set._
 
-:::tip
-Before enabling folder-level metadata, think through your folder hierarchy and naming conventions. Changes later can break links between data and folders, so it’s best to finalize your structure first.
+::: tip
+Before enabling folder-level metadata, think through your folder hierarchy and naming conventions. Changes later can break links between data and folders, so it’s *important* to finalize your structure first.
+:::
+
+::: important
+Adding folder-level metadata into Timelapse is completely optional. If you already have a more sophisticated method for collecting station and deployment metadata and that information is already digitized, there is no need to add these types of metadata to the Timelapse itself.
 :::
 
 ## How to set up Folder metadata

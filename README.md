@@ -10,11 +10,33 @@ pnpm install
 
 ## Local Development
 
+### Option 1: With Node/pnpm installed
+
 ```bash
 pnpm start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+### Option 2: With Docker (no Node installation required)
+
+If you don't have Node.js installed locally, you can use Docker:
+
+```bash
+# Build the Docker image
+docker build -t gc-docs .
+
+# Run the development server with hot-reloading
+docker run -p 3000:3000 \
+  -v $(pwd)/docs:/app/docs \
+  -v $(pwd)/src:/app/src \
+  -v $(pwd)/static:/app/static \
+  -v $(pwd)/docusaurus.config.ts:/app/docusaurus.config.ts \
+  -v $(pwd)/sidebars.ts:/app/sidebars.ts \
+  gc-docs
+```
+
+Then open http://localhost:3000 in your browser. Any changes to your docs will automatically hot-reload!
 
 ## Build
 

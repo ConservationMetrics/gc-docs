@@ -36,6 +36,22 @@ docker run -p 3000:3000 \
   gc-docs
 ```
 
+NOTE: If you are on windows and running in git bash you need to at the -W flag to the docker run command.
+
+```bash
+# Build the Docker image
+docker build -t gc-docs .
+
+# Run the development server with hot-reloading
+docker run -p 3000:3000 \
+  -v "$(pwd -W)/docs:/app/docs" \
+  -v "$(pwd -W)/src:/app/src" \
+  -v "$(pwd -W)/static:/app/static" \
+  -v "$(pwd -W)/docusaurus.config.ts:/app/docusaurus.config.ts" \
+  -v "$(pwd -W)/sidebars.ts:/app/sidebars.ts" \
+  gc-docs
+```
+
 Then open http://localhost:3000 in your browser. Any changes to your docs will automatically hot-reload!
 
 ## Build

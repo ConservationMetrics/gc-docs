@@ -1,5 +1,20 @@
 # Step 3: Sensor Deployment
 
+## Placement Guidance
+
+-   Mount units 1.5–2 m above ground for general biodiversity
+    monitoring; higher placements reduce ground reflection noise.
+
+-   Keep sensors away from vegetation that may strike the case in wind
+    (this will cause loud noise on the recordings).
+
+-   Orient the microphone toward the primary sound source when relevant
+    (e.g., bird choruses, wildlife trails) and away from persistent
+    sound sources (rivers/streams, roads, dominant wind direction).
+
+-   For rainfall-prone sites, a small rain shield placed above the
+    sensor can reduce noise without overly obstructing sound.
+
 ## Prepare for Deployment
 
 Record the following on the deployment datasheet:

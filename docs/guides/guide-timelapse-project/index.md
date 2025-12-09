@@ -20,7 +20,7 @@ Timelapse is actively developed, open source ([GitHub repo](https://github.com/s
 
 Timelapse can be downloaded [here](https://timelapse.ucalgary.ca/download/). There are three different install methods. We recommend using the "1 MSI Per-User Installer (recommended for most)" unless there is some reason you need to use one of the other install methods.
 
-## Key Resources from the Timelapse developers
+## Key Resources from the Timelapse Developers
 
 - :house: [Timelapse Home Page](https://timelapse.ucalgary.ca/)
 - :arrow_down: [Download and Installation](https://timelapse.ucalgary.ca/download/)

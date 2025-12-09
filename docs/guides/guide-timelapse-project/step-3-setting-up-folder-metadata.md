@@ -71,6 +71,7 @@ Examples of useful metadata fields might include (but you may want to refer to t
 * Camera Height
 * Camera Field of View
 * Deployment Start and End Dates/Times
+* SD Card number
 * SD Card Retrieval Notes
 * Observer or Team Member Name
 

@@ -3,7 +3,7 @@
 This guide provides an overview of the AudioMoth sensor workflow. These
 materials introduce users to the complete lifecycle of deploying,
 maintaining, and managing data from AudioMoth bioacoustic sensors, as
-implemented by Conservation Metrics (CMI).
+suggested by Conservation Metrics (CMI).
 
 AudioMoth sensors are low-cost, open-source acoustic recorders used
 widely in ecological monitoring. This guide walks through best practices
@@ -22,35 +22,37 @@ Use this index as the starting point for navigation.
 
 ## Guide Overview
 
-### **1. Sensor Preparation**
+### [**1. Sensor Preparation**](guides/guide-audiomoth/step-1-prepare-audiomoth)
 
 How to prepare AudioMoth devices and microSD cards prior to deployment,
 including firmware updates and required desktop and mobile applications.
 
-### **2. Sensor Programming**
+### [**2. Sensor Programming**](guides/guide-audiomoth/step-2-programming-audiomoth)
 
 Instructions for configuring the AudioMoth recording schedule, gain
 settings, sampling rate, and time synchronization.
 
-### **3. Deployment Procedures**
+### [**3. Deployment Procedures**](guides/guide-audiomoth/step-3-deploying-audiomoth)
 
 Field steps for creating intro recordings, mounting sensors, ensuring
 correct LED behavior, and documenting deployments.
 
-### **4. Checking Sensors & Redeployment**
+### [**4. Checking Sensors & Redeployment**](guides/guide-audiomoth/step-4-checking-redeploying-audiomoth)
 
 Procedures for mid-season battery and card replacement, field-time
 resets using the Chime app, and consistent metadata recording.
 
-### **5. Deployment Information Requirements**
+### [**5. Deployment Information Requirements**](guides/guide-audiomoth/step-5-field-deployment-metadata)
 
 Descriptions of the required metadata fields for every deployment and
 retrieval, with formatting rules and data-entry expectations.
 
-### **6. Data Management & Transfer**
+### [**6. Data Management & Transfer**](guides/guide-audiomoth/step-6-audio-organization)
 
 Guidance on offloading SD cards, project-level storage requirements,
 data mule drives, and how to handle corrupted cards.
+
+### [**Troubleshooting**](guides/guide-audiomoth/troubleshooting)
 
 ### **7. Additional Resources**
 
@@ -59,13 +61,12 @@ and user support forums.
 
 ## Additional Resources
 
--   Getting Started Guide:
-    <https://www.openacousticdevices.info/getting-started>
+-   [Getting Started Guide](https://www.openacousticdevices.info/getting-started)
 
--   Practical User Guide:
-    <https://github.com/rhine3/audiomoth-guide/blob/master/guide.md>
+-   [Practical User Guide](https://github.com/rhine3/audiomoth-guide/blob/master/guide.md)
 
--   AudioMoth Operation Manual:
-    <https://github.com/OpenAcousticDevices/Application-Notes/blob/master/AudioMoth_Operation_Manual.pdf>
+-   [AudioMoth Operation Manual](https://github.com/OpenAcousticDevices/Application-Notes/blob/master/AudioMoth_Operation_Manual.pdf)
 
--   Support Forums: <https://www.openacousticdevices.info/support>
+-  [Tessa Rhienhart's AudioMoth Guide](https://github.com/rhine3/audiomoth-guide/tree/master?tab=readme-ov-file#about-the-practical-audiomoth-guide)
+
+-   [Support Forums](https://www.openacousticdevices.info/support)

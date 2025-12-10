@@ -31,18 +31,17 @@ Below are some recommended settings for standard bird monitoring projects
 ### Advanced Settings
 
 -   Disable: “Require Chime App”
-
-The chime app (smartphone) can be used in the field to set the clock. However we do not want to require it is used for sensors that already have datetime set forrectly. 
+    - The chime app (smartphone) can be used in the field to set the clock. However we do not want to require it is used for sensors that already have datetime set correctly. 
 
 -   Enable: “Use device ID as prefix in WAV filename”
 
 -   Leave all other boxes unchecked.
 
-5.  Click **Configure AudioMoth**.
+-  Click **Configure AudioMoth**.
 
-6.  Wait for the button to return to the ready state.
+-  Wait for the button to return to the ready state.
 
-7.  Eject the device safely.
+-  Eject the device safely.
 
 ## Expected Runtime
 
@@ -83,28 +82,26 @@ most deployment failures.
     computer clock.
 
 3.   **Arm the device** 
-    Switch to **CUSTOM**, check that the LED flashes the expected
-    “armed” pattern, and that the start time matches your schedule.
+    Switch to **CUSTOM**, check that the LED flashes. See the [LED guide](https://www.openacousticdevices.info/led-guide) to diagnose unexpected blinking patterns.
 
 4.   **Record a short ambient test clip**  
     Leave the unit running for ~10–20 seconds. Then switch to USB/OFF
     and inspect the SD card:
 
-    -    A new WAV file should be present.
+      -    A new WAV file should be present.
 
-    -    The file should have the correct timestamp.
+      -    The file should have the correct timestamp.
 
-    -    Playback should contain audible ambient sound and clear
-        triggering.
+      -    Playback should contain audible ambient sound and clear triggering.
 
 5.   **Inspect housing fit**\
     Place the device in its intended housing and confirm that:
 
-    -   No rattling occurs.
+      -   No rattling occurs.
 
-    -    The microphone port is unobstructed.
+      -    The microphone port is unobstructed.
 
-    -    Orientation marks are visible or labeled.
+      -    Orientation marks are visible or labeled.
 
 6.   Any device that fails a sanity check should not be deployed until
     the issue is resolved.
@@ -146,4 +143,6 @@ If unsure, run two devices with different gain settings for 24 hours and compare
 - **Time-of-day schedules:** Target crepuscular or nocturnal species (owls, bats, some insects).  
 - Avoid **very short cycles** (\<1 min files), which increase file fragmentation and SD card wear.
 
-**Tip:** Match the schedule to when the species vocalizes — dawn chorus, nocturnal peaks, rainfall cycles, etc.
+:::tip
+Match the schedule to when the species vocalizes — dawn chorus, nocturnal peaks, rainfall cycles, etc. This can extend deployment duration.  If target species are unknown or if you are interested in general biodiversity monitoring, it is often best to set up a recording schedule that operates 24 hours a day (1 every 10 min/24hrs).
+:::

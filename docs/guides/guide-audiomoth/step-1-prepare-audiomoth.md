@@ -15,45 +15,49 @@ Devices](https://www.openacousticdevices.info/applications):
 -   **Time App** (desktop) – set device clock
 
 -   **Chime App** (mobile) – set clock in the field (from the iPhone app
-    sore or Google Play Store)
+    store or Google Play store)
 
+::: tip
 Ensure all applications are updated. Firmware and Time apps usually do
 not require frequent updates.
+:::
 
 ## Prepare the microSD Card
 
 1.  Insert microSD card into your computer (you will need a microSD card
-    addapter).
+    adapter).
 
 2.  Format the card to **EXFAT**.
 
-    ### Windows Formating Instructions
+::: warning
+This erases all data on the card.
+:::
 
-    1.  Insert the microSD card into your computer using an SD or USB
-        adapter.
+### Windows Formatting Instructions {#sec-windows-formatting-instructions .step}
 
-    2.  Open **File Explorer** and locate the card under **This PC**.
+1.  Insert the microSD card into your computer using an microSD to SD
+    Card adapter.
 
-    3.  Right-click the microSD card and select **Format…**.
+2.  Open **File Explorer** and locate the card under **This PC**.
 
-        ![Windows Drive Formater](images/windows_card_formater.jpg)
+3.  Right-click the microSD card and select **Format…**.
 
-    4.  In the **File System** dropdown, choose **exFAT**.
+    ![Windows Drive Formater](images/windows_card_formater.jpg)
 
-    5.  Leave **Allocation unit size** set to **Default**.
+4.  In the **File System** dropdown, choose **exFAT**.
 
-    6.  Ensure **Quick Format** is checked.
+5.  Leave **Allocation unit size** set to **Default**.
 
-    7.  Click **Start**.
+6.  Ensure **Quick Format** is checked.
 
-    8.  When the confirmation dialog appears, acknowledge that all data
-        will be erased.
+7.  Click **Start**.
 
-    9.  After formatting completes, click **OK**..
+8.  When the confirmation dialog appears, acknowledge that all data will
+    be erased.
 
--   **Warning:** This erases all data on the card.
+9.  After formatting completes, click **OK**..
 
-3.  Safely eject the card.
+Safely eject the card.
 
 ## Prepare the AudioMoth Unit
 

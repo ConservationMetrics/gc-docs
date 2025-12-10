@@ -2,8 +2,8 @@
 
 CMI requires standardized metadata for each sensor deployment. Each row
 in the deployment spreadsheet represents **one device at one location
-for one deployment**. A deployment begins when A sensor is placed in the
-field and ends when that sensor is serviced (batteries/sd card changed).
+for one deployment**. A deployment begins when a sensor is placed in the
+field and ends when that sensor is serviced (batteries/sd card changed) or retrieved from the field.
 
 ### Required Fields
 

@@ -14,6 +14,10 @@ estimated to record), replace batteries and SD cards at each check.
 
 ### Resetting Time in the Field
 
+:::tip
+Familiarize yourself with the [LED](https://www.openacousticdevices.info/led-guide) flashing patterns to ensure your redeployment is successful.
+:::
+
 1.  Switch to **Custom** — If the LEDs show solid red + flashing green
     it means the date/time is not set.
 
@@ -34,7 +38,7 @@ estimated to record), replace batteries and SD cards at each check.
     > Ex. "This is Abram Fleishman on 8 Dec 2025 at 12:10 PM. I am at
     > Site 17 32.95332 N, -111.45922 W. I am deploying Sensor A01 at the
     > edge of a forest with tall trees to the west and a field to the
-    > right. There is a goose nest 3 m to the SE of the sensor. "
+    > east. There is a goose nest 3 m to the SE of the sensor. "
 
 2.  Switch to **USB/Off** for 5 seconds.
 

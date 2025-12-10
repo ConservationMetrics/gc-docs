@@ -58,12 +58,13 @@ data mule drives, and how to handle corrupted cards.
 
 ### [**Troubleshooting**](guides/guide-audiomoth/troubleshooting)
 
-### **7. Additional Resources**
+
+
+
+## Additional Resources
 
 Helpful links to official AudioMoth documentation, operation manuals,
 and user support forums.
-
-## Additional Resources
 
 -   [Getting Started Guide](https://www.openacousticdevices.info/getting-started)
 

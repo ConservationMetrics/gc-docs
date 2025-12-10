@@ -1,4 +1,4 @@
-# Deleting Files and Data
+# Appendix 2: Deleting Files and Data
 
 Timelapse provides several tools for removing images, records, and associated metadata from a project. Deletions are permanent, so these tools should be used with care—especially when working in a shared or multi-annotator project.
 
@@ -48,6 +48,8 @@ There are many reasons that files may need to be deleted from a project:
 - Images are empty and your organization/collaborators have no plans to train detection models in the future. 
 
 We generally recommend to save all images collected by the cameras, however, each project will need to decide on their own policy and workflow. 
+
+---
 
 Timelapse allows you to delete:
 

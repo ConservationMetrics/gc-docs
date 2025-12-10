@@ -46,9 +46,9 @@ The chime app (smartphone) can be used in the field to set the clock. However we
 
 ## Expected Runtime
 
--   **Storage:** \~1336 MB/day → 64 GB ≈ 49 days
+-   **Storage:** ~1336 MB/day → 64 GB ≈ 49 days
 
--   **Battery:** \~30 days with 3×AA alkaline
+-   **Battery:** ~30 days with 3×AA alkaline
 
 -   Typical deployments: 3–6 weeks depending on site conditions.
 
@@ -72,22 +72,22 @@ check to ensure the device, SD card, and configuration are working as
 expected. These tests take less than two minutes per unit and prevent
 most deployment failures.
 
-1.  **Insert batteries and SD card**\
+1.  **Insert batteries and SD card**  
     Confirm the SD card clicks securely into place and the battery
     contacts are clean.
 
-2.   **Confirm correct configuration**\
+2.   **Confirm correct configuration**  
     Connect the device to the AudioMoth Config App and ensure the
     intended *sample rate*, *gain*, *schedule*, and *timezone* are
     applied. Verify that the device time is within a few seconds of the
     computer clock.
 
-3.   **Arm the device**\
+3.   **Arm the device** 
     Switch to **CUSTOM**, check that the LED flashes the expected
     “armed” pattern, and that the start time matches your schedule.
 
-4.   **Record a short ambient test clip**\
-    Leave the unit running for \~10–20 seconds. Then switch to USB/OFF
+4.   **Record a short ambient test clip**  
+    Leave the unit running for ~10–20 seconds. Then switch to USB/OFF
     and inspect the SD card:
 
     -    A new WAV file should be present.
@@ -144,7 +144,6 @@ If unsure, run two devices with different gain settings for 24 hours and compare
 - **Continuous recording:** Best for unknown vocalization patterns; highest battery and storage cost.  
 - **Duty-cycled recording:** Useful for long-term monitoring (e.g., 1 min every 10 min).  
 - **Time-of-day schedules:** Target crepuscular or nocturnal species (owls, bats, some insects).  
-- Avoid **very short cycles** (<1 min files), which increase file fragmentation and SD card wear.
+- Avoid **very short cycles** (\<1 min files), which increase file fragmentation and SD card wear.
 
 **Tip:** Match the schedule to when the species vocalizes — dawn chorus, nocturnal peaks, rainfall cycles, etc.
-

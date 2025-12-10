@@ -14,7 +14,7 @@
 
 ### Main Settings
 
-Below are some reccomended settings for standard bird monitoring projects
+Below are some recommended settings for standard bird monitoring projects
 
 -   **Sample rate:** 32 kHz
 

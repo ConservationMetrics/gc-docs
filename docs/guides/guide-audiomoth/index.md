@@ -1,4 +1,8 @@
-# AudioMoth Guide
+---
+sidebar_position: 2
+---
+
+# 🔊+🦉 Guide: Bioacoustics Basics with AudioMoth Sensors 
 
 This guide provides an overview of the AudioMoth sensor workflow. These
 materials introduce users to the complete lifecycle of deploying,

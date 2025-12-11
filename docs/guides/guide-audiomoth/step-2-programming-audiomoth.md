@@ -85,22 +85,22 @@ most deployment failures.
     Switch to **CUSTOM**, check that the LED flashes as expected (if sensor is between scheduled recordings green light will blink slowly, if currently recording red light will flash quickly). See the [LED guide](https://www.openacousticdevices.info/led-guide) to diagnose unexpected blinking patterns.
 
 4.   **Record a short ambient test clip**  
-    Leave the unit running for ~10–20 seconds. Then switch to USB/OFF
-    and inspect the SD card:
 
-      -    A new WAV file should be present.
+:::tip
+See the [Testing Acoustic Sensors](guides/guide-audiomoth/step-7-testing-sensors) for the recommended testing workflow.
+:::
 
-      -    The file should have the correct timestamp.
+Leave the unit running for ~5–10 seconds while speaking at a "normal" volume. Then switch to USB/OFF and inspect the SD card:
 
-      -    Playback should contain audible ambient sound and clear triggering.
+    -    A new WAV file should be present.
+    -    The file should have the correct timestamp.
+    -    Playback should contain your voice clearly.
 
 5.   **Inspect housing fit**\
     Place the device in its intended housing and confirm that:
 
       -   No rattling occurs.
-
       -    The microphone port is unobstructed.
-
       -    Orientation marks are visible or labeled.
 
 6.   Any device that fails a sanity check should not be deployed until

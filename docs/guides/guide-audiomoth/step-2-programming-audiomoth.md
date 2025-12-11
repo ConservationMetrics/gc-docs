@@ -82,7 +82,7 @@ most deployment failures.
     computer clock. Then disconnect the AudioMoth from your computer.
 
 3.   **Arm the device** 
-    Switch to **CUSTOM**, check that the LED flashes. See the [LED guide](https://www.openacousticdevices.info/led-guide) to diagnose unexpected blinking patterns.
+    Switch to **CUSTOM**, check that the LED flashes as expected (if sensor is between scheduled recordings green light will blink slowly, if currently recording red light will flash quickly). See the [LED guide](https://www.openacousticdevices.info/led-guide) to diagnose unexpected blinking patterns.
 
 4.   **Record a short ambient test clip**  
     Leave the unit running for ~10–20 seconds. Then switch to USB/OFF

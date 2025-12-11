@@ -31,7 +31,7 @@ Below are some recommended settings for standard bird monitoring projects
 ### Advanced Settings
 
 -   Disable: “Require Chime App”
-    - The chime app (smartphone) can be used in the field to set the clock. However we do not want to require it is used for sensors that already have datetime set correctly. 
+    - The chime app (smartphone) can be used to reset the clock in the field after changing batteries. However, we do not want to require it to be used for sensors that already have datetime set correctly (ie, upon initial deployment). 
 
 -   Enable: “Use device ID as prefix in WAV filename”
 

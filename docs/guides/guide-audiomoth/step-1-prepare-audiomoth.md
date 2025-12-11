@@ -24,6 +24,8 @@ not require frequent updates.
 
 ## Prepare the microSD Card
 
+AudioMoths require a microSD card to record.  The creators of audiomoth have tested many cards and have found that `Sandisk Extreme UHS Speed Class 3 (U3) microSDXC` cards are the most energy efficient.  See the [SD Card Guide](https://www.openacousticdevices.info/sd-card-guide) for more info. 
+
 1.  Insert microSD card into your computer (you will need a microSD card
     adapter).
 

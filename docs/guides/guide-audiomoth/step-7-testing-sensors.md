@@ -14,7 +14,7 @@ A good way to test them is to use a recording of "white noise" (e.g.
 
 -   Set each recorder in the same place (if doing one-by-one) and
     orientation and record a short \~5-10 second clip with the white
-    noise playing.\
+    noise playing.
 
 -   Make sure to keep the speaker volume consistent.
 

@@ -61,7 +61,7 @@ If you have already programmed the audio moth and the batteries have been instal
 
     -   The AudioMoth will store time in **UTC**.
 
-If you see a warning about fast clock drift, verify manually—this
+If you see a warning about fast clock drift, verify the time on your AudioMoth manually - this
 warning is often incorrect.
 
 ## Pre-deployment Sanity Check / Test

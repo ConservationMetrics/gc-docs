@@ -85,7 +85,8 @@ for some reason. The versions will be listed in the "Flash App".
 
 1.  Open the Flash App.
 
-    ![](images/1_am_flash_app.jpg)
+    ![This screenshot has not detected a device and cannot be "flashed"
+    until one is connected](images/1_am_flash_app.jpg)
 
 2.  Download the latest firmware.
 

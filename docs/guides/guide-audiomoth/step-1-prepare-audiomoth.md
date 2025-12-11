@@ -35,7 +35,7 @@ This erases all data on the card.
 
 ### Windows Formatting Instructions {#sec-windows-formatting-instructions .step}
 
-1.  Insert the microSD card into your computer using an microSD to SD
+1.  Insert the microSD card into your computer using a microSD to SD
     Card adapter.
 
 2.  Open **File Explorer** and locate the card under **This PC**.

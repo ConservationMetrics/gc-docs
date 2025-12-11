@@ -1,5 +1,9 @@
 # Step 3: Sensor Deployment
 
+:::important
+AudioMoth sensors can be deployed like most other acoustic sensors, however, it is really important to remember to a) check that the audiomoth is correctly oriented in the case, and b) that the time is correctly set prior to deployment.
+:::
+
 ## Placement Guidance
 
 -   Mount units 1–2 m above ground for general biodiversity

@@ -79,7 +79,7 @@ most deployment failures.
     Connect the device to the AudioMoth Config App and ensure the
     intended *sample rate*, *gain*, *schedule*, and *timezone* are
     applied. Verify that the device time is within a few seconds of the
-    computer clock.
+    computer clock. Then disconnect the AudioMoth from your computer.
 
 3.   **Arm the device** 
     Switch to **CUSTOM**, check that the LED flashes. See the [LED guide](https://www.openacousticdevices.info/led-guide) to diagnose unexpected blinking patterns.

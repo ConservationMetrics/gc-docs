@@ -74,7 +74,7 @@ Safely eject the card.
 
 5.  Insert the freshly formatted microSD card.
 
-6.  Connect the AudioMoth to the computer via USB.
+6.  Connect the AudioMoth to the computer via a USB cable that is capable of data transfer.
 
 ## Update Firmware
 

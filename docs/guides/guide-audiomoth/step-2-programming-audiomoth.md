@@ -31,7 +31,7 @@ Below are some recommended settings for standard bird monitoring projects
 ### Advanced Settings
 
 -   Disable: “Require Chime App”
-    - The chime app (smartphone) can be used in the field to set the clock. However we do not want to require it is used for sensors that already have datetime set correctly. 
+    - The chime app (smartphone) can be used to reset the clock in the field after changing batteries. However, we do not want to require it to be used for sensors that already have datetime set correctly (ie, upon initial deployment). 
 
 -   Enable: “Use device ID as prefix in WAV filename”
 
@@ -79,10 +79,10 @@ most deployment failures.
     Connect the device to the AudioMoth Config App and ensure the
     intended *sample rate*, *gain*, *schedule*, and *timezone* are
     applied. Verify that the device time is within a few seconds of the
-    computer clock.
+    computer clock. Then disconnect the AudioMoth from your computer.
 
 3.   **Arm the device** 
-    Switch to **CUSTOM**, check that the LED flashes. See the [LED guide](https://www.openacousticdevices.info/led-guide) to diagnose unexpected blinking patterns.
+    Switch to **CUSTOM**, check that the LED flashes as expected (if sensor is between scheduled recordings green light will blink slowly, if currently recording red light will flash quickly). See the [LED guide](https://www.openacousticdevices.info/led-guide) to diagnose unexpected blinking patterns.
 
 4.   **Record a short ambient test clip**  
     Leave the unit running for ~10–20 seconds. Then switch to USB/OFF

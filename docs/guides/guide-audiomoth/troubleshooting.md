@@ -34,3 +34,14 @@ Replace any card that shows repeated errors—SD card failure rates increase sha
 - Incorrect gasket alignment or blocked microphone ports can severely degrade SNR.
 
 - Always inspect the rubber seal for debris or compression wear before closing the case.
+
+## "Early" Battery Failure
+
+Batteries often fail sooner than expected by the estimates provided by the configuration. Symptoms of early battery failure (in contrast to other types of failures) are:
+
+- fewer days of recordings than expected 
+- recording schedule for the last couple days with recordings being inconsistent
+- files being shorter than expected and inconsistent
+- Many 0kb files 
+
+Early battery failure is often caused by power draw from the SD card.  Not all SD cards are created equal and it is best to select a recommended card brand and model based on [SD Purchaing Guide](https://www.openacousticdevices.info/sd-card-guide). 

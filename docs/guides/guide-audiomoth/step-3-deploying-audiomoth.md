@@ -41,7 +41,7 @@ Record the following on the deployment datasheet:
 
     -   Red LED will flash 1–4 times indicating battery level.
 
-6.  Switch to **Custom** to start scheduled operation.
+6.  Switch to **Custom** to start scheduled operation. Ensure that LED flashes red if sensor is currently scheduled to record, or blinks green if between recordings.
 
 ## Deploy the Sensor
 

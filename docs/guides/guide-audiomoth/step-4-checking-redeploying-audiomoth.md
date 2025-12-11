@@ -23,6 +23,10 @@ Familiarize yourself with the [LED](https://www.openacousticdevices.info/led-gui
 
 2.  Hold smartphone with **Chime App** near the microphone.
 
+:::tip 
+You may need to hold the phone very close to the sensor, especially if soundscape is loud.
+:::
+
 3.  Tap **Play Chime**.
 
 4.  Once red LED turns off and green LED flashes intermittently, the

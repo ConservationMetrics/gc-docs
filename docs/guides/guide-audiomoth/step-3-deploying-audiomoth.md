@@ -45,7 +45,7 @@ Record the following on the deployment datasheet:
 
     -   Red LED will flash 1–4 times indicating battery level.
 
-6.  Switch to **Custom** to start scheduled operation.
+6.  Switch to **Custom** to start scheduled operation. Ensure that LED flashes red if sensor is currently scheduled to record, or blinks green if between recordings.
 
 :::important
 When the sensor is first switched to **Custom**, if the LEDs show solid red + flashing green it means the date/time is not set!  See [Resetting the Time in the Field](guides/guide-audiomoth/step-4-checking-redeploying-audiomoth#resetting-time-in-the-field) for info on how to correct the time without needing to plug it back in to a computer.

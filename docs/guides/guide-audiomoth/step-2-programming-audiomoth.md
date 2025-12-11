@@ -24,7 +24,7 @@ Below are some recommended settings for standard bird monitoring projects
 
 -   **Recording duration:** 1 min
 
--   **Schedule:** 00:00–24:00 (set the local timezone e.g. UTC−7)
+-   **Schedule:** 00:00–24:00 (set in the local timezone e.g. UTC−7)
 
 -   **Filtering:** None
 
@@ -53,7 +53,7 @@ Below are some recommended settings for standard bird monitoring projects
 
 ## Set Device Time
 
-If you have already programmed the audio moth and the batteries have been installed continuously since programming, the audiomoth clock should already be set correctly.  However, if the batteries have been removed at some point, you can use the Time App to just set the clock.
+If you have already programmed the audio moth and the batteries have been installed continuously since programming, the audiomoth clock should already be set correctly. However, if the batteries have been removed at some point, you can use the Time App to set just the clock.
 
 1.  Open the **Time App**.
 
@@ -61,7 +61,7 @@ If you have already programmed the audio moth and the batteries have been instal
 
     -   The AudioMoth will store time in **UTC**.
 
-If you see a warning about fast clock drift, verify manually—this
+If you see a warning about fast clock drift, verify the time on your AudioMoth manually - this
 warning is often incorrect.
 
 ## Pre-deployment Sanity Check / Test

@@ -24,7 +24,7 @@ Below are some recommended settings for standard bird monitoring projects
 
 -   **Recording duration:** 1 min
 
--   **Schedule:** 00:00–24:00 (set the local timezone e.g. UTC−7)
+-   **Schedule:** 00:00–24:00 (set in the local timezone e.g. UTC−7)
 
 -   **Filtering:** None
 

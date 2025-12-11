@@ -1,20 +1,10 @@
 # Step 2: Programming the AudioMoth
 
-## Load Configuration
-
-1.  Open the **Configuration App**.
-
-    ![](images/am_configurator.jpg)
-
-2.  Load your configuration file: **File → Open Configuration**.
-
-3.  Set the device clock display: **Time → Local**.
-
-4.  Adjust settings:
-
-### Main Settings
+AudioMoths can be configured with many different settings for different objectives.  For comprehensive documentation please see the [Operation Manual](https://github.com/OpenAcousticDevices/Application-Notes/raw/master/AudioMoth_Operation_Manual.pdf). 
 
 Below are some recommended settings for standard bird monitoring projects
+
+### Main Settings
 
 -   **Sample rate:** 32 kHz
 
@@ -37,6 +27,10 @@ Below are some recommended settings for standard bird monitoring projects
 
 -   Leave all other boxes unchecked.
 
+:::note
+If you are using NiMH or LiPO rechargeable batteries you need to check the box Use NiMH/LiPo voltage range for battery level indication.
+:::
+
 -  Click **Configure AudioMoth**.
 
 -  Wait for the button to return to the ready state.
@@ -50,6 +44,18 @@ Below are some recommended settings for standard bird monitoring projects
 -   **Battery:** ~30 days with 3×AA alkaline
 
 -   Typical deployments: 3–6 weeks depending on site conditions.
+
+## Load Configuration
+
+CMI is happy to help you set up a config.  Please reach out if you want our advice or assitance.
+
+1.  Open the **Configuration App**.
+
+    ![](images/am_configurator.jpg)
+
+2.  Load your configuration file: **File → Open Configuration**.
+
+3.  Set the device clock display: **Time → Local**.
 
 ## Set Device Time
 

@@ -31,7 +31,7 @@ Replace any card that shows repeated errors—SD card failure rates increase sha
 
 - Loose housings can cause wind rumble or knocking noises in recordings.
 
-- Incorrect gasket alignment or blocked microphone ports can severely degrade SNR.
+- Incorrect gasket alignment or blocked microphone ports can severely degrade Signal-to-Noise Ratio (SNR).
 
 - Always inspect the rubber seal for debris or compression wear before closing the case.
 

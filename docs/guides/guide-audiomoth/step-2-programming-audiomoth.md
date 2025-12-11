@@ -132,7 +132,7 @@ Selecting the appropriate recording settings depends on the target taxa, backgro
   - faint signals (small passerines, rodents, some frogs).
 - High gain increases the risk of **clipping**, especially during rain, wind, or loud species (hornbills, baboons, gunshots).
 
-If unsure, run two devices with different gain settings for 24 hours and compare SNR.
+If unsure, run two devices with different gain settings for 24 hours and compare Signal-to-Noise Ratio (SNR).
 
 ---
 

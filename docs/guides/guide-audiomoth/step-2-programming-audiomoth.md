@@ -53,7 +53,7 @@ Below are some recommended settings for standard bird monitoring projects
 
 ## Set Device Time
 
-If you have already programmed the audio moth and the batteries have been installed continuously since programming, the audiomoth clock should already be set correctly.  However, if the batteries have been removed at some point, you can use the Time App to just set the clock.
+If you have already programmed the audio moth and the batteries have been installed continuously since programming, the audiomoth clock should already be set correctly. However, if the batteries have been removed at some point, you can use the Time App to set just the clock.
 
 1.  Open the **Time App**.
 

@@ -30,7 +30,7 @@ The process works on videos too - frames are extracted and analyzed as images, w
 
 Timelapse integrates with **AddaxAI** (formerly called EcoAssist), which provides an easy interface to Microsoft's widely-used [MegaDetector](https://github.com/agentmorris/MegaDetector) AI recognition system. MegaDetector is specifically designed for wildlife camera trap images and is one of the most reliable detection systems available for ecological research.
 
-AddaxAI also allows running of SpeciesNet a global species recognition model, as well as several region/habitat specific models.
+AddaxAI also allows running of **SpeciesNet**, a global species recognition model, as well as several region- or habitat-specific models.
 
 ### Installation
 

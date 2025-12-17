@@ -56,6 +56,12 @@ retrieval, with formatting rules and data-entry expectations.
 Guidance on offloading SD cards, project-level storage requirements,
 data mule drives, and how to handle corrupted cards.
 
+### [**Appendix 1: Testing Acoustic Sensors**](guides/guide-audiomoth/step-7-testing-sensors)
+
+Guidance for testing acoustic sensors prior to field deployments.  This page
+describes best practices to assure your acoustic hardware is functioning prior
+to putting it out at remote sites for prolonged periods.
+
 ### [**Troubleshooting**](guides/guide-audiomoth/troubleshooting)
 
 

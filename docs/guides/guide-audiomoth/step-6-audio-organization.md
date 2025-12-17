@@ -1,6 +1,6 @@
 # Step 6: Data Transfer & Management
 
-Files should be organized in a similar fashion to the [Camera Trap
+Files should be organized in a similar fashion to [camera trap
 data](/guides/guide-timelapse-project/step-1-organizing-imagery.md).
 
 ## Copying Data

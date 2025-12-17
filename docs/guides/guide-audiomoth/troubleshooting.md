@@ -44,4 +44,4 @@ Batteries often fail sooner than expected by the estimates provided by the confi
 - files being shorter than expected and inconsistent
 - Many 0kb files 
 
-Early battery failure is often caused by power draw from the SD card.  Not all SD cards are created equal and it is best to select a recommended card brand and model based on [SD Purchaing Guide](https://www.openacousticdevices.info/sd-card-guide). 
+Early battery failure is often caused by power draw from the SD card.  Not all SD cards are created equal and it is best to select a recommended card brand and model based on [SD Purchasing Guide](https://www.openacousticdevices.info/sd-card-guide). 

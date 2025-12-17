@@ -47,7 +47,7 @@ Timelapse does not have the ability to set custom field validations beyond what 
 
 For example, for Latitude and Longitude fields, these can be set up as Number fields of Decimal type to allow for positive and negative decimal coordinates. But it is **not** possible to set limits of 180 to -180 or 90 to -90; so basically _any_ decimal number can be entered. 
 
-Hence, it is important to be very careful when doing data entry into the Timelapse for these kinds of fields.
+Hence, it is important to be very careful when doing data entry into Timelapse for these kinds of fields.
 :::
 
 

@@ -33,7 +33,7 @@ _Example of a Timelapse template, using the practice image set._
 
 **Suggested fields:**
 
-- `Indiginous Name` (**Choices** or **text**) — Indigenous Name for the species found in the image
+- `Indigenous Name` (**Choices** or **text**) — Indigenous Name for the species found in the image
 - `English Name` (**Choices**) — English name for the species found in the image (optional)
 - `Scientific Name` (**Choices**) — Scientific name for the species found in the image (optional)
 - `Count` (**Counts**) — count the number of species

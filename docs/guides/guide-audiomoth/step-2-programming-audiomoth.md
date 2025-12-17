@@ -59,7 +59,7 @@ CMI is happy to help you set up a config.  Please reach out if you want our advi
 
 ## Set Device Time
 
-If you have already programmed the audio moth and the batteries have been installed continuously since programming, the audiomoth clock should already be set correctly. However, if the batteries have been removed at some point, you can use the Time App to set just the clock.
+If you have already programmed the AudioMoth and the batteries have been installed continuously since programming, the AudioMoth clock should already be set correctly. However, if the batteries have been removed at some point, you can use the Time App to set just the clock.
 
 1.  Open the **Time App**.
 

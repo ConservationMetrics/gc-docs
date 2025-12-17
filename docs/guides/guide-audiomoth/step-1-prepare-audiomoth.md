@@ -15,7 +15,7 @@ Devices](https://www.openacousticdevices.info/applications):
 -   **Time App** (desktop) – set device clock
 
 -   **Chime App** (mobile) – set clock in the field (from the iPhone app
-    store or Google Play store)
+    store or Google Play Store for Android devices)
 
 ::: tip
 Ensure all applications are updated. Firmware and Time apps usually do

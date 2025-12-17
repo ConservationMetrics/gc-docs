@@ -7,7 +7,7 @@ sidebar_position: 2
 This guide provides an overview of the AudioMoth sensor workflow. These
 materials introduce users to the complete lifecycle of deploying,
 maintaining, and managing data from AudioMoth bioacoustic sensors, as
-suggested by Conservation Metrics (CMI).
+suggested by [Conservation Metrics (CMI)](https://conservationmetrics.com).
 
 AudioMoth sensors are low-cost, open-source acoustic recorders used
 widely in ecological monitoring. This guide walks through best practices

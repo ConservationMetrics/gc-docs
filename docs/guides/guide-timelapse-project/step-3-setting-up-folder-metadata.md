@@ -12,7 +12,15 @@ Timelapse supports folder-level metadata, which allows you to associate project,
 _Example of Timelapse project folder-level metadata, using the practice image set._
 
 :::tip
-Before enabling folder-level metadata, think through your folder hierarchy and naming conventions. Changes later can break links between data and folders, so it’s best to finalize your structure first.
+
+Before enabling folder-level metadata, think through your folder hierarchy and naming conventions. Changes later can break links between data and folders, so it’s *important* to finalize your structure first.
+
+:::
+
+:::important
+
+Adding folder-level metadata into Timelapse is completely optional. If you already have a more sophisticated method for collecting station and deployment metadata and that information is already digitized, there is no need to add these types of metadata to the Timelapse itself.
+
 :::
 
 ## How to set up Folder metadata
@@ -39,7 +47,7 @@ Timelapse does not have the ability to set custom field validations beyond what 
 
 For example, for Latitude and Longitude fields, these can be set up as Number fields of Decimal type to allow for positive and negative decimal coordinates. But it is **not** possible to set limits of 180 to -180 or 90 to -90; so basically _any_ decimal number can be entered. 
 
-Hence, it is important to be very careful when doing data entry into the Timelapse Template Editor for these kinds of fields.
+Hence, it is important to be very careful when doing data entry into Timelapse for these kinds of fields.
 :::
 
 
@@ -60,7 +68,10 @@ Examples of useful metadata fields might include (but you may want to refer to t
 * Camera Trap ID
 * Site or Station Name
 * Latitude and Longitude
-* Deployment Start and End Dates
+* Camera Height
+* Camera Field of View
+* Deployment Start and End Dates/Times
+* SD Card number
 * SD Card Retrieval Notes
 * Observer or Team Member Name
 

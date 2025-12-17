@@ -26,43 +26,43 @@ Use this index as the starting point for navigation.
 
 ## Guide Overview
 
-### [**1. Sensor Preparation**](guides/guide-audiomoth/step-1-prepare-audiomoth)
+### [**1. Sensor Preparation**](step-1-prepare-audiomoth)
 
 How to prepare AudioMoth devices and microSD cards prior to deployment,
 including firmware updates and required desktop and mobile applications.
 
-### [**2. Sensor Programming**](guides/guide-audiomoth/step-2-programming-audiomoth)
+### [**2. Sensor Programming**](step-2-programming-audiomoth)
 
 Instructions for configuring the AudioMoth recording schedule, gain
 settings, sampling rate, and time synchronization.
 
-### [**3. Deployment Procedures**](guides/guide-audiomoth/step-3-deploying-audiomoth)
+### [**3. Deployment Procedures**](step-3-deploying-audiomoth)
 
 Field steps for creating intro recordings, mounting sensors, ensuring
 correct LED behavior, and documenting deployments.
 
-### [**4. Checking Sensors & Redeployment**](guides/guide-audiomoth/step-4-checking-redeploying-audiomoth)
+### [**4. Checking Sensors & Redeployment**](step-4-checking-redeploying-audiomoth)
 
 Procedures for mid-season battery and card replacement, field-time
 resets using the Chime app, and consistent metadata recording.
 
-### [**5. Deployment Information Requirements**](guides/guide-audiomoth/step-5-field-deployment-metadata)
+### [**5. Deployment Information Requirements**](step-5-field-deployment-metadata)
 
 Descriptions of the required metadata fields for every deployment and
 retrieval, with formatting rules and data-entry expectations.
 
-### [**6. Data Management & Transfer**](guides/guide-audiomoth/step-6-audio-organization)
+### [**6. Data Management & Transfer**](step-6-audio-organization)
 
 Guidance on offloading SD cards, project-level storage requirements,
 data mule drives, and how to handle corrupted cards.
 
-### [**Appendix 1: Testing Acoustic Sensors**](guides/guide-audiomoth/step-7-testing-sensors)
+### [**Appendix 1: Testing Acoustic Sensors**](step-7-testing-sensors)
 
 Guidance for testing acoustic sensors prior to field deployments.  This page
 describes best practices to assure your acoustic hardware is functioning prior
 to putting it out at remote sites for prolonged periods.
 
-### [**Troubleshooting**](guides/guide-audiomoth/troubleshooting)
+### [**Troubleshooting**](troubleshooting)
 
 
 

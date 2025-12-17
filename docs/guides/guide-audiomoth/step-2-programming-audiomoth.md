@@ -93,7 +93,7 @@ most deployment failures.
 4.   **Record a short ambient test clip**  
 
 :::tip
-See the [Testing Acoustic Sensors](guides/guide-audiomoth/step-7-testing-sensors) for the recommended testing workflow.
+See the [Testing Acoustic Sensors](step-7-testing-sensors) for the recommended testing workflow.
 :::
 
 Leave the unit running for ~5–10 seconds while speaking at a "normal" volume. Then switch to USB/OFF and inspect the SD card:

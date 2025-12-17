@@ -48,6 +48,6 @@ You don't have to use scientific names for your species dropdown if you don't wa
 
 :::info
 
-Your project template data is stored in a file called `TimelapseTemplate.tdb`. You may rename this file as long as you do not have special characters or "spaces" in the filename.  Please make sure this file is always at the root level of your imagery set. (Timelapse will create it there when you start a new project.)
+Your project template data is stored in a file called `TimelapseTemplate.tdb`. You may rename this file as long as you do not have special characters or spaces in the filename. Please make sure this file is always at the root level of your imagery set. (Timelapse will create it there when you start a new project.)
 
 :::

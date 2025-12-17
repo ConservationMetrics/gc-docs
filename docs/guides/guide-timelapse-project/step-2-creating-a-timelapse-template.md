@@ -33,20 +33,21 @@ _Example of a Timelapse template, using the practice image set._
 
 **Suggested fields:**
 
-- `Species` (**Choices**) — count the species found in the image
+- `Indigenous Name` (**Choices** or **text**) — Indigenous Name for the species found in the image
+- `English Name` (**Choices**) — English name for the species found in the image (optional)
+- `Scientific Name` (**Choices**) — Scientific name for the species found in the image (optional)
 - `Count` (**Counts**) — count the number of species
 - `Notes` (**Notes**) — for reviewer comments
-- `Highlight` (**Flag**) — to mark notable images
-- Additional `Notes` field — for general observations
+- `Favorite` (**Flag**) — to mark notable images
 
 :::tip
 
-You don't have to use scientific names for your species dropdown if you don't want to. You can use Indigenous names instead, and later join those with scientific names (if so desired.)
+You don't have to use scientific names for your species dropdown if you don't want to. You can use Indigenous names instead, and later join those with scientific names (if so desired).
 
 :::
 
 :::info
 
-Your project template data is stored in a file called `TimelapseTemplate.tdb`. Please make sure this file is always at the root level of your imagery set. (Timelapse will create it there when you start a new project.)
+Your project template data is stored in a file called `TimelapseTemplate.tdb`. You may rename this file as long as you do not have special characters or spaces in the filename. Please make sure this file is always at the root level of your imagery set. (Timelapse will create it there when you start a new project.)
 
 :::

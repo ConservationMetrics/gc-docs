@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Introduction
 
-[Timelapse](https://timelapse.ucalgary.ca/) is a **Windows OS software for reviewing camera trap data and transforming raw image and video files into structured data** that can provide insights into species presence and population trends. This is a quick introduction to using the software.
+[Timelapse](https://timelapse.ucalgary.ca/) is a **Windows OS software for reviewing camera trap data and transforming raw image and video files into structured data** that can provide insights into species presence, diversity, and population trends. This is a quick introduction to using the software.
 
 ![Timelapse Software screenshot](images/timelapse.jpg)
 
@@ -16,7 +16,11 @@ Timelapse is actively developed, open source ([GitHub repo](https://github.com/s
 
 :::
 
-## Key Resources
+## Installing Timelapse
+
+Timelapse can be downloaded [here](https://timelapse.ucalgary.ca/download/). There are three different install methods. We recommend using the "1 MSI Per-User Installer (recommended for most)" unless there is some reason you need to use one of the other install methods.
+
+## Key Resources from the Timelapse Developers
 
 - :house: [Timelapse Home Page](https://timelapse.ucalgary.ca/)
 - :arrow_down: [Download and Installation](https://timelapse.ucalgary.ca/download/)

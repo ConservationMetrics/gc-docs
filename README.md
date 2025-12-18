@@ -20,13 +20,17 @@ This command starts a local development server and opens up a browser window. Mo
 
 ### Option 2: With Docker (no Node installation required)
 
-If you don't have Node.js installed locally, you can use Docker:
+If you don't have Node.js installed locally, you can use Docker.
+
+First, build the Docker image:
 
 ```bash
-# Build the Docker image
 docker build -t gc-docs .
+```
 
-# Run the development server with hot-reloading
+Then run the development server:
+
+```bash
 docker run -p 3000:3000 \
   -v $(pwd)/docs:/app/docs \
   -v $(pwd)/src:/app/src \
@@ -39,10 +43,6 @@ docker run -p 3000:3000 \
 NOTE: If you are on windows and running in git bash you need to at the -W flag to the docker run command.
 
 ```bash
-# Build the Docker image
-docker build -t gc-docs .
-
-# Run the development server with hot-reloading
 docker run -p 3000:3000 \
   -v "$(pwd -W)/docs:/app/docs" \
   -v "$(pwd -W)/src:/app/src" \

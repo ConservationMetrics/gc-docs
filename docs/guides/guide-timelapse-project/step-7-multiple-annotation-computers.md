@@ -1,4 +1,4 @@
-# Appendix 1: Enabling >1 computer for Labeling
+# Appendix 1: Enabling Multiple Computers for Labeling
 
 Large Timelapse projects often involve multiple site folders, each containing its own copy (“child set”) of the project database (`.ddb`). Timelapse allows you to check out subsets of a project, annotate them independently (on a different computer or user), and then merge the changes back into the primary database. This workflow helps teams scale up annotation across many sites or observers.
 

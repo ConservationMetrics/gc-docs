@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# 🐾 Guide: Setting up a Project in Timelapse
+# 📸+🐾 Guide: Setting up a Camera Trap Project in Timelapse
 
 ## Introduction
 

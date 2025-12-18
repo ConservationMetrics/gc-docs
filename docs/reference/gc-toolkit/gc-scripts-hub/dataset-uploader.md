@@ -41,7 +41,7 @@ Select your file and click **Upload File**. When the upload completes, proceed t
 
 ![Upload your file and confirm success](./images/dataset-uploader-4.jpg)
 
-**Accepted formats**: CSV, GeoJSON, GPX, JSON, KML, XLS, XLSX, KMZ
+**Accepted formats**: CSV, GeoJSON, GPX, JSON, KML, XLS, XLSX, KMZ, XML (SMART)
 (Shapefiles are not yet supported.)
 
 ### 4. (Optional) Choose a known data source

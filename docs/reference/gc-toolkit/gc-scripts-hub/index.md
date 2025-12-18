@@ -22,6 +22,7 @@ The GC Scripts Hub includes connectors that automatically gather data from vario
 - **[CoMapeo](/reference/connected-applications/comapeo/)**: Import community mapping data and observations, with support for photos and other attachments
 - **ArcGIS**: Download data from ArcGIS Online, including from tools such as Survey123
 - **Locus Map**: Import GPS tracks and mapping data
+- **SMART**: Import patrol data from SMART Desktop
 
 ## 📤 Data Export & Sharing
 

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+tags: [itu-3, idm, opu, tsp]
 ---
 
 # Helpful SQL Queries for Superset

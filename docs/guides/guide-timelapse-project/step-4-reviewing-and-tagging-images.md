@@ -1,3 +1,6 @@
+---
+tags: [itu-3, opu, tsp]
+---
 # Step 4: Reviewing and Tagging Images
 
 The process of reviewing and tagging photos will vary depending on your image dataset and project goals. The steps below outline a generalized workflow for tagging images.

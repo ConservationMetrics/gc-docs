@@ -1,3 +1,7 @@
+---
+tags: [idm]
+---
+
 # Pillars of Data Sovereignty in Guardian Connector
 
 :::info

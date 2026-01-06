@@ -1,5 +1,6 @@
 ---
 sidebar_position: 98
+tags: [itu-1, itu-2, itu-3, idm, icm, opu, tsp]
 ---
 
 # Frequently Asked Questions

@@ -1,3 +1,6 @@
+---
+tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
+---
 # Week 1: Introduction to KoboToolbox
 
 ## **🎯 Objectives**

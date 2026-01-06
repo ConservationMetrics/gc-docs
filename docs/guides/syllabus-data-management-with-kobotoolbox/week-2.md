@@ -1,3 +1,6 @@
+---
+tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
+---
 # Week 2: Managing Surveys and Data in KoboToolbox
 
 ## **🎯 Objectives**

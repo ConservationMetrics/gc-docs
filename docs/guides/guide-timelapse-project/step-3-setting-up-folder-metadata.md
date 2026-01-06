@@ -1,3 +1,6 @@
+---
+tags: [itu-3, opu, tsp]
+---
 # Step 3: Setting Up Folder-Level Metadata
 
 :::note

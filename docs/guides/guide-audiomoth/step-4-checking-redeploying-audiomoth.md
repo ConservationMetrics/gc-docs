@@ -1,3 +1,6 @@
+---
+tags: [itu-3, opu, tsp]
+---
 # Step 4: Checking Sensors & Redeploying
 
 If sampling spans \>30 days (or the amount of time the sensor is

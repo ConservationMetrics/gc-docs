@@ -1,3 +1,6 @@
+---
+tags: [itu-3, opu, tsp]
+---
 # Troubleshooting & Common Pitfalls
 ## USB Cable Problems
 

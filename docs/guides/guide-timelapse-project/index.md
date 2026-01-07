@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+tags: [itu-3, opu, tsp]
 ---
 
 # 📸+🐾 Guide: Setting up a Camera Trap Project in Timelapse

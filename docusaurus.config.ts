@@ -53,6 +53,7 @@ const config: Config = {
 
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/ConservationMetrics/gc-docs/tree/main",
+          tags: 'tags.yaml'
         },
         theme: {
           customCss: "./src/css/custom.css",

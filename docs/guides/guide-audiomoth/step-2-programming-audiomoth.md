@@ -1,3 +1,6 @@
+---
+tags: [itu-3, opu, tsp]
+---
 # Step 2: Programming the AudioMoth
 
 AudioMoths can be configured with many different settings for different objectives.  For comprehensive documentation please see the [Operation Manual](https://github.com/OpenAcousticDevices/Application-Notes/raw/master/AudioMoth_Operation_Manual.pdf). 

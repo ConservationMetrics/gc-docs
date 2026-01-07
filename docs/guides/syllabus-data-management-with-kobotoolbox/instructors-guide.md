@@ -1,3 +1,7 @@
+---
+tags: [itu-3, opu, tsp]
+---
+
 # Instructor's Guide
 
 This guide is tailored to support facilitators running the weekly live sessions in the **4-week self-paced blended learning program**. The aim is to ensure every participant—regardless of digital literacy—feels included, confident, and engaged.

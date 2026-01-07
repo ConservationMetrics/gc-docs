@@ -1,3 +1,6 @@
+---
+tags: [itu-3, opu, tsp]
+---
 # Appendix 2: Deleting Files and Data
 
 Timelapse provides several tools for removing images, records, and associated metadata from a project. Deletions are permanent, so these tools should be used with care—especially when working in a shared or multi-annotator project.

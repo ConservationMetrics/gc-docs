@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
 ---
 
 # Filebrowser

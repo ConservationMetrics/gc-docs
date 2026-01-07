@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+tags: [itu-3, opu, tsp]
 ---
 
 # 🔊+🦉 Guide: Bioacoustics Basics with AudioMoth Sensors 

@@ -1,3 +1,6 @@
+---
+tags: [itu-3, opu, tsp]
+---
 # Step 1: Sensor Preparation
 
 This guide describes how to prepare an AudioMoth sensor prior to field

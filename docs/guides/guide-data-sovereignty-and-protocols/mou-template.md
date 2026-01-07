@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+tags: [itu-2, itu-3, idm, opu, tsp]
 ---
 
 # Template: Memorandum of Understanding (MoU) for Data Sharing

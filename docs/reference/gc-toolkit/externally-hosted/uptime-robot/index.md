@@ -1,3 +1,6 @@
+---
+tags: [opu, tsp]
+---
 # Uptime Robot
 
 [Uptime Robot](https://uptimerobot.com/) is a website monitoring service that we use to track the availability and performance of Guardian Connector deployment components. While not integrated with Guardian Connector itself, it provides essential monitoring capabilities for maintaining reliable deployments.

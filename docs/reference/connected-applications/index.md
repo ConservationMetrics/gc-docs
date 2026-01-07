@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
 ---
 
 # Connected Applications

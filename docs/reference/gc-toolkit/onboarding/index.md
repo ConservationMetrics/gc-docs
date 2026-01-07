@@ -1,5 +1,6 @@
 ---
 sidebar_position: 0
+tags: [itu-3, opu, tsp]
 ---
 
 import ParamText from '@site/src/components/ParamText';

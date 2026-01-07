@@ -1,5 +1,6 @@
 ---
 sidebar_position: 0
+tags: [itu-2, itu-3, idm, opu, tsp]
 ---
 
 # Introduction

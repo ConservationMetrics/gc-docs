@@ -1,3 +1,6 @@
+---
+tags: [itu-3, opu, tsp]
+---
 # Step 5: Deployment Information Requirements
 
 CMI requires standardized metadata for each sensor deployment. Each row

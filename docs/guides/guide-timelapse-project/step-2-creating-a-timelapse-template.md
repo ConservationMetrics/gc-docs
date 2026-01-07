@@ -1,3 +1,6 @@
+---
+tags: [itu-3, opu, tsp]
+---
 # Step 2: Creating a Timelapse Template
 
 :::note

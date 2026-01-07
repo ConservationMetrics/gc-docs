@@ -1,3 +1,6 @@
+---
+tags: [itu-3, opu, tsp]
+---
 # Step 5: Using Image Recognition
 
 :::note

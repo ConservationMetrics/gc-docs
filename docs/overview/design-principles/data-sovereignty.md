@@ -1,3 +1,7 @@
+---
+tags: [idm, opu, tsp]
+---
+
 # Pillars of Data Sovereignty in Guardian Connector
 
 :::info

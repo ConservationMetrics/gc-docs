@@ -1,3 +1,6 @@
+---
+tags: [itu-3, opu, tsp]
+---
 # Appendix 1: Testing Acoustic Sensors
 
 Acoustic Sensors can have variable microphone quality depending on

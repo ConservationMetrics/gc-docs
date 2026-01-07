@@ -1,3 +1,6 @@
+---
+tags: [itu-3, opu, tsp]
+---
 # Step 6: Data Transfer & Management
 
 Files should be organized in a similar fashion to [camera trap

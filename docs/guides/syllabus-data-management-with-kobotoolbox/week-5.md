@@ -1,4 +1,6 @@
-
+---
+tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
+---
 # Week 5: Final Project
 
 This week is designed to be a culmination of the skills and knowledge you've acquired throughout the program, allowing you to **design and execute a complete survey project**. Here’s a detailed breakdown of each component:

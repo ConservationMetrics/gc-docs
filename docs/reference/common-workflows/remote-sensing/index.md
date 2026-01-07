@@ -5,7 +5,7 @@ sidebar_position: 5
 import ParamText from '@site/src/components/ParamText';
 import ParamLink from '@site/src/components/ParamLink';
 
-# Remote Sensing Change Detection
+# Use change detection alerts in Guardian Connector
 
 This document describes how the automated change detection workflows using external data sources works. The process enables real-time monitoring and notifications for territorial changes, combining external satellite data with Guardian Connector's visualization and alert systems.
 
@@ -25,11 +25,11 @@ Diferent ingestion methods will have processes specific to the data source being
 
 These data sources will typically provide data regularly, which will be fetched and processed automatically.
 
-Just as an example, One possible integration is to fetch [Global Forest Watch deforestation alerts](https://www.globalforestwatch.org/blog/data-and-tools/drivers-deforestation-alerts/) into a dashboard. The process involves pulling external change detection data that will be processed and made available for visualization and alerts.
+For example, one possible integration is to fetch [Global Forest Watch deforestation alerts](https://www.globalforestwatch.org/blog/data-and-tools/drivers-deforestation-alerts/) into Guardian Connector. The process involves pulling external change detection data that will be processed and made available for visualization and alerts.
 
 You will have to provide your Windmill Admin with the necessary information to set up the data ingestion.
 
-In the case you want WhatsApp notifications on new alerts or to be able to see the alerts in your CoMapeo project, you need to let your Windmill Admin know.
+In the case you want WhatsApp notifications on new alerts or to be able to see the alerts in your CoMapeo project, you will also need to let your Windmill Admin know.
 
 Once the scheduled script runs successfully, your change detection data will be available in the Guardian Connector PostgreSQL database, WhatsApp notifications will be sent, and data layers will be available in CoMapeo.
 
@@ -55,21 +55,21 @@ Access your Explorer instance at: <ParamLink template="https://explorer.{alias}.
 
    | Parameter | Description |
    | :--- | :--- |
-   | **Views** | Map, Gallery, Alerts Dashboard |
+   | **Views** | Alerts Dashboard |
    | **Mapbox Style** | You’ll need a Mapbox account to access a Map Style. Get the Style URL from your new style in the Style Editor in the format `mapbox://styles/{username}/{styleId}`, that you can obtain in the Share screen, under Style URL. |
    | **Mapbox Access Token** | Available from your Mapbox account page under the **Tokens** section. |
    | **Zoom level** | The zoom level for the map view (0-22). |
    | **Center latitude** | The latitude of the center point for the map view. |
    | **Center longitude** | The longitude of the center point for the map view. |
 
-   :::info
+:::tip
+Zoom and center can be obtained by going to https://geojson.io, navigating to the view with the zoom level you desire, and obtaining it from the URL. For example, in this URL "https://geojson.io/#map=8.2/5.738/-60.213" the first number, 8.2, is the zoom level, 5.738 is latitude and -60.213 is longitude. 
 
-Zoom and center can be obtained by going to https://geojson.io, navigating to the view with the zoom level you desire, and obtaining it from the URL. For example, in this URL "https://geojson.io/#map=8.2/5.738/-60.213" the first number, 8.2, is the zoom level, 5.738 is latitude and -60.213 is longitude.
-
-   :::
+You can also use https://demos.mapbox.com/location-helper/.
+:::
 
 4. **Publish the Views**
-   Once saved, your change detection maps, galleries, and alert dashboards will be visible to users who access the Explorer instance.
+   Once saved, your change detection alert dashboard will be visible to users who access the Explorer instance.
 
 ### What You’ll See in Guardian Connector Explorer
 
@@ -86,7 +86,7 @@ When you access Guardian Connector Explorer, you’ll find powerful visualizatio
 
 - **Notification summary**: See a dashboard showing recent alerts and their status
 - **Priority alerts**: Quickly identify high-priority changes that require immediate attention
-- **Detailed information**: Click on any alert to see detailed information about the detected change
+- **Detailed information**: Click on any alert to see detailed information about the detected change, including in some cases, before and after images
 
 ### What You’ll See in WhatsApp
 
@@ -102,7 +102,7 @@ If you opted to integrate change detection data with your CoMapeo project, you�
 This will allow you to:
 
 - **Territory context**: View change detection data alongside your existing CoMapeo observations, tracks, and points
-- **Real-time updates**: Changes detected by the automated system appear automatically in your CoMapeo project once you sync with your CoMapeo server
+- **Real-time updates**: Changes detected by the automated system appear automatically in your CoMapeo project once you sync with your CoMapeo archive server
 
 With this information in CoMapeo, you can enhance your territorial monitoring efforts by:
 
@@ -118,7 +118,6 @@ The change detection system provides several key benefits for Indigenous territo
 
 - **Early warning**: Receive alerts about potential threats to your territory before they become severe
 - **Comprehensive coverage**: Monitor large areas that might be difficult to patrol regularly
-- **24/7 monitoring**: The system operates continuously, providing constant vigilance
 
 #### Improved Response Capabilities
 

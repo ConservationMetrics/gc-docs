@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 import ParamText from '@site/src/components/ParamText';
@@ -12,7 +12,7 @@ This document describes how the automated change detection workflows using exter
 The workflow involves the following parts:
 
 - **An external data source** – providing change detection data
-- **Windmill** – Handles data ingestion, processing, and automation of the change detection workflow
+- **[Windmill](/reference/gc-toolkit/gc-scripts-hub/)** – Handles data ingestion, processing, and automation of the change detection workflow
 - **[Guardian Connector Explorer](/reference/gc-toolkit/gc-explorer/)** – The visualization tool for displaying change detection data and alerts
 - **[CoMapeo](/reference/connected-applications/comapeo/)** – Where change detection data layers become visible for territory monitoring
 - **WhatsApp** – For sending notifications when changes are detected

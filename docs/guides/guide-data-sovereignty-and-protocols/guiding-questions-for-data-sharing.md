@@ -1,6 +1,6 @@
 ---
 sidebar_position: 0
-tags: [itu-2, itu-3, idu, opu, tsp]
+tags: [itu-2, itu-3, idm, opu, tsp]
 ---
 
 # Guiding Questions for Creating a Data Sharing Protocol

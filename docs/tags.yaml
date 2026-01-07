@@ -1,0 +1,36 @@
+releases:
+  label: 'Product releases'
+  permalink: '/product-releases'
+  description: 'Content related to product releases.'
+
+# A partial tag definition is also valid
+announcements:
+  label: 'Announcements'
+
+itu-1:
+  label: 'New Indigenous Tech User'
+  description: 'An Indigenous community member with limited prior experience using digital tools. May be comfortable with basic smartphone use but unfamiliar with data collection apps, GPS, or software platforms. Requires direct training, hands-on support, and interface simplicity to participate effectively.'
+
+itu-2:
+  label: 'Intermediate Indigenous Tech User'
+  description: 'An Indigenous user who can operate basic to moderately complex digital tools like CoMapeo Mobile, KoboToolbox, and WhatsApp. Comfortable collecting and viewing data, and may assist peers. Still requires support for data export, syncing, or troubleshooting, and prefers intuitive workflows.'
+
+itu-3:
+  label: 'Advanced Indigenous Tech User'
+  description: 'An experienced Indigenous user who is fluent in the use of multiple digital tools, including GPS units, GIS software, CoMapeo Desktop, KoboToolbox, etc. Capable of training others, performing data management tasks, and understanding the structure of the systems. May contribute to adapting workflows.'
+
+idm:
+  label: 'Indigenous Decision Maker'
+  description: 'A leader or representative within an Indigenous organization or community who shapes strategy and priorities. Not necessarily a direct tool user, but must understand what the tools enable. Often serves as the spokesperson or accountability node for how technology is used and why.'
+
+icm:
+  label: 'Indigenous Community Member'
+  description: 'A broader category encompassing Indigenous individuals who are part of the community but not formally trained or involved in tech workflows. May participate in data collection passively (e.g. via interviews or guided activities), or engage with outputs (e.g. viewing maps, stories).'
+
+opu:
+  label: 'Organizational Power User'
+  description: 'n Organizational Power User (OPU) is the most data- and tech-savvy member of an Indigenous or local community organization. They play a central role in coordinating programmatic work that involves Guardian Connector and related tools. OPUs serve as key points of contact for technical conversations with support partners. OPUs may be Indigenous or non-Indigenous, but typically have urban backgrounds and formal education, often with training in fields like GIS, data analysis, scientific research, or field technology. They are not software developers or IT professionals, but they are proficient users of digital tools and comfortable navigating complex software interfaces.'
+
+tsp:
+  label: 'Technical Support Provider'
+  description: 'A Technical Support Partner (TSP) is an external technologist who provides ongoing, hands-on support to Indigenous and local community organizations in the use of Guardian Connector and related tools. While not embedded in the organization, the TSP works in close collaboration with internal team members—especially OPUs—helping to configure infrastructure, co-develop workflows, and troubleshoot issues as they arise. TSPs bring deep technical knowledge across the full stack, from server setup to data pipelines and visualization tools, and play a critical role in adapting software to fit local realities such as offline constraints, limited bandwidth, or language needs.'

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-tags: [itu-2, itu-3, idu, opu, tsp]
+tags: [itu-2, itu-3, idm, opu, tsp]
 ---
 
 # Reading List on Indigenous Data Sovereignty

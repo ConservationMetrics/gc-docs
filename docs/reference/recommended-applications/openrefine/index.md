@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-tags: [itu-2, itu-3, opu, tsp]
+tags: [itu-3, opu, tsp]
 ---
 
 # OpenRefine

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-tags: [opu, tsp]
+tags: [itu-3, opu, tsp]
 ---
 
 # Available Category Collections

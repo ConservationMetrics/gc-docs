@@ -47,3 +47,27 @@ code. Currently, we use the standard Prettier [configuration](https://prettier.i
 > to these docs](https://prettier.io/docs/en/editors.html)
 > - For VS Code, set `editor.formatOnSave` to true in your editor config.
 > or in a pre-commit hook [according to these docs](https://prettier.io/docs/en/precommit.html).
+
+## Using User Personas in Documentation
+
+When referring to specific user types throughout the Guardian Connector documentation, we use these persona codes in Docusaurus tags. You can find all content tagged for a specific user persona by using the tag links:
+
+- **ITU-1**: [New Indigenous Tech User content](/tags/itu-1)
+- **ITU-2**: [Intermediate Indigenous Tech User content](/tags/itu-2)
+- **ITU-3**: [Advanced Indigenous Tech User content](/tags/itu-3)
+- **IDM**: [Indigenous Decision Maker content](/tags/idm)
+- **ICM**: [Indigenous Community Member content](/tags/icm)
+- **OPU**: [Organizational Power User content](/tags/opu)
+- **TSP**: [Technical Support Partner content](/tags/tsp)
+
+When writing documentation, include the appropriate persona tags in the front matter of your markdown files to help users find content relevant to their technical level and role:
+
+```markdown
+---
+tags: [itu-1, itu-2]  # Content for New and Intermediate Indigenous Tech Users
+---
+
+# Your documentation content
+```
+
+This tagging system ensures that users can easily find documentation tailored to their technical expertise and role within their organization.

@@ -20,7 +20,7 @@ icm:
 
 opu:
   label: 'Organizational Power User'
-  description: 'n Organizational Power User (OPU) is the most data- and tech-savvy member of an Indigenous or local community organization. They play a central role in coordinating programmatic work that involves Guardian Connector and related tools. OPUs serve as key points of contact for technical conversations with support partners. OPUs may be Indigenous or non-Indigenous, but typically have urban backgrounds and formal education, often with training in fields like GIS, data analysis, scientific research, or field technology. They are not software developers or IT professionals, but they are proficient users of digital tools and comfortable navigating complex software interfaces.'
+  description: 'An Organizational Power User (OPU) is the most data- and tech-savvy member of an Indigenous or local community organization. They play a central role in coordinating programmatic work that involves Guardian Connector and related tools. OPUs serve as key points of contact for technical conversations with support partners. OPUs may be Indigenous or non-Indigenous, but typically have urban backgrounds and formal education, often with training in fields like GIS, data analysis, scientific research, or field technology. They are not software developers or IT professionals, but they are proficient users of digital tools and comfortable navigating complex software interfaces.'
 
 tsp:
   label: 'Technical Support Provider'

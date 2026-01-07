@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-tags: [itu-2, itu-3, opu, tsp]
+tags: [itu-1, itu-2, itu-3, idm, icm, opu, tsp]
 ---
 
 # Recommended Applications

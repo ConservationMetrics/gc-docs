@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-tags: [idm, opu, tsp]
+tags: [opu, tsp]
 ---
 
 # Externally Hosted Services

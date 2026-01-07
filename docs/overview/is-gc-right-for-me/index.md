@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-tags: [idm]
+tags: [idm, opu, tsp]
 ---
 
 # Is Guardian Connector right for me?

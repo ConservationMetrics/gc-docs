@@ -1,5 +1,6 @@
 ---
 id: user-personas
+sidebar_position: 4
 title: Guardian Connector Users Explained
 description: Understanding the diverse user personas who interact with Guardian Connector and their varying technical expertise levels
 tags: [itu-1, itu-2, itu-3, idm, icm, opu, tsp]
@@ -56,27 +57,3 @@ An Organizational Power User (OPU) is the most data- and tech-savvy member of an
 A Technical Support Partner (TSP) is an external technologist who provides ongoing, hands-on support to Indigenous and local community organizations in the use of Guardian Connector and related tools. While not embedded in the organization, the TSP works in close collaboration with internal team members—especially OPUs—helping to configure infrastructure, co-develop workflows, and troubleshoot issues as they arise. TSPs bring deep technical knowledge across the full stack, from server setup to data pipelines and visualization tools, and play a critical role in adapting software to fit local realities such as offline constraints, limited bandwidth, or language needs.
 
 [Technical Support Partner content](/tags/tsp)
-
-## Using User Personas in Documentation
-
-When referring to specific user types throughout the Guardian Connector documentation, we use these persona codes in Docusaurus tags. You can find all content tagged for a specific user persona by using the tag links:
-
-- **ITU-1**: [New Indigenous Tech User content](/tags/itu-1)
-- **ITU-2**: [Intermediate Indigenous Tech User content](/tags/itu-2)
-- **ITU-3**: [Advanced Indigenous Tech User content](/tags/itu-3)
-- **IDM**: [Indigenous Decision Maker content](/tags/idm)
-- **ICM**: [Indigenous Community Member content](/tags/icm)
-- **OPU**: [Organizational Power User content](/tags/opu)
-- **TSP**: [Technical Support Partner content](/tags/tsp)
-
-When writing documentation, include the appropriate persona tags in the front matter of your markdown files to help users find content relevant to their technical level and role:
-
-```markdown
----
-tags: [itu-1, itu-2]  # Content for New and Intermediate Indigenous Tech Users
----
-
-# Your documentation content
-```
-
-This tagging system ensures that users can easily find documentation tailored to their technical expertise and role within their organization.

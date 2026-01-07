@@ -1,12 +1,3 @@
-releases:
-  label: 'Product releases'
-  permalink: '/product-releases'
-  description: 'Content related to product releases.'
-
-# A partial tag definition is also valid
-announcements:
-  label: 'Announcements'
-
 itu-1:
   label: 'New Indigenous Tech User'
   description: 'An Indigenous community member with limited prior experience using digital tools. May be comfortable with basic smartphone use but unfamiliar with data collection apps, GPS, or software platforms. Requires direct training, hands-on support, and interface simplicity to participate effectively.'

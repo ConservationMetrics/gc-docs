@@ -38,6 +38,14 @@ Guardian Connector serves as a bridge between diverse data sources — from mapp
 ![A diagram of the Guardian Connector system](images/system-diagram-sept-2025.jpg)
 _A diagram of the Guardian Connector system_
 
+## Why is Guardian Connector open source?
+
+Guardian Connector manages sensitive Indigenous data: cultural knowledge, territorial monitoring, environmental observations. When software does this, trust needs to be verifiable, not assumed.
+
+Open source means interested parties can inspect the actual code, not rely on privacy policies written by lawyers. You can audit how data flows through the system, verify that sovereignty principles are respected in practice, and adapt the platform to your own governance protocols. If Guardian Connector doesn't meet your needs, you can fork it and modify it.
+
+Open source also means durability. Organizations change, funding shifts, partnerships evolve. But open source survives those changes. Guardian Connector can outlive the organizations that build it.
+
 ## Who is Building Guardian Connector
 
 Guardian Connector is being co-created by [Conservation Metrics, Inc.](https://conservationmetrics.com/) in close partnership with (and with funding from) [Nia Tero](https://niatero.org/), and a number of Indigenous partner organizations.

@@ -55,6 +55,15 @@ const config: Config = {
           editUrl: "https://github.com/ConservationMetrics/gc-docs/tree/main",
           tags: 'tags.yaml'
         },
+        blog: {
+          path: 'whatsnew', 
+          routeBasePath: 'whatsnew', // Removed the leading slash (best practice)
+          blogTitle: "What's New",
+          blogDescription: "What's new!",
+          blogSidebarCount: 'ALL', 
+          blogSidebarTitle: 'All Releases',
+          postsPerPage: 10,
+        },
         theme: {
           customCss: "./src/css/custom.css",
         },

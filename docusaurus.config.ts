@@ -99,6 +99,11 @@ const config: Config = {
           label: "Guides & Tutorials",
         },
         {
+          to: '/whatsnew/', 
+          label: "What's New", 
+          position: 'left', // You can change this to 'right' if you prefer
+        },
+        {
           href: "https://github.com/ConservationMetrics/gc-docs",
           label: "GitHub",
           position: "right",

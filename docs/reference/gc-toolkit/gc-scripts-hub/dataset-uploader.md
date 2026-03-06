@@ -36,6 +36,12 @@ If available, you’ll see the resulting table name you’ll get in the warehous
 
 ![Name is available and mapped to table name](./images/dataset-uploader-3.jpg)
 
+:::tip
+
+You can add data to an existing table by entering the table name and clicking **Check Availability**. If the table exists, you will be prompted to append the data to the existing table.
+
+:::
+
 ### 3. Upload your file
 
 Select your file and click **Upload File**. When the upload completes, proceed to the next step.

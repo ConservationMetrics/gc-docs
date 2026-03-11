@@ -49,7 +49,7 @@ Place the exported images in a folder named `TimelapseExport`.
 
 ## Folder Structure
 
-The app expects the following structure under a root `{images}` folder:
+The app expects the following structure under a root `<images>` folder:
 ```
 images/
 ├── ImageData.csv

@@ -32,9 +32,18 @@ Save this file as `ImageData.csv`.
 
 3. Export the corresponding images for the dashboard:  
 ```
-File → Copy Image/Video files to another folder → Copy all Image or Video files in the current selection to...
+File → Export (copy) Image/Video files to another folder → Copy all Image and Video files in the current selection to...
 ```
+
+:::important
+
+Its suggested to use the option to "Put in Subfolder" with the subfolder names `TimelapseExport`. 
+
+It is Required to "Rename files to include their subfolder location if any""
 Place the exported images in a folder named `TimelapseExport`.
+
+![Screenshot of Export (by copying) current selected files](images/export_window_dialog.jpg)
+:::
 
 ---
 

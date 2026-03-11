@@ -26,6 +26,21 @@ We use [Docusaurus](https://docusaurus.io/) to build and host our documentation.
 
 To contribute to the documentation, you can edit the files in the `docs` directory.
 
+#### Translation
+
+We follow the [Docusaurus i18n documentation](https://docusaurus.io/docs/i18n/introduction) for all translation workflows.
+
+**Adding a new language:**
+
+1. Add the new locale to `docusaurus.config.ts`
+2. Run `pnpm write-translations --locale <locale>` to generate localizable JSON files
+3. Translate the content in the `i18n/<locale>/` directory
+
+**Translating existing content:**
+
+1. Edit the JSON files in `i18n/<locale>/` for UI strings
+2. Edit the Markdown files in `docs/` using the `localized` path (e.g., `docs/pt/` for Portuguese)
+
 ### Contribution Process
 
 **External Contributors**: Unless you are a Conservation Metrics Inc. (CMI) team member, all contributions must be submitted as a pull request for review.

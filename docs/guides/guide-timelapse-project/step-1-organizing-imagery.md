@@ -22,7 +22,8 @@ ProjectName/
 
 In this example, a new retrieval folder is created for each camera check. The retrieval folders serve as the root folders for your image dataset. All photos from an SD card should be placed at the lowest folder level. For instance, photos from an SD card pulled from Camera 1 on March 19, 2024, would be copied into `Springfield/Deployment_20240319/Camera1`. This structure makes it easier to organize new imagery as additional retrievals are added.
 
-:::Important
+:::important
+
 **Handling SD cards with more than 10,000 images**
 
 Many camera models name images using a four-digit counter (e.g., `IMG_0001.JPG` → `IMG_9999.JPG`).  
@@ -39,6 +40,25 @@ Do **not combine the images from multiple folders into a single folder.** Becaus
 - Cause the operating system to rename files (e.g., `IMG_0001 (1).JPG`), making it difficult to determine whether files are duplicates or distinct images.
 
 Preserving the original folder structure ensures that all images are retained and prevents confusion during later processing.
+
+Example  folder structure
+
+```
+ProjectName/
+├── Springfield/
+│ ├── Deployment_20240319/
+│ │ ├── Camera1/
+│ │ ├──── 100_BTCF/
+│ │ ├──── 101_BTCF/
+│ │ └── Camera2/
+│ ├── Deployment_20240425/
+│ │ ├── Camera1/
+│ │ └── Camera2/
+├── Fairfax/
+│ ├── Deployment_20240512/
+│ │ ├── Camera1/
+...
+```
 :::
 
 ![Screenshot of imagery organization in the Timelapse practice image set](images/organizing-imagery.jpg)

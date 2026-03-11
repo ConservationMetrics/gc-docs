@@ -2,7 +2,7 @@
 tags: [itu-3, opu, tsp]
 ---
 
-# Appendix 2: Exporting Images for GC Wildlife Viewer
+# Appendix 3: Exporting Images for GC Wildlife Viewer
 
 `gc-wildlife-viewer` requires three primary data sources to function:
 

@@ -1,0 +1,62 @@
+{
+  "version.label": {
+    "message": "Próximo",
+    "description": "The label for version current"
+  },
+  "sidebar.overviewSidebar.category.Design Principles": {
+    "message": "Princípios de Design",
+    "description": "The label for category Design Principles in sidebar overviewSidebar"
+  },
+  "sidebar.referenceSidebar.category.Guardian Connector Toolkit": {
+    "message": "Guardian Connector Toolkit",
+    "description": "The label for category Guardian Connector Toolkit in sidebar referenceSidebar"
+  },
+  "sidebar.referenceSidebar.category.GC Scripts Hub": {
+    "message": "GC Scripts Hub",
+    "description": "The label for category GC Scripts Hub in sidebar referenceSidebar"
+  },
+  "sidebar.referenceSidebar.category.Apache Superset": {
+    "message": "Apache Superset",
+    "description": "The label for category Apache Superset in sidebar referenceSidebar"
+  },
+  "sidebar.referenceSidebar.category.Externally Hosted Services": {
+    "message": "Serviços hospedados externamente",
+    "description": "The label for category Externally Hosted Services in sidebar referenceSidebar"
+  },
+  "sidebar.referenceSidebar.category.Connected Applications": {
+    "message": "Aplicações Conectadas",
+    "description": "The label for category Connected Applications in sidebar referenceSidebar"
+  },
+  "sidebar.referenceSidebar.category.CoMapeo": {
+    "message": "CoMapeo",
+    "description": "The label for category CoMapeo in sidebar referenceSidebar"
+  },
+  "sidebar.referenceSidebar.category.KoboToolbox": {
+    "message": "KoboToolbox",
+    "description": "The label for category KoboToolbox in sidebar referenceSidebar"
+  },
+  "sidebar.referenceSidebar.category.Recommended Applications": {
+    "message": "Aplicações Recomendadas",
+    "description": "The label for category Recommended Applications in sidebar referenceSidebar"
+  },
+  "sidebar.referenceSidebar.category.Common Workflows": {
+    "message": "Fluxos de Trabalho Comuns",
+    "description": "The label for category Common Workflows in sidebar referenceSidebar"
+  },
+  "sidebar.guidesSidebar.category.📚 Syllabus: Data Management with KoboToolbox": {
+    "message": "📚 Programa do curso: Gerenciamento de dados com o KoboToolbox",
+    "description": "The label for category 📚 Syllabus: Data Management with KoboToolbox in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.📸+🐾 Guide: Setting up a Camera Trap Project in Timelapse": {
+    "message": "📸+🐾 Guia: Como configurar um projeto de Armadilha Fotográfica em Timelapse",
+    "description": "The label for category 📸+🐾 Guide: Setting up a Camera Trap Project in Timelapse in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.🔊+🦉 Guide: Bioacoustics Basics with AudioMoth Sensors": {
+    "message": "🔊+🦉 Guia: Noções Básicas de Bioacústica com Sensores AudioMoth",
+    "description": "The label for category 🔊+🦉 Guide: Bioacoustics Basics with AudioMoth Sensors in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.📜 Guide: Data Sharing Protocols Grounded in Indigenous Data Sovereignty": {
+    "message": "📜 Guia: Protocolos de Compartilhamento de Dados Fundamentados na Soberania de Dados Indígenas",
+    "description": "The label for category 📜 Guide: Data Sharing Protocols Grounded in Indigenous Data Sovereignty in sidebar guidesSidebar"
+  }
+}

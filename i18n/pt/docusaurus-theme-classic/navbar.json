@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "Documentação do Guardian Connector",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Logo do Guardian Connector",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Overview": {
+    "message": "Visão Geral",
+    "description": "Navbar item with label Overview"
+  },
+  "item.label.Reference": {
+    "message": "Referência",
+    "description": "Navbar item with label Reference"
+  },
+  "item.label.Guides & Tutorials": {
+    "message": "Guias & Tutoriais",
+    "description": "Navbar item with label Guides & Tutorials"
+  },
+  "item.label.What's New": {
+    "message": "O que há de novo?",
+    "description": "Navbar item with label What's New"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

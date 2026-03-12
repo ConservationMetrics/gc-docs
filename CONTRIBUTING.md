@@ -61,7 +61,7 @@ We follow the [Docusaurus i18n documentation](https://docusaurus.io/docs/i18n/in
 **Translating existing content:**
 
 1. Edit the JSON files in `i18n/<locale>/` for UI strings
-2. Edit the Markdown files in `docs/` using the `localized` path (e.g., `docs/pt/` for Portuguese)
+2. Edit the Markdown files in `docs/` using the localized path (e.g., `docs/pt/` for Portuguese)
 
 In order to test your translations, you need to do the following:
 
@@ -70,6 +70,10 @@ In order to test your translations, you need to do the following:
 
 If you want to test your translations, you need to run `pnpm run start --locale pt`. This will start the live server with the pt location.
 
+Content is translated per plugin, so you will find the translated content in the following directories:
+
+- for the `docs` folder, for the `pt` translation for example you will find it in `i18n/pt/docusaurus-plugin-content-docs/current/`.
+- for the `whatsnew` folder, for the `pt` translation for example you will find it in `i18n/pt/docusaurus-plugin-content-blog/`.
 
 ## Coding Style
 

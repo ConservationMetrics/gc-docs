@@ -5,6 +5,14 @@ slug: /
 
 # Documentação do Guardian Connector
 
+:::info
+
+🚧 Tradução em construção
+
+Enquanto finalizamos a tradução de todas as páginas, algumas serão exibidas em seu idioma original, o inglês.
+
+:::
+
 Bem-vindo à central de documentação do Guardian Connector! Este guia completo ajudará você a entender, implementar e usar o Guardian Connector para atender às necessidades de soberania de dados e monitoramento ambiental da sua comunidade.
 
 ## O que esta documentação contém

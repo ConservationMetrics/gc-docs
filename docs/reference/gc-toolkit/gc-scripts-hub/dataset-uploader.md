@@ -11,8 +11,8 @@ Upload a dataset file and turn it into a clean PostgreSQL table in your Guardian
 
 ## 📦 What this tool does
 
-* Converts and validates common **tabular** files (`.csv`, `.xlsx/.xls`, `.json`) to CSV for ingestion
-* Converts and validates common **spatial** files (`.geojson`, `.kml`, `.gpx`, `.kmz`) to GeoJSON for ingestion
+* Converts and validates common **tabular** files (`.csv`, `.xlsx/.xls`, `.json`) to CSV for ingestion; or, to GeoJSON if the file has spatial data.
+* Converts and validates common **spatial** files (`.geojson`, `.kml`, `.gpx`, `.kmz`, `.xml` (if it's a SMART XML file), Shapefiles (`.shp` and accompanying files)) to GeoJSON for ingestion
 * Optionally applies **source-specific** transformations (e.g., KoboToolbox, CoMapeo, ODK, Locus Map)
 * Writes the result to a **new** Postgres table and archives files to file storage
 
@@ -36,14 +36,19 @@ If available, you’ll see the resulting table name you’ll get in the warehous
 
 ![Name is available and mapped to table name](./images/dataset-uploader-3.jpg)
 
+:::tip
+
+You can add data to an existing table by entering the table name and clicking **Check Availability**. If the table exists, you will be prompted to append the data to the existing table.
+
+:::
+
 ### 3. Upload your file
 
 Select your file and click **Upload File**. When the upload completes, proceed to the next step.
 
 ![Upload your file and confirm success](./images/dataset-uploader-4.jpg)
 
-**Accepted formats**: CSV, GeoJSON, GPX, JSON, KML, XLS, XLSX, KMZ, XML (SMART)
-(Shapefiles are not yet supported.)
+**Accepted formats**: CSV, GeoJSON, GPX, JSON, KML, XLS, XLSX, KMZ, XML (SMART), and Shapefiles.
 
 ### 4. (Optional) Choose a known data source
 
@@ -99,11 +104,25 @@ If you uploaded a spatial data file, you can download it here to use in a tool l
 
 :::
 
+### Upload media attachments in Filebrowser
+
+Often, datasets from tools like CoMapeo, Mapeo, or Locus Map, include media attachments like photos, audio, or video files. You can upload these to Filebrowser.
+
+1. Open Filebrowser.
+2. Navigate to the dataset folder.
+3. Create a new folder for the media attachments like `media`, `photos` or `attachments`. (It is recommended to use the same folder name as what was exported from the tool.)
+4. Open the new folder, and upload the media files (either using the drag-and-drop interface, or by clicking the **Upload** button).
+
+:::tip
+
+You can now generate a share link for the media attachments folder and use it in a tool like [GC Explorer](/reference/gc-toolkit/gc-explorer/) to embed the media attachments in a view. See [Filebrowser: generating share links](/reference/gc-toolkit/filebrowser/#generating-share-links) for more details.
+
+:::
+
 ---
 
 ## Tips & Troubleshooting
 
-* **“⚠️ Dataset name is already in usage.”** Pick a different dataset name. The table name must be unique in the warehouse.
 * **Unsupported file type.** Convert it locally to one of the supported formats, then re-upload.
 * **Large files.** If the upload stalls, the file might be too large. Try resizing the file to a smaller size. A recommended maximum size for a file is 5MB on a computer, or 1-2MB on a mobile device.
 * **Accidental upload.** If you accidentally upload a file, but did not click **Save & Finish**, you can just refresh the page. (It will be cleaned up automatically.) If you did click **Save & Finish**, the database table will have to be deleted manually. (In the future, we will add a way to delete the table.)
@@ -114,4 +133,5 @@ _For any other issues, please contact us at [guardianconnector@conservationmetri
 
 ## See also
 
+* [**Filebrowser**](/reference/gc-toolkit/filebrowser/) - for sharing links or downloads of the original and transformed files, or uploading media attachments associated with the dataset.
 * [**Technical overview & architecture**](https://github.com/ConservationMetrics/gc-scripts-hub/blob/main/f/apps/gc_dataset_importer.app/README.md) - for developers, and includes a [to-do list](https://github.com/ConservationMetrics/gc-scripts-hub/blob/main/f/apps/gc_dataset_importer.app/README.md#todo) for future features.

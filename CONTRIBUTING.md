@@ -39,6 +39,17 @@ Not everything in this repository needs to be perfect or polished. Our documenta
 
 ## Translation
 
+:::info
+
+🚧 Under construction
+
+This process is largely being designed.
+We want this to be a process that is fluid and with critical but surgical human intervention, with us much machine input as possible, but for now we haven't got to a process that solves it.
+
+In the meantime, we will be doing this process manually.
+
+:::
+
 We follow the [Docusaurus i18n documentation](https://docusaurus.io/docs/i18n/introduction) for all translation workflows.
 
 **Adding a new language:**
@@ -58,6 +69,7 @@ In order to test your translations, you need to do the following:
 2. To test it, you run `pnpm run serve`. This will serve what was just built.
 
 If you want to test your translations, you need to run `pnpm run start --locale pt`. This will start the live server with the pt location.
+
 
 ## Coding Style
 

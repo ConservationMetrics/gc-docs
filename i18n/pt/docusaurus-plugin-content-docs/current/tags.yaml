@@ -1,0 +1,27 @@
+itu-1:
+  label: 'Novo usuário Indígena de Tecnologia'
+  description: 'Membro de uma comunidade indígena com pouca experiência prévia no uso de ferramentas digitais. Pode ter familiaridade com o uso básico de smartphones, mas não estar familiarizado com aplicativos de coleta de dados, GPS ou plataformas de software. Necessita de treinamento direto, suporte prático e simplicidade de interface para participar efetivamente.'
+
+itu-2:
+  label: 'Usuário Intermediário de Tecnologia Indígena'
+  description: 'Usuário indígena que consegue operar ferramentas digitais básicas a moderadamente complexas, como CoMapeo Mobile, KoboToolbox e WhatsApp. Sente-se à vontade para coletar e visualizar dados e pode auxiliar colegas. Ainda precisa de suporte para exportação, sincronização e solução de problemas de dados e prefere fluxos de trabalho intuitivos.'
+
+itu-3:
+  label: 'Usuário Avançado de Tecnologia Indígena'
+  description: 'Usuário indígena experiente, com domínio no uso de diversas ferramentas digitais, incluindo GPS, softwares de SIG, CoMapeo Desktop, KoboToolbox, etc. Capaz de treinar outros, realizar tarefas de gerenciamento de dados e compreender a estrutura dos sistemas. Pode contribuir para a adaptação de fluxos de trabalho.'
+
+idm:
+  label: 'Decisor Indígena'
+  description: 'Um líder ou representante dentro de uma organização ou comunidade indígena que define a estratégia e as prioridades. Não necessariamente um usuário direto das ferramentas, mas deve compreender o que elas possibilitam. Frequentemente atua como porta-voz ou ponto de contato para responsabilização pela forma como a tecnologia é utilizada e por quê.'
+
+icm:
+  label: 'Membro da Comunidade Indígena'
+  description: 'Uma categoria mais ampla que engloba indivíduos indígenas que fazem parte da comunidade, mas não possuem formação formal ou envolvimento em fluxos de trabalho tecnológicos. Podem participar da coleta de dados passivamente (por exemplo, por meio de entrevistas ou atividades guiadas) ou interagir com os resultados (por exemplo, visualizando mapas, histórias).'
+
+opu:
+  label: 'Usuário Avançado da Organização'
+  description: 'Usuário Avançado da Organização (OPU, na sigla em inglês) é o membro mais experiente em dados e tecnologia de uma organização comunitária indígena ou local. Ele desempenha um papel central na coordenação do trabalho programático que envolve o Guardian Connector e ferramentas relacionadas. Os UAOs servem como pontos de contato essenciais para conversas técnicas com parceiros de suporte. Os UAOs podem ser indígenas ou não indígenas, mas geralmente têm origem urbana e formação acadêmica, frequentemente com treinamento em áreas como SIG (Sistemas de Informação Geográfica), análise de dados, pesquisa científica ou tecnologia de campo. Eles não são desenvolvedores de software ou profissionais de TI, mas são usuários proficientes de ferramentas digitais e se sentem à vontade para navegar em interfaces de software complexas.'
+
+tsp:
+  label: 'Parceiro de Suporte Técnico'
+  description: 'Um Parceiro de Suporte Técnico (TSP, na sigla em inglês) é um tecnólogo externo que fornece suporte contínuo e prático a organizações indígenas e comunitárias locais no uso do Guardian Connector e ferramentas relacionadas. Embora não esteja integrado à organização, o TSP trabalha em estreita colaboração com membros da equipe interna — especialmente com os OPUs (Unidades de Processamento Operacional) — ajudando a configurar a infraestrutura, desenvolver fluxos de trabalho em conjunto e solucionar problemas à medida que surgem. Os TSPs trazem conhecimento técnico aprofundado em toda a pilha de tecnologia, desde a configuração do servidor até os pipelines de dados e ferramentas de visualização, e desempenham um papel fundamental na adaptação do software para atender às realidades locais, como restrições de conexão offline, largura de banda limitada ou necessidades linguísticas.'

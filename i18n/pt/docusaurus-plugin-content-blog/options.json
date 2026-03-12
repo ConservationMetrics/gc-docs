@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "O que há de novo?",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "O que há de novo!",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "Todos os lançamentos",
+    "description": "The label for the left sidebar"
+  }
+}

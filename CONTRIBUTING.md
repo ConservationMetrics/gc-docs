@@ -4,7 +4,7 @@ By submitting a pull request to this project, you agree to license your contribu
 
 Please make sure that you have the right to license the code under the MIT License and that your contributions do not infringe on the rights of others.
 
-# Using Git
+## Using Git
 
 We use GitHub to host code, track issues, and accept pull requests.
 
@@ -13,6 +13,7 @@ We use GitHub to host code, track issues, and accept pull requests.
 **We build and release from the `main` branch, so code merged here should always be stable.**
 
 Prefer short-lived feature branches.
+
 - Piecemeal progress towards broad code changes should merge to long-running branches until
   everything there is stable and deployable, at which point the long-running branch gets merged
   to `main`.
@@ -20,7 +21,7 @@ Prefer short-lived feature branches.
   the long-running feature branch (instead of review when merging the long-running branch to
   `main`)
 
-# Contributing to the Documentation
+## Contributing to the Documentation
 
 We use [Docusaurus](https://docusaurus.io/) to build and host our documentation.
 
@@ -36,9 +37,51 @@ To contribute to the documentation, you can edit the files in the `docs` directo
 
 Not everything in this repository needs to be perfect or polished. Our documentation is meant to be a living resource — something we can build on iteratively to meet partner needs in the moment, with plenty of opportunity for future refinement and improvement.
 
-# Coding Style
+## Translation
 
-## Prettier for JavaScript
+:::info
+
+🚧 Under construction
+
+This process is largely being designed.
+We want this process to be as seamless as possible, with targeted and thoughtful human intervention only where necessary, and with as much machine support as possible. At this stage, however, we have not yet developed a process that fully addresses this.
+
+In the meantime, we will be doing this process manually.
+
+:::
+
+We follow the [Docusaurus i18n documentation](https://docusaurus.io/docs/i18n/introduction) for all translation workflows.
+
+**Adding a new language:**
+
+1. Add the new locale to `docusaurus.config.ts`
+2. Run `pnpm write-translations --locale <locale>` to generate localizable JSON files
+3. Translate the content in the `i18n/<locale>/` directory
+
+**Translating existing content:**
+
+1. Edit the JSON files in `i18n/<locale>/` for UI strings
+2. Edit the Markdown files in `docs/` using the localized path (e.g., `docs/pt/` for Portuguese)
+
+In order to test your translations, you need to do the following:
+
+1. First, you need to do `pnpm run build`. That will generate both the default (English) in / and the Portuguese version in /pt.
+2. To test it, you run `pnpm run serve`. This will serve what was just built.
+
+If you want to test your translations, you need to run `pnpm run start --locale pt`. This will start the live server with the Portuguese translations.
+
+Content is translated per [plugin](https://docusaurus.io/docs/api/plugins). You will find the translated content for this repository in the following directories:
+
+- content from the `docs` directory is in `./i18n/<iso_code>/docusaurus-plugin-content-docs/current/`.
+- content from `whatsnew` folder is in `./i18n/<iso_code>/docusaurus-plugin-content-blog/`.
+
+> ![NOTE]
+>
+> Any translations committed to the `main` branch will be built and deployed to Github Pages, i.e. the docs.guardianconnector.net website.
+
+## Coding Style
+
+### Prettier for JavaScript
 
 All developers are expected to use [prettier](https://prettier.io/) to format their JavaScript 
 code. Currently, we use the standard Prettier [configuration](https://prettier.io/docs/en/configuration.html).

@@ -9,7 +9,7 @@ slug: /
 
 🚧 Tradução em construção
 
-Enquanto finalizamos a tradução de todas as páginas, algumas serão exibidas em seu idioma original, o inglês.
+Enquanto finalizamos a tradução de todas as páginas, muitas serão exibidas em seu idioma original, o inglês.
 
 :::
 

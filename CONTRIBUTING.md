@@ -44,7 +44,7 @@ Not everything in this repository needs to be perfect or polished. Our documenta
 🚧 Under construction
 
 This process is largely being designed.
-We want this to be a process that is fluid and with critical but surgical human intervention, with us much machine input as possible, but for now we haven't got to a process that solves it.
+We want this process to be as seamless as possible, with targeted and thoughtful human intervention only where necessary, and with as much machine support as possible. At this stage, however, we have not yet developed a process that fully addresses this.
 
 In the meantime, we will be doing this process manually.
 
@@ -68,12 +68,12 @@ In order to test your translations, you need to do the following:
 1. First, you need to do `pnpm run build`. That will generate both the default (English) in / and the Portuguese version in /pt.
 2. To test it, you run `pnpm run serve`. This will serve what was just built.
 
-If you want to test your translations, you need to run `pnpm run start --locale pt`. This will start the live server with the pt location.
+If you want to test your translations, you need to run `pnpm run start --locale pt`. This will start the live server with the Portuguese translations.
 
-Content is translated per plugin, so you will find the translated content in the following directories:
+Content is translated per [plugin](https://docusaurus.io/docs/api/plugins). You will find the translated content for this repository in the following directories:
 
-- for the `docs` folder, for the `pt` translation for example you will find it in `i18n/pt/docusaurus-plugin-content-docs/current/`.
-- for the `whatsnew` folder, for the `pt` translation for example you will find it in `i18n/pt/docusaurus-plugin-content-blog/`.
+- content from the `docs` directory is in `./i18n/<iso_code>/docusaurus-plugin-content-docs/current/`.
+- content from `whatsnew` folder is in `./i18n/<iso_code>/docusaurus-plugin-content-blog/`.
 
 ## Coding Style
 

@@ -75,6 +75,10 @@ Content is translated per [plugin](https://docusaurus.io/docs/api/plugins). You 
 - content from the `docs` directory is in `./i18n/<iso_code>/docusaurus-plugin-content-docs/current/`.
 - content from `whatsnew` folder is in `./i18n/<iso_code>/docusaurus-plugin-content-blog/`.
 
+> ![NOTE]
+>
+> Any translations committed to the `main` branch will be built and deployed to Github Pages, i.e. the docs.guardianconnector.net website.
+
 ## Coding Style
 
 ### Prettier for JavaScript

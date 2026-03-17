@@ -38,7 +38,9 @@ A good way to test them is to use a recording of "white noise" (e.g.
     determined.](images/am_test_rec_raven.jpg)
 
 ::: tip
+
 Testing can become part of the Configuration workflow by added testing
 before programming the sensor and formatting the memory cards. This can
 identify faulty equipment early on avoiding costly equipment failures.
+
 :::

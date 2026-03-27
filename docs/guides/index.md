@@ -51,6 +51,18 @@ A comprehensive guide for creating data sharing protocols grounded in Indigenous
 - Protecting sensitive cultural and territorial information
 - Building capacity for community data governance
 
+### 🏷️ [Annotating Datasets with Local Contexts Labels](./guide-local-contexts/)
+
+A practical workflow for communities that want to use [Local Contexts](https://localcontexts.org/) TK and BC labels with Guardian Connector: set up a Hub project, curate labels, sync them into your warehouse with Windmill, and apply chosen labels to specific datasets without altering the underlying data table.
+
+**What you'll learn:**
+- Creating a Local Contexts Hub Community project and curating TK/BC labels
+- Configuring Windmill resources and running **Local Contexts: Fetch Labels**
+- Using the **GC Local Contexts Annotations** app to map labels to warehouse tables
+- How per-dataset label metadata (`__lc_labels`) is stored separately from dataset rows
+
+**Format:** Multi-page guide (Hub project and labels, Fetch Labels script, Annotations app) plus links to official Local Contexts documentation.
+
 ## Support and Community
 
 These tutorials are living documents that evolve based on community feedback and needs. If you have questions, suggestions, or would like to share how you've adapted these workflows for your community, we encourage you to reach out and contribute to the collective learning process.

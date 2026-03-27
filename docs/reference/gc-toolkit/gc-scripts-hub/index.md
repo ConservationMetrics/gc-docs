@@ -35,7 +35,7 @@ The GC Scripts Hub includes connectors that automatically gather data from vario
 ## 🗄️ Data Cataloging
 
 ### 🏷️ Local Contexts
-- **Local Contexts**: Catalog datasets using [Local Contexts](https://localcontexts.org/) Traditional Knowledge (TK) and Biocultural (BC) labels. See the [Local Contexts](/guides/local-contexts/) guide for more details.
+- **Local Contexts**: Catalog datasets using [Local Contexts](https://localcontexts.org/) Traditional Knowledge (TK) and Biocultural (BC) labels. See the [Local Contexts](/guides/guide-local-contexts/) guide for more details.
 
 ## 📤 Data Export & Sharing
 

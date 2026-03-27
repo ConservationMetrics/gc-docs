@@ -18,12 +18,17 @@ The GC Scripts Hub includes connectors that automatically gather data from vario
 ### 🌍 Environmental Monitoring
 - **Global Forest Watch**: Download deforestation alerts, fire alerts, and other environmental change detection data for your territory
 - **Google Cloud Alerts**: Retrieve change detection alerts and satellite imagery showing before-and-after comparisons
+- **Earth Index**: Retrieve features generated on [Earth Index](https://earthindex.ai), an AI-powered platform for environmental detection and monitoring.
 
 ### 🗺️ Mapping & Location
 - **[CoMapeo](/reference/connected-applications/comapeo/)**: Import community mapping data and observations, with support for photos and other attachments
 - **ArcGIS**: Download data from ArcGIS Online, including from tools such as Survey123
 - **Locus Map**: Import GPS tracks and mapping data
 - **SMART**: Import patrol data from SMART Desktop
+- **Mapbox**: Update Mapbox tilesets with new data
+
+## 🗄️ Data Cataloging
+- **Local Contexts**: Catalog datasets using [Local Contexts](https://localcontexts.org/) Traditional Knowledge (TK) and Biocultural (BC) labels.
 
 ## 📤 Data Export & Sharing
 

@@ -18,9 +18,10 @@ Always refer to the Local Contexts [documentation](https://localcontexts.org/sup
 1. Create a **Local Contexts Hub** user profile.
 2. Create a **Community** account (not only an individual researcher profile).
 3. Complete **account confirmation** as required ([confirmation step](https://localcontexts.org/support/getting-started-on-the-hub/#confirmation-step)).
-4. **Customize** the TK and BC labels your community will use, and follow your internal process so another **editor or admin** can **approve** those labels.
-5. Create a **Hub Project**. For many use cases, choose Project type **Collection** and set visibility to **Private** if the label set should remain community-scoped.
-6. **Apply** the approved TK and BC Labels to that Project so the API returns the label set you intend to sync.
+4. **Customize** the TK and BC labels your community will use
+5. Per the Hub’s peer review flow, have **at least one other account approve those labels** (you cannot approve your own labels even as an Admin).
+6. Create a **Hub Project**. For many use cases, choose Project type **Collection** and set visibility to **Private** if the label set should remain community-scoped.
+7. **Apply** the approved TK and BC Labels to that Project so the API returns the label set you intend to sync.
 
 ## Values to collect for Windmill
 

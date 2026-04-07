@@ -9,7 +9,7 @@ In **[Windmill](https://www.windmill.dev/)** (the platform that powers the GC Sc
 
 Windmill has an [official documentation page](https://www.windmill.dev/docs/core_concepts/roles_and_permissions) that covers the core concepts of roles and permissions in Windmill. However, below, we'll cover the roles that are most relevant to the GC Scripts Hub.
 
-## 🔒 Administrator
+## 🔒 Administrator {#administrator}
 
 The Administrator role is designed for community organization administrators who need to manage the GC Scripts Hub, including:
 
@@ -23,7 +23,7 @@ The Administrator role is designed for community organization administrators who
 **Administrators must configure Operator roles** according to Guardian Connector best practices. By default, Windmill enables more permissions for Operators than we recommend. See the [Operator Configuration](#configuring-operator-roles) section below for required setup steps.
 :::
 
-## 👤 Operator
+## 👤 Operator {#operator}
 
 The Operator role is designed for community organization members who need to run and schedule important data workflows without requiring deep technical knowledge. Operators can execute scripts and monitor their progress, but cannot create or modify the underlying code—ensuring system stability while enabling community participation.
 

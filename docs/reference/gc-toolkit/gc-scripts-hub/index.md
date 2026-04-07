@@ -18,7 +18,7 @@ The GC Scripts Hub includes connectors that automatically gather data from vario
 
 #### 📋 Survey & Data Collection
 - **[KoboToolbox](/reference/connected-applications/kobotoolbox/)**: Fetch survey responses and form data, including support for multilingual forms and media attachments
-- **[ODK Central](/reference/connected-applications/odk-central/)**: Fetch survey responses and form data from ODK Central, including media attachments
+- **ODK Central**: Fetch survey responses and form data from ODK Central, including media attachments
 
 #### 🌍 Environmental Monitoring
 - **Global Forest Watch**: Download deforestation alerts, fire alerts, and other environmental change detection data for your territory

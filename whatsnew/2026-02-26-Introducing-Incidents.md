@@ -25,12 +25,12 @@ We have designed the incident creation process integrated directly into your exi
 
 Once you have grouped your map items, we've made it simple to add crucial context.
 
-![New incident](images/gc-explorer-incidents-new.png)
+![New incident](/img/whatsnew/gc-explorer-incidents-new.png)
 
 * **Standardized sidebar form**: A clean, standardized form will appear directly in your sidebar, keeping your entire workflow contained within GC Explorer without needing external tools. 
 * **Comprehensive details**: You can customize your incident by adding specific information, such as the incident name, the type of activity occurring, the responsible party, and a description of the impact.
 
-![alt text](images/incidents-list.png)
+![alt text](/img/whatsnew/incidents-list.png)
 
 ---
 

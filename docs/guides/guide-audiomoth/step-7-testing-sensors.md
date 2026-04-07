@@ -35,7 +35,7 @@ A good way to test them is to use a recording of "white noise" (e.g.
     ![Raven Lite showing two recordings where the gain or microphone
     quality was low. We would likely hold this sensor back until
     settings that produced similar recordings were
-    determined.](images/am_test_rec_raven.jpg)
+    determined.](/img/guides/guide-audiomoth/am_test_rec_raven.jpg)
 
 ::: tip
 

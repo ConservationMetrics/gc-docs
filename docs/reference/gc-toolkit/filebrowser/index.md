@@ -18,12 +18,12 @@ Filebrowser provides essential file management capabilities for Guardian Connect
 
 1. With a file or directory selected, click the "Share" icon.
 
-   ![Location of the Share icon](./images/filebrowser-1.jpg)
+   ![Location of the Share icon](/img/reference/gc-toolkit/filebrowser/filebrowser-1.jpg)
 
 2. In the modal that appears, click "Share". (Note: by not filling in any share duration, the link will be valid indefinitely.
 
 
-   ![Share modal](./images/filebrowser-2.jpg)
+   ![Share modal](/img/reference/gc-toolkit/filebrowser/filebrowser-2.jpg)
 
    :::important
    If you plan to embed media content e.g. in a GC Explorer view, do not enter a password, as embedding media will not work with a password set.
@@ -31,7 +31,7 @@ Filebrowser provides essential file management capabilities for Guardian Connect
 
 3. The modal will provide you with a share "hash" and a link to copy for your file / directory. The link will be in the format `https://files.<community_alias>.guardianconnector.net/share/<hash>`.
 
-   ![Hash link shown in the share modal](./images/filebrowser-3.jpg)
+   ![Hash link shown in the share modal](/img/reference/gc-toolkit/filebrowser/filebrowser-3.jpg)
 
 4. You can now share the link with others to allow them to access the file or directory.
 

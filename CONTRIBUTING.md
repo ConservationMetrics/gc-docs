@@ -27,6 +27,12 @@ We use [Docusaurus](https://docusaurus.io/) to build and host our documentation.
 
 To contribute to the documentation, you can edit the files in the `docs` directory.
 
+### Images (important)
+
+Store **all documentation images** in `static/img/` and reference them with absolute paths like `/img/...` (for example: `/img/guides/guide-local-contexts/local-contexts.webp`).
+
+**Why:** Docusaurus builds docs for every enabled locale (e.g. `/` and `/pt`). Relative `./images/...` links in translated MDX resolve inside the locale’s `i18n/<locale>/...` tree and can break the build when the image isn’t duplicated there. Using `/img/...` keeps assets shared across locales and prevents missing-image build failures.
+
 ### Contribution Process
 
 **External Contributors**: Unless you are a Conservation Metrics Inc. (CMI) team member, all contributions must be submitted as a pull request for review.

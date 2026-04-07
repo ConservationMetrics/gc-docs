@@ -17,7 +17,7 @@ You can use the **Timelapse practice image set** as a basis for getting started.
 
 :::
 
-![Creating a Timelapse Template](images/creating-timelapse-template.jpg)
+![Creating a Timelapse Template](/img/guides/guide-timelapse-project/creating-timelapse-template.jpg)
 _Example of a Timelapse template, using the practice image set._
 
 ## How to create a Timelapse Template

@@ -9,7 +9,7 @@ tags: [itu-3, opu, tsp]
 
 When a submission from the phone fails, you'll need to troubleshoot the unsent survey and potentially submit it manually through an alternative method.
 
-![Screenshot showing a failed submission](images/collect-failed-submission.jpg)
+![Screenshot showing a failed submission](/img/reference/connected-applications/kobotoolbox/collect-failed-submission.jpg)
 _Submissions fail when the alert shown above appears on screen after attempting to submit a finalized submission._
 
 The failed submission will then appear on the "Ready to send" screen with a red cloud containing an exclamation mark, indicating there was an issue sending this form.
@@ -49,8 +49,8 @@ To reduce the size of images in your KoboToolbox project, follow these steps:
 1. Open your project in KoboToolbox
 2. Navigate to the "Data" section, and then "Downloads"
 3. Select the export type "Media Attachments (ZIP)"
-![download media attachments screenshot](images/download-media-attachments.png)
+![download media attachments screenshot](/img/reference/connected-applications/kobotoolbox/download-media-attachments.png)
 4. Download the images as a ZIP file
 4. Shrink all images with any local tool, like ImageMagik or Pillow, o in Windows you can use the [Microsoft PowerTool's Image Resizer](https://learn.microsoft.com/en-us/windows/powertoys/image-resizer).
 5. Edit each of the form submissions and reupload the shrinked image, making sure you upload the image that matches the name of the already uploaded.
-![edit a submission screenshot](images/edit-entry.png).
+![edit a submission screenshot](/img/reference/connected-applications/kobotoolbox/edit-entry.png).

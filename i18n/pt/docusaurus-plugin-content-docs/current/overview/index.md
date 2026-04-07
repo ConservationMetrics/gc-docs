@@ -35,7 +35,7 @@ O Guardian Connector está sendo desenvolvido com parceiros indígenas para ajud
 
 O Guardian Connector serve como uma ponte entre diversas fontes de dados — desde mapeamento e sensoriamento remoto até monitoramento e levantamentos da vida selvagem — e os resultados que as comunidades precisam, como mapas, painéis, alertas e relatórios. Ao transformar e armazenar informações em um repositório seguro, a plataforma garante que as comunidades possam explorar, compartilhar e agir com base em seus dados com confiança.
 
-![Um diagrama do sistema Guardian Connector](images/system-diagram-sept-2025.jpg)
+![Um diagrama do sistema Guardian Connector](/img/overview/system-diagram-sept-2025.jpg)
 _Um diagrama do sistema Guardian Connector_
 
 ## Por que o Guardian Connector é de código aberto?

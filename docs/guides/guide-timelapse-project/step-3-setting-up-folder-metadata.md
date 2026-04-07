@@ -11,7 +11,7 @@ Please see the [Timelapse Metadata Guide](https://timelapse.ucalgary.ca/wp-conte
 
 Timelapse supports folder-level metadata, which allows you to associate project, station, or deployment information with entire folders of images. This helps avoid repetitive data entry and ensures consistency across related image files.
 
-![Folder-level metadata](images/folder-level-metadata.jpg)
+![Folder-level metadata](/img/guides/guide-timelapse-project/folder-level-metadata.jpg)
 _Example of Timelapse project folder-level metadata, using the practice image set._
 
 :::tip

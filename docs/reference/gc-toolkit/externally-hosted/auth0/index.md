@@ -47,7 +47,7 @@ Follow these steps to set it up for your instance:
 
 To handle user approval in Auth0, a Trigger Action (named "Check Approval") serves as middleware between logging in and token issuance.
 
-![Login flow](./images/login-flow.png)
+![Login flow](/img/reference/gc-toolkit/externally-hosted/auth0/login-flow.png)
 
 This is the code for that Action, based on the [Common Use Cases in the Auth0 documentation](https://auth0.com/docs/customize/actions/flows-and-triggers/login-flow#common-use-cases):
 

@@ -61,7 +61,7 @@ ProjectName/
 ```
 :::
 
-![Screenshot of imagery organization in the Timelapse practice image set](images/organizing-imagery.jpg)
+![Screenshot of imagery organization in the Timelapse practice image set](/img/guides/guide-timelapse-project/organizing-imagery.jpg)
 _Example of a Timelapse project folder structure, using the practice image set._
 
 :::info

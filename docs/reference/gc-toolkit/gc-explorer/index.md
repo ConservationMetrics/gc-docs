@@ -23,7 +23,7 @@ GC Explorer automatically works with data from:
 - **Environmental Alerts**: Satellite change detection data
 - **Custom Data Sources**: Any PostgreSQL-compatible tabular data
 
-![GC Explorer Alerts Dashboard](./images/alerts-dashboard.jpg)
+![GC Explorer Alerts Dashboard](/img/reference/gc-toolkit/gc-explorer/alerts-dashboard.jpg)
 _Example of an Alerts Dashboard in GC Explorer_
 
 GC Explorer transforms raw data into accessible, visual formats that help communities understand, share, and act on their collected information.

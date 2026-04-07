@@ -24,17 +24,17 @@ Upload a dataset file and turn it into a clean PostgreSQL table in your Guardian
 
 From **GC Scripts Hub → Apps**, click **GC Dataset Importer**.
 
-![Open the GC Dataset Importer app](./images/dataset-uploader-1.jpg)
+![Open the GC Dataset Importer app](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-1.jpg)
 
 ### 2. Name your dataset
 
 Give your dataset a clear, human-readable name, then click **Check Availability**.
 
-![Enter a dataset name](./images/dataset-uploader-2.jpg)
+![Enter a dataset name](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-2.jpg)
 
 If available, you’ll see the resulting table name you’ll get in the warehouse.
 
-![Name is available and mapped to table name](./images/dataset-uploader-3.jpg)
+![Name is available and mapped to table name](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-3.jpg)
 
 :::tip
 
@@ -46,7 +46,7 @@ You can add data to an existing table by entering the table name and clicking **
 
 Select your file and click **Upload File**. When the upload completes, proceed to the next step.
 
-![Upload your file and confirm success](./images/dataset-uploader-4.jpg)
+![Upload your file and confirm success](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-4.jpg)
 
 **Accepted formats**: CSV, GeoJSON, GPX, JSON, KML, XLS, XLSX, KMZ, XML (SMART), and Shapefiles.
 
@@ -54,7 +54,7 @@ Select your file and click **Upload File**. When the upload completes, proceed t
 
 If the file originates from a known tool, toggle **Is this dataset from a known source or tool?** and select it. This adds a `data_source` tag and, for some sources, applies smart formatting.
 
-![Choose a known data source](./images/dataset-uploader-5.jpg)
+![Choose a known data source](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-5.jpg)
 
 **Examples**
 
@@ -65,11 +65,11 @@ If the file originates from a known tool, toggle **Is this dataset from a known 
 
 Confirm the summary and click **Save & Finish** to write the data.
 
-![Review summary and save](./images/dataset-uploader-6.jpg)
+![Review summary and save](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-6.jpg)
 
 You’ll see a success message when the import is complete.
 
-![Success confirmation](./images/dataset-uploader-7.jpg)
+![Success confirmation](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-7.jpg)
 
 ---
 
@@ -79,7 +79,7 @@ You’ll see a success message when the import is complete.
 
 Open **GC Explorer** and add your newly created table to a View to explore or publish.
 
-![Add the new table in GC Explorer](./images/dataset-uploader-9.jpg)
+![Add the new table in GC Explorer](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-9.jpg)
 
 See: [GC Explorer](/reference/gc-toolkit/gc-explorer/)
 
@@ -94,7 +94,7 @@ If you are using [Superset](/reference/gc-toolkit/superset/), or any other tool 
 
 The importer saves both the **original** file and any **transformed** output in a folder named after your table (e.g., `my_kobo_toolbox_data`).
 
-![Find original and transformed files in Filebrowser](./images/dataset-uploader-8.jpg)
+![Find original and transformed files in Filebrowser](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-8.jpg)
 
 See: [Filebrowser](/reference/gc-toolkit/filebrowser/) for share links or downloads.
 

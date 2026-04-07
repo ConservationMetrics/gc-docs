@@ -47,7 +47,7 @@ This erases all data on the card.
 
 3.  Right-click the microSD card and select **Format…**.
 
-    ![Windows Drive Formater](images/windows_card_formater.jpg)
+    ![Windows Drive Formater](/img/guides/guide-audiomoth/windows_card_formater.jpg)
 
 4.  In the **File System** dropdown, choose **exFAT**.
 
@@ -71,7 +71,7 @@ Safely eject the card.
 2.  Move the switch to **USB/Off**.
 
     ![image of the AudioMoth with the switch in the off
-    position](images/am_switch.jpg)
+    position](/img/guides/guide-audiomoth/am_switch.jpg)
 
 3.  Remove old batteries and microSD card.
 
@@ -89,7 +89,7 @@ for some reason. The versions will be listed in the "Flash App".
 1.  Open the Flash App.
 
     ![This screenshot has not detected a device and cannot be "flashed"
-    until one is connected](images/1_am_flash_app.jpg)
+    until one is connected](/img/guides/guide-audiomoth/1_am_flash_app.jpg)
 
 2.  Download the latest firmware.
 

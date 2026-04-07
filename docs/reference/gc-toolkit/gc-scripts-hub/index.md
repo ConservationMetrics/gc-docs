@@ -60,6 +60,6 @@ The Scripts Hub recognizes that every community has unique needs and workflows. 
 
 This resource continues to grow based on community needs and feedback, ensuring that the tools evolve to better serve grassroots conservation efforts worldwide. 
 
-![A Windmill Workspace populated with some of the tools in the GC Scripts Hub.](./images/gc-scripts-hub.jpg)
+![A Windmill Workspace populated with some of the tools in the GC Scripts Hub.](/img/reference/gc-toolkit/gc-scripts-hub/gc-scripts-hub.jpg)
 _A Windmill Workspace populated with some of the tools in the GC Scripts Hub._
 

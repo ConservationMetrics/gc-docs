@@ -9,7 +9,7 @@ tags: [itu-3, opu, tsp]
 
 [Timelapse](https://timelapse.ucalgary.ca/) is a **Windows OS software for reviewing camera trap data and transforming raw image and video files into structured data** that can provide insights into species presence, diversity, and population trends. This is a quick introduction to using the software.
 
-![Timelapse Software screenshot](images/timelapse.jpg)
+![Timelapse Software screenshot](/img/guides/guide-timelapse-project/timelapse.jpg)
 
 :::note
 

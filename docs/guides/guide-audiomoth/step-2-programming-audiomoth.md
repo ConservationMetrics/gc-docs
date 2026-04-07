@@ -54,7 +54,7 @@ CMI is happy to help you set up a config.  Please reach out if you want our advi
 
 1.  Open the **Configuration App**.
 
-    ![](images/am_configurator.jpg)
+    ![](/img/guides/guide-audiomoth/am_configurator.jpg)
 
 2.  Load your configuration file: **File → Open Configuration**.
 

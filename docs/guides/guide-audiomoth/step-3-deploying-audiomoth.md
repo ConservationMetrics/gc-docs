@@ -62,7 +62,7 @@ When the sensor is first switched to **Custom**, if the LEDs show solid red + fl
     case.**
 
     ![AudioMoth with orange box showing where the microphone is on the
-    device.](images/am_mic_and_switch.jpg)
+    device.](/img/guides/guide-audiomoth/am_mic_and_switch.jpg)
 
 2.  Ensure SD card remains fully clicked in.
 

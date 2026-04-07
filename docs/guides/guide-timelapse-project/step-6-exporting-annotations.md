@@ -11,7 +11,7 @@ All data generated during review is stored locally on your machine. To export:
 - You can either choose to export a current selection of your data, or export all data.
 - Now your annotations are available as a CSV file for further analysis. Or, you can re-import the data back into a Timelapse project.
 
-![Export as CSV](images/export-csv.jpg)
+![Export as CSV](/img/guides/guide-timelapse-project/export-csv.jpg)
 _The Timelapse "Export or import data to/from a csv file" menu._
 
 ## Integrate with Guardian Connector

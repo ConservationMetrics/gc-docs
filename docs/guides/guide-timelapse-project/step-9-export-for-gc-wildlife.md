@@ -42,7 +42,7 @@ Its suggested to use the option to "Put in Subfolder" with the subfolder names `
 It is Required to "Rename files to include their subfolder location if any""
 Place the exported images in a folder named `TimelapseExport`.
 
-![Screenshot of Export (by copying) current selected files](images/export_window_dialog.jpg)
+![Screenshot of Export (by copying) current selected files](/img/guides/guide-timelapse-project/export_window_dialog.jpg)
 :::
 
 ---

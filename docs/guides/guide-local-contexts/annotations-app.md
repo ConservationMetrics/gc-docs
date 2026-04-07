@@ -11,21 +11,21 @@ In Windmill, open the app **Guardian Connector Local Contexts Annotations** (sum
 
 ## Step 1 — Select dataset and label set
 
-![Select dataset and label set](./images/lc-app-1.jpg)
+![Select dataset and label set](/img/guides/guide-local-contexts/lc-app-1.jpg)
 
 - **Dataset** — Choose the warehouse **Table** you want to annotate. Datasets are the same  tables you use elsewhere in Guardian Connector.
 - **Local Contexts Label set** — Choose the `localcontexts_…` table produced by **Local Contexts: Fetch Labels**. If nothing appears here, the fetch script has not run successfully yet.
 
 ## Step 2 — Choose TK and BC labels
 
-![Choose TK and BC labels](./images/lc-app-2.jpg)
+![Choose TK and BC labels](/img/guides/guide-local-contexts/lc-app-2.jpg)
 
 - Pick **Traditional Knowledge** labels and **Biocultural** Labels from the options loaded from your selected label-set table.
 - If you have already applied Labels to this dataset before, the app will show you which Labels are already applied, and you can adjust the selection.
 
 ## Step 3 — Review and save
 
-![Review and save](./images/lc-app-3.jpg)
+![Review and save](/img/guides/guide-local-contexts/lc-app-3.jpg)
 
 - Confirm the dataset name and the list of Labels to apply.
 - Use **Save & Finish** to write the mapping.

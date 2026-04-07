@@ -35,7 +35,7 @@ Guardian Connector is being built with Indigenous partners to help close this ga
 
 Guardian Connector serves as a bridge between diverse data sources — from mapping and remote sensing to wildlife monitoring and surveys — and the outputs communities need, such as maps, dashboards, alerts, and reports. By transforming and storing information in a secure warehouse, the platform ensures that communities can explore, share, and act on their data with confidence.
 
-![A diagram of the Guardian Connector system](images/system-diagram-sept-2025.jpg)
+![A diagram of the Guardian Connector system](/img/overview/system-diagram-sept-2025.jpg)
 _A diagram of the Guardian Connector system_
 
 ## Why is Guardian Connector open source?

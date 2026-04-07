@@ -5,7 +5,7 @@ tags: [itu-3, idm, opu, tsp]
 
 # 🏷️ Guide: Annotating Datasets with Local Contexts Labels
 
-![Local Contexts Labels](./images/local-contexts.webp)
+![Local Contexts Labels](/img/guides/guide-local-contexts/local-contexts.webp)
 
 This guide explains how to create and curate **[Traditional Knowledge (TK)](https://localcontexts.org/labels/traditional-knowledge-labels/)** and **[Biocultural (BC)](https://localcontexts.org/labels/biocultural-labels/)** Labels in [Local Contexts](https://localcontexts.org/), bring those Labels into your Guardian Connector data warehouse, and apply them to specific datasets. 
 

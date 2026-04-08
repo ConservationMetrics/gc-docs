@@ -1,0 +1,6 @@
+{
+  "tagKey": "camera-heading",
+  "label": "Camera heading",
+  "helperText": "Compass heading the camera is facing in degrees (0-360)",
+  "type": "number"
+}

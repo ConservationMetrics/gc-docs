@@ -1,0 +1,15 @@
+{
+  "tagKey": "camera-trap-is-still-there",
+  "label": "Was the camera trap still there?",
+  "type": "selectOne",
+  "options": [
+    {
+      "label": "Yes",
+      "value": "yes"
+    },
+    {
+      "label": "No",
+      "value": "no"
+    }
+  ]
+}

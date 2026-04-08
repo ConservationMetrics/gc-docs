@@ -1,0 +1,490 @@
+{
+  "category.camera-trap-deployment.name": {
+    "description": "The name of category 'camera-trap-deployment'",
+    "message": "Cameraval plaatsing"
+  },
+  "category.camera-trap-maintenance.name": {
+    "description": "The name of category 'camera-trap-maintenance'",
+    "message": "Cameraval onderhoud"
+  },
+  "category.camera-trap-retrieval.name": {
+    "description": "The name of category 'camera-trap-retrieval'",
+    "message": "Cameraval ophalen"
+  },
+  "category.path-to-camera.name": {
+    "description": "The name of category 'path-to-camera'",
+    "message": "Pad naar camera"
+  },
+  "field.camera-set-up-by.label": {
+    "description": "Label for field 'camera-set-up-by'",
+    "message": "Je naam"
+  },
+  "field.camera-set-up-by.helperText": {
+    "description": "Descriptive text shown under the label for field 'camera-set-up-by'",
+    "message": "Wat is je naam?"
+  },
+  "field.deployment-id.label": {
+    "description": "Label for field 'deployment-id'",
+    "message": "Camera plaatsings-ID"
+  },
+  "field.deployment-id.helperText": {
+    "description": "Descriptive text shown under the label for field 'deployment-id'",
+    "message": "Wat is het camera plaatsings-ID?"
+  },
+  "field.sd-card-id-inserted.label": {
+    "description": "Label for field 'sd-card-id-inserted'",
+    "message": "Wat is het ID van de SD-kaart die je hebt geplaatst?"
+  },
+  "field.sd-card-id-inserted.helperText": {
+    "description": "Descriptive text shown under the label for field 'sd-card-id-inserted'",
+    "message": "Staat op de achterkant van de kaart"
+  },
+  "field.sd-card-id-inserted.options[value=\"sd1\"].label": {
+    "description": "Label for option 'sd1' of field 'sd-card-id-inserted'",
+    "message": "SD-kaart 1"
+  },
+  "field.sd-card-id-inserted.options[value=\"sd2\"].label": {
+    "description": "Label for option 'sd2' of field 'sd-card-id-inserted'",
+    "message": "SD-kaart 2"
+  },
+  "field.sd-card-id-inserted.options[value=\"sd3\"].label": {
+    "description": "Label for option 'sd3' of field 'sd-card-id-inserted'",
+    "message": "SD-kaart 3"
+  },
+  "field.sd-card-id-inserted.options[value=\"sd4\"].label": {
+    "description": "Label for option 'sd4' of field 'sd-card-id-inserted'",
+    "message": "SD-kaart 4"
+  },
+  "field.sd-card-id-inserted.options[value=\"sd5\"].label": {
+    "description": "Label for option 'sd5' of field 'sd-card-id-inserted'",
+    "message": "SD-kaart 5"
+  },
+  "field.sd-card-id-inserted.options[value=\"sd6\"].label": {
+    "description": "Label for option 'sd6' of field 'sd-card-id-inserted'",
+    "message": "SD-kaart 6"
+  },
+  "field.sd-card-id-inserted.options[value=\"sd7\"].label": {
+    "description": "Label for option 'sd7' of field 'sd-card-id-inserted'",
+    "message": "SD-kaart 7"
+  },
+  "field.sd-card-id-inserted.options[value=\"sd8\"].label": {
+    "description": "Label for option 'sd8' of field 'sd-card-id-inserted'",
+    "message": "SD-kaart 8"
+  },
+  "field.sd-card-id-inserted.options[value=\"sd9\"].label": {
+    "description": "Label for option 'sd9' of field 'sd-card-id-inserted'",
+    "message": "SD-kaart 9"
+  },
+  "field.sd-card-id-inserted.options[value=\"sd10\"].label": {
+    "description": "Label for option 'sd10' of field 'sd-card-id-inserted'",
+    "message": "SD-kaart 10"
+  },
+  "field.sd-card-id-inserted.options[value=\"sd11\"].label": {
+    "description": "Label for option 'sd11' of field 'sd-card-id-inserted'",
+    "message": "SD-kaart 11"
+  },
+  "field.sd-card-id-inserted.options[value=\"sd12\"].label": {
+    "description": "Label for option 'sd12' of field 'sd-card-id-inserted'",
+    "message": "SD-kaart 12"
+  },
+  "field.sd-card-id-inserted.options[value=\"sd13\"].label": {
+    "description": "Label for option 'sd13' of field 'sd-card-id-inserted'",
+    "message": "SD-kaart 13"
+  },
+  "field.sd-card-id-inserted.options[value=\"sd14\"].label": {
+    "description": "Label for option 'sd14' of field 'sd-card-id-inserted'",
+    "message": "SD-kaart 14"
+  },
+  "field.sd-card-id-inserted.options[value=\"sd15\"].label": {
+    "description": "Label for option 'sd15' of field 'sd-card-id-inserted'",
+    "message": "SD-kaart 15"
+  },
+  "field.sd-card-id-retrieved.label": {
+    "description": "Label for field 'sd-card-id-retrieved'",
+    "message": "Wat is het ID van de SD-kaart die je hebt opgehaald?"
+  },
+  "field.sd-card-id-retrieved.helperText": {
+    "description": "Descriptive text shown under the label for field 'sd-card-id-retrieved'",
+    "message": "Staat op de achterkant van de kaart"
+  },
+  "field.sd-card-id-retrieved.options[value=\"sd1\"].label": {
+    "description": "Label for option 'sd1' of field 'sd-card-id-retrieved'",
+    "message": "SD-kaart 1"
+  },
+  "field.sd-card-id-retrieved.options[value=\"sd2\"].label": {
+    "description": "Label for option 'sd2' of field 'sd-card-id-retrieved'",
+    "message": "SD-kaart 2"
+  },
+  "field.sd-card-id-retrieved.options[value=\"sd3\"].label": {
+    "description": "Label for option 'sd3' of field 'sd-card-id-retrieved'",
+    "message": "SD-kaart 3"
+  },
+  "field.sd-card-id-retrieved.options[value=\"sd4\"].label": {
+    "description": "Label for option 'sd4' of field 'sd-card-id-retrieved'",
+    "message": "SD-kaart 4"
+  },
+  "field.sd-card-id-retrieved.options[value=\"sd5\"].label": {
+    "description": "Label for option 'sd5' of field 'sd-card-id-retrieved'",
+    "message": "SD-kaart 5"
+  },
+  "field.sd-card-id-retrieved.options[value=\"sd6\"].label": {
+    "description": "Label for option 'sd6' of field 'sd-card-id-retrieved'",
+    "message": "SD-kaart 6"
+  },
+  "field.sd-card-id-retrieved.options[value=\"sd7\"].label": {
+    "description": "Label for option 'sd7' of field 'sd-card-id-retrieved'",
+    "message": "SD-kaart 7"
+  },
+  "field.sd-card-id-retrieved.options[value=\"sd8\"].label": {
+    "description": "Label for option 'sd8' of field 'sd-card-id-retrieved'",
+    "message": "SD-kaart 8"
+  },
+  "field.sd-card-id-retrieved.options[value=\"sd9\"].label": {
+    "description": "Label for option 'sd9' of field 'sd-card-id-retrieved'",
+    "message": "SD-kaart 9"
+  },
+  "field.sd-card-id-retrieved.options[value=\"sd10\"].label": {
+    "description": "Label for option 'sd10' of field 'sd-card-id-retrieved'",
+    "message": "SD-kaart 10"
+  },
+  "field.sd-card-id-retrieved.options[value=\"sd11\"].label": {
+    "description": "Label for option 'sd11' of field 'sd-card-id-retrieved'",
+    "message": "SD-kaart 11"
+  },
+  "field.sd-card-id-retrieved.options[value=\"sd12\"].label": {
+    "description": "Label for option 'sd12' of field 'sd-card-id-retrieved'",
+    "message": "SD-kaart 12"
+  },
+  "field.sd-card-id-retrieved.options[value=\"sd13\"].label": {
+    "description": "Label for option 'sd13' of field 'sd-card-id-retrieved'",
+    "message": "SD-kaart 13"
+  },
+  "field.sd-card-id-retrieved.options[value=\"sd14\"].label": {
+    "description": "Label for option 'sd14' of field 'sd-card-id-retrieved'",
+    "message": "SD-kaart 14"
+  },
+  "field.sd-card-id-retrieved.options[value=\"sd15\"].label": {
+    "description": "Label for option 'sd15' of field 'sd-card-id-retrieved'",
+    "message": "SD-kaart 15"
+  },
+  "field.camera-trap-in-right-place.label": {
+    "description": "Label for field 'camera-trap-in-right-place'",
+    "message": "Staat de cameraval op een geschikte plek?"
+  },
+  "field.camera-trap-in-right-place.helperText": {
+    "description": "Descriptive text shown under the label for field 'camera-trap-in-right-place'",
+    "message": "Wijst deze de juiste richting op?"
+  },
+  "field.camera-trap-in-right-place.options[value=\"yes\"].label": {
+    "description": "Label for option 'yes' of field 'camera-trap-in-right-place'",
+    "message": "Ja"
+  },
+  "field.camera-trap-in-right-place.options[value=\"no\"].label": {
+    "description": "Label for option 'no' of field 'camera-trap-in-right-place'",
+    "message": "Nee"
+  },
+  "field.timestamp-issues.label": {
+    "description": "Label for field 'timestamp-issues'",
+    "message": "Gecontroleerd of datum en tijd correct zijn"
+  },
+  "field.timestamp-issues.helperText": {
+    "description": "Descriptive text shown under the label for field 'timestamp-issues'",
+    "message": "Heb je gecontroleerd of de datum en tijd correct zijn?"
+  },
+  "field.timestamp-issues.options[value=\"yes\"].label": {
+    "description": "Label for option 'yes' of field 'timestamp-issues'",
+    "message": "Ja"
+  },
+  "field.timestamp-issues.options[value=\"no\"].label": {
+    "description": "Label for option 'no' of field 'timestamp-issues'",
+    "message": "Nee"
+  },
+  "field.location-name.label": {
+    "description": "Label for field 'location-name'",
+    "message": "Waar heb je de camera geplaatst?"
+  },
+  "field.location-name.helperText": {
+    "description": "Descriptive text shown under the label for field 'location-name'",
+    "message": "Vul de naam van de locatie in"
+  },
+  "field.check-settings.label": {
+    "description": "Label for field 'check-settings'",
+    "message": "Controleer de instellingen van de camera"
+  },
+  "field.check-settings.helperText": {
+    "description": "Descriptive text shown under the label for field 'check-settings'",
+    "message": "Loop de camera-instellingen door en zorg dat elke optie overeenkomt met deze lijst"
+  },
+  "field.check-settings.options[value=\"date-today's-date\"].label": {
+    "description": "Label for option 'date-today's-date' of field 'check-settings'",
+    "message": "Date - datum van vandaag"
+  },
+  "field.check-settings.options[value=\"time-what-time-is-it\"].label": {
+    "description": "Label for option 'time-what-time-is-it' of field 'check-settings'",
+    "message": "Time - hoe laat is het"
+  },
+  "field.check-settings.options[value=\"mode-trail\"].label": {
+    "description": "Label for option 'mode-trail' of field 'check-settings'",
+    "message": "Mode - Trail"
+  },
+  "field.check-settings.options[value=\"capture-delay-1s\"].label": {
+    "description": "Label for option 'capture-delay-1s' of field 'check-settings'",
+    "message": "Capture Delay - 1s"
+  },
+  "field.check-settings.options[value=\"picsize-high16mp\"].label": {
+    "description": "Label for option 'picsize-high16mp' of field 'check-settings'",
+    "message": "PicSize - High16MP"
+  },
+  "field.check-settings.options[value=\"multishot-rpf2shot\"].label": {
+    "description": "Label for option 'multishot-rpf2shot' of field 'check-settings'",
+    "message": "MultiShot - RPF2Shot"
+  },
+  "field.check-settings.options[value=\"Cap Start - 12\"].label": {
+    "description": "Label for option 'Cap Start - 12' of field 'check-settings'",
+    "message": "Cap Start - 12:00PM"
+  },
+  "field.check-settings.options[value=\"Cap End - 12\"].label": {
+    "description": "Label for option 'Cap End - 12' of field 'check-settings'",
+    "message": "Cap End - 12:00PM"
+  },
+  "field.check-settings.options[value=\"smart-ir-on\"].label": {
+    "description": "Label for option 'smart-ir-on' of field 'check-settings'",
+    "message": "Smart IR - On"
+  },
+  "field.check-settings.options[value=\"night-exp-fast-motion\"].label": {
+    "description": "Label for option 'night-exp-fast-motion' of field 'check-settings'",
+    "message": "Night Exp - Fast Motion"
+  },
+  "field.check-settings.options[value=\"temp-unit-c\"].label": {
+    "description": "Label for option 'temp-unit-c' of field 'check-settings'",
+    "message": "Temp Unit - C"
+  },
+  "field.check-settings.options[value=\"info-strip-on\"].label": {
+    "description": "Label for option 'info-strip-on' of field 'check-settings'",
+    "message": "Info Strip - On"
+  },
+  "field.check-settings.options[value=\"sd-management-off\"].label": {
+    "description": "Label for option 'sd-management-off' of field 'check-settings'",
+    "message": "SD Management - Off"
+  },
+  "field.check-settings.options[value=\"motion-detect-normal\"].label": {
+    "description": "Label for option 'motion-detect-normal' of field 'check-settings'",
+    "message": "Motion Detect - Normal"
+  },
+  "field.check-settings.options[value=\"battery-type-nimh\"].label": {
+    "description": "Label for option 'battery-type-nimh' of field 'check-settings'",
+    "message": "Battery Type - NiMH"
+  },
+  "field.check-settings.options[value=\"language-english\"].label": {
+    "description": "Label for option 'language-english' of field 'check-settings'",
+    "message": "Language - English"
+  },
+  "field.check-settings.options[value=\"name-as-written-on-the-door\"].label": {
+    "description": "Label for option 'name-as-written-on-the-door' of field 'check-settings'",
+    "message": "Name - Zoals geschreven op de deur"
+  },
+  "field.camera-height.label": {
+    "description": "Label for field 'camera-height'",
+    "message": "Hoe hoog is de camera bevestigd?"
+  },
+  "field.camera-height.helperText": {
+    "description": "Descriptive text shown under the label for field 'camera-height'",
+    "message": "Hoeveel meter boven de grond?"
+  },
+  "field.camera-height.options[value=\"05\"].label": {
+    "description": "Label for option '05' of field 'camera-height'",
+    "message": "0,5"
+  },
+  "field.camera-height.options[value=\"075\"].label": {
+    "description": "Label for option '075' of field 'camera-height'",
+    "message": "0,75"
+  },
+  "field.camera-height.options[value=\"1\"].label": {
+    "description": "Label for option '1' of field 'camera-height'",
+    "message": "1"
+  },
+  "field.camera-height.options[value=\"125\"].label": {
+    "description": "Label for option '125' of field 'camera-height'",
+    "message": "1,25"
+  },
+  "field.camera-height.options[value=\"15\"].label": {
+    "description": "Label for option '15' of field 'camera-height'",
+    "message": "1,5"
+  },
+  "field.camera-height.options[value=\"175\"].label": {
+    "description": "Label for option '175' of field 'camera-height'",
+    "message": "1,75"
+  },
+  "field.camera-height.options[value=\"2\"].label": {
+    "description": "Label for option '2' of field 'camera-height'",
+    "message": "2"
+  },
+  "field.removed-branches-that-obstruct-the-camera.label": {
+    "description": "Label for field 'removed-branches-that-obstruct-the-camera'",
+    "message": "Heb je takken verwijderd die de camera blokkeren?"
+  },
+  "field.removed-branches-that-obstruct-the-camera.helperText": {
+    "description": "Descriptive text shown under the label for field 'removed-branches-that-obstruct-the-camera'",
+    "message": "Zodat het zicht van de camera vrij is?"
+  },
+  "field.removed-branches-that-obstruct-the-camera.options[value=\"yes\"].label": {
+    "description": "Label for option 'yes' of field 'removed-branches-that-obstruct-the-camera'",
+    "message": "Ja"
+  },
+  "field.removed-branches-that-obstruct-the-camera.options[value=\"no\"].label": {
+    "description": "Label for option 'no' of field 'removed-branches-that-obstruct-the-camera'",
+    "message": "Nee"
+  },
+  "field.detection-distance.label": {
+    "description": "Label for field 'detection-distance'",
+    "message": "Hoe ver van de camera is het rode licht zichtbaar na de bewegingstest?"
+  },
+  "field.detection-distance.helperText": {
+    "description": "Descriptive text shown under the label for field 'detection-distance'",
+    "message": "Vergeet niet de bewegingstest te annuleren als je klaar bent."
+  },
+  "field.camera-trap-is-still-there.label": {
+    "description": "Label for field 'camera-trap-is-still-there'",
+    "message": "Was de cameraval er nog?"
+  },
+  "field.camera-trap-is-still-there.options[value=\"yes\"].label": {
+    "description": "Label for option 'yes' of field 'camera-trap-is-still-there'",
+    "message": "Ja"
+  },
+  "field.camera-trap-is-still-there.options[value=\"no\"].label": {
+    "description": "Label for option 'no' of field 'camera-trap-is-still-there'",
+    "message": "Nee"
+  },
+  "field.camera-trap-is-damaged.label": {
+    "description": "Label for field 'camera-trap-is-damaged'",
+    "message": "Is de cameraval beschadigd?"
+  },
+  "field.camera-trap-is-damaged.helperText": {
+    "description": "Descriptive text shown under the label for field 'camera-trap-is-damaged'",
+    "message": "Als deze kapot is, is deze dan vervangen?"
+  },
+  "field.camera-trap-is-damaged.options[value=\"yes\"].label": {
+    "description": "Label for option 'yes' of field 'camera-trap-is-damaged'",
+    "message": "Ja"
+  },
+  "field.camera-trap-is-damaged.options[value=\"no\"].label": {
+    "description": "Label for option 'no' of field 'camera-trap-is-damaged'",
+    "message": "Nee"
+  },
+  "field.camera-trap-is-working.label": {
+    "description": "Label for field 'camera-trap-is-working'",
+    "message": "Werkte de cameraval nog?"
+  },
+  "field.camera-trap-is-working.options[value=\"yes\"].label": {
+    "description": "Label for option 'yes' of field 'camera-trap-is-working'",
+    "message": "Ja"
+  },
+  "field.camera-trap-is-working.options[value=\"no\"].label": {
+    "description": "Label for option 'no' of field 'camera-trap-is-working'",
+    "message": "Nee"
+  },
+  "field.path-destination.label": {
+    "description": "Label for field 'path-destination'",
+    "message": "Beschrijf het pad naar de camera"
+  },
+  "field.location-id.label": {
+    "description": "Label for field 'location-id'",
+    "message": "Locatie-ID"
+  },
+  "field.location-id.helperText": {
+    "description": "Descriptive text shown under the label for field 'location-id'",
+    "message": "Selecteer de locatie waar de camera is geplaatst"
+  },
+  "field.location-id.options[value=\"loc1\"].label": {
+    "description": "Label for option 'loc1' of field 'location-id'",
+    "message": "Locatie 1"
+  },
+  "field.location-id.options[value=\"loc2\"].label": {
+    "description": "Label for option 'loc2' of field 'location-id'",
+    "message": "Locatie 2"
+  },
+  "field.location-id.options[value=\"loc3\"].label": {
+    "description": "Label for option 'loc3' of field 'location-id'",
+    "message": "Locatie 3"
+  },
+  "field.location-id.options[value=\"loc4\"].label": {
+    "description": "Label for option 'loc4' of field 'location-id'",
+    "message": "Locatie 4"
+  },
+  "field.location-id.options[value=\"loc5\"].label": {
+    "description": "Label for option 'loc5' of field 'location-id'",
+    "message": "Locatie 5"
+  },
+  "field.other-location-information.label": {
+    "description": "Label for field 'other-location-information'",
+    "message": "Overige locatie-informatie"
+  },
+  "field.other-location-information.helperText": {
+    "description": "Descriptive text shown under the label for field 'other-location-information'",
+    "message": "Eventuele aanvullende details over de locatie"
+  },
+  "field.camera-model.label": {
+    "description": "Label for field 'camera-model'",
+    "message": "Cameramodel"
+  },
+  "field.camera-model.helperText": {
+    "description": "Descriptive text shown under the label for field 'camera-model'",
+    "message": "Wat is het cameramodel?"
+  },
+  "field.camera-delay.label": {
+    "description": "Label for field 'camera-delay'",
+    "message": "Cameravertraging"
+  },
+  "field.camera-delay.helperText": {
+    "description": "Descriptive text shown under the label for field 'camera-delay'",
+    "message": "Vertraging tussen triggers in seconden"
+  },
+  "field.camera-depth.label": {
+    "description": "Label for field 'camera-depth'",
+    "message": "Cameradiepte"
+  },
+  "field.camera-depth.helperText": {
+    "description": "Descriptive text shown under the label for field 'camera-depth'",
+    "message": "Diepte van de camera onder het oppervlak in meters"
+  },
+  "field.camera-tilt.label": {
+    "description": "Label for field 'camera-tilt'",
+    "message": "Camerakantelhoek"
+  },
+  "field.camera-tilt.helperText": {
+    "description": "Descriptive text shown under the label for field 'camera-tilt'",
+    "message": "Kantelhoek van de camera in graden"
+  },
+  "field.camera-heading.label": {
+    "description": "Label for field 'camera-heading'",
+    "message": "Camerarichting"
+  },
+  "field.camera-heading.helperText": {
+    "description": "Descriptive text shown under the label for field 'camera-heading'",
+    "message": "Kompasrichting waar de camera op gericht is in graden (0-360)"
+  },
+  "field.bait-use.label": {
+    "description": "Label for field 'bait-use'",
+    "message": "Lokaas gebruikt"
+  },
+  "field.bait-use.helperText": {
+    "description": "Descriptive text shown under the label for field 'bait-use'",
+    "message": "Is er lokaas gebruikt op deze cameralocatie?"
+  },
+  "field.bait-use.options[value=\"yes\"].label": {
+    "description": "Label for option 'yes' of field 'bait-use'",
+    "message": "Ja"
+  },
+  "field.bait-use.options[value=\"no\"].label": {
+    "description": "Label for option 'no' of field 'bait-use'",
+    "message": "Nee"
+  },
+  "field.habitat.label": {
+    "description": "Label for field 'habitat'",
+    "message": "Habitat"
+  },
+  "field.habitat.helperText": {
+    "description": "Descriptive text shown under the label for field 'habitat'",
+    "message": "Beschrijf het habitat op de cameralocatie"
+  }
+}

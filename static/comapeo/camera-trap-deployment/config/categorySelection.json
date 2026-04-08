@@ -1,0 +1,8 @@
+{
+  "observation": [
+    "camera-trap-deployment",
+    "camera-trap-maintenance",
+    "camera-trap-retrieval"
+  ],
+  "track": ["path-to-camera"]
+}

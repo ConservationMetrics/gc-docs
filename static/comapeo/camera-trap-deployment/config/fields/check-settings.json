@@ -1,0 +1,76 @@
+{
+  "tagKey": "check-settings",
+  "label": "Check the settings of the camera",
+  "helperText": "Go through the camera settings, making sure each option matches this list",
+  "type": "selectOne",
+  "options": [
+    {
+      "label": "Date - today's date",
+      "value": "date-today's-date"
+    },
+    {
+      "label": "Time - what time is it",
+      "value": "time-what-time-is-it"
+    },
+    {
+      "label": "Mode - Trail",
+      "value": "mode-trail"
+    },
+    {
+      "label": "Capture Delay - 1s",
+      "value": "capture-delay-1s"
+    },
+    {
+      "label": "PicSize - High16MP",
+      "value": "picsize-high16mp"
+    },
+    {
+      "label": "MultiShot - RPF2Shot",
+      "value": "multishot-rpf2shot"
+    },
+    {
+      "label": "00PM",
+      "value": "Cap Start - 12"
+    },
+    {
+      "label": "00PM",
+      "value": "Cap End - 12"
+    },
+    {
+      "label": "Smart IR - On",
+      "value": "smart-ir-on"
+    },
+    {
+      "label": "Night Exp - Fast Motion",
+      "value": "night-exp-fast-motion"
+    },
+    {
+      "label": "Temp Unit - C",
+      "value": "temp-unit-c"
+    },
+    {
+      "label": "Info Strip - On",
+      "value": "info-strip-on"
+    },
+    {
+      "label": "SD Management - Off",
+      "value": "sd-management-off"
+    },
+    {
+      "label": "Motion Detect - Normal",
+      "value": "motion-detect-normal"
+    },
+    {
+      "label": "Battery Type - NiMH",
+      "value": "battery-type-nimh"
+    },
+    {
+      "label": "Language - English",
+      "value": "language-english"
+    },
+    {
+      "label": "Name - As written on the door",
+      "value": "name-as-written-on-the-door"
+    }
+  ]
+}

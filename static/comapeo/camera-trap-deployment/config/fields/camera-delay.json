@@ -1,0 +1,6 @@
+{
+  "tagKey": "camera-delay",
+  "label": "Camera delay",
+  "helperText": "Delay between triggers in seconds",
+  "type": "number"
+}

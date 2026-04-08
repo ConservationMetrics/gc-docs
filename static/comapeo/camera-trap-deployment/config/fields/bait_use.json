@@ -1,7 +1,7 @@
 {
-  "tagKey": "timestamp-issues",
-  "label": "Checked if date and time are correct",
-  "helperText": "Did you check if the date and time are correct?",
+  "tagKey": "bait_use",
+  "label": "Bait use",
+  "helperText": "Was bait used at this camera location?",
   "type": "selectOne",
   "options": [
     {

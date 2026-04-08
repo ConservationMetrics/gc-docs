@@ -1,5 +1,5 @@
 {
-  "tagKey": "location-id",
+  "tagKey": "location_id",
   "label": "Location ID",
   "helperText": "Select the location where the camera is deployed",
   "type": "selectOne",

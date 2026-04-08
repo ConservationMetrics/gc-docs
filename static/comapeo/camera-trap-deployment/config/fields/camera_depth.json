@@ -1,5 +1,5 @@
 {
-  "tagKey": "camera-depth",
+  "tagKey": "camera_depth",
   "label": "Camera depth",
   "helperText": "Depth of the camera below the surface in meters",
   "type": "number"

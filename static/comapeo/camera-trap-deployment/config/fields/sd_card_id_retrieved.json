@@ -1,6 +1,6 @@
 {
-  "tagKey": "sd-card-id-inserted",
-  "label": "What is the SD card ID that you inserted?",
+  "tagKey": "sd_card_id_retrieved",
+  "label": "What is the SD card ID that you retrieved?",
   "helperText": "Written on the back of the card",
   "type": "selectOne",
   "options": [

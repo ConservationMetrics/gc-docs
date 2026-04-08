@@ -1,6 +1,7 @@
 {
-  "tagKey": "camera-trap-is-working",
-  "label": "Was the camera trap still working?",
+  "tagKey": "camera_trap_is_damaged",
+  "label": "Is the camera trap damaged?",
+  "helperText": "If it's broken, have they replaced it?",
   "type": "selectOne",
   "options": [
     {

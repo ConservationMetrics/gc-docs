@@ -1,5 +1,5 @@
 {
-  "tagKey": "camera-model",
+  "tagKey": "camera_model",
   "label": "Camera model",
   "helperText": "What is the camera model?",
   "type": "text"

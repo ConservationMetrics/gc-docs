@@ -1,5 +1,5 @@
 {
-  "tagKey": "location-name",
+  "tagKey": "location_name",
   "label": "Where did you place the camera?",
   "helperText": "Enter the name of the location",
   "type": "text",

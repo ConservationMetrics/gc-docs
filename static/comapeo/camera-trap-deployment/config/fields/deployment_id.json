@@ -1,5 +1,5 @@
 {
-  "tagKey": "deployment-id",
+  "tagKey": "deployment_id",
   "label": "Camera Deployment ID",
   "helperText": "What is the camera deployment ID?",
   "type": "selectOne",

@@ -1,7 +1,7 @@
 {
-  "tagKey": "camera-trap-is-damaged",
-  "label": "Is the camera trap damaged?",
-  "helperText": "If it's broken, have they replaced it?",
+  "tagKey": "timestamp_issues",
+  "label": "Checked if date and time are correct",
+  "helperText": "Did you check if the date and time are correct?",
   "type": "selectOne",
   "options": [
     {

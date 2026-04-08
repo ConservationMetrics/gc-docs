@@ -1,5 +1,5 @@
 {
-  "tagKey": "camera-height",
+  "tagKey": "camera_height",
   "label": "How high is the camera mounted?",
   "helperText": "How many meters above the ground?",
   "type": "selectOne",

@@ -1,0 +1,23 @@
+{
+  "name": "Camera Trap Retrieval",
+  "appliesTo": [
+    "observation"
+  ],
+  "tags": {
+    "camera_trap": "retrieval",
+    "categoryId": "camera_trap_retrieval"
+  },
+  "addTags": {},
+  "removeTags": {},
+  "fields": [
+    "camera_set_up_by",
+    "deployment_id",
+    "sd_card_id_retrieved",
+    "camera_trap_is_still_there",
+    "camera_trap_is_damaged",
+    "camera_trap_is_working"
+  ],
+  "icon": "camera_trap_retrieval",
+  "terms": [],
+  "color": "#ff00ff"
+}

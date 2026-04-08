@@ -1,0 +1,36 @@
+{
+  "name": "Camera Trap Deployment",
+  "appliesTo": [
+    "observation"
+  ],
+  "tags": {
+    "camera_trap": "deployment",
+    "categoryId": "camera_trap_deployment"
+  },
+  "addTags": {},
+  "removeTags": {},
+  "fields": [
+    "deployment_id",
+    "location_id",
+    "location_name",
+    "other_location_information",
+    "camera_set_up_by",
+    "camera_model",
+    "camera_delay",
+    "camera_height",
+    "camera_depth",
+    "camera_tilt",
+    "camera_heading",
+    "detection_distance",
+    "timestamp_issues",
+    "bait_use",
+    "habitat",
+    "sd_card_id_inserted",
+    "camera_trap_in_right_place",
+    "check_settings",
+    "removed_branches_that_obstruct_the_camera"
+  ],
+  "icon": "camera_trap_deployment",
+  "terms": [],
+  "color": "#53b550"
+}

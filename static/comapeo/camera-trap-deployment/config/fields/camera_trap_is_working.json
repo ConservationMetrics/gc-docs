@@ -1,6 +1,6 @@
 {
-  "tagKey": "camera-trap-is-still-there",
-  "label": "Was the camera trap still there?",
+  "tagKey": "camera_trap_is_working",
+  "label": "Was the camera trap still working?",
   "type": "selectOne",
   "options": [
     {

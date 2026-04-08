@@ -1,5 +1,5 @@
 {
-  "tagKey": "camera-trap-in-right-place",
+  "tagKey": "camera_trap_in_right_place",
   "label": "Is the camera trap placed in an appropriate place?",
   "helperText": "Is it pointing in the right direction?",
   "type": "selectOne",

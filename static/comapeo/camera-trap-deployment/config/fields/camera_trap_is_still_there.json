@@ -1,7 +1,6 @@
 {
-  "tagKey": "bait-use",
-  "label": "Bait use",
-  "helperText": "Was bait used at this camera location?",
+  "tagKey": "camera_trap_is_still_there",
+  "label": "Was the camera trap still there?",
   "type": "selectOne",
   "options": [
     {

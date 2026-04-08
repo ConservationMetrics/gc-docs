@@ -1,5 +1,5 @@
 {
-  "tagKey": "path-destination",
+  "tagKey": "path_destination",
   "label": "Describe the path to get to the camera",
   "type": "text",
   "appearance": "multiline"

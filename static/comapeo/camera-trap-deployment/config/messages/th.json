@@ -1,227 +1,227 @@
 {
   "category.camera_trap_deployment.name": {
     "description": "The name of category 'camera_trap_deployment'",
-    "message": "Cameraval plaatsing"
+    "message": "การติดตั้งกล้องดักถ่ายภาพ"
   },
   "category.camera_trap_maintenance.name": {
     "description": "The name of category 'camera_trap_maintenance'",
-    "message": "Cameraval onderhoud"
+    "message": "การบำรุงรักษากล้องดักถ่ายภาพ"
   },
   "category.camera_trap_retrieval.name": {
     "description": "The name of category 'camera_trap_retrieval'",
-    "message": "Cameraval ophalen"
+    "message": "การเก็บกล้องดักถ่ายภาพ"
   },
   "category.path_to_camera.name": {
     "description": "The name of category 'path_to_camera'",
-    "message": "Pad naar camera"
+    "message": "เส้นทางไปยังกล้อง"
   },
   "field.camera_set_up_by.label": {
     "description": "Label for field 'camera_set_up_by'",
-    "message": "Je naam"
+    "message": "ชื่อของคุณ"
   },
   "field.camera_set_up_by.helperText": {
     "description": "Descriptive text shown under the label for field 'camera_set_up_by'",
-    "message": "Wat is je naam?"
+    "message": "คุณชื่ออะไร?"
   },
   "field.deployment_id.label": {
     "description": "Label for field 'deployment_id'",
-    "message": "Camera plaatsings-ID"
+    "message": "รหัสการติดตั้งกล้อง"
   },
   "field.deployment_id.helperText": {
     "description": "Descriptive text shown under the label for field 'deployment_id'",
-    "message": "Wat is het camera plaatsings-ID?"
+    "message": "รหัสการติดตั้งกล้องคืออะไร?"
   },
   "field.sd_card_id_inserted.label": {
     "description": "Label for field 'sd_card_id_inserted'",
-    "message": "Wat is het ID van de SD-kaart die je hebt geplaatst?"
+    "message": "รหัสการ์ด SD ที่คุณใส่คืออะไร?"
   },
   "field.sd_card_id_inserted.helperText": {
     "description": "Descriptive text shown under the label for field 'sd_card_id_inserted'",
-    "message": "Staat op de achterkant van de kaart"
+    "message": "เขียนอยู่ด้านหลังการ์ด"
   },
   "field.sd_card_id_inserted.options[value=\"sd1\"].label": {
     "description": "Label for option 'sd1' of field 'sd_card_id_inserted'",
-    "message": "SD-kaart 1"
+    "message": "การ์ด SD 1"
   },
   "field.sd_card_id_inserted.options[value=\"sd2\"].label": {
     "description": "Label for option 'sd2' of field 'sd_card_id_inserted'",
-    "message": "SD-kaart 2"
+    "message": "การ์ด SD 2"
   },
   "field.sd_card_id_inserted.options[value=\"sd3\"].label": {
     "description": "Label for option 'sd3' of field 'sd_card_id_inserted'",
-    "message": "SD-kaart 3"
+    "message": "การ์ด SD 3"
   },
   "field.sd_card_id_inserted.options[value=\"sd4\"].label": {
     "description": "Label for option 'sd4' of field 'sd_card_id_inserted'",
-    "message": "SD-kaart 4"
+    "message": "การ์ด SD 4"
   },
   "field.sd_card_id_inserted.options[value=\"sd5\"].label": {
     "description": "Label for option 'sd5' of field 'sd_card_id_inserted'",
-    "message": "SD-kaart 5"
+    "message": "การ์ด SD 5"
   },
   "field.sd_card_id_inserted.options[value=\"sd6\"].label": {
     "description": "Label for option 'sd6' of field 'sd_card_id_inserted'",
-    "message": "SD-kaart 6"
+    "message": "การ์ด SD 6"
   },
   "field.sd_card_id_inserted.options[value=\"sd7\"].label": {
     "description": "Label for option 'sd7' of field 'sd_card_id_inserted'",
-    "message": "SD-kaart 7"
+    "message": "การ์ด SD 7"
   },
   "field.sd_card_id_inserted.options[value=\"sd8\"].label": {
     "description": "Label for option 'sd8' of field 'sd_card_id_inserted'",
-    "message": "SD-kaart 8"
+    "message": "การ์ด SD 8"
   },
   "field.sd_card_id_inserted.options[value=\"sd9\"].label": {
     "description": "Label for option 'sd9' of field 'sd_card_id_inserted'",
-    "message": "SD-kaart 9"
+    "message": "การ์ด SD 9"
   },
   "field.sd_card_id_inserted.options[value=\"sd10\"].label": {
     "description": "Label for option 'sd10' of field 'sd_card_id_inserted'",
-    "message": "SD-kaart 10"
+    "message": "การ์ด SD 10"
   },
   "field.sd_card_id_inserted.options[value=\"sd11\"].label": {
     "description": "Label for option 'sd11' of field 'sd_card_id_inserted'",
-    "message": "SD-kaart 11"
+    "message": "การ์ด SD 11"
   },
   "field.sd_card_id_inserted.options[value=\"sd12\"].label": {
     "description": "Label for option 'sd12' of field 'sd_card_id_inserted'",
-    "message": "SD-kaart 12"
+    "message": "การ์ด SD 12"
   },
   "field.sd_card_id_inserted.options[value=\"sd13\"].label": {
     "description": "Label for option 'sd13' of field 'sd_card_id_inserted'",
-    "message": "SD-kaart 13"
+    "message": "การ์ด SD 13"
   },
   "field.sd_card_id_inserted.options[value=\"sd14\"].label": {
     "description": "Label for option 'sd14' of field 'sd_card_id_inserted'",
-    "message": "SD-kaart 14"
+    "message": "การ์ด SD 14"
   },
   "field.sd_card_id_inserted.options[value=\"sd15\"].label": {
     "description": "Label for option 'sd15' of field 'sd_card_id_inserted'",
-    "message": "SD-kaart 15"
+    "message": "การ์ด SD 15"
   },
   "field.sd_card_id_retrieved.label": {
     "description": "Label for field 'sd_card_id_retrieved'",
-    "message": "Wat is het ID van de SD-kaart die je hebt opgehaald?"
+    "message": "รหัสการ์ด SD ที่คุณเก็บมาคืออะไร?"
   },
   "field.sd_card_id_retrieved.helperText": {
     "description": "Descriptive text shown under the label for field 'sd_card_id_retrieved'",
-    "message": "Staat op de achterkant van de kaart"
+    "message": "เขียนอยู่ด้านหลังการ์ด"
   },
   "field.sd_card_id_retrieved.options[value=\"sd1\"].label": {
     "description": "Label for option 'sd1' of field 'sd_card_id_retrieved'",
-    "message": "SD-kaart 1"
+    "message": "การ์ด SD 1"
   },
   "field.sd_card_id_retrieved.options[value=\"sd2\"].label": {
     "description": "Label for option 'sd2' of field 'sd_card_id_retrieved'",
-    "message": "SD-kaart 2"
+    "message": "การ์ด SD 2"
   },
   "field.sd_card_id_retrieved.options[value=\"sd3\"].label": {
     "description": "Label for option 'sd3' of field 'sd_card_id_retrieved'",
-    "message": "SD-kaart 3"
+    "message": "การ์ด SD 3"
   },
   "field.sd_card_id_retrieved.options[value=\"sd4\"].label": {
     "description": "Label for option 'sd4' of field 'sd_card_id_retrieved'",
-    "message": "SD-kaart 4"
+    "message": "การ์ด SD 4"
   },
   "field.sd_card_id_retrieved.options[value=\"sd5\"].label": {
     "description": "Label for option 'sd5' of field 'sd_card_id_retrieved'",
-    "message": "SD-kaart 5"
+    "message": "การ์ด SD 5"
   },
   "field.sd_card_id_retrieved.options[value=\"sd6\"].label": {
     "description": "Label for option 'sd6' of field 'sd_card_id_retrieved'",
-    "message": "SD-kaart 6"
+    "message": "การ์ด SD 6"
   },
   "field.sd_card_id_retrieved.options[value=\"sd7\"].label": {
     "description": "Label for option 'sd7' of field 'sd_card_id_retrieved'",
-    "message": "SD-kaart 7"
+    "message": "การ์ด SD 7"
   },
   "field.sd_card_id_retrieved.options[value=\"sd8\"].label": {
     "description": "Label for option 'sd8' of field 'sd_card_id_retrieved'",
-    "message": "SD-kaart 8"
+    "message": "การ์ด SD 8"
   },
   "field.sd_card_id_retrieved.options[value=\"sd9\"].label": {
     "description": "Label for option 'sd9' of field 'sd_card_id_retrieved'",
-    "message": "SD-kaart 9"
+    "message": "การ์ด SD 9"
   },
   "field.sd_card_id_retrieved.options[value=\"sd10\"].label": {
     "description": "Label for option 'sd10' of field 'sd_card_id_retrieved'",
-    "message": "SD-kaart 10"
+    "message": "การ์ด SD 10"
   },
   "field.sd_card_id_retrieved.options[value=\"sd11\"].label": {
     "description": "Label for option 'sd11' of field 'sd_card_id_retrieved'",
-    "message": "SD-kaart 11"
+    "message": "การ์ด SD 11"
   },
   "field.sd_card_id_retrieved.options[value=\"sd12\"].label": {
     "description": "Label for option 'sd12' of field 'sd_card_id_retrieved'",
-    "message": "SD-kaart 12"
+    "message": "การ์ด SD 12"
   },
   "field.sd_card_id_retrieved.options[value=\"sd13\"].label": {
     "description": "Label for option 'sd13' of field 'sd_card_id_retrieved'",
-    "message": "SD-kaart 13"
+    "message": "การ์ด SD 13"
   },
   "field.sd_card_id_retrieved.options[value=\"sd14\"].label": {
     "description": "Label for option 'sd14' of field 'sd_card_id_retrieved'",
-    "message": "SD-kaart 14"
+    "message": "การ์ด SD 14"
   },
   "field.sd_card_id_retrieved.options[value=\"sd15\"].label": {
     "description": "Label for option 'sd15' of field 'sd_card_id_retrieved'",
-    "message": "SD-kaart 15"
+    "message": "การ์ด SD 15"
   },
   "field.camera_trap_in_right_place.label": {
     "description": "Label for field 'camera_trap_in_right_place'",
-    "message": "Staat de cameraval op een geschikte plek?"
+    "message": "กล้องดักถ่ายภาพถูกวางในตำแหน่งที่เหมาะสมหรือไม่?"
   },
   "field.camera_trap_in_right_place.helperText": {
     "description": "Descriptive text shown under the label for field 'camera_trap_in_right_place'",
-    "message": "Wijst deze de juiste richting op?"
+    "message": "กล้องหันไปในทิศทางที่ถูกต้องหรือไม่?"
   },
   "field.camera_trap_in_right_place.options[value=\"yes\"].label": {
     "description": "Label for option 'yes' of field 'camera_trap_in_right_place'",
-    "message": "Ja"
+    "message": "ใช่"
   },
   "field.camera_trap_in_right_place.options[value=\"no\"].label": {
     "description": "Label for option 'no' of field 'camera_trap_in_right_place'",
-    "message": "Nee"
+    "message": "ไม่ใช่"
   },
   "field.timestamp_issues.label": {
     "description": "Label for field 'timestamp_issues'",
-    "message": "Gecontroleerd of datum en tijd correct zijn"
+    "message": "ตรวจสอบวันที่และเวลาแล้ว"
   },
   "field.timestamp_issues.helperText": {
     "description": "Descriptive text shown under the label for field 'timestamp_issues'",
-    "message": "Heb je gecontroleerd of de datum en tijd correct zijn?"
+    "message": "คุณตรวจสอบว่าวันที่และเวลาถูกต้องหรือไม่?"
   },
   "field.timestamp_issues.options[value=\"yes\"].label": {
     "description": "Label for option 'yes' of field 'timestamp_issues'",
-    "message": "Ja"
+    "message": "ใช่"
   },
   "field.timestamp_issues.options[value=\"no\"].label": {
     "description": "Label for option 'no' of field 'timestamp_issues'",
-    "message": "Nee"
+    "message": "ไม่ใช่"
   },
   "field.location_name.label": {
     "description": "Label for field 'location_name'",
-    "message": "Waar heb je de camera geplaatst?"
+    "message": "คุณวางกล้องไว้ที่ไหน?"
   },
   "field.location_name.helperText": {
     "description": "Descriptive text shown under the label for field 'location_name'",
-    "message": "Vul de naam van de locatie in"
+    "message": "กรอกชื่อสถานที่"
   },
   "field.check_settings.label": {
     "description": "Label for field 'check_settings'",
-    "message": "Controleer de instellingen van de camera"
+    "message": "ตรวจสอบการตั้งค่ากล้อง"
   },
   "field.check_settings.helperText": {
     "description": "Descriptive text shown under the label for field 'check_settings'",
-    "message": "Loop de camera-instellingen door en zorg dat elke optie overeenkomt met deze lijst"
+    "message": "ตรวจสอบการตั้งค่ากล้อง ให้แน่ใจว่าแต่ละตัวเลือกตรงกับรายการนี้"
   },
   "field.check_settings.options[value=\"date-today's-date\"].label": {
     "description": "Label for option 'date-today's-date' of field 'check_settings'",
-    "message": "Date - datum van vandaag"
+    "message": "Date - วันที่วันนี้"
   },
   "field.check_settings.options[value=\"time-what-time-is-it\"].label": {
     "description": "Label for option 'time-what-time-is-it' of field 'check_settings'",
-    "message": "Time - hoe laat is het"
+    "message": "Time - ตอนนี้กี่โมง"
   },
   "field.check_settings.options[value=\"mode-trail\"].label": {
     "description": "Label for option 'mode-trail' of field 'check_settings'",
@@ -281,23 +281,23 @@
   },
   "field.check_settings.options[value=\"name-as-written-on-the-door\"].label": {
     "description": "Label for option 'name-as-written-on-the-door' of field 'check_settings'",
-    "message": "Name - Zoals geschreven op de deur"
+    "message": "Name - ตามที่เขียนไว้บนประตู"
   },
   "field.camera_height.label": {
     "description": "Label for field 'camera_height'",
-    "message": "Hoe hoog is de camera bevestigd?"
+    "message": "กล้องติดตั้งสูงเท่าไร?"
   },
   "field.camera_height.helperText": {
     "description": "Descriptive text shown under the label for field 'camera_height'",
-    "message": "Hoeveel meter boven de grond?"
+    "message": "สูงกี่เมตรจากพื้น?"
   },
   "field.camera_height.options[value=\"05\"].label": {
     "description": "Label for option '05' of field 'camera_height'",
-    "message": "0,5"
+    "message": "0.5"
   },
   "field.camera_height.options[value=\"075\"].label": {
     "description": "Label for option '075' of field 'camera_height'",
-    "message": "0,75"
+    "message": "0.75"
   },
   "field.camera_height.options[value=\"1\"].label": {
     "description": "Label for option '1' of field 'camera_height'",
@@ -305,15 +305,15 @@
   },
   "field.camera_height.options[value=\"125\"].label": {
     "description": "Label for option '125' of field 'camera_height'",
-    "message": "1,25"
+    "message": "1.25"
   },
   "field.camera_height.options[value=\"15\"].label": {
     "description": "Label for option '15' of field 'camera_height'",
-    "message": "1,5"
+    "message": "1.5"
   },
   "field.camera_height.options[value=\"175\"].label": {
     "description": "Label for option '175' of field 'camera_height'",
-    "message": "1,75"
+    "message": "1.75"
   },
   "field.camera_height.options[value=\"2\"].label": {
     "description": "Label for option '2' of field 'camera_height'",
@@ -321,170 +321,170 @@
   },
   "field.removed_branches_that_obstruct_the_camera.label": {
     "description": "Label for field 'removed_branches_that_obstruct_the_camera'",
-    "message": "Heb je takken verwijderd die de camera blokkeren?"
+    "message": "คุณได้เอากิ่งไม้ที่บังกล้องออกหรือยัง?"
   },
   "field.removed_branches_that_obstruct_the_camera.helperText": {
     "description": "Descriptive text shown under the label for field 'removed_branches_that_obstruct_the_camera'",
-    "message": "Zodat het zicht van de camera vrij is?"
+    "message": "เพื่อให้มุมมองของกล้องโล่ง?"
   },
   "field.removed_branches_that_obstruct_the_camera.options[value=\"yes\"].label": {
     "description": "Label for option 'yes' of field 'removed_branches_that_obstruct_the_camera'",
-    "message": "Ja"
+    "message": "ใช่"
   },
   "field.removed_branches_that_obstruct_the_camera.options[value=\"no\"].label": {
     "description": "Label for option 'no' of field 'removed_branches_that_obstruct_the_camera'",
-    "message": "Nee"
+    "message": "ไม่ใช่"
   },
   "field.detection_distance.label": {
     "description": "Label for field 'detection_distance'",
-    "message": "Hoe ver van de camera is het rode licht zichtbaar na de bewegingstest?"
+    "message": "แสงสีแดงมองเห็นได้ไกลแค่ไหนจากกล้องหลังการทดสอบการเคลื่อนไหว?"
   },
   "field.detection_distance.helperText": {
     "description": "Descriptive text shown under the label for field 'detection_distance'",
-    "message": "Vergeet niet de bewegingstest te annuleren als je klaar bent."
+    "message": "อย่าลืมยกเลิกการทดสอบการเคลื่อนไหวเมื่อเสร็จแล้ว"
   },
   "field.camera_trap_is_still_there.label": {
     "description": "Label for field 'camera_trap_is_still_there'",
-    "message": "Was de cameraval er nog?"
+    "message": "กล้องดักถ่ายภาพยังอยู่หรือไม่?"
   },
   "field.camera_trap_is_still_there.options[value=\"yes\"].label": {
     "description": "Label for option 'yes' of field 'camera_trap_is_still_there'",
-    "message": "Ja"
+    "message": "ใช่"
   },
   "field.camera_trap_is_still_there.options[value=\"no\"].label": {
     "description": "Label for option 'no' of field 'camera_trap_is_still_there'",
-    "message": "Nee"
+    "message": "ไม่ใช่"
   },
   "field.camera_trap_is_damaged.label": {
     "description": "Label for field 'camera_trap_is_damaged'",
-    "message": "Is de cameraval beschadigd?"
+    "message": "กล้องดักถ่ายภาพเสียหายหรือไม่?"
   },
   "field.camera_trap_is_damaged.helperText": {
     "description": "Descriptive text shown under the label for field 'camera_trap_is_damaged'",
-    "message": "Als deze kapot is, is deze dan vervangen?"
+    "message": "ถ้าเสีย ได้เปลี่ยนใหม่หรือยัง?"
   },
   "field.camera_trap_is_damaged.options[value=\"yes\"].label": {
     "description": "Label for option 'yes' of field 'camera_trap_is_damaged'",
-    "message": "Ja"
+    "message": "ใช่"
   },
   "field.camera_trap_is_damaged.options[value=\"no\"].label": {
     "description": "Label for option 'no' of field 'camera_trap_is_damaged'",
-    "message": "Nee"
+    "message": "ไม่ใช่"
   },
   "field.camera_trap_is_working.label": {
     "description": "Label for field 'camera_trap_is_working'",
-    "message": "Werkte de cameraval nog?"
+    "message": "กล้องดักถ่ายภาพยังทำงานอยู่หรือไม่?"
   },
   "field.camera_trap_is_working.options[value=\"yes\"].label": {
     "description": "Label for option 'yes' of field 'camera_trap_is_working'",
-    "message": "Ja"
+    "message": "ใช่"
   },
   "field.camera_trap_is_working.options[value=\"no\"].label": {
     "description": "Label for option 'no' of field 'camera_trap_is_working'",
-    "message": "Nee"
+    "message": "ไม่ใช่"
   },
   "field.path_destination.label": {
     "description": "Label for field 'path_destination'",
-    "message": "Beschrijf het pad naar de camera"
+    "message": "อธิบายเส้นทางไปยังกล้อง"
   },
   "field.location_id.label": {
     "description": "Label for field 'location_id'",
-    "message": "Locatie-ID"
+    "message": "รหัสตำแหน่ง"
   },
   "field.location_id.helperText": {
     "description": "Descriptive text shown under the label for field 'location_id'",
-    "message": "Selecteer de locatie waar de camera is geplaatst"
+    "message": "เลือกตำแหน่งที่ติดตั้งกล้อง"
   },
   "field.location_id.options[value=\"loc1\"].label": {
     "description": "Label for option 'loc1' of field 'location_id'",
-    "message": "Locatie 1"
+    "message": "ตำแหน่ง 1"
   },
   "field.location_id.options[value=\"loc2\"].label": {
     "description": "Label for option 'loc2' of field 'location_id'",
-    "message": "Locatie 2"
+    "message": "ตำแหน่ง 2"
   },
   "field.location_id.options[value=\"loc3\"].label": {
     "description": "Label for option 'loc3' of field 'location_id'",
-    "message": "Locatie 3"
+    "message": "ตำแหน่ง 3"
   },
   "field.location_id.options[value=\"loc4\"].label": {
     "description": "Label for option 'loc4' of field 'location_id'",
-    "message": "Locatie 4"
+    "message": "ตำแหน่ง 4"
   },
   "field.location_id.options[value=\"loc5\"].label": {
     "description": "Label for option 'loc5' of field 'location_id'",
-    "message": "Locatie 5"
+    "message": "ตำแหน่ง 5"
   },
   "field.other_location_information.label": {
     "description": "Label for field 'other_location_information'",
-    "message": "Overige locatie-informatie"
+    "message": "ข้อมูลตำแหน่งอื่นๆ"
   },
   "field.other_location_information.helperText": {
     "description": "Descriptive text shown under the label for field 'other_location_information'",
-    "message": "Eventuele aanvullende details over de locatie"
+    "message": "รายละเอียดเพิ่มเติมเกี่ยวกับตำแหน่ง"
   },
   "field.camera_model.label": {
     "description": "Label for field 'camera_model'",
-    "message": "Cameramodel"
+    "message": "รุ่นกล้อง"
   },
   "field.camera_model.helperText": {
     "description": "Descriptive text shown under the label for field 'camera_model'",
-    "message": "Wat is het cameramodel?"
+    "message": "รุ่นกล้องคืออะไร?"
   },
   "field.camera_delay.label": {
     "description": "Label for field 'camera_delay'",
-    "message": "Cameravertraging"
+    "message": "การหน่วงเวลากล้อง"
   },
   "field.camera_delay.helperText": {
     "description": "Descriptive text shown under the label for field 'camera_delay'",
-    "message": "Vertraging tussen triggers in seconden"
+    "message": "การหน่วงเวลาระหว่างการถ่ายในหน่วยวินาที"
   },
   "field.camera_depth.label": {
     "description": "Label for field 'camera_depth'",
-    "message": "Cameradiepte"
+    "message": "ความลึกของกล้อง"
   },
   "field.camera_depth.helperText": {
     "description": "Descriptive text shown under the label for field 'camera_depth'",
-    "message": "Diepte van de camera onder het oppervlak in meters"
+    "message": "ความลึกของกล้องใต้พื้นผิวเป็นเมตร"
   },
   "field.camera_tilt.label": {
     "description": "Label for field 'camera_tilt'",
-    "message": "Camerakantelhoek"
+    "message": "มุมเอียงของกล้อง"
   },
   "field.camera_tilt.helperText": {
     "description": "Descriptive text shown under the label for field 'camera_tilt'",
-    "message": "Kantelhoek van de camera in graden"
+    "message": "มุมเอียงของกล้องเป็นองศา"
   },
   "field.camera_heading.label": {
     "description": "Label for field 'camera_heading'",
-    "message": "Camerarichting"
+    "message": "ทิศทางกล้อง"
   },
   "field.camera_heading.helperText": {
     "description": "Descriptive text shown under the label for field 'camera_heading'",
-    "message": "Kompasrichting waar de camera op gericht is in graden (0-360)"
+    "message": "ทิศทางเข็มทิศที่กล้องหันไปเป็นองศา (0-360)"
   },
   "field.bait_use.label": {
     "description": "Label for field 'bait_use'",
-    "message": "Lokaas gebruikt"
+    "message": "การใช้เหยื่อล่อ"
   },
   "field.bait_use.helperText": {
     "description": "Descriptive text shown under the label for field 'bait_use'",
-    "message": "Is er lokaas gebruikt op deze cameralocatie?"
+    "message": "มีการใช้เหยื่อล่อที่ตำแหน่งกล้องนี้หรือไม่?"
   },
   "field.bait_use.options[value=\"yes\"].label": {
     "description": "Label for option 'yes' of field 'bait_use'",
-    "message": "Ja"
+    "message": "ใช่"
   },
   "field.bait_use.options[value=\"no\"].label": {
     "description": "Label for option 'no' of field 'bait_use'",
-    "message": "Nee"
+    "message": "ไม่ใช่"
   },
   "field.habitat.label": {
     "description": "Label for field 'habitat'",
-    "message": "Habitat"
+    "message": "แหล่งที่อยู่อาศัย"
   },
   "field.habitat.helperText": {
     "description": "Descriptive text shown under the label for field 'habitat'",
-    "message": "Beschrijf het habitat op de cameralocatie"
+    "message": "อธิบายแหล่งที่อยู่อาศัยที่ตำแหน่งกล้อง"
   }
 }

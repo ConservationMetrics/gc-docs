@@ -1,8 +1,10 @@
 {
   "observation": [
-    "camera-trap-deployment",
-    "camera-trap-maintenance",
-    "camera-trap-retrieval"
+    "camera_trap_deployment",
+    "camera_trap_maintenance",
+    "camera_trap_retrieval"
   ],
-  "track": ["path-to-camera"]
+  "track": [
+    "path_to_camera"
+  ]
 }

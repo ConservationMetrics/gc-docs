@@ -1,5 +1,5 @@
 {
-  "tagKey": "camera-set-up-by",
+  "tagKey": "camera_set_up_by",
   "label": "Your name",
   "helperText": "What is your name?",
   "type": "text"

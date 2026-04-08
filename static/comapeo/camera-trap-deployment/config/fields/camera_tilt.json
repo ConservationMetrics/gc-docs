@@ -1,5 +1,5 @@
 {
-  "tagKey": "camera-tilt",
+  "tagKey": "camera_tilt",
   "label": "Camera tilt",
   "helperText": "Tilt angle of the camera in degrees",
   "type": "number"

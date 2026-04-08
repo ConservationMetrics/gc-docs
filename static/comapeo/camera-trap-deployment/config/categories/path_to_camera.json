@@ -1,0 +1,19 @@
+{
+  "name": "Path to Camera",
+  "appliesTo": [
+    "track"
+  ],
+  "tags": {
+    "camera_trap": "path_to_camera",
+    "categoryId": "path_to_camera"
+  },
+  "addTags": {},
+  "removeTags": {},
+  "fields": [
+    "camera_set_up_by",
+    "path_destination"
+  ],
+  "icon": "path_to_camera",
+  "terms": [],
+  "color": "#b45f06"
+}

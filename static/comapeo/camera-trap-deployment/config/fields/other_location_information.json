@@ -1,5 +1,5 @@
 {
-  "tagKey": "other-location-information",
+  "tagKey": "other_location_information",
   "label": "Other location information",
   "helperText": "Any additional details about the location",
   "type": "text",

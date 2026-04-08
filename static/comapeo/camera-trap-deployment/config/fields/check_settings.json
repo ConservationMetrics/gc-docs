@@ -1,5 +1,5 @@
 {
-  "tagKey": "check-settings",
+  "tagKey": "check_settings",
   "label": "Check the settings of the camera",
   "helperText": "Go through the camera settings, making sure each option matches this list",
   "type": "selectOne",

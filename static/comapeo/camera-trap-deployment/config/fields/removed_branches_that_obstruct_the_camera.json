@@ -1,5 +1,5 @@
 {
-  "tagKey": "removed-branches-that-obstruct-the-camera",
+  "tagKey": "removed_branches_that_obstruct_the_camera",
   "label": "Did you remove branches that obstruct the camera?",
   "helperText": "So that the camera's view is clear?",
   "type": "selectOne",

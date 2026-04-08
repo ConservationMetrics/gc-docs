@@ -7,15 +7,19 @@ tags: [itu-3, opu, tsp]
 
 This CoMapeo category set uses the column naming conventions recommended in the [GBIF Camera Trap Guide](https://docs.gbif.org/camera-trap-guide/en).
 
+<div style={{textAlign: 'center'}}>
+  <img src="/img/reference/connected-applications/comapeo/camera-trap-deployment.jpg" alt="Camera Trap Deployment Category Set" style={{border: '1px solid #ccc', width: '65%', marginBottom: '1.5rem'}} />
+</div>
+
 **:floppy_disk: Download the category set: [`camera-trap-deployment.comapeocat`](/comapeo/camera-trap-deployment/camera-trap-deployment.comapeocat)**
 
 Please see the [CoMapeo documentation](https://docs.comapeo.app) for more information on how to install the category set for your project.
 
 This category set has four categories:
-- Camera Trap Deployment (_observation_)
-- Camera Trap Maintenance (_observation_)
-- Camera Trap Retrieval (_observation_)
-- Camera Trap Path (_track_)
+- **Camera Trap Deployment** (_observation_)
+- **Camera Trap Maintenance** (_observation_)
+- **Camera Trap Retrieval** (_observation_)
+- **Camera Trap Path** (_track_)
 
 ## GBIF recommended fields in CoMapeo
 
@@ -51,13 +55,13 @@ This information is captured using the **Camera Trap Deployment** category. The 
 
 :::important
 
-CoMapeo does not provide a way to validations for the fields in this category set. For example, for **camera tilt**, we cannot ensure that the value entered is between 0 and 360 degrees. Therefore, it is important to work with field staff to ensure that the values entered are correct.
+CoMapeo does not provide a way to add validations for the fields in this category set. For example, for **camera tilt**, we cannot ensure that the value entered is between 0 and 360 degrees. Therefore, it is important to work with field staff to ensure that the values entered are correct.
 :::
 
 
 ## Recommendations for further customization
 
-You will likely want to customize this category set to meet your specific needs. To do so, you can modify the `config` directory in the root of the category set [located on Github](https://github.com/ConservationMetrics/gc-docs/tree/main/static/comapeo/camera-trap-deployment)
+You will likely want to customize this category set to meet your specific needs. To do so, you can modify the `config` directory in the root of the category set [located on Github](https://github.com/ConservationMetrics/gc-docs/tree/main/static/comapeo/camera-trap-deployment).
 
 Here are some recommendations for further customization.
 
@@ -115,7 +119,7 @@ The options are:
 - Night Exp - Fast Motion
 - Temp Unit - C
 - Info Strip - On
-- SD Managment - Off
+- SD Management - Off
 - Motion Detect - Normal
 - Battery Type - NiMH
 - Language - English
@@ -147,4 +151,6 @@ Please see the [comapeocat documentation](https://github.com/digidem/comapeocat)
 
 :::tip
 CMI or Awana Digital can help you build a new category set if you need assistance.
+
+In the future we can also make a Google spreadsheet available to use with [CoMapeo's Category spreadsheet plugin](https://lab.digital-democracy.org/comapeo-category-spreadsheet-plugin/).
 :::

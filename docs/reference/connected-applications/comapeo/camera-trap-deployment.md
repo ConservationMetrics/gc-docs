@@ -58,14 +58,17 @@ This information is captured using the **Camera Trap Deployment** category. The 
 CoMapeo does not provide a way to add validations for the fields in this category set. For example, for **camera tilt**, we cannot ensure that the value entered is between 0 and 360 degrees. Therefore, it is important to work with field staff to ensure that the values entered are correct.
 :::
 
+## Customizing the category set
 
-## Recommendations for further customization
+You will likely want to customize this category set to meet your specific needs. To do so, `git clone` the [conservationmetrics/gc-docs](https://github.com/ConservationMetrics/gc-docs) repository and modify the files in `/static/comapeo/camera-trap-deployment/config`.
 
-You will likely want to customize this category set to meet your specific needs. To do so, you can modify the `config` directory in the root of the category set [located on Github](https://github.com/ConservationMetrics/gc-docs/tree/main/static/comapeo/camera-trap-deployment).
+:::tip
+CMI or Awana Digital can help you build a new category set if you need assistance.
 
-Here are some recommendations for further customization.
+In the future we can also make a Google spreadsheet available to use with [CoMapeo's Category spreadsheet plugin](https://lab.digital-democracy.org/comapeo-category-spreadsheet-plugin/).
+:::
 
-### Fields
+### Customization recommendations
 
 #### `deployment-id` field
 
@@ -127,30 +130,25 @@ The options are:
 
 If you need more, or want to change the options, you can modify the `options` array.
 
-### Translation
+#### Add a translation
 
-This configuration is translated into the following languages:
+Currently, this category set is translated into the following languages:
 
 - Dutch (`nl`)
 
-To add your own translations, add a JSON file with the right ISO code in the `messages` directory and add the translations to the file.
+To add your own translations, add a JSON file with the right ISO code in the `messages` directory and add the translations to the file, or let us know if you would prefer a spreadsheet to work with.
 
-## Building a new camera traps category set
+We welcome translations for other languages! If you are interested in contributing a translation, please contact us at [guardianconnector@conservationmetrics.com](mailto:guardianconnector@conservationmetrics.com).
 
-If you have customized the category set, you can build a new category set using the `comapeocat` command line tool. This requires you to have Node Package Manager (`npm`) installed.
+### Building a new camera traps category set
+
+Once you have customized the category set, you can build a new category set using the `comapeocat` command line tool. This requires you to have Node Package Manager (`npm`) installed.
 
 ```sh
 npm install -g comapeocat
 
-# Run this in the same directory where this README.md file is located
+# Run this in this directory after forking: https://github.com/ConservationMetrics/gc-docs/tree/main/static/comapeo/
 npx comapeocat build ./config --output camera-trap-deployment.comapeocat
 ```
 
-
 Please see the [comapeocat documentation](https://github.com/digidem/comapeocat) for more information.
-
-:::tip
-CMI or Awana Digital can help you build a new category set if you need assistance.
-
-In the future we can also make a Google spreadsheet available to use with [CoMapeo's Category spreadsheet plugin](https://lab.digital-democracy.org/comapeo-category-spreadsheet-plugin/).
-:::

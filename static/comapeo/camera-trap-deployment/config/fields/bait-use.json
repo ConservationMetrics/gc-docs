@@ -1,0 +1,16 @@
+{
+  "tagKey": "bait-use",
+  "label": "Bait use",
+  "helperText": "Was bait used at this camera location?",
+  "type": "selectOne",
+  "options": [
+    {
+      "label": "Yes",
+      "value": "yes"
+    },
+    {
+      "label": "No",
+      "value": "no"
+    }
+  ]
+}

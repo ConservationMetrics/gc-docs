@@ -1,0 +1,28 @@
+{
+  "tagKey": "location-id",
+  "label": "Location ID",
+  "helperText": "Select the location where the camera is deployed",
+  "type": "selectOne",
+  "options": [
+    {
+      "label": "Location 1",
+      "value": "loc1"
+    },
+    {
+      "label": "Location 2",
+      "value": "loc2"
+    },
+    {
+      "label": "Location 3",
+      "value": "loc3"
+    },
+    {
+      "label": "Location 4",
+      "value": "loc4"
+    },
+    {
+      "label": "Location 5",
+      "value": "loc5"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "tagKey": "habitat",
+  "label": "Habitat",
+  "helperText": "Describe the habitat at the camera location",
+  "type": "text",
+  "appearance": "multiline"
+}

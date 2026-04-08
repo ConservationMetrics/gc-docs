@@ -1,0 +1,6 @@
+{
+  "tagKey": "detection-distance",
+  "label": "How far from the camera can the red light be seen after the motion test?",
+  "helperText": "Remember to cancel the motion test after you finish.",
+  "type": "number"
+}

@@ -1,0 +1,36 @@
+{
+  "tagKey": "camera-height",
+  "label": "How high is the camera mounted?",
+  "helperText": "How many meters above the ground?",
+  "type": "selectOne",
+  "options": [
+    {
+      "label": "0.5",
+      "value": "05"
+    },
+    {
+      "label": "0.75",
+      "value": "075"
+    },
+    {
+      "label": "1",
+      "value": "1"
+    },
+    {
+      "label": "1.25",
+      "value": "125"
+    },
+    {
+      "label": "1.5",
+      "value": "15"
+    },
+    {
+      "label": "1.75",
+      "value": "175"
+    },
+    {
+      "label": "2",
+      "value": "2"
+    }
+  ]
+}

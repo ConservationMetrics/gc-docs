@@ -1,0 +1,16 @@
+{
+  "tagKey": "camera-trap-is-damaged",
+  "label": "Is the camera trap damaged?",
+  "helperText": "If it's broken, have they replaced it?",
+  "type": "selectOne",
+  "options": [
+    {
+      "label": "Yes",
+      "value": "yes"
+    },
+    {
+      "label": "No",
+      "value": "no"
+    }
+  ]
+}

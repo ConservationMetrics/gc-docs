@@ -1,0 +1,16 @@
+{
+  "tagKey": "timestamp-issues",
+  "label": "Checked if date and time are correct",
+  "helperText": "Did you check if the date and time are correct?",
+  "type": "selectOne",
+  "options": [
+    {
+      "label": "Yes",
+      "value": "yes"
+    },
+    {
+      "label": "No",
+      "value": "no"
+    }
+  ]
+}

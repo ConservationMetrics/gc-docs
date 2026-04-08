@@ -1,0 +1,16 @@
+{
+  "tagKey": "camera-trap-in-right-place",
+  "label": "Is the camera trap placed in an appropriate place?",
+  "helperText": "Is it pointing in the right direction?",
+  "type": "selectOne",
+  "options": [
+    {
+      "label": "Yes",
+      "value": "yes"
+    },
+    {
+      "label": "No",
+      "value": "no"
+    }
+  ]
+}

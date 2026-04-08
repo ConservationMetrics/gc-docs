@@ -1,0 +1,68 @@
+{
+  "tagKey": "deployment-id",
+  "label": "Camera Deployment ID",
+  "helperText": "What is the camera deployment ID?",
+  "type": "selectOne",
+  "options": [
+    {
+      "label": "CT 1",
+      "value": "ct1"
+    },
+    {
+      "label": "CT 2",
+      "value": "ct2"
+    },
+    {
+      "label": "CT 3",
+      "value": "ct3"
+    },
+    {
+      "label": "CT 4",
+      "value": "ct4"
+    },
+    {
+      "label": "CT 5",
+      "value": "ct5"
+    },
+    {
+      "label": "CT 6",
+      "value": "ct6"
+    },
+    {
+      "label": "CT 7",
+      "value": "ct7"
+    },
+    {
+      "label": "CT 8",
+      "value": "ct8"
+    },
+    {
+      "label": "CT 9",
+      "value": "ct9"
+    },
+    {
+      "label": "CT 10",
+      "value": "ct10"
+    },
+    {
+      "label": "CT 11",
+      "value": "ct11"
+    },
+    {
+      "label": "CT 12",
+      "value": "ct12"
+    },
+    {
+      "label": "CT 13",
+      "value": "ct13"
+    },
+    {
+      "label": "CT 14",
+      "value": "ct14"
+    },
+    {
+      "label": "CT 15",
+      "value": "ct15"
+    }
+  ]
+}

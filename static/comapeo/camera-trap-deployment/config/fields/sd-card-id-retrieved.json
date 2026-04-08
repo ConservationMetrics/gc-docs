@@ -1,0 +1,68 @@
+{
+  "tagKey": "sd-card-id-retrieved",
+  "label": "What is the SD card ID that you retrieved?",
+  "helperText": "Written on the back of the card",
+  "type": "selectOne",
+  "options": [
+    {
+      "label": "SD Card 1",
+      "value": "sd1"
+    },
+    {
+      "label": "SD Card 2",
+      "value": "sd2"
+    },
+    {
+      "label": "SD Card 3",
+      "value": "sd3"
+    },
+    {
+      "label": "SD Card 4",
+      "value": "sd4"
+    },
+    {
+      "label": "SD Card 5",
+      "value": "sd5"
+    },
+    {
+      "label": "SD Card 6",
+      "value": "sd6"
+    },
+    {
+      "label": "SD Card 7",
+      "value": "sd7"
+    },
+    {
+      "label": "SD Card 8",
+      "value": "sd8"
+    },
+    {
+      "label": "SD Card 9",
+      "value": "sd9"
+    },
+    {
+      "label": "SD Card 10",
+      "value": "sd10"
+    },
+    {
+      "label": "SD Card 11",
+      "value": "sd11"
+    },
+    {
+      "label": "SD Card 12",
+      "value": "sd12"
+    },
+    {
+      "label": "SD Card 13",
+      "value": "sd13"
+    },
+    {
+      "label": "SD Card 14",
+      "value": "sd14"
+    },
+    {
+      "label": "SD Card 15",
+      "value": "sd15"
+    }
+  ]
+}

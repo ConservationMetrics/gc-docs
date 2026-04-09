@@ -29,12 +29,12 @@
       "value": "multishot-rpf2shot"
     },
     {
-      "label": "00PM",
-      "value": "Cap Start - 12"
+      "label": "Cap Start - 12:00PM",
+      "value": "cap-start-1200pm"
     },
     {
-      "label": "00PM",
-      "value": "Cap End - 12"
+      "label": "Cap End - 12:00PM",
+      "value": "cap-end-1200pm"
     },
     {
       "label": "Smart IR - On",

@@ -239,13 +239,13 @@
     "description": "Label for option 'multishot-rpf2shot' of field 'check_settings'",
     "message": "MultiShot - RPF2Shot"
   },
-  "field.check_settings.options[value=\"Cap Start - 12\"].label": {
-    "description": "Label for option 'Cap Start - 12' of field 'check_settings'",
-    "message": "Cap Start - 12:00PM"
+  "field.check_settings.options[value=\"cap-start-1200pm\"].label": {
+    "description": "Label for option 'cap-start-1200pm' of field 'check_settings'",
+    "message": "cap-start-1200pm:00PM"
   },
-  "field.check_settings.options[value=\"Cap End - 12\"].label": {
-    "description": "Label for option 'Cap End - 12' of field 'check_settings'",
-    "message": "Cap End - 12:00PM"
+  "field.check_settings.options[value=\"cap-end-1200pm\"].label": {
+    "description": "Label for option 'cap-end-1200pm' of field 'check_settings'",
+    "message": "cap-end-1200pm:00PM"
   },
   "field.check_settings.options[value=\"smart-ir-on\"].label": {
     "description": "Label for option 'smart-ir-on' of field 'check_settings'",
@@ -486,5 +486,185 @@
   "field.habitat.helperText": {
     "description": "Descriptive text shown under the label for field 'habitat'",
     "message": "Beschrijf het habitat op de cameralocatie"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd16\"].label": {
+    "description": "Label for option 'sd16' of field 'sd_card_id_inserted'",
+    "message": "SD-kaart 16"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd16\"].label": {
+    "description": "Label for option 'sd16' of field 'sd_card_id_retrieved'",
+    "message": "SD-kaart 16"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd17\"].label": {
+    "description": "Label for option 'sd17' of field 'sd_card_id_inserted'",
+    "message": "SD-kaart 17"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd17\"].label": {
+    "description": "Label for option 'sd17' of field 'sd_card_id_retrieved'",
+    "message": "SD-kaart 17"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd18\"].label": {
+    "description": "Label for option 'sd18' of field 'sd_card_id_inserted'",
+    "message": "SD-kaart 18"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd18\"].label": {
+    "description": "Label for option 'sd18' of field 'sd_card_id_retrieved'",
+    "message": "SD-kaart 18"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd19\"].label": {
+    "description": "Label for option 'sd19' of field 'sd_card_id_inserted'",
+    "message": "SD-kaart 19"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd19\"].label": {
+    "description": "Label for option 'sd19' of field 'sd_card_id_retrieved'",
+    "message": "SD-kaart 19"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd20\"].label": {
+    "description": "Label for option 'sd20' of field 'sd_card_id_inserted'",
+    "message": "SD-kaart 20"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd20\"].label": {
+    "description": "Label for option 'sd20' of field 'sd_card_id_retrieved'",
+    "message": "SD-kaart 20"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd21\"].label": {
+    "description": "Label for option 'sd21' of field 'sd_card_id_inserted'",
+    "message": "SD-kaart 21"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd21\"].label": {
+    "description": "Label for option 'sd21' of field 'sd_card_id_retrieved'",
+    "message": "SD-kaart 21"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd22\"].label": {
+    "description": "Label for option 'sd22' of field 'sd_card_id_inserted'",
+    "message": "SD-kaart 22"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd22\"].label": {
+    "description": "Label for option 'sd22' of field 'sd_card_id_retrieved'",
+    "message": "SD-kaart 22"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd23\"].label": {
+    "description": "Label for option 'sd23' of field 'sd_card_id_inserted'",
+    "message": "SD-kaart 23"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd23\"].label": {
+    "description": "Label for option 'sd23' of field 'sd_card_id_retrieved'",
+    "message": "SD-kaart 23"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd24\"].label": {
+    "description": "Label for option 'sd24' of field 'sd_card_id_inserted'",
+    "message": "SD-kaart 24"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd24\"].label": {
+    "description": "Label for option 'sd24' of field 'sd_card_id_retrieved'",
+    "message": "SD-kaart 24"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd25\"].label": {
+    "description": "Label for option 'sd25' of field 'sd_card_id_inserted'",
+    "message": "SD-kaart 25"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd25\"].label": {
+    "description": "Label for option 'sd25' of field 'sd_card_id_retrieved'",
+    "message": "SD-kaart 25"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd26\"].label": {
+    "description": "Label for option 'sd26' of field 'sd_card_id_inserted'",
+    "message": "SD-kaart 26"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd26\"].label": {
+    "description": "Label for option 'sd26' of field 'sd_card_id_retrieved'",
+    "message": "SD-kaart 26"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd27\"].label": {
+    "description": "Label for option 'sd27' of field 'sd_card_id_inserted'",
+    "message": "SD-kaart 27"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd27\"].label": {
+    "description": "Label for option 'sd27' of field 'sd_card_id_retrieved'",
+    "message": "SD-kaart 27"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd28\"].label": {
+    "description": "Label for option 'sd28' of field 'sd_card_id_inserted'",
+    "message": "SD-kaart 28"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd28\"].label": {
+    "description": "Label for option 'sd28' of field 'sd_card_id_retrieved'",
+    "message": "SD-kaart 28"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd29\"].label": {
+    "description": "Label for option 'sd29' of field 'sd_card_id_inserted'",
+    "message": "SD-kaart 29"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd29\"].label": {
+    "description": "Label for option 'sd29' of field 'sd_card_id_retrieved'",
+    "message": "SD-kaart 29"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd30\"].label": {
+    "description": "Label for option 'sd30' of field 'sd_card_id_inserted'",
+    "message": "SD-kaart 30"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd30\"].label": {
+    "description": "Label for option 'sd30' of field 'sd_card_id_retrieved'",
+    "message": "SD-kaart 30"
+  },
+  "field.deployment_id.options[value=\"ct16\"].label": {
+    "description": "Label for option 'ct16' of field 'deployment_id'",
+    "message": "CT 16"
+  },
+  "field.deployment_id.options[value=\"ct17\"].label": {
+    "description": "Label for option 'ct17' of field 'deployment_id'",
+    "message": "CT 17"
+  },
+  "field.deployment_id.options[value=\"ct18\"].label": {
+    "description": "Label for option 'ct18' of field 'deployment_id'",
+    "message": "CT 18"
+  },
+  "field.deployment_id.options[value=\"ct19\"].label": {
+    "description": "Label for option 'ct19' of field 'deployment_id'",
+    "message": "CT 19"
+  },
+  "field.deployment_id.options[value=\"ct20\"].label": {
+    "description": "Label for option 'ct20' of field 'deployment_id'",
+    "message": "CT 20"
+  },
+  "field.deployment_id.options[value=\"ct21\"].label": {
+    "description": "Label for option 'ct21' of field 'deployment_id'",
+    "message": "CT 21"
+  },
+  "field.deployment_id.options[value=\"ct22\"].label": {
+    "description": "Label for option 'ct22' of field 'deployment_id'",
+    "message": "CT 22"
+  },
+  "field.deployment_id.options[value=\"ct23\"].label": {
+    "description": "Label for option 'ct23' of field 'deployment_id'",
+    "message": "CT 23"
+  },
+  "field.deployment_id.options[value=\"ct24\"].label": {
+    "description": "Label for option 'ct24' of field 'deployment_id'",
+    "message": "CT 24"
+  },
+  "field.deployment_id.options[value=\"ct25\"].label": {
+    "description": "Label for option 'ct25' of field 'deployment_id'",
+    "message": "CT 25"
+  },
+  "field.deployment_id.options[value=\"ct26\"].label": {
+    "description": "Label for option 'ct26' of field 'deployment_id'",
+    "message": "CT 26"
+  },
+  "field.deployment_id.options[value=\"ct27\"].label": {
+    "description": "Label for option 'ct27' of field 'deployment_id'",
+    "message": "CT 27"
+  },
+  "field.deployment_id.options[value=\"ct28\"].label": {
+    "description": "Label for option 'ct28' of field 'deployment_id'",
+    "message": "CT 28"
+  },
+  "field.deployment_id.options[value=\"ct29\"].label": {
+    "description": "Label for option 'ct29' of field 'deployment_id'",
+    "message": "CT 29"
+  },
+  "field.deployment_id.options[value=\"ct30\"].label": {
+    "description": "Label for option 'ct30' of field 'deployment_id'",
+    "message": "CT 30"
   }
 }

@@ -145,12 +145,13 @@ The `metadata.json` file contains the name and version of the category set. You 
 
 Currently, this category set is translated into the following languages:
 
-- Dutch (`nl`)
 - Spanish (`es`)
-- Portuguese (`pt`)
 - French (`fr`)
-- Thai (`th`)
+- Dutch (`nl`)
+- Indonesian (`id`)
+- Portuguese (`pt`)
 - Swahili (`sw`)
+- Thai (`th`)
 
 To add your own translations, add a JSON file with the right ISO code in the `messages` directory and add the translations to the file, or let us know if you would prefer a spreadsheet to work with.
 

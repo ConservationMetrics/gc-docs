@@ -1,0 +1,670 @@
+{
+  "category.camera_trap_deployment.name": {
+    "description": "The name of category 'camera_trap_deployment'",
+    "message": "Pemasangan kamera jebak"
+  },
+  "category.camera_trap_maintenance.name": {
+    "description": "The name of category 'camera_trap_maintenance'",
+    "message": "Pemeliharaan kamera jebak"
+  },
+  "category.camera_trap_retrieval.name": {
+    "description": "The name of category 'camera_trap_retrieval'",
+    "message": "Pengambilan kamera jebak"
+  },
+  "category.path_to_camera.name": {
+    "description": "The name of category 'path_to_camera'",
+    "message": "Jalur menuju kamera"
+  },
+  "field.camera_set_up_by.label": {
+    "description": "Label for field 'camera_set_up_by'",
+    "message": "Nama Anda"
+  },
+  "field.camera_set_up_by.helperText": {
+    "description": "Descriptive text shown under the label for field 'camera_set_up_by'",
+    "message": "Siapa nama Anda?"
+  },
+  "field.deployment_id.label": {
+    "description": "Label for field 'deployment_id'",
+    "message": "ID pemasangan kamera"
+  },
+  "field.deployment_id.helperText": {
+    "description": "Descriptive text shown under the label for field 'deployment_id'",
+    "message": "Apa ID pemasangan kamera?"
+  },
+  "field.sd_card_id_inserted.label": {
+    "description": "Label for field 'sd_card_id_inserted'",
+    "message": "Apa ID kartu SD yang Anda masukkan?"
+  },
+  "field.sd_card_id_inserted.helperText": {
+    "description": "Descriptive text shown under the label for field 'sd_card_id_inserted'",
+    "message": "Tertulis di bagian belakang kartu"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd1\"].label": {
+    "description": "Label for option 'sd1' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 1"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd2\"].label": {
+    "description": "Label for option 'sd2' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 2"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd3\"].label": {
+    "description": "Label for option 'sd3' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 3"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd4\"].label": {
+    "description": "Label for option 'sd4' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 4"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd5\"].label": {
+    "description": "Label for option 'sd5' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 5"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd6\"].label": {
+    "description": "Label for option 'sd6' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 6"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd7\"].label": {
+    "description": "Label for option 'sd7' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 7"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd8\"].label": {
+    "description": "Label for option 'sd8' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 8"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd9\"].label": {
+    "description": "Label for option 'sd9' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 9"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd10\"].label": {
+    "description": "Label for option 'sd10' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 10"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd11\"].label": {
+    "description": "Label for option 'sd11' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 11"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd12\"].label": {
+    "description": "Label for option 'sd12' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 12"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd13\"].label": {
+    "description": "Label for option 'sd13' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 13"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd14\"].label": {
+    "description": "Label for option 'sd14' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 14"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd15\"].label": {
+    "description": "Label for option 'sd15' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 15"
+  },
+  "field.sd_card_id_retrieved.label": {
+    "description": "Label for field 'sd_card_id_retrieved'",
+    "message": "Apa ID kartu SD yang Anda ambil?"
+  },
+  "field.sd_card_id_retrieved.helperText": {
+    "description": "Descriptive text shown under the label for field 'sd_card_id_retrieved'",
+    "message": "Tertulis di bagian belakang kartu"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd1\"].label": {
+    "description": "Label for option 'sd1' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 1"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd2\"].label": {
+    "description": "Label for option 'sd2' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 2"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd3\"].label": {
+    "description": "Label for option 'sd3' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 3"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd4\"].label": {
+    "description": "Label for option 'sd4' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 4"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd5\"].label": {
+    "description": "Label for option 'sd5' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 5"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd6\"].label": {
+    "description": "Label for option 'sd6' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 6"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd7\"].label": {
+    "description": "Label for option 'sd7' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 7"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd8\"].label": {
+    "description": "Label for option 'sd8' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 8"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd9\"].label": {
+    "description": "Label for option 'sd9' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 9"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd10\"].label": {
+    "description": "Label for option 'sd10' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 10"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd11\"].label": {
+    "description": "Label for option 'sd11' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 11"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd12\"].label": {
+    "description": "Label for option 'sd12' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 12"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd13\"].label": {
+    "description": "Label for option 'sd13' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 13"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd14\"].label": {
+    "description": "Label for option 'sd14' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 14"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd15\"].label": {
+    "description": "Label for option 'sd15' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 15"
+  },
+  "field.camera_trap_in_right_place.label": {
+    "description": "Label for field 'camera_trap_in_right_place'",
+    "message": "Apakah kamera jebak ditempatkan di lokasi yang tepat?"
+  },
+  "field.camera_trap_in_right_place.helperText": {
+    "description": "Descriptive text shown under the label for field 'camera_trap_in_right_place'",
+    "message": "Apakah mengarah ke arah yang benar?"
+  },
+  "field.camera_trap_in_right_place.options[value=\"yes\"].label": {
+    "description": "Label for option 'yes' of field 'camera_trap_in_right_place'",
+    "message": "Ya"
+  },
+  "field.camera_trap_in_right_place.options[value=\"no\"].label": {
+    "description": "Label for option 'no' of field 'camera_trap_in_right_place'",
+    "message": "Tidak"
+  },
+  "field.timestamp_issues.label": {
+    "description": "Label for field 'timestamp_issues'",
+    "message": "Tanggal dan waktu terverifikasi"
+  },
+  "field.timestamp_issues.helperText": {
+    "description": "Descriptive text shown under the label for field 'timestamp_issues'",
+    "message": "Apakah Anda sudah memeriksa tanggal dan waktu sudah benar?"
+  },
+  "field.timestamp_issues.options[value=\"yes\"].label": {
+    "description": "Label for option 'yes' of field 'timestamp_issues'",
+    "message": "Ya"
+  },
+  "field.timestamp_issues.options[value=\"no\"].label": {
+    "description": "Label for option 'no' of field 'timestamp_issues'",
+    "message": "Tidak"
+  },
+  "field.location_name.label": {
+    "description": "Label for field 'location_name'",
+    "message": "Di mana Anda memasang kamera?"
+  },
+  "field.location_name.helperText": {
+    "description": "Descriptive text shown under the label for field 'location_name'",
+    "message": "Masukkan nama lokasi"
+  },
+  "field.check_settings.label": {
+    "description": "Label for field 'check_settings'",
+    "message": "Periksa pengaturan kamera"
+  },
+  "field.check_settings.helperText": {
+    "description": "Descriptive text shown under the label for field 'check_settings'",
+    "message": "Periksa pengaturan kamera, pastikan setiap opsi sesuai dengan daftar ini"
+  },
+  "field.check_settings.options[value=\"date-today's-date\"].label": {
+    "description": "Label for option 'date-today's-date' of field 'check_settings'",
+    "message": "Date - tanggal hari ini"
+  },
+  "field.check_settings.options[value=\"time-what-time-is-it\"].label": {
+    "description": "Label for option 'time-what-time-is-it' of field 'check_settings'",
+    "message": "Time - jam berapa sekarang"
+  },
+  "field.check_settings.options[value=\"mode-trail\"].label": {
+    "description": "Label for option 'mode-trail' of field 'check_settings'",
+    "message": "Mode - Trail"
+  },
+  "field.check_settings.options[value=\"capture-delay-1s\"].label": {
+    "description": "Label for option 'capture-delay-1s' of field 'check_settings'",
+    "message": "Capture Delay - 1s"
+  },
+  "field.check_settings.options[value=\"picsize-high16mp\"].label": {
+    "description": "Label for option 'picsize-high16mp' of field 'check_settings'",
+    "message": "PicSize - High16MP"
+  },
+  "field.check_settings.options[value=\"multishot-rpf2shot\"].label": {
+    "description": "Label for option 'multishot-rpf2shot' of field 'check_settings'",
+    "message": "MultiShot - RPF2Shot"
+  },
+  "field.check_settings.options[value=\"cap-start-1200pm\"].label": {
+    "description": "Label for option 'cap-start-1200pm' of field 'check_settings'",
+    "message": "cap-start-1200pm:00PM"
+  },
+  "field.check_settings.options[value=\"cap-end-1200pm\"].label": {
+    "description": "Label for option 'cap-end-1200pm' of field 'check_settings'",
+    "message": "cap-end-1200pm:00PM"
+  },
+  "field.check_settings.options[value=\"smart-ir-on\"].label": {
+    "description": "Label for option 'smart-ir-on' of field 'check_settings'",
+    "message": "Smart IR - On"
+  },
+  "field.check_settings.options[value=\"night-exp-fast-motion\"].label": {
+    "description": "Label for option 'night-exp-fast-motion' of field 'check_settings'",
+    "message": "Night Exp - Fast Motion"
+  },
+  "field.check_settings.options[value=\"temp-unit-c\"].label": {
+    "description": "Label for option 'temp-unit-c' of field 'check_settings'",
+    "message": "Temp Unit - C"
+  },
+  "field.check_settings.options[value=\"info-strip-on\"].label": {
+    "description": "Label for option 'info-strip-on' of field 'check_settings'",
+    "message": "Info Strip - On"
+  },
+  "field.check_settings.options[value=\"sd-management-off\"].label": {
+    "description": "Label for option 'sd-management-off' of field 'check_settings'",
+    "message": "SD Management - Off"
+  },
+  "field.check_settings.options[value=\"motion-detect-normal\"].label": {
+    "description": "Label for option 'motion-detect-normal' of field 'check_settings'",
+    "message": "Motion Detect - Normal"
+  },
+  "field.check_settings.options[value=\"battery-type-nimh\"].label": {
+    "description": "Label for option 'battery-type-nimh' of field 'check_settings'",
+    "message": "Battery Type - NiMH"
+  },
+  "field.check_settings.options[value=\"language-english\"].label": {
+    "description": "Label for option 'language-english' of field 'check_settings'",
+    "message": "Language - English"
+  },
+  "field.check_settings.options[value=\"name-as-written-on-the-door\"].label": {
+    "description": "Label for option 'name-as-written-on-the-door' of field 'check_settings'",
+    "message": "Name - Seperti yang tertulis di pintu"
+  },
+  "field.camera_height.label": {
+    "description": "Label for field 'camera_height'",
+    "message": "Berapa tinggi kamera dipasang?"
+  },
+  "field.camera_height.helperText": {
+    "description": "Descriptive text shown under the label for field 'camera_height'",
+    "message": "Berapa meter dari tanah?"
+  },
+  "field.camera_height.options[value=\"05\"].label": {
+    "description": "Label for option '05' of field 'camera_height'",
+    "message": "0,5"
+  },
+  "field.camera_height.options[value=\"075\"].label": {
+    "description": "Label for option '075' of field 'camera_height'",
+    "message": "0,75"
+  },
+  "field.camera_height.options[value=\"1\"].label": {
+    "description": "Label for option '1' of field 'camera_height'",
+    "message": "1"
+  },
+  "field.camera_height.options[value=\"125\"].label": {
+    "description": "Label for option '125' of field 'camera_height'",
+    "message": "1,25"
+  },
+  "field.camera_height.options[value=\"15\"].label": {
+    "description": "Label for option '15' of field 'camera_height'",
+    "message": "1,5"
+  },
+  "field.camera_height.options[value=\"175\"].label": {
+    "description": "Label for option '175' of field 'camera_height'",
+    "message": "1,75"
+  },
+  "field.camera_height.options[value=\"2\"].label": {
+    "description": "Label for option '2' of field 'camera_height'",
+    "message": "2"
+  },
+  "field.removed_branches_that_obstruct_the_camera.label": {
+    "description": "Label for field 'removed_branches_that_obstruct_the_camera'",
+    "message": "Apakah Anda sudah menyingkirkan dahan yang menghalangi kamera?"
+  },
+  "field.removed_branches_that_obstruct_the_camera.helperText": {
+    "description": "Descriptive text shown under the label for field 'removed_branches_that_obstruct_the_camera'",
+    "message": "Agar pandangan kamera tidak terhalang?"
+  },
+  "field.removed_branches_that_obstruct_the_camera.options[value=\"yes\"].label": {
+    "description": "Label for option 'yes' of field 'removed_branches_that_obstruct_the_camera'",
+    "message": "Ya"
+  },
+  "field.removed_branches_that_obstruct_the_camera.options[value=\"no\"].label": {
+    "description": "Label for option 'no' of field 'removed_branches_that_obstruct_the_camera'",
+    "message": "Tidak"
+  },
+  "field.detection_distance.label": {
+    "description": "Label for field 'detection_distance'",
+    "message": "Seberapa jauh dari kamera lampu merah terlihat setelah uji gerakan?"
+  },
+  "field.detection_distance.helperText": {
+    "description": "Descriptive text shown under the label for field 'detection_distance'",
+    "message": "Ingat untuk membatalkan uji gerakan setelah selesai."
+  },
+  "field.camera_trap_is_still_there.label": {
+    "description": "Label for field 'camera_trap_is_still_there'",
+    "message": "Apakah kamera jebak masih ada di tempatnya?"
+  },
+  "field.camera_trap_is_still_there.options[value=\"yes\"].label": {
+    "description": "Label for option 'yes' of field 'camera_trap_is_still_there'",
+    "message": "Ya"
+  },
+  "field.camera_trap_is_still_there.options[value=\"no\"].label": {
+    "description": "Label for option 'no' of field 'camera_trap_is_still_there'",
+    "message": "Tidak"
+  },
+  "field.camera_trap_is_damaged.label": {
+    "description": "Label for field 'camera_trap_is_damaged'",
+    "message": "Apakah kamera jebak rusak?"
+  },
+  "field.camera_trap_is_damaged.helperText": {
+    "description": "Descriptive text shown under the label for field 'camera_trap_is_damaged'",
+    "message": "Jika rusak, apakah sudah diganti?"
+  },
+  "field.camera_trap_is_damaged.options[value=\"yes\"].label": {
+    "description": "Label for option 'yes' of field 'camera_trap_is_damaged'",
+    "message": "Ya"
+  },
+  "field.camera_trap_is_damaged.options[value=\"no\"].label": {
+    "description": "Label for option 'no' of field 'camera_trap_is_damaged'",
+    "message": "Tidak"
+  },
+  "field.camera_trap_is_working.label": {
+    "description": "Label for field 'camera_trap_is_working'",
+    "message": "Apakah kamera jebak masih berfungsi?"
+  },
+  "field.camera_trap_is_working.options[value=\"yes\"].label": {
+    "description": "Label for option 'yes' of field 'camera_trap_is_working'",
+    "message": "Ya"
+  },
+  "field.camera_trap_is_working.options[value=\"no\"].label": {
+    "description": "Label for option 'no' of field 'camera_trap_is_working'",
+    "message": "Tidak"
+  },
+  "field.path_destination.label": {
+    "description": "Label for field 'path_destination'",
+    "message": "Jelaskan jalur menuju kamera"
+  },
+  "field.location_id.label": {
+    "description": "Label for field 'location_id'",
+    "message": "ID lokasi"
+  },
+  "field.location_id.helperText": {
+    "description": "Descriptive text shown under the label for field 'location_id'",
+    "message": "Pilih lokasi tempat kamera dipasang"
+  },
+  "field.location_id.options[value=\"loc1\"].label": {
+    "description": "Label for option 'loc1' of field 'location_id'",
+    "message": "Lokasi 1"
+  },
+  "field.location_id.options[value=\"loc2\"].label": {
+    "description": "Label for option 'loc2' of field 'location_id'",
+    "message": "Lokasi 2"
+  },
+  "field.location_id.options[value=\"loc3\"].label": {
+    "description": "Label for option 'loc3' of field 'location_id'",
+    "message": "Lokasi 3"
+  },
+  "field.location_id.options[value=\"loc4\"].label": {
+    "description": "Label for option 'loc4' of field 'location_id'",
+    "message": "Lokasi 4"
+  },
+  "field.location_id.options[value=\"loc5\"].label": {
+    "description": "Label for option 'loc5' of field 'location_id'",
+    "message": "Lokasi 5"
+  },
+  "field.other_location_information.label": {
+    "description": "Label for field 'other_location_information'",
+    "message": "Informasi lokasi lainnya"
+  },
+  "field.other_location_information.helperText": {
+    "description": "Descriptive text shown under the label for field 'other_location_information'",
+    "message": "Detail tambahan tentang lokasi"
+  },
+  "field.camera_model.label": {
+    "description": "Label for field 'camera_model'",
+    "message": "Model kamera"
+  },
+  "field.camera_model.helperText": {
+    "description": "Descriptive text shown under the label for field 'camera_model'",
+    "message": "Apa model kameranya?"
+  },
+  "field.camera_delay.label": {
+    "description": "Label for field 'camera_delay'",
+    "message": "Jeda kamera"
+  },
+  "field.camera_delay.helperText": {
+    "description": "Descriptive text shown under the label for field 'camera_delay'",
+    "message": "Jeda antar jepretan dalam detik"
+  },
+  "field.camera_depth.label": {
+    "description": "Label for field 'camera_depth'",
+    "message": "Kedalaman kamera"
+  },
+  "field.camera_depth.helperText": {
+    "description": "Descriptive text shown under the label for field 'camera_depth'",
+    "message": "Kedalaman kamera di bawah permukaan dalam meter"
+  },
+  "field.camera_tilt.label": {
+    "description": "Label for field 'camera_tilt'",
+    "message": "Kemiringan kamera"
+  },
+  "field.camera_tilt.helperText": {
+    "description": "Descriptive text shown under the label for field 'camera_tilt'",
+    "message": "Sudut kemiringan kamera dalam derajat"
+  },
+  "field.camera_heading.label": {
+    "description": "Label for field 'camera_heading'",
+    "message": "Arah kamera"
+  },
+  "field.camera_heading.helperText": {
+    "description": "Descriptive text shown under the label for field 'camera_heading'",
+    "message": "Arah kompas ke mana kamera mengarah dalam derajat (0-360)"
+  },
+  "field.bait_use.label": {
+    "description": "Label for field 'bait_use'",
+    "message": "Penggunaan umpan"
+  },
+  "field.bait_use.helperText": {
+    "description": "Descriptive text shown under the label for field 'bait_use'",
+    "message": "Apakah umpan digunakan di lokasi kamera ini?"
+  },
+  "field.bait_use.options[value=\"yes\"].label": {
+    "description": "Label for option 'yes' of field 'bait_use'",
+    "message": "Ya"
+  },
+  "field.bait_use.options[value=\"no\"].label": {
+    "description": "Label for option 'no' of field 'bait_use'",
+    "message": "Tidak"
+  },
+  "field.habitat.label": {
+    "description": "Label for field 'habitat'",
+    "message": "Habitat"
+  },
+  "field.habitat.helperText": {
+    "description": "Descriptive text shown under the label for field 'habitat'",
+    "message": "Jelaskan habitat di lokasi kamera"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd16\"].label": {
+    "description": "Label for option 'sd16' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 16"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd16\"].label": {
+    "description": "Label for option 'sd16' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 16"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd17\"].label": {
+    "description": "Label for option 'sd17' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 17"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd17\"].label": {
+    "description": "Label for option 'sd17' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 17"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd18\"].label": {
+    "description": "Label for option 'sd18' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 18"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd18\"].label": {
+    "description": "Label for option 'sd18' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 18"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd19\"].label": {
+    "description": "Label for option 'sd19' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 19"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd19\"].label": {
+    "description": "Label for option 'sd19' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 19"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd20\"].label": {
+    "description": "Label for option 'sd20' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 20"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd20\"].label": {
+    "description": "Label for option 'sd20' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 20"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd21\"].label": {
+    "description": "Label for option 'sd21' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 21"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd21\"].label": {
+    "description": "Label for option 'sd21' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 21"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd22\"].label": {
+    "description": "Label for option 'sd22' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 22"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd22\"].label": {
+    "description": "Label for option 'sd22' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 22"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd23\"].label": {
+    "description": "Label for option 'sd23' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 23"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd23\"].label": {
+    "description": "Label for option 'sd23' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 23"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd24\"].label": {
+    "description": "Label for option 'sd24' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 24"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd24\"].label": {
+    "description": "Label for option 'sd24' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 24"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd25\"].label": {
+    "description": "Label for option 'sd25' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 25"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd25\"].label": {
+    "description": "Label for option 'sd25' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 25"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd26\"].label": {
+    "description": "Label for option 'sd26' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 26"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd26\"].label": {
+    "description": "Label for option 'sd26' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 26"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd27\"].label": {
+    "description": "Label for option 'sd27' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 27"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd27\"].label": {
+    "description": "Label for option 'sd27' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 27"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd28\"].label": {
+    "description": "Label for option 'sd28' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 28"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd28\"].label": {
+    "description": "Label for option 'sd28' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 28"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd29\"].label": {
+    "description": "Label for option 'sd29' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 29"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd29\"].label": {
+    "description": "Label for option 'sd29' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 29"
+  },
+  "field.sd_card_id_inserted.options[value=\"sd30\"].label": {
+    "description": "Label for option 'sd30' of field 'sd_card_id_inserted'",
+    "message": "Kartu SD 30"
+  },
+  "field.sd_card_id_retrieved.options[value=\"sd30\"].label": {
+    "description": "Label for option 'sd30' of field 'sd_card_id_retrieved'",
+    "message": "Kartu SD 30"
+  },
+  "field.deployment_id.options[value=\"ct16\"].label": {
+    "description": "Label for option 'ct16' of field 'deployment_id'",
+    "message": "CT 16"
+  },
+  "field.deployment_id.options[value=\"ct17\"].label": {
+    "description": "Label for option 'ct17' of field 'deployment_id'",
+    "message": "CT 17"
+  },
+  "field.deployment_id.options[value=\"ct18\"].label": {
+    "description": "Label for option 'ct18' of field 'deployment_id'",
+    "message": "CT 18"
+  },
+  "field.deployment_id.options[value=\"ct19\"].label": {
+    "description": "Label for option 'ct19' of field 'deployment_id'",
+    "message": "CT 19"
+  },
+  "field.deployment_id.options[value=\"ct20\"].label": {
+    "description": "Label for option 'ct20' of field 'deployment_id'",
+    "message": "CT 20"
+  },
+  "field.deployment_id.options[value=\"ct21\"].label": {
+    "description": "Label for option 'ct21' of field 'deployment_id'",
+    "message": "CT 21"
+  },
+  "field.deployment_id.options[value=\"ct22\"].label": {
+    "description": "Label for option 'ct22' of field 'deployment_id'",
+    "message": "CT 22"
+  },
+  "field.deployment_id.options[value=\"ct23\"].label": {
+    "description": "Label for option 'ct23' of field 'deployment_id'",
+    "message": "CT 23"
+  },
+  "field.deployment_id.options[value=\"ct24\"].label": {
+    "description": "Label for option 'ct24' of field 'deployment_id'",
+    "message": "CT 24"
+  },
+  "field.deployment_id.options[value=\"ct25\"].label": {
+    "description": "Label for option 'ct25' of field 'deployment_id'",
+    "message": "CT 25"
+  },
+  "field.deployment_id.options[value=\"ct26\"].label": {
+    "description": "Label for option 'ct26' of field 'deployment_id'",
+    "message": "CT 26"
+  },
+  "field.deployment_id.options[value=\"ct27\"].label": {
+    "description": "Label for option 'ct27' of field 'deployment_id'",
+    "message": "CT 27"
+  },
+  "field.deployment_id.options[value=\"ct28\"].label": {
+    "description": "Label for option 'ct28' of field 'deployment_id'",
+    "message": "CT 28"
+  },
+  "field.deployment_id.options[value=\"ct29\"].label": {
+    "description": "Label for option 'ct29' of field 'deployment_id'",
+    "message": "CT 29"
+  },
+  "field.deployment_id.options[value=\"ct30\"].label": {
+    "description": "Label for option 'ct30' of field 'deployment_id'",
+    "message": "CT 30"
+  }
+}

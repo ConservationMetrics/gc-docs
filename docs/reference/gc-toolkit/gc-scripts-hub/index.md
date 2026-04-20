@@ -31,6 +31,7 @@ The GC Scripts Hub includes connectors that automatically gather data from vario
 - **Locus Map**: Import GPS tracks and mapping data
 - **SMART**: Import patrol data from SMART Desktop
 - **Mapbox**: Update Mapbox tilesets with new data
+- **QField**: Import GeoPackage files generated using QField
 
 ## 🗄️ Data Cataloging
 

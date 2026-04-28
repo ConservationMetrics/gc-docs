@@ -26,6 +26,7 @@ tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
 ## Other Resources
 
 - [CoMapeo Config Spreadsheet Plugin](https://github.com/digidem/comapeo-config-spreadsheet-plugin) - Generate CoMapeo config directly from Google Spreadsheet
-- [MapPacker](https://github.com/conservationmetrics/mappacker) - Generate offline maps in `smp` format for use in CoMapeo (NOTE: CMI maintains MapPacker, and deploys a server for our users)
-- [Mapeo Icons Generator](https://icons.earthdefenderstoolkit.com/) - Generate icons for Mapeo categories
-- [Mapeo KML Generator](https://rudokemper.github.io/mapeo-kml-generator/) - Generate a KML file (with images) from Mapeo Whatsapp shares
+- [MapPacker](https://github.com/conservationmetrics/mappacker) - Generate offline maps in styled map package (`.smp`) format for use in CoMapeo (NOTE: CMI maintains MapPacker, and deploys a server for our users)
+- [CoMapeo Icons Generator](https://icons.earthdefenderstoolkit.com/) - Generate icons for CoMapeo categories
+- [CoMapeo KML Generator](https://rudokemper.github.io/comapeo-kml-generator/) - Generate a KML file (with images) from CoMapeo Whatsapp shares
+- [QGIS SMP Plugin](https://github.com/digidem/qgis-smp-plugin) - Plugin for QGIS to generate styled map package (`.smp`) for use in CoMapeo

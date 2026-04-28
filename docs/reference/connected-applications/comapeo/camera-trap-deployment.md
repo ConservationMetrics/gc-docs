@@ -3,7 +3,7 @@ sidebar_position: 4
 tags: [itu-3, opu, tsp]
 ---
 
-# Comapeo Camera Trap Deployment
+# CoMapeo Camera Trap Deployment
 
 This CoMapeo category set uses the column naming conventions recommended in the [GBIF Camera Trap Guide](https://docs.gbif.org/camera-trap-guide/en).
 

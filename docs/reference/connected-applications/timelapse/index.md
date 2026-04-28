@@ -21,4 +21,6 @@ tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
 
 For detailed information about using Timelapse, visit the [official Timelapse documentation](https://saul.cpsc.ucalgary.ca/timelapse/).
 
+:::tip
 We also provide a step-by-step guide for working with Timelapse to annotate camera trap images: see [our Timelapse project guide](/guides/guide-timelapse-project/).
+:::

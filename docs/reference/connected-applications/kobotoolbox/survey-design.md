@@ -79,6 +79,61 @@ If your `name` values are unclear or inconsistent, your dataset becomes difficul
 - Keep naming consistent across the form.
 :::
 
+### Rename Default Names from the Form Builder
+
+When you add questions or groups in the KoboToolbox form builder, it auto-assigns fallback names like `Column_2`, `Column_3`, or `group_xy12z`. These leak straight into your exported dataset and make later analysis painful.
+
+Group names matter just as much as question names: groups are **prepended** to question names in exports. A question named `species` inside a group named `group_xy12z` becomes `group_xy12z/species` in the dataset.
+
+:::caution Bad example
+`group_xy12z/Column_2`, `Column_3`, `group_ab9/Column_5`
+:::
+
+:::tip Good example
+`tree_survey/species`, `tree_survey/dbh_cm`, `respondent_info/village`
+:::
+
+:::tip Best practices
+- Rename every auto-generated question and group name before deployment.
+- Give groups concise, descriptive names since they prefix all child columns.
+- Review the downloaded XLSForm to confirm no defaults remain.
+:::
+
+## 🔀 Conditional Logic
+
+### Use Skip Logic to Capture "Other" Values
+
+A common and powerful use of conditional (skip) logic is to capture a free-text "Other" value only when the user selects it from a `select_one` list.
+
+For example, asking *"What kind of tree is this?"* with five known species plus an `other` option works well — but you also want to record what "other" actually means, without forcing every respondent to type something.
+
+In XLSForm (and in the KoboToolbox form builder), this is done with the `relevant` column, which controls whether a follow-up question is shown:
+
+```xlsform
+type: select_one tree_species  
+name: tree_species  
+label: What kind of tree is this?
+
+type: text  
+name: tree_species_other  
+label: Please specify the tree species  
+relevant: ${tree_species} = 'other'
+```
+
+The `tree_species_other` field only appears — and is only stored — when the previous answer is `other`.
+
+:::tip Benefits
+- Keeps your dataset clean: free-text columns only contain meaningful values.
+- Avoids forcing users to type something for every question.
+- Lets you discover missing or new categories without polluting the main `select_one` field.
+:::
+
+:::tip Best practices
+- Always pair an `other` choice with a `relevant`-gated text field.
+- Use the same pattern for any branching question that depends on a previous answer.
+- Test every branch (including the "Other" path) before deployment.
+:::
+
 ## 🕒 Metadata and Automatic Fields
 
 ### Avoid Redundant Date Questions

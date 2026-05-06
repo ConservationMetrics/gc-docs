@@ -15,6 +15,10 @@ This guide explains how to create and curate **[Traditional Knowledge (TK)](http
 
 In Guardian Connector, Labels are treated as **catalog metadata**, not as automatic tags on every table. That separation keeps stewardship explicit: having Labels in the Hub or in the warehouse does not, by itself, label every dataset. For broader framing on community governance of data, see [Data Sharing Protocols Grounded in Indigenous Data Sovereignty](/guides/guide-data-sovereignty-and-protocols/).
 
+![Local Contexts Integration Partner](/img/guides/guide-local-contexts/Integration-Partner-Certified-Logo.png)
+
+_Conservation Metrics is a certified Integration Partner of Local Contexts._
+
 :::tip
 
 You need at least one **dataset** already present in the warehouse (a table you can select in Windmill), and at least one **Label set** before you can use the Annotations app.

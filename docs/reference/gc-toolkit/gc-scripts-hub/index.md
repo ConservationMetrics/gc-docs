@@ -7,55 +7,14 @@ tags: [opu, tsp]
 
 The [Guardian Connector (GC) Scripts Hub](https://github.com/conservationmetrics/gc-scripts-hub) is a growing collection of automation scripts designed to help communities guard and manage their land through data integration and workflow automation. Built on the [Windmill](https://www.windmill.dev/) platform, these scripts empower communities to connect different tools, automate data collection, and streamline their conservation workflows without requiring deep technical expertise.
 
-## 📥 Data Import
-
-### 💾 Dataset Uploader
-- **Dataset Uploader**: Upload datasets in file format (i.e. CSV, Shapefile, GeoJSON, etc.) to the Guardian Connector data warehouse. See the [Dataset Uploader](/reference/gc-toolkit/gc-scripts-hub/dataset-uploader/) guide for more details.
-
-### 🔗 Data Connectors
-
-The GC Scripts Hub includes connectors that automatically gather data from various platforms and tools commonly used by communities:
-
-#### 📋 Survey & Data Collection
-- **[KoboToolbox](/reference/connected-applications/kobotoolbox/)**: Fetch survey responses and form data, including support for multilingual forms and media attachments
-- **ODK Central**: Fetch survey responses and form data from ODK Central, including media attachments
-
-#### 🌍 Environmental Monitoring
-- **Global Forest Watch**: Download deforestation alerts, fire alerts, and other environmental change detection data for your territory
-- **Google Cloud Alerts**: Retrieve change detection alerts and satellite imagery showing before-and-after comparisons
-- **Earth Index**: Retrieve features generated on [Earth Index](https://earthindex.ai), an AI-powered platform for environmental detection and monitoring.
-
-#### 🗺️ Mapping & Location
-- **[CoMapeo](/reference/connected-applications/comapeo/)**: Import community mapping data and observations, with support for photos and other attachments
-- **ArcGIS**: Download data from ArcGIS Online, including from tools such as Survey123
-- **Locus Map**: Import GPS tracks and mapping data
-- **SMART**: Import patrol data from SMART Desktop
-- **Mapbox**: Update Mapbox tilesets with new data
-- **QField**: Import GeoPackage files generated using QField
-
-## 🗄️ Data Cataloging
-
-### 🏷️ Local Contexts
-- **Local Contexts**: Catalog datasets using [Local Contexts](https://localcontexts.org/) Traditional Knowledge (TK) and Biocultural (BC) labels. See the [Local Contexts](/guides/guide-local-contexts/) guide for more details.
-
-## 📤 Data Export & Sharing
-
-### 🔄 Alert Distribution
-- **WhatsApp Notifications**: Automatically send alert summaries to community members via Twilio
-- **CoMapeo Integration**: Post environmental alerts directly to CoMapeo servers for offline access
-
-### 📦 Data Sovereignty
-- **Complete Data Export**: Download all your community's data as CSV files, supporting data sovereignty and exit plans
-- **Flexible Formats**: Export data in formats suitable for different analysis tools and platforms
-
-## 🤖 Automation Capabilities
+#### 🤖 Automation Capabilities
 
 These scripts can be scheduled to run automatically, creating workflows such as:
 - Regular checks for new deforestation alerts in your territory
 - Hourly exports of survey data for community meetings  
 - Immediate WhatsApp notifications when environmental threats are detected
 
-## 🌱 Community-Focused Design
+#### 🌱 Community-Focused Design
 
 The Scripts Hub recognizes that every community has unique needs and workflows. Scripts can be customized and combined to create automated processes that support your specific conservation goals, whether that's monitoring biodiversity, documenting cultural sites, or tracking environmental threats.
 
@@ -64,3 +23,60 @@ This resource continues to grow based on community needs and feedback, ensuring 
 ![A Windmill Workspace populated with some of the tools in the GC Scripts Hub.](/img/reference/gc-toolkit/gc-scripts-hub/gc-scripts-hub.jpg)
 _A Windmill Workspace populated with some of the tools in the GC Scripts Hub._
 
+---
+
+## 🔗 Data Connectors
+
+The GC Scripts Hub includes connectors that automatically gather data from various platforms and tools commonly used by communities:
+
+### 📋 Survey & Data Collection
+- **[EpiCollect5](https://five.epicollect.net/)**: Fetch survey responses and form data from EpiCollect5.
+- **[KoboToolbox](/reference/connected-applications/kobotoolbox/)**: Fetch survey responses and form data, including support for multilingual forms and media attachments.
+- **[ODK](https://getodk.org/)**: Fetch survey responses and form data from ODK Central, including media attachments.
+
+### 🌍 Environmental Monitoring
+- **[Earth Index](https://earthindex.ai)**: Retrieve features generated on Earth Index, an AI-powered platform for environmental detection and monitoring.
+- **[Global Forest Watch](https://www.globalforestwatch.org/)**: Download deforestation alerts, fire alerts, and other environmental change detection data for your territory.
+- **Proprietary Alerts**: Retrieve change detection alerts and satellite imagery showing before-and-after comparisons generated by a proprietary alerts provider, posted to a Google Cloud Platform bucket.
+
+### 🗺️ Mapping & Location
+- **[ArcGIS](https://www.arcgis.com/)**: Download data from ArcGIS Online, including from feature layers and submissions data from tools such as Survey123.
+- **[CoMapeo](/reference/connected-applications/comapeo/)**: Import community mapping data and observations, with support for photos and other attachments.
+- **[CyberTracker](https://www.cybertracker.org/)**: Import data collected using CyberTracker.
+- **[Locus Map](https://www.locusmap.app/)**: Import GPS tracks and mapping data.
+- **[Mapbox](https://www.mapbox.com/)**: Update Mapbox tilesets with data on Guardian Connector.
+- **[QField](https://qfield.org/)**: Import GeoPackage files generated using QField.
+- **[SMART](https://smartconservationtools.org/)**: Import patrol data from SMART Desktop.
+
+### 🌿 Biodiversity Monitoring
+- **[Timelapse](/reference/connected-applications/timelapse/)**: Import annotated camera trap data from Timelapse.
+
+---
+
+## 💾 Dataset Uploader
+- **Dataset Uploader**: An application to upload datasets in file format (i.e. CSV, Shapefile, GeoJSON, and more) to the Guardian Connector data warehouse. See the [Dataset Uploader](/reference/gc-toolkit/gc-scripts-hub/dataset-uploader/) page for more details.
+
+---
+
+## 🗄️ Data Cataloging
+
+### 🏷️ Local Contexts
+- **[Local Contexts](https://localcontexts.org/)**: Annotate datasets using Local Contexts Traditional Knowledge (TK) and Biocultural (BC) labels. See the [Local Contexts](/guides/guide-local-contexts/) guide for more details.
+
+---
+
+## 📤 Data Export & Sharing
+
+### ⚠️ Alert Distribution
+- **CoMapeo Integration**: Post environmental alerts directly to CoMapeo servers for offline access.
+- **WhatsApp Notifications**: Automatically send alert summaries to community members via Twilio.
+
+### 📦 Data Sovereignty
+- **Azure Blob Storage Export**: Generate a secure, time-limited SAS URL to bulk-download all file-based data (images, media, documents) from Azure Blob Storage via [`azcopy`](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10?tabs=dnf) — supports local disk, AWS S3, Google Cloud Storage, and Azure-to-Azure transfers.
+- **Complete Data Export**: Download all your community's data as CSV files, supporting data sovereignty and exit plans.
+- **Flexible Formats**: Export data in formats suitable for different analysis tools and platforms (GeoJSON, CSV).
+
+---
+
+## 📊 Metrics & Reporting
+- **Guardian Connector Metrics**: Generate and store monthly usage metrics across Guardian Connector services.

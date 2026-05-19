@@ -12,7 +12,7 @@ Upload a dataset file and turn it into a clean PostgreSQL table in your Guardian
 ## 📦 What this tool does
 
 * Converts and validates common **tabular** files (`.csv`, `.xlsx/.xls`, `.json`) to CSV for ingestion; or, to GeoJSON if the file has spatial data.
-* Converts and validates common **spatial** files (`.geojson`, `.kml`, `.gpx`, `.kmz`, `.xml` (if it's a SMART XML file), Shapefiles (`.shp` and accompanying files)) to GeoJSON for ingestion
+* Converts and validates common **spatial** files (`.geojson`, `.kml`, `.gpx`, `.kmz`, `.xml` (if it's a SMART XML file), Shapefiles (`.shp` and accompanying files)), GeoPackage files (`.gpkg`), and CyberTracker files (`.json`) to GeoJSON for ingestion.
 * Optionally applies **source-specific** transformations (e.g., KoboToolbox, CoMapeo, ODK, Locus Map)
 * Writes the result to a **new** Postgres table and archives files to file storage
 

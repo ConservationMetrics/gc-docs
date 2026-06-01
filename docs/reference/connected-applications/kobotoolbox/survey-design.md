@@ -31,7 +31,9 @@ This can make data appear missing when it has actually been shifted to a new col
 :::
 
 :::tip
-Download and review your form as an XLSForm before deployment to ensure consistency in naming and structure.
+You can check the naming of columns in the KoboToolbox form builder.
+
+For advanced users, download and review your form as an XLSForm before deployment to ensure consistency in naming and structure.
 :::
 
 ## ❓ Question Design
@@ -73,10 +75,16 @@ If your `name` values are unclear or inconsistent, your dataset becomes difficul
 `household_size`, `respondent_village`, `water_source_type`
 :::
 
-:::tip Best practices
-- Use short, descriptive, machine-friendly names.
-- Avoid spaces (use underscores).
-- Keep naming consistent across the form.
+:::caution Avoid spaces, capitals, and mixed styles
+`Household Size`, `villageName`, `household-location`
+:::
+
+:::tip Use lowercase with underscores
+`household_size`, `respondent_village`, `water_source_type`
+:::
+
+:::tip Keep related questions on the same pattern
+`household_size`, `household_income`, `household_location` — not a mix of `hh_size`, `HouseholdIncome`, and `income_hh`
 :::
 
 ### Rename Default Names from the Form Builder
@@ -96,7 +104,7 @@ Group names matter just as much as question names: groups are **prepended** to q
 :::tip Best practices
 - Rename every auto-generated question and group name before deployment.
 - Give groups concise, descriptive names since they prefix all child columns.
-- Review the downloaded XLSForm to confirm no defaults remain.
+- If you are an advanced user, you may review the downloaded XLSForm to confirm no defaults remain.
 :::
 
 ## 🔀 Conditional Logic
@@ -166,6 +174,10 @@ name: household_size
 constraint: . >= 0  
 constraint_message: "Value must be zero or greater"
 ```
+
+(Note: the period `.` is used to reference the question in the row where you are adding a constraint.)
+
+For more information on constraints and the possible values a constraint may have, see the [XLSForm documentation](https://support.kobotoolbox.org/constraints_xls.html).
 
 :::tip Best practices
 - Always define valid ranges for numeric inputs.

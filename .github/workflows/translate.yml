@@ -10,11 +10,6 @@ on:
       - 'whatsnew/**/*.mdx'
       - 'whatsnew/**/*.md'
   workflow_dispatch:
-    inputs:
-      languages:
-        description: 'Space-separated language codes (e.g., "es fr")'
-        required: false
-        default: 'pt es'
 
 permissions:
   contents: write
@@ -27,7 +22,6 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref }}
           fetch-depth: 0 
 
       - name: Set up Python
@@ -35,36 +29,71 @@ jobs:
         with:
           python-version: '3.10'
 
+      # The script requires the 'requests' library to speak with the LLM API
+      - name: Install Dependencies
+        run: pip install requests
+
+      # Bypasses the missing action.yml by downloading the script file directly
+      - name: Download Translation Script
+        run: |
+          curl -sSLo translate.py https://raw.githubusercontent.com/ardigan6/docusaurus-llm-translator/main/translate.py
+
+      # Identifies exactly which files changed in the /docs folder
+      - name: Get Changed Docs Files
+        id: changed-docs-files
+        uses: tj-actions/changed-files@v44
+        with:
+          files: |
+            docs/**/*.md
+            docs/**/*.mdx
+
+      # Identifies exactly which files changed in the /whatsnew folder
+      - name: Get Changed WhatsNew Files
+        id: changed-whatsnew-files
+        uses: tj-actions/changed-files@v44
+        with:
+          files: |
+            whatsnew/**/*.md
+            whatsnew/**/*.mdx
+
       # --------------------------------------------------------
-      # STEP 1: Translate the standard /docs directory
+      # STEP 1: Translate changed files in standard /docs directory
       # --------------------------------------------------------
       - name: Translate Core Docs
-        uses: ardigan6/docusaurus-llm-translator@main
+        if: steps.changed-docs-files.outputs.any_changed == 'true'
         env:
           API_KEY: ${{ secrets.LLM_API_KEY }}
           API_ENDPOINT_URL: ${{ secrets.LLM_API_ENDPOINT_URL }}
-          SOURCE_DOCS_DIR: "docs"
-          DOCS_PLUGIN_PATH: "docusaurus-plugin-content-docs/current"
-          I18N_ROOT_DIR: "i18n"
-          CACHE_FILE_PATH: "docs_cache.json"
-          LANGUAGES: ${{ github.event.inputs.languages || 'pt es' }}
+        run: |
+          python3 translate.py \
+            --source-docs-dir docs \
+            --docs-plugin-path docusaurus-plugin-content-docs/current \
+            --cache-file docs_cache.json \
+            --languages pt es \
+            ${{ steps.changed-docs-files.outputs.all_changed_files }}
 
       # --------------------------------------------------------
-      # STEP 2: Translate the /whatsnew directory into the blog structure
+      # STEP 2: Translate changed files in /whatsnew directory
       # --------------------------------------------------------
       - name: Translate WhatsNew (Blog)
-        uses: ardigan6/docusaurus-llm-translator@main
+        if: steps.changed-whatsnew-files.outputs.any_changed == 'true'
         env:
           API_KEY: ${{ secrets.LLM_API_KEY }}
           API_ENDPOINT_URL: ${{ secrets.LLM_API_ENDPOINT_URL }}
-          SOURCE_DOCS_DIR: "whatsnew"
-          DOCS_PLUGIN_PATH: "docusaurus-plugin-content-blog"
-          I18N_ROOT_DIR: "i18n"
-          CACHE_FILE_PATH: "whatsnew_cache.json"
-          LANGUAGES: ${{ github.event.inputs.languages || 'pt es' }}
+        run: |
+          python3 translate.py \
+            --source-docs-dir whatsnew \
+            --docs-plugin-path docusaurus-plugin-content-blog \
+            --cache-file whatsnew_cache.json \
+            --languages pt es \
+            ${{ steps.changed-whatsnew-files.outputs.all_changed_files }}
+
+      # Clean up the script so it isn't accidentally committed to your PR
+      - name: Cleanup Script
+        run: rm -f translate.py
 
       # --------------------------------------------------------
-      # STEP 3: Create a Pull Request with the translated files
+      # STEP 3: Bundle up the output and submit a Pull Request
       # --------------------------------------------------------
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7

@@ -1,0 +1,74 @@
+name: Docusaurus LLM Translation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**/*.mdx'
+      - 'docs/**/*.md'
+      - 'whatsnew/**/*.mdx'
+      - 'whatsnew/**/*.md'
+  workflow_dispatch:
+    inputs:
+      languages:
+        description: 'Space-separated language codes (e.g., "es fr")'
+        required: false
+        default: 'pt es'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  translate_site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0 
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      # --------------------------------------------------------
+      # STEP 1: Translate the standard /docs directory
+      # --------------------------------------------------------
+      - name: Translate Core Docs
+        uses: ardigan6/docusaurus-llm-translator@main
+        env:
+          API_KEY: ${{ secrets.LLM_API_KEY }}
+          API_ENDPOINT_URL: ${{ secrets.LLM_API_ENDPOINT_URL }}
+          SOURCE_DOCS_DIR: "docs"
+          DOCS_PLUGIN_PATH: "docusaurus-plugin-content-docs/current"
+          I18N_ROOT_DIR: "i18n"
+          CACHE_FILE_PATH: "docs_cache.json"
+          LANGUAGES: ${{ github.event.inputs.languages || 'es fr' }}
+
+      # --------------------------------------------------------
+      # STEP 2: Translate the /whatsnew directory into the blog structure
+      # --------------------------------------------------------
+      - name: Translate WhatsNew (Blog)
+        uses: ardigan6/docusaurus-llm-translator@main
+        env:
+          API_KEY: ${{ secrets.LLM_API_KEY }}
+          API_ENDPOINT_URL: ${{ secrets.LLM_API_ENDPOINT_URL }}
+          SOURCE_DOCS_DIR: "whatsnew"
+          DOCS_PLUGIN_PATH: "docusaurus-plugin-content-blog"
+          I18N_ROOT_DIR: "i18n"
+          CACHE_FILE_PATH: "whatsnew_cache.json"
+          LANGUAGES: ${{ github.event.inputs.languages || 'es fr' }}
+
+      # --------------------------------------------------------
+      # STEP 3: Commit all translated files back to your repo
+      # --------------------------------------------------------
+      - name: Commit and Push Translations
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add i18n/ *_cache.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "docs: auto-translate updated docs and whatsnew files via LLM" && git push)

@@ -39,7 +39,7 @@ jobs:
       # Bypasses the missing action.yml by downloading the script file directly
       - name: Download Translation Script
         run: |
-          curl -sSLo translate.py https://raw.githubusercontent.com/ardigan6/docusaurus-llm-translator/main/translate.py
+          curl -sSLo translate.py https://raw.githubusercontent.com/nicopace/docusaurus-llm-translator/refs/heads/main/translate.py
 
       # Identifies exactly which files changed in the /docs folder
       - name: Get Changed Docs Files

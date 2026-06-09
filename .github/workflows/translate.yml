@@ -47,7 +47,7 @@ jobs:
           DOCS_PLUGIN_PATH: "docusaurus-plugin-content-docs/current"
           I18N_ROOT_DIR: "i18n"
           CACHE_FILE_PATH: "docs_cache.json"
-          LANGUAGES: ${{ github.event.inputs.languages || 'es fr' }}
+          LANGUAGES: ${{ github.event.inputs.languages || 'pt es' }}
 
       # --------------------------------------------------------
       # STEP 2: Translate the /whatsnew directory into the blog structure
@@ -61,14 +61,23 @@ jobs:
           DOCS_PLUGIN_PATH: "docusaurus-plugin-content-blog"
           I18N_ROOT_DIR: "i18n"
           CACHE_FILE_PATH: "whatsnew_cache.json"
-          LANGUAGES: ${{ github.event.inputs.languages || 'es fr' }}
+          LANGUAGES: ${{ github.event.inputs.languages || 'pt es' }}
 
       # --------------------------------------------------------
-      # STEP 3: Commit all translated files back to your repo
+      # STEP 3: Create a Pull Request with the translated files
       # --------------------------------------------------------
-      - name: Commit and Push Translations
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add i18n/ *_cache.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "docs: auto-translate updated docs and whatsnew files via LLM" && git push)
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "docs: auto-translate updated docs and whatsnew files via LLM"
+          branch: "automated-translations"
+          base: "main"
+          title: "docs: Automated LLM Translations Update"
+          body: |
+            This is an automated pull request containing newly generated translations for your standard documentation and `/whatsnew` content.
+            
+            Please review the markdown updates inside the `i18n/` directory before merging.
+          labels: |
+            documentation
+            automated-pr

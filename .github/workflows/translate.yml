@@ -59,21 +59,23 @@ jobs:
             whatsnew/**/*.md
             whatsnew/**/*.mdx
 
-      # --------------------------------------------------------
+# --------------------------------------------------------
       # STEP 1: Translate changed files in standard /docs directory
       # --------------------------------------------------------
       - name: Translate Core Docs
         if: steps.changed-docs-files.outputs.any_changed == 'true'
         env:
+          # Keeping these as env vars as they are read internally by the script for API connectivity
           API_KEY: ${{ secrets.LLM_API_KEY }}
           API_ENDPOINT_URL: ${{ secrets.LLM_API_ENDPOINT_URL }}
-          SOURCE_DOCS_DIR: "docs"
-          DOCS_PLUGIN_PATH: "docusaurus-plugin-content-docs/current"
-          I18N_ROOT_DIR: "i18n"
-          CACHE_FILE_PATH: "docs_cache_${{ matrix.language }}.json"
-          LANGUAGES: ${{ matrix.language }}
         run: |
-          python3 translate.py ${{ steps.changed-docs-files.outputs.all_changed_files }}
+          python3 translate.py \
+            --source-docs-dir ./docs \
+            --i18n-root ./i18n \
+            --cache-file docs_cache_${{ matrix.language }}.json \
+            --languages ${{ matrix.language }} \
+            --docs-plugin-path "docusaurus-plugin-content-docs/current" \
+            ${{ steps.changed-docs-files.outputs.all_changed_files }}
 
       # --------------------------------------------------------
       # STEP 2: Translate changed files in /whatsnew directory
@@ -83,13 +85,14 @@ jobs:
         env:
           API_KEY: ${{ secrets.LLM_API_KEY }}
           API_ENDPOINT_URL: ${{ secrets.LLM_API_ENDPOINT_URL }}
-          SOURCE_DOCS_DIR: "whatsnew"
-          DOCS_PLUGIN_PATH: "docusaurus-plugin-content-blog"
-          I18N_ROOT_DIR: "i18n"
-          CACHE_FILE_PATH: "whatsnew_cache_${{ matrix.language }}.json"
-          LANGUAGES: ${{ matrix.language }}
         run: |
-          python3 translate.py ${{ steps.changed-whatsnew-files.outputs.all_changed_files }}
+          python3 translate.py \
+            --source-docs-dir ./whatsnew \
+            --i18n-root ./i18n \
+            --cache-file whatsnew_cache_${{ matrix.language }}.json \
+            --languages ${{ matrix.language }} \
+            --docs-plugin-path "docusaurus-plugin-content-blog" \
+            ${{ steps.changed-whatsnew-files.outputs.all_changed_files }}
 
       # Clean up the script so it isn't accidentally committed to your PR
       - name: Cleanup Script

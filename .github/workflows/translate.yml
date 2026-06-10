@@ -10,6 +10,12 @@ on:
       - 'whatsnew/**/*.mdx'
       - 'whatsnew/**/*.md'
   workflow_dispatch:
+    inputs:
+      translate_all_files:
+        description: 'Check this to sweep and translate EVERY file (One-off task)'
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: write
@@ -19,7 +25,6 @@ jobs:
   translate_site:
     runs-on: ubuntu-latest
     strategy:
-      # Creates parallel independent jobs for each language specified here
       matrix:
         language: [pt, es]
     steps:
@@ -36,13 +41,15 @@ jobs:
       - name: Install Dependencies
         run: pip install requests
 
-      # Bypasses the missing action.yml by downloading the script file directly
       - name: Download Translation Script
         run: |
           curl -sSLo translate.py https://raw.githubusercontent.com/nicopace/docusaurus-llm-translator/refs/heads/main/translate.py
+          # Patching the model directly inside the downloaded script to ensure it uses the working stable endpoint
+          sed -i 's/gemini-2.5-flash-preview-05-20/gemini-2.5-flash/g' translate.py
 
-      # Identifies exactly which files changed in the /docs folder
+      # --- FILE DETECTION (Only run on push or if manual trigger isn't full sweep) ---
       - name: Get Changed Docs Files
+        if: ${{ github.event.inputs.translate_all_files != 'true' }}
         id: changed-docs-files
         uses: tj-actions/changed-files@v44
         with:
@@ -50,8 +57,8 @@ jobs:
             docs/**/*.md
             docs/**/*.mdx
 
-      # Identifies exactly which files changed in the /whatsnew folder
       - name: Get Changed WhatsNew Files
+        if: ${{ github.event.inputs.translate_all_files != 'true' }}
         id: changed-whatsnew-files
         uses: tj-actions/changed-files@v44
         with:
@@ -59,42 +66,56 @@ jobs:
             whatsnew/**/*.md
             whatsnew/**/*.mdx
 
-# --------------------------------------------------------
-      # STEP 1: Translate changed files in standard /docs directory
+      # --------------------------------------------------------
+      # STEP 1: Translate /docs directory
       # --------------------------------------------------------
       - name: Translate Core Docs
-        if: steps.changed-docs-files.outputs.any_changed == 'true'
+        if: ${{ github.event.inputs.translate_all_files == 'true' || steps.changed-docs-files.outputs.any_changed == 'true' }}
         env:
-          # Keeping these as env vars as they are read internally by the script for API connectivity
           API_KEY: ${{ secrets.LLM_API_KEY }}
           API_ENDPOINT_URL: ${{ secrets.LLM_API_ENDPOINT_URL }}
         run: |
+          # Use a bash conditional to determine if we provide specific files or the full wildcards
+          if [ "${{ github.event.inputs.translate_all_files }}" = "true" ]; then
+            # Enable globbing options so wildcards match nested directories correctly
+            shopt -s globstar nullglob
+            TARGET_FILES=( docs/**/*.md docs/**/*.mdx )
+          else
+            TARGET_FILES=( ${{ steps.changed-docs-files.outputs.all_changed_files }} )
+          fi
+          
           python3 translate.py \
             --source-docs-dir ./docs \
             --i18n-root ./i18n \
             --cache-file docs_cache_${{ matrix.language }}.json \
             --languages ${{ matrix.language }} \
             --docs-plugin-path "docusaurus-plugin-content-docs/current" \
-            ${{ steps.changed-docs-files.outputs.all_changed_files }}
+            "${TARGET_FILES[@]}"
 
       # --------------------------------------------------------
-      # STEP 2: Translate changed files in /whatsnew directory
+      # STEP 2: Translate /whatsnew directory
       # --------------------------------------------------------
       - name: Translate WhatsNew (Blog)
-        if: steps.changed-whatsnew-files.outputs.any_changed == 'true'
+        if: ${{ github.event.inputs.translate_all_files == 'true' || steps.changed-whatsnew-files.outputs.any_changed == 'true' }}
         env:
           API_KEY: ${{ secrets.LLM_API_KEY }}
           API_ENDPOINT_URL: ${{ secrets.LLM_API_ENDPOINT_URL }}
         run: |
+          if [ "${{ github.event.inputs.translate_all_files }}" = "true" ]; then
+            shopt -s globstar nullglob
+            TARGET_FILES=( whatsnew/**/*.md whatsnew/**/*.mdx )
+          else
+            TARGET_FILES=( ${{ steps.changed-whatsnew-files.outputs.all_changed_files }} )
+          fi
+          
           python3 translate.py \
             --source-docs-dir ./whatsnew \
             --i18n-root ./i18n \
             --cache-file whatsnew_cache_${{ matrix.language }}.json \
             --languages ${{ matrix.language }} \
             --docs-plugin-path "docusaurus-plugin-content-blog" \
-            ${{ steps.changed-whatsnew-files.outputs.all_changed_files }}
+            "${TARGET_FILES[@]}"
 
-      # Clean up the script so it isn't accidentally committed to your PR
       - name: Cleanup Script
         run: rm -f translate.py
 

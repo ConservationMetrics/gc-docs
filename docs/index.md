@@ -40,4 +40,5 @@ Use the top navigation bar to explore each section of this documentation site:
 
 ---
 
-*Guardian Connector represents a commitment to Indigenous data sovereignty and community-controlled monitoring. These docs will help you harness its full potential for your community's conservation and advocacy work.*
+*Guardian Connector represents a commitment to Indigenous data sovereignty and community-controlled monitoring.*
+*These docs will help you harness its full potential for your community's conservation and advocacy work.*

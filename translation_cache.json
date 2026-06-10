@@ -1,0 +1,94 @@
+{
+  "1becf6b6": {
+    "es": "*Guardian Connector representa un compromiso con la soberanía de datos indígenas y el monitoreo controlado por la comunidad.*\n*Estos documentos te ayudarán a aprovechar todo su potencial para el trabajo de conservación y defensa de tu comunidad.*",
+    "fr": "*Le Guardian Connector représente un engagement envers la souveraineté des données autochtones et la surveillance contrôlée par la communauté.*\n*Ces documents vous aideront à exploiter tout son potentiel pour le travail de conservation et de plaidoyer de votre communauté.*"
+  },
+  "9acc6674": {
+    "es": "¡Bienvenido al centro de documentación de Guardian Connector! Esta guía completa te ayudará a comprender, implementar y usar Guardian Connector para satisfacer las necesidades de soberanía de datos y monitoreo ambiental de tu comunidad.",
+    "fr": "Bienvenue au centre de documentation Guardian Connector ! Ce guide complet vous aidera à comprendre, déployer et utiliser Guardian Connector pour répondre aux besoins de votre communauté en matière de souveraineté des données et de surveillance environnementale."
+  },
+  "7e344eab": {
+    "es": "Guías completas para implementar las herramientas de Guardian Connector y establecer prácticas de datos centradas en la comunidad, incluyendo protocolos de soberanía de datos indígenas y flujos de trabajo específicos de la herramienta.",
+    "fr": "Guides complets pour la mise en œuvre des outils Guardian Connector et l'établissement de pratiques de données centrées sur la communauté, y compris les protocoles de souveraineté des données autochtones et les flux de travail spécifiques aux outils."
+  },
+  "590d9460": {
+    "es": "Información detallada sobre herramientas integradas, opciones de alojamiento y especificaciones técnicas para ayudarte a tomar decisiones informadas sobre la implementación.",
+    "fr": "Informations détaillées sur les outils intégrés, les options d'hébergement et les spécifications techniques pour vous aider à prendre des décisions éclairées concernant la mise en œuvre."
+  },
+  "7d19f315": {
+    "es": "Comprender el propósito de Guardian Connector, sus principios de diseño y cómo encaja en el trabajo más amplio de monitoreo y defensa de tu comunidad.",
+    "fr": "Comprendre l'objectif et les principes de conception de Guardian Connector, et comment il s'intègre dans le travail plus large de surveillance et de plaidoyer de votre communauté."
+  },
+  "c2cf5864": {
+    "es": "**Comienza con [Overview](./overview/)** para comprender el propósito y los principios de diseño de Guardian Connector",
+    "fr": "**Commencez par [Vue d'ensemble](./overview/)** pour comprendre l'objectif et les principes de conception de Guardian Connector"
+  },
+  "43369467": {
+    "es": "**Sigue las [Guides and Tutorials](./guides/)** para un aprendizaje práctico y el desarrollo de habilidades",
+    "fr": "**Suivez les [Guides et Tutoriels](./guides/)** pour un apprentissage pratique et le développement de compétences"
+  },
+  "5a233de3": {
+    "es": "**Revisa [Reference](./reference/)** para conocer las herramientas integradas y las opciones de implementación",
+    "fr": "**Consultez la [Référence](./reference/)** pour en savoir plus sur les outils intégrés et les options de mise en œuvre"
+  },
+  "5a5e1f5a": {
+    "es": "**Coordinadores Técnicos** que implementan y mantienen los sistemas de Guardian Connector",
+    "fr": "**Coordonnateurs techniques** mettant en œuvre et maintenant les systèmes Guardian Connector"
+  },
+  "10f0649f": {
+    "es": "Usa la barra de navegación superior para explorar cada sección de este sitio de documentación:",
+    "fr": "Utilisez la barre de navigation supérieure pour explorer chaque section de ce site de documentation :"
+  },
+  "61b9279c": {
+    "es": "**Líderes Comunitarios** que planifican y supervisan iniciativas de soberanía de datos",
+    "fr": "**Leaders communautaires** planifiant et supervisant les initiatives de souveraineté des données"
+  },
+  "b56f4a2e": {
+    "es": "**Defensores** que utilizan datos para campañas de conservación y basadas en derechos",
+    "fr": "**Militants** utilisant les données pour la conservation et les campagnes basées sur les droits"
+  },
+  "42bd5845": {
+    "es": "**Investigadores de Campo** que recolectan datos ambientales y culturales",
+    "fr": "**Chercheurs de terrain** collectant des données environnementales et culturelles"
+  },
+  "8d44c889": {
+    "es": "**Gestores de Datos** que organizan y analizan la información comunitaria",
+    "fr": "**Gestionnaires de données** organisant et analysant les informations communautaires"
+  },
+  "5cd191d7": {
+    "es": "Esta documentación proporciona una guía completa para:",
+    "fr": "Cette documentation fournit des directives complètes pour :"
+  },
+  "73fb61f2": {
+    "es": "Esta documentación está diseñada para:",
+    "fr": "Cette documentation est conçue pour :"
+  },
+  "5df1f456": {
+    "es": "Documentación de Guardian Connector",
+    "fr": "Documentation Guardian Connector"
+  },
+  "8613756f": {
+    "es": "📚 **[Referencia](./reference/)**",
+    "fr": "📚 **[Référence](./reference/)**"
+  },
+  "6cd676fe": {
+    "es": "Qué cubre esta documentación",
+    "fr": "Ce que couvre cette documentation"
+  },
+  "4fcab33c": {
+    "es": "🏗️ **[Visión General](./overview/)**",
+    "fr": "🏗️ **[Vue d'ensemble](./overview/)**"
+  },
+  "2e9f80d8": {
+    "es": "Para quién es esta documentación",
+    "fr": "À qui s'adresse cette documentation"
+  },
+  "72957c79": {
+    "es": "🎓 **[Guías](./guides/)**",
+    "fr": "🎓 **[Guides](./guides/)**"
+  },
+  "bf647454": {
+    "es": "Primeros Pasos",
+    "fr": "Commencer"
+  }
+}

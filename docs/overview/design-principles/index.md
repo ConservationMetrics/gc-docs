@@ -40,7 +40,7 @@ While not every persona will be able to use every tool, we will not include tool
 Although Conservation Metrics maintains cloud-based Guardian Connector instances available to co-creation partners (and potentially others, under an affordable fee-for-service model), we are committed to building a toolchain that can be fully self-hosted. This includes:
 - Avoiding proprietary solutions that are inaccessible to partners
 - Providing sufficient documentation and automation to enable independent setup and administration
-- Ensuring compatibility with a wide range of hosting platforms (e.g., Azure, AWS, Google Cloud, DigitalOcean, and country-specific clouds)
+- Ensuring compatibility with a wide range of hosting platforms (e.g., Azure, AWS, Google Cloud, DigitalOcean, and country-specific clouds) or on-premises (locally hosted) infrastructure
 
 This enables deployment in specific jurisdictions according to partner needs.
 

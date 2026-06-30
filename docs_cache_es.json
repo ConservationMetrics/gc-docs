@@ -1,0 +1,86 @@
+{
+  "6fd4a2ef": {
+    "es": ":::info\nLa soberanía de los datos indígenas significa los derechos e intereses inherentes que tienen los Pueblos Indígenas en relación con la creación, recopilación, acceso, análisis, interpretación, gestión, difusión, reutilización y control de los datos relacionados con los Pueblos Indígenas. En el contexto de la soberanía de los datos indígenas, los datos se consideran un recurso estratégico, y se requiere un marco para su uso ético para promover el bienestar colectivo y la autodeterminación de los Pueblos Indígenas. Restablecer el control sobre los datos, incluidos aquellos que fueron recopilados previamente de los Pueblos Indígenas sin su consentimiento, debe reconocerse como una forma de remedio para abordar las injusticias históricas y corregir narrativas falsas. Esto incluye el establecimiento de mecanismos efectivos para la repatriación de datos."
+  },
+  "1314959f": {
+    "es": "En consonancia con los [CARE Principles for Indigenous Data Governance](/guides/guide-data-sovereignty-and-protocols/#what-are-the-care-principles-for-indigenous-data-governance) y el estudio del Mecanismo de Expertos del Consejo de Derechos Humanos de la ONU sobre los Derechos de los Pueblos Indígenas, [Right of Indigenous Peoples to data, including with regard to data collection and disaggregation](https://digitallibrary.un.org/record/4087217?v=pdf), nuestros socios deben poder:"
+  },
+  "2cc453b0": {
+    "es": "Si bien no todas las personas podrán usar todas las herramientas, no incluiremos herramientas que no puedan ser operadas de manera realista por nadie dentro de nuestros equipos de socios de cocreación sin soporte externo. La configuración inicial puede requerir la participación de un proveedor de servicios técnicos, pero la operación continua debe ser factible para los usuarios locales. Nuestro objetivo es seleccionar herramientas que sean accesibles, fáciles de usar y sencillas de aprender y mantener."
+  },
+  "fe6f4127": {
+    "es": "Aunque nos comprometemos con un conjunto enfocado de herramientas integradas, nuestro sistema debe permanecer abierto y flexible. Estructuraremos nuestro almacenamiento de datos y API para permitir una fácil integración de herramientas de terceros en el futuro. Esto facilita que los socios conecten sistemas complementarios a medida que sus necesidades evolucionan."
+  },
+  "57f0eddb": {
+    "es": "Aunque Conservation Metrics mantiene instancias de Guardian Connector basadas en la nube disponibles para socios de cocreación (y potencialmente otros, bajo un modelo asequible de pago por servicio), estamos comprometidos a construir una cadena de herramientas que pueda ser completamente autoalojada. Esto incluye:"
+  },
+  "95a0e9d2": {
+    "es": "_Del Mecanismo de Expertos del Consejo de Derechos Humanos de la ONU sobre los Derechos de los Pueblos Indígenas [\"Right of Indigenous Peoples to data, including with regard to data collection and disaggregation\"](https://digitallibrary.un.org/record/4087217?v=pdf)_\n:::"
+  },
+  "125d2eef": {
+    "es": "Al diseñar Guardian Connector para una viabilidad y sostenibilidad a largo plazo, Conservation Metrics se adhiere a un estricto conjunto de principios. Las herramientas incluidas en la solución deben cumplir los siguientes criterios:"
+  },
+  "d1d76d22": {
+    "es": "En la medida de lo posible, priorizamos herramientas de uso gratuito y servicios de hardware o basados en la nube que estén disponibles a bajo costo. Esto asegura la sostenibilidad a largo plazo del sistema para nuestros socios."
+  },
+  "6ceb11a6": {
+    "es": "Si bien traducir una interfaz de herramienta completa puede no ser siempre factible o necesario, los elementos más críticos para la misión deben ser traducibles a los idiomas locales para garantizar la comprensión y la usabilidad."
+  },
+  "7ea17464": {
+    "es": "Asegurar la compatibilidad con una amplia gama de plataformas de alojamiento (por ejemplo, Azure, AWS, Google Cloud, DigitalOcean y nubes específicas de cada país) o infraestructura local (alojada en las instalaciones)"
+  },
+  "68323b9a": {
+    "es": "**:arrow_right: Para más información, consulte [Pillares de la soberanía de datos en Guardian Connector](/overview/design-principles/data-sovereignty).**"
+  },
+  "e8ab1bd0": {
+    "es": "Proporcionar documentación y automatización suficientes para permitir una configuración y administración independientes"
+  },
+  "052a4b38": {
+    "es": "Controlar la recopilación, almacenamiento y transmisión de datos a lo largo del ciclo de vida del proyecto"
+  },
+  "a80a9c3f": {
+    "es": "Optar por no participar o eliminar sus datos del sistema en cualquier momento con una fricción mínima"
+  },
+  "68ffed0f": {
+    "es": "Esto permite el despliegue en jurisdicciones específicas según las necesidades del socio."
+  },
+  "74400ff0": {
+    "es": "Tener la seguridad de que ninguna parte externa tiene acceso no autorizado a sus datos"
+  },
+  "4c7e4f76": {
+    "es": "Evitar soluciones propietarias que sean inaccesibles para los socios"
+  },
+  "b5629e43": {
+    "es": "Tomar sus propias decisiones sobre el intercambio de datos con terceros"
+  },
+  "030ab0ee": {
+    "es": "📦 Software, Hardware y Servicios Gratuitos o Asequibles"
+  },
+  "ab1c4c3a": {
+    "es": "Estos derechos son fundamentales e innegociables."
+  },
+  "5dc3b751": {
+    "es": "Ser propietarios de la infraestructura donde se almacenan los datos"
+  },
+  "8e8fb97a": {
+    "es": "🔗 Construido para la interoperabilidad y la extensión"
+  },
+  "da2870cf": {
+    "es": "👥 Pila de Software Operable por la Comunidad"
+  },
+  "e3401e2b": {
+    "es": "🌐 Traducible a Idiomas Locales"
+  },
+  "63ca8c17": {
+    "es": "🔒 Soberanía y Control de Datos"
+  },
+  "3c9a5802": {
+    "es": "Acceder a sus datos en todo momento"
+  },
+  "6a88254a": {
+    "es": "🏠 Capacidad de Auto-Alojamiento"
+  },
+  "f7102e5b": {
+    "es": "Principios de Diseño"
+  }
+}

@@ -44,8 +44,5 @@ Although Conservation Metrics maintains cloud-based Guardian Connector instances
 
 This enables deployment in specific jurisdictions according to partner needs.
 
-### 📴 Offline-First Design
-Nearly all tools should be usable entirely offline. At a minimum, the core data workflow—from data collection to visualization (and some curation)—should not require an internet connection. Offline readiness is essential for rural and remote use cases.
-
 ### 🔗 Built for Interoperability and Extension
 Even as we commit to a focused stack of integrated tools, our system must remain open and flexible. We will structure our data storage and APIs to enable easy integration of third-party tools in the future. This makes it easier for partners to plug in complementary systems as their needs evolve.

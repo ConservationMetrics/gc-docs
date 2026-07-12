@@ -44,7 +44,7 @@ The GC Scripts Hub includes connectors that automatically gather data from vario
 - **[CoMapeo](/reference/connected-applications/comapeo/)**: Import community mapping data and observations, with support for photos and other attachments.
 - **[CyberTracker](https://www.cybertracker.org/)**: Import data collected using CyberTracker.
 - **[Locus Map](https://www.locusmap.app/)**: Import GPS tracks and mapping data.
-- **[Mapbox](https://www.mapbox.com/)**: Update Mapbox tilesets with data on Guardian Connector.
+- **[Mapbox](https://www.mapbox.com/)**: [Update Mapbox tilesets](/reference/gc-toolkit/externally-hosted/mapbox/update-tileset/) with data on Guardian Connector.
 - **[QField](https://qfield.org/)**: Import GeoPackage files generated using QField.
 - **[SMART](https://smartconservationtools.org/)**: Import patrol data from SMART Desktop.
 

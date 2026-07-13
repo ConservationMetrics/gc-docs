@@ -1,0 +1,173 @@
+{
+  "ad64cb96": {
+    "es": "**Lo que ves en la Página de inicio depende de tu rol.** Diferentes personas necesitan diferentes herramientas, por lo que la página solo muestra los servicios que tienes permiso para usar. Si falta un servicio que esperas, puede que no esté activado para tu comunidad, o que tu rol aún no incluya acceso a él; ponte en contacto con el administrador de tu comunidad."
+  },
+  "1e61d8c4": {
+    "es": "Cuando visitas la Página de inicio por primera vez, es posible que se te pida que te registres o inicies sesión. Después de registrarte, un miembro de tu comunidad con acceso de administrador necesita **aprobar tu cuenta** y asignarte un rol antes de que puedas ver los servicios. Hasta que eso ocurra, no podrás acceder a Guardian Connector."
+  },
+  "fb42cc38": {
+    "es": "La Página de inicio de Guardian Connector es la **página principal** del Guardian Connector de tu comunidad: la puerta de entrada a la que llegas después de iniciar sesión. Reúne todo en un solo lugar, para que no necesites recordar direcciones web o buscar la herramienta adecuada."
+  },
+  "e27f451a": {
+    "es": "Guardian Connector también se conecta con otras herramientas como **ArcGIS Survey123**, **Locus Map**, **Global Forest Watch**, **SMART** y más. Para obtener información sobre todo lo que se puede conectar, consulta el [Hub de Scripts de GC](/reference/gc-toolkit/gc-scripts-hub/)."
+  },
+  "bf8b59d6": {
+    "es": "La Página de inicio también presenta las herramientas y plataformas de campo que funcionan con Guardian Connector. Estas son las aplicaciones que tu comunidad puede usar para **recopilar datos en el campo**, datos que luego fluyen a Guardian Connector para su visualización y análisis:"
+  },
+  "07f34538": {
+    "es": "No todos ven todos los servicios. En general, cuanto más avanzada o sensible es una herramienta, mayor es el rol necesario para abrirla; por ejemplo, Explorer está disponible para la mayoría de los usuarios con sesión iniciada, mientras que Windmill está reservado para los administradores."
+  },
+  "45ada005": {
+    "es": "Si eres **administrador**, la Página de inicio te ofrece un área de Gestión de Usuarios para controlar quién puede acceder al Guardian Connector de tu comunidad y qué pueden hacer."
+  },
+  "cc51cfd2": {
+    "es": "**Windmill**: Ejecuta y programa los flujos de trabajo de automatización que recopilan y procesan tus datos (consulta el [Hub de Scripts de GC](/reference/gc-toolkit/gc-scripts-hub/))."
+  },
+  "0ec8dad2": {
+    "es": "Estos son los servicios de Guardian Connector a los que tu comunidad puede enlazar desde la Página de inicio. Cada uno aparece como una tarjeta en la que puedes hacer clic para abrirlo en una nueva pestaña."
+  },
+  "a7803725": {
+    "es": "Cuando apruebas a alguien y le asignas el rol adecuado, los servicios que se les permite usar aparecerán en su Página de inicio la próxima vez que inicien sesión."
+  },
+  "8a66ce79": {
+    "es": "**[Explorer](/reference/gc-toolkit/gc-explorer/)**: Visualiza los datos de tu comunidad como mapas interactivos, galerías multimedia y un panel de alertas."
+  },
+  "9499d574": {
+    "es": "Consulta el **estado** de cada persona — si su cuenta está *Aprobada* o aún *Pendiente* — junto con su rol y cuándo inició sesión por última vez."
+  },
+  "80212cf4": {
+    "es": "**[Timelapse](/reference/connected-applications/timelapse/)**: Revisión y anotación de imágenes de cámaras trampa para el monitoreo de la biodiversidad."
+  },
+  "32c2e754": {
+    "es": "Infórmate sobre las **herramientas que puedes usar con Guardian Connector** para recopilar e introducir datos (como CoMapeo, KoboToolbox y más)."
+  },
+  "974565d2": {
+    "es": "**[KoboToolbox](/reference/connected-applications/kobotoolbox/)** y **ODK**: Formularios y encuestas que funcionan en línea y sin conexión."
+  },
+  "d8ac3698": {
+    "es": "**[Filebrowser](/reference/gc-toolkit/filebrowser/)**: Explora, descarga y gestiona los archivos brutos y archivos de tu comunidad."
+  },
+  "70d093ad": {
+    "es": "**[Superset](/reference/gc-toolkit/superset/)**: Crea y explora gráficos, paneles y visualizaciones a partir de tus datos."
+  },
+  "13ec1695": {
+    "es": "**[CoMapeo](/reference/connected-applications/comapeo/)**: Mapeo y monitoreo, primero sin conexión, en un dispositivo móvil."
+  },
+  "94a3a01b": {
+    "es": "Abre los **servicios** que utiliza tu comunidad (como Explorer, Superset, Windmill o Filebrowser) con un solo clic."
+  },
+  "0a190ec2": {
+    "es": "**Aprueba (o desaprueba) una cuenta.** Solo los usuarios aprobados pueden acceder a los servicios."
+  },
+  "54fb91e1": {
+    "es": "**Asigna un rol** que decida qué servicios puede abrir cada persona."
+  },
+  "2f03145c": {
+    "es": "Los roles actualmente disponibles, de menor a mayor acceso, son:"
+  },
+  "4dc29d70": {
+    "es": "**Sesión iniciada**: Sesión iniciada, pero sin acceso a servicios todavía."
+  },
+  "11fe489e": {
+    "es": "**Invitado**: Acceso limitado, adecuado para visitantes o socios."
+  },
+  "134df9d7": {
+    "es": "**Administrador**: Acceso completo, incluida esta área de Gestión de Usuarios."
+  },
+  "3ca2d17f": {
+    "es": "**Elimina una cuenta** si ya no debería tener acceso."
+  },
+  "3f39ed28": {
+    "es": "**Miembro**: Acceso diario para los miembros de la comunidad."
+  },
+  "849c5b35": {
+    "es": "🌐 Herramientas que puedes usar con Guardian Connector"
+  },
+  "899dc1b1": {
+    "es": "**Busca** personas por nombre o correo electrónico."
+  },
+  "fb7c6659": {
+    "es": "👥 Gestión de Usuarios (para Administradores)"
+  },
+  "28e1d2aa": {
+    "es": "Desde la Página de inicio puedes:"
+  },
+  "e32b3fbe": {
+    "es": "Desde aquí puedes:"
+  },
+  "3cb2f282": {
+    "es": "Página de inicio de GC"
+  },
+  "166552ee": {
+    "es": "🚀 Tus servicios"
+  },
+  "57d64568": {
+    "es": "🔑 Iniciar sesión"
+  },
+  "1419c9c5": {
+    "es": "El [Guardian Connector (GC) Scripts Hub](https://github.com/conservationmetrics/gc-scripts-hub) es una colección creciente de scripts de automatización diseñados para ayudar a las comunidades a proteger y gestionar sus tierras a través de la integración de datos y la automatización de flujos de trabajo. Construidos sobre la plataforma [Windmill](https://www.windmill.dev/), estos scripts empoderan a las comunidades para conectar diferentes herramientas, automatizar la recopilación de datos y optimizar sus flujos de trabajo de conservación sin requerir una profunda experiencia técnica."
+  },
+  "07b521ba": {
+    "es": "**Exportación de Azure Blob Storage**: Genere una URL SAS segura y con límite de tiempo para descargar masivamente todos los datos basados en archivos (imágenes, medios, documentos) desde Azure Blob Storage a través de [$CODEVAR[0]](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10?tabs=dnf) — compatible con disco local, AWS S3, Google Cloud Storage y transferencias de Azure a Azure."
+  },
+  "6a2067a4": {
+    "es": "El Scripts Hub reconoce que cada comunidad tiene necesidades y flujos de trabajo únicos. Los scripts pueden personalizarse y combinarse para crear procesos automatizados que apoyen sus objetivos específicos de conservación, ya sea monitorear la biodiversidad, documentar sitios culturales o rastrear amenazas ambientales."
+  },
+  "662fcf5e": {
+    "es": "**Cargador de Conjuntos de Datos (Dataset Uploader)**: Una aplicación para cargar conjuntos de datos en formato de archivo (es decir, CSV, Shapefile, GeoJSON y más) al almacén de datos de Guardian Connector. Consulte la página [Dataset Uploader](/reference/gc-toolkit/gc-scripts-hub/dataset-uploader/) para más detalles."
+  },
+  "2a07773c": {
+    "es": "Este recurso sigue creciendo basándose en las necesidades y comentarios de la comunidad, asegurando que las herramientas evolucionen para servir mejor a los esfuerzos de conservación de base en todo el mundo."
+  },
+  "2991f434": {
+    "es": "**Exportación Completa de Datos**: Descargue todos los datos de su comunidad como archivos CSV, apoyando la soberanía de los datos y los planes de salida."
+  },
+  "5d8a238e": {
+    "es": "**Formatos Flexibles**: Exporte datos en formatos adecuados para diferentes herramientas y plataformas de análisis (GeoJSON, CSV)."
+  },
+  "a951a979": {
+    "es": "**Métricas de Guardian Connector**: Genere y almacene métricas de uso mensuales en los servicios de Guardian Connector."
+  },
+  "b22e99b3": {
+    "es": "**Integración con CoMapeo**: Publique alertas ambientales directamente en los servidores de CoMapeo para acceso sin conexión."
+  },
+  "4942f26a": {
+    "es": "**Notificaciones de WhatsApp**: Envíe automáticamente resúmenes de alertas a los miembros de la comunidad a través de Twilio."
+  },
+  "16ee4b23": {
+    "es": "Estos scripts pueden programarse para ejecutarse automáticamente, creando flujos de trabajo como:"
+  },
+  "ec5e18b8": {
+    "es": "Notificaciones inmediatas de WhatsApp cuando se detectan amenazas ambientales"
+  },
+  "f7c9e537": {
+    "es": "Controles regulares de nuevas alertas de deforestación en su territorio"
+  },
+  "1ff0b4a5": {
+    "es": "Exportaciones horarias de datos de encuestas para reuniones comunitarias"
+  },
+  "cc8d3311": {
+    "es": "🌱 Diseño Enfocado en la Comunidad"
+  },
+  "f43f5319": {
+    "es": "🤖 Capacidades de Automatización"
+  },
+  "a9949c39": {
+    "es": "📤 Exportación y Compartición de Datos"
+  },
+  "811930fe": {
+    "es": "⚠️ Distribución de Alertas"
+  },
+  "f9060601": {
+    "es": "📊 Métricas e Informes"
+  },
+  "10dbe432": {
+    "es": "💾 Cargador de Conjuntos de Datos"
+  },
+  "af81bc63": {
+    "es": "📦 Soberanía de Datos"
+  },
+  "2f3585a1": {
+    "es": "GC Scripts Hub"
+  }
+}

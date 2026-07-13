@@ -1,0 +1,272 @@
+{
+  "ad64cb96": {
+    "pt": "**O que você vê na Landing Page depende do seu papel.** Pessoas diferentes precisam de ferramentas diferentes, então a página mostra apenas os serviços que você tem permissão para usar. Se um serviço que você espera está faltando, ele pode não estar ativado para sua comunidade, ou seu papel pode não incluir acesso a ele ainda — entre em contato com o administrador da sua comunidade."
+  },
+  "1e61d8c4": {
+    "pt": "Ao visitar a Landing Page pela primeira vez, você pode ser solicitado a se cadastrar ou fazer login. Após o cadastro, um membro da sua comunidade com acesso de administrador precisa **aprovar sua conta** e atribuir-lhe um papel antes que você possa ver os serviços. Até que isso aconteça, você não conseguirá acessar o Guardian Connector."
+  },
+  "fb42cc38": {
+    "pt": "A Landing Page do Guardian Connector é a **página inicial** do Guardian Connector da sua comunidade: a porta de entrada onde você chega após fazer login. Ela reúne tudo em um só lugar, para que você não precise se lembrar de endereços da web ou procurar pela ferramenta certa."
+  },
+  "e27f451a": {
+    "pt": "O Guardian Connector também se conecta com outras ferramentas como **ArcGIS Survey123**, **Locus Map**, **Global Forest Watch**, **SMART**, e mais. Para saber mais sobre tudo o que pode ser conectado, consulte o [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/)."
+  },
+  "bf8b59d6": {
+    "pt": "A Landing Page também apresenta as ferramentas de campo e plataformas que funcionam com o Guardian Connector. Estes são os aplicativos que sua comunidade pode usar para **coletar dados em campo** — dados que então fluem para o Guardian Connector para visualização e análise:"
+  },
+  "07f34538": {
+    "pt": "Nem todos veem todos os serviços. Em geral, quanto mais avançada ou sensível é uma ferramenta, maior o papel necessário para abri-la — por exemplo, o Explorer está disponível para a maioria dos usuários logados, enquanto o Windmill é reservado para administradores."
+  },
+  "45ada005": {
+    "pt": "Se você é um **administrador**, a Landing Page oferece uma área de Gerenciamento de Usuários para controlar quem pode acessar o Guardian Connector da sua comunidade e o que eles podem fazer."
+  },
+  "cc51cfd2": {
+    "pt": "**Windmill**: Execute e agende os fluxos de trabalho de automação que coletam e processam seus dados (consulte o [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/))."
+  },
+  "0ec8dad2": {
+    "pt": "Estes são os serviços do Guardian Connector que sua comunidade pode vincular a partir da Landing Page. Cada um aparece como um cartão que você pode clicar para abri-lo em uma nova aba."
+  },
+  "a7803725": {
+    "pt": "Quando você aprova alguém e lhe atribui o papel correto, os serviços que essa pessoa tem permissão para usar aparecerão na Landing Page dela na próxima vez que fizer login."
+  },
+  "8a66ce79": {
+    "pt": "**[Explorer](/reference/gc-toolkit/gc-explorer/)**: Visualize os dados da sua comunidade como mapas interativos, galerias de mídia e um painel de alertas."
+  },
+  "9499d574": {
+    "pt": "Veja o **status** de cada pessoa — se a conta está *Aprovada* ou *Pendente* — juntamente com seu papel e quando ela fez o último login."
+  },
+  "80212cf4": {
+    "pt": "**[Timelapse](/reference/connected-applications/timelapse/)**: Revisão e anotação de imagens de armadilhas fotográficas para monitoramento da biodiversidade."
+  },
+  "32c2e754": {
+    "pt": "Saiba mais sobre as **ferramentas que você pode usar com o Guardian Connector** para coletar e trazer dados (como CoMapeo, KoboToolbox e mais)."
+  },
+  "974565d2": {
+    "pt": "**[KoboToolbox](/reference/connected-applications/kobotoolbox/)** e **ODK**: Formulários e pesquisas que funcionam online e offline."
+  },
+  "d8ac3698": {
+    "pt": "**[Filebrowser](/reference/gc-toolkit/filebrowser/)**: Navegue, baixe e gerencie os arquivos brutos e arquivos da sua comunidade."
+  },
+  "70d093ad": {
+    "pt": "**[Superset](/reference/gc-toolkit/superset/)**: Construa e explore gráficos, painéis e visualizações a partir dos seus dados."
+  },
+  "13ec1695": {
+    "pt": "**[CoMapeo](/reference/connected-applications/comapeo/)**: Mapeamento e monitoramento mobile com foco offline."
+  },
+  "94a3a01b": {
+    "pt": "Abra os **serviços** que sua comunidade utiliza (como Explorer, Superset, Windmill ou Filebrowser) com um único clique."
+  },
+  "0a190ec2": {
+    "pt": "**Aprovar (ou desaprovar) uma conta.** Apenas usuários aprovados podem acessar os serviços."
+  },
+  "54fb91e1": {
+    "pt": "**Atribuir um papel** que decide quais serviços cada pessoa pode abrir."
+  },
+  "2f03145c": {
+    "pt": "Os papéis atualmente disponíveis, do menor para o maior acesso, são:"
+  },
+  "4dc29d70": {
+    "pt": "**Conectado**: Conectado, mas sem acesso a serviços ainda."
+  },
+  "11fe489e": {
+    "pt": "**Convidado**: Acesso limitado, adequado para visitantes ou parceiros."
+  },
+  "134df9d7": {
+    "pt": "**Administrador**: Acesso total, incluindo esta área de Gerenciamento de Usuários."
+  },
+  "3ca2d17f": {
+    "pt": "**Excluir uma conta** se a pessoa não deve mais ter acesso."
+  },
+  "3f39ed28": {
+    "pt": "**Membro**: Acesso diário para membros da comunidade."
+  },
+  "849c5b35": {
+    "pt": "🌐 Ferramentas que você pode usar com o Guardian Connector"
+  },
+  "899dc1b1": {
+    "pt": "**Pesquisar** pessoas por nome ou e-mail."
+  },
+  "fb7c6659": {
+    "pt": "👥 Gerenciamento de Usuários (para Administradores)"
+  },
+  "28e1d2aa": {
+    "pt": "Na Landing Page você pode:"
+  },
+  "e32b3fbe": {
+    "pt": "A partir daqui você pode:"
+  },
+  "3cb2f282": {
+    "pt": "Página Inicial do GC"
+  },
+  "166552ee": {
+    "pt": "🚀 Seus Serviços"
+  },
+  "57d64568": {
+    "pt": "🔑 Entrar"
+  },
+  "71f58b20": {
+    "pt": "O [Guardian Connector Explorer (GC Explorer)](https://github.com/conservationmetrics/gc-explorer) é uma ferramenta de visualização de dados baseada na web que transforma os dados tabulares da sua comunidade em mapas interativos, galerias e painéis. Desenvolvido especificamente para o Guardian Connector, ele se conecta diretamente ao seu banco de dados PostgreSQL para exibir dados coletados de ferramentas como CoMapeo, KoboToolbox e outras plataformas de coleta de dados."
+  },
+  "026b7248": {
+    "pt": "Essas exportações facilitam a continuidade do trabalho com seus dados fora do GC Explorer, utilizando as ferramentas e formatos que melhor se adequam às necessidades da sua comunidade."
+  },
+  "4c0bf252": {
+    "pt": "O GC Explorer transforma dados brutos em formatos visuais acessíveis que ajudam as comunidades a entender, compartilhar e agir com base nas informações coletadas."
+  },
+  "10920b76": {
+    "pt": "Uma vez que você exportou seus dados como CSV, GeoJSON ou KML, é possível convertê-los para muitos outros formatos compatíveis com GIS, se necessário."
+  },
+  "aaef03f5": {
+    "pt": "**⚠️ Painel de Alertas**: Monitore mudanças e ameaças ambientais com alertas de detecção de mudanças e imagens de satélite de antes e depois."
+  },
+  "815c5259": {
+    "pt": "Se essas limitações afetarem seu fluxo de trabalho, geralmente é recomendado usar os formatos **GeoPackage** ou **File Geodatabase**."
+  },
+  "23bfab6a": {
+    "pt": "**📍 Visualização de Mapa**: Visualize seus dados geoespaciais em um mapa interativo com painéis de informações pop-up e anexos de mídia incorporados."
+  },
+  "209d7176": {
+    "pt": "O GC Explorer permite exportar dados diretamente da Visualização de Mapa para uma variedade de formatos para uso em outras ferramentas e fluxos de trabalho."
+  },
+  "bc3344df": {
+    "pt": "**📸 Visualização de Galeria**: Navegue por conteúdo de fotos, áudio e vídeo coletado em campo, organizado por data ou localização."
+  },
+  "8904d50d": {
+    "pt": "**GeoJSON**: Exporte dados geoespaciais em um formato aberto moderno amplamente suportado por ferramentas GIS e aplicativos de mapeamento web."
+  },
+  "4e5158e7": {
+    "pt": "No ArcGIS, arquivos CSV contendo informações de coordenadas também podem ser carregados diretamente usando o recurso **\"Add XY Data\"**."
+  },
+  "5d321d8b": {
+    "pt": "Tanto o QGIS quanto o ArcGIS suportam a importação de dados GeoJSON e KML e a exportação para esses formatos adicionais."
+  },
+  "c85d8f6a": {
+    "pt": "**KML**: Exporte dados geoespaciais para uso em aplicativos como Google Earth e outras plataformas de mapeamento."
+  },
+  "95a0f97d": {
+    "pt": "**CSV**: Exporte seus dados em formato tabular para planilhas, bancos de dados ou análises adicionais."
+  },
+  "25a40408": {
+    "pt": "Embora os shapefiles sejam amplamente compatíveis, eles também possuem limitações importantes, incluindo:"
+  },
+  "9960b242": {
+    "pt": "**Fontes de Dados Personalizadas**: Quaisquer dados tabulares compatíveis com PostgreSQL"
+  },
+  "95ab6ab0": {
+    "pt": "**Alertas Ambientais**: Dados de detecção de mudanças por satélite"
+  },
+  "5a968652": {
+    "pt": "Restrições nos tipos de campo e na complexidade da estrutura de dados"
+  },
+  "7cc0b413": {
+    "pt": "**CoMapeo**: Dados de mapeamento e observação da comunidade"
+  },
+  "a13472a1": {
+    "pt": "Suporte limitado para codificação de caracteres não-latinos"
+  },
+  "4157b551": {
+    "pt": "O GC Explorer funciona automaticamente com dados de:"
+  },
+  "9368582c": {
+    "pt": "**KoboToolbox/ODK**: Respostas e formulários de pesquisa"
+  },
+  "4766505a": {
+    "pt": ":::tip Conversão de Formatos e Compatibilidade GIS"
+  },
+  "46cfc56a": {
+    "pt": "Um limite máximo de 10 caracteres para nomes de colunas"
+  },
+  "66dcd55d": {
+    "pt": "Os formatos de exportação atualmente suportados incluem:"
+  },
+  "ec350660": {
+    "pt": "Alguns formatos comumente solicitados incluem:"
+  },
+  "8dd07f5d": {
+    "pt": "**File Geodatabase (.gdb)**"
+  },
+  "8b821cc9": {
+    "pt": "**GeoPackage (.gpkg)**"
+  },
+  "211d7329": {
+    "pt": "**Shapefile (.shp)**"
+  },
+  "cf74350c": {
+    "pt": "🗺️ Visualizações Disponíveis"
+  },
+  "8a3d11be": {
+    "pt": "🔄 Integração de Dados"
+  },
+  "cfd74bd4": {
+    "pt": "📤 Exportação de Dados"
+  },
+  "fabca94a": {
+    "pt": "GC Explorer"
+  },
+  "1419c9c5": {
+    "pt": "O [Guardian Connector (GC) Scripts Hub](https://github.com/conservationmetrics/gc-scripts-hub) é uma coleção crescente de scripts de automação projetados para ajudar as comunidades a guardar e gerenciar suas terras através da integração de dados e automação de fluxo de trabalho. Construídos na plataforma [Windmill](https://www.windmill.dev/), esses scripts capacitam as comunidades a conectar diferentes ferramentas, automatizar a coleta de dados e otimizar seus fluxos de trabalho de conservação sem exigir profundo conhecimento técnico."
+  },
+  "07b521ba": {
+    "pt": "**Exportação de Armazenamento de Blobs do Azure**: Gere uma URL SAS segura e com tempo limitado para baixar em massa todos os dados baseados em arquivos (imagens, mídia, documentos) do Armazenamento de Blobs do Azure via [$CODEVAR[0]](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10?tabs=dnf) — suporta disco local, AWS S3, Google Cloud Storage e transferências Azure-para-Azure."
+  },
+  "6a2067a4": {
+    "pt": "O Scripts Hub reconhece que cada comunidade tem necessidades e fluxos de trabalho únicos. Os scripts podem ser personalizados e combinados para criar processos automatizados que apoiam seus objetivos específicos de conservação, seja monitorar a biodiversidade, documentar locais culturais ou rastrear ameaças ambientais."
+  },
+  "662fcf5e": {
+    "pt": "**Carregador de Conjunto de Dados**: Uma aplicação para carregar conjuntos de dados em formato de arquivo (ou seja, CSV, Shapefile, GeoJSON e mais) para o data warehouse do Guardian Connector. Consulte a página [Carregador de Conjunto de Dados](/reference/gc-toolkit/gc-scripts-hub/dataset-uploader/) para mais detalhes."
+  },
+  "2a07773c": {
+    "pt": "Este recurso continua a crescer com base nas necessidades e feedback da comunidade, garantindo que as ferramentas evoluam para melhor servir os esforços de conservação de base em todo o mundo."
+  },
+  "2991f434": {
+    "pt": "**Exportação de Dados Completa**: Baixe todos os dados da sua comunidade como arquivos CSV, apoiando a soberania de dados e planos de saída."
+  },
+  "5d8a238e": {
+    "pt": "**Formatos Flexíveis**: Exporte dados em formatos adequados para diferentes ferramentas e plataformas de análise (GeoJSON, CSV)."
+  },
+  "a951a979": {
+    "pt": "**Métricas do Guardian Connector**: Gere e armazene métricas mensais de uso em todos os serviços do Guardian Connector."
+  },
+  "b22e99b3": {
+    "pt": "**Integração CoMapeo**: Publique alertas ambientais diretamente nos servidores CoMapeo para acesso offline."
+  },
+  "4942f26a": {
+    "pt": "**Notificações WhatsApp**: Envie automaticamente resumos de alertas para membros da comunidade via Twilio."
+  },
+  "16ee4b23": {
+    "pt": "Esses scripts podem ser agendados para serem executados automaticamente, criando fluxos de trabalho como:"
+  },
+  "ec5e18b8": {
+    "pt": "Notificações imediatas no WhatsApp quando ameaças ambientais são detectadas"
+  },
+  "f7c9e537": {
+    "pt": "Verificações regulares de novos alertas de desmatamento em seu território"
+  },
+  "1ff0b4a5": {
+    "pt": "Exportações horárias de dados de pesquisa para reuniões comunitárias"
+  },
+  "cc8d3311": {
+    "pt": "🌱 Design Focado na Comunidade"
+  },
+  "f43f5319": {
+    "pt": "🤖 Recursos de Automação"
+  },
+  "a9949c39": {
+    "pt": "📤 Exportação e Compartilhamento de Dados"
+  },
+  "811930fe": {
+    "pt": "⚠️ Distribuição de Alertas"
+  },
+  "f9060601": {
+    "pt": "📊 Métricas e Relatórios"
+  },
+  "10dbe432": {
+    "pt": "💾 Carregador de Conjunto de Dados"
+  },
+  "af81bc63": {
+    "pt": "📦 Soberania dos Dados"
+  },
+  "2f3585a1": {
+    "pt": "Hub de Scripts GC"
+  }
+}

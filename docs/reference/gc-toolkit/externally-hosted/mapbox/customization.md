@@ -1,5 +1,6 @@
 ---
 tags: [opu, tsp]
+sidebar_position: 1
 ---
 
 # Customizing your Mapbox styles

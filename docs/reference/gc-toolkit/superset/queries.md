@@ -84,6 +84,15 @@ CASE
 | "2020-07-15" | "2020-07-15 00:00:00"|
 | "2021-11-30" | "2021-11-30 00:00:00"|
 
+:::tip
+
+Converting a text date into a `TIMESTAMP` is especially helpful when you want to:
+
+- **Build a time-based line chart** — for example, plotting date on the X axis and the number of records on the Y axis, such as the number of CoMapeo observations captured per month.
+- **Add a Time Range filter to a dashboard** — this filter requires every chart on the dashboard to have a `TIMESTAMP` field set as a filter.
+
+:::
+
 ---
 
 ### Cast a Kobo timestamp to YYYY-MM-DD

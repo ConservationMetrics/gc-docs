@@ -1,6 +1,8 @@
 ---
 tags: [opu, tsp]
+sidebar_position: 0
 ---
+
 # Mapbox
 
 [Mapbox](https://www.mapbox.com/) is a mapping platform that provides the foundation for interactive maps across Guardian Connector instances.

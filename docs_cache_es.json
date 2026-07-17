@@ -1,0 +1,131 @@
+{
+  "e8747888": {
+    "es": "Esto encaja con el objetivo de Guardian Connector de permitir que las comunidades controlen tanto sus datos como las aplicaciones construidas a su alrededor. Sube una carpeta al data lake con [Filebrowser](/reference/gc-toolkit/filebrowser/), apunta el servidor a ese directorio, y el sitio estará disponible en la web. CapRover también puede proteger la aplicación con autenticación incorporada cuando el acceso deba ser restringido."
+  },
+  "ad6595e6": {
+    "es": "El [GC HTTP Server](https://github.com/conservationmetrics/gc-http-server) es un servicio ligero para servir contenido estático directamente desde el data lake de Guardian Connector. Ejecuta un servidor web HTTPD mínimo y expone HTML, JavaScript, CSS, imágenes y otros activos estáticos a través de HTTP, sin una canalización de compilación o alojamiento separada."
+  },
+  "606e24fe": {
+    "es": "Más allá del kit de herramientas principal, las instancias de Guardian Connector pueden incluir servicios adicionales que soportan flujos de trabajo especializados. Estas herramientas son opcionales: despliégalas cuando un proyecto necesite una experiencia web personalizada, exploración de medios de vida silvestre u otra capacidad que no esté cubierta solo por GC Explorer o Superset."
+  },
+  "0149931b": {
+    "es": "El [GC Wildlife Viewer](https://github.com/conservationmetrics/gc-wildlife-viewer) es una aplicación R Shiny para explorar imágenes de cámaras trampa y anotaciones relacionadas en un mapa con filtros. Está diseñada para ser desplegada como parte de una instancia de CapRover de Guardian Connector junto con el resto del kit de herramientas."
+  },
+  "a3e60d72": {
+    "es": "La aplicación funciona con exportaciones de [Timelapse](/reference/connected-applications/timelapse/): datos tabulares (CSV), imágenes o videos exportados y miniaturas generadas. Las comunidades pueden explorar medios de vida silvestre por ubicación y atributos sin necesidad de abrir Timelapse para cada sesión de revisión."
+  },
+  "411d00c1": {
+    "es": "GC Explorer y Superset cubren muchas necesidades de visualización. Usa GC HTTP Server cuando un proyecto necesite una experiencia totalmente personalizada, por ejemplo, un mapa con calidad de presentación, un sitio para contar historias o un panel de control a medida para una audiencia específica."
+  },
+  "2c48f1e9": {
+    "es": "Prepara una exportación de **selección** de Timelapse (la exportación de conjunto de datos completo aún no es compatible). Consulta [Exportar imágenes para GC Wildlife Viewer](/guides/guide-timelapse-project/step-9-export-for-gc-wildlife/) para obtener una configuración paso a paso."
+  },
+  "23d0e201": {
+    "es": "Junto con Timelapse y el conector Scripts Hub Timelapse, GC Wildlife Viewer ayuda a convertir el monitoreo de cámaras trampa en una vista accesible y compartible para la revisión y toma de decisiones de la comunidad."
+  },
+  "17143cb4": {
+    "es": "Dado que estas herramientas no forman parte del kit de herramientas regular de Guardian Connector, es posible que necesites la asistencia de un administrador del sistema de Guardian Connector para desplegarlas o configurarlas.\n:::"
+  },
+  "cf6ed00b": {
+    "es": "Tanto los conjuntos de datos como la aplicación web residen entonces en el data lake, manteniendo la experiencia ligera y bajo el control de la comunidad."
+  },
+  "a2d18813": {
+    "es": "Ingresa datos de campo con el [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) (por ejemplo, observaciones de CoMapeo)."
+  },
+  "27bb07a5": {
+    "es": "Despliega a través de CapRover como otros servicios de Guardian Connector; el puerto HTTP del contenedor para esta aplicación es $CODEVAR[0]."
+  },
+  "d604ed2f": {
+    "es": "Despliega GC HTTP Server y establece la variable de entorno $CODEVAR[0] en la ubicación de la carpeta subida."
+  },
+  "afcfc5bf": {
+    "es": "Almacena los archivos exportados en el data lake de Guardian Connector para que la aplicación pueda leerlos desde un volumen montado."
+  },
+  "d4e9e2c3": {
+    "es": "Sube la aplicación al data lake con [Filebrowser](/reference/gc-toolkit/filebrowser/)."
+  },
+  "826534b3": {
+    "es": "Crea tu propio frontend (Leaflet, Mapbox GL JS, OpenLayers u otro framework)."
+  },
+  "9379322d": {
+    "es": "Notas de datos y despliegue"
+  },
+  "44aa729d": {
+    "es": "🐻 GC Wildlife Viewer"
+  },
+  "c0fb425c": {
+    "es": "Un flujo de trabajo típico:"
+  },
+  "476f7015": {
+    "es": "🌐 GC HTTP Server"
+  },
+  "098576d3": {
+    "es": "Cuándo usarlo"
+  },
+  "fa0b647c": {
+    "es": "Otras herramientas"
+  },
+  "1d05fb6b": {
+    "es": ":::tip"
+  },
+  "676ede33": {
+    "es": "[Apache Superset](./superset/) es una plataforma de inteligencia de negocios moderna y lista para empresas que proporciona ricas capacidades de visualización y exploración de datos. Admite una amplia variedad de visualizaciones, desde gráficos simples hasta complejos, y permite a los usuarios crear paneles interactivos. Superset está diseñado para ser intuitivo tanto para usuarios técnicos como no técnicos, lo que lo hace ideal para compartir información entre diversos grupos de interés."
+  },
+  "6fc45ebb": {
+    "es": "El [GC Scripts Hub](./gc-scripts-hub/) es una colección de scripts de automatización diseñados para ayudar a las comunidades a proteger y gestionar sus tierras a través de la integración de datos y la automatización de flujos de trabajo. Construidos sobre la plataforma [Windmill](https://www.windmill.dev/), estos scripts empoderan a las comunidades para conectar diferentes herramientas, automatizar la recopilación de datos y optimizar sus flujos de trabajo de conservación sin requerir una profunda experiencia técnica."
+  },
+  "94f228ad": {
+    "es": "El [GC Explorer](./gc-explorer/) es una herramienta de visualización de datos basada en la web que transforma los datos tabulares de su comunidad en mapas interactivos, galerías y paneles. Construido específicamente para Guardian Connector, se conecta directamente a su base de datos PostgreSQL para mostrar los datos recopilados de herramientas como CoMapeo, KoboToolbox y otras plataformas de recopilación de datos."
+  },
+  "2297010f": {
+    "es": "Guardian Connector proporciona un almacenamiento de datos seguro y dedicado para cada usuario, utilizando una base de datos relacional PostgreSQL y almacenamiento privado de archivos. Todos los datos están aislados, asegurando que solo el usuario tenga acceso; los datos de nadie más se almacenan o son accesibles dentro del mismo entorno."
+  },
+  "cde819fd": {
+    "es": "Según sea necesario, puede agregar herramientas adicionales a una instancia de Guardian Connector. Por ejemplo, puede agregar un servidor HTTP personalizado para servir contenido estático desde el data lake. Consulte [Otras herramientas](/reference/gc-toolkit/other-tools/) para obtener más información."
+  },
+  "b1c9115a": {
+    "es": "[Filebrowser](./filebrowser/) es un gestor de archivos basado en la web que permite a los usuarios navegar, cargar, descargar y compartir archivos desde su instancia de Guardian Connector."
+  },
+  "10256480": {
+    "es": "Guardian Connector también depende de varios servicios de terceros (que no están alojados en una instancia) para proporcionar funcionalidad adicional:"
+  },
+  "ee29c264": {
+    "es": "Cada instancia de Guardian Connector está equipada con un conjunto de herramientas diseñadas para ayudar a las comunidades a gestionar sus datos y flujos de trabajo:"
+  },
+  "e7569165": {
+    "es": "[Mapbox](./externally-hosted/mapbox/) - Plataforma de mapeo y visualización de datos geoespaciales"
+  },
+  "6fd7153d": {
+    "es": "[Uptime Robot](./externally-hosted/uptime-robot/) - Monitoreo de sitios web y seguimiento de tiempo de actividad"
+  },
+  "3555717c": {
+    "es": "[Auth0](./externally-hosted/auth0/) - Plataforma de autenticación y autorización"
+  },
+  "c56dbebe": {
+    "es": "[Twilio](./externally-hosted/twilio/) - Plataforma de comunicación por SMS y voz"
+  },
+  "f7294746": {
+    "es": "Kit de herramientas de Guardian Connector"
+  },
+  "e59df27d": {
+    "es": "Servicios alojados externamente"
+  },
+  "c44f72a1": {
+    "es": "🗄️ Almacén de datos privado"
+  },
+  "28b50a97": {
+    "es": "🤖 GC Scripts Hub"
+  },
+  "0555cdee": {
+    "es": "🗺️ GC Explorer"
+  },
+  "fc45fac1": {
+    "es": "🗂️ Filebrowser"
+  },
+  "a6fa21f3": {
+    "es": "🔧 Otras herramientas"
+  },
+  "af5b4dfe": {
+    "es": "📊 Superset"
+  }
+}

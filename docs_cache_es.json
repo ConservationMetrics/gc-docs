@@ -1,0 +1,107 @@
+{
+  "d45354ed": {
+    "es": "Esta sección de referencia proporciona información técnica detallada, especificaciones y orientación práctica para ayudarle a implementar, configurar y utilizar Guardian Connector de forma eficaz. Ya sea que esté planificando una implementación, integrando herramientas o gestionando operaciones diarias, aquí encontrará la información completa que necesita."
+  },
+  "fb26eedf": {
+    "es": "Documentación completa para la plataforma Guardian Connector, incluyendo el [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/), [GC Explorer](/reference/gc-toolkit/gc-explorer/) y más."
+  },
+  "9dcc04fa": {
+    "es": "Orientación sobre el uso de herramientas que hemos encontrado útiles, como [QGIS](/reference/recommended-applications/qgis) y [OpenRefine](/reference/recommended-applications/openrefine)"
+  },
+  "8707f717": {
+    "es": "**Ideal para:** Comprender la plataforma Guardian Connector, planificar flujos de trabajo y aprender cómo diferentes herramientas trabajan juntas en el ecosistema de Guardian Connector."
+  },
+  "5411a4a6": {
+    "es": "*Esta documentación de referencia evoluciona con el desarrollo de Guardian Connector. Para obtener la información más actual, consulte siempre la última versión de estos documentos.*"
+  },
+  "789657bf": {
+    "es": "**Ideal para:** Comprender los flujos de trabajo de recopilación de datos, planificar integraciones y aprender cómo Guardian Connector agrega datos de múltiples fuentes."
+  },
+  "f8883ef0": {
+    "es": "**Ideal para:** Comprender cómo implementar y alojar la infraestructura de Guardian Connector para cumplir con los requisitos de soberanía de datos de su comunidad."
+  },
+  "c5d5ee8b": {
+    "es": "Orientación técnica para implementar y alojar la infraestructura de Guardian Connector para cumplir con los requisitos de soberanía de datos de su comunidad."
+  },
+  "14758302": {
+    "es": "Documentación para herramientas de recopilación de datos y plataformas externas con las que Guardian Connector puede integrarse como un centro de datos centralizado."
+  },
+  "3d8872c7": {
+    "es": "Documentación de referencia para el uso de GC Scripts Hub, GC Explorer, Apache Superset, Filebrowser y otras herramientas"
+  },
+  "6153dc28": {
+    "es": "Información para desarrolladores interesados en contribuir a Guardian Connector o en crear integraciones personalizadas."
+  },
+  "4f34280b": {
+    "es": "Orientación sobre cómo utilizar sus datos en [QGIS](/reference/recommended-applications/qgis) u otro software SIG"
+  },
+  "68a4f35e": {
+    "es": "Herramientas principales de recopilación de datos (KoboToolbox, CoMapeo, Timelapse) compatibles con Guardian Connector"
+  },
+  "b6f92c3f": {
+    "es": "Documentación para aplicaciones recomendadas que son útiles para tareas y flujos de trabajo comunes."
+  },
+  "c027b4c3": {
+    "es": "Plataformas externas con las que Guardian Connector puede integrarse como un centro de datos centralizado"
+  },
+  "6853f58c": {
+    "es": "Cómo utilizamos servicios externos para proporcionar funcionalidad adicional a Guardian Connector"
+  },
+  "be4e9cda": {
+    "es": "🌐 **[Aplicaciones recomendadas](./recommended-applications/)**"
+  },
+  "aef4679f": {
+    "es": "Orientación para flujos de trabajo comunes al usar Guardian Connector."
+  },
+  "7883b042": {
+    "es": "🔗 **[Aplicaciones conectadas](./connected-applications/)**"
+  },
+  "b3cab690": {
+    "es": "📋 **[Kit de herramientas de Guardian Connector](./gc-toolkit/)**"
+  },
+  "a9771187": {
+    "es": "Información sobre cómo descargar todos sus datos"
+  },
+  "28d44f9c": {
+    "es": "📚 **[Flujos de trabajo comunes](./common-workflows/)**"
+  },
+  "baf068d1": {
+    "es": "Consideraciones sobre seguridad y soberanía de datos"
+  },
+  "51030696": {
+    "es": "🔧 **[Para desarrolladores](./for-developers/)**"
+  },
+  "e4fdcb17": {
+    "es": "Estimaciones de costos y recursos de planificación"
+  },
+  "6440e7e1": {
+    "es": "🌐 **[Alojamiento y costos](./hosting/)**"
+  },
+  "b58538f5": {
+    "es": "Consideraciones sobre la infraestructura en la nube"
+  },
+  "afd7f6ad": {
+    "es": "Instrucciones de despliegue y alojamiento"
+  },
+  "cf4b9ed0": {
+    "es": "Procedimientos de mantenimiento y actualización"
+  },
+  "a81f2ed7": {
+    "es": "Opciones y requisitos de alojamiento"
+  },
+  "4e4317ed": {
+    "es": "Configuración del entorno de desarrollo"
+  },
+  "3898fe1f": {
+    "es": "Enlaces a los repositorios principales"
+  },
+  "5a6ef77e": {
+    "es": "Pautas de contribución"
+  },
+  "1c78ee9f": {
+    "es": "**Lo que encontrará:**"
+  },
+  "276245a4": {
+    "es": "Secciones de referencia"
+  }
+}

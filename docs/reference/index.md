@@ -44,6 +44,20 @@ Guidance for common workflows when using Guardian Connector.
 - Guidance on how to use your data in [QGIS](/reference/recommended-applications/qgis) or other GIS software
 - Information on how to download all of your data
 
+### 🌐 **[Hosting & Costs](./hosting/)**
+
+Technical guidance for deploying and hosting Guardian Connector infrastructure to meet your community's data sovereignty requirements
+
+**What you'll find:**
+ 
+- Hosting options and requirements
+- Cloud infrastructure considerations
+- Cost estimates and planning resources
+- Security and data sovereignty considerations
+- Maintenance and update procedures
+
+**Best for:** Understanding how to deploy and host Guardian Connector infrastructure to meet your community's data sovereignty requirements.
+
 ### 🔧 **[For Developers](./for-developers/)**
 
 Information for developers interested in contributing to Guardian Connector or building custom integrations.

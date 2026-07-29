@@ -233,6 +233,91 @@ END
 | "vrouw__w_lei"    | "Vrouw (Wëlei)" |
 | NULL   | "No answer" |
 
+---
+
+### Replace raw Kobo choice values with labels from the `__labels` table
+
+Kobo submissions store raw choice codes (for example `n_o` instead of `não`). Each Kobo responses table has a companion `<table_name>__labels` lookup with the human-readable labels from the form definition. Join on both `question_name` and `name` so reused codes (such as shared `0`–`5` scales) resolve to the correct label for that question.
+
+Prefer this over hardcoding `CASE` rewrites when the form already provides labels. See the [KoboToolbox `__labels` docs](https://github.com/ConservationMetrics/gc-scripts-hub/tree/main/f/connectors/kobotoolbox#label-lookup-table-__labels) for the table schema.
+
+```sql
+SELECT
+    s.*,
+
+    COALESCE(
+        l.label,
+        CAST(s."Was_the_species_observed" AS TEXT)
+    ) AS "Was_the_species_observed__LABEL"
+
+FROM my_kobo_form AS s
+
+LEFT JOIN my_kobo_form__labels AS l
+    ON l.question_name = 'Was_the_species_observed'
+    AND l.name = CAST(s."Was_the_species_observed" AS TEXT)
+    AND l.type = 'choices';
+```
+
+| `Was_the_species_observed` (Before) | `Was_the_species_observed__LABEL` (After) |
+|-------------------------------------|-------------------------------------------|
+| `"sim"`                             | `"sim"`                                   |
+| `"n_o"`                             | `"não"`                                   |
+| `NULL` / unmatched code             | raw value (via `COALESCE`)                |
+
+To label several choice columns at once, add one `LEFT JOIN` per question (each with its own alias). That keeps each lookup scoped to the right `question_name`:
+
+```sql
+SELECT
+    s.*,
+
+    COALESCE(
+        obs.label,
+        CAST(s."Was_the_species_observed" AS TEXT)
+    ) AS "Was_the_species_observed__LABEL",
+
+    COALESCE(
+        threat.label,
+        CAST(s."Main_threat_to_the_forest" AS TEXT)
+    ) AS "Main_threat_to_the_forest__LABEL",
+
+    COALESCE(
+        condition.label,
+        CAST(s."Forest_condition" AS TEXT)
+    ) AS "Forest_condition__LABEL"
+
+FROM my_kobo_form AS s
+
+LEFT JOIN my_kobo_form__labels AS obs
+    ON obs.question_name = 'Was_the_species_observed'
+    AND obs.name = CAST(s."Was_the_species_observed" AS TEXT)
+    AND obs.type = 'choices'
+    AND obs.language = 'pt'
+
+LEFT JOIN my_kobo_form__labels AS threat
+    ON threat.question_name = 'Main_threat_to_the_forest'
+    AND threat.name = CAST(s."Main_threat_to_the_forest" AS TEXT)
+    AND threat.type = 'choices'
+    AND threat.language = 'pt'
+
+LEFT JOIN my_kobo_form__labels AS condition
+    ON condition.question_name = 'Forest_condition'
+    AND condition.name = CAST(s."Forest_condition" AS TEXT)
+    AND condition.type = 'choices'
+    AND condition.language = 'pt';
+```
+
+| Column | Before | After |
+|--------|--------|-------|
+| `Was_the_species_observed` | `"n_o"` | `"não"` |
+| `Main_threat_to_the_forest` | `"logging"` | `"exploração madeireira"` |
+| `Main_threat_to_the_forest` | `"fire"` | `"fogo"` |
+| `Forest_condition` | `"degraded"` | `"degradada"` |
+| `Forest_condition` | `"intact"` | `"intacta"` |
+
+:::tip
+For multilingual forms, add `AND l.language = 'pt'` (or another language code) to each join so you pick one translation. Use this query as a [virtual dataset](https://docs.preset.io/docs/virtual-datasets) if several charts need the labeled columns.
+:::
+
 ### Set null values to "No answer"
 
 ```sql

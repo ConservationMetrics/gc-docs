@@ -43,6 +43,7 @@ The GC Scripts Hub includes connectors that automatically gather data from vario
 - **[ArcGIS](https://www.arcgis.com/)**: Download data from ArcGIS Online, including from feature layers and submissions data from tools such as Survey123.
 - **[CoMapeo](/reference/connected-applications/comapeo/)**: Import community mapping data and observations, with support for photos and other attachments.
 - **[CyberTracker](https://www.cybertracker.org/)**: Import data collected using CyberTracker.
+- **[iNaturalist](https://www.inaturalist.org/)**: Import plant and animal observations from iNaturalist.
 - **[Locus Map](https://www.locusmap.app/)**: Import GPS tracks and mapping data.
 - **[Mapbox](https://www.mapbox.com/)**: [Update Mapbox tilesets](/reference/gc-toolkit/externally-hosted/mapbox/update-tileset/) with data on Guardian Connector.
 - **[QField](https://qfield.org/)**: Import GeoPackage files generated using QField.

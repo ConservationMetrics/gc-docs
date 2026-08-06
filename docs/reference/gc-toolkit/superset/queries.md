@@ -12,6 +12,10 @@ You can either use these to create a [virtual dataset](https://docs.preset.io/do
 It is recommended to create a virtual dataset if you plan to apply the same query to multiple charts. That way, you don't have to repeat the query for each chart.
 
 :::tip
+One best practice is to create a single virtual dataset for the entire dataset with all of the columns you need. That way, you don't have to create charts for different virtual datasets, which may cause problems when configuring filters on a Superset dashboard.
+:::
+
+:::tip
 These queries are written in SQL, which is a language for querying databases. If you are not familiar with SQL, you can learn more about it [here](https://www.w3schools.com/sql/).
 :::
 
@@ -90,6 +94,8 @@ Converting a text date into a `TIMESTAMP` is especially helpful when you want to
 
 - **Build a time-based line chart** — for example, plotting date on the X axis and the number of records on the Y axis, such as the number of CoMapeo observations captured per month.
 - **Add a Time Range filter to a dashboard** — this filter requires every chart on the dashboard to have a `TIMESTAMP` field set as a filter.
+
+It is a good idea to do this conversion before you start creating charts, as Superset will auto detect the presence of a `TIMESTAMP` field and add it to your filter options, so you can easily add a Time Range filter to your dashboard.
 
 :::
 

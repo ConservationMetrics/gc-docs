@@ -332,11 +332,20 @@ COALESCE("Did_you_take_a_course", 'No answer')
 
 ### Create a virtual database with latitude and longitude (for Mapbox Map chart)
 
-For a field `Record_your_current_location` with values like "-1.234567 8.901234 124.4 15.899999618530273" (latitude, longitude, altitude, accuracy)
+For a field `Record_your_current_location` with values like `"-1.234567 8.901234 124.4 15.899999618530273"` (latitude, longitude, altitude, accuracy),
 
 ```sql
 SELECT 
   CAST(SPLIT_PART("Record_your_current_location", ' ', 1) AS FLOAT) AS latitude,
   CAST(SPLIT_PART("Record_your_current_location", ' ', 2) AS FLOAT) AS longitude
 FROM my_kobo_form
+```
+
+For a field `g__coordinates` with values like `"[123.456, 78.901]"` (longitude, latitude),
+
+```sql
+SELECT 
+  CAST(SPLIT_PART("g__coordinates", '[', 2) AS FLOAT) AS latitude,
+  CAST(SPLIT_PART("g__coordinates", ']', 1) AS FLOAT) AS longitude
+FROM my_mapping_data
 ```

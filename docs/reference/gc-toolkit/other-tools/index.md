@@ -12,6 +12,11 @@ Beyond the core toolkit, Guardian Connector instances can include additional ser
 Since these tools are not part of the regular Guardian Connector toolkit, you may require assistance from a Guardian Connector system administrator to deploy or configure them. 
 :::
 
+:::note
+
+It is possible to show cards for these tools on the [Landing Page](/reference/gc-toolkit/gc-landing-page/) by accessing the **Custom Apps** page as an Administrator user. There, you can add cards for each tool to the landing page.
+:::
+
 ## 🌐 GC HTTP Server
 
 The [GC HTTP Server](https://github.com/conservationmetrics/gc-http-server) is a lightweight service for serving static content directly from the Guardian Connector data lake. It runs a minimal HTTPD web server and exposes HTML, JavaScript, CSS, images, and other static assets over HTTP—without a separate build or hosting pipeline.
@@ -33,14 +38,8 @@ Both the datasets and the web application then live in the data lake, keeping th
 
 ## 🐻 GC Wildlife Viewer
 
-The [GC Wildlife Viewer](https://github.com/conservationmetrics/gc-wildlife-viewer) is an R Shiny application for exploring camera trap images and related annotations on a map with filters. It is designed to be deployed as part of a Guardian Connector CapRover instance alongside the rest of the toolkit.
+The [GC Wildlife Viewer](https://github.com/conservationmetrics/gc-wildlife-viewer) is an R Shiny application for exploring annotated camera trap media (images and videos) on a map with filters. It is designed to be deployed as part of a Guardian Connector CapRover instance alongside the rest of the toolkit.
 
-The app works with exports from [Timelapse](/reference/connected-applications/timelapse/): tabular data (CSV), exported images or video, and generated thumbnails. Communities can browse wildlife media by location and attributes without needing to open Timelapse for every review session.
+The app works with exports from [Timelapse](/reference/connected-applications/timelapse/) -- tabular data (CSV), exported images or video, and generated thumbnails -- along with camera trap deployment data. Communities can browse wildlife media by location and attributes without needing to open Timelapse for every review session.
 
-### Data and deployment notes
-
-- Prepare a Timelapse **selection** export (full-dataset export is not yet supported). See [Exporting Images for GC Wildlife Viewer](/guides/guide-timelapse-project/step-9-export-for-gc-wildlife/) for step-by-step setup.
-- Store exported files in the Guardian Connector data lake so the app can read them from a mounted volume.
-- Deploy via CapRover like other Guardian Connector services; the container HTTP port for this app is `3838`.
-
-Together with Timelapse and the Scripts Hub Timelapse connector, GC Wildlife Viewer helps turn camera trap monitoring into an accessible, shareable view for community review and decision-making.
+See the [GC Wildlife Viewer README](https://github.com/conservationmetrics/gc-wildlife-viewer/blob/main/README.md) for more information on how to deploy and use the app.

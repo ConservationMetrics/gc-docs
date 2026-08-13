@@ -13,7 +13,3 @@ All data generated during review is stored locally on your machine. To export:
 
 ![Export as CSV](/img/guides/guide-timelapse-project/export-csv.jpg)
 _The Timelapse "Export or import data to/from a csv file" menu._
-
-## Integrate with Guardian Connector
-
-🚧 Under construction

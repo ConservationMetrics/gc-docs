@@ -91,3 +91,24 @@ The Alerts Dashboard also shows statistics about the alerts, such as the total n
 #### Using the Time Filter
 
 The **time filter** on the Alerts Dashboard applies to both of these downloads. Use it to batch-download a subset of alerts instead of the full set; the same filter also updates the statistics, so a statistics download reflects the filtered date range.
+
+## ⚙️ Configuring Views
+
+You can create a new **Map**, **Gallery**, or **Alerts Dashboard** view — and possibly other view types in the future.
+
+When you create a view, you choose a **primary dataset** and, if the view type supports it, an optional **secondary dataset**. The options that appear next depend on the view type; the form itself is the best guide for each field.
+
+For a **map** or **alerts dashboard**, you can set things like:
+
+- A **Mapbox access token**
+- A **map style**
+- **Map parameters** such as zoom level
+
+If the view includes **media**, you can set things like:
+
+- A **base URL** for where to load media
+- **Filters**
+- A **header background**, such as a thumbnail image
+
+If another view already has many of the same settings, you can **copy the config from that view** to bootstrap the new one instead of filling everything in from scratch.
+

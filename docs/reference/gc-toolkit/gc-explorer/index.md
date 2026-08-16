@@ -28,6 +28,12 @@ _Example of an Alerts Dashboard in GC Explorer_
 
 GC Explorer transforms raw data into accessible, visual formats that help communities understand, share, and act on their collected information.
 
+:::note Data
+
+To keep visualization responsive, GC Explorer shows at most **10,000 data records** in a view. If a dataset is larger than that, a toast notification appears and only the first 10,000 records are displayed.
+
+:::
+
 ## 📤 Exporting Data
 
 GC Explorer allows you to export data directly from the Map View into a variety of formats for use in other tools and workflows.

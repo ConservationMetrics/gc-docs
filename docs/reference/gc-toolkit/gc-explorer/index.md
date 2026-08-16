@@ -13,7 +13,7 @@ The [Guardian Connector Explorer (GC Explorer)](https://github.com/conservationm
 
 **📸 Gallery View**: Browse through photo, audio, and video content collected in the field, organized by date or location.
 
-**⚠️ Alerts Dashboard**: Monitor environmental changes and threats with change detection alerts and before-and-after satellite imagery.
+**⚠️ Alerts Dashboard**: Monitor environmental changes and threats with change detection alerts and before-and-after satellite imagery; create [incidents](/reference/gc-toolkit/gc-explorer/incidents/) to group a series of alerts with secondary data sources.
 
 ## 🔄 Data Integration
 
@@ -28,13 +28,15 @@ _Example of an Alerts Dashboard in GC Explorer_
 
 GC Explorer transforms raw data into accessible, visual formats that help communities understand, share, and act on their collected information.
 
-:::note Data
+:::note Data Limitations
 
 To keep visualization responsive, GC Explorer shows at most **10,000 data records** in a view. If a dataset is larger than that, a toast notification appears and only the first 10,000 records are displayed.
 
 :::
 
 ## 📤 Exporting Data
+
+### Exporting Data from the Map View
 
 GC Explorer allows you to export data directly from the Map View into a variety of formats for use in other tools and workflows.
 
@@ -69,3 +71,44 @@ If these limitations affect your workflow, it is generally recommended to use **
 In ArcGIS, CSV files containing coordinate information can also be loaded directly using the **"Add XY Data"** feature.
 
 :::
+
+### Exporting Data from the Alerts Dashboard
+
+The Alerts Dashboard gives you several ways to download alerts and related information.
+
+#### Exporting Alerts
+
+You can download alerts using the same CSV, GeoJSON, and KML formats as the Map View:
+
+- **Batch download all alerts** at once in one of the supported formats.
+- **Download an individual alert** by clicking it on the map.
+- **Create an incident** that groups a series of alerts with secondary data sources, then download that incident. See [Incidents](/reference/gc-toolkit/gc-explorer/incidents/) for more information.
+
+#### Exporting Statistics
+
+The Alerts Dashboard also shows statistics about the alerts, such as the total number of alerts or the total number of hectares affected. You can download those statistics as well.
+
+#### Using the Time Filter
+
+The **time filter** on the Alerts Dashboard applies to both of these downloads. Use it to batch-download a subset of alerts instead of the full set; the same filter also updates the statistics, so a statistics download reflects the filtered date range.
+
+## ⚙️ Configuring Views
+
+You can create a new **Map**, **Gallery**, or **Alerts Dashboard** view — and possibly other view types in the future.
+
+When you create a view, you choose a **primary dataset** and, if the view type supports it, an optional **secondary dataset**. The options that appear next depend on the view type; the form itself is the best guide for each field.
+
+For a **map** or **alerts dashboard**, you can set things like:
+
+- A **Mapbox access token**
+- A **map style**
+- **Map parameters** such as zoom level
+
+If the view includes **media**, you can set things like:
+
+- A **base URL** for where to load media
+- **Filters**
+- A **header background**, such as a thumbnail image
+
+If another view already has many of the same settings, you can **copy the config from that view** to bootstrap the new one instead of filling everything in from scratch.
+

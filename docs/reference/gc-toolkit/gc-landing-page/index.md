@@ -20,7 +20,7 @@ When you first visit the Landing Page, you may be asked to sign up or sign in. A
 
 ## 🚀 Your Services
 
-These are the Guardian Connector services your community can link to from the Landing Page. Each appears as a card you can click to open it in a new tab.
+These are the default Guardian Connector services your community can link to from the Landing Page. Each appears as a card you can click to open it in a new tab.
 
 - **[Explorer](/reference/gc-toolkit/gc-explorer/)**: View your community's data as interactive maps, media galleries, and an alerts dashboard.
 - **[Superset](/reference/gc-toolkit/superset/)**: Build and explore charts, dashboards, and visualizations from your data.
@@ -28,6 +28,8 @@ These are the Guardian Connector services your community can link to from the La
 - **Windmill**: Run and schedule the automation workflows that gather and process your data (see the [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/)).
 
 Not everyone sees every service. In general, the more advanced or sensitive a tool is, the higher the role needed to open it — for example, Explorer is available to most signed-in users, while Windmill is reserved for administrators.
+
+It's also possible to configure the Landing Page to show custom apps, which are apps that are not part of the default Guardian Connector stack. See [⚙️ Configuring Custom Apps](#⚙️-configuring-custom-apps) for more information.
 
 ## 🌐 Tools You Can Use with Guardian Connector
 
@@ -39,7 +41,9 @@ The Landing Page also introduces the field tools and platforms that work with Gu
 
 Guardian Connector also connects with other tools such as **ArcGIS Survey123**, **Locus Map**, **Global Forest Watch**, **SMART**, and more. To learn about everything that can be connected, see the [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/).
 
-## 👥 User Management (for Administrators)
+## 🔧 For Administrators
+
+### 👥 User Management
 
 If you are an **administrator**, the Landing Page gives you a User Management area to control who can access your community's Guardian Connector and what they can do.
 
@@ -59,3 +63,19 @@ The currently available roles, from least to most access, are:
 - **Admin**: Full access, including this User Management area.
 
 When you approve someone and give them the right role, the services they're allowed to use will appear on their Landing Page the next time they sign in.
+
+### 🎨 Theme Settings
+
+Theme Settings lets you customize your community's branding on the Landing Page.
+
+From here you can add:
+
+- A **logo URL**, which shows up on the home page.
+- A **background image URL**, which is used as the background on the login screen.
+
+### ⚙️ Configuring Custom Apps
+
+If your community has other apps running on Guardian Connector, the **Custom Apps** page lets you create cards similar to the default services — like Explorer, Superset, and Filebrowser. Each card opens at its own subdomain, so people can reach your custom apps from the Landing Page the same way they open the built-in ones.
+
+For each custom app you can add, a name, subdomain, description, icon, and tags.
+

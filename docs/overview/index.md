@@ -41,8 +41,8 @@ Guardian Connector is being built with Indigenous partner organizations to help 
 
 Guardian Connector serves as a bridge between diverse data sources — from mapping and remote sensing to wildlife monitoring and surveys — and the outputs community organizations need, such as maps, dashboards, alerts, and reports. By transforming and storing information in a secure data warehouse, the platform ensures that community organizations can explore, share, and act on their data with confidence.
 
-![A diagram of the Guardian Connector system](/img/overview/system-diagram-sept-2025.jpg)
-_A diagram of the Guardian Connector system_
+![A diagram of the Guardian Connector platform](/img/overview/system-diagram-aug-2026.jpg)
+_A diagram of the Guardian Connector platform
 
 Guardian Connector is already integrated with widely used tools: ArcGIS/Survey123, CoMapeo, CyberTracker, EpiCollect, Global Forest Watch, iNaturalist, KoboToolbox, Locus Map, Mapbox, ODK, OpenStreetMap, QField, SMART, Superset, Timelapse, and more. See [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) in the Reference section for more details.
 

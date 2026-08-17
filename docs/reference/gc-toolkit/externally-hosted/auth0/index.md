@@ -22,46 +22,6 @@ Auth0 enables secure user authentication and access control across Guardian Conn
 4. Configure Auth0 credentials in your Guardian Connector environment variables
 5. Test SSO flow across your Guardian Connector tools
 
-For detailed setup and configuration, see the [Auth0 documentation](https://auth0.com/docs/).
-
-## User Approval Process
-
-1. User signs up for Guardian Connector applications (Superset, GC Scripts Hub,GC Explorer, etc.) using Auth0 — either by creating an account or using a service like Google or GitHub.
-2. Upon signup, the user will see a message like "Invalid login" on Superset, or "Your approval is pending" on GC Explorer, etc.
-3. An Auth0 tenant administrator approves the user by adding `"approved": true` to the user's App Metadata JSON. This can be found by navigating to User Management > Users, clicking on the user to approve, and scrolling down to the app_metadata section.
-4. The user can now authenticate and log in to Guardian Connector applications.
-
-## Configuring an Auth0 Tenant
-
-An Auth0 tenant is a dedicated instance of the Auth0 identity management platform that belongs to a specific organization or application. It acts as a container for all configurations, user data, and security settings related to your identity management needs. Each tenant operates independently, ensuring that the configurations and data within it are isolated from other tenants. This setup allows organizations to manage user authentication, authorization, and security policies centrally for their applications.
-
-Follow these steps to set it up for your instance:
-
-1. In **Settings**, select "Production" as the Environment Tag.
-2. In **Actions**, set up a Flow for user approval.
-3. In **Branding**, make any customizations such as adding a logo and setting the background color.
-4. In **Authentication / Database**, ensure Sign Ups are enabled (they are by default).
-5. In **Authentication / Social**, enable `google-oauth2`. Configure a Client ID and Client Secret for an OAuth 2.0 Client from a Google Cloud Platform project. See [this section on `gc-deploy` for more information](https://github.com/ConservationMetrics/gc-deploy/tree/main/auth0#gcp-oauth-client-configuration).
-
-## Creating an Auth0 Trigger Action for User Approval
-
-To handle user approval in Auth0, a Trigger Action (named "Check Approval") serves as middleware between logging in and token issuance.
-
-![Login flow](/img/reference/gc-toolkit/externally-hosted/auth0/login-flow.png)
-
-This is the code for that Action, based on the [Common Use Cases in the Auth0 documentation](https://auth0.com/docs/customize/actions/flows-and-triggers/login-flow#common-use-cases):
-
-```javascript
-exports.onExecutePostLogin = async (event, api) => {
-  // Check if the user is approved
-  if (event.user.app_metadata && event.user.app_metadata.approved) {
-    // User is approved, continue without action
-  } else {
-    api.access.deny('Your approval to access the app is pending.');
-  }
-};
-```
-
-This Trigger Action should be added to the **Post Login** Flow on the Auth0 **Actions -> Triggers** page.
-
-The Action checks if the boolean property `user.app_metadata.approved` is true and allows the user to proceed. Otherwise, it returns the message "Your approval to access the app is pending", which is also passed as a query parameter in the browser and used by applications like GC Explorer to indicate to the user that they need approval.
+:::important For System Administrators
+Please see our [Auth0 guide](https://github.com/conservationmetrics/gc-deploy/blob/main/auth0/README.md) on Github for more information on how to configure Auth0 for your Guardian Connector instance.
+:::

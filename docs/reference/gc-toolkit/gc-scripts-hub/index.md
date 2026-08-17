@@ -5,16 +5,20 @@ tags: [opu, tsp]
 
 # GC Scripts Hub
 
-The [Guardian Connector (GC) Scripts Hub](https://github.com/conservationmetrics/gc-scripts-hub) is a growing collection of automation scripts designed to help communities guard and manage their land through data integration and workflow automation. Built on the [Windmill](https://www.windmill.dev/) platform, these scripts empower communities to connect different tools, automate data collection, and streamline their conservation workflows without requiring deep technical expertise.
+The [Guardian Connector (GC) Scripts Hub](https://github.com/conservationmetrics/gc-scripts-hub) is a growing collection of automation scripts, flows and apps designed to help communities guard and manage their land through data integration and workflow automation. Built on the [Windmill](https://www.windmill.dev/) data orchestration platform, these connectors empower communities to connect different tools, automate data collection, and streamline their conservation workflows without requiring deep technical expertise.
 
-#### 🤖 Automation Capabilities
+:::note Clarification
+We do not build or maintain Windmill ourselves. It is a third-party tool that we integrate with Guardian Connector. However, we **do** maintain the scripts, flows, and apps that are part of the GC Scripts Hub.
+:::
 
-These scripts can be scheduled to run automatically, creating workflows such as:
+### 🤖 Automation Capabilities
+
+Windmill scripts and flows can be scheduled to run automatically, creating workflows such as:
 - Regular checks for new deforestation alerts in your territory
 - Hourly exports of survey data for community meetings  
 - Immediate WhatsApp notifications when environmental threats are detected
 
-#### 🌱 Community-Focused Design
+### 🌱 Community-Focused Design
 
 The Scripts Hub recognizes that every community has unique needs and workflows. Scripts can be customized and combined to create automated processes that support your specific conservation goals, whether that's monitoring biodiversity, documenting cultural sites, or tracking environmental threats.
 
@@ -31,7 +35,7 @@ The GC Scripts Hub includes connectors that automatically gather data from vario
 
 ### 📋 Survey & Data Collection
 - **[EpiCollect5](https://five.epicollect.net/)**: Fetch survey responses and form data from EpiCollect5.
-- **[KoboToolbox](/reference/connected-applications/kobotoolbox/)**: Fetch survey responses and form data, including support for multilingual forms and media attachments.
+- **[KoboToolbox](/reference/core-integrations/kobotoolbox/)**: Fetch survey responses and form data, including support for multilingual forms and media attachments.
 - **[ODK](https://getodk.org/)**: Fetch survey responses and form data from ODK Central, including media attachments.
 
 ### 🌍 Environmental Monitoring
@@ -41,28 +45,34 @@ The GC Scripts Hub includes connectors that automatically gather data from vario
 
 ### 🗺️ Mapping & Location
 - **[ArcGIS](https://www.arcgis.com/)**: Download data from ArcGIS Online, including from feature layers and submissions data from tools such as Survey123.
-- **[CoMapeo](/reference/connected-applications/comapeo/)**: Import community mapping data and observations, with support for photos and other attachments.
+- **[CoMapeo](/reference/core-integrations/comapeo/)**: Import community mapping data and observations, with support for photos and other attachments.
 - **[CyberTracker](https://www.cybertracker.org/)**: Import data collected using CyberTracker.
-- **[iNaturalist](https://www.inaturalist.org/)**: Import plant and animal observations from iNaturalist.
 - **[Locus Map](https://www.locusmap.app/)**: Import GPS tracks and mapping data.
 - **[Mapbox](https://www.mapbox.com/)**: [Update Mapbox tilesets](/reference/gc-toolkit/externally-hosted/mapbox/update-tileset/) with data on Guardian Connector.
 - **[QField](https://qfield.org/)**: Import GeoPackage files generated using QField.
 - **[SMART](https://smartconservationtools.org/)**: Import patrol data from SMART Desktop.
 
 ### 🌿 Biodiversity Monitoring
-- **[Timelapse](/reference/connected-applications/timelapse/)**: Import annotated camera trap data from Timelapse.
+- **[iNaturalist](https://www.inaturalist.org/)**: Import plant and animal observations from iNaturalist.
+- **[Timelapse](/reference/core-integrations/timelapse/)**: Import annotated camera trap data from Timelapse.
 
----
-
-## 💾 Dataset Uploader
-- **Dataset Uploader**: An application to upload datasets in file format (i.e. CSV, Shapefile, GeoJSON, and more) to the Guardian Connector data warehouse. See the [Dataset Uploader](/reference/gc-toolkit/gc-scripts-hub/dataset-uploader/) page for more details.
-
----
-
-## 🗄️ Data Cataloging
-
-### 🏷️ Local Contexts
+### :label: Metadata & Cataloging
 - **[Local Contexts](https://localcontexts.org/)**: Annotate datasets using Local Contexts Traditional Knowledge (TK) and Biocultural (BC) labels. See the [Local Contexts](/guides/guide-local-contexts/) guide for more details.
+
+### :globe_with_meridians: Communication
+- **[Twilio](https://www.twilio.com/)**: Send WhatsApp messages to community members. See the [Twilio](/reference/gc-toolkit/externally-hosted/twilio/) page for more details.
+
+
+---
+
+## 💾 Dataset Importer
+- **Dataset Importer**: An application to import datasets in file format to the Guardian Connector data warehouse. See the [Dataset Importer](/reference/gc-toolkit/gc-scripts-hub/dataset-importer/) page for more details.
+- **Broad File Format Support**: Robust ingestion capabilities for diverse geospatial and administrative data standards:
+  - Vector data: Shapefile, GeoJSON, KML/KMZ, GPX, GeoPackage
+  - Tabular data: CSV, XLS, XLSX
+  - Other structured data: JSON, XML
+- **Source-specific transformations**: Apply transformations specific to the source tool, such as KoboToolbox, CoMapeo, ODK, Locus Map.
+
 
 ---
 

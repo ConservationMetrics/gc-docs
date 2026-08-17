@@ -5,11 +5,15 @@ tags: [itu-2, itu-3, idm, opu, tsp]
 
 # Introduction
 
-Welcome to the Guardian Connector tutorials section! Here you'll find comprehensive, step-by-step guides designed to help Indigenous community organizations make the most of the integrated tools in the Guardian Connector ecosystem.
+Welcome to the guides & tutorials section of the Guardian Connector documentation! This section provides comprehensive, step-by-step guidance to help Indigenous community organizations make the most of the tools and workflows available across the Guardian Connector ecosystem.
 
 ## What You'll Find Here
 
-Our tutorials are crafted with community needs in mind, focusing on practical skills that support environmental monitoring, data sovereignty, and conservation advocacy. Whether you're new to digital data collection or looking to expand your technical capabilities, these guides provide clear, accessible instruction.
+Our guides & tutorials are crafted with community needs in mind, focusing on practical skills that support Indigenous guardianship objectives: environmental monitoring, data sovereignty, and conservation advocacy. Whether you're new to digital data collection or looking to expand your technical capabilities, these guides provide clear, accessible instruction.
+
+:::note
+Most of these guides are actually not about Guardian Connector itself! Rather, they are about tools and workflows that are integrated with Guardian Connector, or about the principles of Indigenous data sovereignty and guardianship.
+:::
 
 ## Available Learning Resources
 

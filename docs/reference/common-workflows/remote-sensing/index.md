@@ -14,7 +14,7 @@ The workflow involves the following parts:
 - **An external data source** – providing change detection data
 - **[Windmill](/reference/gc-toolkit/gc-scripts-hub/)** – Handles data ingestion, processing, and automation of the change detection workflow
 - **[Guardian Connector Explorer](/reference/gc-toolkit/gc-explorer/)** – The visualization tool for displaying change detection data and alerts
-- **[CoMapeo](/reference/connected-applications/comapeo/)** – Where change detection data layers become visible for territory monitoring
+- **[CoMapeo](/reference/core-integrations/comapeo/)** – Where change detection data layers become visible for territory monitoring
 - **WhatsApp** – For sending notifications when changes are detected
 
 This process involves the following main steps:

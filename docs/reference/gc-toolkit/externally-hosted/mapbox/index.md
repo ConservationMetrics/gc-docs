@@ -13,7 +13,7 @@ Mapbox serves three primary purposes in Guardian Connector deployments:
 
 - **Access tokens for basic maps** - Shared across GC instances to provide base map layers and standard mapping functionality for tools like [Superset](/reference/gc-toolkit/superset/)
 - **Custom map styles** - Created in Mapbox Studio for specific maps or alerts dashboards in [GC Explorer](/reference/gc-toolkit/gc-explorer/)
-- **Offline maps** - Mapbox styles can be compiled into offline map packages for use in [CoMapeo](/reference/connected-applications/comapeo/) using tools like [QGIS](https://www.qgis.org/) and [MapPacker](https://github.com/conservationmetrics/mappacker)
+- **Offline maps** - Mapbox styles can be compiled into offline map packages for use in [CoMapeo](/reference/core-integrations/comapeo/) using tools like [QGIS](https://www.qgis.org/) and [MapPacker](https://github.com/conservationmetrics/mappacker)
 
 ## Understanding Mapbox Data Architecture
 

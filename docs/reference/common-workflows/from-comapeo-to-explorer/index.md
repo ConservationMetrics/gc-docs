@@ -12,7 +12,7 @@ The goal is to preserve your CoMapeo data, and to visualize it through interacti
 
 The workflow involves the following tools:
 
-- **[CoMapeo](../../connected-applications/comapeo/)** – The territory monitoring & mapping application.
+- **[CoMapeo](../../core-integrations/comapeo/)** – The territory monitoring & mapping application.
 - **[Windmill](../../gc-toolkit/gc-scripts-hub/)** – Handles data ingestion and processing, transferring it from CoMapeo to the data warehouse.
 - **PostgreSQL** – The database where Guardian Connector stores and makes your data available for analysis.
 - **[GuardianConnector Explorer](../../gc-toolkit/gc-explorer/)** – The visualization tool used to create map views based on the stored data.
@@ -135,7 +135,7 @@ To configure your Explorer view, your user needs to have admin access. You can a
 | **Zoom level** | The zoom level for the map view (0-22). |
 | **Center latitude** | The latitude of the center point for the map view. |
 | **Center longitude** | The longitude of the center point for the map view. |
-| **Base path for media** | This is the URL used to share images and audio files downloaded from CoMapeo. To get this URL, go to your Filebrowser at **<ParamLink template="https://filebrowser.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">https://filebrowser.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net/</ParamLink>**, locate the folder configured in your Windmill instance, and click the **Share** button. Please see the [Filebrowser: generating share links](/reference/gc-toolkit/filebrowser/#generating-share-links) section for more guidance on how to format the share link for use in GC Explorer. |
+| **Base path for media** | This is the URL used to share images and audio files downloaded from CoMapeo. To get this URL, go to your File Browser at **<ParamLink template="https://files.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">https://files.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net/</ParamLink>**, locate the folder configured in your Windmill instance, and click the **Share** button. Please see the [File Browser: generating share links](/reference/gc-toolkit/filebrowser/#generating-share-links) section for more guidance on how to format the share link for use in GC Explorer. |
 
 :::info
 

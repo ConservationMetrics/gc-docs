@@ -5,7 +5,7 @@ tags: [itu-3, opu, tsp]
 
 # QGIS
 
-**QGIS** is a powerful open-source application for working with geographic data, such as shapefiles, geopackages, data collected using [CoMapeo](/reference/connected-applications/comapeo), and other spatial data formats. It allows you to create, edit, and visualize maps in countless ways. 
+**QGIS** is a powerful open-source application for working with geographic data, such as shapefiles, geopackages, data collected using [CoMapeo](/reference/core-integrations/comapeo), and other spatial data formats. It allows you to create, edit, and visualize maps in countless ways. 
 
 You can integrate QGIS with Guardian Connector in two main ways:
 

@@ -5,7 +5,7 @@ tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
 
 # GC Explorer
 
-The [Guardian Connector Explorer (GC Explorer)](https://github.com/conservationmetrics/gc-explorer) is a web-based data visualization tool that transforms your community's tabular data into interactive maps, galleries, and dashboards. Built specifically for Guardian Connector, it connects directly to your PostgreSQL database to display data collected from tools like CoMapeo, KoboToolbox, and other data collection platforms.
+[Guardian Connector Explorer (GC Explorer)](https://github.com/conservationmetrics/gc-explorer) is a web-based data visualization tool that transforms your community's tabular data into interactive maps, galleries, and dashboards. Built specifically for Guardian Connector, it connects directly to your PostgreSQL database to display data collected from tools like CoMapeo, KoboToolbox, and other data collection platforms.
 
 ## 🗺️ Available Views
 
@@ -76,7 +76,7 @@ In ArcGIS, CSV files containing coordinate information can also be loaded direct
 
 The Alerts Dashboard gives you several ways to download alerts and related information.
 
-#### Exporting Alerts
+#### 📥 Exporting Alerts
 
 You can download alerts using the same CSV, GeoJSON, and KML formats as the Map View:
 
@@ -84,11 +84,11 @@ You can download alerts using the same CSV, GeoJSON, and KML formats as the Map 
 - **Download an individual alert** by clicking it on the map.
 - **Create an incident** that groups a series of alerts with secondary data sources, then download that incident. See [Incidents](/reference/gc-toolkit/gc-explorer/incidents/) for more information.
 
-#### Exporting Statistics
+#### 📊 Exporting Statistics
 
 The Alerts Dashboard also shows statistics about the alerts, such as the total number of alerts or the total number of hectares affected. You can download those statistics as well.
 
-#### Using the Time Filter
+#### 🕒 Using the Time Filter
 
 The **time filter** on the Alerts Dashboard applies to both of these downloads. Use it to batch-download a subset of alerts instead of the full set; the same filter also updates the statistics, so a statistics download reflects the filtered date range.
 

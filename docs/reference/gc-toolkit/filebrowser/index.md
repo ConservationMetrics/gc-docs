@@ -3,13 +3,17 @@ sidebar_position: 4
 tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
 ---
 
-# Filebrowser
+# File Browser
 
-[Filebrowser](https://filebrowser.org/) is a web-based file manager that allows users to browse, upload, download, and share files from their Guardian Connector instance.
+[File Browser](https://filebrowser.org/) is a web-based file manager that allows users to browse, upload, download, and share files from their Guardian Connector instance.
 
-## How Filebrowser is used in Guardian Connector
+:::note
+We do not build or maintain File Browser ourselves. It is a third-party tool that we integrate with Guardian Connector.
+:::
 
-Filebrowser provides essential file management capabilities for Guardian Connector deployments:
+## How File Browser is used in Guardian Connector
+
+File Browser provides essential file management capabilities for Guardian Connector deployments:
 
 - **File upload and download** - Users can easily upload files to their Guardian Connector instance and download stored resources
 - **Share link generation** - Create shareable links for files, enabling embedding of resources like images on web pages, and the views of [GC Explorer](/reference/gc-toolkit/gc-explorer/).
@@ -42,19 +46,19 @@ Instead of the share link as shown above, use the following format: `https://fil
 :::
 
 :::warning
-When you generate a share link in Filebrowser, the link will include your community's unique keyword (the "alias") in the URL (e.g., `https://files.<community_alias>.guardianconnector.net/share/<hash>`). If you share this link publicly (for example, by embedding a photo in a blog), your community's alias becomes visible to anyone with access to the link.
+When you generate a share link in File Browser, the link will include your community's unique keyword (the "alias") in the URL (e.g., `https://files.<community_alias>.guardianconnector.net/share/<hash>`). If you share this link publicly (for example, by embedding a photo in a blog), your community's alias becomes visible to anyone with access to the link.
 
 For most Guardian Connector services, this does **not** allow outsiders to access your existing projects or data — they would still need to be invited to a project or have an access token. However, for some services (such as CoMapeo), knowing the alias could allow someone to create a new project on your archive server, which could be exploited by a bad actor (though this is considered very unlikely).
 
 **Recommendation:**  
-- Only share Filebrowser links with trusted parties.
+- Only share File Browser links with trusted parties.
 - If you are hosting a CoMapeo archive server, be aware of this risk and consider additional safeguards like setting a maximum limit for the number of projects that can be created.
 :::
 
 ## Documentation
 
-For detailed information about using Filebrowser, visit the [official Filebrowser documentation](https://filebrowser.org/index.html).
+For detailed information about using File Browser, visit the [official File Browser documentation](https://filebrowser.org/index.html).
 
 :::note
-Filebrowser is currently in maintenance mode. We are monitoring the future of this tool, and may decide to use an alternative tool if Filebrowser development and maintenance stagnates.
+File Browser is currently in maintenance mode. We are monitoring the future of this tool, and may decide to use an alternative tool if File Browser development and maintenance stagnates.
 :::

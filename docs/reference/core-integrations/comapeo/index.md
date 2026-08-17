@@ -19,9 +19,13 @@ tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
 - **Archive Server**: A CoMapeo archive server (a.k.a. Comapeo Cloud) can be deployed to synchronize data to and from devices, and provides an API to connect with Guardian Connector
 - **Customizable**: Supports community-specific categories and data structures
 
+## Documentation
+
+For detailed information about using CoMapeo, visit the [official CoMapeo documentation](https://docs.comapeo.app/).
+
 ## Category Collections
 
-* For ready-to-use category collections, see the [Category Collections](./templates.md).
+* For ready-to-use category collections, see [Category Collections](./templates.md).
 
 ## CoMapeo Archive Server
 
@@ -38,7 +42,7 @@ This integration makes it possible to:
 
 :::note Monitoring Synchronization Status
 
-The CoMapeo Archive Server fetch script in the GC Scripts Hub returns useful synchronization statistics, including:
+The CoMapeo Archive Server fetch script in the [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) returns useful synchronization statistics, including:
 
 * The total number of projects discovered
 * The number of observations imported per project

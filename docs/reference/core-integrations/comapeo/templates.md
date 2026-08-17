@@ -29,5 +29,5 @@ All category collections are available on GitHub at [digidem/comapeo-category-li
 
 Category set for documenting camera trap deployments, maintenance, and retrievals. This category set uses the column naming conventions recommended in the [GBIF Camera Trap Guide](https://docs.gbif.org/camera-trap-guide/en).
 
-:point_right: See **[Comapeo Camera Trap Deployment](/reference/connected-applications/comapeo/camera-trap-deployment.md)** for more information.
+:point_right: See **[Comapeo Camera Trap Deployment](/reference/core-integrations/comapeo/camera-trap-deployment.md)** for more information.
 

@@ -8,7 +8,7 @@ tags: [itu-3, opu, tsp]
 This CoMapeo category set uses the column naming conventions recommended in the [GBIF Camera Trap Guide](https://docs.gbif.org/camera-trap-guide/en).
 
 <div style={{textAlign: 'center'}}>
-  <img src="/img/reference/connected-applications/comapeo/camera-trap-deployment.jpg" alt="Camera Trap Deployment Category Set" style={{border: '1px solid #ccc', width: '65%', marginBottom: '1.5rem'}} />
+  <img src="/img/reference/core-integrations/comapeo/camera-trap-deployment.jpg" alt="Camera Trap Deployment Category Set" style={{border: '1px solid #ccc', width: '65%', marginBottom: '1.5rem'}} />
 </div>
 
 **:floppy_disk: Download the category set: [`camera-trap-deployment.comapeocat`](/comapeo/camera-trap-deployment/camera-trap-deployment.comapeocat)**

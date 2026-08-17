@@ -58,3 +58,28 @@
 .navbar__items--right {
   padding-bottom: 0.5rem;
 }
+
+/* Show persona tags above the page title; keep "Edit this page" at the bottom. */
+article:has(> .theme-doc-markdown) {
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-doc-footer {
+  display: contents;
+}
+
+.theme-doc-footer-tags-row {
+  order: 1;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.theme-doc-markdown {
+  order: 2;
+}
+
+.theme-doc-footer-edit-meta-row {
+  order: 3;
+  margin-top: 3rem;
+}

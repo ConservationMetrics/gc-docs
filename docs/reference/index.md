@@ -72,6 +72,16 @@ Technical reference documentation for deploying, configuring, and maintaining Gu
 
 **Best for:** System administrators responsible for deploying or maintaining Guardian Connector infrastructure.
 
+### 📚 **[Onboarding Template for Community Organizations](./onboarding/)**
+
+Onboarding template for community organizations that are new to Guardian Connector.
+
+**What you'll find:**
+- Guidance on how to get started with Guardian Connector
+- Instructions on how to sign in and access each application
+
+**Best for:** Community organizations that are new to Guardian Connector, and their technical support partners.
+
 ### 🔧 **[For Developers](./for-developers/)**
 
 Technical information for developers contributing to Guardian Connector or building extensions and integrations.'

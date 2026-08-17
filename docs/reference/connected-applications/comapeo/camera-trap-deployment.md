@@ -21,6 +21,10 @@ This category set has four categories:
 - **Camera Trap Retrieval** (_observation_)
 - **Camera Trap Path** (_track_)
 
+:::tip
+For a guide on collecting camera trap deployment data, see the [Collecting Camera Trap Deployment Data](/guides/guide-camera-trap-deployment/) guide.
+:::
+
 ## GBIF recommended fields in CoMapeo
 
 This table shows how the [GBIF recommended deployment fields](https://docs.gbif.org/camera-trap-guide/en/#section-deployments) are mapped to the CoMapeo elements or fields in this category set.

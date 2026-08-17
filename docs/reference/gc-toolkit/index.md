@@ -27,15 +27,14 @@ The [GC Explorer](./gc-explorer/) is a web-based data visualization tool that tr
 [File Browser](./filebrowser/) is a web-based file manager that allows users to browse, upload, download, and share files from their Guardian Connector instance.
 
 
-### 🔧 Other Tools
+### 🔧 Custom Applications
 
-As needed, you can add additional tools to a Guardian Connector instance. For example, you can add a custom HTTP server to serve static content from the data lake. See [Other Tools](/reference/gc-toolkit/other-tools/) for more information.
+As needed, you can add additional tools to a Guardian Connector instance. For example, you can add a custom HTTP server to serve static content from the data lake. See [Custom Applications](/reference/gc-toolkit/custom-applications/) for more information.
 
 ## Externally Hosted Services
 
-Guardian Connector also relies on several third party services (that are not hosted on an instance) to provide additional functionality:
+Guardian Connector also relies on several third-party services that are not hosted as part of the Guardian Connector infrastructure, but provide additional functionality to the platform:
 
 - [Auth0](./externally-hosted/auth0/) - Authentication and authorization platform
 - [Mapbox](./externally-hosted/mapbox/) - Mapping and geospatial data visualization platform
 - [Twilio](./externally-hosted/twilio/) - SMS and voice communication platform
-- [Uptime Robot](./externally-hosted/uptime-robot/) - Website monitoring and uptime tracking

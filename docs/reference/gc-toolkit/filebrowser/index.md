@@ -7,6 +7,10 @@ tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
 
 [File Browser](https://filebrowser.org/) is a web-based file manager that allows users to browse, upload, download, and share files from their Guardian Connector instance.
 
+:::note
+We do not build or maintain File Browser ourselves. It is a third-party tool that we integrate with Guardian Connector.
+:::
+
 ## How File Browser is used in Guardian Connector
 
 File Browser provides essential file management capabilities for Guardian Connector deployments:

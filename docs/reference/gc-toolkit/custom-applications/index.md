@@ -3,7 +3,7 @@ sidebar_position: 5
 tags: [idm, opu, tsp]
 ---
 
-# Other Tools
+# Custom Applications
 
 Beyond the core toolkit, Guardian Connector instances can include additional services that support specialized workflows. These tools are optional: deploy them when a project needs a custom web experience, wildlife media exploration, or another capability that is not covered by GC Explorer or Superset alone.
 

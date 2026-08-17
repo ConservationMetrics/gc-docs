@@ -1,9 +1,9 @@
 ---
-sidebar_position: 3
+sidebar_position: 6
 tags: [itu-2, itu-3, idm, opu, tsp]
 ---
 
-# 📜 Guide: Data Sharing Protocols Grounded in Indigenous Data Sovereignty
+# 🌿+🤝 Guide: Data Sharing Protocols Grounded in Indigenous Data Sovereignty
 
 This guide establishes an overview, actionable steps, guiding questions, and a Memorandum of Understanding (MoU) template to support the secure, ethical, and community-driven sharing of Indigenous and local community data.
 

@@ -22,9 +22,9 @@ The [GC Explorer](./gc-explorer/) is a web-based data visualization tool that tr
 
 [Apache Superset](./superset/) is a modern, enterprise-ready business intelligence platform that provides rich data visualization and exploration capabilities. It supports a wide variety of visualizations, from simple to complex charts, and allows users to create interactive dashboards. Superset is designed to be intuitive for both technical and non-technical users, making it ideal for sharing insights across diverse stakeholder groups.
 
-### 🗂️ Filebrowser
+### 🗂️ File Browser
 
-[Filebrowser](./filebrowser/) is a web-based file manager that allows users to browse, upload, download, and share files from their Guardian Connector instance.
+[File Browser](./filebrowser/) is a web-based file manager that allows users to browse, upload, download, and share files from their Guardian Connector instance.
 
 
 ### 🔧 Other Tools

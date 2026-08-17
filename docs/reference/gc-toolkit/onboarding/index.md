@@ -12,7 +12,7 @@ This document is your onboarding document to a fresh Guardian Connector instance
 
 :::note
 
-This template is designed to help onboard your community. You can customize this template to fit your needs: for example, replacing "alias" with your own name, and adding username and password for a service like Filebrowser.
+This template is designed to help onboard your community. You can customize this template to fit your needs: for example, replacing "alias" with your own name, and adding username and password for a service like File Browser.
 
 Before you begin, please make sure you are familiar with [what Guardian Connector is](/overview/index.md) and [its features](/reference/gc-toolkit/index.md).
 
@@ -36,7 +36,7 @@ In order to access, you will use its web address:
 The different tools will be available at https://*.alias.guardianconnector.net/ where * can be one of the services currently available, such as:
 
 - Explorer: <ParamLink template="https://explorer.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">explorer.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net</ParamLink>
-- Filebrowser: <ParamLink template="https://files.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">files.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net</ParamLink>
+- File Browser: <ParamLink template="https://files.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">files.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net</ParamLink>
 - Superset: <ParamLink template="https://superset.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">superset.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net</ParamLink>
 - Comapeo: <ParamLink template="https://comapeo.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">comapeo.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net</ParamLink>  
 - Windmill: <ParamLink template="https://windmill.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">windmill.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net</ParamLink>
@@ -82,7 +82,7 @@ You can find more information about in the [Explorer documentation](../gc-explor
 As you grow in usage of the system, Explorer may host things like:
 
 - Your remote sensing alerts: logging, mining, airstrips and roads
-- Your views of mapping projects collected using tools like [CoMapeo](../../connected-applications/comapeo/) or [KoboToolbox](../../connected-applications/kobotoolbox/) (both maps and media you share within it)
+- Your views of mapping projects collected using tools like [CoMapeo](../../core-integrations/comapeo/) or [KoboToolbox](../../core-integrations/kobotoolbox/) (both maps and media you share within it)
 
 #### Customization
 
@@ -90,9 +90,9 @@ The way the map looks like in the alerts dashboard can be customizable.
 
 Let’s discuss what would be relevant for you to have there.
 
-### Filebrowser
+### File Browser
 
-[Filebrowser](../filebrowser/) is a tool that you can use to safely store your files. It is a less structured means for you to preserve your data, whatever it may be.
+[File Browser](../filebrowser/) is a tool that you can use to safely store your files. It is a less structured means for you to preserve your data, whatever it may be.
 Your current access credentials are:
 
 - URL: <ParamLink template="https://files.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">files.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net</ParamLink>
@@ -103,8 +103,8 @@ You can find more information in the [FileBrowser documentation](../filebrowser/
 
 #### Existing data
 
-You will notice that there are a few folders already available in your Filebrowser view, and that more might appear without you doing it.
-This happens because Filebrowser is also used for Guardian Connector tools to preserve data that you get from other services.
+You will notice that there are a few folders already available in your File Browser view, and that more might appear without you doing it.
+This happens because File Browser is also used for Guardian Connector tools to preserve data that you get from other services.
 
 Examples of this would be:
 - Alerts’ images and data
@@ -124,7 +124,7 @@ Let’s give you access to it now. It will look a little empty, and that is fine
 
 ### CoMapeo
 
-[CoMapeo](../../connected-applications/comapeo/) is a collaborative mapping tool that works primarily without internet connection.
+[CoMapeo](../../core-integrations/comapeo/) is a collaborative mapping tool that works primarily without internet connection.
 
 Guardian Connector can preserve your CoMapeo projects through its Archive Server, and make its data available for you through the tools that we’ve seen already.
 

@@ -18,7 +18,7 @@ Timelapse is actively developed, open source ([GitHub repo](https://github.com/s
 :::tip
 This guide is only for **annotating** camera trap images and videos that have already been collected. It is not a guide for setting up a camera trap project or handling deployment.
 
-For deployment, we do make available a [CoMapeo category set for Camera Trap Deployment](/reference/connected-applications/comapeo/camera-trap-deployment.md) that can be used to document camera trap deployments, maintenance, and retrievals using [CoMapeo](/reference/connected-applications/comapeo/index.md).
+For deployment, we do make available a [CoMapeo category set for Camera Trap Deployment](/reference/core-integrations/comapeo/camera-trap-deployment.md) that can be used to document camera trap deployments, maintenance, and retrievals using [CoMapeo](/reference/core-integrations/comapeo/index.md).
 :::
 
 ## Installing Timelapse

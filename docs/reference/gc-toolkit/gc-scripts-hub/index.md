@@ -31,7 +31,7 @@ The GC Scripts Hub includes connectors that automatically gather data from vario
 
 ### 📋 Survey & Data Collection
 - **[EpiCollect5](https://five.epicollect.net/)**: Fetch survey responses and form data from EpiCollect5.
-- **[KoboToolbox](/reference/connected-applications/kobotoolbox/)**: Fetch survey responses and form data, including support for multilingual forms and media attachments.
+- **[KoboToolbox](/reference/core-integrations/kobotoolbox/)**: Fetch survey responses and form data, including support for multilingual forms and media attachments.
 - **[ODK](https://getodk.org/)**: Fetch survey responses and form data from ODK Central, including media attachments.
 
 ### 🌍 Environmental Monitoring
@@ -41,7 +41,7 @@ The GC Scripts Hub includes connectors that automatically gather data from vario
 
 ### 🗺️ Mapping & Location
 - **[ArcGIS](https://www.arcgis.com/)**: Download data from ArcGIS Online, including from feature layers and submissions data from tools such as Survey123.
-- **[CoMapeo](/reference/connected-applications/comapeo/)**: Import community mapping data and observations, with support for photos and other attachments.
+- **[CoMapeo](/reference/core-integrations/comapeo/)**: Import community mapping data and observations, with support for photos and other attachments.
 - **[CyberTracker](https://www.cybertracker.org/)**: Import data collected using CyberTracker.
 - **[iNaturalist](https://www.inaturalist.org/)**: Import plant and animal observations from iNaturalist.
 - **[Locus Map](https://www.locusmap.app/)**: Import GPS tracks and mapping data.
@@ -50,7 +50,7 @@ The GC Scripts Hub includes connectors that automatically gather data from vario
 - **[SMART](https://smartconservationtools.org/)**: Import patrol data from SMART Desktop.
 
 ### 🌿 Biodiversity Monitoring
-- **[Timelapse](/reference/connected-applications/timelapse/)**: Import annotated camera trap data from Timelapse.
+- **[Timelapse](/reference/core-integrations/timelapse/)**: Import annotated camera trap data from Timelapse.
 
 ---
 

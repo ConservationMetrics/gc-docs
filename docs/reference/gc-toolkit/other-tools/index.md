@@ -21,7 +21,7 @@ It is possible to show cards for these tools on the [Landing Page](/reference/gc
 
 The [GC HTTP Server](https://github.com/conservationmetrics/gc-http-server) is a lightweight service for serving static content directly from the Guardian Connector data lake. It runs a minimal HTTPD web server and exposes HTML, JavaScript, CSS, images, and other static assets over HTTP—without a separate build or hosting pipeline.
 
-This fits Guardian Connector's goal of letting communities control both their data and the applications built around it. Upload a folder into the data lake with [Filebrowser](/reference/gc-toolkit/filebrowser/), point the server at that directory, and the site is available on the web. CapRover can also protect the app with built-in authentication when access should be restricted.
+This fits Guardian Connector's goal of letting communities control both their data and the applications built around it. Upload a folder into the data lake with [File Browser](/reference/gc-toolkit/filebrowser/), point the server at that directory, and the site is available on the web. CapRover can also protect the app with built-in authentication when access should be restricted.
 
 ### When to use it
 
@@ -31,7 +31,7 @@ A typical workflow:
 
 1. Ingest field data with the [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) (for example CoMapeo observations).
 2. Build your own frontend (Leaflet, Mapbox GL JS, OpenLayers, or another framework).
-3. Upload the application into the data lake with [Filebrowser](/reference/gc-toolkit/filebrowser/).
+3. Upload the application into the data lake with [File Browser](/reference/gc-toolkit/filebrowser/).
 4. Deploy GC HTTP Server and set the `DIRECTORY` environment variable to the location of the uploaded folder.
 
 Both the datasets and the web application then live in the data lake, keeping the experience lightweight and under community control.
@@ -40,6 +40,6 @@ Both the datasets and the web application then live in the data lake, keeping th
 
 The [GC Wildlife Viewer](https://github.com/conservationmetrics/gc-wildlife-viewer) is an R Shiny application for exploring annotated camera trap media (images and videos) on a map with filters. It is designed to be deployed as part of a Guardian Connector CapRover instance alongside the rest of the toolkit.
 
-The app works with exports from [Timelapse](/reference/connected-applications/timelapse/) -- tabular data (CSV), exported images or video, and generated thumbnails -- along with camera trap deployment data. Communities can browse wildlife media by location and attributes without needing to open Timelapse for every review session.
+The app works with exports from [Timelapse](/reference/core-integrations/timelapse/) -- tabular data (CSV), exported images or video, and generated thumbnails -- along with camera trap deployment data. Communities can browse wildlife media by location and attributes without needing to open Timelapse for every review session.
 
 See the [GC Wildlife Viewer README](https://github.com/conservationmetrics/gc-wildlife-viewer/blob/main/README.md) for more information on how to deploy and use the app.

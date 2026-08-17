@@ -13,7 +13,7 @@ Our tutorials are crafted with community needs in mind, focusing on practical sk
 
 ## Available Learning Resources
 
-### 📚 [Data Management with KoboToolbox Syllabus](./syllabus-data-management-with-kobotoolbox/)
+### 📱+📋 [Syllabus: Data Management with KoboToolbox](./syllabus-data-management-with-kobotoolbox/)
 
 A comprehensive 4-week self-paced learning program that takes you from KoboToolbox basics to advanced data management techniques. Perfect for communities looking to establish robust mobile data collection workflows.
 
@@ -26,7 +26,19 @@ A comprehensive 4-week self-paced learning program that takes you from KoboToolb
 
 **Format:** Weekly modules with video tutorials, reading materials, and practical exercises.
 
-### 🐾 [Timelapse Project Setup Guide](./guide-timelapse-project/)
+### 📸+🐾 [Guide: Collecting Camera Trap Deployment Data](./guide-camera-trap-deployment/)
+
+A practical guide for documenting camera trap deployments, maintenance, and retrievals. Designed to help communities keep a reliable record of which camera was placed where, during what period, and under what conditions — so later imagery can still be mapped, compared, and reused.
+
+**What you'll learn:**
+- Distinguishing locations, cameras, and deployments so identifiers stay consistent
+- Which deployment metadata to record, including Camtrap DP fields
+- Documenting installation, maintenance visits, and retrieval in the field
+- Choosing a data collection tool such as CoMapeo, ODK, KoboToolbox, or a simple form
+
+**Format:** Step-by-step guide with tables, practical examples, and a ready-to-use CoMapeo category set.
+
+### 🖼️+🏷️ [Guide: Setting up a Project in Timelapse for Camera Trap Annotation](./guide-timelapse-project/)
 
 A detailed, hands-on guide for setting up camera trap data analysis projects using Timelapse software. Designed to help communities document wildlife presence and biodiversity in their territories.
 
@@ -39,19 +51,20 @@ A detailed, hands-on guide for setting up camera trap data analysis projects usi
 
 **Format:** Step-by-step tutorial with screenshots, practical examples, and downloadable resources.
 
-### 📜 [Data Sharing Protocols Grounded in Indigenous Data Sovereignty](./guide-data-sovereignty-and-protocols/)
+### 🔊+🦉 [Guide: Bioacoustics Basics with AudioMoth Sensors](./guide-audiomoth/)
 
-A comprehensive guide for creating data sharing protocols grounded in Indigenous Data Sovereignty principles, designed for communities looking to establish ethical and community-controlled data governance frameworks.
+An overview of the AudioMoth sensor workflow, covering the full lifecycle of deploying, maintaining, and managing data from AudioMoth bioacoustic sensors.
 
 **What you'll learn:**
-- Understanding Indigenous Data Sovereignty and the CARE Principles
-- Establishing community-controlled data sharing protocols
-- Implementing Free, Prior, and Informed Consent (FPIC) frameworks
-- Creating Memorandums of Understanding for data partnerships
-- Protecting sensitive cultural and territorial information
-- Building capacity for community data governance
+- Preparing AudioMoth devices and microSD cards before deployment
+- Programming recording schedules, gain, sampling rate, and time sync
+- Field deployment, mounting, and LED checks
+- Mid-season checks, redeployment, and required deployment metadata
+- Offloading SD cards and organizing audio for project storage
 
-### 🏷️ [Annotating Datasets with Local Contexts Labels](./guide-local-contexts/)
+**Format:** Step-by-step guide covering sensor preparation through data management, plus testing and troubleshooting appendices.
+
+### 🌿+🏷️ [Guide: Annotating Datasets with Local Contexts Labels](./guide-local-contexts/)
 
 A practical workflow for communities that want to use [Local Contexts](https://localcontexts.org/) TK and BC labels with Guardian Connector: set up a Hub project, curate labels, sync them into your warehouse with Windmill, and apply chosen labels to specific datasets without altering the underlying data table.
 
@@ -62,6 +75,18 @@ A practical workflow for communities that want to use [Local Contexts](https://l
 - How per-dataset label metadata (`__lc_labels`) is stored separately from dataset rows
 
 **Format:** Multi-page guide (Hub project and labels, Fetch Labels script, Annotations app) plus links to official Local Contexts documentation.
+
+### 🌿+🤝 [Guide: Data Sharing Protocols Grounded in Indigenous Data Sovereignty](./guide-data-sovereignty-and-protocols/)
+
+A comprehensive guide for creating data sharing protocols grounded in Indigenous Data Sovereignty principles, designed for communities looking to establish ethical and community-controlled data governance frameworks.
+
+**What you'll learn:**
+- Understanding Indigenous Data Sovereignty and the CARE Principles
+- Establishing community-controlled data sharing protocols
+- Implementing Free, Prior, and Informed Consent (FPIC) frameworks
+- Creating Memorandums of Understanding for data partnerships
+- Protecting sensitive cultural and territorial information
+- Building capacity for community data governance
 
 ## Support and Community
 

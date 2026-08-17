@@ -44,3 +44,17 @@
   padding: 2px 4px;
   border-radius: 3px;
 }
+
+/* Extra bottom space only when navbar items wrap; single-row height is unchanged. */
+.navbar {
+  height: auto;
+  min-height: var(--ifm-navbar-height);
+}
+
+.navbar__inner {
+  row-gap: 0.5rem;
+}
+
+.navbar__items--right {
+  padding-bottom: 0.5rem;
+}

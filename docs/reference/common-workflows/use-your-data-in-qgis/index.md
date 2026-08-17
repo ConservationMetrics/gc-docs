@@ -5,7 +5,7 @@ tags: [itu-2, itu-3, opu, tsp]
 
 # Use your data in QGIS
 
-[QGIS](/reference/recommended-applications/qgis) is a powerful open-source GIS application that can work with spatial data from Guardian Connector. This guide shows you how to download your data and open it in QGIS for analysis and visualization.
+[QGIS](/reference/companion-applications/qgis) is a powerful open-source GIS application that can work with spatial data from Guardian Connector. This guide shows you how to download your data and open it in QGIS for analysis and visualization.
 
 :::tip
 This workflow works with any GIS software, including ArcGIS, QGIS, or other spatial analysis tools. The key is downloading your data as files and opening them in your preferred GIS application.
@@ -31,13 +31,13 @@ Use the `postgres_to_geojson` script in the [GC Scripts Hub](/reference/gc-toolk
    - Choose your database connection
    - Specify the table containing spatial data
    - Set the export path (default: `/persistent-storage/datalake/exports`)
-3. **Download the file**: Use [Filebrowser](/reference/gc-toolkit/filebrowser/) to download the generated GeoJSON file
+3. **Download the file**: Use [File Browser](/reference/gc-toolkit/filebrowser/) to download the generated GeoJSON file
 
-### Method 2: Download via Filebrowser
+### Method 2: Download via File Browser
 
 For existing spatial files already stored in Guardian Connector:
 
-1. **Navigate to Filebrowser**: Access your Guardian Connector file storage
+1. **Navigate to File Browser**: Access your Guardian Connector file storage
 2. **Locate spatial files**: Look for GeoJSON, Shapefile, or other GIS file formats
 3. **Download files**: Select and download the files you need
 

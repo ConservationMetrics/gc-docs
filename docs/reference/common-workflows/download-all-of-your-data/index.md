@@ -43,7 +43,7 @@ The `download_all_postgres_data` script exports all project-specific tabular dat
 - Survey data from KoboToolbox, CoMapeo, and other connectors
 - Manually uploaded tabular data
 - All data is exported as CSV files and compressed into a single ZIP archive
-- Once created, you can download the archive using [Filebrowser](/reference/gc-toolkit/filebrowser/)
+- Once created, you can download the archive using [File Browser](/reference/gc-toolkit/filebrowser/)
 
 #### Download Files (Azure)
 The `download_all_files_azure` script provides secure access to file-based data stored in Azure Blob Storage:
@@ -63,11 +63,11 @@ The `download_all_files_azure` script provides secure access to file-based data 
 - Resumable transfers if interrupted
 :::
 
-### Method 2: Download via Filebrowser
+### Method 2: Download via File Browser
 
-For smaller datasets, you can use [Filebrowser](/reference/gc-toolkit/filebrowser/) directly:
+For smaller datasets, you can use [File Browser](/reference/gc-toolkit/filebrowser/) directly:
 
-1. Navigate to Filebrowser in your Guardian Connector instance
+1. Navigate to File Browser in your Guardian Connector instance
 2. Select the files or folders you want to download
 3. Click the "Download" button to generate a ZIP archive
 

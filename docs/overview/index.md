@@ -23,13 +23,15 @@ Guardian Connector is being built with Indigenous partner organizations to help 
 
 ### What Guardian Connector Offers
 
+> :fire: **Indigenous Guardianship**: Tools and integrations that are specifically curated for Indigenous organizations to protect their lands, waters, cultures, and collective well-being
+>
 > 🛡️ **Data Sovereignty**: Complete ownership and control over community data
 > 
-> 📊 **Biocultural Metrics**: Access to indicators that reflect Indigenous perspectives on well-being
+> 📊 **Metrics and Reporting**: Access to data visualization tools that can reflect Indigenous perspectives on well-being
 >
 > 🔗 **Multi-tool Integration**: Easy use of datasets from multiple monitoring and data collection tools
 >
-> 🔔 **Real-time Alerts**: Near real-time notifications about territorial incursions and environmental changes
+> 🔔 **Near Real-time Alerts**: Near real-time notifications about territorial incursions and environmental changes
 >
 > 🏠 **Community-owned Storage**: Data stored on infrastructure that community organizations own entirely
 >

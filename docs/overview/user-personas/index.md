@@ -1,14 +1,16 @@
 ---
 id: user-personas
-sidebar_position: 4
-title: Guardian Connector Users Explained
+sidebar_position: 99
+title: Guardian Connector "User Personas" Explained
 description: Understanding the diverse user personas who interact with Guardian Connector and their varying technical expertise levels
 tags: [itu-1, itu-2, itu-3, idm, icm, opu, tsp]
 ---
 
-# Guardian Connector Users Explained
+# Guardian Connector "User Personas" Explained
 
 Guardian Connector serves a diverse community of users, ranging from Indigenous community members with limited technical experience to technical support partners with advanced expertise. This diversity reflects the reality that Indigenous organizations often include people with a wide range of digital literacy levels and frequently collaborate with allied organizations that provide technical support.
+
+Different parts of Guardian Connector are therefore intended for different users. Some tools are designed for broad, day-to-day use, while more advanced configuration, data integration, administration, or troubleshooting may be handled by organizational power users or technical support partners. These roles can also evolve over time as users gain experience and take on more complex parts of the system.
 
 The Guardian Connector documentation is designed to address the needs of all these user types. To ensure our documentation serves everyone effectively, we need to understand who our users are and what level of technical knowledge they bring to the system.
 

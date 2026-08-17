@@ -1,12 +1,12 @@
 ---
-sidebar_position: 0
+sidebar_position: 98
 tags: [itu-3, opu, tsp]
 ---
 
 import ParamText from '@site/src/components/ParamText';
 import ParamLink from '@site/src/components/ParamLink';
 
-# Onboarding Template
+# Onboarding Template for Community Organizations
 
 :::note
 This is an onboarding template for a new Guardian Connector instance hosted by CMI on the `guardianconnector.net` domain, to be used together with community organizations that are new to Guardian Connector.

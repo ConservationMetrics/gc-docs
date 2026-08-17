@@ -7,6 +7,10 @@ tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
 
 [Timelapse](https://saul.cpsc.ucalgary.ca/timelapse/) is a specialized software tool designed for analyzing camera trap images and videos in wildlife research and conservation. It provides powerful features for organizing, viewing, and analyzing large collections of wildlife images, including species identification, behavior analysis, and temporal pattern recognition. Designed to be accessible to users without scientific expertise, Timelapse is particularly valuable for long-term wildlife monitoring studies and biodiversity assessments.
 
+:::tip
+We provide a step-by-step guide for working with Timelapse to annotate camera trap images: see [Timelapse project guide](/guides/guide-timelapse-project/).
+:::
+
 ## Why Timelapse is Integrated with Guardian Connector
 
 - **Wildlife Monitoring**: Enables systematic analysis of camera trap data for biodiversity conservation efforts
@@ -20,7 +24,3 @@ tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
 ## Documentation
 
 For detailed information about using Timelapse, visit the [official Timelapse documentation](https://saul.cpsc.ucalgary.ca/timelapse/).
-
-:::tip
-We also provide a step-by-step guide for working with Timelapse to annotate camera trap images: see [our Timelapse project guide](/guides/guide-timelapse-project/).
-:::

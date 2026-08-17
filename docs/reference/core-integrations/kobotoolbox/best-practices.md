@@ -68,7 +68,7 @@ This 10MB per-file limitation is not clearly documented in the [official KoboToo
 
 ### Form Structure Planning
 
-See [Survey Design Best Practices](/reference/connected-applications/kobotoolbox/survey-design.md) for more information.
+See [Survey Design Best Practices](/reference/core-integrations/kobotoolbox/survey-design.md) for more information.
 
 ### Testing Workflows
 

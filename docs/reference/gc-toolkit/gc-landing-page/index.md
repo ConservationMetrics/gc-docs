@@ -9,8 +9,9 @@ The Guardian Connector Landing Page is the **home page** for your community's Gu
 
 From the Landing Page you can:
 
-- Open the **services** your community uses (like Explorer, Superset, Windmill, or Filebrowser) with a single click.
+- Open the **services** your community uses (like Explorer, Superset, Windmill, or File Browser) with a single click.
 - Learn about the **tools you can use with Guardian Connector** to collect and bring in data (like CoMapeo, KoboToolbox, and more).
+- If you are an administrator, you can manage **user accounts and roles**, and configure **theme settings**, and add **custom apps** for your community.
 
 ## 🔑 Signing In
 
@@ -18,14 +19,16 @@ When you first visit the Landing Page, you may be asked to sign up or sign in. A
 
 **What you see on the Landing Page depends on your role.** Different people need different tools, so the page only shows the services you have permission to use. If a service you expect is missing, it may not be turned on for your community, or your role may not include access to it yet — reach out to your community's administrator.
 
-## 🚀 Your Services
+## 🚀 Available Services
 
 These are the default Guardian Connector services your community can link to from the Landing Page. Each appears as a card you can click to open it in a new tab.
 
+![Guardian Connector Landing Page](/img/reference/gc-toolkit/gc-landing-page/landing-page-1.jpg)
+
 - **[Explorer](/reference/gc-toolkit/gc-explorer/)**: View your community's data as interactive maps, media galleries, and an alerts dashboard.
 - **[Superset](/reference/gc-toolkit/superset/)**: Build and explore charts, dashboards, and visualizations from your data.
-- **[Filebrowser](/reference/gc-toolkit/filebrowser/)**: Browse, download, and manage your community's raw files and archives.
 - **Windmill**: Run and schedule the automation workflows that gather and process your data (see the [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/)).
+- **[File Browser](/reference/gc-toolkit/filebrowser/)**: Browse, download, and manage your community's raw files and archives.
 
 Not everyone sees every service. In general, the more advanced or sensitive a tool is, the higher the role needed to open it — for example, Explorer is available to most signed-in users, while Windmill is reserved for administrators.
 
@@ -33,11 +36,13 @@ It's also possible to configure the Landing Page to show custom apps, which are 
 
 ## 🌐 Tools You Can Use with Guardian Connector
 
-The Landing Page also introduces the field tools and platforms that work with Guardian Connector. These are the apps your community can use to **collect data in the field** — data that then flows into Guardian Connector for viewing and analysis:
+The Landing Page also introduces the field tools and platforms that work with Guardian Connector. These are the apps your community can use to **collect data in the field** — data that then flows into Guardian Connector for viewing and analysis.
 
-- **[CoMapeo](/reference/connected-applications/comapeo/)**: Offline-first mapping and monitoring on a mobile device.
-- **[KoboToolbox](/reference/connected-applications/kobotoolbox/)** and **ODK**: Forms and surveys that work online and offline.
-- **[Timelapse](/reference/connected-applications/timelapse/)**: Reviewing and annotating camera trap images for biodiversity monitoring.
+![Guardian Connector Landing Page](/img/reference/gc-toolkit/gc-landing-page/landing-page-2.jpg)
+
+- **[CoMapeo](/reference/core-integrations/comapeo/)**: Offline-first mapping and monitoring on a mobile device.
+- **[KoboToolbox](/reference/core-integrations/kobotoolbox/)** and **ODK**: Forms and surveys that work online and offline.
+- **[Timelapse](/reference/core-integrations/timelapse/)**: Reviewing and annotating camera trap images for biodiversity monitoring.
 
 Guardian Connector also connects with other tools such as **ArcGIS Survey123**, **Locus Map**, **Global Forest Watch**, **SMART**, and more. To learn about everything that can be connected, see the [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/).
 
@@ -75,7 +80,7 @@ From here you can add:
 
 ### ⚙️ Configuring Custom Apps
 
-If your community has other apps running on Guardian Connector, the **Custom Apps** page lets you create cards similar to the default services — like Explorer, Superset, and Filebrowser. Each card opens at its own subdomain, so people can reach your custom apps from the Landing Page the same way they open the built-in ones.
+If your community has other apps running on Guardian Connector, the **Custom Apps** page lets you create cards similar to the default services — like Explorer, Superset, and File Browser. Each card opens at its own subdomain, so people can reach your custom apps from the Landing Page the same way they open the built-in ones.
 
 For each custom app you can add, a name, subdomain, description, icon, and tags.
 

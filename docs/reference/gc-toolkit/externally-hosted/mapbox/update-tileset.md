@@ -27,7 +27,7 @@ This is most useful when a dataset changes regularly and you want your Mapbox ma
 
 - **Concessions and land use** — keep a Mapbox layer in sync with a concessions dataset (mining, logging, oil, and gas) that is updated regularly, so your maps always show the current boundaries.
 - **Protected and territorial areas** — reflect changes to protected areas, Indigenous territories, or community boundaries as they are revised.
-- **Field-collected data** — publish the newest observations gathered with tools like [CoMapeo](/reference/connected-applications/comapeo/) or survey apps so partners can see recent fieldwork.
+- **Field-collected data** — publish the newest observations gathered with tools like [CoMapeo](/reference/core-integrations/comapeo/) or survey apps so partners can see recent fieldwork.
 - **Infrastructure and monitoring points** — keep layers such as monitoring stations, water points, or roads up to date as they change on the ground.
 
 :::warning Wait between requests

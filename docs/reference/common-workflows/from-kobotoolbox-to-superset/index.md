@@ -13,7 +13,7 @@ The goal is to preserve your survey data, and to visualize it through dashboards
 
 The workflow involves the following tools:
 
-- **[KoboToolbox](../../connected-applications/kobotoolbox/)** – The survey collection tool. (Similar workflows can be adapted for other survey collection tools such as ODK or Survey123, but here we’ll focus on KoboToolbox.)
+- **[KoboToolbox](../../core-integrations/kobotoolbox/)** – The survey collection tool. (Similar workflows can be adapted for other survey collection tools such as ODK or Survey123, but here we’ll focus on KoboToolbox.)
 - **[Windmill](../../gc-toolkit/gc-scripts-hub/)** – Handles data ingestion and processing, transferring it from KoboToolbox to the data warehouse.  
 - **PostgreSQL** – The database where Guardian Connector stores and makes your data available for analysis.  
 - **[Superset](../../gc-toolkit/superset/)** – The visualization tool used to create dashboards and charts based on the stored data.

@@ -22,7 +22,7 @@ One of its strengths is that it allows you to **create reusable transformation s
 
 ## Typical Workflow using KoboToolbox Survey Data
 
-Here's a common workflow when preparing data collected via [KoboToolbox](/reference/connected-applications/kobotoolbox):
+Here's a common workflow when preparing data collected via [KoboToolbox](/reference/core-integrations/kobotoolbox):
 
 1. **Export data** from KoboToolbox as CSV.
 2. **Import into OpenRefine** by selecting the CSV file or entering URL. Enable options like “parse numbers, dates” and “trim whitespace” during import.

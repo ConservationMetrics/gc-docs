@@ -5,7 +5,7 @@ tags: [itu-3, opu, tsp]
 
 # GC Dataset Importer
 
-Upload a dataset file and turn it into a clean PostgreSQL table in your Guardian Connector data warehouse. The app guides you through naming the dataset, uploading a file, optionally tagging the **data source**, and finalizing the import. It also saves the original and transformed files to your deployment’s data lake (accessible via [Filebrowser](/reference/gc-toolkit/filebrowser/)).
+Upload a dataset file and turn it into a clean PostgreSQL table in your Guardian Connector data warehouse. The app guides you through naming the dataset, uploading a file, optionally tagging the **data source**, and finalizing the import. It also saves the original and transformed files to your deployment’s data lake (accessible via [File Browser](/reference/gc-toolkit/filebrowser/)).
 
 ---
 
@@ -90,32 +90,32 @@ If you are using [Superset](/reference/gc-toolkit/superset/), or any other tool 
 :::
 
 
-### Access your uploaded files in Filebrowser
+### Access your uploaded files in File Browser
 
 The importer saves both the **original** file and any **transformed** output in a folder named after your table (e.g., `my_kobo_toolbox_data`).
 
-![Find original and transformed files in Filebrowser](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-8.jpg)
+![Find original and transformed files in File Browser](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-8.jpg)
 
-See: [Filebrowser](/reference/gc-toolkit/filebrowser/) for share links or downloads.
+See: [File Browser](/reference/gc-toolkit/filebrowser/) for share links or downloads.
 
 :::tip
 
-If you uploaded a spatial data file, you can download it here to use in a tool like [QGIS](/reference/recommended-applications/qgis/).
+If you uploaded a spatial data file, you can download it here to use in a tool like [QGIS](/reference/companion-applications/qgis/).
 
 :::
 
-### Upload media attachments in Filebrowser
+### Upload media attachments in File Browser
 
-Often, datasets from tools like CoMapeo, Mapeo, or Locus Map, include media attachments like photos, audio, or video files. You can upload these to Filebrowser.
+Often, datasets from tools like CoMapeo, Mapeo, or Locus Map, include media attachments like photos, audio, or video files. You can upload these to File Browser.
 
-1. Open Filebrowser.
+1. Open File Browser.
 2. Navigate to the dataset folder.
 3. Create a new folder for the media attachments like `media`, `photos` or `attachments`. (It is recommended to use the same folder name as what was exported from the tool.)
 4. Open the new folder, and upload the media files (either using the drag-and-drop interface, or by clicking the **Upload** button).
 
 :::tip
 
-You can now generate a share link for the media attachments folder and use it in a tool like [GC Explorer](/reference/gc-toolkit/gc-explorer/) to embed the media attachments in a view. See [Filebrowser: generating share links](/reference/gc-toolkit/filebrowser/#generating-share-links) for more details.
+You can now generate a share link for the media attachments folder and use it in a tool like [GC Explorer](/reference/gc-toolkit/gc-explorer/) to embed the media attachments in a view. See [File Browser: generating share links](/reference/gc-toolkit/filebrowser/#generating-share-links) for more details.
 
 :::
 
@@ -133,5 +133,5 @@ _For any other issues, please contact us at [guardianconnector@conservationmetri
 
 ## See also
 
-* [**Filebrowser**](/reference/gc-toolkit/filebrowser/) - for sharing links or downloads of the original and transformed files, or uploading media attachments associated with the dataset.
+* [**File Browser**](/reference/gc-toolkit/filebrowser/) - for sharing links or downloads of the original and transformed files, or uploading media attachments associated with the dataset.
 * [**Technical overview & architecture**](https://github.com/ConservationMetrics/gc-scripts-hub/blob/main/f/apps/gc_dataset_importer.app/README.md) - for developers, and includes a [to-do list](https://github.com/ConservationMetrics/gc-scripts-hub/blob/main/f/apps/gc_dataset_importer.app/README.md#todo) for future features.

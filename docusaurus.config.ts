@@ -53,15 +53,15 @@ const config: Config = {
 
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/ConservationMetrics/gc-docs/tree/main",
-          tags: 'tags.yaml'
+          tags: "tags.yaml",
         },
         blog: {
-          path: 'whatsnew', 
-          routeBasePath: 'whatsnew', // Removed the leading slash (best practice)
+          path: "whats-new",
+          routeBasePath: "whats-new", // Removed the leading slash (best practice)
           blogTitle: "What's New",
-          blogDescription: "What's new!",
-          blogSidebarCount: 'ALL', 
-          blogSidebarTitle: 'All Releases',
+          blogDescription: "Guardian Connector updates and news.",
+          blogSidebarCount: "ALL",
+          blogSidebarTitle: "All Updates",
           postsPerPage: 10,
         },
         theme: {
@@ -99,9 +99,9 @@ const config: Config = {
           label: "Guides & Tutorials",
         },
         {
-          to: '/whatsnew/', 
-          label: "What's New", 
-          position: 'left', // You can change this to 'right' if you prefer
+          to: "/whats-new/",
+          label: "What's New",
+          position: "left", // You can change this to 'right' if you prefer
         },
         {
           href: "https://github.com/ConservationMetrics/gc-docs",
@@ -109,8 +109,8 @@ const config: Config = {
           position: "right",
         },
         {
-          type: 'localeDropdown',
-          position: 'right',
+          type: "localeDropdown",
+          position: "right",
         },
       ],
     },

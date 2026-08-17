@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-tags: [idm, opu, tsp]
+tags: [opu, tsp]
 ---
 
 # Hosting Guardian Connector
@@ -12,7 +12,7 @@ The Guardian Connector stack is deployed on a single virtual machine (cloud or o
 * 🖥️ **Compute** — One VM in your cloud of choice or self-hosted.
 * 📂 **Data warehouse** — Private file storage for media + PostgreSQL database for tabular data.
 * 🔐 **Access control** — Centralized login (Auth0).
-* 📦 **Apps** — Windmill, Superset, Filebrowser, GC Explorer, CoMapeo Remote Archive Server, plus anything else via CapRover.
+* 📦 **Apps** — Windmill, Superset, File Browser, GC Explorer, CoMapeo Remote Archive Server, plus anything else via CapRover.
 
 ### Get started
 

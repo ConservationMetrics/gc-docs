@@ -27,12 +27,11 @@ Guardian Connector sits at the intersection of **Indigenous Guardianship, data s
 
 These platforms are not necessarily direct competitors to Guardian Connector. Each has a different primary purpose, audience, and approach to data management and infrastructure.
 
-#### [Earth Ranger](https://www.earthranger.com/) — Conservation operations and situational awareness
+#### [Earth Ranger](https://www.earthranger.com/) & [SMART](https://smartconservationtools.org/) — Park conservation monitoring and management
 
-EarthRanger is a free and open-source platform developed by the Allen Institute for AI for wildlife conservation and protected-area management. It brings together field observations, ranger patrols, animal tracking, sensors, camera traps, and other real-time data to support monitoring, alerts, and operational decision-making. Its companion integration platform, Gundi, provides connections to more than 100 conservation technologies and data sources.
+EarthRanger is a free, open-source conservation platform that integrates ranger patrols, wildlife tracking, sensors, camera traps, satellite data, and other sources to support real-time monitoring and operational decision-making. It is increasingly closely linked with SMART, a widely used platform for structured field monitoring, analysis, reporting, and adaptive management. In 2025, the organizations behind the two platforms formed the SMART–EarthRanger Conservation Alliance (SERCA) to combine their complementary capabilities into a more integrated conservation technology ecosystem spanning field data collection, real-time situational awareness, long-term monitoring, analysis, and reporting.
 
 #### [Niiwin](https://niiwin.com/) — Indigenous data sovereignty and governance
-
 
 Niiwin is a commercial platform developed by Animikii Indigenous Technology specifically around Indigenous Data Sovereignty. It supports customizable data structures, access and governance controls, and the ability to host data on-premises or in a chosen cloud environment. Its focus is broader than environmental monitoring, with an emphasis on enabling Indigenous organizations to structure, govern, manage, and build applications around their data according to their own protocols and ways of knowing.
 

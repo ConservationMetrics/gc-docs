@@ -60,16 +60,16 @@ Guardian Connector is being built with Indigenous partner organizations to help 
 Guardian Connector is being co-created by [Conservation Metrics, Inc.](https://conservationmetrics.com/) in close partnership with (and with funding from) [Nia Tero](https://niatero.org/), and a number of Indigenous partner organizations, including (in alphabetical order):
 
 - Amazon Frontlines & Alianza Ceibo — Ecuador :ecuador:
-- Amerindian Peoples Association — Guyana :guyana:
+- Amerindian Peoples Association (APA)— Guyana :guyana:
 - Association of Village Heads of Suriname (VIDS) — Suriname :suriname:
-- Chepkitale Indigenous Peoples' Development Project — Kenya :kenya:
-- Ilha Knowledge Institute & Mai Maasina Greenbelt — Solomon Islands :solomon_islands:
+- Chepkitale Indigenous Peoples' Development Project (CIPDP) — Kenya :kenya:
+- Islands Knowledge Institute (IKI) & Mai Maasina Greenbelt (MMGB) — Solomon Islands :solomon_islands:
 - Instituto Iepé — Brazil :brazil:
-- North Pakaraimas District Council — Guyana :guyana:
-- Nyae Nyae Development Foundation of Namibia — Namibia :namibia:
-- Pastoralist Women's Council — Tanzania :tanzania:
-- South Rupununi District Council — Guyana :guyana:
+- North Pakaraimas District Council (NPDC) — Guyana :guyana:
+- Nyae Nyae Development Foundation of Namibia (NNDFN) — Namibia :namibia:
+- Pastoralist Women's Council (PWC) — Tanzania :tanzania:
+- South Rupununi District Council (SRDC) — Guyana :guyana:
 - Stichting Mulokot — Suriname :suriname:
-- Ujamaa Community Resources Center — Tanzania :tanzania:
+- Ujamaa Community Resources Center (UCRT) — Tanzania :tanzania:
 - União dos Povos Indígenas do Vale do Javari (UNIVAJA) — Brazil :brazil:   
-- Upper Mazuruni District Council — Guyana :guyana:
+- Upper Mazuruni District Council (UMDC) — Guyana :guyana:

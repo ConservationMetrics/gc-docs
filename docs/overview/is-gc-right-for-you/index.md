@@ -49,7 +49,7 @@ Guardian Connector works best when an organization has:
 - **Interest in Local Experts:** An interest in developing data and technical skills within the organization or community over time, so that more of the work can be understood and managed locally.
 
 :::important
-Different parts of Guardian Connector require different levels of technical skill. Some tasks can be carried out by most organizational users, while more complex setup, configuration, or troubleshooting may require help from a technical support partner. Over time, staff who are interested can learn to take on more advanced parts of the system.
+Different parts of Guardian Connector require different levels of technical skill. Some tasks can be carried out by most organizational users, while more complex setup, configuration, or troubleshooting may require help from a [technical support partner](/overview/user-personas/index.md#technical-support-partner). Over time, staff who are interested can learn to take on more advanced parts of the system.
 :::
 
 ### 3. What kind of information can Guardian Connector store?

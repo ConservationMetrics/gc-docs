@@ -13,9 +13,13 @@ Open source means interested parties can inspect the actual code, not rely on pr
 
 Open source also means durability. Organizations change, funding shifts, partnerships evolve. But open source survives those changes. Guardian Connector can outlive the organizations that build it.
 
-## How do I use Guardian Connector?
+## Is Guardian Connector free?
 
-Currently, Guardian Connector is in a research and development (R&D) phase. We are working with a number of community organizations to test the platform, gather feedback, and co-create new features. While the tools are open-source and can be self-hosted (see [For Developers](/reference/for-developers)), we are not yet ready to support users that are not partners of [Nia Tero](https://niatero.org/). We hope to be able to support more users in the future, and make it even easier to set up and use Guardian Connector.
+Yes and no. 
+
+The Guardian Connector platform itself is free to use, and the code is open-source and free to modify and distribute. 
+
+However, Guardian Connector needs to be hosted on a server, and so the cost of hosting has to be covered. Additionally, we strongly recommend also paying for extra services like automated backups, monitoring, and maintenance / upgrades. We are currently working on understanding the standard costs of hosting for a variety of different hosting providers, and will update this FAQ with more information as we learn more.
 
 ## How does Guardian Connector compare to other platforms?
 
@@ -53,10 +57,6 @@ Guardian Connector does not aim to replace all of these capabilities or become a
 
 The distinction is therefore not that Guardian Connector is the only platform that supports data integration, conservation monitoring, open-source software, or Indigenous Data Sovereignty. Rather, it is being co-created to bring these priorities together specifically in support of Indigenous organizations and their guardianship goals.
 
-## Is Guardian Connector free?
+## How do I use Guardian Connector?
 
-Yes and no. 
-
-The Guardian Connector platform itself is free to use, and the code is open-source and free to modify and distribute. 
-
-However, Guardian Connector needs to be hosted on a server, and so the cost of hosting has to be covered. Additionally, we strongly recommend also paying for extra services like automated backups, monitoring, and maintenance / upgrades. We are currently working on understanding the standard costs of hosting for a variety of different hosting providers, and will update this FAQ with more information as we learn more.
+Currently, Guardian Connector is in a research and development (R&D) phase. We are working with a number of community organizations to test the platform, gather feedback, and co-create new features. While the tools are open-source and can be self-hosted (see [For Developers](/reference/for-developers)), we are not yet ready to support users that are not partners of [Nia Tero](https://niatero.org/). We hope to be able to support more users in the future, and make it even easier to set up and use Guardian Connector.

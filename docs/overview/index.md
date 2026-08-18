@@ -9,28 +9,37 @@ Guardian Connector is a free and open-source **digital platform for Indigenous g
 
 ## What Guardian Connector Offers
 
-> :fire: **Indigenous Guardianship**: Tools and integrations that are specifically curated for Indigenous organizations to protect their lands, waters, cultures, and collective well-being
+> :fire: **Indigenous Guardianship**: Tools and integrations curated for Indigenous organizations protecting lands, waters, cultures, and collective well-being
 >
-> 🛡️ **Data Sovereignty**: Complete ownership and control over community data
-> 
-> 📊 **Metrics and Reporting**: Access to data visualization tools that can reflect Indigenous perspectives on well-being
+> 🛡️ **Data Sovereignty**: Community organizations own their data and the infrastructure it lives on, with full control over access, storage, and sharing
 >
-> 🔗 **Multi-tool Integration**: Easy use of datasets from multiple monitoring and data collection tools
+> 📊 **Metrics and Reporting**: Visualization tools that can reflect Indigenous perspectives on well-being
 >
-> 🔔 **Near Real-time Alerts**: Near real-time notifications about territorial incursions and environmental changes
+> 🔗 **Multi-tool Integration**: Combine datasets from the monitoring and data collection tools you already use
 >
-> 🏠 **Community-owned Storage**: Data stored on infrastructure that community organizations own entirely
+> 🔌 **Easy Extensibility**: Adding another connector is straightforward when you need to bring in a new tool or data source
 >
-> ♻️ **Long-term Sustainability**: A platform designed to serve community organizations independently, with as little dependency on outside support as possible
+> 🔔 **Near Real-time Alerts**: Notifications about territorial incursions and environmental changes
+>
+> ♻️ **Long-term Sustainability**: Designed so community organizations can operate independently, with as little ongoing outside support as possible
 
 ## How Guardian Connector works
 
 Guardian Connector serves as a bridge between diverse data sources — from mapping and remote sensing to wildlife monitoring and surveys — and the outputs community organizations need, such as maps, dashboards, alerts, and reports. By transforming and storing information in a secure data warehouse, the platform ensures that community organizations can explore, share, and act on their data with confidence.
 
 ![A diagram of the Guardian Connector platform](/img/overview/system-diagram-aug-2026.jpg)
-_A diagram of the Guardian Connector platform
+_A diagram of the Guardian Connector platform_
 
-Guardian Connector is already integrated with widely used tools: ArcGIS/Survey123, CoMapeo, CyberTracker, EpiCollect, Global Forest Watch, iNaturalist, KoboToolbox, Locus Map, Mapbox, ODK, OpenStreetMap, QField, SMART, Superset, Timelapse, and more. See [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) in the Reference section for more details.
+**Guardian Connector is already integrated with widely used tools**: ArcGIS/Survey123, CoMapeo, CyberTracker, EpiCollect, Global Forest Watch, iNaturalist, KoboToolbox, Locus Map, Mapbox, ODK, OpenStreetMap, QField, SMART, Superset, Timelapse, and more. See [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) in the Reference section for more details.
+
+### Who uses which parts of the stack
+
+Not everyone uses every layer of Guardian Connector. Different [user personas](./user-personas/) typically operate different parts of the stack. For example:
+
+- An [Indigenous Tech User](./user-personas/#itu-1) of any experience level may only use the data collection applications that feed into Guardian Connector.
+- An [advanced Indigenous Tech User](./user-personas/#itu-3) may also handle some basic configuration of views or dashboards.
+- An [Indigenous Decision Maker](./user-personas/#idm) may only access dashboards and data views, and will not need to know much more about the technical details of the system.
+- An [Organizational Power User](./user-personas/#opu) may administer the entire stack, sometimes with support from a [Technical Support Partner](./user-personas/#tsp), and in other cases entirely on their own.
 
 ## Why Guardian Connector exists
 

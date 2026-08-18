@@ -54,6 +54,7 @@ The GC Scripts Hub includes connectors that automatically gather data from vario
 
 ### 🌿 Biodiversity Monitoring
 - **[iNaturalist](https://www.inaturalist.org/)**: Import plant and animal observations from iNaturalist.
+- **[Sensing Clues](https://sensingclues.org/)**: Import observations from Sensing Clues / Cluey.
 - **[Timelapse](/reference/core-integrations/timelapse/)**: Import annotated camera trap data from Timelapse.
 
 ### :label: Metadata & Cataloging

@@ -89,11 +89,11 @@ By default, Explorer will not have much to look at, unless we have set one up on
 But as you grow in usage of the system, Explorer may host things like:
 
 - Your remote sensing alerts: logging, mining, airstrips and roads
-- Your views of mapping projects collected using tools like [CoMapeo](../../core-integrations/comapeo/) or [KoboToolbox](../../core-integrations/kobotoolbox/) (both maps and media you share within it)
+- Your views of mapping projects collected using tools like [CoMapeo](/reference/core-integrations/comapeo/) or [KoboToolbox](/reference/core-integrations/kobotoolbox/) (both maps and media you share within it)
 
 ### File Browser
 
-[File Browser](../filebrowser/) is a tool that you can use to safely store your files. It is a less structured means for you to preserve your data, whatever it may be.
+[File Browser](/reference/gc-toolkit/filebrowser/) is a tool that you can use to safely store your files. It is a less structured means for you to preserve your data, whatever it may be.
 
 Your current access credentials are:
 
@@ -101,7 +101,7 @@ Your current access credentials are:
 - User: 
 - Password: 
 
-You can find more information in the [FileBrowser documentation](../filebrowser/).
+You can find more information in the [FileBrowser documentation](/reference/gc-toolkit/filebrowser/).
 
 #### Existing data
 
@@ -116,18 +116,18 @@ Examples of this would be:
 
 ### Superset
 
-[Apache Superset](../superset/) is a data visualization tool integrated with Guardian Connector to help you create customizable dashboards, charts, and graphs for analyzing your data.
+[Apache Superset](/reference/gc-toolkit/superset/) is a data visualization tool integrated with Guardian Connector to help you create customizable dashboards, charts, and graphs for analyzing your data.
 
 You can get to it through this web address: <ParamLink template="https://superset.{alias}.guardianconnector.net/" paramName="alias" defaultValue="alias">superset.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net</ParamLink>
 
 As your Data Warehouse grows, you will want to learn more about the patterns in your data.
-You can find more about it in the [Superset documentation](../superset/).
+You can find more about it in the [Superset documentation](/reference/gc-toolkit/superset/).
 
 Let’s give you access to it now. It will look a little empty, and that is fine for now. Once you surface the need for it, we will work with you to make good use of it.
 
 ### CoMapeo
 
-[CoMapeo](../../core-integrations/comapeo/) is a collaborative mapping tool that works primarily without internet connection.
+[CoMapeo](/reference/core-integrations/comapeo/) is a collaborative mapping tool that works primarily without internet connection.
 
 Guardian Connector can preserve your CoMapeo projects through its Archive Server, and make its data available for you through the tools that we’ve seen already.
 

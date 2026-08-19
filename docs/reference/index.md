@@ -14,7 +14,7 @@ This reference section documents the components, concepts, integrations, and tec
 Reference documentation for the tools and services that make up the Guardian Connector platform.
 
 **What you'll find:**
-- Documentation for [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/), [GC Explorer](/reference/gc-toolkit/gc-explorer/), [Apache Superset](/reference/gc-toolkit/apache-superset/), [FileBrowser](/reference/gc-toolkit/filebrowser/), and other components of the Guardian Connector stack
+- Documentation for [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/), [GC Explorer](/reference/gc-toolkit/gc-explorer/), [Apache Superset](/reference/gc-toolkit/superset/), [FileBrowser](/reference/gc-toolkit/filebrowser/), and other components of the Guardian Connector stack
 - Information on how Guardian Connector uses external services such as Mapbox and Auth0
 - Details on the broader range of data sources and applications that can be connected to Guardian Connector through GC Scripts Hub
 

@@ -23,51 +23,136 @@ Collect this information **at the time of deployment, maintenance, and retrieval
 
 :::
 
-## 1. Understand cameras, locations, and deployments
+## 1. Understand monitoring sessions, cameras, locations, and deployments
 
-Before collecting any data, it is important to distinguish between three things:
+Before collecting any data, it is important to distinguish between four related concepts:
 
-| Concept             | Example         | Meaning                                                         |
-| ------------------- | --------------- | --------------------------------------------------------------- |
-| **Location / Site** | `LOC-014`       | A physical place where cameras may be deployed repeatedly       |
-| **Camera**          | `CAM-07`        | A physical camera device                                        |
-| **Deployment**      | `DEP-2026-0014` | One camera placed at one location for a specific period of time |
+| Concept                | Example                         | Meaning                                                                                |
+| ---------------------- | ------------------------------- | -------------------------------------------------------------------------------------- |
+| **Monitoring Session** | `MS01`                          | A group of related camera deployments carried out during approximately the same period |
+| **Location / Site**    | `Upper Jatapu - Creek Crossing` | A physical place where a camera is deployed                                            |
+| **Camera**             | `LC1`                           | A physical camera used in the project                                                  |
+| **Deployment**         | `MS01-LC1`                      | One camera placed at one location for a specific period of time                                                              |
 
-These identifiers should **not be used interchangeably**.
 
-For example:
+These identifiers should not be used interchangeably.
 
-```text
-Project
-└── Region: Upper Jatapu
-    └── Location: LOC-014
-        ├── Deployment DEP-2026-0014
-        │   └── Camera CAM-07
-        └── Deployment DEP-2026-0031
-            └── Camera CAM-12
-```
+### Deployment
 
-The same camera may later be moved to another location, while the same location may be monitored by several different cameras over the lifetime of a project.
-
-### What about regions, villages, or territories?
-
-Larger geographic groupings such as **region**, **village**, **territory**, **watershed**, or **management zone** are often very useful, but they are project-specific rather than required Camtrap DP fields.
+This guide uses **deployment** in the sense used by [GBIF](https://docs.gbif.org/camera-trap-guide/en/) and [Camtrap DP](https://camtrap-dp.tdwg.org/): one camera placed at one location between a deployment start and deployment end.
 
 For example:
 
 ```text
-region: Upper Jatapu
-locationID: LOC-014
+deploymentID: MS01-LC1
+cameraID: LC1
 locationName: Creek Crossing
+deploymentStart: 2026-05-14
+deploymentEnd: 2026-06-18
 ```
 
-Camtrap DP also provides a `deploymentGroups` field for grouping deployments spatially, temporally, or thematically:
+### Monitoring Session
+
+In practice, camera trap projects usually deploy and retrieve several cameras as part of the same period of fieldwork. We recommend grouping these related deployments into a **Monitoring Session**.
+
+For example:
+
+> During Monitoring Session `MS01`, the Upper Jatapu monitoring team deployed seven cameras across several locations.
+
+The cameras do not need to be deployed or retrieved on exactly the same day. A Monitoring Session may include cameras deployed or collected over several days or weeks, provided they are understood locally as part of the same monitoring effort.
+
+For example:
 
 ```text
-region:Upper Jatapu | season:dry | grid:A3
+Upper Jatapu Camera Trap Project
+
+└── Monitoring Session MS01
+
+    ├── Deployment MS01-LC1
+    │   └── Camera LC1
+
+    ├── Deployment MS01-LC2
+    │   └── Camera LC2
+
+    └── Deployment MS01-TC5
+        └── Camera TC5
 ```
 
-Choose a structure that makes sense locally and use it consistently.
+:::tip Recommended terminology
+
+Use **Monitoring Session** when talking about the broader period of fieldwork, and **Deployment** for the individual camera record.
+
+For example:
+
+> Monitoring Session `MS01` included three deployments: `MS01-LC1`, `MS01-LC2`, and `MS01-TC5`.
+
+This keeps the terminology compatible with GBIF and Camtrap DP while providing a grouping that is easier to use for fieldwork and file management.
+
+:::
+
+### Naming Monitoring Sessions
+
+Monitoring Sessions should be named sequentially and prefixed with `MS`:
+
+```text
+MS01
+MS02
+MS03
+MS04
+```
+
+The number identifies the monitoring session within the project.
+
+### Constructing the deployment ID
+
+When a camera is deployed only once during a Monitoring Session, we recommend constructing the `deploymentID` from:
+
+```text
+monitoringSessionID + cameraID
+```
+
+For example:
+
+```text
+monitoringSessionID: MS01
+cameraID: LC1
+deploymentID: MS01-LC1
+```
+
+Other deployments in the same Monitoring Session might therefore be:
+
+```text
+MS01-LC1
+MS01-LC2
+MS01-TC5
+MS01-TC8
+```
+
+This makes deployment IDs easy to construct and interpret while still giving every deployment its own identifier.
+
+### Representing Monitoring Sessions in Camtrap DP
+
+`monitoringSessionID` is a project-level field recommended by this guide. It is not a dedicated Camtrap DP field.
+
+We recommend keeping it in the project's source data:
+
+```text
+monitoringSessionID: MS01
+deploymentID: MS01-LC1
+cameraID: LC1
+```
+
+Camtrap DP also provides a `deploymentGroups` field that can be used to preserve groupings such as Monitoring Sessions when data are converted to Camtrap DP:
+
+```text
+monitoringSession:MS01
+```
+
+Other useful groupings might include region, season, village, watershed, or management zone:
+
+```text
+monitoringSession:MS01 | region:Upper Jatapu | season:dry
+```
 
 ---
 
@@ -77,11 +162,23 @@ GBIF recommends structuring camera trap data so that it can eventually be repres
 
 At minimum, every deployment needs to answer:
 
-1. **Which deployment is this?**
-2. **Where was the camera?**
-3. **When was it operating?**
-4. **Which camera was used?**
-5. **How was the camera configured and positioned?**
+1. **Which Monitoring Session does it belong to?**
+2. **Which deployment is this?**
+3. **Where was the camera?**
+4. **When was it operating?**
+5. **Which camera was used?**
+6. **How was the camera configured and positioned?**
+
+For example:
+
+```text
+monitoringSessionID: MS01
+deploymentID: MS01-LC1
+cameraID: LC1
+locationName: Creek Crossing
+deploymentStart: 2026-05-14
+deploymentEnd: 2026-06-18
+```
 
 ### Camtrap DP deployment fields
 
@@ -141,6 +238,7 @@ A deployment should be documented throughout its lifecycle rather than only when
 
 When installing a camera, record at least:
 
+* Monitoring Session ID
 * Deployment ID
 * Location ID and name
 * Region or other relevant geographic grouping
@@ -176,6 +274,8 @@ When visiting an active camera, record:
 * Problems discovered
 * Actions taken
 
+Each time a camera is serviced, the SD card should be downloaded and safely backed up.
+
 Whenever possible, select the **existing deployment** rather than manually retyping its identifiers.
 
 ### Retrieving a camera
@@ -195,7 +295,184 @@ Once the media have been copied and organized, see the [Timelapse Camera Trap An
 
 ---
 
-## 4. Choosing a tool for deployment data collection
+## 4. Organizing camera trap photos and videos
+
+Camera trap media should be organized carefully as soon as SD cards are downloaded.
+
+We recommend organizing all media within a single **project folder**, with folders for each **Monitoring Session**, and camera folders inside each Monitoring Session.
+
+For the Upper Jatapu project:
+
+```text
+Upper_Jatapu_Camera_Trap_Project/
+```
+
+Inside the project folder:
+
+```text
+Upper_Jatapu_Camera_Trap_Project/
+├── MS01/
+├── MS02/
+└── MS03/
+```
+
+Each Monitoring Session folder then contains a folder for every camera included in that session:
+
+```text
+MS01/
+├── LC1/
+├── LC2/
+└── TC5/
+```
+
+Camera folders should use the **same camera ID recorded in the deployment data**.
+
+For example, the folder:
+
+```text
+Upper_Jatapu_Camera_Trap_Project/MS01/LC1/
+```
+
+corresponds to:
+
+```text
+monitoringSessionID: MS01
+cameraID: LC1
+deploymentID: MS01-LC1
+```
+
+### Example folder structure
+
+```text
+Upper_Jatapu_Camera_Trap_Project/
+│
+├── MS01/
+│   ├── LC1/
+│   │   ├── IMG_0001.JPG
+│   │   ├── IMG_0002.JPG
+│   │   └── ...
+│   │
+│   └── LC2/
+│       ├── IMG_0101.JPG
+│       └── ...
+│
+├── MS02/
+│   ├── LC1/
+│   │   ├── IMG_0001.JPG
+│   │   └── ...
+│   │
+│   └── TC5/
+│       ├── IMG_0301.JPG
+│       └── ...
+│
+└── MS03/
+    └── TC8/
+        └── ...
+```
+
+In this example:
+
+* `Upper_Jatapu_Camera_Trap_Project` is the project.
+* `MS01`, `MS02`, and `MS03` are Monitoring Sessions.
+* `LC1`, `LC2`, `TC5`, and `TC8` are cameras.
+* `MS01-LC1`, `MS01-LC2`, `MS02-LC1`, `MS02-TC5`, and `MS03-TC8` are deployments.
+
+The same camera can therefore appear in several Monitoring Sessions without creating ambiguity:
+
+```text
+MS01/LC1/ → deploymentID MS01-LC1
+MS02/LC1/ → deploymentID MS02-LC1
+```
+
+### Copying files from SD cards
+
+Photos and videos can normally be copied directly into the appropriate camera folder.
+
+For example:
+
+```text
+Upper_Jatapu_Camera_Trap_Project/
+└── MS01/
+    └── LC1/
+        ├── IMG_0001.JPG
+        ├── IMG_0002.JPG
+        └── IMG_0003.JPG
+```
+
+However, some cameras create multiple folders on the SD card.
+
+If there are **two or more folders containing media on a single SD card, preserve those folders exactly as they appear on the SD card** instead of combining their contents.
+
+For example:
+
+```text
+Upper_Jatapu_Camera_Trap_Project/
+└── MS01/
+    └── LC1/
+        ├── 100MEDIA/
+        │   ├── IMG_0001.JPG
+        │   └── ...
+        │
+        └── 101MEDIA/
+            ├── IMG_0001.JPG
+            └── ...
+```
+
+:::important Do not combine duplicate camera folders
+
+Many cameras name files using a sequence such as:
+
+```text
+IMG_0001.JPG
+IMG_0002.JPG
+...
+IMG_9999.JPG
+```
+
+After the camera reaches the end of the numbering sequence, it may create another folder on the SD card and begin using the same filenames again.
+
+If the contents of these folders are combined, files can be overwritten or automatically renamed to filenames such as:
+
+```text
+IMG_0001 (1).JPG
+```
+
+This creates serious problems later when determining whether images are duplicates or reconstructing where the original files came from.
+
+When a camera creates multiple media folders, **copy those folders into the camera folder without changing their internal structure or filenames**.
+
+:::
+
+### What if a camera has two deployments in the same Monitoring Session?
+
+The normal folder structure assumes that each camera has one deployment per Monitoring Session.
+
+If a camera is retrieved and redeployed during the same Monitoring Session, create separate deployment folders so that media from the two deployments cannot be mixed.
+
+For example:
+
+```text
+Upper_Jatapu_Camera_Trap_Project/
+└── MS01/
+    └── LC1/
+        ├── 01/
+        │   └── ...
+        └── 02/
+            └── ...
+```
+
+These correspond to:
+
+```text
+MS01-LC1-01
+MS01-LC1-02
+```
+
+For most projects this additional level should not be necessary.
+
+---
+
+## 5. Choosing a tool for deployment data collection
 
 There is no single best application for every camera trap project.
 
@@ -276,16 +553,43 @@ However, linked data must be uploaded to the Kobo server and downloaded to field
 Whichever tool you choose, the most important thing is not the application itself. It is maintaining a consistent relationship between:
 
 ```text
-LOCATION
-   ↕
+PROJECT
+  ↓
+MONITORING SESSION
+  ↓
 DEPLOYMENT
-   ↕
-CAMERA
-   ↕
+ ↙       ↘
+CAMERA   LOCATION
+  ↓
 MEDIA
 ```
 
-If those relationships are preserved, the imagery collected today can still be understood, mapped, analyzed, and reused years later.
+For example:
+
+```text
+Upper Jatapu Camera Trap Project
+        ↓
+       MS01
+        ↓
+     MS01-LC1
+      ↙    ↘
+    LC1   Creek Crossing
+      ↓
+    Photos
+```
+
+The corresponding file structure can remain much simpler:
+
+```text
+Upper_Jatapu_Camera_Trap_Project/
+└── MS01/
+    └── LC1/
+        └── ...
+```
+
+The filesystem is therefore organized around concepts that are easy for people to work with — **project, Monitoring Session, and camera** — while the metadata retains the more precise scientific concept of an individual **deployment**.
+
+If these relationships are preserved consistently, camera trap imagery can continue to be understood, mapped, analyzed, and reused long after it was originally collected.
 
 ## 📚 Further reading
 
@@ -295,9 +599,3 @@ If those relationships are preserved, the imagery collected today can still be u
 * [CoMapeo Documentation](https://docs.comapeo.app/)
 * [ODK — Introduction to Entities](https://docs.getodk.org/entities-intro/)
 * [KoboToolbox — Dynamic Data Attachments](https://support.kobotoolbox.org/dynamic_data_attachment.html)
-
-[1]: https://camtrap-dp.tdwg.org/data/ "Data - Camtrap DP"
-[2]: https://docs.comapeo.app/docs/reviewing-individual-observations-and-tracks/ "Reviewing Individual Observations & Tracks | Comapeo Documentation"
-[3]: https://docs.getodk.org/entities-intro/?utm_source=chatgpt.com "Introduction to Entities"
-[4]: https://support.kobotoolbox.org/dynamic_data_attachment.html?utm_source=chatgpt.com "Dynamic data attachments in XLSForm"
-[5]: https://docs.gbif.org/camera-trap-guide/en/ "Best Practices for Managing and Publishing Camera Trap Data"

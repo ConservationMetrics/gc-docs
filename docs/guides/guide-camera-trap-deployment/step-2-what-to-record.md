@@ -73,4 +73,4 @@ Coordinates should preferably include:
 - Coordinate accuracy/uncertainty
 - The coordinate reference system, normally WGS84
 
-Phones and GPS receivers can provide an estimate of location accuracy, and tools such as [CoMapeo](/reference/connected-applications/comapeo/index.md), [KoboToolbox](/reference/connected-applications/kobotoolbox/index.md), and [ODK](https://docs.getodk.org/collect-intro/) can capture this automatically.
+Phones and GPS receivers can provide an estimate of location accuracy, and tools such as [CoMapeo](/reference/core-integrations/comapeo/index.md), [KoboToolbox](/reference/core-integrations/kobotoolbox/index.md), and [ODK](https://docs.getodk.org/collect-intro/) can capture this automatically.

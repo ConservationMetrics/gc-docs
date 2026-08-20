@@ -32,15 +32,16 @@ A comprehensive 4-week self-paced learning program that takes you from KoboToolb
 
 ### 📸+🐾 [Guide: Collecting Camera Trap Deployment Data](./guide-camera-trap-deployment/)
 
-A practical guide for documenting camera trap deployments, maintenance, and retrievals. Designed to help communities keep a reliable record of which camera was placed where, during what period, and under what conditions — so later imagery can still be mapped, compared, and reused.
+A practical guide for documenting camera trap deployments, maintenance, and retrievals. Includes a field protocol for preparing equipment, deploying and servicing cameras, and processing SD cards. Designed to help communities keep a reliable record of which camera was placed where, during what period, and under what conditions — so later imagery can still be mapped, compared, and reused.
 
 **What you'll learn:**
-- Distinguishing locations, cameras, and deployments so identifiers stay consistent
+- Distinguishing Monitoring Sessions, locations, cameras, and deployments so identifiers stay consistent
 - Which deployment metadata to record, including Camtrap DP fields
-- Documenting installation, maintenance visits, and retrieval in the field
 - Choosing a data collection tool such as CoMapeo, ODK, KoboToolbox, or a simple form
+- Following a field protocol for deployment, maintenance, retrieval, and SD card handling
+- Organizing photos and videos by project, Monitoring Session, and camera
 
-**Format:** Step-by-step guide with tables, practical examples, and a ready-to-use CoMapeo category set.
+**Format:** Multi-page guide (concepts, metadata, tools, field protocol, and media organization) with tables, practical examples, and a ready-to-use CoMapeo category set.
 
 ### 🖼️+🏷️ [Guide: Setting up a Project in Timelapse for Camera Trap Annotation](./guide-timelapse-project/)
 

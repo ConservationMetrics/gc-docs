@@ -1,9 +1,9 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 tags: [itu-3, idm, opu, tsp]
 ---
 
-# 🏷️ Guide: Annotating Datasets with Local Contexts Labels
+# 🌿+🏷️ Guide: Annotating Datasets with Local Contexts Labels
 
 ![Local Contexts Labels](/img/guides/guide-local-contexts/local-contexts.webp)
 

@@ -1,9 +1,9 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 tags: [itu-3, opu, tsp]
 ---
 
-# 📸+🐾 Guide: Setting up a Camera Trap Project in Timelapse
+# 🖼️+🏷️ Guide: Setting up a Project in Timelapse for Camera Trap Annotation
 
 ## Introduction
 
@@ -18,7 +18,7 @@ Timelapse is actively developed, open source ([GitHub repo](https://github.com/s
 :::tip
 This guide is only for **annotating** camera trap images and videos that have already been collected. It is not a guide for setting up a camera trap project or handling deployment.
 
-For deployment, we do make available a [CoMapeo category set for Camera Trap Deployment](/reference/core-integrations/comapeo/camera-trap-deployment.md) that can be used to document camera trap deployments, maintenance, and retrievals using [CoMapeo](/reference/core-integrations/comapeo/index.md).
+For deployment, see the [Deploying Camera Traps](/guides/guide-camera-trap-deployment/) guide.
 :::
 
 ## Installing Timelapse

@@ -18,10 +18,10 @@ In many cases, **the best tool is one that the field team already knows and uses
 
 ## CoMapeo
 
-CoMapeo can be particularly appropriate when community monitors are **already using it for mapping and territorial monitoring**. Introducing a second application solely for camera traps may create unnecessary training overhead.
+[CoMapeo](/reference/core-integrations/comapeo/index.md) can be particularly appropriate when community monitors are **already using it for mapping and territorial monitoring**. Introducing a second application solely for camera traps may create unnecessary training overhead.
 
 :::tip Existing Category Set
-We provide a ready-to-use [CoMapeo Camera Trap Deployment category set](/reference/connected-applications/comapeo/camera-trap-deployment.md) that includes categories for:
+We provide a ready-to-use [CoMapeo Camera Trap Deployment category set](/reference/core-integrations/comapeo/camera-trap-deployment.md) that includes categories for:
 
 - Camera Trap Deployment
 - Camera Trap Maintenance
@@ -58,7 +58,7 @@ This is especially useful for larger camera networks or projects where the same 
 
 ## KoboToolbox
 
-A similar workflow can be implemented in KoboToolbox using [dynamic data attachments](https://support.kobotoolbox.org/dynamic_data_attachment.html).
+A similar workflow can be implemented in [KoboToolbox](/reference/core-integrations/kobotoolbox/index.md) using [dynamic data attachments](https://support.kobotoolbox.org/dynamic_data_attachment.html).
 
 For example:
 

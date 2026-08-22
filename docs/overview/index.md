@@ -67,9 +67,7 @@ Guardian Connector is being co-created by [Conservation Metrics, Inc.](https://c
 - Instituto Iepé — Brazil :brazil:
 - North Pakaraimas District Council (NPDC) — Guyana :guyana:
 - Nyae Nyae Development Foundation of Namibia (NNDFN) — Namibia :namibia:
-- Pastoralist Women's Council (PWC) — Tanzania :tanzania:
 - South Rupununi District Council (SRDC) — Guyana :guyana:
 - Stichting Mulokot — Suriname :suriname:
-- Ujamaa Community Resources Center (UCRT) — Tanzania :tanzania:
 - União dos Povos Indígenas do Vale do Javari (UNIVAJA) — Brazil :brazil:   
 - Upper Mazuruni District Council (UMDC) — Guyana :guyana:

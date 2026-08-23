@@ -62,6 +62,22 @@ Fields marked **Required** are required by the Camtrap DP standard. The others a
 
 See the [Camtrap DP deployment schema](https://camtrap-dp.tdwg.org/data/#deployments) for the complete definitions and allowed values.
 
+## Additional recommended fields
+
+Camtrap DP does not include every field that is useful for managing camera trap projects in the field. This guide also recommends recording the following.
+
+When you later publish data as Camtrap DP, `monitoringSessionID` can be stored in `deploymentGroups`. SD card IDs and extra location notes can be stored in `deploymentTags` or `deploymentComments`.
+
+| Field                      | What it records                                                                                                                          |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| `monitoringSessionID`     | Identifier of the [Monitoring Session](step-1-concepts) this deployment belongs to, such as `MS01`                                        |
+| `sdCardIDInserted`        | Identifier of the SD card installed in the camera at deployment or during a maintenance visit                                                |
+| `sdCardIDRetrieved`       | Identifier of the SD card removed from the camera during maintenance or retrieval                                                            |
+| `otherLocationInformation` | Extra site details not captured by `locationName` or `habitat`, such as position above a stream or along a particular trail              |
+| `cameraStillThere`        | Whether the camera was still at the site when the team arrived for maintenance or retrieval                                                  |
+| `cameraDamaged`           | Whether the camera was damaged                                                                                                          |
+| `cameraWorking`           | Whether the camera was still functioning when the team arrived                                                                            |
+
 ## :globe_with_meridians: Coordinates are especially important
 
 Always record the coordinates of the actual camera location when possible.

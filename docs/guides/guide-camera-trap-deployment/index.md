@@ -31,7 +31,7 @@ Distinguish four related concepts — Monitoring Session, location, camera, and 
 
 ### [**2. What information should be recorded?**](step-2-what-to-record)
 
-The Camtrap DP deployment fields every project should collect, with special attention to coordinates.
+The Camtrap DP deployment fields every project should collect, plus additional recommended fields such as Monitoring Session and SD Card ID, with special attention to coordinates.
 
 ### [**3. Choosing a tool for deployment data collection**](step-3-choosing-a-tool)
 

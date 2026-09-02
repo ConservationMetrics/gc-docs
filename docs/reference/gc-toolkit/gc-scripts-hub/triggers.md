@@ -3,12 +3,12 @@ sidebar_position: 2
 tags: [itu-3, opu, tsp]
 ---
 
+# Running, Scheduling, or Triggering Scripts and Flows
+
 :::important
-**Always check the official source.** 
+**Always check the official source.**
 Because the platform is constantly evolving, the capabilities for schedules and triggers may expand. For the most accurate, comprehensive, and up-to-date instructions, [Windmill's own documentation](https://www.windmill.dev/docs) should always be treated as the ultimate source of truth.
 :::
-
-# Running, Scheduling, or Triggering Scripts and Flows
 
 You can set scripts and flows to run on a set schedule, or automatically trigger them to run in the background whenever specific events happen in your other tools.
 

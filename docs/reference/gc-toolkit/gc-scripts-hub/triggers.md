@@ -30,9 +30,20 @@ When using KoboToolbox to collect data in the field, you don't need to manually 
 
 As soon as a surveyor submits a new record, KoboToolbox automatically triggers your Windmill script to run and process the new data. This ensures your datasets in Guardian Connector are updated in real-time, without any manual intervention.
 
-*To set this up, you simply generate a unique Webhook URL for your script in the Windmill, and paste it into the "REST Services" settings of your KoboToolbox project.*
+To set this up, first open your "KoboToolbox: Fetch Survey Responses" script (`kobotoolbox/kobotoolbox_responses`) in Windmill, and fill out the required details for your survey. Once that's done, go to the **Triggers** tab, select **Webhooks**, generate a new webhook token and keep it. Windmill will also provide a URL, and a **body** — keep these handy, as you will need all three.
+
+Next, switch over to KoboToolbox. Open your survey, navigate to **Settings → REST Services**, and configure the following:
+
+* Paste the URL from Windmill into the **Endpoint URL** field.
+* Set the **Type** to JSON.
+* Add a custom HTTP Header with the key `Authorization` and the value `Bearer <your webhook token>`.
+* Paste the **body** from Windmill into the **Add custom wrapper around JSON submission** field.
+* Click **Save**.
+
+For the full details, see [KoboToolbox's REST Services documentation](https://support.kobotoolbox.org/rest_services.html).
 
 ## Other Ways to Trigger Scripts
 
+* **Manual Runs:** Run a script whenever you need to, with a single click, right from the Windmill interface. Use this when you don't want to wait for a schedule, or when you only need to run a script occasionally.
 * **[HTTP](https://www.windmill.dev/docs/triggers/http_routing):** Run a script whenever a specific web link is visited or pinged.
 * Example: Creating a custom web address that your team can click on their mobile browser to quickly process a file.

@@ -12,6 +12,16 @@ Because the platform is constantly evolving, the capabilities for schedules and 
 
 You can set scripts and flows to run on a set schedule, or automatically trigger them to run in the background whenever specific events happen in your other tools.
 
+## Scheduling
+
+The most common way to run scripts is on a set schedule, so they run automatically at regular times without you needing to do anything.
+
+### Regular Data Syncing with Schedules
+
+For example, you can set a script to pull data from KoboToolbox every hour, or every night at midnight. Once the schedule is set up, Windmill handles everything automatically — you simply check the results when you're ready.
+
+*To set this up, you open your script or flow in Windmill, find the **Schedule** option, and choose how often you want it to run (for example, every hour, daily, or weekly). For full details, see [Windmill's scheduling documentation](https://www.windmill.dev/docs/triggers/schedules).*
+
 ## Webhooks
 
 ### Real-Time Syncing with KoboToolbox Webhooks

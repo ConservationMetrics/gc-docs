@@ -30,9 +30,10 @@ When using KoboToolbox to collect data in the field, you don't need to manually 
 
 As soon as a surveyor submits a new record, KoboToolbox automatically triggers your Windmill script to run and process the new data. This ensures your datasets in Guardian Connector are updated in real-time, without any manual intervention.
 
-Setting this up needs a few pieces of information, not just the webhook URL. In Windmill, you open your KoboToolbox script, go to the **Triggers** tab, then **Webhooks**, and generate a new webhook token. Windmill then gives you a URL, a **body**, and a **header token** — you need all three.
+To set this up, first open your "KoboToolbox: Fetch Survey Responses" script (`kobotoolbox/kobotoolbox_responses`) in Windmill, and fill out the required details for your survey. Once that's done, go to the **Triggers** tab, select **Webhooks**, generate a new webhook token and keep it. Windmill will also provide a URL, and a **body** — keep these handy, as you will need all three.
 
-Then, in KoboToolbox, you open the survey in **Settings → REST Services** and:
+Next, switch over to KoboToolbox. Open your survey, navigate to **Settings → REST Services**, and configure the following:
+
 * Paste the URL from Windmill into the **Endpoint URL** field.
 * Set the **Type** to JSON.
 * Add a custom HTTP Header with the key `Authorization` and the value `Bearer <your webhook token>`.

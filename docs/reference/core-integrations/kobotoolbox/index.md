@@ -8,7 +8,7 @@ tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
 [KoboToolbox](https://www.kobotoolbox.org/) is a free, open-source suite of tools for mobile data collection. It allows users to build forms, collect data in the field using mobile devices, and analyze the collected data through web-based interfaces. Originally developed for humanitarian contexts, KoboToolbox excels at creating surveys, questionnaires, and data collection forms that work reliably in challenging environments with limited connectivity.
 
 :::tip
-We have a 4-week guided syllabus available for working with KoboToolbox: see [KoboToolbox Syllabus](/guides/syllabus-data-management-with-kobotoolbox/).
+We have a 4-week guided syllabus available for working with KoboToolbox: see [KoboToolbox Syllabus](/guides/data-collection/syllabus-data-management-with-kobotoolbox/).
 :::
 
 ## Why KoboToolbox is Integrated with Guardian Connector

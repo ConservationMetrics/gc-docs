@@ -1,9 +1,9 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
 ---
 
-# 📱+📋 Syllabus: Data Management with KoboToolbox
+# 📱+📋 Data Management with KoboToolbox
 
 ## **Overview**
 

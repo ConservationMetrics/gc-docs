@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 2
 tags: [itu-3, idm, opu, tsp]
 ---
 

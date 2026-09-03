@@ -22,11 +22,11 @@ This category set has four categories:
 - **Camera Trap Path** (_track_)
 
 :::tip
-For a guide on collecting camera trap deployment data, see the [Collecting Camera Trap Deployment Data](/guides/guide-camera-trap-deployment/) guide.
+For a guide on collecting camera trap deployment data, see the [Collecting Camera Trap Deployment Data](/guides/biodiversity/guide-camera-trap-deployment/) guide.
 :::
 
 :::note
-This category set does not yet include a Monitoring Session field. The [camera trap deployment guide](/guides/guide-camera-trap-deployment/step-1-concepts) recommends recording `monitoringSessionID`. Add this field when [customizing the category set](#customizing-the-category-set), or encode it in the `deploymentID` as described in [Step 1](/guides/guide-camera-trap-deployment/step-1-concepts).
+This category set does not yet include a Monitoring Session field. The [camera trap deployment guide](/guides/biodiversity/guide-camera-trap-deployment/step-1-concepts) recommends recording `monitoringSessionID`. Add this field when [customizing the category set](#customizing-the-category-set), or encode it in the `deploymentID` as described in [Step 1](/guides/biodiversity/guide-camera-trap-deployment/step-1-concepts).
 :::
 
 ## GBIF recommended fields in CoMapeo

@@ -4,7 +4,7 @@ tags: [itu-3, opu, tsp]
 # Step 6: Data Transfer & Management
 
 Files should be organized in a similar fashion to [camera trap
-data](/guides/guide-timelapse-project/step-1-organizing-imagery.md).
+data](/guides/biodiversity/guide-timelapse-project/step-1-organizing-imagery.md).
 
 ## Copying Data
 

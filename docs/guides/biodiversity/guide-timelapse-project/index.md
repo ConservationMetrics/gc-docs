@@ -1,9 +1,9 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 tags: [itu-3, opu, tsp]
 ---
 
-# 🖼️+🏷️ Guide: Setting up a Project in Timelapse for Camera Trap Annotation
+# 🖼️+🏷️ Setting up a Project in Timelapse for Camera Trap Annotation
 
 ## Introduction
 
@@ -18,7 +18,7 @@ Timelapse is actively developed, open source ([GitHub repo](https://github.com/s
 :::tip
 This guide is only for **annotating** camera trap images and videos that have already been collected. It is not a guide for setting up a camera trap project or handling deployment.
 
-For deployment, see the [Deploying Camera Traps](/guides/guide-camera-trap-deployment/) guide.
+For deployment, see the [Deploying Camera Traps](/guides/biodiversity/guide-camera-trap-deployment/) guide.
 :::
 
 ## Installing Timelapse

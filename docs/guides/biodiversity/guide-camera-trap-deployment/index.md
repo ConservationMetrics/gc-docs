@@ -1,9 +1,9 @@
 ---
-sidebar_position: 2
+sidebar_position: 0
 tags: [itu-3, opu, tsp]
 ---
 
-# 📸+🐾 Guide: Collecting Camera Trap Deployment Data
+# 📸+🐾 Collecting Camera Trap Deployment Data
 
 ## Introduction
 
@@ -90,7 +90,7 @@ If these relationships are preserved consistently, camera trap imagery can conti
 
 ## What's next?
 
-Once the camera trap media have been copied and organized, see the [Timelapse Camera Trap Annotation Guide](/guides/guide-timelapse-project/) for reviewing and annotating images and videos.
+Once the camera trap media have been copied and organized, see the [Timelapse Camera Trap Annotation Guide](/guides/biodiversity/guide-timelapse-project/) for reviewing and annotating images and videos.
 
 ## 📚 Further reading
 

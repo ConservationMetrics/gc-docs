@@ -43,20 +43,40 @@
     "message": "Fluxos de Trabalho Comuns",
     "description": "The label for category Common Workflows in sidebar referenceSidebar"
   },
-  "sidebar.guidesSidebar.category.📚 Syllabus: Data Management with KoboToolbox": {
-    "message": "📚 Programa do curso: Gerenciamento de dados com o KoboToolbox",
-    "description": "The label for category 📚 Syllabus: Data Management with KoboToolbox in sidebar guidesSidebar"
+  "sidebar.guidesSidebar.category.Data Collection": {
+    "message": "Coleta de Dados",
+    "description": "The label for category Data Collection in sidebar guidesSidebar"
   },
-  "sidebar.guidesSidebar.category.📸+🐾 Guide: Setting up a Camera Trap Project in Timelapse": {
-    "message": "📸+🐾 Guia: Como configurar um projeto de Armadilha Fotográfica em Timelapse",
-    "description": "The label for category 📸+🐾 Guide: Setting up a Camera Trap Project in Timelapse in sidebar guidesSidebar"
+  "sidebar.guidesSidebar.category.Biodiversity": {
+    "message": "Biodiversidade",
+    "description": "The label for category Biodiversity in sidebar guidesSidebar"
   },
-  "sidebar.guidesSidebar.category.🔊+🦉 Guide: Bioacoustics Basics with AudioMoth Sensors": {
-    "message": "🔊+🦉 Guia: Noções Básicas de Bioacústica com Sensores AudioMoth",
-    "description": "The label for category 🔊+🦉 Guide: Bioacoustics Basics with AudioMoth Sensors in sidebar guidesSidebar"
+  "sidebar.guidesSidebar.category.Data Sovereignty": {
+    "message": "Soberania de Dados",
+    "description": "The label for category Data Sovereignty in sidebar guidesSidebar"
   },
-  "sidebar.guidesSidebar.category.📜 Guide: Data Sharing Protocols Grounded in Indigenous Data Sovereignty": {
-    "message": "📜 Guia: Protocolos de Compartilhamento de Dados Fundamentados na Soberania de Dados Indígenas",
-    "description": "The label for category 📜 Guide: Data Sharing Protocols Grounded in Indigenous Data Sovereignty in sidebar guidesSidebar"
+  "sidebar.guidesSidebar.category.📱+📋 Data Management with KoboToolbox": {
+    "message": "📱+📋 Gerenciamento de Dados com o KoboToolbox",
+    "description": "The label for category 📱+📋 Data Management with KoboToolbox in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.📸+🐾 Collecting Camera Trap Deployment Data": {
+    "message": "📸+🐾 Coleta de Dados de Implantação de Armadilhas Fotográficas",
+    "description": "The label for category 📸+🐾 Collecting Camera Trap Deployment Data in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.🖼️+🏷️ Setting up a Project in Timelapse for Camera Trap Annotation": {
+    "message": "🖼️+🏷️ Configurando um Projeto no Timelapse para Anotação de Armadilhas Fotográficas",
+    "description": "The label for category 🖼️+🏷️ Setting up a Project in Timelapse for Camera Trap Annotation in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.🔊+🦉 Bioacoustics Basics with AudioMoth Sensors": {
+    "message": "🔊+🦉 Noções Básicas de Bioacústica com Sensores AudioMoth",
+    "description": "The label for category 🔊+🦉 Bioacoustics Basics with AudioMoth Sensors in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.🌿+🏷️ Annotating Datasets with Local Contexts Labels": {
+    "message": "🌿+🏷️ Anotando Conjuntos de Dados com Rótulos Local Contexts",
+    "description": "The label for category 🌿+🏷️ Annotating Datasets with Local Contexts Labels in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.🌿+🤝 Data Sharing Protocols Grounded in Indigenous Data Sovereignty": {
+    "message": "🌿+🤝 Protocolos de Compartilhamento de Dados Fundamentados na Soberania de Dados Indígenas",
+    "description": "The label for category 🌿+🤝 Data Sharing Protocols Grounded in Indigenous Data Sovereignty in sidebar guidesSidebar"
   }
 }

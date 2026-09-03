@@ -1,9 +1,9 @@
 ---
-sidebar_position: 5
+sidebar_position: 0
 tags: [itu-3, idm, opu, tsp]
 ---
 
-# 🌿+🏷️ Guide: Annotating Datasets with Local Contexts Labels
+# 🌿+🏷️ Annotating Datasets with Local Contexts Labels
 
 ![Local Contexts Labels](/img/guides/guide-local-contexts/local-contexts.webp)
 
@@ -13,7 +13,7 @@ This guide explains how to create and curate **[Traditional Knowledge (TK)](http
 
 [Local Contexts](https://localcontexts.org/) provides a structured, community-informed way to describe how data should be understood and used, especially where Indigenous provenance or biocultural relevance matters. TK and BC Labels express expectations around attribution, consent, and appropriate use in a form that can travel with metadata and tools.
 
-In Guardian Connector, Labels are treated as **catalog metadata**, not as automatic tags on every table. That separation keeps stewardship explicit: having Labels in the Hub or in the warehouse does not, by itself, label every dataset. For broader framing on community governance of data, see [Data Sharing Protocols Grounded in Indigenous Data Sovereignty](/guides/guide-data-sovereignty-and-protocols/).
+In Guardian Connector, Labels are treated as **catalog metadata**, not as automatic tags on every table. That separation keeps stewardship explicit: having Labels in the Hub or in the warehouse does not, by itself, label every dataset. For broader framing on community governance of data, see [Data Sharing Protocols Grounded in Indigenous Data Sovereignty](/guides/data-sovereignty/guide-data-sovereignty-and-protocols/).
 
 ![Local Contexts Integration Partner](/img/guides/guide-local-contexts/Integration-Partner-Certified-Logo.png)
 

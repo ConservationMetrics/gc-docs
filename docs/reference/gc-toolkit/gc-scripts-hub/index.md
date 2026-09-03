@@ -58,7 +58,7 @@ The GC Scripts Hub includes connectors that automatically gather data from vario
 - **[Timelapse](/reference/core-integrations/timelapse/)**: Import annotated camera trap data from Timelapse.
 
 ### :label: Metadata & Cataloging
-- **[Local Contexts](https://localcontexts.org/)**: Annotate datasets using Local Contexts Traditional Knowledge (TK) and Biocultural (BC) labels. See the [Local Contexts](/guides/guide-local-contexts/) guide for more details.
+- **[Local Contexts](https://localcontexts.org/)**: Annotate datasets using Local Contexts Traditional Knowledge (TK) and Biocultural (BC) labels. See the [Local Contexts](/guides/data-sovereignty/guide-local-contexts/) guide for more details.
 
 ### :globe_with_meridians: Communication
 - **[Twilio](https://www.twilio.com/)**: Send WhatsApp messages to community members. See the [Twilio](/reference/gc-toolkit/externally-hosted/twilio/) page for more details.

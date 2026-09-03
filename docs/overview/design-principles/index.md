@@ -25,7 +25,7 @@ Indigenous data sovereignty means the inherent rights and interests that Indigen
 _From the UN Human Rights Council's Expert Mechanism on the Rights of Indigenous Peoples ["Right of Indigenous Peoples to data, including with regard to data collection and disaggregation"](https://digitallibrary.un.org/record/4087217?v=pdf)_  
 :::
 
-In alignment with the [CARE Principles for Indigenous Data Governance](/guides/guide-data-sovereignty-and-protocols/#what-are-the-care-principles-for-indigenous-data-governance) and the UN Human Rights Council's Expert Mechanism on the Rights of Indigenous Peoples [Right of Indigenous Peoples to data, including with regard to data collection and disaggregation](https://digitallibrary.un.org/record/4087217?v=pdf) study, our partners must be able to:
+In alignment with the [CARE Principles for Indigenous Data Governance](/guides/data-sovereignty/guide-data-sovereignty-and-protocols/#what-are-the-care-principles-for-indigenous-data-governance) and the UN Human Rights Council's Expert Mechanism on the Rights of Indigenous Peoples [Right of Indigenous Peoples to data, including with regard to data collection and disaggregation](https://digitallibrary.un.org/record/4087217?v=pdf) study, our partners must be able to:
 - Own the infrastructure where data is stored
 - Control data collection, storage, and transmission across the project lifecycle
 - Access their data at all times

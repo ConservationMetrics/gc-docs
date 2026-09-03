@@ -9,7 +9,7 @@ While data sovereignty, and Indigenous data sovereignty in particular, are impor
 :::
 
 :::note
-See also our guide on [Data Sharing Protocols Grounded in Indigenous Data Sovereignty](/guides/guide-data-sovereignty-and-protocols/).
+See also our guide on [Data Sharing Protocols Grounded in Indigenous Data Sovereignty](/guides/data-sovereignty/guide-data-sovereignty-and-protocols/).
 :::
 
 _:dart: denotes an aspirational principle, to be implemented in the future_

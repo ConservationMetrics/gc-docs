@@ -11,6 +11,8 @@ This page is a growing collection of notes on how to get the most out of Superse
 
 ## The Handlebars Chart
 
+### What it is
+
 The **Handlebars** chart is a special chart type that lets you design your own visualization using plain HTML and CSS. Instead of choosing colors and axes like in a standard chart, you write (or generate) a small template, and Superset fills it with the results of your query.
 
 You can use it for things like:
@@ -24,6 +26,14 @@ The template language is called [Handlebars](https://handlebarsjs.com/), and Sup
 :::tip
 You do **not** need to know HTML, CSS, or Handlebars to use this chart. The workflow below is designed so that a language model (LLM) writes the code for you, and you just copy it into Superset.
 :::
+
+### The problem standard charts didn't solve
+
+Here is an example from one of our partners. They were taking water quality measurements — temperature, turbidity, oxygen levels, and pH — at sample sites around their territory, and they needed the value of this data to surface in two places: at the village level, where people depend directly on the water, and at a higher coordination level, where trends across sites matter.
+
+Charts and maps were useful, but they didn't paint the whole picture of what the information was saying. In particular, there was no way for lay people to understand the implications of water at different levels of turbidity, for example. A bar chart of pH readings answers "what is the number?" — it does not answer "can my family drink this water?"
+
+The Handlebars chart let us build a visualization that highlighted not only the data, but also the thresholds the measurements were passing. By pulling in the safe-consumption limits published by the WHO Guidelines for Drinking-water Quality and Guyana EPA — an LLM is a quick way to find these — the result was a traffic-light style visualization: green when a reading is within safe range, red when it is not. The village council could act on the *impact* of the data, instead of guessing what a pH of 5.9 means against generally accepted thresholds.
 
 ### Recommended workflow
 

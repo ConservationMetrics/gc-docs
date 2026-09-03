@@ -88,5 +88,5 @@ We can make GBIF download workflows available through the [GC Scripts Hub](/refe
 ## 📚 Further reading
 
 - [GBIF Pilot Using TK and BC Labels](https://localcontexts.org/gbif-pilot-using-tk-and-bc-labels/)
-- Pankararu, C.J., Teixidor-Toneu, I., Odonne, G. et al. [A global biodiversity use data infrastructure acknowledging indigenous and local knowledge.]((https://www.nature.com/articles/s44185-026-00121-0)) npj biodivers 5, 7 (2026). https://doi.org/10.1038/s44185-026-00121-0
+- Pankararu, C.J., Teixidor-Toneu, I., Odonne, G. et al. [A global biodiversity use data infrastructure acknowledging indigenous and local knowledge.](https://www.nature.com/articles/s44185-026-00121-0) npj biodivers 5, 7 (2026). https://doi.org/10.1038/s44185-026-00121-0
 - [Darwin Core Archive Quick Reference Guide](https://dwc.tdwg.org/terms/)

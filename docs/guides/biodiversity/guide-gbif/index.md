@@ -44,9 +44,9 @@ GBIF is most useful when a community wants to understand the **existing public r
 
 Before downloading individual occurrence records, it helps to see what GBIF already knows about your territory — who published data, what species appear, and over what time period. CMI makes a free browser tool available that makes that summary quick and easy:
 
-:::tip GBIF Geometry Inventory
+:::tip GBIF Map Search
 
-**[Open the tool →](https://conservationmetrics.github.io/gbif-geometry-inventory/)** 
+**[Open the tool →](https://conservationmetrics.github.io/gbif-map-search/)** 
 
 Draw a box or drop a GeoJSON boundary of a community area to summarize occurrences, species, datasets, publishers, years, and basis of record. Runs in your browser, and no GBIF account is required. To view and download full records, click the "View on GBIF" button after querying.
 
@@ -75,7 +75,7 @@ Possible use cases include:
 
 :::tip
 
-Use the [GBIF Geometry Inventory](https://conservationmetrics.github.io/gbif-geometry-inventory/) tool to search GBIF for your area of interest, and then press the "View on GBIF" button to download the full records.
+Use the [GBIF Map Search](https://conservationmetrics.github.io/gbif-map-search/) tool to search GBIF for your area of interest, and then press the "View on GBIF" button to download the full records.
 
 We can make regular GBIF download workflows available through the [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) when a community has a clear use case: for example, scheduled imports into a Guardian Connector warehouse or repeatable exports for a territory polygon. Reach out to us with your goals and we can discuss what makes sense.
 

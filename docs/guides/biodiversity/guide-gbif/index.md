@@ -36,20 +36,6 @@ Records in GBIF reflect what publishers have chosen to share under their own dat
 
 :::
 
-### Why might community organizations want to share with GBIF (or not)?
-
-Whether your community's observations should appear in GBIF, for example by way of using [iNaturalist](/guides/biodiversity/guide-inaturalist/), is a governance choice, not a technical requirement. Both outcomes are valid depending on your goals.
-
-**Reasons to keep observation data out of GBIF**
-
-- **Privacy and community data.** Some records document species or places that are culturally sensitive, tied to harvesting rights, or meant to stay within the community. For example, a guardian program might log useful plant locations or without wanting precise coordinates discoverable worldwide. A restrictive observation license (for example All Rights Reserved) keeps data available to your iNaturalist project while excluding it from GBIF export.
-- **Territorial stewardship.** A nation or community may prefer that biodiversity knowledge from their territory is accessed through their own protocol—not pooled globally without consent. Keeping data out of GBIF can align with [Indigenous data sovereignty](/guides/data-sovereignty/guide-data-sovereignty-and-protocols/) principles while still using iNaturalist for internal mapping, training, and reporting.
-
-**Reasons to share observation data through GBIF**
-
-- **Recognition in global research.** When you want your territory's biodiversity documented in scientific literature, species distribution models, or conservation assessments, GBIF makes your records citable and discoverable. For example, community observations of a rarely recorded orchid or a range extension for a migratory bird can fill gaps that researchers use in IUCN Red List reviews or peer-reviewed studies.
-- **Visibility in global processes.** Governments and NGOs draw on GBIF for Convention on Biological Diversity (CBD) reporting, protected-area planning, and invasive-species monitoring. Contributing Research Grade observations under an open license helps ensure your community's monitoring effort is counted in the datasets that shape regional and international conservation decisions—not only on iNaturalist.
-
 ## Why might community organizations want GBIF data?
 
 GBIF is most useful when a community wants to understand the **existing public record** of biodiversity documentation in or near their territory, before deciding whether to request data, contact publishers, or import records for deeper analysis.
@@ -62,7 +48,7 @@ Before downloading individual occurrence records, it helps to see what GBIF alre
 
 **[Open the tool →](https://conservationmetrics.github.io/gbif-geometry-inventory/)** 
 
-Draw a box or drop a GeoJSON boundary of a community area to summarize occurrences, species, datasets, publishers, years, and basis of record. Runs in your browser; no GBIF account required.
+Draw a box or drop a GeoJSON boundary of a community area to summarize occurrences, species, datasets, publishers, years, and basis of record. Runs in your browser, and no GBIF account is required. To view and download full records, click the "View on GBIF" button after querying.
 
 :::
 
@@ -89,9 +75,25 @@ Possible use cases include:
 
 :::tip
 
-We can make GBIF download workflows available through the [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) when a community has a clear use case: for example, scheduled imports into a Guardian Connector warehouse or repeatable exports for a territory polygon. Reach out to us with your goals and we can discuss what makes sense.
+Use the [GBIF Geometry Inventory](https://conservationmetrics.github.io/gbif-geometry-inventory/) tool to search GBIF for your area of interest, and then press the "View on GBIF" button to download the full records.
+
+We can make regular GBIF download workflows available through the [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) when a community has a clear use case: for example, scheduled imports into a Guardian Connector warehouse or repeatable exports for a territory polygon. Reach out to us with your goals and we can discuss what makes sense.
 
 :::
+
+### Why might community organizations want to share with GBIF (or not)?
+
+Whether your community's observations should appear in GBIF, for example by way of using [iNaturalist](/guides/biodiversity/guide-inaturalist/), is a governance choice, not a technical requirement. Both outcomes are valid depending on your goals.
+
+**Reasons to keep observation data out of GBIF**
+
+- **Privacy and community data.** Some records document species or places that are culturally sensitive, tied to harvesting rights, or meant to stay within the community. For example, a guardian program might log useful plant locations or without wanting precise coordinates discoverable worldwide. A restrictive observation license (for example All Rights Reserved) keeps data available to your iNaturalist project while excluding it from GBIF export.
+- **Territorial stewardship.** A nation or community may prefer that biodiversity knowledge from their territory is accessed through their own protocol—not pooled globally without consent. Keeping data out of GBIF can align with [Indigenous data sovereignty](/guides/data-sovereignty/guide-data-sovereignty-and-protocols/) principles while still using iNaturalist for internal mapping, training, and reporting.
+
+**Reasons to share observation data through GBIF**
+
+- **Recognition in global research.** When you want your territory's biodiversity documented in scientific literature, species distribution models, or conservation assessments, GBIF makes your records citable and discoverable. For example, community observations of a rarely recorded orchid or a range extension for a migratory bird can fill gaps that researchers use in IUCN Red List reviews or peer-reviewed studies.
+- **Visibility in global processes.** Governments and NGOs draw on GBIF for Convention on Biological Diversity (CBD) reporting, protected-area planning, and invasive-species monitoring. Contributing Research Grade observations under an open license helps ensure your community's monitoring effort is counted in the datasets that shape regional and international conservation decisions—not only on iNaturalist.
 
 ## 📚 Further reading
 

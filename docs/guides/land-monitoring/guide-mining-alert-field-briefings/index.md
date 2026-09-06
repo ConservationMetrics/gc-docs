@@ -99,15 +99,14 @@ Run the analysis **per site (alert polygon)**, choosing the measurement that mat
 Before laying out the print maps, get the visuals right — they carry most of the message:
 
 - **New mining alerts** in a strong, warm color (red/orange); **historical mining** in a muted grey outline. The contrast between "what we knew" and "what is new" is the core of the briefing.
-- Label sites with a short identifier and the key numbers (e.g., `A3 — 4.2 ha · 180 m from river · 3.4 km from Jatapu village`).
 - Add **waypoints or lines the observer will actually use**: the nearest access point on the river, the trail or route you plan to take, and any previously verified sites.
 - Mark **anything anomalous**: sites where the alert looks wrong, sites that repeat month after month (active and expanding), and sites suspiciously close to the village. These are what the observer should confirm or deny on the ground.
 
-### Keeping track of your files (recommended)
+### Recommendation on keeping track of your GIS files
 
 Geospatial work is easy to lose track of: a QGIS project file (`.qgz`) does **not** contain your data — it only stores *references* to where the files sit on your computer. Exports scattered across a Downloads folder or lost in email chains quickly turn into broken layers and "which file was that?" six months later. A few habits from the start keep every round reproducible:
 
-- **One folder per trip/quarter**, as suggested in Step 3, with the same simple structure every time:
+- **One folder per trip**, with the same simple structure every time:
 
   ```text
   2026-09_jatapu-round/

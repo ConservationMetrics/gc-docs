@@ -104,6 +104,17 @@ A post-fieldwork workflow for monitoring teams: take the GPS tracks already reco
 - Building a one-page round report: route map, effort box, and per-site findings table
 - Archiving tracks into the instance so cumulative effort per season accumulates automatically
 
+### 🛰️+🖨️ [Preparing Mining Alert Field Briefings](./land-monitoring/guide-mining-alert-field-briefings/)
+
+An example workflow for monitoring leads: review change detection alerts in GC Explorer, export them, analyze mining sites in QGIS (distance to river and village), and print per-site briefing maps to take to village council meetings before a field visit.
+
+**What you'll learn:**
+- Reacting to alerts via WhatsApp notifications, or reviewing accumulated alerts in Explorer before planning a round
+- Grouping related alerts into incidents and exporting alerts as GeoJSON/KML
+- Combining new alerts with historical mining areas from File Browser
+- Calculating distance from rivers and villages for each site in QGIS
+- Designing per-site print layouts with labels, scale, and north indicator for field use
+
 ## Support and Community
 
 These tutorials are living documents that evolve based on community feedback and needs. If you have questions, suggestions, or would like to share how you've adapted these workflows for your community, we encourage you to reach out and contribute to the collective learning process.

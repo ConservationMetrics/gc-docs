@@ -93,6 +93,17 @@ A comprehensive guide for creating data sharing protocols grounded in Indigenous
 - Protecting sensitive cultural and territorial information
 - Building capacity for community data governance
 
+### 🥾+📊 [Turning Monitoring Tracks into Round Reports](./land-monitoring/guide-monitoring-round-reports/)
+
+A post-fieldwork workflow for monitoring teams: take the GPS tracks already recorded in Locus Map during a monitoring round and turn them into a one-page report for the village council — surfacing the effort the round cost and backing up which planned sites were actually reached and verified.
+
+**What you'll learn:**
+- Recording rounds so GPX files stay usable (one track per team per day, site-named waypoints)
+- Extracting distance, elevation gain, and moving/stopped time with in-browser tools (nothing uploaded)
+- Verifying in QGIS which planned alert sites the tracks physically reached
+- Building a one-page round report: route map, effort box, and per-site findings table
+- Archiving tracks into the instance so cumulative effort per season accumulates automatically
+
 ## Support and Community
 
 These tutorials are living documents that evolve based on community feedback and needs. If you have questions, suggestions, or would like to share how you've adapted these workflows for your community, we encourage you to reach out and contribute to the collective learning process.

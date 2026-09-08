@@ -33,7 +33,9 @@ In the **Alerts Dashboard** of [GC Explorer](/reference/gc-toolkit/gc-explorer/)
 - a **single alert** clicked on the map,
 - or a whole **[incident](/reference/gc-toolkit/gc-explorer/incidents/)** if the site has triggered alerts several times.
 
+::: important
 KML is the format to use here — mission planners accept a KML polygon or outline directly as the survey area. The GeoJSON export from the [field briefing guide](/guides/land-monitoring/guide-mining-alert-field-briefings/) remains the right choice for the QGIS analysis; the two exports describe the same site and will align exactly, since everything Guardian Connector publishes is in WGS84.
+:::
 
 :::tip
 Size the flight against what you need to *see*. A 2-hectare operation and a 20-hectare pond are different missions — if in doubt, fly the alerted area plus a margin of 30–50 m on every side, so the map shows context the satellite alert cannot, and/or monitor the automated flight as it happens to spot any change that would be worth capturing.
@@ -141,7 +143,7 @@ The main job is printing. Swap the orthomosaic in **under the existing print lay
 If the map on paper still leaves a question open, QGIS can answer two that matter for mining reports: measure the disturbed area in hectares (Field Calculators / *$area* on a digitized footprint), and digitize the **verified** outline to replace the alert polygon when you record the site in an [incident](/reference/gc-toolkit/gc-explorer/incidents/). Anything beyond that — volumes, depth change between flights — needs the DSM and belongs in a separate, later project.
 :::
 
-## What's next
+## Related documentation
 
 - [Preparing Mining Alert Field Briefings](/guides/land-monitoring/guide-mining-alert-field-briefings/) — the companion workflow this one feeds
 - [Use your data in QGIS](/reference/common-workflows/use-your-data-in-qgis/) — Guardian Connector data into QGIS

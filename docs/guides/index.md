@@ -93,17 +93,6 @@ A comprehensive guide for creating data sharing protocols grounded in Indigenous
 - Protecting sensitive cultural and territorial information
 - Building capacity for community data governance
 
-### 🥾+📊 [Turning Monitoring Tracks into Round Reports](./land-monitoring/guide-monitoring-round-reports/)
-
-A post-fieldwork workflow for monitoring teams: take the GPS tracks already recorded during a monitoring round and turn them into a one-page report for the village council — surfacing the effort the round cost and backing up which planned sites were actually reached and verified.
-
-**What you'll learn:**
-- Recording rounds so GPX files stay usable (one track per team per day, site-named waypoints)
-- Extracting distance, elevation gain, and moving/stopped time with in-browser tools (nothing uploaded)
-- Verifying in QGIS which planned alert sites the tracks physically reached
-- Building a one-page round report: route map, effort box, and per-site findings table
-- Archiving tracks into the instance so cumulative effort per season accumulates automatically
-
 ### 🛰️+🖨️ [Preparing Mining Alert Field Briefings](./land-monitoring/guide-mining-alert-field-briefings/)
 
 An example workflow for monitoring leads: review change detection alerts in GC Explorer, export them, analyze mining sites in QGIS (distance to river and village), and print per-site briefing maps to take to village council meetings before a field visit.
@@ -114,6 +103,28 @@ An example workflow for monitoring leads: review change detection alerts in GC E
 - Combining new alerts with historical mining areas from File Browser
 - Calculating distance from rivers and villages for each site in QGIS
 - Designing per-site print layouts with labels, scale, and north indicator for field use
+
+### 🛩️+🗺️ [From Mining Alerts to Drone Maps](./land-monitoring/guide-drone-photogrammetry-workflow/)
+
+A workflow for monitoring teams to assess remote mining sites without costly expeditions: export alert areas as KML, fly an automated photogrammetry mission, stitch the photos into an orthomosaic with OpenDroneMap (locally) or Geostitch (cloud), and print the result into the same briefing packets and reports used for village visits.
+
+**What you'll learn:**
+- Exporting mining alerts as KML for import into a drone mission planner (MavenRoute as worked example)
+- Setting overlap, altitude, and mission size so a site is captured in one battery
+- Why automated flights guarantee photogrammetry success, and what to check before leaving the site
+- Processing imagery on a beefy computer with WebODM, or in the cloud with Geostitch
+- Loading the orthomosaic in QGIS and dropping it into existing briefing print layouts
+
+### 🥾+📊 [Turning Monitoring Tracks into Round Reports](./land-monitoring/guide-monitoring-round-reports/)
+
+A post-fieldwork workflow for monitoring teams: take the GPS tracks already recorded during a monitoring round and turn them into a one-page report for the village council — surfacing the effort the round cost and backing up which planned sites were actually reached and verified.
+
+**What you'll learn:**
+- Recording rounds so GPX files stay usable (one track per team per day, site-named waypoints)
+- Extracting distance, elevation gain, and moving/stopped time with in-browser tools (nothing uploaded)
+- Verifying in QGIS which planned alert sites the tracks physically reached
+- Building a one-page round report: route map, effort box, and per-site findings table
+- Archiving tracks into the instance so cumulative effort per season accumulates automatically
 
 ## Support and Community
 

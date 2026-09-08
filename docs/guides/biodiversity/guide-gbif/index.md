@@ -3,7 +3,7 @@ sidebar_position: 4
 tags: [itu-3, opu, tsp]
 ---
 
-# 🌍+🔍 Discovering Biodiversity Records with GBIF
+# GBIF: Discovering and Publishing Biodiversity Records
 
 [GBIF](https://www.gbif.org/) — the Global Biodiversity Information Facility — is an international network and open-data infrastructure for biodiversity occurrence records. Museums, herbaria, government agencies, research projects, and citizen-science platforms publish datasets to GBIF so that anyone can search, map, and download information about *where* and *when* species have been documented around the world.
 

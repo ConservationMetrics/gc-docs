@@ -3,7 +3,7 @@ sidebar_position: 0
 tags: [itu-3, opu, tsp]
 ---
 
-# 📸+🐾 Collecting Camera Trap Deployment Data
+# Camera Traps: Deployment and Collecting Data
 
 ## Introduction
 

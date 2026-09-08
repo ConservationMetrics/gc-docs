@@ -9,7 +9,7 @@ tags: [itu-3, opu, tsp]
 
 For community organizations, GBIF is often the broadest public index of biodiversity records that may relate to a territory: not only recent community monitoring, but also historical specimen collections, survey data, and observations contributed by outside researchers and institutions over many decades.
 
-:::tip
+:::info
 
 For a concise overview of GBIF's mission and network, see [What is GBIF?](https://www.gbif.org/what-is-gbif) on the GBIF website.
 
@@ -44,7 +44,7 @@ GBIF is most useful when a community wants to understand the **existing public r
 
 Before downloading individual occurrence records, it helps to see what GBIF already knows about your territory — who published data, what species appear, and over what time period. CMI makes a free browser tool available that makes that summary quick and easy:
 
-:::tip GBIF Map Search
+:::important GBIF Map Search
 
 **[Open the tool →](https://conservationmetrics.github.io/gbif-map-search/)** 
 
@@ -81,19 +81,31 @@ We can make regular GBIF download workflows available through the [GC Scripts Hu
 
 :::
 
-### Why might community organizations want to share with GBIF (or not)?
+## Why might community organizations want to share with GBIF (or not)?
 
 Whether your community's observations should appear in GBIF, for example by way of using [iNaturalist](/guides/biodiversity/guide-inaturalist/), is a governance choice, not a technical requirement. Both outcomes are valid depending on your goals.
 
-**Reasons to keep observation data out of GBIF**
+#### Reasons to keep observation data out of GBIF:
 
 - **Privacy and community data.** Some records document species or places that are culturally sensitive, tied to harvesting rights, or meant to stay within the community. For example, a guardian program might log useful plant locations or without wanting precise coordinates discoverable worldwide. A restrictive observation license (for example All Rights Reserved) keeps data available to your iNaturalist project while excluding it from GBIF export.
 - **Territorial stewardship.** A nation or community may prefer that biodiversity knowledge from their territory is accessed through their own protocol—not pooled globally without consent. Keeping data out of GBIF can align with [Indigenous data sovereignty](/guides/data-sovereignty/guide-data-sovereignty-and-protocols/) principles while still using iNaturalist for internal mapping, training, and reporting.
 
-**Reasons to share observation data through GBIF**
+#### Reasons to share observation data through GBIF:
 
 - **Recognition in global research.** When you want your territory's biodiversity documented in scientific literature, species distribution models, or conservation assessments, GBIF makes your records citable and discoverable. For example, community observations of a rarely recorded orchid or a range extension for a migratory bird can fill gaps that researchers use in IUCN Red List reviews or peer-reviewed studies.
 - **Visibility in global processes.** Governments and NGOs draw on GBIF for Convention on Biological Diversity (CBD) reporting, protected-area planning, and invasive-species monitoring. Contributing Research Grade observations under an open license helps ensure your community's monitoring effort is counted in the datasets that shape regional and international conservation decisions—not only on iNaturalist.
+
+:::tip
+
+GBIF has a helpful guide on [how to publish biodiversity data to GBIF](https://ipt.gbif.org/manual/en/ipt/latest/how-to-publish) with exemplary spreadsheets for different kinds of data. As noted on e.g. the [occurrence data page](https://ipt.gbif.org/manual/en/ipt/latest/occurrence-data), GBIF recommends using the Excel template and using that to upload your data to GBIF:
+
+> Ultimately your data needs to be transformed into a table structure using Darwin Core (DwC) term names as column names.
+>
+> Try putting your data into the [Excel template](https://ipt.gbif.org/manual/en/ipt/latest/occurrence-data#templates), which includes all [required DwC fields](https://ipt.gbif.org/manual/en/ipt/latest/occurrence-data#Required%20DwC%20Fields) and [recommended DwC fields](https://ipt.gbif.org/manual/en/ipt/latest/occurrence-data#Recommended%20DwC%20Fields).
+
+If this is proving difficult or time-consuming, please reach out to us with your use case; we could look at designing a [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) tool that maps the GBIF DwC fields to the data you have in your own system. But first, please try the Excel template and see if it works for you.
+
+:::
 
 ## 📚 Further reading
 

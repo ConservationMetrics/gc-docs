@@ -3,7 +3,7 @@ sidebar_position: 0
 tags: [itu-3, idm, opu, tsp]
 ---
 
-# 🌿+🏷️ Annotating Datasets with Local Contexts Labels
+# Local Contexts: Annotating Datasets with TK/BC Labels
 
 ![Local Contexts Labels](/img/guides/guide-local-contexts/local-contexts.webp)
 

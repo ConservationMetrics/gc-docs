@@ -3,7 +3,7 @@ sidebar_position: 3
 tags: [itu-3, opu, tsp]
 ---
 
-# 🔊+🦉 Bioacoustics Basics with AudioMoth Sensors
+# AudioMoth: Bioacoustics Basics
 
 This guide provides an overview of the AudioMoth sensor workflow. These
 materials introduce users to the complete lifecycle of deploying,

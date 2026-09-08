@@ -3,7 +3,7 @@ sidebar_position: 0
 tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
 ---
 
-# 📱+📋 Data Management with KoboToolbox
+# KoboToolbox: Data Management Syllabus
 
 ## **Overview**
 

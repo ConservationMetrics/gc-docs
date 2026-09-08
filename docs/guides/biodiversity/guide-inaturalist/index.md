@@ -3,7 +3,7 @@ sidebar_position: 2
 tags: [itu-3, opu, tsp]
 ---
 
-# 🐒+📱 Community Biodiversity Monitoring with iNaturalist
+# iNaturalist: Community Biodiversity Monitoring
 
 [iNaturalist](https://www.inaturalist.org/) is a free platform for recording and identifying plants, animals, fungi, and other organisms. Observations typically include a photo or sound, a date and location, and a species identification — either your own or one suggested and confirmed by the iNaturalist community.
 

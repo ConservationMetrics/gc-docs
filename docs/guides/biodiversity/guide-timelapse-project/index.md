@@ -3,7 +3,7 @@ sidebar_position: 1
 tags: [itu-3, opu, tsp]
 ---
 
-# 🖼️+🏷️ Setting up a Project in Timelapse for Camera Trap Annotation
+# Timelapse: Setting up a Project for Camera Trap Annotation
 
 ## Introduction
 

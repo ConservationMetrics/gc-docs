@@ -3,13 +3,17 @@ sidebar_position: 0
 tags: [itu-3, idm, opu, tsp]
 ---
 
-# 🛰️+🖨️ Guide: Preparing Mining Alert Field Briefings
+# GC Explorer: Preparing Mining Alert Field Briefings
 
 ## Introduction
 
-When [change detection alerts](/reference/gc-toolkit/gc-explorer/) show new mining activity in a territory, the next step is usually a field visit: confirming what happened on the ground, talking to the village council, and deciding what to do.
+:::important
+This is ONLY for Guardian Connector users who benefit from receiving mining alerts -- plus historical data -- from a proprietary alerts provider made available by CMI.
+:::
 
-A site visit goes much better when the team and the council can look at the same map. This guide walks through a complete workflow for turning raw alerts into **printed briefing packets** — one map per mining site, with the analysis already done: where the site is, how far it is from the river, and how far it is from the village.
+When [change detection alerts](/reference/gc-toolkit/gc-explorer/) show new mining activity in a territory, the next step is usually a field visit: confirming what happened on the ground, talking to the nearby village, and deciding what to do.
+
+A site visit goes much better when the team and the village can look at the same map. This guide walks through a complete workflow for turning raw alerts into **printed briefing packets** — one map per mining site, with the analysis already done: where the site is, how far it is from the river, and how far it is from the village.
 
 ```mermaid
 flowchart TD
@@ -60,7 +64,7 @@ For this workflow, choose **GeoJSON** (it imports cleanly into QGIS and keeps al
 
 New alerts only tell half the story. **Older mining areas** — the footprint of everything mined before this alert window — let the council see how much is new and in which direction mining is advancing.
 
-Historical mining polygons are available in the [File Browser](/reference/gc-toolkit/filebrowser/) of your Guardian Connector instance, or can be **provided on request** by your technical support partner. Download them as GeoJSON or Shapefile into the same trip folder.
+In some cases, historical mining polygons may already available in the [File Browser](/reference/gc-toolkit/filebrowser/) of your Guardian Connector instance. They can be **provided on request** by your technical support partner. Download them as GeoJSON or Shapefile into the same trip folder.
 
 :::note
 If old mining areas are missing from your File Browser, ask your support partner which mining layers are already configured for your instance and how often the historical footprint is refreshed.
@@ -153,13 +157,13 @@ Layout tips for field use:
 
 ## Bringing it to the village
 
-At the council meeting, the packet multiple jobs:
+When meeting those from the nearby village, the packet multiple jobs:
 
 1. **Orient** — the context map shows the round's route and every site in play.
 2. **Brief** — one page per site: what the satellite saw, how far it is from what people care about (river, village), and what the observers are asked to confirm.
 3. **Record** — a shared reference during the discussion about who is responsible, what access routes exist, and what the community wants to do next.
 
-After the visit, verified sites can be added to an **incident** in GC Explorer (or mapped with KoboToolbox/CoMapeo on the spot), keeping the alert, the analysis, and the field observation linked for reporting.
+After the visit, verified sites can be added to an **[incident](/reference/gc-toolkit/gc-explorer/incidents/)** in GC Explorer (or mapped with KoboToolbox/CoMapeo on the spot), keeping the alert, the analysis, and the field observation linked for reporting.
 
 
 ## What's next

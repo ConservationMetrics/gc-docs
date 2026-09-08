@@ -3,13 +3,13 @@ sidebar_position: 2
 tags: [itu-3, opu, tsp]
 ---
 
-# 🥾+📊 Guide: Turning Monitoring Tracks into Round Reports
+# Guide: Turning Monitoring Tracks into Round Reports
 
 ## Introduction
 
 The [field briefing guide](/guides/land-monitoring/guide-mining-alert-field-briefings/) plans the round; the [drone guide](/guides/land-monitoring/guide-drone-photogrammetry-workflow/) closes distance without going. But when the team finally walks out with the briefing packet and comes back later, it carries something no planning document predicts: the **effort it took**. Kilometres covered, hills crossed, sites that turned out to be three river bends farther than the satellite made them look.
 
-Right now that record usually lives in nothing but the observers' memory — information that never gets to the reports. Most teams already capture it without trying: the [Locus Map](/reference/gc-toolkit/gc-scripts-hub/) track recording that runs during the round. A GPX track, processed the day the team gets home, produces two things the village council should see:
+Right now that record usually lives in nothing but the observers' memory — information that never gets to the reports. Many teams already capture it without trying: using tools that track recording during the round. That track, processed the day the team gets home, produces two things the village council should see:
 
 1. **The effort surfaced** — distance, days out, elevation climbed — so the council understands what monitoring actually costs, not just what it finds.
 2. **The work backed up** — proof, from the device's own timestamps, of which planned sites the team physically reached and spent time at.
@@ -23,11 +23,11 @@ flowchart TD
     D --> F["🗺️ QGIS<br/>did the track reach<br/>the planned sites?"]
     E --> G["🖨️ One-page round report"]
     F --> G
-    G --> H["🤝 Village council<br/>+ funder reporting"]
+    G --> H["🤝 Village <br/> reporting"]
     D --> I["🗄️ Archive to your instance<br/>rounds accumulate<br/>in GC Explorer"]
 ```
 
-This guide is for the same people as the briefing guide — monitoring leads who are comfortable with QGIS and GC Explorer. Everything works with any tool that records standard GPX tracks; Locus Map is used as the example because it is already a supported source in Guardian Connector.
+This guide is for the same people as the briefing guide — monitoring leads who are comfortable with QGIS and GC Explorer. Everything works with any tool that records standard GPX tracks.
 
 ## Step 1: While out — record so the track is usable later
 
@@ -35,7 +35,7 @@ A track is only evidence if it connects people to places. Three habits during th
 
 - **One track per team per day.** Start recording in the morning, stop at the end of the day. Many short, cleanly-named files beat one three-day file: individual days can fail, be quoted, or be summed without editing anything.
 
-Back home, export from Locus Map (*Tracks → select → Export → GPX*), one file per day, and name for the round:
+Back home, export your track data, one file per day, and name for the round:
 
 ```text
 2026-09_jatapu-round_teamA_day1.gpx
@@ -114,12 +114,12 @@ Add the verified findings back where they came from: record confirmed sites in a
 
 The per-round report answers "what did this round cost and find?". The year answers "what does monitoring cost *in total*?" — and only works if every round's tracks land in the same place:
 
-- **Minimum**: the round folder on community storage, tracks never edited or deleted, same naming.
-- **Better**: Locus Map is a supported source for the [dataset importer](/reference/gc-toolkit/gc-scripts-hub/dataset-importer/) — ask your support partner to wire it so tracks and waypoints arrive in your warehouse and show in [GC Explorer](/reference/gc-toolkit/gc-explorer/) alongside the alerts.
+- **Minimum**: the round's folder on community storage, tracks never edited or deleted, same naming.
+- **Better**: Use the Guardian Connector [dataset importer](/reference/gc-toolkit/gc-scripts-hub/dataset-importer/) to upload your tracks and waypoints to your warehouse, so that you can show them in [GC Explorer](/reference/gc-toolkit/gc-explorer/) alongside the alerts.
 
 Once rounds accumulate as data instead of files, a dashboad can be created to gather the cumulative report.
 
-## What's next
+## Related documentation
 
 - [Preparing Mining Alert Field Briefings](/guides/land-monitoring/guide-mining-alert-field-briefings/) — this guide's predecessor: the planned sites and the folder this one fills
 - [From Mining Alerts to Drone Maps](/guides/land-monitoring/guide-drone-photogrammetry-workflow/) — the other way to cover distance when the round cannot

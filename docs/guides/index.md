@@ -95,7 +95,7 @@ A comprehensive guide for creating data sharing protocols grounded in Indigenous
 
 ### 🥾+📊 [Turning Monitoring Tracks into Round Reports](./land-monitoring/guide-monitoring-round-reports/)
 
-A post-fieldwork workflow for monitoring teams: take the GPS tracks already recorded in Locus Map during a monitoring round and turn them into a one-page report for the village council — surfacing the effort the round cost and backing up which planned sites were actually reached and verified.
+A post-fieldwork workflow for monitoring teams: take the GPS tracks already recorded during a monitoring round and turn them into a one-page report for the village council — surfacing the effort the round cost and backing up which planned sites were actually reached and verified.
 
 **What you'll learn:**
 - Recording rounds so GPX files stay usable (one track per team per day, site-named waypoints)

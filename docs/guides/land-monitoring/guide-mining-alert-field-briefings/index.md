@@ -13,7 +13,7 @@ This is ONLY for Guardian Connector users who benefit from receiving mining aler
 
 When [change detection alerts](/reference/gc-toolkit/gc-explorer/) show new mining activity in a territory, the next step is usually a field visit: confirming what happened on the ground, talking to the nearby village, and deciding what to do.
 
-A site visit goes much better when the team and the village can look at the same map. This guide walks through a complete workflow for turning raw alerts into **printed briefing packets** — one map per mining site, with the analysis already done: where the site is, how far it is from the river, and how far it is from the village.
+A site visit goes much better when the team and the local community can look at the same map. This guide walks through a complete workflow for turning raw alerts into **printed briefing packets** — one map per mining site, with the analysis already done: where the site is, how far it is from the river, and how far it is from the village.
 
 ```mermaid
 flowchart TD
@@ -21,7 +21,7 @@ flowchart TD
     C["📁 File Browser<br/>historical mining areas"] --> D
     B --> D["🖥️ QGIS<br/>distance analysis + symbology"]
     D --> E["🖨️ Print layouts<br/>one per site"]
-    E --> F["🤝 Village council meeting"]
+    E --> F["🤝 Community meeting"]
 ```
 
 This guide is written for the people who **lead the monitoring process**: you should be comfortable opening data in QGIS, understand how GPS coordinates work, and have a basic familiarity with [KoboToolbox](/reference/core-integrations/kobotoolbox/) and KoboCollect for field data collection.
@@ -134,7 +134,7 @@ GIS projects break differently from documents: the project and the data are sepa
 
 ## Step 6: Print layouts — one per site
 
-The output of this workflow is a set of **print layouts in QGIS, one per mining site**, assembled into a packet to take to the village council meeting.
+The output of this workflow is a set of **print layouts in QGIS, one per mining site**, assembled into a packet to take to the community meeting.
 
 In the Print Layout (*Layout → Add Print Layout*, see the [QGIS documentation](https://docs.qgis.org/)), each site map should contain, at minimum:
 
@@ -155,7 +155,7 @@ Layout tips for field use:
 - Keep a **larger-scale inset or a second layout** for the whole village area showing all sites in context, so people see where the round will go before seeing each site in detail.
 :::
 
-## Bringing it to the village
+## Bringing it back to the community
 
 When meeting those from the nearby village, the packet multiple jobs:
 

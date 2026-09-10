@@ -1,8 +1,19 @@
+---
+sidebar_position: 5
+tags: [itu-3, opu, tsp]
+---
+
 # Useful Superset Charts and Visualizations
 
 Superset comes with many built-in chart types — bar charts, line charts, maps, big numbers, tables, and more. Most of the time, one of these standard charts is exactly what you need. But sometimes you want something different: a page of KPI cards, a formatted report, or a status board with your own colors and layout.
 
 This page is a growing collection of notes on how to get the most out of Superset's visualization options in the context of Guardian Connector projects. Each section covers one chart type, when to use it, and a recommended way of working. For a full list of built-in options, see the [official Superset documentation](https://superset.apache.org/docs/intro/).
+
+## 🚧 More coming soon
+
+As we find concrete uses of the different charts Superset offers, we will add them here.
+
+For more advanced charts, check on the Advanced charts section.
 
 ## Suggest a chart type
 

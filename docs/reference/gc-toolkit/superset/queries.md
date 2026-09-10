@@ -9,19 +9,63 @@ This page contains helpful SQL queries for improving your Superset datasets and 
 
 You can either use these to create a [virtual dataset](https://docs.preset.io/docs/virtual-datasets) which will apply your query to the entire dataset, or you can use them in a single chart. 
 
-It is recommended to create a virtual dataset if you plan to apply the same query to multiple charts. That way, you don't have to repeat the query for each chart.
-
 :::tip
-One best practice is to create a single virtual dataset for the entire dataset with all of the columns you need. That way, you don't have to create charts for different virtual datasets, which may cause problems when configuring filters on a Superset dashboard.
+Creating a single virtual dataset for the entire dataset with all of the columns you need is  a recommended best practice. Doing so means you don't have to create charts for different virtual datasets, which may cause problems when configuring filters on a Superset dashboard.
 :::
 
-:::tip
-These queries are written in SQL, which is a language for querying databases. If you are not familiar with SQL, you can learn more about it [here](https://www.w3schools.com/sql/).
+:::info
+These queries are written in SQL, which is a language for querying databases. If you are not familiar with SQL, you can learn more about it [here](https://www.w3schools.com/sql/). There is also a "linter" available for SQL that can help you troubleshoot your queries and ensure they are correct: [SQLFluff](https://online.sqlfluff.com/).
 :::
 
-## String Formatting and Manipulation
+## Using LLMs to generate SQL queries
 
-### Remove underscore and capitalize first letter of the string
+Tools like Claude, ChatGPT, GitHub Copilot, and similar assistants can help you draft or debug the SQL expressions on this page — especially when you need a one-off transform for a chart column and do not want to write the `CASE` / `REPLACE` / cast logic from scratch.
+
+Give the model the column name(s), a short before → after example, what you want to happen, and that you are using it with PostgreSQL in Superset. Then paste the resulting expression into the chart metric, calculated column, or virtual dataset SQL Lab editor.
+
+### Mitigating risks
+
+Do **not** paste confidential or personally identifiable data into a public LLM chat.
+
+- **Column headers / field names** are usually fine to share (for example `"Age"`, `"_submission_time"`, `"Was_the_species_observed"`).
+- **Real cell values** often are not. If the transform depends on specific strings (choice codes, names, free text), use **generalized or fake** examples that match the shape of your data—not live submissions.
+- Prefer describing patterns (`snake_case` codes, `YYYY-MM-DD` text dates, `0`/`1` yes-no) over pasting rows from your warehouse.
+- If you must show value mapping, invent stand-ins (`"choice_a"` → `"Label A"`) instead of real respondent answers.
+
+Treat anything you type into an external model as potentially retained or visible to the provider. When in doubt, falsify the sample values.
+
+### Prompt for Superset chart expressions
+
+Most chart-level helpers on this page are **column expressions**, not full queries: they reshape one field (or a few) and have no `SELECT` … `FROM`, no table names, and no trailing semicolon. Ask the model for that shape unless you are intentionally building a virtual dataset (joins, multi-column `SELECT`, geospatial splits).
+
+You can paste the block below as the **first part of a chat prompt**, then add your specific ask. Or keep it in **project instructions**, a custom **GPT/Claude project**, or a **skill** so every request stays on-format.
+
+```text
+You help write SQL expressions for Apache Superset charts (PostgreSQL dialect unless I say otherwise).
+
+Rules for your output:
+- Return ONLY a single SQL expression (or a short CASE/COALESCE/REGEXP block) that can be pasted into a Superset calculated column, metric, or custom SQL for one chart field.
+- Do NOT write a full query: no SELECT, FROM, JOIN, WHERE, GROUP BY, ORDER BY, LIMIT, CTEs, or table/schema names—unless I explicitly ask for a virtual-dataset query.
+- Prefer portable Postgres functions used in Superset (CASE, CAST, COALESCE, CONCAT, REPLACE, INITCAP, SUBSTRING, SPLIT_PART, TO_TIMESTAMP, REGEXP_REPLACE, etc.).
+- Quote identifier names exactly as I give them (often Pascal_snake or with spaces), e.g. "Column_name".
+- If mapping discrete codes to labels, use CASE or COALESCE; do not invent joins to label tables unless I ask.
+- Show a tiny before → after table (fake/sample values only) so I can verify the logic.
+- If my request is ambiguous, ask one clarifying question; otherwise give the expression first.
+
+I will describe the column(s), desired output, and example values next.
+```
+
+Example follow-up after that preamble:
+
+> Column `"how_many_meters_is_the_nest_from_bush"` is text. Bucket into `0-1m`, `1-2m`, …, `5m and over`, and `Not recorded` for blank or non-numeric. Give me the expression only.
+
+Compare the result to the [distance ranges recipe](#categorize-distance-based-on-meter-ranges) on this page. They should look similar.
+
+## Recipes
+
+### String Formatting and Manipulation
+
+#### Remove underscore and capitalize first letter of the string
 
 ```sql
 CONCAT(UPPER(SUBSTRING(REPLACE("Column_string", '_', ' ') FROM 1 FOR 1)),
@@ -34,7 +78,7 @@ CONCAT(UPPER(SUBSTRING(REPLACE("Column_string", '_', ' ') FROM 1 FOR 1)),
 
 ---
 
-### Capitalize first letter of each word and replace _ with a space
+#### Capitalize first letter of each word and replace _ with a space
 
 ```sql
 INITCAP(REPLACE("Column_string", '_', ' '))
@@ -46,7 +90,7 @@ INITCAP(REPLACE("Column_string", '_', ' '))
 
 ---
 
-### Unnest values based on regex, and then capitalize each first letter of each word
+#### Unnest values based on regex, and then capitalize each first letter of each word
 
 ```sql
 REGEXP_REPLACE(INITCAP(unnest(ARRAY_REMOVE(string_to_array(Column_string, ' '), ''))), '_', ' ', 'g')
@@ -58,7 +102,7 @@ REGEXP_REPLACE(INITCAP(unnest(ARRAY_REMOVE(string_to_array(Column_string, ' '), 
 
 ---
 
-### Combine the values of two fields, and then apply regex to replace _ with ", " and capitalize the first letter of each word
+#### Combine the values of two fields, and then apply regex to replace _ with ", " and capitalize the first letter of each word
 
 ```sql
 CASE
@@ -74,9 +118,9 @@ CASE
 | "other"                | "Other"               |
 | "other, 1"             | "Other"               |
 
-## Data Type Conversion
+### Data Type Conversion
 
-### Convert a TEXT date field (with format 2019-02-24) into DATETIME 
+#### Convert a TEXT date field (with format 2019-02-24) into DATETIME 
 
 ```sql
 "date"::timestamp
@@ -101,7 +145,7 @@ It is a good idea to do this conversion before you start creating charts, as Sup
 
 ---
 
-### Cast a Kobo timestamp to YYYY-MM-DD
+#### Cast a Kobo timestamp to YYYY-MM-DD
 
 ```sql
 MAX(TO_TIMESTAMP(_submission_time, 'YYYY-MM-DD"T"HH24:MI:SS'))
@@ -111,9 +155,9 @@ MAX(TO_TIMESTAMP(_submission_time, 'YYYY-MM-DD"T"HH24:MI:SS'))
 |------------------------|--------------------|
 | 2024-06-25T15:27:32	           | 2024-06-05        |
 
-## Creating Categories and Ranges
+### Creating Categories and Ranges
 
-### Recast a string column as numeric, and use specific ranges for the values
+#### Recast a string column as numeric, and use specific ranges for the values
 
 ```sql
 CASE 
@@ -146,11 +190,11 @@ END
 
 ---
 
-### Recast a birthdate text field that is "YYYY-MM-DD" to only YYYY
+#### Recast a birthdate text field that is "YYYY-MM-DD" to only YYYY
 
 ```sql
 CASE
-    WHEN CAST(SUBSTRING("Birthdate", 1, 4) AS INTEGER) <= 1940 THEN 'Before 1940'
+    WHEN CAST(SUBSTRING("Birthdate", 1, 4) AS INTEGER) < 1940 THEN 'Before 1940'
     WHEN CAST(SUBSTRING("Birthdate", 1, 4) AS INTEGER) BETWEEN 1940 AND 1949 THEN '1940 - 1949'
     WHEN CAST(SUBSTRING("Birthdate", 1, 4) AS INTEGER) BETWEEN 1950 AND 1959 THEN '1950 - 1959'
     WHEN CAST(SUBSTRING("Birthdate", 1, 4) AS INTEGER) BETWEEN 1960 AND 1969 THEN '1960 - 1969'
@@ -179,7 +223,7 @@ END
 
 ---
 
-### Categorize distance based on meter ranges
+#### Categorize distance based on meter ranges
 
 ```sql
 CASE 
@@ -206,9 +250,9 @@ END
 | "6.3"                   | "5m and over"          |
 | "unknown"               | "Not recorded"         |
 
-## Data Cleaning and Value Transformation
+### Data Cleaning and Value Transformation
 
-### Convert 0 and 1 form responses to "No" and "Yes"
+#### Convert 0 and 1 form responses to "No" and "Yes"
 
 ```sql
 CASE
@@ -223,7 +267,7 @@ CASE
 | "0"    | "No" |
 | "1"    | "Yes" |
 
-### Convert gender form responses to strings in the Indigenous language, with "no answer" fallback
+#### Convert gender form responses to strings in the Indigenous language, with "no answer" fallback
 
 ```sql
 CASE
@@ -241,7 +285,7 @@ END
 
 ---
 
-### Replace raw Kobo choice values with labels from the `__labels` table
+#### Replace raw Kobo choice values with labels from the `__labels` table
 
 Kobo submissions store raw choice codes (for example `n_o` instead of `não`). Each Kobo responses table has a companion `<table_name>__labels` lookup with the human-readable labels from the form definition. Join on both `question_name` and `name` so reused codes (such as shared `0`–`5` scales) resolve to the correct label for that question.
 
@@ -324,7 +368,7 @@ LEFT JOIN my_kobo_form__labels AS condition
 For multilingual forms, add `AND l.language = 'pt'` (or another language code) to each join so you pick one translation. Use this query as a [virtual dataset](https://docs.preset.io/docs/virtual-datasets) if several charts need the labeled columns.
 :::
 
-### Set null values to "No answer"
+#### Set null values to "No answer"
 
 ```sql
 COALESCE("Did_you_take_a_course", 'No answer')
@@ -334,9 +378,9 @@ COALESCE("Did_you_take_a_course", 'No answer')
 |--------|-------|
 | NULL   | "No answer" |
 
-## Geospatial Data Processing
+### Geospatial Data Processing
 
-### Create a virtual database with latitude and longitude (for Mapbox Map chart)
+#### Create a virtual database with latitude and longitude (for Mapbox Map chart)
 
 For a field `Record_your_current_location` with values like `"-1.234567 8.901234 124.4 15.899999618530273"` (latitude, longitude, altitude, accuracy),
 

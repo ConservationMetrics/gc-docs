@@ -3,7 +3,7 @@ sidebar_position: 1
 tags: [itu-3, opu, tsp]
 ---
 
-# 🛩️+🗺️ Guide: From Mining Alerts to Drone Maps
+# From Mining Alerts to Drone Maps
 
 ## Introduction
 

@@ -3,13 +3,13 @@ sidebar_position: 2
 tags: [itu-3, opu, tsp]
 ---
 
-# Guide: Turning Monitoring Tracks into Round Reports
+# Turning Monitoring Tracks into Round Reports
 
 ## Introduction
 
 The [field briefing guide](/guides/land-monitoring/guide-mining-alert-field-briefings/) plans the round; the [drone guide](/guides/land-monitoring/guide-drone-photogrammetry-workflow/) closes distance without going. But when the team finally walks out with the briefing packet and comes back later, it carries something no planning document predicts: the **effort it took**. Kilometres covered, hills crossed, sites that turned out to be three river bends farther than the satellite made them look.
 
-Right now that record usually lives in nothing but the observers' memory — information that never gets to the reports. Many teams already capture it without trying: using tools that track recording during the round. That track, processed the day the team gets home, produces two things the village council should see:
+Right now that record usually lives in nothing but the observers' memory — information that never gets to the reports. Many teams already capture it without trying: using tools that track recording during the round. That track, processed the day the team gets home, produces two things the community should see:
 
 1. **The effort surfaced** — distance, days out, elevation climbed — so the council understands what monitoring actually costs, not just what it finds.
 2. **The work backed up** — proof, from the device's own timestamps, of which planned sites the team physically reached and spent time at.
@@ -23,7 +23,7 @@ flowchart TD
     D --> F["🗺️ QGIS<br/>did the track reach<br/>the planned sites?"]
     E --> G["🖨️ One-page round report"]
     F --> G
-    G --> H["🤝 Village <br/> reporting"]
+    G --> H["🤝 Local <br/> reporting"]
     D --> I["🗄️ Archive to your instance<br/>rounds accumulate<br/>in GC Explorer"]
 ```
 
@@ -86,7 +86,7 @@ The elevation chart from the first tool is the single best "effort" image for th
 
 ## Step 4: The one-page round report
 
-Everything above exists to fill **one A4 page** that goes to the village council after every round — same print conventions as the briefing packet (scale bar, north arrow, minimal legend), so the council reads the before and after of the same map.
+Everything above exists to fill **one A4 page** that goes back to the community after every round — same print conventions as the briefing packet (scale bar, north arrow, minimal legend), so the council reads the before and after of the same map.
 
 | Element | Content |
 | --- | --- |
@@ -110,7 +110,7 @@ Read as a set, the page tells the council exactly what they need: *we planned ag
 Add the verified findings back where they came from: record confirmed sites in a GC Explorer [incident](/reference/gc-toolkit/gc-explorer/incidents/). The planning map, the route that walked it, and the conclusion then live on the same record.
 :::
 
-## Step 6: Archive the tracks — let the effort accumulate
+## Step 5: Archive the tracks — let the effort accumulate
 
 The per-round report answers "what did this round cost and find?". The year answers "what does monitoring cost *in total*?" — and only works if every round's tracks land in the same place:
 
@@ -122,7 +122,7 @@ Once rounds accumulate as data instead of files, a dashboad can be created to ga
 ## Related documentation
 
 - [Preparing Mining Alert Field Briefings](/guides/land-monitoring/guide-mining-alert-field-briefings/) — this guide's predecessor: the planned sites and the folder this one fills
-- [From Mining Alerts to Drone Maps](/guides/land-monitoring/guide-drone-photogrammetry-workflow/) — the other way to cover distance when the round cannot
+- [From Satellite Alerts to Drone Maps](/guides/land-monitoring/guide-drone-photogrammetry-workflow/) — the other way to cover distance when the round cannot
 - [Use your data in QGIS](/reference/common-workflows/use-your-data-in-qgis/) — getting exports into the project
 - [Incidents in GC Explorer](/reference/gc-toolkit/gc-explorer/incidents/) — record findings where the alerts live
 

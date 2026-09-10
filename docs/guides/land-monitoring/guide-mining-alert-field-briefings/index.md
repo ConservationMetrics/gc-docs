@@ -3,7 +3,7 @@ sidebar_position: 0
 tags: [itu-3, idm, opu, tsp]
 ---
 
-# GC Explorer: Preparing Mining Alert Field Briefings
+# Preparing Mining Alert Field Briefings
 
 ## Introduction
 
@@ -166,7 +166,7 @@ When meeting those from the nearby village, the packet multiple jobs:
 After the visit, verified sites can be added to an **[incident](/reference/gc-toolkit/gc-explorer/incidents/)** in GC Explorer (or mapped with KoboToolbox/CoMapeo on the spot), keeping the alert, the analysis, and the field observation linked for reporting.
 
 
-## What's next
+## Related documentation
 
 - [Use your data in QGIS](/reference/common-workflows/use-your-data-in-qgis/) — how to get Guardian Connector data into QGIS
 - [Incidents in GC Explorer](/reference/gc-toolkit/gc-explorer/incidents/) — group alerts and record what you verified

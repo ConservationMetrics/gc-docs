@@ -95,7 +95,7 @@ A comprehensive guide for creating data sharing protocols grounded in Indigenous
 
 ### 🛰️+🖨️ [Preparing Mining Alert Field Briefings](./land-monitoring/guide-mining-alert-field-briefings/)
 
-An example workflow for monitoring leads: review change detection alerts in GC Explorer, export them, analyze mining sites in QGIS (distance to river and village), and print per-site briefing maps to take to village council meetings before a field visit.
+An example workflow for monitoring leads: review change detection alerts in GC Explorer, export them, analyze mining sites in QGIS (distance to river and village), and print per-site briefing maps to take to community meetings before a field visit.
 
 **What you'll learn:**
 - Reacting to alerts via WhatsApp notifications, or reviewing accumulated alerts in Explorer before planning a round
@@ -106,7 +106,7 @@ An example workflow for monitoring leads: review change detection alerts in GC E
 
 ### 🛩️+🗺️ [From Mining Alerts to Drone Maps](./land-monitoring/guide-drone-photogrammetry-workflow/)
 
-A workflow for monitoring teams to assess remote mining sites without costly expeditions: export alert areas as KML, fly an automated photogrammetry mission, stitch the photos into an orthomosaic with OpenDroneMap (locally) or Geostitch (cloud), and print the result into the same briefing packets and reports used for village visits.
+A workflow for monitoring teams to assess remote mining sites without costly expeditions: export alert areas as KML, fly an automated photogrammetry mission, stitch the photos into an orthomosaic with OpenDroneMap (locally) or Geostitch (cloud), and print the result into the same briefing packets and reports used for community visits.
 
 **What you'll learn:**
 - Exporting mining alerts as KML for import into a drone mission planner (MavenRoute as worked example)
@@ -117,7 +117,7 @@ A workflow for monitoring teams to assess remote mining sites without costly exp
 
 ### 🥾+📊 [Turning Monitoring Tracks into Round Reports](./land-monitoring/guide-monitoring-round-reports/)
 
-A post-fieldwork workflow for monitoring teams: take the GPS tracks already recorded during a monitoring round and turn them into a one-page report for the village council — surfacing the effort the round cost and backing up which planned sites were actually reached and verified.
+A post-fieldwork workflow for monitoring teams: take the GPS tracks already recorded during a monitoring round and turn them into a one-page report for the community — surfacing the effort the round cost and backing up which planned sites were actually reached and verified.
 
 **What you'll learn:**
 - Recording rounds so GPX files stay usable (one track per team per day, site-named waypoints)

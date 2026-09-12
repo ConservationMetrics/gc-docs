@@ -34,7 +34,7 @@ To keep visualization responsive, GC Explorer shows at most **10,000 data record
 
 :::
 
-## 📤 Exporting Data
+## 📤 Exporting Data {#exporting-data}
 
 ### Exporting Data from the Map View
 

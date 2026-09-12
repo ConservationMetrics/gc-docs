@@ -32,7 +32,7 @@ These are the default Guardian Connector services your community can link to fro
 
 Not everyone sees every service. In general, the more advanced or sensitive a tool is, the higher the role needed to open it — for example, Explorer is available to most signed-in users, while Windmill is reserved for administrators.
 
-It's also possible to configure the Landing Page to show custom apps, which are apps that are not part of the default Guardian Connector stack. See [⚙️ Configuring Custom Apps](#⚙️-configuring-custom-apps) for more information.
+It's also possible to configure the Landing Page to show custom apps, which are apps that are not part of the default Guardian Connector stack. See [⚙️ Configuring Custom Apps](#configuring-custom-apps) for more information.
 
 ## 🌐 Tools You Can Use with Guardian Connector
 
@@ -48,7 +48,7 @@ Guardian Connector also connects with other tools such as **ArcGIS Survey123**, 
 
 ## 🔧 For Administrators
 
-### 👥 User Management
+### 👥 User Management {#user-management}
 
 If you are an **administrator**, the Landing Page gives you a User Management area to control who can access your community's Guardian Connector and what they can do.
 
@@ -78,7 +78,7 @@ From here you can add:
 - A **logo URL**, which shows up on the home page.
 - A **background image URL**, which is used as the background on the login screen.
 
-### ⚙️ Configuring Custom Apps
+### ⚙️ Configuring Custom Apps {#configuring-custom-apps}
 
 If your community has other apps running on Guardian Connector, the **Custom Apps** page lets you create cards similar to the default services — like Explorer, Superset, and File Browser. Each card opens at its own subdomain, so people can reach your custom apps from the Landing Page the same way they open the built-in ones.
 

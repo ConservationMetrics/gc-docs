@@ -5,7 +5,7 @@ tags: [itu-3, opu, tsp]
 
 # User Roles
 
-Superset uses a role-based system to control what users can see and do within the platform. In Guardian Connector, those roles are **not assigned inside Superset**. They are kept in sync with each user's [Guardian Connector role](/reference/gc-toolkit/gc-landing-page/#-user-management-for-administrators), which administrators manage from the Landing Page.
+Superset uses a role-based system to control what users can see and do within the platform. In Guardian Connector, those roles are **not assigned inside Superset**. They are kept in sync with each user's [Guardian Connector role](/reference/gc-toolkit/gc-landing-page/#user-management), which administrators manage from the Landing Page.
 
 When a user's Guardian Connector role changes, their Superset role updates to the matching equivalent on the next sign-in.
 
@@ -18,7 +18,7 @@ When a user's Guardian Connector role changes, their Superset role updates to th
 | Guest                   | Gamma         |
 | SignedIn                | Public        |
 
-To change someone's access in Superset, update their role in [User Management on the Landing Page](/reference/gc-toolkit/gc-landing-page/#-user-management-for-administrators). Do not try to manage Superset roles separately — they will be overwritten by the sync.
+To change someone's access in Superset, update their role in [User Management on the Landing Page](/reference/gc-toolkit/gc-landing-page/#user-management). Do not try to manage Superset roles separately — they will be overwritten by the sync.
 
 ## Available Roles
 

@@ -1,0 +1,452 @@
+{
+  "1225ec7e": {
+    "pt": "[Guardian Connector Explorer (GC Explorer)](https://github.com/conservationmetrics/gc-explorer) é uma ferramenta de visualização de dados baseada na web que transforma os dados tabulares da sua comunidade em mapas interativos, galerias e painéis de controle. Construído especificamente para o Guardian Connector, ele se conecta diretamente ao seu banco de dados PostgreSQL para exibir dados coletados de ferramentas como CoMapeo, KoboToolbox e outras plataformas de coleta de dados."
+  },
+  "a9989cef": {
+    "pt": "**⚠️ Painel de Alertas**: Monitore mudanças e ameaças ambientais com alertas de detecção de mudanças e imagens de satélite de antes e depois; crie [incidentes](/reference/gc-toolkit/gc-explorer/incidents/) para agrupar uma série de alertas com fontes de dados secundárias."
+  },
+  "32f49d3f": {
+    "pt": "O **filtro de tempo** no Painel de Alertas se aplica a ambos os downloads. Use-o para baixar em lote um subconjunto de alertas em vez do conjunto completo; o mesmo filtro também atualiza as estatísticas, então um download de estatísticas reflete o intervalo de datas filtrado."
+  },
+  "f80b4929": {
+    "pt": "Ao criar uma visualização, você escolhe um **conjunto de dados primário** e, se o tipo de visualização suportar, um **conjunto de dados secundário** opcional. As opções que aparecem a seguir dependem do tipo de visualização; o próprio formulário é o melhor guia para cada campo."
+  },
+  "1dbd8d28": {
+    "pt": "Para manter a visualização responsiva, o GC Explorer mostra no máximo **10.000 registros de dados** em uma visualização. Se um conjunto de dados for maior que isso, uma notificação toast aparecerá e apenas os primeiros 10.000 registros serão exibidos."
+  },
+  "fea0bda1": {
+    "pt": "**Crie um incidente** que agrupa uma série de alertas com fontes de dados secundárias e, em seguida, baixe esse incidente. Consulte [Incidentes](/reference/gc-toolkit/gc-explorer/incidents/) para obter mais informações."
+  },
+  "48e8ff3f": {
+    "pt": "O Painel de Alertas também mostra estatísticas sobre os alertas, como o número total de alertas ou o número total de hectares afetados. Você também pode baixar essas estatísticas."
+  },
+  "5f5a94d1": {
+    "pt": "Se outra visualização já tiver muitas das mesmas configurações, você pode **copiar a configuração dessa visualização** para iniciar a nova em vez de preencher tudo do zero."
+  },
+  "026b7248": {
+    "pt": "Essas exportações facilitam a continuidade do trabalho com seus dados fora do GC Explorer, usando as ferramentas e formatos que melhor se adaptam às necessidades da sua comunidade."
+  },
+  "4c0bf252": {
+    "pt": "O GC Explorer transforma dados brutos em formatos visuais e acessíveis que ajudam as comunidades a entender, compartilhar e agir sobre suas informações coletadas."
+  },
+  "10920b76": {
+    "pt": "Depois de exportar seus dados como CSV, GeoJSON ou KML, é possível convertê-los em muitos outros formatos compatíveis com GIS, se necessário."
+  },
+  "815c5259": {
+    "pt": "Se essas limitações afetarem seu fluxo de trabalho, geralmente é recomendado usar os formatos **GeoPackage** ou **File Geodatabase**."
+  },
+  "23bfab6a": {
+    "pt": "**📍 Visualização de Mapa**: Visualize seus dados geoespaciais em um mapa interativo com painéis de informações pop-up e anexos de mídia incorporados."
+  },
+  "209d7176": {
+    "pt": "O GC Explorer permite exportar dados diretamente da Visualização de Mapa em uma variedade de formatos para uso em outras ferramentas e fluxos de trabalho."
+  },
+  "bc3344df": {
+    "pt": "**📸 Visualização de Galeria**: Navegue por conteúdo de foto, áudio e vídeo coletado em campo, organizado por data ou local."
+  },
+  "8904d50d": {
+    "pt": "**GeoJSON**: Exporte dados geoespaciais em um formato aberto moderno amplamente suportado por ferramentas GIS e aplicativos de mapeamento web."
+  },
+  "4e5158e7": {
+    "pt": "No ArcGIS, arquivos CSV contendo informações de coordenadas também podem ser carregados diretamente usando o recurso **\"Add XY Data\"**."
+  },
+  "e849eb1e": {
+    "pt": "Você pode criar uma nova visualização de **Mapa**, **Galeria** ou **Painel de Alertas** — e possivelmente outros tipos de visualização no futuro."
+  },
+  "5d321d8b": {
+    "pt": "Tanto o QGIS quanto o ArcGIS suportam a importação de dados GeoJSON e KML e sua exportação para esses formatos adicionais."
+  },
+  "c85d8f6a": {
+    "pt": "**KML**: Exporte dados geoespaciais para uso em aplicativos como Google Earth e outras plataformas de mapeamento."
+  },
+  "95a0f97d": {
+    "pt": "**CSV**: Exporte seus dados em formato tabular para planilhas, bancos de dados ou análises adicionais."
+  },
+  "25a40408": {
+    "pt": "Embora os shapefiles sejam amplamente compatíveis, eles também possuem limitações importantes, incluindo:"
+  },
+  "a0cdc9d7": {
+    "pt": "O Painel de Alertas oferece várias maneiras de baixar alertas e informações relacionadas."
+  },
+  "248d7320": {
+    "pt": "Você pode baixar alertas usando os mesmos formatos CSV, GeoJSON e KML da Visualização de Mapa:"
+  },
+  "f945b9c5": {
+    "pt": "**Baixar todos os alertas em lote** de uma vez em um dos formatos suportados."
+  },
+  "9960b242": {
+    "pt": "**Fontes de Dados Personalizadas**: Quaisquer dados tabulares compatíveis com PostgreSQL"
+  },
+  "43070807": {
+    "pt": "Para um **mapa** ou **painel de alertas**, você pode definir coisas como:"
+  },
+  "46d149a2": {
+    "pt": "**Baixar um alerta individual** clicando nele no mapa."
+  },
+  "95ab6ab0": {
+    "pt": "**Alertas Ambientais**: Dados de detecção de mudanças via satélite"
+  },
+  "5a968652": {
+    "pt": "Restrições nos tipos de campo e complexidade da estrutura de dados"
+  },
+  "e050ab3a": {
+    "pt": "Se a visualização incluir **mídia**, você pode definir coisas como:"
+  },
+  "7cc0b413": {
+    "pt": "**CoMapeo**: Dados de mapeamento e observação comunitária"
+  },
+  "15f6a377": {
+    "pt": "Um **fundo de cabeçalho**, como uma imagem em miniatura"
+  },
+  "a13472a1": {
+    "pt": "Suporte limitado para codificação de caracteres não-latinos"
+  },
+  "4157b551": {
+    "pt": "O GC Explorer funciona automaticamente com dados de:"
+  },
+  "9368582c": {
+    "pt": "**KoboToolbox/ODK**: Respostas e formulários de pesquisa"
+  },
+  "4766505a": {
+    "pt": ":::tip Conversão de Formato e Compatibilidade com GIS"
+  },
+  "46cfc56a": {
+    "pt": "Um limite máximo de 10 caracteres para nomes de colunas"
+  },
+  "66dcd55d": {
+    "pt": "Os formatos de exportação atualmente suportados incluem:"
+  },
+  "ec350660": {
+    "pt": "Alguns formatos comumente solicitados incluem:"
+  },
+  "e67e0cb2": {
+    "pt": "Exportando Dados do Painel de Alertas"
+  },
+  "ceee9039": {
+    "pt": "Uma **URL base** para carregar mídia"
+  },
+  "b49cee96": {
+    "pt": "**Parâmetros do mapa** como nível de zoom"
+  },
+  "3a8e1466": {
+    "pt": "📤 Exportando Dados {#exporting-data}"
+  },
+  "1834aaf3": {
+    "pt": "Exportando Dados da Visualização de Mapa"
+  },
+  "8dd07f5d": {
+    "pt": "**File Geodatabase (.gdb)**"
+  },
+  "b4bd451b": {
+    "pt": "Um **token de acesso Mapbox**"
+  },
+  "763cfff4": {
+    "pt": ":::note Limitações de Dados"
+  },
+  "0ce42cbc": {
+    "pt": "🕒 Usando o Filtro de Tempo"
+  },
+  "8b821cc9": {
+    "pt": "**GeoPackage (.gpkg)**"
+  },
+  "212a26d4": {
+    "pt": "📊 Exportando Estatísticas"
+  },
+  "211d7329": {
+    "pt": "**Shapefile (.shp)**"
+  },
+  "322df530": {
+    "pt": "⚙️ Configurando Visualizações"
+  },
+  "cf74350c": {
+    "pt": "🗺️ Visualizações Disponíveis"
+  },
+  "8a3d11be": {
+    "pt": "🔄 Integração de Dados"
+  },
+  "375e55c3": {
+    "pt": "📥 Exportando Alertas"
+  },
+  "ff672202": {
+    "pt": "Um **estilo de mapa**"
+  },
+  "fabca94a": {
+    "pt": "GC Explorer"
+  },
+  "01800eb4": {
+    "pt": "**Filtros**"
+  },
+  "ad64cb96": {
+    "pt": "**O que você vê na Página Inicial depende do seu papel.** Pessoas diferentes precisam de ferramentas diferentes, então a página mostra apenas os serviços que você tem permissão para usar. Se um serviço que você espera está faltando, ele pode não estar ativado para sua comunidade, ou seu papel pode ainda não incluir acesso a ele — entre em contato com o administrador da sua comunidade."
+  },
+  "e9297775": {
+    "pt": "Se sua comunidade tem outros aplicativos rodando no Guardian Connector, a página de **Aplicativos Personalizados** permite criar cartões semelhantes aos serviços padrão — como Explorer, Superset e File Browser. Cada cartão abre em seu próprio subdomínio, para que as pessoas possam acessar seus aplicativos personalizados a partir da Página Inicial da mesma forma que abrem os aplicativos integrados."
+  },
+  "1e61d8c4": {
+    "pt": "Ao visitar a Página Inicial pela primeira vez, pode ser solicitado que você se registre ou faça login. Após o registro, um membro da sua comunidade com acesso de administrador precisa **aprovar sua conta** e atribuir-lhe um papel antes que você possa ver os serviços. Até que isso aconteça, você não conseguirá acessar o Guardian Connector."
+  },
+  "fb42cc38": {
+    "pt": "A Página Inicial do Guardian Connector é a **página inicial** do Guardian Connector da sua comunidade: a porta de entrada para onde você chega depois de fazer login. Ela reúne tudo em um só lugar, então você não precisa memorizar endereços da web ou procurar pela ferramenta certa."
+  },
+  "e27f451a": {
+    "pt": "O Guardian Connector também se conecta com outras ferramentas como **ArcGIS Survey123**, **Locus Map**, **Global Forest Watch**, **SMART** e mais. Para saber tudo o que pode ser conectado, veja o [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/)."
+  },
+  "f445c080": {
+    "pt": "A Página Inicial também apresenta as ferramentas de campo e plataformas que funcionam com o Guardian Connector. Estes são os aplicativos que sua comunidade pode usar para **coletar dados em campo** — dados que fluem para o Guardian Connector para visualização e análise."
+  },
+  "07f34538": {
+    "pt": "Nem todos veem todos os serviços. Em geral, quanto mais avançada ou sensível for uma ferramenta, maior o papel necessário para abri-la — por exemplo, o Explorer está disponível para a maioria dos usuários logados, enquanto o Windmill é reservado para administradores."
+  },
+  "f017c5ec": {
+    "pt": "Também é possível configurar a Página Inicial para mostrar aplicativos personalizados, que são aplicativos que não fazem parte do conjunto padrão do Guardian Connector. Consulte [⚙️ Configurando Aplicativos Personalizados](#configuring-custom-apps) para mais informações."
+  },
+  "45ada005": {
+    "pt": "Se você é um **administrador**, a Página Inicial oferece uma área de Gerenciamento de Usuários para controlar quem pode acessar o Guardian Connector da sua comunidade e o que eles podem fazer."
+  },
+  "ad011333": {
+    "pt": "Estes são os serviços padrão do Guardian Connector aos quais sua comunidade pode se conectar a partir da Página Inicial. Cada um aparece como um cartão em que você pode clicar para abri-lo em uma nova guia."
+  },
+  "cc51cfd2": {
+    "pt": "**Windmill**: Execute e agende os fluxos de trabalho de automação que coletam e processam seus dados (consulte o [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/))."
+  },
+  "a7803725": {
+    "pt": "Quando você aprova alguém e lhe atribui o papel certo, os serviços que essa pessoa tem permissão para usar aparecerão em sua Página Inicial na próxima vez que ela fizer login."
+  },
+  "b751b952": {
+    "pt": "Se você é um administrador, pode gerenciar **contas e papéis de usuário**, configurar **definições de tema** e adicionar **aplicativos personalizados** para sua comunidade."
+  },
+  "8a66ce79": {
+    "pt": "**[Explorer](/reference/gc-toolkit/gc-explorer/)**: Visualize os dados da sua comunidade como mapas interativos, galerias de mídia e um painel de alertas."
+  },
+  "9499d574": {
+    "pt": "Veja o **status** de cada pessoa — se sua conta está *Aprovada* ou ainda *Pendente* — juntamente com seu papel e quando ela fez o último login."
+  },
+  "9717bc3e": {
+    "pt": "**[Timelapse](/reference/core-integrations/timelapse/)**: Revisão e anotação de imagens de armadilhas fotográficas para monitoramento da biodiversidade."
+  },
+  "32c2e754": {
+    "pt": "Saiba mais sobre as **ferramentas que você pode usar com o Guardian Connector** para coletar e inserir dados (como CoMapeo, KoboToolbox e mais)."
+  },
+  "22551500": {
+    "pt": "**[File Browser](/reference/gc-toolkit/filebrowser/)**: Navegue, baixe e gerencie os arquivos brutos e arquivos da sua comunidade."
+  },
+  "70d093ad": {
+    "pt": "**[Superset](/reference/gc-toolkit/superset/)**: Crie e explore gráficos, painéis e visualizações a partir dos seus dados."
+  },
+  "bb05e9f3": {
+    "pt": "**[KoboToolbox](/reference/core-integrations/kobotoolbox/)** e **ODK**: Formulários e pesquisas que funcionam online e offline."
+  },
+  "96fff4af": {
+    "pt": "Abra os **serviços** que sua comunidade usa (como Explorer, Superset, Windmill ou File Browser) com um único clique."
+  },
+  "544d942f": {
+    "pt": "**[CoMapeo](/reference/core-integrations/comapeo/)**: Mapeamento e monitoramento mobile, com prioridade offline."
+  },
+  "0a190ec2": {
+    "pt": "**Aprovar (ou desaprovar) uma conta.** Somente usuários aprovados podem acessar os serviços."
+  },
+  "cc03cb42": {
+    "pt": "As Configurações de Tema permitem personalizar a marca da sua comunidade na Página Inicial."
+  },
+  "634a5500": {
+    "pt": "Uma **URL de imagem de fundo**, que é usada como plano de fundo na tela de login."
+  },
+  "f88551e0": {
+    "pt": "Para cada aplicativo personalizado, você pode adicionar um nome, subdomínio, descrição, ícone e tags."
+  },
+  "54fb91e1": {
+    "pt": "**Atribua um papel** que decide quais serviços cada pessoa pode abrir."
+  },
+  "2f03145c": {
+    "pt": "Os papéis atualmente disponíveis, do menor para o maior acesso, são:"
+  },
+  "4dc29d70": {
+    "pt": "**Logado**: Logado, mas sem acesso aos serviços ainda."
+  },
+  "11fe489e": {
+    "pt": "**Convidado**: Acesso limitado, adequado para visitantes ou parceiros."
+  },
+  "134df9d7": {
+    "pt": "**Administrador**: Acesso total, incluindo esta área de Gerenciamento de Usuários."
+  },
+  "3ca2d17f": {
+    "pt": "**Excluir uma conta** se ela não deve mais ter acesso."
+  },
+  "7e1d53dd": {
+    "pt": "⚙️ Configurando Aplicativos Personalizados {#configuring-custom-apps}"
+  },
+  "3f39ed28": {
+    "pt": "**Membro**: Acesso diário para membros da comunidade."
+  },
+  "1ae55a79": {
+    "pt": "Uma **URL de logotipo**, que aparece na página inicial."
+  },
+  "849c5b35": {
+    "pt": "🌐 Ferramentas que você pode usar com o Guardian Connector"
+  },
+  "899dc1b1": {
+    "pt": "**Pesquisar** pessoas por nome ou e-mail."
+  },
+  "5c720020": {
+    "pt": "👥 Gerenciamento de Usuários {#user-management}"
+  },
+  "28e1d2aa": {
+    "pt": "Na Página Inicial, você pode:"
+  },
+  "6fccd7a9": {
+    "pt": "A partir daqui, você pode adicionar:"
+  },
+  "0fb75b94": {
+    "pt": "🚀 Serviços Disponíveis"
+  },
+  "787e08f3": {
+    "pt": "🔧 Para Administradores"
+  },
+  "e32b3fbe": {
+    "pt": "A partir daqui, você pode:"
+  },
+  "303ad3eb": {
+    "pt": "🎨 Configurações de Tema"
+  },
+  "3cb2f282": {
+    "pt": "Página Inicial do GC"
+  },
+  "57d64568": {
+    "pt": "🔑 Entrando"
+  },
+  "b1953fde": {
+    "pt": "O Superset usa um sistema baseado em funções para controlar o que os utilizadores podem ver e fazer na plataforma. No Guardian Connector, essas funções **não são atribuídas dentro do Superset**. Elas são mantidas em sincronia com a [função do Guardian Connector](/reference/gc-toolkit/gc-landing-page/#user-management) de cada utilizador, que os administradores gerem a partir da Página Inicial."
+  },
+  "a46dacfa": {
+    "pt": "Para alterar o acesso de alguém no Superset, atualize a função dessa pessoa em [Gestão de Utilizadores na Página Inicial](/reference/gc-toolkit/gc-landing-page/#user-management). Não tente gerir as funções do Superset separadamente — elas serão substituídas pela sincronização."
+  },
+  "af7e6969": {
+    "pt": "Para uma lista exaustiva de funções e permissões, consulte [STANDARD_ROLES.md](https://github.com/apache/superset/blob/master/RESOURCES/STANDARD_ROLES.md)."
+  },
+  "316565ca": {
+    "pt": "A função Público é atribuída aos utilizadores que estão autenticados no Guardian Connector, mas têm apenas a função **SignedIn** (ainda sem acesso ao nível do serviço):"
+  },
+  "91116b1f": {
+    "pt": "Quando a função do Guardian Connector de um utilizador muda, a sua função no Superset é atualizada para o equivalente correspondente no próximo início de sessão."
+  },
+  "a5935ead": {
+    "pt": "O nível de acesso também pode depender de como a função Público está configurada no Superset (incluindo a definição $CODEVAR[0])"
+  },
+  "6a5bca2a": {
+    "pt": "*Melhor para: Utilizadores recém-registados à espera de atribuição de função, ou contas que ainda não devem usar os serviços do Superset*"
+  },
+  "58c8c20b": {
+    "pt": "Para mais informações, consulte [este guia sobre funções do Superset](https://superset.apache.org/docs/security/)."
+  },
+  "1807f01f": {
+    "pt": "*Melhor para: Visitantes, parceiros ou aliados que necessitam de acesso apenas a dashboards específicos*"
+  },
+  "c6891a59": {
+    "pt": "Os utilizadores Alpha podem trabalhar com dados e criar conteúdo, mas não podem gerir as configurações do sistema:"
+  },
+  "b4c55f92": {
+    "pt": "*Melhor para: Coordenadores de comunidade, analistas de dados e criadores ativos de dashboards*"
+  },
+  "06c64f36": {
+    "pt": "Só pode ver gráficos e dashboards aos quais lhe foi explicitamente concedido acesso"
+  },
+  "ac1c7813": {
+    "pt": "Os administradores têm acesso completo para gerir todo o ambiente Superset:"
+  },
+  "2036c8a9": {
+    "pt": "Os utilizadores Gamma têm acesso limitado e apenas de leitura a conteúdos específicos:"
+  },
+  "6156b572": {
+    "pt": "Tipicamente usado antes de um administrador aprovar um acesso mais amplo"
+  },
+  "cf0dc64e": {
+    "pt": "**Acesso mínimo para utilizadores autenticados sem uma função de serviço**"
+  },
+  "c88cd611": {
+    "pt": "*Melhor para: Administradores de sistema e coordenadores técnicos*"
+  },
+  "7531bf09": {
+    "pt": "Corresponde à função do Guardian Connector com menos privilégios"
+  },
+  "3103ddad": {
+    "pt": "Não pode editar dashboards e gráficos que não são seus"
+  },
+  "7a7a60bc": {
+    "pt": "Criar, editar e partilhar os seus próprios dashboards e gráficos"
+  },
+  "4b87ab06": {
+    "pt": "Não pode gerir outros utilizadores ou visualizar credenciais de base de dados"
+  },
+  "89b254ed": {
+    "pt": "Ideal para utilizadores que apenas precisam de visualizar relatórios específicos"
+  },
+  "06ba05eb": {
+    "pt": "Gerir contas de utilizador e atribuir funções dentro do Superset"
+  },
+  "b9021d62": {
+    "pt": "Aceder a credenciais de base de dados e configurações de ligação"
+  },
+  "a06e9a8f": {
+    "pt": "Ver e editar todos os dashboards, gráficos e conjuntos de dados"
+  },
+  "4df759f6": {
+    "pt": "Aceder a todas as fontes de dados e dashboards disponíveis"
+  },
+  "a9b4dd72": {
+    "pt": "**Acesso apenas de leitura com permissões seletivas**"
+  },
+  "78d9b38b": {
+    "pt": "Configurar fontes de dados e definições de segurança"
+  },
+  "a98d5afe": {
+    "pt": "Conceder ou revogar acesso a recursos específicos"
+  },
+  "3102a56b": {
+    "pt": "**Controlo total sobre a instância Superset**"
+  },
+  "bf113e12": {
+    "pt": "🌐 Público ← Guardian Connector **SignedIn**"
+  },
+  "8942adb0": {
+    "pt": "Explorar dados e criar novas visualizações"
+  },
+  "24330bde": {
+    "pt": "Não pode adicionar novas fontes de dados ao sistema"
+  },
+  "b31f5114": {
+    "pt": "🔧 Alpha ← Guardian Connector **Member**"
+  },
+  "cd9376de": {
+    "pt": "👑 Admin ← Guardian Connector **Admin**"
+  },
+  "eea4caf3": {
+    "pt": "**Criadores de conteúdo com acesso amplo**"
+  },
+  "df10a53d": {
+    "pt": "📖 Gamma ← Guardian Connector **Guest**"
+  },
+  "97693433": {
+    "pt": "Não pode aceder a ferramentas de exploração de dados"
+  },
+  "624a30c9": {
+    "pt": "Não pode criar ou editar nenhum conteúdo"
+  },
+  "cb7da2de": {
+    "pt": "Função do Guardian Connector"
+  },
+  "18206c5a": {
+    "pt": "Mais Informações"
+  },
+  "bc3ed1a1": {
+    "pt": "Funções Disponíveis"
+  },
+  "76ac813e": {
+    "pt": "Função do Superset"
+  },
+  "41eb064e": {
+    "pt": "Mapeamento de Funções"
+  },
+  "7cc2d2e4": {
+    "pt": "Funções de Utilizador"
+  }
+}

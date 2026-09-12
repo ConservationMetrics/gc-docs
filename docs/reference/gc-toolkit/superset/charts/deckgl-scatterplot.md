@@ -3,9 +3,9 @@ sidebar_position: 5
 tags: [opu, tsp]
 ---
 
-## The Deck.gl Scatterplot
+# The Deck.gl Scatterplot
 
-### What it is
+## What it is
 
 [deck.gl](https://deck.gl/docs) is a tool to visualize large datasets. Within Superset, it is used to visualize maps in a highly performant way.
 
@@ -13,14 +13,14 @@ The **deck.gl Scatterplot** chart draws each row of your query as a circle on a 
 
 This is the map version of the water example from the [Handlebars documentation](./handlebars). A Handlebars card answers *"can this village drink its water?"* — a deck.gl scatterplot answers *"which villages, and are they clustered along the same river?"*
 
-### When it is useful
+## When it is useful
 
 - When **location carries meaning**: water sources, sampling sites, health posts, incident reports, nesting trees.
 - When you have **one number per place** and want hotspots, clusters, and gaps to stand out.
 - When your audience reads maps naturally — a council or community often gets more from a map of colored dots than from a table of readings.
 - When a Handlebars or table chart shows *what* the values are, and you want a companion chart to show *where* they are.
 
-### Setting up longitude and latitude
+## Setting up longitude and latitude
 
 Build a virtual dataset with one row per place, with coordinates as **separate numeric columns**. The [Helpful SQL Queries](/reference/gc-toolkit/superset/queries/) page (Geospatial Data Processing) has recipes for pulling `latitude` and `longitude` out of the single `Record_your_current_location` field that ODK/Kobo forms store. For the water example:
 
@@ -43,7 +43,7 @@ In the chart's **Data** tab, the **Longitude & Latitude** control opens a small 
 Rows with empty coordinates simply **do not appear on the map** — no error, just missing sites. Filter them out in your query (`WHERE latitude IS NOT NULL`) and compare the row count of your query with the number of circles you see; the difference is a data-quality gap worth fixing at the form level.
 :::
 
-### The metric
+## The metric
 
 The single number per location is set under **Point Size → Point Size**, by switching the toggle from **Fixed** to **Based on a metric** (for example `MAX("turbidity_ntu")`). **This toggle is crucial:** if left on **Fixed**, Superset completely omits the numerical values from the query payload, leaving deck.gl with no values to evaluate and defaulting all map points to grey.
 
@@ -56,7 +56,7 @@ Because Superset groups scatterplot data by coordinate dimensions (`latitude` an
 
 Also check that **Row limit** covers all of your sites, and add the site name (and the reading date) under **Tooltip Contents** so hovering a circle tells people which station it is.
 
-### Brackets: color breakpoints
+## Brackets: color breakpoints
 
 The power feature for a non-technical audience is **Point Color → Color Scheme Type → Color breakpoints**: you define **ranges** ("brackets") of the metric, and give each range its own color. Each bracket row is a minimum value, a maximum value, and a color; a point is matched **inclusively** (min ≤ value ≤ max), and the **first bracket that matches** wins — so keep your ranges contiguous without gaps. Values that fall in no range get the **Default color** (grey), and the legend labels the ranges for you.
 
@@ -66,9 +66,9 @@ If you instead want *one color per category* — river, village, source type —
 
 | Your column is... | Use |
 | --- | --- |
-| A number you want bucketed into ranges (turbidity, pH, count) | **Point Size:** Based on a metric<br>
+| A number you want bucketed into ranges (turbidity, pH, count) | **Point Size:** Based on a metric<br></br>
 
-<br>**Point Color:** Color breakpoints |
+<br></br>**Point Color:** Color breakpoints |
 | A label (station, community, water source) | **Point Color:** Categorical palette + Dimension |
 
 **Custom brackets for ranges.** Left on its own, Superset splits the data into evenly sized buckets, which almost never match a meaningful threshold. Set the ranges yourself so the colors change exactly where the real-world limits are. Ensure your highest range uses an explicit upper bound (e.g., `50.001 - 10000`) rather than leaving it open; points exceeding your defined maximum will otherwise fall back to the grey default color.
@@ -84,7 +84,7 @@ For turbidity (NTU), guided by the WHO Guidelines for Drinking-water Quality:
 
 As in the [Handlebars](./handlebars) documentation, treat these as a **starting point**: ask an LLM for the international standards for your metric, then confirm the thresholds your country or community actually uses.
 
-### Choosing colors
+## Choosing colors
 
 How you pick the palette depends on who reads the map:
 
@@ -102,7 +102,7 @@ The map behind your data layers is configured under the Map → Map Style dropdo
 
 Autozoom frames all active data coordinates automatically upon page load. To fix the camera position permanently over a single target territory, toggle Autozoom off, manually click-and-drag your map frame to the desired viewport, and click Save.
 
-## 💡 Advanced: Using a Custom Mapbox Studio Style
+### 💡 Advanced: Using a Custom Mapbox Studio Style
 
 If the standard dropdown selections don't meet your needs and you do not have administrative backend access to add a custom tile server, you can forcefully inject a custom Mapbox Studio URL (e.g., mapbox://styles/...) using a configuration export workaround:
 
@@ -119,7 +119,3 @@ Note: Once imported, you can safely use Save as... inside the Explorer UI to clo
 :::tip
 This section highlights the foundational configuration components. The map includes an extensive tray of advanced parameters—such as customizable tooltip templates, geometric legend sizing, click-through workflow actions, and explicit JavaScript payload callbacks—detailed thoroughly in the [Official Apache Superset Documentation](https://superset.apache.org/docs/using-superset/exploring-data).
 :::
-
-## Suggest a chart type
-
-This page covers the first of many visualizations. If you have found a good use for another chart type in your project — a map that tells a story, a funnel that tracks data quality, a cohort chart that standard users never discover — the Guardian Connector team would like to hear about it.

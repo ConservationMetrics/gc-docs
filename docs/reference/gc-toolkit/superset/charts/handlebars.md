@@ -3,9 +3,9 @@ sidebar_position: 5
 tags: [opu, tsp]
 ---
 
-## The Handlebars Chart
+# The Handlebars Chart
 
-### What it is
+## What it is
 
 The **Handlebars** chart is a special chart type that lets you design your own visualization using plain HTML and CSS. Instead of choosing colors and axes like in a standard chart, you write (or generate) a small template, and Superset fills it with the results of your query.
 
@@ -21,7 +21,7 @@ The template language is called [Handlebars](https://handlebarsjs.com/), and Sup
 You do **not** need to know HTML, CSS, or Handlebars to use this chart. The workflow below is designed so that a language model (LLM) writes the code for you, and you just copy it into Superset.
 :::
 
-### The problem standard charts didn't solve
+## The problem standard charts didn't solve
 
 Here is an example from one of our partners. They were taking water quality measurements — temperature, turbidity, oxygen levels, and pH — at sample sites around their territory, and they needed the value of this data to surface in two places: at the village level, where people depend directly on the water, and at a higher coordination level, where trends across sites matter.
 
@@ -29,7 +29,7 @@ Charts and maps were useful, but they didn't paint the whole picture of what the
 
 The Handlebars chart let us build a visualization that highlighted not only the data, but also the thresholds the measurements were passing. By pulling in the safe-consumption limits published by the WHO Guidelines for Drinking-water Quality and Guyana EPA — an LLM is a quick way to find these — the result was a traffic-light style visualization: green when a reading is within safe range, red when it is not. The village council could act on the *impact* of the data, instead of guessing what a pH of 5.9 means against generally accepted thresholds.
 
-### Recommended workflow
+## Recommended workflow
 
 The process has three steps:
 
@@ -37,7 +37,7 @@ The process has three steps:
 2. **Describe it to an LLM with redacted sample data** — ask it to design the layout
 3. **Copy the HTML and CSS back into Superset** — paste into the chart's template fields
 
-#### Step 1: Generate the query
+### Step 1: Generate the query
 
 Build the data table you want to visualize. The easiest way is to write a SQL query in **SQL Lab** and save it as a [virtual dataset](https://docs.preset.io/docs/virtual-datasets), so you can reuse it. The [Helpful SQL Queries](/reference/gc-toolkit/superset/queries/) page has recipes for common tasks (converting text dates to timestamps, turning raw form codes into labels, grouping values into ranges).
 
@@ -59,7 +59,7 @@ Handlebars charts work best in **raw** query mode (individual rows), which lets 
 
 Run the query and confirm the result looks right. Each column name you see here is a value your template can display, so keep the names simple and consistent (for example `ph`, not `PH value (avg)`).
 
-#### Step 2: Share a redacted sample with an LLM
+### Step 2: Share a redacted sample with an LLM
 
 :::warning
 Never paste real data into an LLM. Before sharing, **redact** the sample: replace station names, people, GPS coordinates, or any sensitive value with made-up ones. Column names and fake values are enough — the LLM is designing the layout, not analyzing the data.
@@ -80,7 +80,7 @@ Give the LLM three things:
 
    > Write a Superset Handlebars chart template. The query result is available as `data`, an array of row objects. Loop with `{{#each data}}` and access columns as `{{this.column_name}}`. You may use these helpers: `formatNumber`, `dateFormat` (option `format`), `stringify`, `groupBy`, and the comparison, logical, string, and math helpers like `eq`, `gt`, `lt`, `gte`, `lte`, `and`, `or`, `ifx` — comparisons must be wrapped in parentheses inside `{{#if}}`, e.g. `{{#if (and (gte this.ph 6.5) (lte this.ph 8.5))}}ok{{else}}bad{{/if}}`. No JavaScript, no external stylesheets or fonts — only HTML in the template and plain CSS in a separate Styles block. No empty newlines allowed in Superset's Handlebars implementation. You can use `just-handlebars-helpers` helpers as they are included as well as `handlebars-group-by`.
 
-#### Step 3: Copy it into Superset
+### Step 3: Copy it into Superset
 
 1. In Superset, click `+` → **Chart**, choose the dataset from Step 1, and select **Handlebars** as the visualization type.
 2. Under **Customize**, paste the HTML into the **Handlebars Template** field.
@@ -92,7 +92,7 @@ Give the LLM three things:
 Where do the thresholds for your KPIs come from? You can ask the LLM: *"What are the global and typical national standards for drinking water pH and turbidity, such as the WHO Guidelines for Drinking-water Quality?"* — and it will suggest thresholds to build into the template. Treat these as a **starting point only**: confirm them actual regulations and standards your community actually uses, since safe limits vary by country, water source, and treatment.
 :::
 
-### Limitations to keep in mind
+## Limitations to keep in mind
 
 - **One query per chart.** The template can only show the columns returned by its own query. If you need data from multiple tables, join them in SQL first (see [Helpful SQL Queries](/reference/gc-toolkit/superset/queries/)).
 - **No JavaScript.** The chart output is [sanitized](https://superset.apache.org/docs/using-superset/handlebars-chart) by Superset's HTML security settings: scripts, inline event handlers, external stylesheets, and remote fonts are stripped out. Everything must be plain HTML in the template and CSS in the Styles field — no interactive widgets or animations.

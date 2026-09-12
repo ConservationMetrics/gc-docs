@@ -9,11 +9,22 @@ Superset comes with many built-in chart types — bar charts, line charts, maps,
 
 This page is a growing collection of notes on how to get the most out of Superset's visualization options in the context of Guardian Connector projects. Each section covers one chart type, when to use it, and a recommended way of working. For a full list of built-in options, see the [official Superset documentation](https://superset.apache.org/docs/intro/).
 
+## Standard charts
+
+These are the most commonly used charts with Guardian Connector data:
+
+- [The Bar Chart](https://docs.preset.io/v1/docs/bar-chart)
+- [The Pie Chart](https://docs.preset.io/v1/docs/piechart)
+- [Big Number](https://docs.preset.io/v1/docs/big-number-chart)
+
+## Advanced charts
+
+- [The Handlebars Chart](/reference/gc-toolkit/superset/advanced-charts/handlebars)
+- [The Deck.gl Scatterplot](/reference/gc-toolkit/superset/advanced-charts/deck-gl_scatterplot)
+
 ## 🚧 More coming soon
 
 As we find concrete uses of the different charts Superset offers, we will add them here.
-
-For more advanced charts, check on the Advanced charts section.
 
 ## Suggest a chart type
 

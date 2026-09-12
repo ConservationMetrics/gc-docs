@@ -3,12 +3,14 @@ sidebar_position: 1
 slug: /
 ---
 
+import LastRevisedDate from '@site/src/components/LastRevisedDate';
+
 # Guardian Connector Documentation
 
 Welcome to the Guardian Connector documentation hub! This comprehensive resource provides guidance for understanding, deploying, and using Guardian Connector to support community organizations’ data sovereignty and environmental monitoring needs.
 
 :::info Latest update
-_Content last revised: August 17, 2026_
+_Content last revised: <LastRevisedDate />_
 :::
 
 ## What This Documentation Covers

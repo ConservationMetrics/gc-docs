@@ -1,0 +1,470 @@
+{
+  "f996abe4": {
+    "es": "Guardian Connector es una buena opción para organizaciones indígenas y otras organizaciones comunitarias locales que necesitan una forma duradera y flexible de gestionar los datos de monitoreo y otra información, manteniendo la propiedad y el control. Es especialmente relevante para organizaciones que trabajan con múltiples fuentes de datos o herramientas, necesitan sistemas más sólidos para almacenar y usar información a lo largo del tiempo, y desean una infraestructura que pueda crecer con su capacidad técnica y prioridades."
+  },
+  "f29bbb5e": {
+    "es": ":::important\nDiferentes partes de Guardian Connector requieren distintos niveles de habilidad técnica. Algunas tareas pueden ser realizadas por la mayoría de los usuarios de la organización, mientras que la configuración, instalación o resolución de problemas más complejos pueden requerir la ayuda de un [socio de soporte técnico](/overview/user-personas/#tsp). Con el tiempo, el personal interesado puede aprender a encargarse de las partes más avanzadas del sistema.\n:::"
+  },
+  "b71a95e3": {
+    "es": "**No necesariamente operado completamente sin soporte técnico:** Muchas actividades diarias pueden ser realizadas directamente por los usuarios de la organización, mientras que la configuración avanzada, las integraciones o la resolución de problemas pueden requerir el apoyo de un socio de soporte técnico. La cantidad de apoyo necesario depende de las habilidades, intereses y capacidad de cada organización."
+  },
+  "50f9fa6f": {
+    "es": "**Soporte técnico continuo:** Algunas partes de Guardian Connector pueden requerir soporte técnico, particularmente durante la configuración o al introducir nuevas integraciones y flujos de trabajo. Estamos aquí para apoyarte a lo largo de tu viaje de datos. Alternativamente, puedes trabajar con otro socio de soporte técnico para ayudarte con lo que necesites."
+  },
+  "48574bef": {
+    "es": "**No es una solución todo en uno:** Guardian Connector no pretende reemplazar todas las herramientas que tu organización ya utiliza. En cambio, está diseñado para conectarse con herramientas que ya funcionan bien para organizaciones indígenas y comunitarias locales, y para proporcionar infraestructura para integrar los datos de esas herramientas."
+  },
+  "b1023dea": {
+    "es": "**No depende del alojamiento de CMI (aunque podemos ayudar):** Actualmente, CMI aloja y administra Guardian Connector para muchas organizaciones asociadas, pero el software es de código abierto y también puede ser autoalojado. El objetivo siempre es que seas dueño y controles tus datos, sin importar dónde estén alojados."
+  },
+  "408eb384": {
+    "es": "**No es un programa de mapeo completo como QGIS o ArcGIS:** Guardian Connector puede almacenar, organizar, visualizar y proporcionar acceso a datos espaciales, pero no pretende reemplazar el software GIS especializado. Los datos pueden utilizarse con herramientas como QGIS cuando se requiera un mapeo o análisis más avanzado."
+  },
+  "2bbeef55": {
+    "es": "**Acceso a Internet:** El acceso regular a Internet es útil, aunque no necesita estar disponible de forma continua. Guardian Connector se integra con herramientas que priorizan el trabajo sin conexión, como CoMapeo y KoboToolbox, permitiendo que gran parte del trabajo de campo se realice sin conexión y que los datos se sincronicen más tarde."
+  },
+  "7c9d1c90": {
+    "es": ":::info\nEsta página es para ti si estás tratando de decidir si Guardian Connector podría ser una buena opción para tu organización, o para una organización comunitaria que conoces o apoyas, para ayudar a gestionar mejor los datos y la información en apoyo de la protección de la tierra, las tradiciones y el futuro."
+  },
+  "d12503b0": {
+    "es": "Guardian Connector actúa como un **repositorio central seguro para toda la información importante de tu organización**, reuniendo datos que de otro modo podrían estar dispersos en diferentes herramientas, dispositivos o proyectos. Puede almacenar y conectar información como:"
+  },
+  "35de03ed": {
+    "es": "**Liderazgo comprometido:** Líderes que comprenden y apoyan el trabajo, incluyendo la provisión de tiempo, equipo, financiamiento o personal necesario para mantenerlo. El liderazgo también es importante para tomar decisiones sobre cómo se deben recopilar, acceder y usar los datos."
+  },
+  "9dd48875": {
+    "es": "**Desarrollo de habilidades a lo largo del tiempo:** Diferentes miembros del equipo pueden usar Guardian Connector a distintos niveles de complejidad. CMI y otros socios de soporte técnico pueden ayudar al personal a aprender partes más avanzadas del sistema con el tiempo, cuando esto sea útil y deseado."
+  },
+  "f32624b2": {
+    "es": "**Capacidad para organizar proyectos:** Tu equipo debe ser capaz de organizar y llevar a cabo proyectos de recopilación de datos (como mapeo o encuestas) con cierta independencia. Nuestro objetivo es empoderar a tu equipo para que utilice estas herramientas por sí mismo, con nuestro apoyo."
+  },
+  "4c440ecb": {
+    "es": "**Computadoras y teléfonos:** Se necesita acceso a computadoras y dispositivos móviles para recopilar, gestionar y visualizar datos. Idealmente, la persona principal responsable de la gestión de datos debería tener acceso fiable a su propia computadora."
+  },
+  "2abea3dd": {
+    "es": "**Trabajando juntos para construir lo necesario:** Guardian Connector continúa evolucionando a través de la cocreación con organizaciones indígenas asociadas. Tu experiencia, prioridades y comentarios ayudan a dar forma al desarrollo de la plataforma."
+  },
+  "991b45e9": {
+    "es": "Guardian Connector está diseñado para proporcionar un lugar privado y organizado para **grandes y diversas colecciones de datos**, ayudando a reducir el riesgo de que la información se pierda, se olvide o se disperse entre diferentes sistemas."
+  },
+  "d7b5a602": {
+    "es": "**Interés en expertos locales:** Interés en desarrollar habilidades técnicas y de datos dentro de la organización o comunidad con el tiempo, para que una mayor parte del trabajo pueda ser comprendida y gestionada localmente."
+  },
+  "d8acaf58": {
+    "es": ":world_map: **Mapas y datos de ubicación:** Puntos GPS, límites, mapas creados con herramientas como CoMapeo y otros datos espaciales relacionados con el territorio, sitios culturales, uso de recursos o monitoreo."
+  },
+  "d457e7d6": {
+    "es": ":card_index: **Unir datos existentes:** Organizar información recopilada a lo largo del tiempo que puede estar dispersa en dispositivos, hojas de cálculo, registros en papel o en manos de organizaciones externas."
+  },
+  "07578d52": {
+    "es": "Guardian Connector es software de código abierto y puede ser autoalojado. CMI también puede trabajar con tu organización para configurar, alojar y dar soporte a Guardian Connector según tus necesidades."
+  },
+  "f566326c": {
+    "es": ":clipboard: **Recopilación de información comunitaria:** Realización de encuestas para obtener información sobre tu comunidad, como población, medios de vida, bienestar o acceso a derechos y servicios."
+  },
+  "e4142998": {
+    "es": ":eyes: **Vigilando tu territorio:** Apoyando el monitoreo comunitario de amenazas como la minería o tala ilegal, así como cambios en plantas, animales y ecosistemas locales."
+  },
+  "40d9b397": {
+    "es": ":world_map: **Mapeo de tu tierra y tradiciones:** Creación de mapas de límites territoriales, lugares sagrados, uso de recursos, sitios de patrimonio cultural y otros lugares de importancia."
+  },
+  "9dd4271d": {
+    "es": ":floppy_disk: **Prevención de la pérdida de datos:** Mantener la información comunitaria importante respaldada y protegida contra pérdidas debido a fallas de dispositivos, rotación de personal u otras interrupciones."
+  },
+  "0657161e": {
+    "es": "**Capacidad para reunirse en línea:** La capacidad de participar en reuniones en línea es útil para la capacitación, la resolución de problemas y la colaboración continua con socios de soporte técnico."
+  },
+  "7dabe153": {
+    "es": ":bar_chart: **Comprender y visualizar tus datos:** Convertir datos en mapas, gráficos, paneles de control y otras salidas que ayudan a identificar patrones, cambios y prioridades."
+  },
+  "8aa0dc6d": {
+    "es": "**Un equipo dedicado:** Un equipo que pueda planificar y llevar a cabo actividades como mapeo, encuestas o monitoreo ambiental con un grado razonable de independencia."
+  },
+  "c1fd3fd9": {
+    "es": "**Apoyo del liderazgo:** Los líderes comunitarios y organizacionales deben comprender y apoyar el trabajo para que permanezca alineado con las prioridades comunitarias más amplias."
+  },
+  "56526fe8": {
+    "es": "Es probable que tu organización se beneficie de Guardian Connector si tiene objetivos claros de guardianía que dependen de la recopilación, gestión, comprensión o uso de datos."
+  },
+  "188978d0": {
+    "es": ":file_cabinet: **Datos existentes e históricos:** Información de proyectos o estudios anteriores que tu organización desea preservar y seguir utilizando."
+  },
+  "45b0ab4b": {
+    "es": "**Objetivos y plazos claros:** Trabajamos juntos para definir lo que tu organización quiere lograr y acordar prioridades y plazos realistas."
+  },
+  "be6536e2": {
+    "es": ":leopard: **Datos de vida silvestre y biodiversidad:** Medios recopilados durante el trabajo de campo o generados por cámaras trampa, drones u otras herramientas de monitoreo."
+  },
+  "76e3a7e8": {
+    "es": ":memo: **Creación de informes útiles:** Producción de información para la toma de decisiones comunitarias, promoción, procesos legales, informes o recaudación de fondos."
+  },
+  "c25e04b7": {
+    "es": ":::tip\nSi aún no lo has hecho, por favor lee la página [Descripción general](/overview) para entender qué es Guardian Connector y cómo funciona.\n:::"
+  },
+  "49e2469e": {
+    "es": ":satellite: **Alertas satelitales:** Información sobre cambios en tu territorio, como minería, tala, incendios o deforestación."
+  },
+  "5324f389": {
+    "es": "A partir de este momento, esta página está escrita directamente para alguien que está considerando Guardian Connector para su propia organización.\n:::"
+  },
+  "4e327e53": {
+    "es": ":bar_chart: **Datos de encuestas:** Información recopilada de encuestas utilizando herramientas como KoboToolbox, ODK o Survey123."
+  },
+  "1f01d789": {
+    "es": ":camera: **Fotos y videos:** Imágenes y clips de video de cámaras trampa, drones o recopilados durante el trabajo de campo."
+  },
+  "69e469b6": {
+    "es": "También es importante entender lo que Guardian Connector no es:"
+  },
+  "65eeae9c": {
+    "es": "¿Para qué tipo de organización es Guardian Connector una buena opción?"
+  },
+  "2dcfd63c": {
+    "es": "Guardian Connector es particularmente útil para trabajos como:"
+  },
+  "fce9f6ea": {
+    "es": "1. Proyectos y objetivos que se benefician de Guardian Connector"
+  },
+  "6330a16f": {
+    "es": "3. ¿Qué tipo de información puede almacenar Guardian Connector?"
+  },
+  "a1487e63": {
+    "es": "Guardian Connector funciona mejor cuando una organización tiene:"
+  },
+  "c6101198": {
+    "es": "Guardian Connector requiere algunas tecnologías básicas:"
+  },
+  "03670dff": {
+    "es": "Cómo puedes trabajar con CMI para usar Guardian Connector"
+  },
+  "781d9c0c": {
+    "es": "¿Es Guardian Connector adecuado para tu organización?"
+  },
+  "e55d2738": {
+    "es": "Una colaboración exitosa suele implicar:"
+  },
+  "fa4cbb32": {
+    "es": "5. Lo que Guardian Connector NO es"
+  },
+  "8a2872f2": {
+    "es": "4. Tecnología que necesitarás"
+  },
+  "ccebe8f2": {
+    "es": "2. Lo que tu organización necesita"
+  },
+  "1225ec7e": {
+    "es": "[Guardian Connector Explorer (GC Explorer)](https://github.com/conservationmetrics/gc-explorer) es una herramienta de visualización de datos basada en la web que transforma los datos tabulares de su comunidad en mapas interactivos, galerías y paneles de control. Creado específicamente para Guardian Connector, se conecta directamente a su base de datos PostgreSQL para mostrar los datos recopilados de herramientas como CoMapeo, KoboToolbox y otras plataformas de recopilación de datos."
+  },
+  "a9989cef": {
+    "es": "**⚠️ Panel de Alertas**: Supervise los cambios y amenazas ambientales con alertas de detección de cambios e imágenes satelitales de antes y después; cree [incidentes](/reference/gc-toolkit/gc-explorer/incidents/) para agrupar una serie de alertas con fuentes de datos secundarias."
+  },
+  "32f49d3f": {
+    "es": "El **filtro de tiempo** en el Panel de Alertas se aplica a ambas descargas. Úselo para descargar en lote un subconjunto de alertas en lugar del conjunto completo; el mismo filtro también actualiza las estadísticas, por lo que una descarga de estadísticas refleja el rango de fechas filtrado."
+  },
+  "f80b4929": {
+    "es": "Al crear una vista, elige un **conjunto de datos principal** y, si el tipo de vista lo admite, un **conjunto de datos secundario** opcional. Las opciones que aparecen a continuación dependen del tipo de vista; el formulario en sí es la mejor guía para cada campo."
+  },
+  "1dbd8d28": {
+    "es": "Para que la visualización sea receptiva, GC Explorer muestra como máximo **10.000 registros de datos** en una vista. Si un conjunto de datos es más grande, aparece una notificación emergente y solo se muestran los primeros 10.000 registros."
+  },
+  "fea0bda1": {
+    "es": "**Cree un incidente** que agrupe una serie de alertas con fuentes de datos secundarias y luego descargue ese incidente. Consulte [Incidentes](/reference/gc-toolkit/gc-explorer/incidents/) para obtener más información."
+  },
+  "48e8ff3f": {
+    "es": "El Panel de Alertas también muestra estadísticas sobre las alertas, como el número total de alertas o el número total de hectáreas afectadas. También puede descargar esas estadísticas."
+  },
+  "5f5a94d1": {
+    "es": "Si otra vista ya tiene muchas de las mismas configuraciones, puede **copiar la configuración de esa vista** para iniciar la nueva en lugar de rellenar todo desde cero."
+  },
+  "026b7248": {
+    "es": "Estas exportaciones facilitan la continuación del trabajo con sus datos fuera de GC Explorer utilizando las herramientas y formatos que mejor se adapten a las necesidades de su comunidad."
+  },
+  "4c0bf252": {
+    "es": "GC Explorer transforma los datos brutos en formatos visuales accesibles que ayudan a las comunidades a comprender, compartir y actuar sobre la información recopilada."
+  },
+  "10920b76": {
+    "es": "Una vez que haya exportado sus datos como CSV, GeoJSON o KML, es posible convertirlos a muchos otros formatos compatibles con GIS si es necesario."
+  },
+  "815c5259": {
+    "es": "Si estas limitaciones afectan su flujo de trabajo, generalmente se recomienda usar los formatos **GeoPackage** o **File Geodatabase** en su lugar."
+  },
+  "23bfab6a": {
+    "es": "**📍 Vista de Mapa**: Visualice sus datos geoespaciales en un mapa interactivo con paneles de información emergentes y archivos adjuntos de medios incrustados."
+  },
+  "209d7176": {
+    "es": "GC Explorer le permite exportar datos directamente desde la Vista de Mapa en una variedad de formatos para su uso en otras herramientas y flujos de trabajo."
+  },
+  "bc3344df": {
+    "es": "**📸 Vista de Galería**: Explore el contenido de fotos, audio y video recopilado en el campo, organizado por fecha o ubicación."
+  },
+  "8904d50d": {
+    "es": "**GeoJSON**: Exporte datos geoespaciales en un formato abierto moderno ampliamente compatible con herramientas GIS y aplicaciones de mapas web."
+  },
+  "4e5158e7": {
+    "es": "En ArcGIS, los archivos CSV que contienen información de coordenadas también se pueden cargar directamente usando la función **\"Add XY Data\"**."
+  },
+  "e849eb1e": {
+    "es": "Puede crear una nueva vista de **Mapa**, **Galería** o **Panel de Alertas**, y posiblemente otros tipos de vistas en el futuro."
+  },
+  "5d321d8b": {
+    "es": "Tanto QGIS como ArcGIS admiten la importación de datos GeoJSON y KML y su exportación a estos formatos adicionales."
+  },
+  "c85d8f6a": {
+    "es": "**KML**: Exporte datos geoespaciales para su uso en aplicaciones como Google Earth y otras plataformas de mapas."
+  },
+  "95a0f97d": {
+    "es": "**CSV**: Exporte sus datos en formato tabular para hojas de cálculo, bases de datos o análisis posteriores."
+  },
+  "25a40408": {
+    "es": "Aunque los shapefiles son ampliamente compatibles, también tienen limitaciones importantes, que incluyen:"
+  },
+  "a0cdc9d7": {
+    "es": "El Panel de Alertas le ofrece varias formas de descargar alertas e información relacionada."
+  },
+  "248d7320": {
+    "es": "Puede descargar alertas utilizando los mismos formatos CSV, GeoJSON y KML que la Vista de Mapa:"
+  },
+  "f945b9c5": {
+    "es": "**Descargue todas las alertas en lote** a la vez en uno de los formatos admitidos."
+  },
+  "9960b242": {
+    "es": "**Fuentes de datos personalizadas**: Cualquier dato tabular compatible con PostgreSQL"
+  },
+  "43070807": {
+    "es": "Para un **mapa** o **panel de alertas**, puede configurar cosas como:"
+  },
+  "46d149a2": {
+    "es": "**Descargue una alerta individual** haciendo clic en ella en el mapa."
+  },
+  "95ab6ab0": {
+    "es": "**Alertas ambientales**: Datos de detección de cambios por satélite"
+  },
+  "5a968652": {
+    "es": "Restricciones en los tipos de campo y la complejidad de la estructura de datos"
+  },
+  "e050ab3a": {
+    "es": "Si la vista incluye **medios**, puede configurar cosas como:"
+  },
+  "7cc0b413": {
+    "es": "**CoMapeo**: Datos de mapeo y observación comunitarios"
+  },
+  "15f6a377": {
+    "es": "Un **fondo de encabezado**, como una imagen en miniatura"
+  },
+  "a13472a1": {
+    "es": "Soporte limitado para la codificación de caracteres no latinos"
+  },
+  "4157b551": {
+    "es": "GC Explorer funciona automáticamente con datos de:"
+  },
+  "9368582c": {
+    "es": "**KoboToolbox/ODK**: Respuestas a encuestas y formularios"
+  },
+  "4766505a": {
+    "es": ":::tip Conversión de formato y compatibilidad con GIS"
+  },
+  "46cfc56a": {
+    "es": "Un límite máximo de 10 caracteres para los nombres de columna"
+  },
+  "66dcd55d": {
+    "es": "Los formatos de exportación actualmente admitidos incluyen:"
+  },
+  "ec350660": {
+    "es": "Algunos formatos comúnmente solicitados incluyen:"
+  },
+  "e67e0cb2": {
+    "es": "Exportación de datos desde el Panel de Alertas"
+  },
+  "ceee9039": {
+    "es": "Una **URL base** para cargar medios"
+  },
+  "b49cee96": {
+    "es": "**Parámetros del mapa** como el nivel de zoom"
+  },
+  "3a8e1466": {
+    "es": "📤 Exportación de Datos {#exporting-data}"
+  },
+  "1834aaf3": {
+    "es": "Exportación de datos desde la Vista de Mapa"
+  },
+  "8dd07f5d": {
+    "es": "**Geodatabase de archivos (.gdb)**"
+  },
+  "b4bd451b": {
+    "es": "Un **token de acceso de Mapbox**"
+  },
+  "763cfff4": {
+    "es": ":::note Limitaciones de datos"
+  },
+  "0ce42cbc": {
+    "es": "🕒 Uso del filtro de tiempo"
+  },
+  "8b821cc9": {
+    "es": "**GeoPackage (.gpkg)**"
+  },
+  "212a26d4": {
+    "es": "📊 Exportación de estadísticas"
+  },
+  "211d7329": {
+    "es": "**Shapefile (.shp)**"
+  },
+  "322df530": {
+    "es": "⚙️ Configuración de vistas"
+  },
+  "cf74350c": {
+    "es": "🗺️ Vistas disponibles"
+  },
+  "8a3d11be": {
+    "es": "🔄 Integración de datos"
+  },
+  "375e55c3": {
+    "es": "📥 Exportación de alertas"
+  },
+  "ff672202": {
+    "es": "Un **estilo de mapa**"
+  },
+  "fabca94a": {
+    "es": "GC Explorer"
+  },
+  "01800eb4": {
+    "es": "**Filtros**"
+  },
+  "ad64cb96": {
+    "es": "**Lo que ves en la página de inicio (Landing Page) depende de tu rol.** Diferentes personas necesitan diferentes herramientas, por lo que la página solo muestra los servicios que tienes permiso para usar. Si falta un servicio que esperas, es posible que no esté activado para tu comunidad, o tu rol aún no incluya acceso a él; comunícate con el administrador de tu comunidad."
+  },
+  "e9297775": {
+    "es": "Si tu comunidad tiene otras aplicaciones ejecutándose en Guardian Connector, la página de **Aplicaciones Personalizadas** te permite crear tarjetas similares a los servicios predeterminados, como Explorer, Superset y File Browser. Cada tarjeta se abre en su propio subdominio, para que las personas puedan acceder a tus aplicaciones personalizadas desde la página de inicio de la misma manera que abren las integradas."
+  },
+  "1e61d8c4": {
+    "es": "Cuando visitas la página de inicio (Landing Page) por primera vez, es posible que se te pida que te registres o inicies sesión. Después de registrarte, un miembro de tu comunidad con acceso de administrador debe **aprobar tu cuenta** y asignarte un rol antes de que puedas ver los servicios. Hasta que eso suceda, no podrás acceder a Guardian Connector."
+  },
+  "fb42cc38": {
+    "es": "La página de inicio de Guardian Connector (Landing Page) es la **página principal** del Guardian Connector de tu comunidad: la puerta principal a la que llegas después de iniciar sesión. Reúne todo en un solo lugar, para que no necesites recordar direcciones web ni buscar la herramienta adecuada."
+  },
+  "e27f451a": {
+    "es": "Guardian Connector también se conecta con otras herramientas como **ArcGIS Survey123**, **Locus Map**, **Global Forest Watch**, **SMART** y más. Para obtener más información sobre todo lo que se puede conectar, consulta el [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/)."
+  },
+  "f445c080": {
+    "es": "La página de inicio (Landing Page) también presenta las herramientas y plataformas de campo que funcionan con Guardian Connector. Estas son las aplicaciones que tu comunidad puede usar para **recopilar datos en el campo**, datos que luego fluyen a Guardian Connector para su visualización y análisis."
+  },
+  "07f34538": {
+    "es": "No todos ven todos los servicios. En general, cuanto más avanzada o sensible es una herramienta, mayor es el rol necesario para abrirla; por ejemplo, Explorer está disponible para la mayoría de los usuarios con sesión iniciada, mientras que Windmill está reservado para los administradores."
+  },
+  "f017c5ec": {
+    "es": "También es posible configurar la página de inicio (Landing Page) para mostrar aplicaciones personalizadas, que son aplicaciones que no forman parte de la pila predeterminada de Guardian Connector. Consulta [⚙️ Configuración de Aplicaciones Personalizadas](#configuring-custom-apps) para obtener más información."
+  },
+  "45ada005": {
+    "es": "Si eres **administrador**, la página de inicio (Landing Page) te proporciona un área de Gestión de Usuarios para controlar quién puede acceder al Guardian Connector de tu comunidad y qué pueden hacer."
+  },
+  "ad011333": {
+    "es": "Estos son los servicios predeterminados de Guardian Connector a los que tu comunidad puede vincularse desde la página de inicio (Landing Page). Cada uno aparece como una tarjeta en la que puedes hacer clic para abrirlo en una nueva pestaña."
+  },
+  "cc51cfd2": {
+    "es": "**Windmill**: Ejecuta y programa los flujos de trabajo de automatización que recopilan y procesan tus datos (consulta el [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/))."
+  },
+  "a7803725": {
+    "es": "Cuando apruebas a alguien y le asignas el rol correcto, los servicios que se le permite usar aparecerán en su página de inicio (Landing Page) la próxima vez que inicie sesión."
+  },
+  "b751b952": {
+    "es": "Si eres administrador, puedes gestionar **cuentas de usuario y roles**, y configurar los **ajustes de tema**, y añadir **aplicaciones personalizadas** para tu comunidad."
+  },
+  "8a66ce79": {
+    "es": "**[Explorer](/reference/gc-toolkit/gc-explorer/)**: Visualiza los datos de tu comunidad como mapas interactivos, galerías de medios y un panel de alertas."
+  },
+  "9499d574": {
+    "es": "Consulta el **estado** de cada persona —si su cuenta está *Aprobada* o aún *Pendiente*— junto con su rol y la última vez que inició sesión."
+  },
+  "9717bc3e": {
+    "es": "**[Timelapse](/reference/core-integrations/timelapse/)**: Revisión y anotación de imágenes de cámaras trampa para el monitoreo de la biodiversidad."
+  },
+  "32c2e754": {
+    "es": "Aprende sobre las **herramientas que puedes usar con Guardian Connector** para recopilar e importar datos (como CoMapeo, KoboToolbox y más)."
+  },
+  "22551500": {
+    "es": "**[File Browser](/reference/gc-toolkit/filebrowser/)**: Explora, descarga y gestiona los archivos y archivos comprimidos de tu comunidad."
+  },
+  "70d093ad": {
+    "es": "**[Superset](/reference/gc-toolkit/superset/)**: Crea y explora gráficos, paneles y visualizaciones a partir de tus datos."
+  },
+  "bb05e9f3": {
+    "es": "**[KoboToolbox](/reference/core-integrations/kobotoolbox/)** y **ODK**: Formularios y encuestas que funcionan en línea y sin conexión."
+  },
+  "96fff4af": {
+    "es": "Abre los **servicios** que usa tu comunidad (como Explorer, Superset, Windmill o File Browser) con un solo clic."
+  },
+  "544d942f": {
+    "es": "**[CoMapeo](/reference/core-integrations/comapeo/)**: Mapeo y monitoreo con prioridad sin conexión en un dispositivo móvil."
+  },
+  "0a190ec2": {
+    "es": "**Aprueba (o desaprueba) una cuenta.** Solo los usuarios aprobados pueden acceder a los servicios."
+  },
+  "cc03cb42": {
+    "es": "La Configuración de Tema te permite personalizar la marca de tu comunidad en la página de inicio (Landing Page)."
+  },
+  "634a5500": {
+    "es": "Una **URL de imagen de fondo**, que se utiliza como fondo en la pantalla de inicio de sesión."
+  },
+  "f88551e0": {
+    "es": "Para cada aplicación personalizada que puedes añadir: un nombre, subdominio, descripción, icono y etiquetas."
+  },
+  "54fb91e1": {
+    "es": "**Asigna un rol** que decida qué servicios puede abrir cada persona."
+  },
+  "2f03145c": {
+    "es": "Los roles actualmente disponibles, de menor a mayor acceso, son:"
+  },
+  "4dc29d70": {
+    "es": "**Con sesión iniciada**: Sesión iniciada, pero sin acceso a los servicios aún."
+  },
+  "11fe489e": {
+    "es": "**Invitado**: Acceso limitado, adecuado para visitantes o socios."
+  },
+  "134df9d7": {
+    "es": "**Administrador**: Acceso completo, incluida esta área de Gestión de Usuarios."
+  },
+  "3ca2d17f": {
+    "es": "**Elimina una cuenta** si ya no debe tener acceso."
+  },
+  "7e1d53dd": {
+    "es": "⚙️ Configuración de Aplicaciones Personalizadas {#configuring-custom-apps}"
+  },
+  "3f39ed28": {
+    "es": "**Miembro**: Acceso diario para los miembros de la comunidad."
+  },
+  "1ae55a79": {
+    "es": "Una **URL de logotipo**, que aparece en la página de inicio."
+  },
+  "849c5b35": {
+    "es": "🌐 Herramientas que puedes usar con Guardian Connector"
+  },
+  "899dc1b1": {
+    "es": "**Busca** personas por nombre o correo electrónico."
+  },
+  "5c720020": {
+    "es": "👥 Gestión de Usuarios {#user-management}"
+  },
+  "28e1d2aa": {
+    "es": "Desde la página de inicio (Landing Page) puedes:"
+  },
+  "6fccd7a9": {
+    "es": "Desde aquí puedes añadir:"
+  },
+  "0fb75b94": {
+    "es": "🚀 Servicios Disponibles"
+  },
+  "787e08f3": {
+    "es": "🔧 Para administradores"
+  },
+  "e32b3fbe": {
+    "es": "Desde aquí puedes:"
+  },
+  "303ad3eb": {
+    "es": "🎨 Configuración del tema"
+  },
+  "3cb2f282": {
+    "es": "Página de inicio de GC (Landing Page)"
+  },
+  "57d64568": {
+    "es": "🔑 Iniciar sesión"
+  }
+}

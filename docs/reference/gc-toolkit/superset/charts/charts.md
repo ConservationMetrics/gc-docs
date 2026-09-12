@@ -19,8 +19,8 @@ These are the most commonly used charts with Guardian Connector data:
 
 ## Advanced charts
 
-- [The Handlebars Chart](/reference/gc-toolkit/superset/advanced-charts/handlebars)
-- [The Deck.gl Scatterplot](/reference/gc-toolkit/superset/advanced-charts/deck-gl_scatterplot)
+- [The Handlebars Chart](/reference/gc-toolkit/superset/charts/handlebars)
+- [The Deck.gl Scatterplot](/reference/gc-toolkit/superset/charts/deckgl-scatterplot)
 
 ## 🚧 More coming soon
 

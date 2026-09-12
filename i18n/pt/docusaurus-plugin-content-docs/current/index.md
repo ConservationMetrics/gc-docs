@@ -3,52 +3,42 @@ sidebar_position: 1
 slug: /
 ---
 
-# Documentação do Guardian Connector
+import LastRevisedDate from '@site/src/components/LastRevisedDate';
 
-:::info
+# Guardian Connector Documentation
 
-🚧 Tradução em construção
+Welcome to the Guardian Connector documentation hub! This comprehensive resource provides guidance for understanding, deploying, and using Guardian Connector to support community organizations’ data sovereignty and environmental monitoring needs.
 
-Enquanto finalizamos a tradução de todas as páginas, muitas serão exibidas em seu idioma original, o inglês.
-
+:::info Latest update
+_Content last revised: <LastRevisedDate />_
 :::
 
-Bem-vindo à central de documentação do Guardian Connector! Este guia completo ajudará você a entender, implementar e usar o Guardian Connector para atender às necessidades de soberania de dados e monitoramento ambiental da sua comunidade.
+## What This Documentation Covers
 
-## O que esta documentação contém
+This documentation provides comprehensive guidance for:
 
-Esta documentação contém orientações detalhadas sobre:
+### 🏗️ **[Overview](./overview/)**
+Understanding Guardian Connector's purpose, how it works, design principles, and how it fits into community organizations' broader monitoring and advocacy work.
 
-### 🏗️ **[Visão geral](./overview/)**
+### 📚 **[Reference](./reference/)**
+Detailed reference information about integrated tools, hosting options, and technical specifications to help community organizations make informed decisions about implementation.
 
-Compreender o propósito e os princípios de design do Guardian Connector, e como ele se encaixa no trabalho mais amplo de monitoramento e defesa da sua comunidade.
+### 🎓 **[Guides](./guides/)**
+Comprehensive guides for establishing community-centered data practices, including Indigenous data sovereignty protocols and tool-specific workflows.
 
-### 📚 **[Referência](./reference/)**
+## Getting Started
 
-Informações detalhadas sobre ferramentas integradas, opções de hospedagem e especificações técnicas para ajudar você a tomar decisões informadas sobre a implementação.
+Use the top navigation bar to explore each section of this documentation site:
 
-### 🎓 **[Guias](./guides/)**
+1. **Start with [Overview](./overview/)** to understand Guardian Connector's purpose and design principles
+2. **Review [Reference](./reference/)** to learn about integrated tools and implementation options  
+3. **Follow [Guides and Tutorials](./guides/)** for hands-on learning and practical skills development
 
-Guias completos para implementar as ferramentas do Guardian Connector e estabelecer práticas de dados centradas na comunidade, incluindo protocolos de soberania de dados indígenas e fluxos de trabalho específicos para cada ferramenta.
-
-## Para quem é esta documentação
-
-Esta documentação foi elaborada para:
-
-- **Líderes comunitários** que planejam e supervisionam iniciativas de soberania de dados
-- **Pesquisadores de campo** que coletam dados ambientais e culturais
-- **Gestores de dados** que organizam e analisam informações da comunidade
-- **Coordenadores técnicos** que implementam e mantêm os sistemas do Guardian Connector
-- **Defensores** que utilizam dados para campanhas de conservação e direitos
-
-## Primeiros passos
-
-Use a barra de navegação superior para explorar cada seção deste site de documentação:
-
-1. **Comece com a [Visão geral](./overview/)** para entender o propósito e os princípios de design do Guardian Connector
-2. **Consulte a [Referência](./reference/)** para saber mais sobre as ferramentas integradas e as opções de implementação
-3. **Siga os [Guias e tutoriais](./guides/)** para aprendizado prático e desenvolvimento de habilidades
+:::tip User Personas
+We use [User Personas](./overview/user-personas/) to point you toward content written for your role and experience level. Look for persona tags at the top of each page — they show who that page is for, and you can click a tag to see more pages marked for that audience.
+:::
 
 ---
 
-*O Guardian Connector representa um compromisso com a soberania de dados indígenas e o monitoramento controlado pela comunidade. Esses documentos ajudarão você a aproveitar todo o seu potencial para o trabalho de conservação e defesa da sua comunidade.*
+*Guardian Connector represents a commitment to Indigenous data sovereignty and community-controlled monitoring.*
+*These docs will help you harness its full potential for community conservation and advocacy work.*

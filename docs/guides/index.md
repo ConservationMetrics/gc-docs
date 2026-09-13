@@ -17,7 +17,7 @@ Most of these guides are actually not about Guardian Connector itself! Rather, t
 
 ## Available Learning Resources
 
-### 📱+📋 [Data Management with KoboToolbox](./data-collection/syllabus-data-management-with-kobotoolbox/)
+### [KoboToolbox: Data Management Syllabus](./data-collection/syllabus-data-management-with-kobotoolbox/)
 
 A comprehensive 4-week self-paced learning program that takes you from KoboToolbox basics to advanced data management techniques. Perfect for communities looking to establish robust mobile data collection workflows.
 
@@ -30,7 +30,7 @@ A comprehensive 4-week self-paced learning program that takes you from KoboToolb
 
 **Format:** Weekly modules with video tutorials, reading materials, and practical exercises.
 
-### 📸+🐾 [Collecting Camera Trap Deployment Data](./biodiversity/guide-camera-trap-deployment/)
+### [Camera Traps: Deployment and Collecting Data](./biodiversity/guide-camera-trap-deployment/)
 
 A practical guide for documenting camera trap deployments, maintenance, and retrievals. Includes a field protocol for preparing equipment, deploying and servicing cameras, and processing SD cards. Designed to help communities keep a reliable record of which camera was placed where, during what period, and under what conditions — so later imagery can still be mapped, compared, and reused.
 
@@ -43,7 +43,7 @@ A practical guide for documenting camera trap deployments, maintenance, and retr
 
 **Format:** Multi-page guide (concepts, metadata, tools, field protocol, and media organization) with tables, practical examples, and a ready-to-use CoMapeo category set.
 
-### 🖼️+🏷️ [Setting up a Project in Timelapse for Camera Trap Annotation](./biodiversity/guide-timelapse-project/)
+### [Timelapse: Setting up a Project for Camera Trap Annotation](./biodiversity/guide-timelapse-project/)
 
 A detailed, hands-on guide for setting up camera trap data analysis projects using Timelapse software. Designed to help communities document wildlife presence and biodiversity in their territories.
 
@@ -56,7 +56,20 @@ A detailed, hands-on guide for setting up camera trap data analysis projects usi
 
 **Format:** Step-by-step tutorial with screenshots, practical examples, and downloadable resources.
 
-### 🔊+🦉 [Bioacoustics Basics with AudioMoth Sensors](./biodiversity/guide-audiomoth/)
+### [iNaturalist: Community Biodiversity Monitoring](./biodiversity/guide-inaturalist/)
+
+An overview of using iNaturalist to document plants, animals, and other organisms during community fieldwork — including how observations become Research Grade, when they may be exported to GBIF, and how to pull project data into Guardian Connector.
+
+**What you'll learn:**
+- Recording georeferenced observations with photos or sound for shared community projects
+- How Research Grade status and data licenses control whether observations reach GBIF
+- Privacy options such as obscured or private coordinates for sensitive species
+- Setting observation licenses (including All Rights Reserved) to keep data out of global archives
+- Importing public project observations into Guardian Connector with **iNaturalist: Fetch Observations**
+
+**Format:** Single-page guide covering use cases, licensing, GBIF export, and Guardian Connector integration, plus links to official iNaturalist help.
+
+### [AudioMoth: Bioacoustics Basics](./biodiversity/guide-audiomoth/)
 
 An overview of the AudioMoth sensor workflow, covering the full lifecycle of deploying, maintaining, and managing data from AudioMoth bioacoustic sensors.
 
@@ -69,7 +82,20 @@ An overview of the AudioMoth sensor workflow, covering the full lifecycle of dep
 
 **Format:** Step-by-step guide covering sensor preparation through data management, plus testing and troubleshooting appendices.
 
-### 🌿+🏷️ [Annotating Datasets with Local Contexts Labels](./data-sovereignty/guide-local-contexts/)
+### [GBIF: Discovering and Publishing Biodiversity Records](./biodiversity/guide-gbif/)
+
+A guide to using [GBIF](https://www.gbif.org/) as a discovery and inventory tool for public biodiversity records in or near a territory — and to deciding whether community observations should be published there.
+
+**What you'll learn:**
+- How museums, research projects, and citizen-science platforms publish occurrence records to GBIF
+- Summarizing who collected data, which species appear, and over what period with the [GBIF Map Search](https://conservationmetrics.github.io/gbif-map-search/) tool
+- Downloading occurrence records as Darwin Core Archive for mapping and analysis
+- Reasons to share — or not share — community observations through GBIF
+- Using GBIF's Excel templates when publishing, or reaching out about a Scripts Hub mapping workflow
+
+**Format:** Single-page guide covering discovery, import, and publishing decisions, plus links to GBIF and Indigenous data-governance resources.
+
+### [Local Contexts: Annotating Datasets with TK/BC Labels](./data-sovereignty/guide-local-contexts/)
 
 A practical workflow for communities that want to use [Local Contexts](https://localcontexts.org/) TK and BC labels with Guardian Connector: set up a Hub project, curate labels, sync them into your warehouse with Windmill, and apply chosen labels to specific datasets without altering the underlying data table.
 
@@ -81,7 +107,7 @@ A practical workflow for communities that want to use [Local Contexts](https://l
 
 **Format:** Multi-page guide (Hub project and labels, Fetch Labels script, Annotations app) plus links to official Local Contexts documentation.
 
-### 🌿+🤝 [Data Sharing Protocols Grounded in Indigenous Data Sovereignty](./data-sovereignty/guide-data-sovereignty-and-protocols/)
+### [Data Sharing Protocols Grounded in Indigenous Data Sovereignty](./data-sovereignty/guide-data-sovereignty-and-protocols/)
 
 A comprehensive guide for creating data sharing protocols grounded in Indigenous Data Sovereignty principles, designed for communities looking to establish ethical and community-controlled data governance frameworks.
 
@@ -93,7 +119,7 @@ A comprehensive guide for creating data sharing protocols grounded in Indigenous
 - Protecting sensitive cultural and territorial information
 - Building capacity for community data governance
 
-### 🛰️+🖨️ [Preparing Mining Alert Field Briefings](./land-monitoring/guide-mining-alert-field-briefings/)
+### [Preparing Mining Alert Field Briefings](./land-monitoring/guide-mining-alert-field-briefings/)
 
 An example workflow for monitoring leads: review change detection alerts in GC Explorer, export them, analyze mining sites in QGIS (distance to river and village), and print per-site briefing maps to take to community meetings before a field visit.
 
@@ -104,7 +130,7 @@ An example workflow for monitoring leads: review change detection alerts in GC E
 - Calculating distance from rivers and villages for each site in QGIS
 - Designing per-site print layouts with labels, scale, and north indicator for field use
 
-### 🛩️+🗺️ [From Mining Alerts to Drone Maps](./land-monitoring/guide-drone-photogrammetry-workflow/)
+### [From Mining Alerts to Drone Maps](./land-monitoring/guide-drone-photogrammetry-workflow/)
 
 A workflow for monitoring teams to assess remote mining sites without costly expeditions: export alert areas as KML, fly an automated photogrammetry mission, stitch the photos into an orthomosaic with OpenDroneMap (locally) or Geostitch (cloud), and print the result into the same briefing packets and reports used for community visits.
 
@@ -115,7 +141,7 @@ A workflow for monitoring teams to assess remote mining sites without costly exp
 - Processing imagery on a beefy computer with WebODM, or in the cloud with Geostitch
 - Loading the orthomosaic in QGIS and dropping it into existing briefing print layouts
 
-### 🥾+📊 [Turning Monitoring Tracks into Round Reports](./land-monitoring/guide-monitoring-round-reports/)
+### [Turning Monitoring Tracks into Round Reports](./land-monitoring/guide-monitoring-round-reports/)
 
 A post-fieldwork workflow for monitoring teams: take the GPS tracks already recorded during a monitoring round and turn them into a one-page report for the community — surfacing the effort the round cost and backing up which planned sites were actually reached and verified.
 

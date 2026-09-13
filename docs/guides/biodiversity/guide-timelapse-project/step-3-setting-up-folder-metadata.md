@@ -20,7 +20,7 @@ Before enabling folder-level metadata, think through your folder hierarchy and n
 
 :::
 
-:::important
+:::important Folder-level metadata is optional
 
 Adding folder-level metadata into Timelapse is completely optional. If you already have a more sophisticated method for collecting station and deployment metadata and that information is already digitized, there is no need to add these types of metadata to the Timelapse itself.
 
@@ -53,29 +53,8 @@ For example, for Latitude and Longitude fields, these can be set up as Number fi
 Hence, it is important to be very careful when doing data entry into Timelapse for these kinds of fields.
 :::
 
-
-Folder-level metadata is optional, but it enables richer, more structured datasets, especially when following standards like:
-
-* The [GBIF recommendations for standardized camera trap data](https://docs.gbif.org/camera-trap-guide/en/) (see in particular section 3.4.1)
-* The [Alberta Metadata Standard](https://abmi.ca/publication/620.html) 
-* [Camtrap DP](https://camtrap-dp.tdwg.org/metadata/)
-
 ## How to collect folder-level metadata to enter into Timelapse
 
-Timelapse lets you set up folder-level metadata fields and enter the data, but it does **not** provide a method for actually collecting this information in the field.
+Folder-level metadata is optional, but it enables richer, more structured datasets, especially when following standards like the [GBIF recommendations for standardized camera trap data](https://docs.gbif.org/camera-trap-guide/en/) (see in particular section 3.4.1), the [Alberta Metadata Standard](https://abmi.ca/publication/620.html) and the [Camtrap DP](https://camtrap-dp.tdwg.org/metadata/).
 
-How you choose to collect and manage project metadata — such as the GPS coordinates of your camera traps, the name of the site, or the SD card retrieval workflow — is up to you. However, we recommend using a standardized form-based tool like [KoboToolbox](/reference/core-integrations/kobotoolbox), ODK, or [CoMapeo](/reference/core-integrations/comapeo) to ensure consistency and minimize errors.
-
-Examples of useful metadata fields might include (but you may want to refer to the metadata standards linked above):
-
-* Camera Trap ID
-* Site or Station Name
-* Latitude and Longitude
-* Camera Height
-* Camera Field of View
-* Deployment Start and End Dates/Times
-* SD Card number
-* SD Card Retrieval Notes
-* Observer or Team Member Name
-
-To help you get started, [here is a basic XLSForm template](./assets/basic_camera_trap_xlsform.xlsx) that you can load into KoboToolbox or ODK and adapt to suit your needs.
+:point_right: Please refer to [Step 2: What information should be recorded?](/guides/biodiversity/guide-camera-trap-deployment/step-2-what-to-record) and [Step 3: Choosing a Tool](/guides/biodiversity/guide-camera-trap-deployment/step-3-choosing-a-tool) in the camera trap deployment guide for more information on how to retrieve this information.

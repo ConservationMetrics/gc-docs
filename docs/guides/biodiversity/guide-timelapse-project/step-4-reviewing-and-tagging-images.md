@@ -1,4 +1,5 @@
 ---
+sidebar_position: 4
 tags: [itu-3, opu, tsp]
 ---
 # Step 4: Reviewing and Tagging Images

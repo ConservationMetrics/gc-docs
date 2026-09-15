@@ -1,4 +1,5 @@
 ---
+sidebar_position: 7
 tags: [itu-3, opu, tsp]
 ---
 # Appendix 1: Enabling Multiple Computers for Labeling

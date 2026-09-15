@@ -1,4 +1,5 @@
 ---
+sidebar_position: 8
 tags: [itu-3, opu, tsp]
 ---
 # Appendix 2: Deleting Files and Data

@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 tags: [itu-3, opu, tsp]
 ---
 # Step 1: Organizing Imagery

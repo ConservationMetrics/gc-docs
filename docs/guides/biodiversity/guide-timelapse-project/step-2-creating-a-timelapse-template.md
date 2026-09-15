@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 tags: [itu-3, opu, tsp]
 ---
 # Step 2: Creating a Timelapse Template

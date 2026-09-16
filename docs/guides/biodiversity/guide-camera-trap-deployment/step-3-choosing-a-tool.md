@@ -56,6 +56,10 @@ A **Maintenance** or **Retrieval** form can then let the user select an existing
 
 This is especially useful for larger camera networks or projects where the same sites and cameras are visited repeatedly.
 
+:::tip XLSForm template on request
+If you are a Guardian Connector user and want to use ODK to collect deployment data, let us know. We can create an XLSForm template for you.
+:::
+
 ## KoboToolbox
 
 A similar workflow can be implemented in [KoboToolbox](/reference/core-integrations/kobotoolbox/index.md) using [dynamic data attachments](https://support.kobotoolbox.org/dynamic_data_attachment.html).
@@ -75,3 +79,7 @@ The deployment project acts as the parent dataset, while maintenance and retriev
 This can work well when KoboToolbox is already part of the team's workflow.
 
 However, linked data must be uploaded to the Kobo server and downloaded to field devices before it becomes available for subsequent offline forms. For teams doing many related operations while completely disconnected, test this workflow carefully before deploying it at scale.
+
+:::tip XLSForm template on request
+If you are a Guardian Connector user and want to use KoboToolbox to collect deployment data, let us know. We can create an XLSForm template for you.
+:::

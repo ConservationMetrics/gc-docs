@@ -44,7 +44,7 @@ Your project template data is stored in a file called `TimelapseTemplate.tdb`. Y
 
 ## What Information Should Be Recorded Per Image?
 
-The right set depends on what the project is for: community monitoring, a local species list, scientific publication, or some combination of these.
+The right set of information to record depends on what the project is for: community monitoring, a local species list, scientific publication, or some combination of these.
 
 This section first suggests fields that Indigenous use cases often include. If you also want the annotations to be scientific-grade and publishable on a platform like [GBIF](https://www.gbif.org/), we recommend meeting GBIF's [data quality requirements for occurrence datasets](https://www.gbif.org/data-quality-requirements-occurrences).
 

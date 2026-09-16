@@ -65,6 +65,12 @@ The app **depends** on `ImageData.csv`. If that file is renamed, edited in a way
 
 The CSV does not include the photos. With the **same selection** still active:
 
+<img
+  src="/img/guides/guide-timelapse-project/copy-image-video-files.jpg"
+  alt="Copy Image/video files to another folder"
+  style={{border: "1px solid #ccc"}}
+/>
+
 1. Go to **File → Copy Image/video files to another folder → Copy all Image or Video files in the current selection to...**
 2. Choose an empty destination folder. A good name is **`TimelapseExport`**.
 
@@ -80,6 +86,10 @@ WildlifeViewerExport/
 ```
 
 Do not mix in images that are not in the selection. The CSV rows and the files in `TimelapseExport/` must describe the same set.
+
+:::important
+As shown in the screenshot above, ensure "Rename files to include their subfolder location, if any" is **unchecked**. It is checked by default, and will rename the files to include the subfolder location, which is not what we want.
+:::
 
 ## 4. Add deployment data (recommended)
 

@@ -73,11 +73,11 @@ Possible use cases include:
 2. **Comparing against current community programs** — in principle, imported GBIF records could be overlaid with recent Guardian Connector or partner datasets to see whether historical public records align with present-day field effort. In practice, older GBIF records are often sparse, inconsistently identified, or poorly georeferenced, so this comparison is exploratory rather than a rigorous baseline.
 3. **Exploring broad patterns** — species lists by year, record-type breakdowns (specimen vs. observation), or publisher contributions, in a similar spirit to exploring trends on iNaturalist — though GBIF aggregates many dataset types and time periods, so patterns reflect the combined public archive rather than a single community project.
 
-:::tip
+:::tip How to download GBIF data
 
 Use the [GBIF Map Search](https://conservationmetrics.github.io/gbif-map-search/) tool to search GBIF for your area of interest, and then press the "View on GBIF" button to download the full records.
 
-We can make regular GBIF download workflows available through the [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) when a community has a clear use case: for example, scheduled imports into a Guardian Connector warehouse or repeatable exports for a territory polygon. Reach out to us with your goals and we can discuss what makes sense.
+We also have a connector for GBIF data available in [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/), which can be scheduled to run on a regular basis.
 
 :::
 

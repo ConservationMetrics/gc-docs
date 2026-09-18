@@ -1,0 +1,233 @@
+{
+  "7ab3db2a": {
+    "pt": "Os dados do GBIF são poderosos, mas também são agregados de muitas fontes externas. As comunidades devem tratá-los primeiro como uma **ferramenta de descoberta e inventário** — uma forma de aprender o que existe nos arquivos públicos — em vez de conhecimento territorial autoritário por si só. O GBIF estabeleceu um [grupo de trabalho sobre governança de dados Indígenas](https://www.gbif.org/news/1Ke3Gk2USgdIW5OgDlBIKY/open-data-for-people-and-purpose-gbif-establishes-task-group-on-indigenous-data-governance), buscando implementar os [Princípios CARE para a Governança de Dados Indígenas](https://www.gida-global.org/care) na forma como o GBIF opera e apoia o uso responsável de dados."
+  },
+  "0463df8f": {
+    "pt": "**Privacidade e dados da comunidade.** Alguns registos documentam espécies ou locais culturalmente sensíveis, ligados a direitos de colheita, ou destinados a permanecer dentro da comunidade. Por exemplo, um programa de guardiões pode registar localizações de plantas úteis sem querer que as coordenadas precisas sejam descobertas em todo o mundo. Uma licença de observação restritiva (por exemplo, Todos os Direitos Reservados) mantém os dados disponíveis para o seu projeto iNaturalist enquanto os exclui da exportação para o GBIF."
+  },
+  "1ae2cef0": {
+    "pt": "Quando uma comunidade precisa dos registos subjacentes — e não apenas das contagens — a [API de Downloads](https://techdocs.gbif.org/en/data-use/api-downloads) do GBIF pode recuperar todos os dados de ocorrência dentro de um polígono territorial (ou outro filtro), sujeitos aos termos de uso do GBIF e às licenças de cada conjunto de dados. Os downloads são tipicamente entregues como Darwin Core Archive (DwC-A) ou formatos tabulares semelhantes, adequados para mapeamento e análise em GIS ou ferramentas de base de dados."
+  },
+  "a317096b": {
+    "pt": "O GBIF não recolhe dados de campo por si mesmo. Em vez disso, os **publicadores** — instituições, projetos e plataformas — registam **conjuntos de dados** e partilham registos de ocorrência padronizados através da rede do GBIF. Cada registo tipicamente inclui um nome de espécie (ou táxon superior), uma data, uma localização e metadados sobre como o registo foi recolhido (por exemplo, se é um espécime preservado, uma observação humana ou uma observação de máquina)."
+  },
+  "36e092be": {
+    "pt": "**Reconhecimento na pesquisa global.** Quando deseja que a biodiversidade do seu território seja documentada na literatura científica, modelos de distribuição de espécies ou avaliações de conservação, o GBIF torna os seus registos citáveis e detetáveis. Por exemplo, observações comunitárias de uma orquídea raramente registada ou uma extensão de área de ocorrência para uma ave migratória podem preencher lacunas que os investigadores usam em revisões da Lista Vermelha da IUCN ou estudos revistos por pares."
+  },
+  "44c9f402": {
+    "pt": "[GBIF](https://www.gbif.org/) — a Global Biodiversity Information Facility — é uma rede internacional e infraestrutura de dados abertos para registos de ocorrência de biodiversidade. Museus, herbários, agências governamentais, projetos de pesquisa e plataformas de ciência cidadã publicam conjuntos de dados no GBIF para que qualquer pessoa possa pesquisar, mapear e fazer download de informações sobre *onde* e *quando* as espécies foram documentadas em todo o mundo."
+  },
+  "35074891": {
+    "pt": "**Gestão territorial.** Uma nação ou comunidade pode preferir que o conhecimento da biodiversidade do seu território seja acedido através do seu próprio protocolo — não agrupado globalmente sem consentimento. Manter os dados fora do GBIF pode alinhar-se com os princípios da [soberania de dados Indígenas](/guides/data-sovereignty/guide-data-sovereignty-and-protocols/) enquanto ainda usa o iNaturalist para mapeamento interno, formação e relatórios."
+  },
+  "de4c6056": {
+    "pt": "**Visibilidade em processos globais.** Governos e ONGs recorrem ao GBIF para relatórios da Convenção sobre a Diversidade Biológica (CBD), planeamento de áreas protegidas e monitorização de espécies invasoras. Contribuir com observações de Grau de Pesquisa sob uma licença aberta ajuda a garantir que o esforço de monitorização da sua comunidade seja contabilizado nos conjuntos de dados que moldam as decisões de conservação regional e internacional — não apenas no iNaturalist."
+  },
+  "f5559fee": {
+    "pt": "**Comparar com programas comunitários atuais** — em princípio, os registos GBIF importados poderiam ser sobrepostos com conjuntos de dados recentes do Guardian Connector ou de parceiros para ver se os registos públicos históricos se alinham com o esforço de campo atual. Na prática, os registos GBIF mais antigos são muitas vezes escassos, inconsistente identificados ou mal georreferenciados, pelo que esta comparação é exploratória em vez de uma linha de base rigorosa."
+  },
+  "8644de58": {
+    "pt": "O GBIF tem um guia útil sobre [como publicar dados de biodiversidade no GBIF](https://ipt.gbif.org/manual/en/ipt/latest/how-to-publish) com planilhas exemplares para diferentes tipos de dados. Conforme observado, por exemplo, na [página de dados de ocorrência](https://ipt.gbif.org/manual/en/ipt/latest/occurrence-data), o GBIF recomenda usar o modelo do Excel e usá-lo para carregar os seus dados para o GBIF:"
+  },
+  "1ee6380e": {
+    "pt": "Tente inserir os seus dados no [modelo Excel](https://ipt.gbif.org/manual/en/ipt/latest/occurrence-data#templates), que inclui todos os [campos DwC obrigatórios](https://ipt.gbif.org/manual/en/ipt/latest/occurrence-data#Required%20DwC%20Fields) e [campos DwC recomendados](https://ipt.gbif.org/manual/en/ipt/latest/occurrence-data#Recommended%20DwC%20Fields)."
+  },
+  "7404a4b7": {
+    "pt": "**Explorar padrões amplos** — listas de espécies por ano, detalhamentos por tipo de registo (espécime vs. observação) ou contribuições de publicadores, num espírito semelhante à exploração de tendências no iNaturalist — embora o GBIF agregue muitos tipos de conjuntos de dados e períodos de tempo, pelo que os padrões refletem o arquivo público combinado em vez de um único projeto comunitário."
+  },
+  "39d017f3": {
+    "pt": "Os registos no GBIF refletem o que os publicadores escolheram partilhar sob as suas próprias políticas e licenças de dados. Podem estar incompletos, duplicados em vários conjuntos de dados, georreferenciados de forma imprecisa ou incluir localizações de espécies culturalmente sensíveis. Interprete sempre os resultados do GBIF no contexto da comunidade e em conjunto com os seus próprios quadros de governação."
+  },
+  "0e933cf2": {
+    "pt": "Se isto se estiver a revelar difícil ou moroso, por favor contacte-nos com o seu caso de uso; poderíamos considerar a criação de uma ferramenta [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) que mapeie os campos DwC do GBIF para os dados que possui no seu próprio sistema. Mas primeiro, por favor, experimente o modelo Excel e veja se funciona para si."
+  },
+  "bd7e49be": {
+    "pt": "Para organizações comunitárias, o GBIF é frequentemente o índice público mais abrangente de registos de biodiversidade que podem estar relacionados com um território: não apenas a monitorização comunitária recente, mas também coleções históricas de espécimes, dados de inquéritos e observações contribuídas por investigadores e instituições externas ao longo de muitas décadas."
+  },
+  "1c64ca1f": {
+    "pt": "Como o GBIF normaliza registos de tantas fontes, uma única pesquisa sobre o seu território pode revelar conjuntos de dados que talvez não conhecesse — juntamente com informações sobre **quem os publicou**, **quando** as observações foram feitas e **que tipo de evidência** cada registo representa."
+  },
+  "d96cc44d": {
+    "pt": "Desenhe uma caixa ou solte um limite GeoJSON de uma área comunitária para resumir ocorrências, espécies, conjuntos de dados, publicadores, anos e base de registo. Funciona no seu navegador e não é necessária uma conta GBIF. Para ver e descarregar registos completos, clique no botão \"Ver no GBIF\" após a consulta."
+  },
+  "2ad320fe": {
+    "pt": "Pankararu, C.J., Teixidor-Toneu, I., Odonne, G. et al. [A global biodiversity use data infrastructure acknowledging indigenous and local knowledge.](https://www.nature.com/articles/s44185-026-00121-0) npj biodivers 5, 7 (2026). https://doi.org/10.1038/s44185-026-00121-0"
+  },
+  "c2d3ad73": {
+    "pt": "Antes de descarregar registos de ocorrência individuais, é útil ver o que o GBIF já sabe sobre o seu território — quem publicou dados, que espécies aparecem e em que período de tempo. O CMI disponibiliza uma ferramenta de navegador gratuita que torna esse resumo rápido e fácil:"
+  },
+  "08cb5973": {
+    "pt": "Se as observações da sua comunidade devem aparecer no GBIF, por exemplo, através do uso do [iNaturalist](/guides/biodiversity/guide-inaturalist/), é uma escolha de governação, não um requisito técnico. Ambos os resultados são válidos dependendo dos seus objetivos."
+  },
+  "b4fc82ac": {
+    "pt": "O GBIF é mais útil quando uma comunidade quer compreender o **registo público existente** de documentação da biodiversidade dentro ou perto do seu território, antes de decidir se solicita dados, contacta publicadores ou importa registos para uma análise mais profunda."
+  },
+  "79dddfd0": {
+    "pt": "Use a ferramenta [GBIF Map Search](https://conservationmetrics.github.io/gbif-map-search/) para pesquisar o GBIF para a sua área de interesse e, em seguida, pressione o botão \"Ver no GBIF\" para descarregar os registos completos."
+  },
+  "88f52bf9": {
+    "pt": "**Mapeamento de registos de ocorrência** — por exemplo, filtrar um download para ver onde os registos de onça-pintada (*Panthera onca*) caem em relação aos limites da comunidade, áreas protegidas ou locais de monitorização recentes."
+  },
+  "b72834d5": {
+    "pt": "**Plataformas de ciência cidadã** — incluindo [iNaturalist](/guides/biodiversity/guide-inaturalist/), que exporta observações elegíveis de Grau de Pesquisa para o GBIF regularmente"
+  },
+  "66dfa4ae": {
+    "pt": "Também temos um conector para dados do GBIF disponível no [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/), que pode ser agendado para execução regular."
+  },
+  "2c9d6abd": {
+    "pt": "Para uma visão geral concisa da missão e rede do GBIF, consulte [O que é o GBIF?](https://www.gbif.org/what-is-gbif) no site do GBIF."
+  },
+  "40cb6840": {
+    "pt": "Exporte as tabelas de resumo para o formato de planilha para partilhar os resultados numa reunião ou anexá-los a uma revisão de governação de dados."
+  },
+  "8f85c5d1": {
+    "pt": "Por fim, os seus dados precisam de ser transformados numa estrutura de tabela usando nomes de termos Darwin Core (DwC) como nomes de colunas."
+  },
+  "94429797": {
+    "pt": "[GBIF Piloto Usando os Rótulos TK e BC](https://localcontexts.org/gbif-pilot-using-tk-and-bc-labels/)"
+  },
+  "c6926c2b": {
+    "pt": "**Portais nacionais e regionais de biodiversidade** — programas de monitorização governamentais e de ONGs"
+  },
+  "1fc61d94": {
+    "pt": "**Projetos de pesquisa** — levantamentos de campo, estudos ecológicos e redes de monitorização"
+  },
+  "605cbcf7": {
+    "pt": "**[Abrir a ferramenta →](https://conservationmetrics.github.io/gbif-map-search/)**"
+  },
+  "29ad1701": {
+    "pt": "**Coleções de história natural** — registos de espécimes de museus e herbários"
+  },
+  "1069a7a7": {
+    "pt": "[Guia de Referência Rápida do Darwin Core Archive](https://dwc.tdwg.org/terms/)"
+  },
+  "115b3a06": {
+    "pt": "Que instituições possuem espécimes ou observações do nosso território?"
+  },
+  "f5a849fa": {
+    "pt": "Por que as organizações comunitárias quereriam (ou não) partilhar com o GBIF?"
+  },
+  "0272ad12": {
+    "pt": "GBIF: Descobrindo e Publicando Registos de Biodiversidade"
+  },
+  "2d402710": {
+    "pt": "Os dados chegam ao GBIF através de muitos canais, incluindo:"
+  },
+  "5792e072": {
+    "pt": "Por que as organizações comunitárias podem querer dados do GBIF?"
+  },
+  "dde17a7f": {
+    "pt": "Espécies culturalmente sensíveis estão a ser publicadas?"
+  },
+  "75c29915": {
+    "pt": "Razões para partilhar dados de observação através do GBIF:"
+  },
+  "4020cf36": {
+    "pt": "Razões para manter dados de observação fora do GBIF:"
+  },
+  "ab369937": {
+    "pt": "Esse resumo ajuda a responder a perguntas como:"
+  },
+  "27cb9cc3": {
+    "pt": "Existem conjuntos de dados que não conhecíamos?"
+  },
+  "f1483518": {
+    "pt": "Os registos sobre o nosso território são precisos?"
+  },
+  "d31bc658": {
+    "pt": "Que espécies estavam a documentar?"
+  },
+  "a06a0675": {
+    "pt": "Quem recolheu dados aqui e quando?"
+  },
+  "0baa73d6": {
+    "pt": ":::tip Como descarregar dados do GBIF"
+  },
+  "8c717f35": {
+    "pt": "Como o GBIF agrega dados?"
+  },
+  "e01f9ae0": {
+    "pt": ":::important GBIF Map Search"
+  },
+  "dbfadbc3": {
+    "pt": "Possíveis casos de uso incluem:"
+  },
+  "4cb2c101": {
+    "pt": "🔍 Inventário e descoberta"
+  },
+  "4567c7fe": {
+    "pt": "📚 Leitura adicional"
+  },
+  "6b06f176": {
+    "pt": "📥 Importação de dados"
+  },
+  "aebb3823": {
+    "pt": ":::info"
+  },
+  "fecc0bd8": {
+    "pt": ":::note"
+  },
+  "1d05fb6b": {
+    "pt": ":::tip"
+  },
+  "3562d994": {
+    "pt": "O [Guardian Connector (GC) Scripts Hub](https://github.com/conservationmetrics/gc-scripts-hub) é uma coleção crescente de scripts, fluxos e aplicativos de automação projetados para ajudar as comunidades a proteger e gerenciar suas terras por meio da integração de dados e automação de fluxos de trabalho. Construídos na plataforma de orquestração de dados [Windmill](https://www.windmill.dev/), esses conectores capacitam as comunidades a conectar diferentes ferramentas, automatizar a coleta de dados e otimizar seus fluxos de trabalho de conservação sem exigir profundo conhecimento técnico."
+  },
+  "6a2067a4": {
+    "pt": "O Scripts Hub reconhece que cada comunidade tem necessidades e fluxos de trabalho únicos. Os scripts podem ser personalizados e combinados para criar processos automatizados que apoiam os seus objetivos específicos de conservação, seja monitorar a biodiversidade, documentar locais culturais ou rastrear ameaças ambientais."
+  },
+  "c1fb526d": {
+    "pt": ":::note Esclarecimento\nNós não construímos nem mantemos o Windmill. É uma ferramenta de terceiros que integramos com o Guardian Connector. No entanto, nós **mantemos** os scripts, fluxos e aplicativos que fazem parte do GC Scripts Hub.\n:::"
+  },
+  "09555dee": {
+    "pt": "**Dataset Importer**: Um aplicativo para importar conjuntos de dados em formato de arquivo para o data warehouse do Guardian Connector. Consulte a página [Dataset Importer](/reference/gc-toolkit/gc-scripts-hub/dataset-importer/) para mais detalhes."
+  },
+  "2a07773c": {
+    "pt": "Este recurso continua a crescer com base nas necessidades e feedback da comunidade, garantindo que as ferramentas evoluam para melhor servir os esforços de conservação de base em todo o mundo."
+  },
+  "3ebec611": {
+    "pt": "**Transformações específicas da fonte**: Aplica transformações específicas da ferramenta de origem, como KoboToolbox, CoMapeo, ODK, Locus Map."
+  },
+  "49332731": {
+    "pt": "**Amplo suporte a formatos de arquivo**: Capacidades robustas de ingestão para diversos padrões de dados geoespaciais e administrativos:"
+  },
+  "a951a979": {
+    "pt": "**Métricas do Guardian Connector**: Gera e armazena métricas de uso mensais em todos os serviços do Guardian Connector."
+  },
+  "0902614f": {
+    "pt": "Os scripts e fluxos do Windmill podem ser agendados para execução automática, criando fluxos de trabalho como:"
+  },
+  "ec5e18b8": {
+    "pt": "Notificações imediatas via WhatsApp quando ameaças ambientais são detectadas"
+  },
+  "f7c9e537": {
+    "pt": "Verificações regulares de novos alertas de desmatamento em seu território"
+  },
+  "b7d45b63": {
+    "pt": "Dados vetoriais: Shapefile, GeoJSON, KML/KMZ, GPX, GeoPackage"
+  },
+  "1ff0b4a5": {
+    "pt": "Exportações horárias de dados de pesquisa para reuniões comunitárias"
+  },
+  "665d4685": {
+    "pt": "Outros dados estruturados: JSON, XML"
+  },
+  "29b05158": {
+    "pt": "Dados tabulares: CSV, XLS, XLSX"
+  },
+  "cc8d3311": {
+    "pt": "🌱 Design focado na comunidade"
+  },
+  "f43f5319": {
+    "pt": "🤖 Capacidades de Automação"
+  },
+  "f9060601": {
+    "pt": "📊 Métricas e Relatórios"
+  },
+  "ccc66f58": {
+    "pt": "💾 Dataset Importer"
+  },
+  "2f3585a1": {
+    "pt": "GC Scripts Hub"
+  }
+}

@@ -34,8 +34,17 @@ Use the top navigation bar to explore each section of this documentation site:
 2. **Review [Reference](./reference/)** to learn about integrated tools and implementation options  
 3. **Follow [Guides and Tutorials](./guides/)** for hands-on learning and practical skills development
 
-:::tip User Personas
-We use [User Personas](./overview/user-personas/) to point you toward content written for your role and experience level. Look for persona tags at the top of each page — they show who that page is for, and you can click a tag to see more pages marked for that audience.
+## User Personas
+
+Not everyone uses every layer of Guardian Connector. Different [user personas](./overview/user-personas/) typically operate different parts of the stack. For example:
+
+- An [Indigenous Tech User](./overview/user-personas/#itu-1) of any experience level may only use the data collection applications that feed into Guardian Connector.
+- An [advanced Indigenous Tech User](./overview/user-personas/#itu-3) may also handle some basic configuration of views or dashboards.
+- An [Indigenous Decision Maker](./overview/user-personas/#idm) may only access dashboards and data views, and will not need to know much more about the technical details of the system.
+- An [Organizational Power User](./overview/user-personas/#opu) may administer the entire stack, sometimes with support from a [Technical Support Partner](./overview/user-personas/#tsp), and in other cases entirely on their own.
+
+:::tip User Personas throughout the documentation
+We use User Personas tags to point you toward content written for a given role and experience level. Look for persona tags at the top of each page — they show who that page is for, and you can click a tag to see more pages marked for that audience.
 :::
 
 ---

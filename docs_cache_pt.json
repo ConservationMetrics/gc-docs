@@ -1,0 +1,116 @@
+{
+  "aa1c1d91": {
+    "pt": ":::tip Personas de Usuário em toda a documentação\nUsamos tags de Personas de Usuário para direcioná-lo a conteúdo escrito para uma determinada função e nível de experiência. Procure por tags de persona no topo de cada página — elas mostram para quem é a página, e você pode clicar em uma tag para ver mais páginas marcadas para aquele público.\n:::"
+  },
+  "9c0adb85": {
+    "pt": "Bem-vindo ao centro de documentação do Guardian Connector! Este recurso abrangente fornece orientação para compreender, implantar e usar o Guardian Connector para apoiar as necessidades de soberania de dados e monitoramento ambiental de organizações comunitárias."
+  },
+  "a5922dfe": {
+    "pt": "Um [Usuário Avançado Organizacional](./overview/user-personas/#opu) pode administrar toda a pilha, às vezes com o apoio de um [Parceiro de Suporte Técnico](./overview/user-personas/#tsp), e em outros casos inteiramente por conta própria."
+  },
+  "8d4f6396": {
+    "pt": "*O Guardian Connector representa um compromisso com a soberania de dados Indígenas e o monitoramento controlado pela comunidade.*\n*Esta documentação o ajudará a aproveitar todo o seu potencial para o trabalho de conservação e advocacia comunitária.*"
+  },
+  "0d84c1ef": {
+    "pt": "Um [Tomador de Decisões Indígena](./overview/user-personas/#idm) pode apenas acessar painéis e visualizações de dados, e não precisará saber muito mais sobre os detalhes técnicos do sistema."
+  },
+  "bd2290a7": {
+    "pt": "Informações de referência detalhadas sobre ferramentas integradas, opções de hospedagem e especificações técnicas para ajudar as organizações comunitárias a tomar decisões informadas sobre a implementação."
+  },
+  "601581f5": {
+    "pt": "Nem todos usam todas as camadas do Guardian Connector. Diferentes [personas de usuário](./overview/user-personas/) geralmente operam diferentes partes da pilha. Por exemplo:"
+  },
+  "575d5aa1": {
+    "pt": "Um [Usuário de Tecnologia Indígena](./overview/user-personas/#itu-1) de qualquer nível de experiência pode usar apenas os aplicativos de coleta de dados que alimentam o Guardian Connector."
+  },
+  "55e4c778": {
+    "pt": "Compreender o propósito do Guardian Connector, como ele funciona, princípios de design e como ele se encaixa no trabalho mais amplo de monitoramento e advocacia de organizações comunitárias."
+  },
+  "1b3ac62c": {
+    "pt": "Guias abrangentes para estabelecer práticas de dados centradas na comunidade, incluindo protocolos de soberania de dados Indígenas e fluxos de trabalho específicos de ferramentas."
+  },
+  "cf2f0ddc": {
+    "pt": "Um [Usuário de Tecnologia Indígena avançado](./overview/user-personas/#itu-3) também pode lidar com alguma configuração básica de visualizações ou painéis."
+  },
+  "c2cf5864": {
+    "pt": "**Comece com a [Visão Geral](./overview/)** para entender o propósito e os princípios de design do Guardian Connector"
+  },
+  "43369467": {
+    "pt": "**Siga os [Guias e Tutoriais](./guides/)** para aprendizado prático e desenvolvimento de habilidades"
+  },
+  "5a233de3": {
+    "pt": "**Revise a [Referência](./reference/)** para aprender sobre ferramentas integradas e opções de implementação"
+  },
+  "10f0649f": {
+    "pt": "Use a barra de navegação superior para explorar cada seção deste site de documentação:"
+  },
+  "5cd191d7": {
+    "pt": "Esta documentação fornece orientação abrangente para:"
+  },
+  "3e6345f3": {
+    "pt": ":::info Última atualização\n_Conteúdo revisado pela última vez em: _\n:::"
+  },
+  "5df1f456": {
+    "pt": "Documentação do Guardian Connector"
+  },
+  "8613756f": {
+    "pt": "📚 **[Referência](./reference/)**"
+  },
+  "6cd676fe": {
+    "pt": "O Que Esta Documentação Abrange"
+  },
+  "4fcab33c": {
+    "pt": "🏗️ **[Visão Geral](./overview/)**"
+  },
+  "72957c79": {
+    "pt": "🎓 **[Guias](./guides/)**"
+  },
+  "bf647454": {
+    "pt": "Primeiros Passos"
+  },
+  "1ff7a9ba": {
+    "pt": "Personas de Usuário"
+  },
+  "e2a38580": {
+    "pt": "Posiciona os Povos Indígenas para coletar, gerenciar e possuir dados sobre seus territórios em seus próprios termos. Simplifica o caminho da coleta de dados à ação, ajudando os usuários a criar ferramentas de defesa poderosas que apoiam a guarda de suas terras e águas."
+  },
+  "6de72067": {
+    "pt": "Esta seção de Visão Geral da documentação aprofunda as ideias por trás da plataforma: os princípios que a moldam, para quem é projetada e como decidir se ela se encaixa em uma organização."
+  },
+  "e67cee03": {
+    "pt": ":::tip Visite o site do Guardian Connector\n:link: Para uma introdução geral à plataforma, visite o [site do Guardian Connector](https://guardianconnector.net).\n:::"
+  },
+  "fe17934d": {
+    "pt": "Uma análise prática para saber se o Guardian Connector é adequado para uma organização comunitária indígena ou local, ou para uma organização que você apoia."
+  },
+  "53ce97ff": {
+    "pt": "_Guardian Connector é uma plataforma de integração e monitoramento de dados segura e de código aberto._"
+  },
+  "09e09f3c": {
+    "pt": "[O Guardian Connector é adequado para sua organização?](./is-gc-right-for-you/)"
+  },
+  "cc3eb2ed": {
+    "pt": "Sobre os princípios de design técnico usados na construção do Guardian Connector."
+  },
+  "a0f21073": {
+    "pt": "As funções usadas nesta documentação para mostrar para quem uma página é escrita."
+  },
+  "ff598102": {
+    "pt": "Respostas curtas para perguntas comuns sobre a plataforma."
+  },
+  "fbe23f1b": {
+    "pt": "[Princípios de Design](./design-principles/)"
+  },
+  "f67c61d1": {
+    "pt": "[Perguntas Frequentes](./faq/)"
+  },
+  "12a1860a": {
+    "pt": "[Personas de Usuário](./user-personas/)"
+  },
+  "365bcd2b": {
+    "pt": "Sobre o Guardian Connector"
+  },
+  "4233858e": {
+    "pt": "Nesta Seção"
+  }
+}

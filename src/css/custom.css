@@ -83,3 +83,9 @@ article:has(> .theme-doc-markdown) {
   order: 3;
   margin-top: 3rem;
 }
+
+/* Center a single Mermaid diagram wrapped in .center-diagram. */
+.center-diagram .docusaurus-mermaid-container > svg {
+  display: block;
+  margin-inline: auto;
+}

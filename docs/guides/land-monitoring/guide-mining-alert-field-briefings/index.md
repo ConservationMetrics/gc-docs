@@ -18,6 +18,8 @@ When [change detection alerts](/reference/gc-toolkit/gc-explorer/) show new mini
 
 A site visit goes much better when the team and the local community can look at the same map. This guide walks through a complete workflow for turning raw alerts into **printed briefing packets** — one map per mining site, with the analysis already done: where the site is, how far it is from the river, and how far it is from the village.
 
+<div className="center-diagram">
+
 ```mermaid
 flowchart TD
     A["📲 WhatsApp notification<br/>(new alerts detected)"] --> B["🗺️ GC Explorer<br/>review + export alerts (GeoJSON/KML)"]
@@ -26,6 +28,8 @@ flowchart TD
     D --> E["🖨️ Print layouts<br/>one per site"]
     E --> F["🤝 Community meeting"]
 ```
+
+</div>
 
 This guide is written for the people who **lead the monitoring process**: you should be comfortable opening data in QGIS, understand how GPS coordinates work, and have a basic familiarity with [KoboToolbox](/reference/core-integrations/kobotoolbox/) and KoboCollect for field data collection.
 

@@ -13,6 +13,8 @@ An automated drone flight is a cheap way to "visit" the site without going. The 
 
 This workflow goes hand in hand with [Preparing Mining Alert Field Briefings](/guides/land-monitoring/guide-mining-alert-field-briefings/): same alerts, same briefing packets and reports — only now the site pages are drawn from centimeter-resolution drone maps instead of satellite imagery.
 
+<div className="center-diagram">
+
 ```mermaid
 flowchart TD
     A["🗺️ GC Explorer<br/>alert/incident → KML export"] --> B["🛩️ Mission planner<br/>import area, generate grid<br/>(e.g. MavenRoute)"]
@@ -22,6 +24,8 @@ flowchart TD
     E --> F["🗺️ Orthomosaic + DSM"]
     F --> G["🖨️ QGIS<br/>briefing maps & reports"]
 ```
+
+</div>
 
 This guide assumes you already work comfortably with QGIS and GC Explorer, and that your organization has a mapping-capable drone and a pilot who flies it under your national drone rules.
 

@@ -14,6 +14,8 @@ Right now that record usually lives in nothing but the observers' memory — inf
 1. **The effort surfaced** — distance, days out, elevation climbed — so the council understands what monitoring actually costs, not just what it finds.
 2. **The work backed up** — proof, from the device's own timestamps, of which planned sites the team physically reached and spent time at.
 
+<div className="center-diagram">
+
 ```mermaid
 flowchart TD
     A["🛰️ GC Explorer alerts<br/>→ planned sites<br/>(briefing guide)"] --> B["🥾 Monitoring field trip<br/>sites visited on foot"]
@@ -26,6 +28,8 @@ flowchart TD
     G --> H["🤝 Local <br/> reporting"]
     D --> I["🗄️ Archive to your instance<br/>field trips accumulate<br/>in GC Explorer"]
 ```
+
+</div>
 
 This guide is for the same people as the briefing guide — monitoring leads who are comfortable with QGIS and GC Explorer. Everything works with any tool that records standard GPX tracks.
 

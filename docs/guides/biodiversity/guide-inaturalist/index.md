@@ -78,3 +78,4 @@ Once imported, observations can be mapped, filtered, and combined with other mon
 ## 📚 Further reading
 
 - [How does iNaturalist protect the locations of sensitive species?](https://help.inaturalist.org/en/support/solutions/articles/151000233080-how-does-inaturalist-protect-the-locations-of-sensitive-species-)
+- [_"Who else has data from our territory? Working with the Wayana on biodiversity data"_ — Conservation Metrics blog post from September 2026](https://conservationmetrics.com/who-else-has-data-from-our-territory-working-with-the-wayana-on-biodiversity-data/)

@@ -112,3 +112,4 @@ If this is proving difficult or time-consuming, please reach out to us with your
 - [GBIF Pilot Using TK and BC Labels](https://localcontexts.org/gbif-pilot-using-tk-and-bc-labels/)
 - Pankararu, C.J., Teixidor-Toneu, I., Odonne, G. et al. [A global biodiversity use data infrastructure acknowledging indigenous and local knowledge.](https://www.nature.com/articles/s44185-026-00121-0) npj biodivers 5, 7 (2026). https://doi.org/10.1038/s44185-026-00121-0
 - [Darwin Core Archive Quick Reference Guide](https://dwc.tdwg.org/terms/)
+- [_"Who else has data from our territory? Working with the Wayana on biodiversity data"_ — Conservation Metrics blog post from September 2026](https://conservationmetrics.com/who-else-has-data-from-our-territory-working-with-the-wayana-on-biodiversity-data/)

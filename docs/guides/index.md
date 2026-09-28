@@ -124,7 +124,7 @@ A comprehensive guide for creating data sharing protocols grounded in Indigenous
 An example workflow for monitoring leads: review change detection alerts in GC Explorer, export them, analyze mining sites in QGIS (distance to river and village), and print per-site briefing maps to take to community meetings before a field visit.
 
 **What you'll learn:**
-- Reacting to alerts via WhatsApp notifications, or reviewing accumulated alerts in Explorer before planning a round
+- Reacting to alerts via WhatsApp notifications, or reviewing accumulated alerts in Explorer before planning a field trip
 - Grouping related alerts into incidents and exporting alerts as GeoJSON/KML
 - Combining new alerts with historical mining areas from File Browser
 - Calculating distance from rivers and villages for each site in QGIS
@@ -141,15 +141,15 @@ A workflow for monitoring teams to assess remote mining sites without costly exp
 - Processing imagery on a beefy computer with WebODM, or in the cloud with Geostitch
 - Loading the orthomosaic in QGIS and dropping it into existing briefing print layouts
 
-### [Turning Monitoring Tracks into Round Reports](./land-monitoring/guide-monitoring-round-reports/)
+### [Turning Monitoring Tracks into Field Trip Reports](./land-monitoring/guide-monitoring-field-trip-reports/)
 
-A post-fieldwork workflow for monitoring teams: take the GPS tracks already recorded during a monitoring round and turn them into a one-page report for the community — surfacing the effort the round cost and backing up which planned sites were actually reached and verified.
+A post-fieldwork workflow for monitoring teams: take the GPS tracks already recorded during a monitoring field trip and turn them into a one-page report for the community — surfacing the effort the field trip cost and backing up which planned sites were actually reached and verified.
 
 **What you'll learn:**
-- Recording rounds so GPX files stay usable (one track per team per day, site-named waypoints)
+- Recording field trips so GPX files stay usable (one track per team per day, site-named waypoints)
 - Extracting distance, elevation gain, and moving/stopped time with in-browser tools (nothing uploaded)
 - Verifying in QGIS which planned alert sites the tracks physically reached
-- Building a one-page round report: route map, effort box, and per-site findings table
+- Building a one-page field trip report: route map, effort box, and per-site findings table
 - Archiving tracks into the instance so cumulative effort per season accumulates automatically
 
 ## Support and Community

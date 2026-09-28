@@ -3,63 +3,63 @@ sidebar_position: 2
 tags: [itu-3, opu, tsp]
 ---
 
-# Turning Monitoring Tracks into Round Reports
+# Turning Monitoring Tracks into Field Trip Reports
 
 ## Introduction
 
-The [field briefing guide](/guides/land-monitoring/guide-mining-alert-field-briefings/) plans the round; the [drone guide](/guides/land-monitoring/guide-drone-photogrammetry-workflow/) closes distance without going. But when the team finally walks out with the briefing packet and comes back later, it carries something no planning document predicts: the **effort it took**. Kilometres covered, hills crossed, sites that turned out to be three river bends farther than the satellite made them look.
+The [field briefing guide](/guides/land-monitoring/guide-mining-alert-field-briefings/) plans the field trip; the [drone guide](/guides/land-monitoring/guide-drone-photogrammetry-workflow/) closes distance without going. But when the team finally walks out with the briefing packet and comes back later, it carries something no planning document predicts: the **effort it took**. Kilometres covered, hills crossed, sites that turned out to be three river bends farther than the satellite made them look.
 
-Right now that record usually lives in nothing but the observers' memory — information that never gets to the reports. Many teams already capture it without trying: using tools that track recording during the round. That track, processed the day the team gets home, produces two things the community should see:
+Right now that record usually lives in nothing but the observers' memory — information that never gets to the reports. Many teams already capture it without trying: using tools that track recording during the field trip. That track, processed the day the team gets home, produces two things the community should see:
 
 1. **The effort surfaced** — distance, days out, elevation climbed — so the council understands what monitoring actually costs, not just what it finds.
 2. **The work backed up** — proof, from the device's own timestamps, of which planned sites the team physically reached and spent time at.
 
 ```mermaid
 flowchart TD
-    A["🛰️ GC Explorer alerts<br/>→ planned sites<br/>(briefing guide)"] --> B["🥾 Monitoring round<br/>sites visited on foot"]
+    A["🛰️ GC Explorer alerts<br/>→ planned sites<br/>(briefing guide)"] --> B["🥾 Monitoring field trip<br/>sites visited on foot"]
     B --> C["📲 Locus Map<br/>track + waypoints recorded"]
-    C --> D["📁 GPX files gathered<br/>in the round folder"]
+    C --> D["📁 GPX files gathered<br/>in the field trip folder"]
     D --> E["🌐 Browser tools<br/>distance · elevation · pace"]
     D --> F["🗺️ QGIS<br/>did the track reach<br/>the planned sites?"]
-    E --> G["🖨️ One-page round report"]
+    E --> G["🖨️ One-page field trip report"]
     F --> G
     G --> H["🤝 Local <br/> reporting"]
-    D --> I["🗄️ Archive to your instance<br/>rounds accumulate<br/>in GC Explorer"]
+    D --> I["🗄️ Archive to your instance<br/>field trips accumulate<br/>in GC Explorer"]
 ```
 
 This guide is for the same people as the briefing guide — monitoring leads who are comfortable with QGIS and GC Explorer. Everything works with any tool that records standard GPX tracks.
 
 ## Step 1: While out — record so the track is usable later
 
-A track is only evidence if it connects people to places. Three habits during the round make Step 4 possible:
+A track is only evidence if it connects people to places. Three habits during the field trip make Step 4 possible:
 
 - **One track per team per day.** Start recording in the morning, stop at the end of the day. Many short, cleanly-named files beat one three-day file: individual days can fail, be quoted, or be summed without editing anything.
 
-Back home, export your track data, one file per day, and name for the round:
+Back home, export your track data, one file per day, and name for the field trip:
 
 ```text
-2026-09_jatapu-round_teamA_day1.gpx
-2026-09_jatapu-round_teamA_day2.gpx
-2026-09_jatapu-round_teamB_day1.gpx
+2026-09_jatapu-field_trip_teamA_day1.gpx
+2026-09_jatapu-field_trip_teamA_day2.gpx
+2026-09_jatapu-field_trip_teamB_day1.gpx
 ```
 
-## Step 2: Come home — put the GPX files where the round lives
+## Step 2: Come home — put the GPX files where the field trip lives
 
-The round folder from the briefing guide, plus one new directory:
+The field trip folder from the briefing guide, plus one new directory:
 
 ```text
-2026-09_jatapu-round/
+2026-09_jatapu-field_trip/
 ├── alerts/             # GeoJSON exported from GC Explorer (planned sites)
 ├── reference/          # rivers, villages
 ├── tracks/             # 🆕 the GPX files, one per team per day
-├── round.qgz           # the QGIS project from the briefing stage
-└── printed/            # briefing packet — and now, the round report
+├── field_trip.qgz           # the QGIS project from the briefing stage
+└── printed/            # briefing packet — and now, the field trip report
 ```
 
 Do not move files out of this structure to "share them": the verification step compares tracks **against the alert exports you already made**, and both stay in the same folder. The GPX files are originals — never edit them; if a day's recording has to be trimmed, export the trim to a new file.
 
 :::note Do this within a day of returning
-GPS memory is like a notebook left open: fine until you come back and it has changed. Phones get reset, apps get cleared, SD cards get reused. The tracks are the round's only automatic witness — archive them first, report later.
+GPS memory is like a notebook left open: fine until you come back and it has changed. Phones get reset, apps get cleared, SD cards get reused. The tracks are the field trip's only automatic witness — archive them first, report later.
 :::
 
 ## Step 3: Extract the effort numbers — in the browser, nothing uploaded
@@ -84,14 +84,14 @@ You can drop each day's file in, record the numbers in a simple table, and sum a
 The elevation chart from the first tool is the single best "effort" image for the council: a flat satellite route becomes a wall of climbs when printed at A4. Screenshot it once per day file; one or two go in the report.
 :::
 
-## Step 4: The one-page round report
+## Step 4: The one-page field trip report
 
-Everything above exists to fill **one A4 page** that goes back to the community after every round — same print conventions as the briefing packet (scale bar, north arrow, minimal legend), so the council reads the before and after of the same map.
+Everything above exists to fill **one A4 page** that goes back to the community after every field trip — same print conventions as the briefing packet (scale bar, north arrow, minimal legend), so the council reads the before and after of the same map.
 
 | Element | Content |
 | --- | --- |
-| **Header** | Round name, dates, teams and observer names |
-| **The route** | Round map with team tracks over the alert sites: reached sites highlighted, unreached greyed, legend distinguishing track / site / route |
+| **Header** | Field trip name, dates, teams and observer names |
+| **The route** | Field trip map with team tracks over the alert sites: reached sites highlighted, unreached greyed, legend distinguishing track / site / route |
 | **Effort box** | Total km · days out · elevation climbed · transport used — the numbers from Step 3 |
 | **Findings table** | One row per site (below) |
 | **Elevation profile** | One screenshot per day file, or the single hardest day |
@@ -112,17 +112,17 @@ Add the verified findings back where they came from: record confirmed sites in a
 
 ## Step 5: Archive the tracks — let the effort accumulate
 
-The per-round report answers "what did this round cost and find?". The year answers "what does monitoring cost *in total*?" — and only works if every round's tracks land in the same place:
+The per-trip report answers "what did this field trip cost and find?". The year answers "what does monitoring cost *in total*?" — and only works if every field trip's tracks land in the same place:
 
-- **Minimum**: the round's folder on community storage, tracks never edited or deleted, same naming.
+- **Minimum**: the field trip's folder on community storage, tracks never edited or deleted, same naming.
 - **Better**: Use the Guardian Connector [dataset importer](/reference/gc-toolkit/gc-scripts-hub/dataset-importer/) to upload your tracks and waypoints to your warehouse, so that you can show them in [GC Explorer](/reference/gc-toolkit/gc-explorer/) alongside the alerts.
 
-Once rounds accumulate as data instead of files, a dashboad can be created to gather the cumulative report.
+Once field trips accumulate as data instead of files, a dashboad can be created to gather the cumulative report.
 
 ## Related documentation
 
 - [Preparing Mining Alert Field Briefings](/guides/land-monitoring/guide-mining-alert-field-briefings/) — this guide's predecessor: the planned sites and the folder this one fills
-- [From Satellite Alerts to Drone Maps](/guides/land-monitoring/guide-drone-photogrammetry-workflow/) — the other way to cover distance when the round cannot
+- [From Satellite Alerts to Drone Maps](/guides/land-monitoring/guide-drone-photogrammetry-workflow/) — the other way to cover distance when the field trip cannot
 - [Use your data in QGIS](/reference/common-workflows/use-your-data-in-qgis/) — getting exports into the project
 - [Incidents in GC Explorer](/reference/gc-toolkit/gc-explorer/incidents/) — record findings where the alerts live
 

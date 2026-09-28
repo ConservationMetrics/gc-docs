@@ -27,7 +27,7 @@ This guide assumes you already work comfortably with QGIS and GC Explorer, and t
 
 ## Step 1: Export the mining site from GC Explorer
 
-In the **Alerts Dashboard** of [GC Explorer](/reference/gc-toolkit/gc-explorer/), review what has accumulated since your last round, discard artifacts, and export the sites worth flying as **KML**:
+In the **Alerts Dashboard** of [GC Explorer](/reference/gc-toolkit/gc-explorer/), review what has accumulated since your last field trip, discard artifacts, and export the sites worth flying as **KML**:
 
 - **batch export** of all visible alerts (respecting the time filter),
 - a **single alert** clicked on the map,
@@ -123,7 +123,7 @@ Cloud processing still requires *uploading* — a few hundred photos is 5–20 G
 
 ## Step 5: Load it in QGIS, print it, report it
 
-Keep the same folder discipline as the briefing guide — one folder per site round, project pointing at relative paths:
+Keep the same folder discipline as the briefing guide — one folder per site field trip, project pointing at relative paths:
 
 ```text
 2026-09_site-a3/
@@ -131,7 +131,7 @@ Keep the same folder discipline as the briefing guide — one folder per site ro
 ├── drone/
 │   ├── images/        # untouched originals from the SD card
 │   └── odm/           # processing output (orthophoto, DSM, report)
-├── round.qgz
+├── field_trip.qgz
 └── printed/           # briefing packet PDF
 ```
 

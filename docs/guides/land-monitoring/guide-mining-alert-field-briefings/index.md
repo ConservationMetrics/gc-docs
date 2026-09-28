@@ -3,17 +3,22 @@ sidebar_position: 0
 tags: [itu-3, idm, opu, tsp]
 ---
 
+import ParamText from '@site/src/components/ParamText';
+import ParamLink from '@site/src/components/ParamLink';
+
 # Preparing Mining Alert Field Briefings
 
 ## Introduction
 
-:::important
-This is ONLY for Guardian Connector users who benefit from receiving mining alerts -- plus historical data -- from a proprietary alerts provider made available by CMI.
+:::important Usage Limitations
+This guide is intended **only** for Guardian Connector users who benefit from receiving mining alerts — plus historical data — from a proprietary alerts provider made available by CMI.
 :::
 
 When [change detection alerts](/reference/gc-toolkit/gc-explorer/) show new mining activity in a territory, the next step is usually a field visit: confirming what happened on the ground, talking to the nearby village, and deciding what to do.
 
 A site visit goes much better when the team and the local community can look at the same map. This guide walks through a complete workflow for turning raw alerts into **printed briefing packets** — one map per mining site, with the analysis already done: where the site is, how far it is from the river, and how far it is from the village.
+
+<div className="center-diagram">
 
 ```mermaid
 flowchart TD
@@ -24,29 +29,31 @@ flowchart TD
     E --> F["🤝 Community meeting"]
 ```
 
+</div>
+
 This guide is written for the people who **lead the monitoring process**: you should be comfortable opening data in QGIS, understand how GPS coordinates work, and have a basic familiarity with [KoboToolbox](/reference/core-integrations/kobotoolbox/) and KoboCollect for field data collection.
 
 ## Step 1: Alerts reach you
 
 New change detection alerts can be pushed to the monitoring team automatically. In a typical Guardian Connector setup, a script in [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) sends a **WhatsApp message** (via [Twilio](/reference/gc-toolkit/externally-hosted/twilio/)) whenever new alerts are published:
 
-> *X new change detection alert(s) have been published on your alerts dashboard for the date of MONTH YEAR. The following activities have been detected in your region: DESCRIPTION. Visit your alerts dashboard here: https://explorer.\[community\].guardianconnector.net/alerts/alerts ...*
+> *X new change detection alert(s) have been published on your alerts dashboard for the date of MONTH YEAR. The following activities have been detected in your region: DESCRIPTION. Visit your alerts dashboard here: <ParamLink template="https://explorer.{alias}.guardianconnector.net/alerts/alerts" paramName="alias" defaultValue="alias">https://explorer.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net/alerts/alerts</ParamLink> ...*
 
 How you react to that message depends on your workflow:
 
 - **Reacting in the moment** — if a rapid-response protocol exists, the notification is the trigger: the message includes a count, a description, and a direct link to the alerts dashboard, so the team can triage immediately.
-- **Planning a round (most common)** — usually you do not chase individual alerts. Instead, you open GC Explorer **before planning a patrol round**, look at everything that has accumulated since the last visit, and decide which sites to cover in one trip.
+- **Planning a field trip (most common)** — usually you do not chase individual alerts. Instead, you open GC Explorer **before planning a patrol field trip**, look at everything that has accumulated since the last visit, and decide which sites to cover in one trip.
 - **Interim reporting** — if your council wants updates between visits, the alert statistics from the dashboard (number of alerts, hectares affected) can be exported and forwarded as a short report, even before a field visit happens.
 
 :::tip
-Agree as a team on a simple cadence — for example, review the dashboard weekly and turn each review into one planned round. That way alerts do not pile up unnoticed between expeditions.
+Agree as a team on a simple cadence — for example, review the dashboard weekly and turn each review into one planned field trip. That way alerts do not pile up unnoticed between expeditions.
 :::
 
 ## Step 2: Review the alerts in GC Explorer
 
 Open the **Alerts Dashboard** in [GC Explorer](/reference/gc-toolkit/gc-explorer/). This is where you decide *which sites matter for the upcoming visit*.
 
-- Use the **time filter** to show only alerts since your last round. The filter applies both to the map and to downloads, so you export exactly the subset you reviewed.
+- Use the **time filter** to show only alerts since your last field trip. The filter applies both to the map and to downloads, so you export exactly the subset you reviewed.
 - Click individual alerts to inspect the **before-and-after imagery** and the reported date and area. Not every alert is a mining site — some are cloud or shadow artifacts. Discard what does not hold up.
 - If one mining operation produced several alerts over time, group them into an **[incident](/reference/gc-toolkit/gc-explorer/incidents/)**. An incident names the event (e.g., "Screaming River benching, August"), attaches metadata such as activity type and suspected responsibility, and lets you download the whole group at once. Incidents are also a lightweight record-keeping habit.
 
@@ -79,7 +86,7 @@ Now bring everything together in [QGIS](/reference/companion-applications/qgis/)
 1. **Layer → Add Layer → Add Vector Layer** and load the alert export (GeoJSON), the historical mining layer, a **river line layer**, and a **village point layer** for the area you are visiting.
 2. Right-click each layer → **Zoom to Layer** to confirm they overlap where you expect.
 
-If you do not yet have river and village layers for your territory, ask your support partner — most instances keep reference layers — or digitize the main village centroid once from your own records. It is worth it: you will reuse these layers for every future round.
+If you do not yet have river and village layers for your territory, ask your support partner — most instances keep reference layers — or digitize the main village centroid once from your own records. It is worth it: you will reuse these layers for every future field trip.
 
 ### Measure distances
 
@@ -108,17 +115,17 @@ Before laying out the print maps, get the visuals right — they carry most of t
 
 ### Recommendation on keeping track of your GIS files
 
-Geospatial work is easy to lose track of: a QGIS project file (`.qgz`) does **not** contain your data — it only stores *references* to where the files sit on your computer. Exports scattered across a Downloads folder or lost in email chains quickly turn into broken layers and "which file was that?" six months later. A few habits from the start keep every round reproducible:
+Geospatial work is easy to lose track of: a QGIS project file (`.qgz`) does **not** contain your data — it only stores *references* to where the files sit on your computer. Exports scattered across a Downloads folder or lost in email chains quickly turn into broken layers and "which file was that?" six months later. A few habits from the start keep every field trip reproducible:
 
 - **One folder per trip**, with the same simple structure every time:
 
   ```text
-  2026-09_jatapu-round/
+  2026-09_jatapu-field_trip/
   ├── alerts/             # GeoJSON exported from GC Explorer
   ├── historical/         # historical mining layer from File Browser
-  ├── reference/          # rivers, villages — reused across rounds
+  ├── reference/          # rivers, villages — reused across field trips
   ├── working.gpkg        # analysis outputs (joined distances, etc.)
-  ├── round.qgz           # the QGIS project
+  ├── field_trip.qgz           # the QGIS project
   └── printed/            # exported PDF packet
   ```
 
@@ -126,7 +133,7 @@ Geospatial work is easy to lose track of: a QGIS project file (`.qgz`) does **no
 - **Set QGIS to save relative paths** (Settings → Options → General → *Save paths: relative*, or per project in Project → Properties). The whole folder can then be copied, zipped, or moved to another computer and the project still opens with every layer intact.
 - **Drop a small README.txt** in the folder: what was exported, from which dashboard, on what date. Future-you will not remember.
 
-With this structure, next month's round is just: copy the folder, swap in the new alert export, reopen `round.qgz` — your rivers, villages, styles, and distance labels are all already in place.
+With this structure, next month's field trip is just: copy the folder, swap in the new alert export, reopen `field_trip.qgz` — your rivers, villages, styles, and distance labels are all already in place.
 
 :::info Why this matters
 GIS projects break differently from documents: the project and the data are separate, and moving or renaming data files *outside* the GIS software silently disconnects them. This short explainer on [GIS data management](https://mgimond.github.io/Spatial/03_data_management.html) covers exactly why that happens and how folder discipline prevents it.
@@ -152,14 +159,14 @@ In the Print Layout (*Layout → Add Print Layout*, see the [QGIS documentation]
 Layout tips for field use:
 
 - Export at **A4 PDF** and print — one page per site; the council flips through pages, not a folded atlas sheet.
-- Keep a **larger-scale inset or a second layout** for the whole village area showing all sites in context, so people see where the round will go before seeing each site in detail.
+- Keep a **larger-scale inset or a second layout** for the whole village area showing all sites in context, so people see where the field trip will go before seeing each site in detail.
 :::
 
 ## Bringing it back to the community
 
 When meeting those from the nearby village, the packet multiple jobs:
 
-1. **Orient** — the context map shows the round's route and every site in play.
+1. **Orient** — the context map shows the field trip's route and every site in play.
 2. **Brief** — one page per site: what the satellite saw, how far it is from what people care about (river, village), and what the observers are asked to confirm.
 3. **Record** — a shared reference during the discussion about who is responsible, what access routes exist, and what the community wants to do next.
 

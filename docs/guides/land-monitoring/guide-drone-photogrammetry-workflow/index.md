@@ -13,6 +13,8 @@ An automated drone flight is a cheap way to "visit" the site without going. The 
 
 This workflow goes hand in hand with [Preparing Mining Alert Field Briefings](/guides/land-monitoring/guide-mining-alert-field-briefings/): same alerts, same briefing packets and reports — only now the site pages are drawn from centimeter-resolution drone maps instead of satellite imagery.
 
+<div className="center-diagram">
+
 ```mermaid
 flowchart TD
     A["🗺️ GC Explorer<br/>alert/incident → KML export"] --> B["🛩️ Mission planner<br/>import area, generate grid<br/>(e.g. MavenRoute)"]
@@ -23,17 +25,19 @@ flowchart TD
     F --> G["🖨️ QGIS<br/>briefing maps & reports"]
 ```
 
+</div>
+
 This guide assumes you already work comfortably with QGIS and GC Explorer, and that your organization has a mapping-capable drone and a pilot who flies it under your national drone rules.
 
 ## Step 1: Export the mining site from GC Explorer
 
-In the **Alerts Dashboard** of [GC Explorer](/reference/gc-toolkit/gc-explorer/), review what has accumulated since your last round, discard artifacts, and export the sites worth flying as **KML**:
+In the **Alerts Dashboard** of [GC Explorer](/reference/gc-toolkit/gc-explorer/), review what has accumulated since your last field trip, discard artifacts, and export the sites worth flying as **KML**:
 
 - **batch export** of all visible alerts (respecting the time filter),
 - a **single alert** clicked on the map,
 - or a whole **[incident](/reference/gc-toolkit/gc-explorer/incidents/)** if the site has triggered alerts several times.
 
-::: important
+:::important
 KML is the format to use here — mission planners accept a KML polygon or outline directly as the survey area. The GeoJSON export from the [field briefing guide](/guides/land-monitoring/guide-mining-alert-field-briefings/) remains the right choice for the QGIS analysis; the two exports describe the same site and will align exactly, since everything Guardian Connector publishes is in WGS84.
 :::
 
@@ -123,7 +127,7 @@ Cloud processing still requires *uploading* — a few hundred photos is 5–20 G
 
 ## Step 5: Load it in QGIS, print it, report it
 
-Keep the same folder discipline as the briefing guide — one folder per site round, project pointing at relative paths:
+Keep the same folder discipline as the briefing guide — one folder per site field trip, project pointing at relative paths:
 
 ```text
 2026-09_site-a3/
@@ -131,7 +135,7 @@ Keep the same folder discipline as the briefing guide — one folder per site ro
 ├── drone/
 │   ├── images/        # untouched originals from the SD card
 │   └── odm/           # processing output (orthophoto, DSM, report)
-├── round.qgz
+├── field_trip.qgz
 └── printed/           # briefing packet PDF
 ```
 

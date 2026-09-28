@@ -3,12 +3,15 @@ sidebar_position: 0
 tags: [itu-3, idm, opu, tsp]
 ---
 
+import ParamText from '@site/src/components/ParamText';
+import ParamLink from '@site/src/components/ParamLink';
+
 # Preparing Mining Alert Field Briefings
 
 ## Introduction
 
-:::important
-This is ONLY for Guardian Connector users who benefit from receiving mining alerts -- plus historical data -- from a proprietary alerts provider made available by CMI.
+:::important Usage Limitations
+This guide is intended **only** for Guardian Connector users who benefit from receiving mining alerts — plus historical data — from a proprietary alerts provider made available by CMI.
 :::
 
 When [change detection alerts](/reference/gc-toolkit/gc-explorer/) show new mining activity in a territory, the next step is usually a field visit: confirming what happened on the ground, talking to the nearby village, and deciding what to do.
@@ -30,7 +33,7 @@ This guide is written for the people who **lead the monitoring process**: you sh
 
 New change detection alerts can be pushed to the monitoring team automatically. In a typical Guardian Connector setup, a script in [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) sends a **WhatsApp message** (via [Twilio](/reference/gc-toolkit/externally-hosted/twilio/)) whenever new alerts are published:
 
-> *X new change detection alert(s) have been published on your alerts dashboard for the date of MONTH YEAR. The following activities have been detected in your region: DESCRIPTION. Visit your alerts dashboard here: https://explorer.\[community\].guardianconnector.net/alerts/alerts ...*
+> *X new change detection alert(s) have been published on your alerts dashboard for the date of MONTH YEAR. The following activities have been detected in your region: DESCRIPTION. Visit your alerts dashboard here: <ParamLink template="https://explorer.{alias}.guardianconnector.net/alerts/alerts" paramName="alias" defaultValue="alias">https://explorer.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net/alerts/alerts</ParamLink> ...*
 
 How you react to that message depends on your workflow:
 

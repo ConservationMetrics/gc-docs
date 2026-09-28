@@ -33,7 +33,7 @@ In the **Alerts Dashboard** of [GC Explorer](/reference/gc-toolkit/gc-explorer/)
 - a **single alert** clicked on the map,
 - or a whole **[incident](/reference/gc-toolkit/gc-explorer/incidents/)** if the site has triggered alerts several times.
 
-::: important
+:::important
 KML is the format to use here — mission planners accept a KML polygon or outline directly as the survey area. The GeoJSON export from the [field briefing guide](/guides/land-monitoring/guide-mining-alert-field-briefings/) remains the right choice for the QGIS analysis; the two exports describe the same site and will align exactly, since everything Guardian Connector publishes is in WGS84.
 :::
 

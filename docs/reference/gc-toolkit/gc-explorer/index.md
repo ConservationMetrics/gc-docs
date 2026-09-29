@@ -30,7 +30,7 @@ GC Explorer transforms raw data into accessible, visual formats that help commun
 
 :::note Data Limitations
 
-To keep visualization responsive, GC Explorer shows at most **10,000 data records** in a view. If a dataset is larger than that, a toast notification appears and only the first 10,000 records are displayed.
+To keep visualization responsive, GC Explorer loads up to a configured row limit, normally **10,000 records**. In Map and Alerts views, this limit applies separately to the primary and secondary datasets. When either dataset reaches the limit, a toast notification appears to indicate that more records may be available. Records without valid geometry are excluded from the map.
 
 :::
 
@@ -39,6 +39,8 @@ To keep visualization responsive, GC Explorer shows at most **10,000 data record
 ### Exporting Data from the Map View
 
 GC Explorer allows you to export data directly from the Map View into a variety of formats for use in other tools and workflows.
+
+Bulk downloads include the primary dataset. If the map also displays a secondary dataset, those overlay records are not included in the primary dataset's bulk download.
 
 Currently supported export formats include:
 
@@ -96,7 +98,13 @@ The **time filter** on the Alerts Dashboard applies to both of these downloads. 
 
 You can create a new **Map**, **Gallery**, or **Alerts Dashboard** view — and possibly other view types in the future.
 
-When you create a view, you choose a **primary dataset** and, if the view type supports it, an optional **secondary dataset**. The options that appear next depend on the view type; the form itself is the best guide for each field.
+When you create a view, you choose a **primary dataset**. Map and Alerts views also support an optional **secondary dataset** containing geospatial data. For example, you can combine observations from two datasets or overlay mapping data with camera-trap deployment points. Both views display secondary points, lines, multipart lines, polygons, and multipart polygons. Click a secondary feature to open its information and supported media in the sidebar.
+
+In Map View, the legend automatically includes a visibility toggle for each dataset with valid features. A toggle controls the whole dataset, including polygon outlines, and keeps its state when you change the basemap. You can also add specific Mapbox style layers to the legend through the view configuration.
+
+Map category and date filters, statistics, and bulk downloads apply to the primary dataset. Filtering the primary dataset leaves the secondary overlay unchanged. In Alerts, configured secondary filter values can restrict which secondary records appear.
+
+The options that appear next depend on the view type; the form itself is the best guide for each field.
 
 For a **map** or **alerts dashboard**, you can set things like:
 
@@ -111,4 +119,3 @@ If the view includes **media**, you can set things like:
 - A **header background**, such as a thumbnail image
 
 If another view already has many of the same settings, you can **copy the config from that view** to bootstrap the new one instead of filling everything in from scratch.
-

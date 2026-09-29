@@ -5,9 +5,19 @@ tags: [itu-3, opu, tsp]
 
 # Step 5: Organizing camera trap photos and videos
 
-Camera trap media should be organized carefully as soon as SD cards are downloaded.
+Camera trap media should be organized carefully as soon as SD cards are downloaded. Use one project folder, the same folder levels for every retrieval, and the camera id already recorded in the deployment data.
 
-We recommend organizing all media within a single **project folder**, with folders for each **Monitoring Session**, and camera folders inside each Monitoring Session.
+The folder path is how the files are later matched to the deployment spreadsheet. `MS01/LC1` is monitoring session `MS01` and camera `LC1`, which together are deployment `MS01-LC1`.
+
+:::important Keep the same folders for every retrieval
+
+Choose the folder levels before the first SD card is copied, and use those levels on every card after that. Add a new Monitoring Session folder for the next retrieval. Leave folders that already contain media as they are.
+
+Renaming or rearranging folders after copying breaks the connection between the files and the deployment records. If the media will be annotated in Timelapse, that connection is also stored in the Timelapse database. See [Step 1: Organizing Media](/guides/biodiversity/guide-timelapse-project/step-1-organizing-imagery).
+
+:::
+
+Inside the project folder, add a folder for each **Monitoring Session**, and a camera folder inside each Monitoring Session.
 
 Take this project folder as an example:
 
@@ -94,9 +104,7 @@ MS02/LC1/ → deploymentID MS02-LC1
 
 ## Copying files from SD cards
 
-Photos and videos can normally be copied directly into the appropriate camera folder.
-
-For example:
+When an SD card has a single folder of media, copy the files directly into the camera folder.
 
 ```text
 Upper_Jatapu_Camera_Trap_Project/
@@ -107,11 +115,11 @@ Upper_Jatapu_Camera_Trap_Project/
         └── IMG_0003.JPG
 ```
 
-However, some cameras create multiple folders on the SD card.
+:::important SD cards with more than 10,000 images
 
-If there are **two or more folders containing media on a single SD card, preserve those folders exactly as they appear on the SD card** instead of combining their contents.
+Many cameras name files with a four-digit counter, from `IMG_0001.JPG` through `IMG_9999.JPG`. After 9,999 files, the camera creates another folder on the card and starts again at `IMG_0001.JPG`. Folder names look like `100MEDIA` and `101MEDIA`, or `100_BTCF` and `101_BTCF`, depending on the camera.
 
-For example:
+When the card has **two or more folders of media**, copy those folders into the camera folder exactly as they appear on the card.
 
 ```text
 Upper_Jatapu_Camera_Trap_Project/
@@ -126,28 +134,12 @@ Upper_Jatapu_Camera_Trap_Project/
             └── ...
 ```
 
-:::important Do not combine duplicate camera folders
+Do **not** combine those folders into one. The filenames repeat, so merging them can:
 
-Many cameras name files using a sequence such as:
+- **Overwrite files**, and those images are gone, or
+- Cause the operating system to rename files, for example `IMG_0001 (1).JPG`, so later it is unclear which files are duplicates and which are distinct images.
 
-```text
-IMG_0001.JPG
-IMG_0002.JPG
-...
-IMG_9999.JPG
-```
-
-After the camera reaches the end of the numbering sequence, it may create another folder on the SD card and begin using the same filenames again.
-
-If the contents of these folders are combined, files can be overwritten or automatically renamed to filenames such as:
-
-```text
-IMG_0001 (1).JPG
-```
-
-This creates serious problems later when determining whether images are duplicates or reconstructing where the original files came from.
-
-When a camera creates multiple media folders, **copy those folders into the camera folder without changing their internal structure or filenames**.
+Copy the folders without changing their names or the filenames inside them.
 
 :::
 
@@ -177,3 +169,27 @@ MS01-LC1-02
 ```
 
 For most projects this additional level should not be necessary.
+
+## If the project needs another folder level {#extra-folder-level}
+
+The recommended path is project, then Monitoring Session, then camera. That is enough when each camera id is unique.
+
+If one project covers several areas, add one region folder under the project and use it for every Monitoring Session:
+
+```text
+Upper_Jatapu_Camera_Trap_Project/
+└── Upper_River/
+    └── MS01/
+        └── LC1/
+```
+
+If the same camera id is used at more than one location, add a location folder under the Monitoring Session and use it for every camera:
+
+```text
+Upper_Jatapu_Camera_Trap_Project/
+└── MS01/
+    └── Creek_Crossing/
+        └── LC1/
+```
+
+Each extra folder is another column when the path is matched to the deployment spreadsheet. Add a level only when the camera id alone cannot tell two deployments apart, and use that level on every card. A camera retrieved and redeployed during the same Monitoring Session is the other case, described [above](#what-if-a-camera-has-two-deployments-in-the-same-monitoring-session).

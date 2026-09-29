@@ -29,7 +29,7 @@ Adding folder-level metadata into Timelapse is completely optional. If you alrea
 
 ## How to set up Folder metadata
 
-1. **Structure your folders** to reflect your metadata hierarchy. See [Step 1: Organizing Imagery](step-1-organizing-imagery.md)
+1. **Structure your folders** to reflect your metadata hierarchy. Use the layout in [Organizing camera trap photos and videos](/guides/biodiversity/guide-camera-trap-deployment/step-5-organizing-media). Once the project is open in Timelapse, keep those folder names, as described in [Step 1: Organizing Media](step-1-organizing-imagery.md).
 
 2. **Start the Timelapse Template Editor** software. (This is the `TimelapseTemplateEditor.exe` file in your Timelapse directory.)
 

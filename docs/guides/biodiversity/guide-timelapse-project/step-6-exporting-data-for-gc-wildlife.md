@@ -88,7 +88,7 @@ WildlifeViewerExport/
 Do not mix in images that are not in the selection. The CSV rows and the files in `TimelapseExport/` must describe the same set.
 
 :::important
-As shown in the screenshot above, ensure "Rename files to include their subfolder location, if any" is **unchecked**. It is checked by default, and will rename the files to include the subfolder location, which is not what we want.
+As shown in the screenshot above, ensure "Rename files to include their subfolder location, if any" is **checked**. It is checked by default, and will rename the files to include the subfolder location, which is what we want.
 :::
 
 ## 4. Add deployment data (recommended)

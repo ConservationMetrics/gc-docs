@@ -250,6 +250,28 @@ END
 | "6.3"                   | "5m and over"          |
 | "unknown"               | "Not recorded"         |
 
+---
+
+#### Group several text responses into one category
+
+Use this when a few choice values should count as the same category and every other value should stay as it is.
+
+```sql
+CASE
+    WHEN "skill_level" IN ('expert', 'very well', 'learning')
+        THEN 'competent'
+    ELSE "skill_level"
+END
+```
+
+| Before | After |
+|--------|-------|
+| "expert" | "competent" |
+| "very well" | "competent" |
+| "learning" | "competent" |
+| "a bit" | "a bit" |
+| "none" | "none" |
+
 ### Data Cleaning and Value Transformation
 
 #### Convert 0 and 1 form responses to "No" and "Yes"

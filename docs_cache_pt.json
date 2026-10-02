@@ -1,0 +1,269 @@
+{
+  "240d3cf0": {
+    "pt": "Este guia é para [operadores](/reference/gc-toolkit/gc-scripts-hub/user-roles/#operator) do Guardian Connector criarem um fluxo de trabalho de dados do **CoMapeo** para visualizações de mapa e galeria do **Guardian Connector Explorer**. Este processo começa com a coleta de dados do CoMapeo e termina com um mapa e visualizações de galeria configuráveis.\nO objetivo é preservar seus dados do CoMapeo e visualizá-los por meio de mapas interativos. Isso é útil para monitorar a coleta de dados em andamento e criar visualizações claras para análise."
+  },
+  "6ef41241": {
+    "pt": "Este é o URL usado para compartilhar imagens e arquivos de áudio baixados do CoMapeo. Para obter este URL, vá ao seu File Browser em **https://files..guardianconnector.net/</ParamLink>**, localize a pasta configurada em sua instância Windmill e clique no botão **Share**. Consulte a seção [File Browser: generating share links](/reference/gc-toolkit/filebrowser/#generating-share-links) para obter mais orientações sobre como formatar o link de compartilhamento para uso no GC Explorer."
+  },
+  "cc03ffa0": {
+    "pt": "Você precisará de uma conta Mapbox para acessar um Map Style. Obtenha o Style URL no formato $CODEVAR[0]. Você pode encontrar este URL em sua conta Mapbox Studio, na seção **Styles**. Clique no menu de opções do estilo desejado e selecione a opção **Style URL** para copiá-lo."
+  },
+  "4ff38604": {
+    "pt": "Server Bearer Token: Você pode encontrar este token nas configurações do seu Comapeo Archive Server dentro do Caprover neste link: **https://captain..guardianconnector.net/#/apps/details/comapeo</ParamLink>** , na seção **App Configs**, você encontrará a variável de ambiente $CODEVAR[0]."
+  },
+  "ade16a8e": {
+    "pt": "O projeto conterá todas as suas observações, incluindo imagens, áudios, trilhas e pontos. Ele permitirá que você colabore com outras pessoas na coleta de dados. Este projeto será usado para preservar os dados dentro do Guardian Connector."
+  },
+  "9fe69327": {
+    "pt": "Se você é o **Windmill [Admin](/reference/gc-toolkit/gc-scripts-hub/user-roles/#administrator)** em sua instância do Guardian Connector, há uma etapa extra que você precisa fazer **uma única vez por instância do Guardian Connector**."
+  },
+  "ec365cba": {
+    "pt": "Você pode obtê-lo na página da sua conta Mapbox. Vá para a seção **Tokens** e clique em **+ Create a token**. Dê um nome significativo, clique em **Create token** e, em seguida, copie o token gerado para usar no Explorer."
+  },
+  "fc3d5dd4": {
+    "pt": "Para determinar parâmetros de mapa como o nível de zoom e a latitude/longitude central, você pode se beneficiar do uso da ferramenta [Mapbox's Location Helper](https://labs.mapbox.com/location-helper/)."
+  },
+  "b54166b4": {
+    "pt": "Assim que o aplicativo CoMapeo confirmar que você adicionou com sucesso seu servidor de arquivo CoMapeo, você poderá trocar seus dados com o servidor de arquivo na tela de troca do CoMapeo."
+  },
+  "b7c62271": {
+    "pt": "**Não compartilhe** o URL do seu CoMapeo Archive Server com ninguém em quem você não confia, pois ele fornece acesso a todos os dados coletados nos seus projetos CoMapeo."
+  },
+  "9b70612b": {
+    "pt": "Adicione seu servidor de arquivo usando o URL do seu servidor de arquivo CoMapeo dentro do Guardian Connector: https://comapeo..guardianconnector.net/</ParamLink>"
+  },
+  "c9e35fd7": {
+    "pt": "Nós nos referiremos à documentação oficial do CoMapeo para instruções detalhadas sobre como criar projetos e coletar dados.\nEm resumo, você precisa:"
+  },
+  "bf917128": {
+    "pt": "Assim que seu script Windmill estiver em execução, você terá seus dados disponíveis em uma tabela de banco de dados e seus arquivos CoMapeo disponíveis em seu navegador de arquivos."
+  },
+  "4bc68403": {
+    "pt": "**[Windmill](../../gc-toolkit/gc-scripts-hub/)** – Lida com a ingestão e processamento de dados, transferindo-os do CoMapeo para o data warehouse."
+  },
+  "4ab9c193": {
+    "pt": "No Windmill, você agendará um script para buscar automaticamente novos dados do CoMapeo Archive Server e carregá-los em seu data warehouse."
+  },
+  "6a443f06": {
+    "pt": "**[Guardian Connector Explorer](../../gc-toolkit/gc-explorer/)** – A ferramenta de visualização usada para criar visualizações de mapa baseadas nos dados armazenados."
+  },
+  "9511a64c": {
+    "pt": "Para configurar sua visualização do Explorer, seu usuário precisa ter acesso de administrador. Você pode pedir ao seu administrador do Guardian Connector para definir sua função."
+  },
+  "39f56436": {
+    "pt": "Para trocar dados de um projeto com sua instância do Guardian Connector, você precisa configurar seu Servidor de Arquivo dentro do CoMapeo."
+  },
+  "e8cad577": {
+    "pt": "Seus dados do CoMapeo agora fluem automaticamente de CoMapeo → Windmill → PostgreSQL → Explorer, prontos para visualização e análise."
+  },
+  "02285447": {
+    "pt": "Depois de fazer login, você encontrará um botão **Configuration** na parte superior da janela do Explorer para começar a configurar suas visualizações."
+  },
+  "bb487857": {
+    "pt": "Se você ainda não o tem, instale-o [na Play Store](https://play.google.com/store/apps/details?id=com.comapeo)."
+  },
+  "86324dad": {
+    "pt": "Você precisa configurar seu script Windmill para obter seus dados do servidor de arquivo CoMapeo para seu data warehouse."
+  },
+  "05b9d6f7": {
+    "pt": "Localize sua nova tabela disponível e entre na configuração clicando no botão de menu à direita dela."
+  },
+  "5981eacf": {
+    "pt": "Você verá uma lista de execuções anteriores e um menu **More options** (três pontos) à direita da sua programação."
+  },
+  "c952160a": {
+    "pt": "**PostgreSQL** – O banco de dados onde o Guardian Connector armazena e disponibiliza seus dados para análise."
+  },
+  "c922a413": {
+    "pt": "Uma vez salvas, suas novas visualizações de mapa e galeria estarão visíveis para os usuários que acessarem a instância do Explorer."
+  },
+  "760abebc": {
+    "pt": "Clique no botão **+ Add new table** e escolha uma tabela da lista, depois clique em **Confirm**."
+  },
+  "ee52204e": {
+    "pt": "Com que frequência a tarefa deve ser executada (você pode usar a interface de usuário \"Simplified Builder\" para definir facilmente a programação)"
+  },
+  "7bc843d2": {
+    "pt": "**[CoMapeo](../../core-integrations/comapeo/)** – O aplicativo de monitoramento e mapeamento de território."
+  },
+  "235dbafe": {
+    "pt": "Na página **Schedules**, crie uma nova programação com os seguintes parâmetros:"
+  },
+  "c3d16602": {
+    "pt": "O nome da tabela estará no formato: $CODEVAR[0]."
+  },
+  "723c5fe4": {
+    "pt": "Abra o aplicativo e siga as instruções para configurar sua conta de usuário."
+  },
+  "49543df6": {
+    "pt": "O nome da tabela do banco de dados para os dados importados terá este prefixo adicionado."
+  },
+  "7c17ef1a": {
+    "pt": "Escolha **Script**, então selecione $CODEVAR[0]"
+  },
+  "b0479295": {
+    "pt": "Você precisará configurar um **Resource** do tipo $CODEVAR[0] com:"
+  },
+  "3c931cc8": {
+    "pt": "Clique no menu e selecione **Run now** para testar manualmente a programação."
+  },
+  "c97ca8f2": {
+    "pt": "Server URL: **https://comapeo..guardianconnector.net/</ParamLink>**"
+  },
+  "2e93eec8": {
+    "pt": "Você só precisa fazer isso uma vez para configurar o aplicativo CoMapeo."
+  },
+  "ff0a86e3": {
+    "pt": "Usando o botão $CODEVAR[0] no canto superior direito para salvar sua programação."
+  },
+  "05f76377": {
+    "pt": "Você pode ir para a aba **Runs** para vê-lo executando com sucesso."
+  },
+  "fbd14fb3": {
+    "pt": "Breve descrição da tarefa (ex: $CODEVAR[0])"
+  },
+  "d708316e": {
+    "pt": "**Trocar dados do projeto CoMapeo com o Guardian Connector**"
+  },
+  "6d38e0c7": {
+    "pt": "Abra a página **Schedules** e localize sua nova programação."
+  },
+  "4ef4c580": {
+    "pt": "**https://windmill..guardianconnector.net/</ParamLink>**"
+  },
+  "cb81a6b9": {
+    "pt": "**https://explorer..guardianconnector.net/</ParamLink>**"
+  },
+  "994935f9": {
+    "pt": "O recurso $CODEVAR[0] que você definiu anteriormente"
+  },
+  "ce0ca9bf": {
+    "pt": "A longitude do ponto central para a visualização do mapa."
+  },
+  "6aefae3b": {
+    "pt": "A latitude do ponto central para a visualização do mapa."
+  },
+  "a7dce4c2": {
+    "pt": "Vá para as configurações do seu projeto dentro do CoMapeo."
+  },
+  "49eec98a": {
+    "pt": "O fluxo de trabalho envolve as seguintes ferramentas:"
+  },
+  "b39d4f09": {
+    "pt": "Criar um Recurso para credenciais CoMapeo"
+  },
+  "069d1be1": {
+    "pt": "✅ **Você completou o fluxo de trabalho completo!**"
+  },
+  "089d017c": {
+    "pt": "O nível de zoom para a visualização do mapa (0-22)."
+  },
+  "7bb44c60": {
+    "pt": "Use suas credenciais de administrador para fazer login."
+  },
+  "d8c0709d": {
+    "pt": "Acesse sua instância Windmill em:"
+  },
+  "d8690ec8": {
+    "pt": "Acesse sua instância do Explorer em:"
+  },
+  "d2841ef9": {
+    "pt": "As principais configurações a serem definidas são:"
+  },
+  "933f1c02": {
+    "pt": "3. Visualização de Dados: Explorer"
+  },
+  "c8d5256f": {
+    "pt": "Explicação detalhada opcional"
+  },
+  "19f1bdce": {
+    "pt": "**Criar um projeto CoMapeo**"
+  },
+  "f222173b": {
+    "pt": "2. Processamento de Dados: Windmill"
+  },
+  "d6a36f85": {
+    "pt": "1. Coleta de Dados: CoMapeo"
+  },
+  "68219be7": {
+    "pt": "**Inicialize sua conta**"
+  },
+  "62d0499c": {
+    "pt": "**Crie suas novas Visualizações**"
+  },
+  "af6be15c": {
+    "pt": "De CoMapeo para Explorer"
+  },
+  "8d7ecac8": {
+    "pt": "Fluxo de trabalho de Coleta de Dados"
+  },
+  "97ed8ee1": {
+    "pt": "**Acessar Configuração**"
+  },
+  "979d4878": {
+    "pt": "Configurar Visualização do Explorer"
+  },
+  "fbca09a9": {
+    "pt": "**Mapbox Access Token**"
+  },
+  "d83b265a": {
+    "pt": "**Caminho base para mídia**"
+  },
+  "50657587": {
+    "pt": "**Fazer login no Explorer**"
+  },
+  "8a9f5c87": {
+    "pt": "Criar uma nova programação"
+  },
+  "1e318164": {
+    "pt": "**Publicar as Visualizações**"
+  },
+  "3c784679": {
+    "pt": "**Longitude central**"
+  },
+  "b4cccd5b": {
+    "pt": "**Instalar CoMapeo**"
+  },
+  "bd2c2176": {
+    "pt": "**db_table_prefix**"
+  },
+  "00c65451": {
+    "pt": "**Latitude central**"
+  },
+  "69556964": {
+    "pt": "Testar sua programação"
+  },
+  "06a98df2": {
+    "pt": "**Estilo do Mapbox**"
+  },
+  "95614b2a": {
+    "pt": "**Descrição**"
+  },
+  "37427797": {
+    "pt": "Configuração única"
+  },
+  "f34b9dfd": {
+    "pt": "**Nível de zoom**"
+  },
+  "1c35b84b": {
+    "pt": "**Programação**"
+  },
+  "8414df2c": {
+    "pt": "**Executável**"
+  },
+  "1ae2f225": {
+    "pt": "**Resumo**"
+  },
+  "a5a3908e": {
+    "pt": "**comapeo**"
+  },
+  "e9c15559": {
+    "pt": "**Visualizações**"
+  },
+  "7b6a1d99": {
+    "pt": "**Caminho**"
+  },
+  "aebb3823": {
+    "pt": ":::info"
+  }
+}

@@ -17,6 +17,10 @@ These are the most commonly used charts with Guardian Connector data:
 - [The Pie Chart](https://docs.preset.io/v1/docs/piechart)
 - [Big Number](https://docs.preset.io/v1/docs/big-number-chart)
 
+## Filtering
+
+- [Multi-dimensional filtering](/reference/gc-toolkit/superset/charts/filtering)
+
 ## Advanced charts
 
 - [The Handlebars Chart](/reference/gc-toolkit/superset/charts/handlebars)

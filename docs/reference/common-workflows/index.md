@@ -27,7 +27,7 @@ Reference information for common tasks that involve Guardian Connector and relat
 ### Sharing & presenting
 
 - [Create dashboards for stakeholders](/reference/common-workflows/sharing-and-presenting/dashboards-for-stakeholders/)
-- [Host a custom web experience](/reference/common-workflows/sharing-and-presenting/custom-web-experiences/) with GC HTTP Server
+- [Host a custom web experience](/reference/common-workflows/sharing-and-presenting/custom-web-experiences/) (GC HTTP Server or Wildlife Viewer)
 
 ### Getting data out
 

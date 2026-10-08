@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: /reference/common-workflows/use-your-data-in-qgis
 tags: [itu-2, itu-3, opu, tsp]
 ---
 
@@ -21,9 +22,18 @@ Guardian Connector stores spatial data in PostgreSQL databases, but the most use
 
 ## Download your spatial data
 
-### Method 1: Export as GeoJSON
+### Method 1: Export from GC Explorer (filtered)
 
-Use the `postgres_to_geojson` script in the [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) to export spatial data:
+Use [GC Explorer](/reference/gc-toolkit/gc-explorer/#exporting-data) when you want a subset of a map view — for example by date range or by a column filter — before analysis in QGIS or a spreadsheet:
+
+1. Open the Map View for your dataset
+2. Set the **date** and **column** filters you need
+3. Export as **GeoJSON** (for QGIS) or **CSV** (for spreadsheets)
+4. Active filters are applied to the download; see [Filters apply to exports](/reference/gc-toolkit/gc-explorer/#exporting-data)
+
+### Method 2: Export as GeoJSON via GC Scripts Hub
+
+Use the `postgres_to_geojson` script in the [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) to export a full spatial table:
 
 1. **Access GC Scripts Hub**: Navigate to your Guardian Connector instance
 2. **Run the export script**: 
@@ -33,7 +43,7 @@ Use the `postgres_to_geojson` script in the [GC Scripts Hub](/reference/gc-toolk
    - Set the export path (default: `/persistent-storage/datalake/exports`)
 3. **Download the file**: Use [File Browser](/reference/gc-toolkit/filebrowser/) to download the generated GeoJSON file
 
-### Method 2: Download via File Browser
+### Method 3: Download via File Browser
 
 For existing spatial files already stored in Guardian Connector:
 

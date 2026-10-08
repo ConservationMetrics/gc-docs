@@ -1,5 +1,6 @@
 ---
-sidebar_position: 5
+sidebar_position: 2
+slug: /reference/common-workflows/from-comapeo-to-explorer
 tags: [itu-3, opu, tsp]
 ---
 import ParamText from '@site/src/components/ParamText';
@@ -12,10 +13,10 @@ The goal is to preserve your CoMapeo data, and to visualize it through interacti
 
 The workflow involves the following tools:
 
-- **[CoMapeo](../../core-integrations/comapeo/)** – The territory monitoring & mapping application.
-- **[Windmill](../../gc-toolkit/gc-scripts-hub/)** – Handles data ingestion and processing, transferring it from CoMapeo to the data warehouse.
+- **[CoMapeo](/reference/core-integrations/comapeo/)** – The territory monitoring & mapping application.
+- **[Windmill](/reference/gc-toolkit/gc-scripts-hub/)** – Handles data ingestion and processing, transferring it from CoMapeo to the data warehouse.
 - **PostgreSQL** – The database where Guardian Connector stores and makes your data available for analysis.
-- **[Guardian Connector Explorer](../../gc-toolkit/gc-explorer/)** – The visualization tool used to create map views based on the stored data.
+- **[Guardian Connector Explorer](/reference/gc-toolkit/gc-explorer/)** – The visualization tool used to create map views based on the stored data.
 
 ## 1. Data Collection: CoMapeo
 

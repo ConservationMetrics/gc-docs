@@ -50,7 +50,7 @@ The CoMapeo Archive Server fetch script in the [GC Scripts Hub](/reference/gc-to
 
 Failed attachments are typically media files that were referenced by observations but were not successfully exchanged between local CoMapeo devices and the Archive Server. This can occur for several reasons, including intermittent connectivity, synchronization interruptions, or latency issues during peer-to-peer exchange.
 
-These statistics can help administrators verify that all expected CoMapeo data and media attachments have been successfully synchronized to the Archive Server.
+These statistics can help administrators verify that all expected CoMapeo data and media attachments have been successfully synchronized to the Archive Server. For a step-by-step checklist, see [Verify CoMapeo sync (missing media)](/reference/common-workflows/monitoring-and-analysis/verify-comapeo-sync/).
 
 :::
 

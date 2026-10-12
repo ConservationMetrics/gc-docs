@@ -25,10 +25,10 @@ Reference documentation for the tools and services that make up the Guardian Con
 Reference information for common tasks that involve Guardian Connector and related tools.
 
 **What you'll find:**
-- How to use Guardian Connector data in QGIS or other GIS software
-- How to download or export data
-- Common ways of moving data between Guardian Connector and other applications
-- _And more!_
+- **Getting data in** — moving data from KoboToolbox, CoMapeo, and third-party platforms into Guardian Connector
+- **Monitoring & analysis** — tracking collection progress, verifying sync, and using change detection alerts
+- **Sharing & presenting** — dashboards for stakeholders and custom web experiences
+- **Getting data out** — exporting to QGIS, spreadsheets, or a full data download
 
 **Best for:** Looking up how common tasks are carried out across different parts of the Guardian Connector ecosystem.
 

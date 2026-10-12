@@ -48,6 +48,12 @@ Currently supported export formats include:
 
 These exports make it easy to continue working with your data outside of GC Explorer using the tools and formats that best fit your community’s needs.
 
+:::tip Filters apply to exports
+
+Active **date** and **column** filters on the Map View are included in the export request. Set the date range and any category/column filters first, then download CSV, GeoJSON, or KML — the file contains only the filtered subset. That subset is ready for further work in a spreadsheet or GIS tool; see [Use your data in QGIS](/reference/common-workflows/use-your-data-in-qgis/) for opening GeoJSON in QGIS.
+
+:::
+
 :::tip Format Conversion and GIS Compatibility
 
 Once you have exported your data as CSV, GeoJSON, or KML, it is possible to convert it into many other GIS-compatible formats if needed.

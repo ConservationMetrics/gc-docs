@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+slug: /reference/common-workflows/download-all-of-your-data
 tags: [itu-3, opu, tsp]
 ---
 

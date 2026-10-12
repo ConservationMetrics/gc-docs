@@ -1,5 +1,6 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
+slug: /reference/common-workflows/from-kobotoolbox-to-superset
 tags: [itu-3, opu, tsp]
 ---
 
@@ -13,10 +14,10 @@ The goal is to preserve your survey data, and to visualize it through dashboards
 
 The workflow involves the following tools:
 
-- **[KoboToolbox](../../core-integrations/kobotoolbox/)** – The survey collection tool. (Similar workflows can be adapted for other survey collection tools such as ODK or Survey123, but here we’ll focus on KoboToolbox.)
-- **[Windmill](../../gc-toolkit/gc-scripts-hub/)** – Handles data ingestion and processing, transferring it from KoboToolbox to the data warehouse.  
+- **[KoboToolbox](/reference/core-integrations/kobotoolbox/)** – The survey collection tool. (Similar workflows can be adapted for other survey collection tools such as ODK or Survey123, but here we’ll focus on KoboToolbox.)
+- **[Windmill](/reference/gc-toolkit/gc-scripts-hub/)** – Handles data ingestion and processing, transferring it from KoboToolbox to the data warehouse.  
 - **PostgreSQL** – The database where Guardian Connector stores and makes your data available for analysis.  
-- **[Superset](../../gc-toolkit/superset/)** – The visualization tool used to create dashboards and charts based on the stored data.
+- **[Superset](/reference/gc-toolkit/superset/)** – The visualization tool used to create dashboards and charts based on the stored data.
 
 ## 1. Data Collection: KoboToolbox
 
@@ -198,7 +199,7 @@ To publish it for your team:
 
 :::tip
 
-For more details on how to create charts and dashboards, you can refer to the [specific Superset documentation](../../gc-toolkit/superset/).
+For more details on how to create charts and dashboards, you can refer to the [specific Superset documentation](/reference/gc-toolkit/superset/).
 :::
 
 ---

@@ -3,6 +3,9 @@ sidebar_position: 3
 tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
 ---
 
+import ParamText from '@site/src/components/ParamText';
+import ParamLink from '@site/src/components/ParamLink';
+
 # GC Explorer
 
 [Guardian Connector Explorer (GC Explorer)](https://github.com/conservationmetrics/gc-explorer) is a web-based data visualization tool that transforms your community's tabular data into interactive maps, galleries, and dashboards. Built specifically for Guardian Connector, it connects directly to your PostgreSQL database to display data collected from tools like CoMapeo, KoboToolbox, and other data collection platforms.
@@ -120,7 +123,7 @@ If another view already has many of the same settings, you can **copy the config
 
 ## ℹ️ Which Version of the App Am I Using?
 
-If you ever need to know which version of GC Explorer you are using — for example, when reporting a problem — open the `/_info` endpoint on that app. Add `/_info` to the end of the Explorer address in your browser (for example, `https://explorer.your-community.org/_info`). You do not need to sign in.
+If you ever need to know which version of GC Explorer you are using — for example, when reporting a problem — open the `/_info` endpoint on the app. Add `/_info` to the end of the Explorer address in your browser (for example, <ParamLink template="https://explorer.{alias}.guardianconnector.net/_info" paramName="alias" defaultValue="alias">https://explorer.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net/_info</ParamLink>). You do not need to sign in.
 
 It will look like this:
 

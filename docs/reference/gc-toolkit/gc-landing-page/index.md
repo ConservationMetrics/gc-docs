@@ -3,6 +3,9 @@ sidebar_position: 1
 tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
 ---
 
+import ParamText from '@site/src/components/ParamText';
+import ParamLink from '@site/src/components/ParamLink';
+
 # GC Landing Page
 
 The Guardian Connector Landing Page is the **home page** for your community's Guardian Connector: the front door you arrive at after signing in. It brings everything together in one place, so you don't need to remember web addresses or hunt around for the right tool.
@@ -86,7 +89,7 @@ For each custom app you can add, a name, subdomain, description, icon, and tags.
 
 ## ℹ️ Which Version of the App Am I Using?
 
-If you ever need to know which version of the Landing Page you are using — for example, when reporting a problem — open the `/_info` endpoint on that app. Add `/_info` to the end of the Landing Page address in your browser (for example, `https://home.your-community.org/_info`). You do not need to sign in.
+If you ever need to know which version of the Landing Page you are using — for example, when reporting a problem — open the `/_info` endpoint on the app. Add `/_info` to the end of the Landing Page address in your browser (for example, <ParamLink template="https://{alias}.guardianconnector.net/_info" paramName="alias" defaultValue="alias">https://<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net/_info</ParamLink>). You do not need to sign in.
 
 It will look like this:
 

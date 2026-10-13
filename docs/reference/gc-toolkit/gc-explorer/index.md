@@ -118,3 +118,12 @@ If the view includes **media**, you can set things like:
 
 If another view already has many of the same settings, you can **copy the config from that view** to bootstrap the new one instead of filling everything in from scratch.
 
+## ℹ️ Which Version of the App Am I Using?
+
+If you ever need to know which version of GC Explorer you are using — for example, when reporting a problem — open the `/_info` endpoint on that app. Add `/_info` to the end of the Explorer address in your browser (for example, `https://explorer.your-community.org/_info`). You do not need to sign in.
+
+The response identifies the running build:
+
+- **tag**: the deployed version, written as a date and build number (`YYYYMMDD-<run>`)
+- **commit**: the source commit that version was built from
+

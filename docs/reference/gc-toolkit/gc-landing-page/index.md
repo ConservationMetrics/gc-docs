@@ -84,3 +84,12 @@ If your community has other apps running on Guardian Connector, the **Custom App
 
 For each custom app you can add, a name, subdomain, description, icon, and tags.
 
+## ℹ️ Which Version of the App Am I Using?
+
+If you ever need to know which version of the Landing Page you are using — for example, when reporting a problem — open the `/_info` endpoint on that app. Add `/_info` to the end of the Landing Page address in your browser (for example, `https://home.your-community.org/_info`). You do not need to sign in.
+
+The response identifies the running build:
+
+- **tag**: the deployed version, written as a date and build number (`YYYYMMDD-<run>`)
+- **commit**: the source commit that version was built from
+

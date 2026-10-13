@@ -1,0 +1,59 @@
+{
+  "aa1c1d91": {
+    "pt": ":::tip Personas de Usuário em toda a documentação\nUsamos tags de Personas de Usuário para direcioná-lo a conteúdo escrito para uma determinada função e nível de experiência. Procure por tags de persona no topo de cada página — elas mostram para quem a página se destina, e você pode clicar em uma tag para ver mais páginas marcadas para esse público.\n:::"
+  },
+  "3aad02be": {
+    "pt": "Bem-vindo ao centro de documentação do Guardian Connector! Este recurso abrangente oferece orientação para entender e usar o Guardian Connector para apoiar as necessidades de tutela, soberania de dados e monitoramento ambiental de organizações comunitárias."
+  },
+  "a5922dfe": {
+    "pt": "Um [Usuário Avançado Organizacional](./overview/user-personas/#opu) pode administrar toda a stack, às vezes com o apoio de um [Parceiro de Suporte Técnico](./overview/user-personas/#tsp), e em outros casos, inteiramente por conta própria."
+  },
+  "8d4f6396": {
+    "pt": "*O Guardian Connector representa um compromisso com a soberania de dados indígenas e o monitoramento controlado pela comunidade.*\n*Estes documentos o ajudarão a aproveitar todo o seu potencial para a conservação comunitária e o trabalho de advocacia.*"
+  },
+  "7a25b387": {
+    "pt": "Como as partes da plataforma funcionam e se relacionam entre si — o kit de ferramentas, integrações, aplicativos complementares e fluxos de trabalho para coletar, monitorar, compartilhar e exportar dados."
+  },
+  "dfdf548e": {
+    "pt": "Tutoriais passo a passo para ferramentas e práticas usadas junto com o Guardian Connector, desde a coleta de dados móveis e monitoramento da biodiversidade até o monitoramento de terras e a soberania de dados indígenas."
+  },
+  "0d84c1ef": {
+    "pt": "Um [Tomador de Decisão Indígena](./overview/user-personas/#idm) pode apenas acessar painéis e visualizações de dados, e não precisará saber muito mais sobre os detalhes técnicos do sistema."
+  },
+  "601581f5": {
+    "pt": "Nem todos usam todas as camadas do Guardian Connector. Diferentes [personas de usuário](./overview/user-personas/) geralmente operam diferentes partes da stack. Por exemplo:"
+  },
+  "575d5aa1": {
+    "pt": "Um [Usuário de Tecnologia Indígena](./overview/user-personas/#itu-1) de qualquer nível de experiência pode usar apenas os aplicativos de coleta de dados que alimentam o Guardian Connector."
+  },
+  "9cd8532e": {
+    "pt": "As ideias por trás da plataforma: princípios de design, para quem é, se o Guardian Connector se encaixa em uma organização e respostas a perguntas comuns."
+  },
+  "cf2f0ddc": {
+    "pt": "Um [Usuário de Tecnologia Indígena avançado](./overview/user-personas/#itu-3) também pode lidar com algumas configurações básicas de visualizações ou painéis."
+  },
+  "5cd191d7": {
+    "pt": "Esta documentação fornece orientação abrangente para:"
+  },
+  "3e6345f3": {
+    "pt": ":::info Última atualização\n_Conteúdo revisado pela última vez em: _\n:::"
+  },
+  "5df1f456": {
+    "pt": "Documentação do Guardian Connector"
+  },
+  "8613756f": {
+    "pt": "📚 **[Referência](./reference/)**"
+  },
+  "6cd676fe": {
+    "pt": "O que esta Documentação Abrange"
+  },
+  "4fcab33c": {
+    "pt": "🏗️ **[Visão Geral](./overview/)**"
+  },
+  "72957c79": {
+    "pt": "🎓 **[Guias](./guides/)**"
+  },
+  "1ff7a9ba": {
+    "pt": "Personas de Usuário"
+  }
+}

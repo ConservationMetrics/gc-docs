@@ -3,52 +3,43 @@ sidebar_position: 1
 slug: /
 ---
 
+import LastRevisedDate from '@site/src/components/LastRevisedDate';
+
 # Documentação do Guardian Connector
 
-:::info
+Bem-vindo ao centro de documentação do Guardian Connector! Este recurso abrangente oferece orientação para entender e usar o Guardian Connector para apoiar as necessidades de tutela, soberania de dados e monitoramento ambiental de organizações comunitárias.
 
-🚧 Tradução em construção
-
-Enquanto finalizamos a tradução de todas as páginas, muitas serão exibidas em seu idioma original, o inglês.
-
+:::info Latest update
+_Content last revised: <LastRevisedDate />_
 :::
 
-Bem-vindo à central de documentação do Guardian Connector! Este guia completo ajudará você a entender, implementar e usar o Guardian Connector para atender às necessidades de soberania de dados e monitoramento ambiental da sua comunidade.
+## O que esta Documentação Abrange
 
-## O que esta documentação contém
+Esta documentação fornece orientação abrangente para:
 
-Esta documentação contém orientações detalhadas sobre:
-
-### 🏗️ **[Visão geral](./overview/)**
-
-As ideias por trás da plataforma: princípios de design, para quem ela foi feita, se o Guardian Connector é adequado para uma organização e respostas a perguntas frequentes.
+### 🏗️ **[Visão Geral](./overview/)**
+As ideias por trás da plataforma: princípios de design, para quem é, se o Guardian Connector se encaixa em uma organização e respostas a perguntas comuns.
 
 ### 📚 **[Referência](./reference/)**
-
-Como as partes da plataforma funcionam e se relacionam — o conjunto de ferramentas, as integrações, os aplicativos complementares e os fluxos para entrar com dados, monitorá-los e compartilhá-los, e exportá-los.
+Como as partes da plataforma funcionam e se relacionam entre si — o kit de ferramentas, integrações, aplicativos complementares e fluxos de trabalho para coletar, monitorar, compartilhar e exportar dados.
 
 ### 🎓 **[Guias](./guides/)**
+Tutoriais passo a passo para ferramentas e práticas usadas junto com o Guardian Connector, desde a coleta de dados móveis e monitoramento da biodiversidade até o monitoramento de terras e a soberania de dados indígenas.
 
-Tutoriais passo a passo sobre ferramentas e práticas usadas junto com o Guardian Connector, da coleta móvel de dados e do monitoramento da biodiversidade ao monitoramento territorial e à soberania de dados indígenas.
+## Personas de Usuário
 
-## Para quem é esta documentação
+Nem todos usam todas as camadas do Guardian Connector. Diferentes [personas de usuário](./overview/user-personas/) geralmente operam diferentes partes da stack. Por exemplo:
 
-Esta documentação foi elaborada para:
+- Um [Usuário de Tecnologia Indígena](./overview/user-personas/#itu-1) de qualquer nível de experiência pode usar apenas os aplicativos de coleta de dados que alimentam o Guardian Connector.
+- Um [Usuário de Tecnologia Indígena avançado](./overview/user-personas/#itu-3) também pode lidar com algumas configurações básicas de visualizações ou painéis.
+- Um [Tomador de Decisão Indígena](./overview/user-personas/#idm) pode apenas acessar painéis e visualizações de dados, e não precisará saber muito mais sobre os detalhes técnicos do sistema.
+- Um [Usuário Avançado Organizacional](./overview/user-personas/#opu) pode administrar toda a stack, às vezes com o apoio de um [Parceiro de Suporte Técnico](./overview/user-personas/#tsp), e em outros casos, inteiramente por conta própria.
 
-- **Líderes comunitários** que planejam e supervisionam iniciativas de soberania de dados
-- **Pesquisadores de campo** que coletam dados ambientais e culturais
-- **Gestores de dados** que organizam e analisam informações da comunidade
-- **Coordenadores técnicos** que implementam e mantêm os sistemas do Guardian Connector
-- **Defensores** que utilizam dados para campanhas de conservação e direitos
-
-## Primeiros passos
-
-Use a barra de navegação superior para explorar cada seção deste site de documentação:
-
-1. **Comece com a [Visão geral](./overview/)** para entender o propósito e os princípios de design do Guardian Connector
-2. **Consulte a [Referência](./reference/)** para saber mais sobre as ferramentas integradas e as opções de implementação
-3. **Siga os [Guias e tutoriais](./guides/)** para aprendizado prático e desenvolvimento de habilidades
+:::tip Personas de Usuário em toda a documentação
+Usamos tags de Personas de Usuário para direcioná-lo a conteúdo escrito para uma determinada função e nível de experiência. Procure por tags de persona no topo de cada página — elas mostram para quem a página se destina, e você pode clicar em uma tag para ver mais páginas marcadas para esse público.
+:::
 
 ---
 
-*O Guardian Connector representa um compromisso com a soberania de dados indígenas e o monitoramento controlado pela comunidade. Esses documentos ajudarão você a aproveitar todo o seu potencial para o trabalho de conservação e defesa da sua comunidade.*
+*O Guardian Connector representa um compromisso com a soberania de dados indígenas e o monitoramento controlado pela comunidade.*
+*Estes documentos o ajudarão a aproveitar todo o seu potencial para a conservação comunitária e o trabalho de advocacia.*

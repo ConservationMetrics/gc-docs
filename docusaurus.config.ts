@@ -104,11 +104,6 @@ const config: Config = {
           position: "left", // You can change this to 'right' if you prefer
         },
         {
-          href: "https://github.com/ConservationMetrics/gc-docs",
-          label: "GitHub",
-          position: "right",
-        },
-        {
           type: "localeDropdown",
           position: "right",
         },
@@ -116,7 +111,13 @@ const config: Config = {
     },
     footer: {
       style: "dark",
-      links: [],
+      links: [
+        {
+          label: "GitHub",
+          href: "https://github.com/ConservationMetrics/gc-docs",
+          className: "footer-github-link",
+        },
+      ],
       copyright: `Copyright © ${new Date().getFullYear()} Conservation Metrics, Inc. Built with Docusaurus.`,
     },
     prism: {

@@ -22,9 +22,5 @@
   "item.label.What's New": {
     "message": "O que há de novo?",
     "description": "Navbar item with label What's New"
-  },
-  "item.label.GitHub": {
-    "message": "GitHub",
-    "description": "Navbar item with label GitHub"
   }
 }

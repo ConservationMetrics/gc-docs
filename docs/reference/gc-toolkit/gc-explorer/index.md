@@ -122,8 +122,19 @@ If another view already has many of the same settings, you can **copy the config
 
 If you ever need to know which version of GC Explorer you are using — for example, when reporting a problem — open the `/_info` endpoint on that app. Add `/_info` to the end of the Explorer address in your browser (for example, `https://explorer.your-community.org/_info`). You do not need to sign in.
 
+It will look like this:
+
+```json
+{
+  "tag": "20261012-189",
+  "commit": "1234567890abcdef1234567890abcdef12345678",
+  "buildId": "abcdef1234567890abcdef1234567890abcdef12",
+  "startedAt": "2026-10-12T12:00:00.000Z"
+}
+```
+
 The response identifies the running build:
 
 - **tag**: the deployed version, written as a date and build number (`YYYYMMDD-<run>`)
 - **commit**: the source commit that version was built from
-
+- **startedAt**: the date and time the application was started

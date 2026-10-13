@@ -21,15 +21,15 @@ Esta documentação contém orientações detalhadas sobre:
 
 ### 🏗️ **[Visão geral](./overview/)**
 
-Compreender o propósito e os princípios de design do Guardian Connector, e como ele se encaixa no trabalho mais amplo de monitoramento e defesa da sua comunidade.
+As ideias por trás da plataforma: princípios de design, para quem ela foi feita, se o Guardian Connector é adequado para uma organização e respostas a perguntas frequentes.
 
 ### 📚 **[Referência](./reference/)**
 
-Informações detalhadas sobre ferramentas integradas, opções de hospedagem e especificações técnicas para ajudar você a tomar decisões informadas sobre a implementação.
+Como as partes da plataforma funcionam e se relacionam — o conjunto de ferramentas, as integrações, os aplicativos complementares e os fluxos para entrar com dados, monitorá-los e compartilhá-los, e exportá-los.
 
 ### 🎓 **[Guias](./guides/)**
 
-Guias completos para implementar as ferramentas do Guardian Connector e estabelecer práticas de dados centradas na comunidade, incluindo protocolos de soberania de dados indígenas e fluxos de trabalho específicos para cada ferramenta.
+Tutoriais passo a passo sobre ferramentas e práticas usadas junto com o Guardian Connector, da coleta móvel de dados e do monitoramento da biodiversidade ao monitoramento territorial e à soberania de dados indígenas.
 
 ## Para quem é esta documentação
 

@@ -3,6 +3,9 @@ sidebar_position: 1
 tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
 ---
 
+import ParamText from '@site/src/components/ParamText';
+import ParamLink from '@site/src/components/ParamLink';
+
 # GC Landing Page
 
 The Guardian Connector Landing Page is the **home page** for your community's Guardian Connector: the front door you arrive at after signing in. It brings everything together in one place, so you don't need to remember web addresses or hunt around for the right tool.
@@ -84,3 +87,23 @@ If your community has other apps running on Guardian Connector, the **Custom App
 
 For each custom app you can add, a name, subdomain, description, icon, and tags.
 
+## ℹ️ Which Version of the App Am I Using?
+
+If you ever need to know which version of the Landing Page you are using — for example, when reporting a problem — open the `/_info` endpoint on the app. Add `/_info` to the end of the Landing Page address in your browser (for example, <ParamLink template="https://{alias}.guardianconnector.net/_info" paramName="alias" defaultValue="alias">https://<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net/_info</ParamLink>). You do not need to sign in.
+
+It will look like this:
+
+```json
+{
+  "tag": "20261012-189",
+  "commit": "1234567890abcdef1234567890abcdef12345678",
+  "buildId": "abcdef1234567890abcdef1234567890abcdef12",
+  "startedAt": "2026-10-12T12:00:00.000Z"
+}
+```
+
+The response identifies the running build:
+
+- **tag**: the deployed version, written as a date and build number (`YYYYMMDD-<run>`)
+- **commit**: the source commit that version was built from
+- **startedAt**: the date and time the application was started

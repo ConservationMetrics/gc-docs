@@ -26,12 +26,20 @@ const config: Config = {
   projectName: "gc-docs", // Usually your repo name.
 
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
 
   plugins: [require.resolve("docusaurus-lunr-search")],
 
   markdown: {
     mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+    },
+    // future.v4 turns these off. The docs still use {#heading-ids} and <!-- truncate -->.
+    mdx1Compat: {
+      comments: true,
+      admonitions: true,
+      headingIds: true,
+    },
   },
   themes: ["@docusaurus/theme-mermaid"],
 

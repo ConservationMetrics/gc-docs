@@ -109,17 +109,40 @@ When you create a view, you choose a **primary dataset** and, if the view type s
 
 For a **map** or **alerts dashboard**, you can set things like:
 
-- A **Mapbox access token**
-- A **map style**
-- **Map parameters** such as zoom level
+- Up to three **Mapbox background maps**, each with its own **Mapbox style** and **access token**
+- **Map parameters** such as center coordinates, zoom level, pitch, bearing, projection, and 3D terrain
+- **Map legend layer IDs** for toggling custom Mapbox style layers
 
-If the view includes **media**, you can set things like:
+If the view includes **media** or **filters**, you can set things like:
 
-- A **base URL** for where to load media
-- **Filters**
-- A **header background**, such as a thumbnail image
+- A **base URL** (such as a [File Browser share link](/reference/gc-toolkit/filebrowser/#generating-share-links)) for where to load media attachments, alert imagery, or custom map icons
+- **Filter columns** for category dropdowns and date-range sliders
 
 If another view already has many of the same settings, you can **copy the config from that view** to bootstrap the new one instead of filling everything in from scratch.
+
+### 🏷️ View Identification and Branding {#view-identification}
+
+To make views easier to recognize and navigate as your data library grows, you can enrich each dataset view with identifying details:
+
+- **View Display Name**: Replace the raw database table name with a clear, human-readable title.
+- **View Description**: Provide context and metadata about the dataset's contents, purpose, or update frequency.
+- **View Header Image**: Provide an image URL to display as a thumbnail and header background so users can distinguish views at a glance.
+- **Logo URL**: Optionally display your organization or community logo in the view sidebar.
+
+### 🔒 Dataset Visibility Control {#dataset-visibility-control}
+
+For every dataset view in GC Explorer, you must set a **Visibility** level that controls who can see and interact with the view. This lets you protect sensitive or proprietary community information while still collaborating with partners or sharing public-facing views when needed.
+
+Visibility levels map directly to the [Guardian Connector user roles](/reference/gc-toolkit/gc-landing-page/#user-management) assigned by administrators on the Landing Page:
+
+| Visibility Level | Who Can Access the View |
+| --- | --- |
+| **Admins** | Only signed-in users with the **Admin** role. |
+| **Members** | Signed-in users with the **Member** or **Admin** role. |
+| **Guest** | Signed-in users with the **Guest**, **Member**, or **Admin** role. |
+| **Public — no sign-in required** | Anyone with the link, including visitors who are not signed in and signed-in users with the **Signed In** role. |
+
+Each view card on the GC Explorer home page displays its active **Permission level** badge so administrators and members can verify access settings at a glance.
 
 ## ℹ️ Which Version of the App Am I Using?
 

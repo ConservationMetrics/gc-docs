@@ -27,5 +27,7 @@ For detailed information about using Apache Superset, visit the [official Apache
 
 ## Other Resources
 
+- [User Roles and Permission Mapping](./user-roles.md) - How Guardian Connector user roles synchronize with Superset roles (`Admin`, `Alpha`, `Gamma`, and `Public`)
 - [Useful Superset Charts and Visualizations](./charts/charts.md) - How to pick and use chart types, including multi-dimensional filtering and custom HTML dashboards with the Handlebars chart
 - [Helpful Superset SQL Queries for Charts](./queries.md) - Recipes for common SQL queries to improve your Superset datasets and charts
+- [Troubleshooting](./troubleshooting.md) - Solutions for common Superset issues

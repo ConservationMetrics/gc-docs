@@ -22,6 +22,31 @@ When you first visit the Landing Page, you may be asked to sign up or sign in. A
 
 **What you see on the Landing Page depends on your role.** Different people need different tools, so the page only shows the services you have permission to use. If a service you expect is missing, it may not be turned on for your community, or your role may not include access to it yet — reach out to your community's administrator.
 
+### 👤 User Identification {#user-identification}
+
+Once you are signed in, the center of the top header displays your email address. This helps you quickly confirm which account is currently active — particularly when working on shared computers.
+
+## 🧭 Navigating the Landing Page
+
+### 🎓 Guided Tour {#guided-tour}
+
+When you open the Landing Page for the first time, an interactive **guided tour** uses step-by-step coach marks to walk you through the page. The tour adapts to your role and localized language, introducing:
+
+- Each available service card (Explorer, Superset, File Browser, Windmill, and any custom apps)
+- Data collection tools that connect to Guardian Connector
+- Header controls for display mode, language, and signing out
+- Administrator controls (Custom Apps, Theme Settings, and User Management) if you are signed in as an **Admin**
+
+Your tour state is saved in your browser's local storage so the tour won't repeat automatically on future visits. You can **skip** the tour at any time, or **replay** it whenever you want by clicking the **?** button in the top-right header.
+
+### 🌙 Light and Dark Mode {#dark-mode}
+
+The Landing Page includes native support for both **light mode** and **dark mode**. Click the moon/sun display icon in the top-right header to switch between light and dark themes to match your preference or working environment.
+
+### 🌐 Language Selection
+
+Click the globe icon in the top-right header to change the display language used across the Landing Page, including the guided tour.
+
 ## 🚀 Available Services
 
 These are the default Guardian Connector services your community can link to from the Landing Page. Each appears as a card you can click to open it in a new tab.
@@ -65,12 +90,12 @@ From here you can:
 
 The currently available roles, from least to most access, are:
 
-- **Signed In**: Signed in, but without access to services yet.
-- **Guest**: Limited access, suitable for visitors or partners.
-- **Member**: Everyday access for community members.
-- **Admin**: Full access, including this User Management area.
+- **Signed In**: Signed in, but without access to restricted services yet. Can access only public dataset views in [GC Explorer](/reference/gc-toolkit/gc-explorer/#dataset-visibility-control).
+- **Guest**: Limited access, suitable for visitors or partners. Can access dataset views shared with guests in GC Explorer, and maps to the **Gamma** role in [Superset](/reference/gc-toolkit/superset/user-roles/).
+- **Member**: Everyday access for community members. Can access member dataset views in GC Explorer, and maps to the **Alpha** role in Superset.
+- **Admin**: Full access to everything — including Windmill, all dataset views, settings, and this User Management area — and maps to the **Admin** role in Superset.
 
-When you approve someone and give them the right role, the services they're allowed to use will appear on their Landing Page the next time they sign in.
+When you approve someone and give them the right role, the services they're allowed to use will appear on their Landing Page and their permissions in [GC Explorer](/reference/gc-toolkit/gc-explorer/#dataset-visibility-control) and [Superset](/reference/gc-toolkit/superset/user-roles/) will update on their next sign-in.
 
 ### 🎨 Theme Settings
 

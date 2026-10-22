@@ -5,7 +5,7 @@ tags: [itu-3, opu, tsp]
 
 # GC Dataset Importer
 
-Upload a dataset file and turn it into a clean PostgreSQL table in your Guardian Connector data warehouse. The app guides you through naming the dataset, uploading a file, optionally tagging the **data source**, and finalizing the import. It also saves the original and transformed files to your deployment’s data lake (accessible via [File Browser](/reference/gc-toolkit/filebrowser/)).
+Upload a dataset file and turn it into a clean PostgreSQL table in your Guardian Connector data warehouse. The app guides you through choosing or naming the dataset, uploading a file, optionally tagging the **data source**, and finalizing the import. It also saves the original and transformed files to your deployment’s data lake (accessible via [File Browser](/reference/gc-toolkit/filebrowser/)).
 
 ---
 
@@ -14,7 +14,7 @@ Upload a dataset file and turn it into a clean PostgreSQL table in your Guardian
 * Converts and validates common **tabular** files (`.csv`, `.xlsx/.xls`, `.json`) to CSV for ingestion; or, to GeoJSON if the file has spatial data.
 * Converts and validates common **spatial** files (`.geojson`, `.kml`, `.gpx`, `.kmz`, `.xml` (if it's a SMART XML file), Shapefiles (`.shp` and accompanying files)), GeoPackage files (`.gpkg`), and CyberTracker files (`.json`) to GeoJSON for ingestion.
 * Optionally applies **source-specific** transformations (e.g., KoboToolbox, CoMapeo, ODK, Locus Map)
-* Writes the result to a **new** Postgres table and archives files to file storage
+* Writes the result to a **new** or **existing** Postgres table and archives files to file storage
 
 ---
 
@@ -26,19 +26,20 @@ From **GC Scripts Hub → Apps**, click **GC Dataset Importer**.
 
 ![Open the GC Dataset Importer app](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-1.jpg)
 
-### 2. Name your dataset
+### 2. Choose or name your dataset
 
-Give your dataset a clear, human-readable name, then click **Check Availability**.
+In the **Choose your dataset** step, you can either:
 
-![Enter a dataset name](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-2.jpg)
+* **Select an existing dataset** from the interactive dropdown menu — which searches and filters existing tables in your data warehouse as you type — to append new data to that dataset, or
+* **Create a new dataset** by entering a clear, human-readable name in the **Dataset name** field below.
 
-If available, you’ll see the resulting table name you’ll get in the warehouse.
+![Choose an existing dataset or enter a new dataset name](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-2.jpg)
 
-![Name is available and mapped to table name](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-3.jpg)
+As you select or enter a name, the importer automatically checks the database in the background and displays the resulting table name in the warehouse.
 
-:::tip
+:::tip Appending to an existing table
 
-You can add data to an existing table by entering the table name and clicking **Check Availability**. If the table exists, you will be prompted to append the data to the existing table.
+If you select an existing dataset from the dropdown (or enter a name that matches an existing table), the importer alerts you that new records will be appended directly to that table.
 
 :::
 
@@ -48,7 +49,7 @@ Select your file and click **Upload File**. When the upload completes, proceed t
 
 ![Upload your file and confirm success](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-4.jpg)
 
-**Accepted formats**: CSV, GeoJSON, GPX, JSON, KML, XLS, XLSX, KMZ, XML (SMART), and Shapefiles.
+**Accepted formats**: CSV, GeoJSON, GPX, JSON, KML, XLS, XLSX, KMZ, XML (SMART), GeoPackage (`.gpkg`), and Shapefiles.
 
 ### 4. (Optional) Choose a known data source
 

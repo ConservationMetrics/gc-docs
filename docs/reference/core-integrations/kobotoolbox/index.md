@@ -26,6 +26,8 @@ We have a 4-week guided syllabus available for working with KoboToolbox: see [Ko
 
 For detailed information about using KoboToolbox, visit the [official KoboToolbox documentation](https://support.kobotoolbox.org/).
 
+Additionally, there is a really good Essential Course offered by KoboToolbox Academy that covers the most relevant features, in English, Spanish and French: [KoboToolbox Essentials Course](https://academy.kobotoolbox.org/courses/essentials).
+
 ### KoboToolbox or ODK?
 
 KoboToolbox and ODK are both excellent tools for survey data collection. They are both compatible with XLSForm templates, and the Kobo Collect app is actually a fork of ODK Collect. However, the KoboToolbox and ODK servers have a different feature set. For example, KoboToolbox has a form builder and basic data visualization, whereas ODK Central supports a feature for longitudinal data collection called [Entities](https://docs.getodk.org/entities-intro/) that could be useful for monitoring an incident over time.

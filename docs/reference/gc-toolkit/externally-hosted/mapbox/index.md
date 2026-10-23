@@ -78,7 +78,7 @@ For comprehensive guidance on account setup and collaboration, see [Mapbox colla
 **Tilesets**
 - **Public tilesets**: Can be referenced by other accounts but not truly transferred
 - **Private tilesets**: Cannot be directly copied; require re-upload of source data
-- **Data loss risk**: If source data is lost, tilesets cannot be exported directly from Mapbox Studio — though vector features can be downloaded and reconstructed into GeoJSON using the [Downloading and Reconstructing Vector Tiles](/reference/gc-toolkit/externally-hosted/mapbox/download-vector-tiles/) script
+- **Data loss risk**: If source data is lost, tilesets cannot be exported directly from Mapbox Studio, but vector features can be downloaded and reconstructed into GeoJSON using the [Downloading and Reconstructing Vector Tiles](/reference/gc-toolkit/externally-hosted/mapbox/download-vector-tiles/) script
 
 ## Data Upload and Preservation Strategies
 

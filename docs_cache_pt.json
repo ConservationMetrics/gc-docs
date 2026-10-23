@@ -1,0 +1,806 @@
+{
+  "48da07b9": {
+    "pt": "O Guardian Connector inclui um script conector ($CODEVAR[0]) que baixa **blocos vetoriais do Mapbox** para uma caixa delimitadora em um cache local e os converte em uma única **GeoJSON FeatureCollection** no data lake da sua implantação. Ele é executado no [Windmill](/reference/gc-toolkit/gc-scripts-hub/) e pode, opcionalmente, reconstruir feições que foram cortadas através das bordas dos blocos."
+  },
+  "a65357eb": {
+    "pt": "Ao contrário de [Atualizando um Conjunto de Tiles do Mapbox](/reference/gc-toolkit/externally-hosted/mapbox/update-tileset/), este script só precisa de permissão para ler blocos vetoriais. Um **token de acesso público** ($CODEVAR[0]) com acesso ao conjunto de tiles de destino é suficiente, embora um token secreto também funcione. Você pode copiar ou criar um token em **Admin > Tokens** no [Mapbox Studio](https://console.mapbox.com/)."
+  },
+  "b9534a97": {
+    "pt": "Como os blocos vetoriais dividem geometrias ao longo de uma grade, polígonos ou linhas grandes que cruzam as bordas dos blocos são cortados em peças separadas. Se suas feições compartilham uma propriedade de identificador única (como uma coluna $CODEVAR[0], $CODEVAR[1] ou $CODEVAR[2]), defina $CODEVAR[3] para o nome dessa propriedade para que o script mescle geometrias correspondentes de volta em feições completas no GeoJSON de saída."
+  },
+  "f1559084": {
+    "pt": "Um conjunto de tiles armazena geometria apenas até o seu $CODEVAR[0] configurado; solicitar um nível de zoom mais alto resulta em mais requisições de API sem adicionar detalhes espaciais extras. Use o [guia de Níveis de Zoom do OpenStreetMap](https://wiki.openstreetmap.org/wiki/Zoom_levels) para escolher um nível de zoom apropriado para sua caixa delimitadora."
+  },
+  "8a37c871": {
+    "pt": "**Extração de camadas de referência** — puxe feições vetoriais dentro da caixa delimitadora do seu território de um conjunto de tiles do Mapbox para usar no [QGIS](/reference/companion-applications/qgis/), [GC Explorer](/reference/gc-toolkit/gc-explorer/) ou no seu data warehouse PostgreSQL."
+  },
+  "17d9935a": {
+    "pt": "Mantenha **$CODEVAR[0]** se você planeja executar o script novamente na mesma área — os blocos já baixados (e os blocos vazios conhecidos) são armazenados em cache localmente e ignorados em execuções subsequentes."
+  },
+  "4229b7d3": {
+    "pt": "caso contrário, baixa os blocos não armazenados em cache, converte os blocos vetoriais armazenados em cache ($CODEVAR[0]) para GeoJSON (opcionalmente reconstruindo as feições cortadas) e escreve o resultado no data lake."
+  },
+  "a503f4e6": {
+    "pt": "Execute o script primeiro com **$CODEVAR[0] definido como $CODEVAR[1]** para inspecionar a contagem de blocos planejada ($CODEVAR[2] / $CODEVAR[3]) e confirmar se ela se encaixa na sua cota da API do Mapbox."
+  },
+  "9e60d552": {
+    "pt": "Use este script quando precisar de feições vetoriais de um conjunto de tiles do Mapbox como GeoJSON para análise, arquivamento, recuperação de dados ou um fluxo de trabalho downstream no Guardian Connector:"
+  },
+  "f99a5d7a": {
+    "pt": "Exclua o cache de blocos $CODEVAR[0] bruto após uma gravação bem-sucedida do GeoJSON para que apenas o arquivo $CODEVAR[1] permaneça. Defina como $CODEVAR[2] para manter os blocos em cache para execuções mais rápidas."
+  },
+  "0e021035": {
+    "pt": "**Recuperação de dados de conjuntos de tiles** — extraia feições GeoJSON de um conjunto de tiles do Mapbox quando os arquivos-fonte originais ou o Conjunto de Dados do Mapbox não estiverem mais disponíveis."
+  },
+  "0a59e731": {
+    "pt": "Cada requisição de bloco vetorial conta para sua cota da API do Mapbox, e o número de blocos aumenta em aproximadamente **4x para cada nível de zoom adicional**."
+  },
+  "eeea4103": {
+    "pt": "**Preparação de dados para fluxos de trabalho downstream** — salve o GeoJSON reconstruído diretamente no data lake para que outros scripts ou ferramentas possam ingeri-lo."
+  },
+  "4a4ca02b": {
+    "pt": "**Saída GeoJSON**: $CODEVAR[0] (acessível via [Navegador de Arquivos](/reference/gc-toolkit/filebrowser/))"
+  },
+  "801185e9": {
+    "pt": "Execute o script novamente com **$CODEVAR[0] definido como $CODEVAR[1]** para baixar os blocos e escrever o arquivo GeoJSON combinado no data lake."
+  },
+  "1e5c9394": {
+    "pt": "**Cache de blocos**: $CODEVAR[0] (removido automaticamente quando $CODEVAR[1] é $CODEVAR[2])"
+  },
+  "a494e8c1": {
+    "pt": "Propriedade de feição usada para mesclar e reconstruir feições cortadas nas bordas dos blocos. Deixe em branco para desativar a reconstrução."
+  },
+  "11ce9a7d": {
+    "pt": "planeja a grade de blocos para a caixa delimitadora e o nível de zoom solicitados (com um limite de zoom para segurança de cota),"
+  },
+  "c106b2e4": {
+    "pt": "O parâmetro $CODEVAR[0] é limitado a $CODEVAR[1] no Windmill para evitar explosões acidentais de blocos de alto zoom."
+  },
+  "9edb7553": {
+    "pt": "se $CODEVAR[0] estiver habilitado, retorna o plano de download e para sem fazer requisições de rede, e"
+  },
+  "2fb637fe": {
+    "pt": "Sempre execute com **$CODEVAR[0]** primeiro para verificar quantos blocos serão solicitados."
+  },
+  "6a36ee7a": {
+    "pt": "ID do conjunto de tiles do Mapbox (por exemplo, $CODEVAR[0] ou $CODEVAR[1])."
+  },
+  "9a22961f": {
+    "pt": "Retorna o plano de download sem buscar blocos ou gravar GeoJSON."
+  },
+  "19a55ecb": {
+    "pt": "Caixa delimitadora como $CODEVAR[0] em graus WGS84."
+  },
+  "d40f082f": {
+    "pt": "Nome base para o arquivo GeoJSON de saída e pasta de cache de blocos."
+  },
+  "98f5b6f1": {
+    "pt": "Recurso de credenciais do Mapbox (somente $CODEVAR[0] é usado)."
+  },
+  "66f2c61d": {
+    "pt": "Diretório do data lake onde os arquivos de saída são armazenados."
+  },
+  "de1e1b25": {
+    "pt": "Download e Reconstrução de Blocos Vetoriais"
+  },
+  "efb52b54": {
+    "pt": "Nível de zoom da grade de blocos ($CODEVAR[0])."
+  },
+  "fc39fb6a": {
+    "pt": "Barreiras de cota e níveis de zoom"
+  },
+  "8c9f570e": {
+    "pt": "Reconstruindo feições cortadas"
+  },
+  "59f145af": {
+    "pt": "Fluxo de trabalho recomendado em duas etapas"
+  },
+  "283baa66": {
+    "pt": "Caminhos de saída no data lake"
+  },
+  "4e7a1c5e": {
+    "pt": "Obtendo um token de acesso do Mapbox"
+  },
+  "018f3d77": {
+    "pt": ":::tip Escolhendo um nível de zoom"
+  },
+  "c624efc1": {
+    "pt": ":::warning Cota da API do Mapbox"
+  },
+  "96c8e18b": {
+    "pt": "Para evitar uso inesperado:"
+  },
+  "5d2c7ebf": {
+    "pt": "Quando é executado, o script:"
+  },
+  "3a80e1e2": {
+    "pt": "Parâmetros de configuração"
+  },
+  "098576d3": {
+    "pt": "Quando usá-lo"
+  },
+  "c9749742": {
+    "pt": "*(obrigatório)*"
+  },
+  "24de149a": {
+    "pt": "**Tilesets** são coleções otimizadas e pré-processadas de dados geoespaciais divididas em uma grade uniforme de tiles em múltiplos níveis de zoom (até o zoom 22). Datasets devem ser exportados para tilesets antes de serem usados em estilos de mapa. É possível gerar tilesets diretamente sem usar datasets, por exemplo, arrastando e soltando dados espaciais diretamente no editor de estilo do Mapbox Studio."
+  },
+  "580bd152": {
+    "pt": "**Risco de perda de dados**: Se os dados de origem forem perdidos, os tilesets não podem ser exportados diretamente do Mapbox Studio, mas as feições vetoriais podem ser baixadas e reconstruídas em GeoJSON usando o script [Downloading and Reconstructing Vector Tiles](/reference/gc-toolkit/externally-hosted/mapbox/download-vector-tiles/)."
+  },
+  "115f9924": {
+    "pt": "**Nomenclatura organizacional**: Ao configurar contas Mapbox para instâncias do Guardian Connector, utilize nomes organizacionais como $CODEVAR[0] em vez de nomes pessoais. Isso é fundamental porque os IDs das contas não podem ser alterados após a criação, e os tokens de acesso não são transferíveis entre contas."
+  },
+  "617c36e3": {
+    "pt": "**Mapas offline** - Estilos do Mapbox podem ser compilados em pacotes de mapas offline para uso no [CoMapeo](/reference/core-integrations/comapeo/) utilizando ferramentas como [QGIS](https://www.qgis.org/) e [MapPacker](https://github.com/conservationmetrics/mappacker)."
+  },
+  "256353fc": {
+    "pt": "**Estilos** definem a aparência visual dos mapas usando a [Mapbox Style Specification](https://docs.mapbox.com/style-spec/). Eles referenciam tilesets como fontes de dados e aplicam regras de estilo para criar a aparência final do mapa."
+  },
+  "34370dc5": {
+    "pt": "**Datasets** são coleções editáveis de feições GeoJSON armazenadas no Mapbox. Estes representam os dados geoespaciais brutos e podem ser modificados feição por feição usando o editor de datasets do Mapbox Studio ou a API de Datasets."
+  },
+  "13f6e030": {
+    "pt": "Mapbox permite aliases com o sinal de mais (como $CODEVAR[0], $CODEVAR[1], etc.) para nomes de conta. Esta é uma boa prática para facilitar o gerenciamento de contas."
+  },
+  "99d04c1d": {
+    "pt": "**Implantações multi-cliente**: Para organizações que gerenciam múltiplas instâncias do Guardian Connector para diferentes clientes, configure contas Mapbox exclusivas para cada cliente. Esta configuração 1:1 permite:"
+  },
+  "a87448fa": {
+    "pt": "**Tokens de acesso para mapas básicos** - Compartilhados entre instâncias do GC para fornecer camadas de mapa base e funcionalidade de mapeamento padrão para ferramentas como [Superset](/reference/gc-toolkit/superset/)."
+  },
+  "2384da1b": {
+    "pt": "Para orientações abrangentes sobre configuração de contas e colaboração, consulte [Melhores práticas de colaboração Mapbox](https://docs.mapbox.com/help/troubleshooting/collaboration-best-practices/)."
+  },
+  "ba4ebe88": {
+    "pt": "Para mais informações sobre as diferenças entre essas abordagens, consulte a documentação da Mapbox \"[Upload data to Mapbox](https://docs.mapbox.com/help/troubleshooting/uploads/)\"."
+  },
+  "20251419": {
+    "pt": "Sempre restrinja seu token de acesso do Mapbox a URLs e referenciadores específicos para evitar uso não autorizado. Configure as restrições de URL nas configurações da sua conta Mapbox."
+  },
+  "9b0dc180": {
+    "pt": "[Downloading and Reconstructing Vector Tiles](./download-vector-tiles.md) - Baixe tiles vetoriais do Mapbox para uma caixa delimitadora e reconstrua-os em GeoJSON."
+  },
+  "003c98d5": {
+    "pt": "[Mapbox](https://www.mapbox.com/) é uma plataforma de mapeamento que fornece a base para mapas interativos em todas as instâncias do Guardian Connector."
+  },
+  "f0777bd1": {
+    "pt": "**Estilos de mapa personalizados** - Criados no Mapbox Studio para mapas específicos ou painéis de alertas no [GC Explorer](/reference/gc-toolkit/gc-explorer/)."
+  },
+  "c9b64eef": {
+    "pt": "Todos os dados do Mapbox (datasets, tilesets, estilos) estão vinculados a contas Mapbox específicas, o que cria considerações importantes de gerenciamento:"
+  },
+  "9cf2f5fc": {
+    "pt": "[Updating a Mapbox Tileset](./update-tileset.md) - Sincronize automaticamente um arquivo GeoJSON no Guardian Connector com um tileset do Mapbox."
+  },
+  "9d8e5170": {
+    "pt": "[Customizing your Mapbox styles](./customization.md) - Modifique os estilos do Mapbox e adicione camadas de mapa personalizadas para o Guardian Connector."
+  },
+  "c396e7d6": {
+    "pt": "[Data Upload Troubleshooting](https://docs.mapbox.com/help/troubleshooting/uploads/) - Problemas e soluções comuns de upload."
+  },
+  "24707ca9": {
+    "pt": "**Controle de acesso**: Estilos e tilesets privados são acessíveis apenas com tokens de acesso válidos da conta proprietária."
+  },
+  "62fb8c95": {
+    "pt": "[Mapbox Studio Manual](https://docs.mapbox.com/studio-manual/) - Guia abrangente para gerenciamento de dados e estilização."
+  },
+  "cc78324f": {
+    "pt": "[Mapbox Account Management](https://docs.mapbox.com/accounts/guides/) - Configurações de conta e configuração de segurança."
+  },
+  "23d39033": {
+    "pt": "Mapbox oferece múltiplas maneiras de adicionar dados à sua conta, cada uma com diferentes implicações para a preservação dos dados:"
+  },
+  "67db8c77": {
+    "pt": "Mapbox organiza dados geoespaciais através de três componentes principais que trabalham juntos para entregar mapas interativos:"
+  },
+  "2a1dc00d": {
+    "pt": "**Propriedade da conta**: Os dados não podem ser transferidos entre contas sem processos explícitos de exportação/importação."
+  },
+  "a68aa078": {
+    "pt": "[Mapbox Style Specification](https://docs.mapbox.com/style-spec/) - Especificação técnica para estilos de mapa."
+  },
+  "27187424": {
+    "pt": "**Dependências de faturamento**: Contas não pagas podem perder acesso aos dados e desabilitar a funcionalidade do mapa."
+  },
+  "5adb2ddc": {
+    "pt": "**Processo**: Faça upload de dados como dataset → edite se necessário → exporte para tileset → estilize no Studio."
+  },
+  "c450a9e6": {
+    "pt": "**Estilos privados**: Devem ser baixados como JSON e re-carregados manualmente para novas contas."
+  },
+  "cc96d29c": {
+    "pt": "**Sempre mantenha backups externos** dos dados de origem em controle de versão ou armazenamento em nuvem."
+  },
+  "f25224de": {
+    "pt": "Opcionalmente, crie estilos de mapa personalizados no Mapbox Studio para visualizações e painéis específicos."
+  },
+  "5ee1fd45": {
+    "pt": "**Tilesets públicos**: Podem ser referenciados por outras contas, mas não verdadeiramente transferidos."
+  },
+  "a908857d": {
+    "pt": "**Limites de tamanho**: Sem limite de armazenamento, mas o editor do Studio exibe apenas datasets ≤20MB."
+  },
+  "ddc6051e": {
+    "pt": "**Tilesets privados**: Não podem ser copiados diretamente; exigem re-upload dos dados de origem."
+  },
+  "e5e90bfb": {
+    "pt": "**Faça upload como datasets primeiro**, se possível, para preservar a editabilidade e os dados de origem."
+  },
+  "0e08efd5": {
+    "pt": "Configure o token de acesso nas variáveis de ambiente do seu GC Explorer e Superset."
+  },
+  "cab9d97f": {
+    "pt": "**Processo**: Arraste e solte dados espaciais diretamente no editor de estilo do Mapbox Studio."
+  },
+  "93750b21": {
+    "pt": "**Resultado**: Dados imediatamente convertidos em tilesets sem datasets intermediários."
+  },
+  "b3cbc6af": {
+    "pt": "**Editabilidade**: Totalmente editável (adicionar, modificar, excluir feições e propriedades)."
+  },
+  "3cae9be5": {
+    "pt": "**Componentes**: Fontes de dados, camadas, propriedades de estilo, fontes e sprites."
+  },
+  "4bb474ec": {
+    "pt": "**Resultado**: Preserva tanto os dados brutos (dataset) quanto os dados otimizados (tileset)."
+  },
+  "464fa3db": {
+    "pt": "Mapbox serve a três propósitos principais em implantações do Guardian Connector:"
+  },
+  "506cbc79": {
+    "pt": "**Risco**: Os dados de origem originais não são preservados e não podem ser recuperados."
+  },
+  "3b3429a1": {
+    "pt": "**Editabilidade**: Pode ser modificado no Mapbox Studio ou programaticamente."
+  },
+  "1a903d8f": {
+    "pt": "Crie uma conta Mapbox em [mapbox.com](https://www.mapbox.com/)."
+  },
+  "5531eb6a": {
+    "pt": "**Estilos públicos**: Podem ser copiados por outros usuários via links de compartilhamento."
+  },
+  "e55b85a5": {
+    "pt": "Gere um token de acesso para sua implantação do Guardian Connector."
+  },
+  "4d444412": {
+    "pt": "**Exporte para tilesets** apenas quando os dados estiverem finalizados para estilização."
+  },
+  "72fadd99": {
+    "pt": "**Performance**: Altamente armazenado em cache e otimizado para carregamento rápido."
+  },
+  "e31ee3ce": {
+    "pt": "**Ativos personalizados**: Fontes e ícones exigem transferência separada."
+  },
+  "d6116747": {
+    "pt": "Acesso independente às estatísticas de uso para seus projetos."
+  },
+  "329699b6": {
+    "pt": "Cada cliente receberá seu próprio nível gratuito de chamadas de API."
+  },
+  "f27945f2": {
+    "pt": "**Caso de uso**: Armazenamento inicial de dados e edições contínuas."
+  },
+  "5c71ab09": {
+    "pt": "Os clientes assumirão a futura propriedade de sua conta."
+  },
+  "a760def0": {
+    "pt": "**Benefícios**: Os dados permanecem editáveis e recuperáveis."
+  },
+  "64b3ccef": {
+    "pt": "**Documente as fontes de dados** e os fluxos de trabalho de processamento."
+  },
+  "22665c22": {
+    "pt": "**Controle de versão de arquivos JSON de estilo** quando possível."
+  },
+  "ee2f17a8": {
+    "pt": "**Caso de uso**: Renderização e estilização de mapas otimizadas."
+  },
+  "541a3d3e": {
+    "pt": "**Formato**: Tiles vetoriais (MVT) ou tiles raster."
+  },
+  "5c959664": {
+    "pt": "**Editabilidade**: Somente leitura após o processamento."
+  },
+  "bfd4432c": {
+    "pt": "**Abordagem dataset-first (recomendado)**:"
+  },
+  "dbd5126d": {
+    "pt": "**Melhores práticas para preservação de dados**:"
+  },
+  "850a8864": {
+    "pt": "Como o Mapbox é usado no Guardian Connector"
+  },
+  "e8aa13ec": {
+    "pt": "Estratégias de Upload e Preservação de Dados"
+  },
+  "1e4a4035": {
+    "pt": "Compreendendo a Arquitetura de Dados do Mapbox"
+  },
+  "2b2544cd": {
+    "pt": "**Formato**: Documento JSON (style.json)."
+  },
+  "73bcc63a": {
+    "pt": "**Formato**: GeoJSON FeatureCollection."
+  },
+  "00afc9f6": {
+    "pt": "**Upload direto para o editor de estilo**:"
+  },
+  "bfa23428": {
+    "pt": ":::warning Melhor Prática de Segurança"
+  },
+  "2dfafa74": {
+    "pt": "Gerenciamento de Dados Baseado em Conta"
+  },
+  "bda66fb4": {
+    "pt": "Considerações sobre a Configuração da Conta"
+  },
+  "9148b316": {
+    "pt": "Limitações de Portabilidade de Dados"
+  },
+  "59ff7cc4": {
+    "pt": "Gerenciamento direto de faturamento"
+  },
+  "7dc23c87": {
+    "pt": "Documentação Relacionada"
+  },
+  "bced4e79": {
+    "pt": "Fluxo de Trabalho Recomendado"
+  },
+  "bf647454": {
+    "pt": "Primeiros Passos"
+  },
+  "36d6ea40": {
+    "pt": "**Tilesets**"
+  },
+  "850ec12b": {
+    "pt": "**Estilos**"
+  },
+  "1d05fb6b": {
+    "pt": ":::tip"
+  },
+  "1225ec7e": {
+    "pt": "[Guardian Connector Explorer (GC Explorer)](https://github.com/conservationmetrics/gc-explorer) é uma ferramenta de visualização de dados baseada na web que transforma os dados tabulares da sua comunidade em mapas interativos, galerias e painéis. Construído especificamente para o Guardian Connector, ele se conecta diretamente ao seu banco de dados PostgreSQL para exibir dados coletados de ferramentas como CoMapeo, KoboToolbox e outras plataformas de coleta de dados."
+  },
+  "8f891a3b": {
+    "pt": "Os filtros ativos de **data** e **coluna** na Visualização de Mapa são incluídos na solicitação de exportação. Defina primeiro o intervalo de datas e quaisquer filtros de categoria/coluna, depois baixe CSV, GeoJSON ou KML — o arquivo conterá apenas o subconjunto filtrado. Esse subconjunto está pronto para trabalho adicional em uma planilha ou ferramenta GIS; veja [Use seus dados no QGIS](/reference/common-workflows/use-your-data-in-qgis/) para abrir GeoJSON no QGIS."
+  },
+  "fa52117c": {
+    "pt": "Se você precisar saber qual versão do GC Explorer está usando — por exemplo, ao relatar um problema — abra o endpoint $CODEVAR[0] no aplicativo. Adicione $CODEVAR[1] ao final do endereço do Explorer em seu navegador (por exemplo, https://explorer..guardianconnector.net/_info</ParamLink>). Você não precisa fazer login."
+  },
+  "bfde2330": {
+    "pt": "Para cada visualização de conjunto de dados no GC Explorer, você deve definir um nível de **Visibilidade** que controla quem pode ver e interagir com a visualização. Isso permite proteger informações sensíveis ou proprietárias da comunidade, enquanto ainda colabora com parceiros ou compartilha visualizações públicas quando necessário."
+  },
+  "a9989cef": {
+    "pt": "**⚠️ Painel de Alertas**: Monitore mudanças e ameaças ambientais com alertas de detecção de mudanças e imagens de satélite antes e depois; crie [incidentes](/reference/gc-toolkit/gc-explorer/incidents/) para agrupar uma série de alertas com fontes de dados secundárias."
+  },
+  "32f49d3f": {
+    "pt": "O **filtro de tempo** no Painel de Alertas se aplica a ambos os downloads. Use-o para baixar em lote um subconjunto de alertas em vez do conjunto completo; o mesmo filtro também atualiza as estatísticas, de modo que um download de estatísticas reflete o intervalo de datas filtrado."
+  },
+  "f80b4929": {
+    "pt": "Ao criar uma visualização, você escolhe um **conjunto de dados primário** e, se o tipo de visualização suportar, um **conjunto de dados secundário** opcional. As opções que aparecem a seguir dependem do tipo de visualização; o próprio formulário é o melhor guia para cada campo."
+  },
+  "1dbd8d28": {
+    "pt": "Para manter a visualização responsiva, o GC Explorer mostra no máximo **10.000 registros de dados** em uma visualização. Se um conjunto de dados for maior que isso, uma notificação em pop-up aparece e apenas os primeiros 10.000 registros são exibidos."
+  },
+  "fea0bda1": {
+    "pt": "**Crie um incidente** que agrupa uma série de alertas com fontes de dados secundárias e, em seguida, baixe esse incidente. Consulte [Incidentes](/reference/gc-toolkit/gc-explorer/incidents/) para obter mais informações."
+  },
+  "42c98b2a": {
+    "pt": "Uma **URL base** (como um [link de compartilhamento do Navegador de Arquivos](/reference/gc-toolkit/filebrowser/#generating-share-links)) para onde carregar anexos de mídia, imagens de alerta ou ícones de mapa personalizados."
+  },
+  "48e8ff3f": {
+    "pt": "O Painel de Alertas também mostra estatísticas sobre os alertas, como o número total de alertas ou o número total de hectares afetados. Você também pode baixar essas estatísticas."
+  },
+  "58b597de": {
+    "pt": "Os níveis de visibilidade correspondem diretamente aos [papéis de usuário do Guardian Connector](/reference/gc-toolkit/gc-landing-page/#user-management) atribuídos pelos administradores na Página Inicial:"
+  },
+  "5f5a94d1": {
+    "pt": "Se outra visualização já tiver muitas das mesmas configurações, você pode **copiar a configuração dessa visualização** para iniciar a nova em vez de preencher tudo do zero."
+  },
+  "dbb173d2": {
+    "pt": "Cada cartão de visualização na página inicial do GC Explorer exibe seu distintivo de **Nível de Permissão** ativo para que administradores e membros possam verificar as configurações de acesso rapidamente."
+  },
+  "026b7248": {
+    "pt": "Essas exportações facilitam a continuidade do trabalho com seus dados fora do GC Explorer, usando as ferramentas e formatos que melhor se adaptam às necessidades de sua comunidade."
+  },
+  "4c0bf252": {
+    "pt": "O GC Explorer transforma dados brutos em formatos visuais acessíveis que ajudam as comunidades a entender, compartilhar e agir com base nas informações coletadas."
+  },
+  "10920b76": {
+    "pt": "Uma vez que você tenha exportado seus dados como CSV, GeoJSON ou KML, é possível convertê-los em muitos outros formatos compatíveis com GIS, se necessário."
+  },
+  "17120ddc": {
+    "pt": "**Imagem do Cabeçalho da Visualização**: Forneça uma URL de imagem para exibir como miniatura e plano de fundo do cabeçalho para que os usuários possam distinguir as visualizações rapidamente."
+  },
+  "815c5259": {
+    "pt": "Se essas limitações afetarem seu fluxo de trabalho, geralmente é recomendado usar os formatos **GeoPackage** ou **File Geodatabase**."
+  },
+  "8d8f2699": {
+    "pt": "Para tornar as visualizações mais fáceis de reconhecer e navegar à medida que sua biblioteca de dados cresce, você pode enriquecer cada visualização de conjunto de dados com detalhes de identificação:"
+  },
+  "23bfab6a": {
+    "pt": "**📍 Visualização de Mapa**: Visualize seus dados geoespaciais em um mapa interativo com painéis de informações pop-up e anexos de mídia incorporados."
+  },
+  "209d7176": {
+    "pt": "O GC Explorer permite exportar dados diretamente da Visualização de Mapa para uma variedade de formatos para uso em outras ferramentas e fluxos de trabalho."
+  },
+  "bc3344df": {
+    "pt": "**📸 Visualização de Galeria**: Navegue por conteúdo de foto, áudio e vídeo coletado em campo, organizado por data ou localização."
+  },
+  "8904d50d": {
+    "pt": "**GeoJSON**: Exporte dados geoespaciais em um formato aberto moderno amplamente suportado por ferramentas GIS e aplicações de mapeamento web."
+  },
+  "4e5158e7": {
+    "pt": "No ArcGIS, arquivos CSV contendo informações de coordenadas também podem ser carregados diretamente usando o recurso **\"Adicionar Dados XY\"**."
+  },
+  "e849eb1e": {
+    "pt": "Você pode criar uma nova visualização de **Mapa**, **Galeria** ou **Painel de Alertas** — e possivelmente outros tipos de visualização no futuro."
+  },
+  "e098d53f": {
+    "pt": "Qualquer pessoa com o link, incluindo visitantes que não estão logados e usuários logados com o papel de **Usuário Logado**."
+  },
+  "acc0f99c": {
+    "pt": "**Descrição da Visualização**: Forneça contexto e metadados sobre o conteúdo, propósito ou frequência de atualização do conjunto de dados."
+  },
+  "5d321d8b": {
+    "pt": "Tanto o QGIS quanto o ArcGIS suportam a importação de dados GeoJSON e KML e sua exportação para esses formatos adicionais."
+  },
+  "c85d8f6a": {
+    "pt": "**KML**: Exporte dados geoespaciais para uso em aplicativos como Google Earth e outras plataformas de mapeamento."
+  },
+  "4484394f": {
+    "pt": "**Parâmetros do mapa** como coordenadas centrais, nível de zoom, inclinação, orientação, projeção e terreno 3D."
+  },
+  "95a0f97d": {
+    "pt": "**CSV**: Exporte seus dados em formato tabular para planilhas, bancos de dados ou análises adicionais."
+  },
+  "1e61572a": {
+    "pt": "Até três **Mapas de fundo Mapbox**, cada um com seu próprio **estilo Mapbox** e **token de acesso**."
+  },
+  "6703f42a": {
+    "pt": "**Nome de Exibição da Visualização**: Substitua o nome da tabela bruta do banco de dados por um título claro e legível por humanos."
+  },
+  "482b7b48": {
+    "pt": "**URL do Logo**: Opcionalmente, exiba o logotipo da sua organização ou comunidade na barra lateral da visualização."
+  },
+  "25a40408": {
+    "pt": "Embora os shapefiles sejam amplamente compatíveis, eles também possuem limitações importantes, incluindo:"
+  },
+  "a0cdc9d7": {
+    "pt": "O Painel de Alertas oferece várias maneiras de baixar alertas e informações relacionadas."
+  },
+  "248d7320": {
+    "pt": "Você pode baixar alertas usando os mesmos formatos CSV, GeoJSON e KML da Visualização de Mapa:"
+  },
+  "4611a3db": {
+    "pt": "**tag**: a versão implantada, escrita como uma data e número de compilação ($CODEVAR[0])."
+  },
+  "950a64ae": {
+    "pt": "Se a visualização inclui **mídia** ou **filtros**, você pode configurar coisas como:"
+  },
+  "f945b9c5": {
+    "pt": "**Baixar todos os alertas em lote** de uma vez em um dos formatos suportados."
+  },
+  "9a5d3841": {
+    "pt": "Usuários logados com os papéis de **Convidado**, **Membro** ou **Administrador**."
+  },
+  "f0c830d5": {
+    "pt": "**IDs de camada de legenda do mapa** para alternar camadas de estilo Mapbox personalizadas."
+  },
+  "1be56667": {
+    "pt": "**Colunas de filtro** para menus suspensos de categoria e controles deslizantes de intervalo de datas."
+  },
+  "9960b242": {
+    "pt": "**Fontes de Dados Personalizadas**: Quaisquer dados tabulares compatíveis com PostgreSQL."
+  },
+  "43070807": {
+    "pt": "Para um **mapa** ou **painel de alertas**, você pode configurar coisas como:"
+  },
+  "86dbb501": {
+    "pt": "**startedAt**: a data e hora em que o aplicativo foi iniciado."
+  },
+  "46d149a2": {
+    "pt": "**Baixar um alerta individual** clicando nele no mapa."
+  },
+  "71541276": {
+    "pt": "🏷️ Identificação e Marca da Visualização {#view-identification}"
+  },
+  "7acd9d07": {
+    "pt": "🔒 Controle de Visibilidade do Conjunto de Dados {#dataset-visibility-control}"
+  },
+  "95ab6ab0": {
+    "pt": "**Alertas Ambientais**: Dados de detecção de mudanças via satélite."
+  },
+  "5a968652": {
+    "pt": "Restrições em tipos de campo e complexidade da estrutura de dados."
+  },
+  "a5807747": {
+    "pt": "**commit**: o commit de origem a partir do qual essa versão foi construída."
+  },
+  "16630149": {
+    "pt": "Usuários logados com os papéis de **Membro** ou **Administrador**."
+  },
+  "7cc0b413": {
+    "pt": "**CoMapeo**: Dados de mapeamento e observação da comunidade."
+  },
+  "a13472a1": {
+    "pt": "Suporte limitado para codificação de caracteres não-Latinos."
+  },
+  "4157b551": {
+    "pt": "O GC Explorer funciona automaticamente com dados de:"
+  },
+  "9368582c": {
+    "pt": "**KoboToolbox/ODK**: Respostas e formulários de pesquisa."
+  },
+  "4766505a": {
+    "pt": ":::tip Conversão de Formato e Compatibilidade GIS"
+  },
+  "46cfc56a": {
+    "pt": "Um limite máximo de 10 caracteres para nomes de coluna."
+  },
+  "05f1c10c": {
+    "pt": "Somente usuários logados com o papel de **Administrador**."
+  },
+  "66dcd55d": {
+    "pt": "Os formatos de exportação atualmente suportados incluem:"
+  },
+  "a493b8ca": {
+    "pt": "A resposta identifica a construção em execução:"
+  },
+  "ec350660": {
+    "pt": "Alguns formatos comumente solicitados incluem:"
+  },
+  "e67e0cb2": {
+    "pt": "Exportando Dados do Painel de Alertas"
+  },
+  "cb59b7be": {
+    "pt": "ℹ️ Qual Versão do Aplicativo Estou Usando?"
+  },
+  "3a8e1466": {
+    "pt": "📤 Exportando Dados {#exporting-data}"
+  },
+  "1834aaf3": {
+    "pt": "Exportando Dados da Visualização de Mapa"
+  },
+  "1bbf760c": {
+    "pt": "**Público — sem necessidade de login**"
+  },
+  "26dbb4e9": {
+    "pt": ":::tip Filtros se aplicam às exportações"
+  },
+  "8dd07f5d": {
+    "pt": "**File Geodatabase (.gdb)**"
+  },
+  "763cfff4": {
+    "pt": ":::note Limitações dos Dados"
+  },
+  "0ce42cbc": {
+    "pt": "🕒 Usando o Filtro de Tempo"
+  },
+  "90b8790a": {
+    "pt": "Quem Pode Acessar a Visualização"
+  },
+  "2afe74ca": {
+    "pt": "Parecerá assim:"
+  },
+  "8b821cc9": {
+    "pt": "**GeoPackage (.gpkg)**"
+  },
+  "212a26d4": {
+    "pt": "📊 Exportando Estatísticas"
+  },
+  "211d7329": {
+    "pt": "**Shapefile (.shp)**"
+  },
+  "322df530": {
+    "pt": "⚙️ Configurando Visualizações"
+  },
+  "cf74350c": {
+    "pt": "🗺️ Visualizações Disponíveis"
+  },
+  "8a3d11be": {
+    "pt": "🔄 Integração de Dados"
+  },
+  "375e55c3": {
+    "pt": "📥 Exportando Alertas"
+  },
+  "2706b6a8": {
+    "pt": "Nível de Visibilidade"
+  },
+  "fabca94a": {
+    "pt": "GC Explorer"
+  },
+  "2878b2d8": {
+    "pt": "**Membros**"
+  },
+  "3206c5d9": {
+    "pt": "**Administradores**"
+  },
+  "9434dd58": {
+    "pt": "**Convidado**"
+  },
+  "ad64cb96": {
+    "pt": "**O que você vê na Landing Page depende do seu papel.** Pessoas diferentes precisam de ferramentas diferentes, então a página mostra apenas os serviços que você tem permissão para usar. Se um serviço que você espera estiver faltando, ele pode não estar ativado para sua comunidade, ou seu papel pode ainda não incluir acesso a ele — entre em contato com o administrador da sua comunidade."
+  },
+  "e9297775": {
+    "pt": "Se a sua comunidade tem outros aplicativos rodando no Guardian Connector, a página de **Aplicativos Personalizados** permite criar cartões semelhantes aos serviços padrão — como Explorer, Superset e File Browser. Cada cartão abre em seu próprio subdomínio, para que as pessoas possam acessar seus aplicativos personalizados da Landing Page da mesma forma que abrem os aplicativos integrados."
+  },
+  "1bf77944": {
+    "pt": "Quando você aprova alguém e atribui o papel correto, os serviços que essa pessoa tem permissão para usar aparecerão na sua Landing Page e suas permissões no [GC Explorer](/reference/gc-toolkit/gc-explorer/#dataset-visibility-control) e [Superset](/reference/gc-toolkit/superset/user-roles/) serão atualizadas no seu próximo login."
+  },
+  "7e9b6948": {
+    "pt": "Se você precisar saber qual versão da Landing Page está usando — por exemplo, ao relatar um problema — abra o endpoint $CODEVAR[0] no aplicativo. Adicione $CODEVAR[1] ao final do endereço da Landing Page em seu navegador (por exemplo, https://.guardianconnector.net/_info</ParamLink>). Você não precisa fazer login."
+  },
+  "1e61d8c4": {
+    "pt": "Ao visitar a Landing Page pela primeira vez, você pode ser solicitado a se cadastrar ou fazer login. Após o cadastro, um membro da sua comunidade com acesso de administrador precisa **aprovar sua conta** e atribuir um papel antes que você possa ver os serviços. Até que isso aconteça, você não conseguirá acessar o Guardian Connector."
+  },
+  "fb42cc38": {
+    "pt": "A Landing Page do Guardian Connector é a **página inicial** do Guardian Connector da sua comunidade: a porta de entrada que você acessa após fazer login. Ela reúne tudo em um só lugar, para que você não precise lembrar endereços da web ou procurar pela ferramenta certa."
+  },
+  "e27f451a": {
+    "pt": "O Guardian Connector também se conecta com outras ferramentas como **ArcGIS Survey123**, **Locus Map**, **Global Forest Watch**, **SMART** e muito mais. Para saber tudo o que pode ser conectado, consulte o [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/)."
+  },
+  "f445c080": {
+    "pt": "A Landing Page também apresenta as ferramentas de campo e plataformas que funcionam com o Guardian Connector. Esses são os aplicativos que sua comunidade pode usar para **coletar dados em campo** — dados que então fluem para o Guardian Connector para visualização e análise."
+  },
+  "7053fcce": {
+    "pt": "O estado do seu tour é salvo no armazenamento local do seu navegador para que o tour não se repita automaticamente em futuras visitas. Você pode **pular** o tour a qualquer momento, ou **reproduzi-lo** quando quiser clicando no botão **?** no cabeçalho superior direito."
+  },
+  "07f34538": {
+    "pt": "Nem todos veem todos os serviços. Em geral, quanto mais avançada ou sensível for uma ferramenta, maior o papel necessário para abri-la — por exemplo, o Explorer está disponível para a maioria dos usuários logados, enquanto o Windmill é reservado para administradores."
+  },
+  "c78479f6": {
+    "pt": "A Landing Page inclui suporte nativo para **modo claro** e **modo escuro**. Clique no ícone de exibição de lua/sol no cabeçalho superior direito para alternar entre os temas claro e escuro para corresponder à sua preferência ou ambiente de trabalho."
+  },
+  "f017c5ec": {
+    "pt": "Também é possível configurar a Landing Page para mostrar aplicativos personalizados, que são aplicativos que não fazem parte do conjunto padrão do Guardian Connector. Consulte [⚙️ Configurando Aplicativos Personalizados](#configuring-custom-apps) para mais informações."
+  },
+  "962bb72f": {
+    "pt": "**Convidado**: Acesso limitado, adequado para visitantes ou parceiros. Pode acessar visualizações de conjuntos de dados compartilhados com convidados no GC Explorer, e mapeia para o papel de **Gamma** no [Superset](/reference/gc-toolkit/superset/user-roles/)."
+  },
+  "4432d783": {
+    "pt": "Ao abrir a Landing Page pela primeira vez, um **tour guiado** interativo usa marcações passo a passo para guiá-lo pela página. O tour se adapta ao seu papel e idioma localizado, apresentando:"
+  },
+  "82b5bb0d": {
+    "pt": "Uma vez logado, o centro do cabeçalho superior exibe seu endereço de e-mail. Isso ajuda você a confirmar rapidamente qual conta está ativa — particularmente ao trabalhar em computadores compartilhados."
+  },
+  "5efb5e3a": {
+    "pt": "**Logado**: Logado, mas ainda sem acesso a serviços restritos. Pode acessar apenas visualizações de conjuntos de dados públicos no [GC Explorer](/reference/gc-toolkit/gc-explorer/#dataset-visibility-control)."
+  },
+  "45ada005": {
+    "pt": "Se você é um **administrador**, a Landing Page oferece uma área de Gerenciamento de Usuários para controlar quem pode acessar o Guardian Connector da sua comunidade e o que eles podem fazer."
+  },
+  "806fdc1a": {
+    "pt": "**Admin**: Acesso total a tudo — incluindo Windmill, todas as visualizações de conjuntos de dados, configurações e esta área de Gerenciamento de Usuários — e mapeia para o papel de **Admin** no Superset."
+  },
+  "ad011333": {
+    "pt": "Esses são os serviços padrão do Guardian Connector que sua comunidade pode vincular a partir da Landing Page. Cada um aparece como um cartão que você pode clicar para abri-lo em uma nova aba."
+  },
+  "cc51cfd2": {
+    "pt": "**Windmill**: Execute e agende os fluxos de trabalho de automação que coletam e processam seus dados (consulte o [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/))."
+  },
+  "b751b952": {
+    "pt": "Se você é um administrador, pode gerenciar **contas e papéis de usuário**, configurar **definições de tema** e adicionar **aplicativos personalizados** para sua comunidade."
+  },
+  "b1652ada": {
+    "pt": "**Membro**: Acesso diário para membros da comunidade. Pode acessar visualizações de conjuntos de dados para membros no GC Explorer, e mapeia para o papel de **Alpha** no Superset."
+  },
+  "8a66ce79": {
+    "pt": "**[Explorer](/reference/gc-toolkit/gc-explorer/)**: Veja os dados da sua comunidade como mapas interativos, galerias de mídia e um painel de alertas."
+  },
+  "9499d574": {
+    "pt": "Veja o **status** de cada pessoa — se sua conta está *Aprovada* ou ainda *Pendente* — junto com seu papel e a última vez que fez login."
+  },
+  "03438744": {
+    "pt": "Clique no ícone de globo no cabeçalho superior direito para mudar o idioma de exibição usado em toda a Landing Page, incluindo o tour guiado."
+  },
+  "9717bc3e": {
+    "pt": "**[Timelapse](/reference/core-integrations/timelapse/)**: Revisão e anotação de imagens de armadilhas fotográficas para monitoramento da biodiversidade."
+  },
+  "32c2e754": {
+    "pt": "Saiba mais sobre as **ferramentas que você pode usar com o Guardian Connector** para coletar e importar dados (como CoMapeo, KoboToolbox e mais)."
+  },
+  "22551500": {
+    "pt": "**[File Browser](/reference/gc-toolkit/filebrowser/)**: Navegue, baixe e gerencie os arquivos brutos e arquivos da sua comunidade."
+  },
+  "70d093ad": {
+    "pt": "**[Superset](/reference/gc-toolkit/superset/)**: Crie e explore gráficos, painéis e visualizações a partir dos seus dados."
+  },
+  "bb05e9f3": {
+    "pt": "**[KoboToolbox](/reference/core-integrations/kobotoolbox/)** e **ODK**: Formulários e pesquisas que funcionam online e offline."
+  },
+  "96fff4af": {
+    "pt": "Abra os **serviços** que sua comunidade usa (como Explorer, Superset, Windmill ou File Browser) com um único clique."
+  },
+  "54ce92a5": {
+    "pt": "Controles de administrador (Aplicativos Personalizados, Configurações de Tema e Gerenciamento de Usuários) se você estiver logado como **Admin**"
+  },
+  "544d942f": {
+    "pt": "**[CoMapeo](/reference/core-integrations/comapeo/)**: Mapeamento e monitoramento offline em um dispositivo móvel."
+  },
+  "1fd89611": {
+    "pt": "Cada cartão de serviço disponível (Explorer, Superset, File Browser, Windmill e quaisquer aplicativos personalizados)"
+  },
+  "0a190ec2": {
+    "pt": "**Aprovar (ou desaprovar) uma conta.** Somente usuários aprovados podem acessar os serviços."
+  },
+  "cc03cb42": {
+    "pt": "As Configurações de Tema permitem personalizar a marca da sua comunidade na Landing Page."
+  },
+  "634a5500": {
+    "pt": "Um **URL de imagem de fundo**, que é usado como fundo na tela de login."
+  },
+  "f88551e0": {
+    "pt": "Para cada aplicativo personalizado que você pode adicionar, um nome, subdomínio, descrição, ícone e tags."
+  },
+  "54fb91e1": {
+    "pt": "**Atribuir um papel** que decide quais serviços cada pessoa pode abrir."
+  },
+  "2f03145c": {
+    "pt": "Os papéis atualmente disponíveis, do menor para o maior acesso, são:"
+  },
+  "b71a503a": {
+    "pt": "Controles do cabeçalho para modo de exibição, idioma e logout"
+  },
+  "3ca2d17f": {
+    "pt": "**Excluir uma conta** se não deveriam mais ter acesso."
+  },
+  "987cf882": {
+    "pt": "Ferramentas de coleta de dados que se conectam ao Guardian Connector"
+  },
+  "7e1d53dd": {
+    "pt": "⚙️ Configurando Aplicativos Personalizados {#configuring-custom-apps}"
+  },
+  "1ae55a79": {
+    "pt": "Um **URL do logotipo**, que aparece na página inicial."
+  },
+  "c1a7273f": {
+    "pt": "👤 Identificação do Usuário {#user-identification}"
+  },
+  "849c5b35": {
+    "pt": "🌐 Ferramentas que Você Pode Usar com o Guardian Connector"
+  },
+  "899dc1b1": {
+    "pt": "**Pesquisar** pessoas por nome ou e-mail."
+  },
+  "5c720020": {
+    "pt": "👥 Gerenciamento de Usuários {#user-management}"
+  },
+  "fee81acb": {
+    "pt": "🌙 Modo Claro e Escuro {#dark-mode}"
+  },
+  "28e1d2aa": {
+    "pt": "Na Landing Page você pode:"
+  },
+  "f33be706": {
+    "pt": "🧭 Navegando na Landing Page"
+  },
+  "fcdb1f76": {
+    "pt": "🎓 Tour Guiado {#guided-tour}"
+  },
+  "6fccd7a9": {
+    "pt": "A partir daqui, você pode adicionar:"
+  },
+  "e35d0194": {
+    "pt": "🌐 Seleção de Idioma"
+  },
+  "0fb75b94": {
+    "pt": "🚀 Serviços Disponíveis"
+  },
+  "787e08f3": {
+    "pt": "🔧 Para Administradores"
+  },
+  "e32b3fbe": {
+    "pt": "A partir daqui você pode:"
+  },
+  "303ad3eb": {
+    "pt": "🎨 Configurações de Tema"
+  },
+  "3cb2f282": {
+    "pt": "Página Inicial do GC"
+  },
+  "57d64568": {
+    "pt": "🔑 Entrar"
+  }
+}

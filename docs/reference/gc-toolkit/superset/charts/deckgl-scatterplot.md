@@ -102,6 +102,18 @@ The map behind your data layers is configured under the **Map → Map Style** dr
 
 ### Advanced: Using a custom Mapbox Studio style
 
+:::important
+
+The style has to be **Mapbox GL JS 2.x.x** compatible. Mapbox Studio maps created with a **3.x.x** version of GL JS will have issues, including:
+
+- Background map assets like imagery or hillshade layers will not work, because as of 3.x.x these are added using an `"imports": []` block not supported by Mapbox GL JS 2.
+- The map as a whole will not work at all due to an error: `cannot read properties of undefined (reading 'resize')`.
+
+The best solution is to set your Mapbox GL JS version to **2.x.x** (like `2.12.1`+) in the Mapbox Studio style **Settings**, and resolve any warnings.
+
+If all else fails, start over by creating a **Classic Style** in Mapbox Studio, which will be GL JS 2 compatible.
+:::
+
 If the standard dropdown selections don't meet your needs and you do not have administrative backend access to add a custom tile server, you can forcefully inject a custom Mapbox Studio URL (e.g., `mapbox://styles/...`) using a configuration export workaround:
 
 1. **Export your chart:** Navigate to your chart, click the action menu icon, and select **Export**. This downloads a `.zip` bundle of your configuration assets.

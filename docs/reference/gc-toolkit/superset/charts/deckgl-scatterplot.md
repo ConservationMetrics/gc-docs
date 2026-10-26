@@ -54,7 +54,58 @@ Because Superset groups scatterplot data by coordinate dimensions (`latitude` an
 - **Case Sensitivity:** Database engines like PostgreSQL convert unquoted column names to lowercase. If Superset throws a `column does not exist` error, open the **Custom SQL** tab in the metric picker and wrap the column name in double quotes: `MAX("Turbidity")`.
 - **Data Types:** The column must be strictly numeric. Text responses or string-encoded decimals must be converted using `CAST("column" AS REAL)` or adjusted in the Dataset column settings.
 
-Also check that **Row limit** covers all of your sites, and add the site name (and the reading date) under **Tooltip Contents** so hovering a circle tells people which station it is.
+Also check that **Row limit** covers all of your sites, and add the site name (and the reading date) under **Tooltip Contents** so hovering a circle tells people which station it is. To lay that hover text out yourself, see [Customizing the tooltip](#customizing-the-tooltip).
+
+## Customizing the tooltip
+
+The hover text is HTML. You write the layout, and Superset fills in `{{ column_name }}` placeholders. The name inside the braces has to match a field the tooltip actually receives.
+
+Two controls do this:
+
+1. **Tooltip contents** — add every column the hover should be able to show. A column left out of this list is not available to the template, even when it is in the query.
+2. **Customize tooltip template** — the HTML. This field is where the layout goes, after the columns are selected.
+
+Click **Update chart**, then hover a point.
+
+Start with one field:
+
+```html
+<strong>{{ cat_color }}</strong>
+```
+
+`<strong>…</strong>` makes text bold. `<br>` starts a new line.
+
+`{{ cat_color }}` is not a column you add. It is Superset's name for the category that colors the point — the **Dimension** under **Categorical palette**, such as species. Every other value uses its own column name, and that column has to be in **Tooltip contents** first.
+
+For more than one field, add those columns to **Tooltip contents**, then stack them:
+
+```html
+<div style="background:#fff; color:#222; padding:10px 12px; border-radius:6px;">
+  <strong>{{ station }}</strong><br>
+  Turbidity: {{ turbidity_ntu }} NTU<br>
+  Date: {{ sample_date }}
+</div>
+```
+
+Wrap a line in `{{#if comment}}` … `{{/if}}` to show it only when that field has a value.
+
+Styles go on the elements. This control has no separate CSS field, and the template itself is HTML only.
+
+:::note
+The layout can show up while the values stay blank. Superset 6.1.0 reads tooltip fields on the point itself and skips anything nested under `extraProps`, so a column selected in **Tooltip contents** can still come through empty. Later Superset versions do check `extraProps`.
+
+If the hover shows the braces as text, such as `{{ station }}`, the template is not being filled in. If the layout appears and the values are empty, the names do not match the data the tooltip received.
+
+Paste this, click **Update chart**, and hover a point. It prints every field the template can see:
+
+```html
+{{#each this}}
+  <div><strong>{{@key}}:</strong> {{this}}</div>
+{{/each}}
+```
+
+Use those names in the template.
+:::
 
 ## Brackets: color breakpoints
 
@@ -66,8 +117,8 @@ If you instead want *one color per category* — river, village, source type —
 
 | Your column is... | Use |
 | --- | --- |
-| A number you want bucketed into ranges (turbidity, pH, count) | **Point Size:** Based on a metric<br />**Point Color:** Color breakpoints |
-| A label (station, community, water source) | **Point Color:** Categorical palette + Dimension |
+| A number you want bucketed into ranges (turbidity, pH, count) | **Point&nbsp;Size:** Based on a metric<br />**Point&nbsp;Color:** Color breakpoints |
+| A label (station, community, water source) | **Point&nbsp;Color:** Categorical palette + Dimension |
 
 **Custom brackets for ranges.** Left on its own, Superset splits the data into evenly sized buckets, which almost never match a meaningful threshold. Set the ranges yourself so the colors change exactly where the real-world limits are. Ensure your highest range uses an explicit upper bound (e.g., `50.001 - 10000`) rather than leaving it open; points exceeding your defined maximum will otherwise fall back to the grey default color.
 

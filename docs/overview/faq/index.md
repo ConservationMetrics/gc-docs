@@ -13,19 +13,6 @@ Open source means interested parties can inspect the actual code, not rely on pr
 
 Open source also means durability. Organizations change, funding shifts, partnerships evolve. But open source survives those changes. Guardian Connector can outlive the organizations that build it.
 
-### What is distinctive about Guardian Connector?
-
-Guardian Connector does not aim to replace all of these capabilities or become an all-in-one monitoring system. Instead, it combines several priorities that are not commonly brought together in a single platform:
-
-- **Indigenous Guardianship as a primary use case**, including territorial, biodiversity, and community monitoring.
-- **Indigenous Data Sovereignty as a core design principle**, rather than an additional governance layer.
-- **An open-source and self-hostable architecture**, designed to support community-owned infrastructure and avoid dependence on a proprietary Guardian Connector license.
-- **An integration-first approach**, allowing organizations to continue using tools such as CoMapeo, KoboToolbox, Timelapse, QGIS, and other systems that already meet their needs.
-- **A shared environment for diverse forms of data**, including spatial data, surveys, monitoring observations, media, biodiversity data, alerts, and files.
-- **Different levels of community operation**, allowing organizational users to manage increasingly complex parts of the system while technical support partners assist where needed.
-
-The distinction is therefore not that Guardian Connector is the only platform that supports data integration, conservation monitoring, open-source software, or Indigenous Data Sovereignty. Rather, it is being co-created to bring these priorities together specifically in support of Indigenous organizations and their guardianship goals.
-
 ## Is Guardian Connector free?
 
 Yes and no. 
@@ -33,6 +20,10 @@ Yes and no.
 The Guardian Connector platform itself is free to use, and the code is open-source and free to modify and distribute. 
 
 However, Guardian Connector needs to be hosted on a server, and so the cost of hosting has to be covered. Additionally, we strongly recommend also paying for extra services like automated backups, monitoring, and maintenance / upgrades. We are currently working on understanding the standard costs of hosting for a variety of different hosting providers, and will update this FAQ with more information as we learn more.
+
+## How do I use Guardian Connector?
+
+Currently, Guardian Connector is in a research and development (R&D) phase. We are working with a number of community organizations to test the platform, gather feedback, and co-create new features. While the tools are open-source and can be self-hosted (see [For Developers](/reference/for-developers)), we are not yet ready to support users that are not partners of [Nia Tero](https://niatero.org/). We hope to be able to support more users in the future, and make it even easier to set up and use Guardian Connector. If you are interested in using Guardian Connector, please fill out the form at [https://guardianconnector.net](https://guardianconnector.net).
 
 ## How does Guardian Connector compare to other platforms?
 
@@ -56,6 +47,19 @@ Sensing Clues is a nonprofit conservation technology platform that combines offl
 
 ArcGIS Online is Esri's commercial software-as-a-service GIS platform. It provides extensive capabilities for hosting and managing geospatial data, creating maps and applications, spatial analysis, field workflows, dashboards, collaboration, and automation. Unlike the other platforms listed here, it is a general-purpose geospatial platform used across many sectors rather than a system specifically designed for conservation or Indigenous organizations. However, it is used by some conservation and Indigenous organizations. It is hosted on Esri-managed infrastructure and uses subscription licensing and usage credits; Esri offers ArcGIS Enterprise separately for organizations requiring self-hosted infrastructure.
 
+### What, then, is distinctive about Guardian Connector?
+
+Guardian Connector does not aim to replace all of these capabilities or become an all-in-one monitoring system. Instead, it combines several priorities that are not commonly brought together in a single platform:
+
+- **Indigenous Guardianship as a primary use case**, including territorial, biodiversity, and community monitoring.
+- **Indigenous Data Sovereignty as a core design principle**, rather than an additional governance layer.
+- **An open-source and self-hostable architecture**, designed to support community-owned infrastructure and avoid dependence on a proprietary Guardian Connector license.
+- **An integration-first approach**, allowing organizations to continue using tools such as CoMapeo, KoboToolbox, Timelapse, QGIS, and other systems that already meet their needs.
+- **A shared environment for diverse forms of data**, including spatial data, surveys, monitoring observations, media, biodiversity data, alerts, and files.
+- **Different levels of community operation**, allowing organizational users to manage increasingly complex parts of the system while technical support partners assist where needed.
+
+The distinction is therefore not that Guardian Connector is the only platform that supports data integration, conservation monitoring, open-source software, or Indigenous Data Sovereignty. Rather, it is being co-created to bring these priorities together specifically in support of Indigenous organizations and their guardianship goals.
+
 ## How does Guardian Connector work with SMART (or another tool)?
 
 Guardian Connector and [SMART](https://smartconservationtools.org/) can be used together. SMART supports the collection, storage, analysis, and reporting of conservation data. Guardian Connector can connect to SMART through the [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) and bring that data into a server managed for your organization, where it can be stored alongside other datasets.
@@ -66,6 +70,14 @@ Once the data is in Guardian Connector, you can explore it using [GC Explorer](/
 
 The same principle applies to KoboToolbox. You can continue using it to collect data and create reports, while bringing a copy into Guardian Connector to store and analyze alongside other datasets. [From KoboToolbox to Superset](/reference/common-workflows/from-kobotoolbox-to-superset/) walks through one such workflow. You do not need to choose between Guardian Connector and SMART or KoboToolbox. Each tool has its own strengths, and they can work together as part of your organization’s data workflow.
 
-## How do I use Guardian Connector?
+## Does CMI or Nia Tero use our data?
 
-Currently, Guardian Connector is in a research and development (R&D) phase. We are working with a number of community organizations to test the platform, gather feedback, and co-create new features. While the tools are open-source and can be self-hosted (see [For Developers](/reference/for-developers)), we are not yet ready to support users that are not partners of [Nia Tero](https://niatero.org/). We hope to be able to support more users in the future, and make it even easier to set up and use Guardian Connector.
+Guardian Connector is free and open source, and can be hosted without Conservation Metrics, Inc. (CMI) being involved. Many Indigenous community organizations, however, choose to work with CMI to manage the hosting and maintenance of their Guardian Connector server.
+
+When CMI manages a server, our team has technical access to the data stored on it because we manage the server and its access credentials. This is generally true of any service provider with administrative access to a server. CMI does not access or use the data for its own purposes. We access data only as needed to maintain Guardian Connector or to help the organization achieve its goals.
+
+The organization may also choose to share data directly with CMI as part of a project, for example, when working together to create a map, dashboard, or analysis. The same principle applies: we use the data only to support the work the organization has agreed to undertake with us.
+
+We regularly review a collaboration agreement with each partner organization that puts these commitments in writing. If desired, we are also happy to sign a memorandum of understanding (MOU) that states them clearly, including our commitment to treat partner data with care, never share it with third parties unless specifically requested by the partner, and delete data from CMI’s own accounts when we no longer need to retain it for the partner’s goals.
+
+Nia Tero, as a co-creation and funding partner of Guardian Connector, commits to the same principles, and furthermore does not have access to a Guardian Connector server unless the community organization has specifically given access to someone on Nia Tero's team. The same applies to any future co-creation partners or co-funders of Guardian Connector.

@@ -53,6 +53,7 @@ The GC Scripts Hub includes connectors that automatically gather data from vario
 - **[SMART](https://smartconservationtools.org/)**: Import patrol data from SMART Desktop.
 
 ### 🌿 Biodiversity Monitoring
+- **[eBird](https://ebird.org/)**: Import biodiversity observation occurrences from eBird.
 - **[GBIF](https://www.gbif.org/)**: Import biodiversity observation occurrences from GBIF. See the [GBIF](/guides/biodiversity/guide-gbif/) guide for more details.
 - **[iNaturalist](https://www.inaturalist.org/)**: Import plant and animal observations from iNaturalist. See the [iNaturalist](/guides/biodiversity/guide-inaturalist/) guide for more details.
 - **[Sensing Clues](https://sensingclues.org/)**: Import observations from Sensing Clues / Cluey.

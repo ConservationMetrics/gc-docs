@@ -1,0 +1,62 @@
+{
+  "3562d994": {
+    "es": "El [Guardian Connector (GC) Scripts Hub](https://github.com/conservationmetrics/gc-scripts-hub) es una colección creciente de scripts de automatización, flujos y aplicaciones diseñados para ayudar a las comunidades a proteger y gestionar sus tierras a través de la integración de datos y la automatización de flujos de trabajo. Construidos sobre la plataforma de orquestación de datos [Windmill](https://www.windmill.dev/), estos conectores empoderan a las comunidades para conectar diferentes herramientas, automatizar la recopilación de datos y optimizar sus flujos de trabajo de conservación sin requerir una profunda experiencia técnica."
+  },
+  "6a2067a4": {
+    "es": "El Scripts Hub reconoce que cada comunidad tiene necesidades y flujos de trabajo únicos. Los scripts se pueden personalizar y combinar para crear procesos automatizados que apoyen sus objetivos específicos de conservación, ya sea monitorear la biodiversidad, documentar sitios culturales o rastrear amenazas ambientales."
+  },
+  "c1fb526d": {
+    "es": ":::note Clarificación\nNosotros no construimos ni mantenemos Windmill. Es una herramienta de terceros que integramos con Guardian Connector. Sin embargo, nosotros **sí** mantenemos los scripts, flujos y aplicaciones que forman parte del GC Scripts Hub.\n:::"
+  },
+  "09555dee": {
+    "es": "**Importador de conjuntos de datos**: Una aplicación para importar conjuntos de datos en formato de archivo al almacén de datos de Guardian Connector. Consulta la página [Importador de conjuntos de datos](/reference/gc-toolkit/gc-scripts-hub/dataset-importer/) para más detalles."
+  },
+  "2a07773c": {
+    "es": "Este recurso sigue creciendo en función de las necesidades y comentarios de la comunidad, asegurando que las herramientas evolucionen para servir mejor a los esfuerzos de conservación de base en todo el mundo."
+  },
+  "3ebec611": {
+    "es": "**Transformaciones específicas de la fuente**: Aplica transformaciones específicas de la herramienta de origen, como KoboToolbox, CoMapeo, ODK, Locus Map."
+  },
+  "49332731": {
+    "es": "**Soporte amplio de formatos de archivo**: Robustas capacidades de ingesta para diversos estándares de datos geoespaciales y administrativos:"
+  },
+  "a951a979": {
+    "es": "**Métricas de Guardian Connector**: Genera y almacena métricas de uso mensuales en los servicios de Guardian Connector."
+  },
+  "0902614f": {
+    "es": "Los scripts y flujos de Windmill se pueden programar para ejecutarse automáticamente, creando flujos de trabajo como:"
+  },
+  "ec5e18b8": {
+    "es": "Notificaciones inmediatas de WhatsApp cuando se detectan amenazas ambientales"
+  },
+  "f7c9e537": {
+    "es": "Revisiones periódicas de nuevas alertas de deforestación en tu territorio"
+  },
+  "b7d45b63": {
+    "es": "Datos vectoriales: Shapefile, GeoJSON, KML/KMZ, GPX, GeoPackage"
+  },
+  "1ff0b4a5": {
+    "es": "Exportaciones horarias de datos de encuestas para reuniones comunitarias"
+  },
+  "665d4685": {
+    "es": "Otros datos estructurados: JSON, XML"
+  },
+  "29b05158": {
+    "es": "Datos tabulares: CSV, XLS, XLSX"
+  },
+  "cc8d3311": {
+    "es": "🌱 Diseño centrado en la comunidad"
+  },
+  "f43f5319": {
+    "es": "🤖 Capacidades de automatización"
+  },
+  "f9060601": {
+    "es": "📊 Métricas e informes"
+  },
+  "ccc66f58": {
+    "es": "💾 Importador de conjuntos de datos"
+  },
+  "2f3585a1": {
+    "es": "GC Scripts Hub"
+  }
+}

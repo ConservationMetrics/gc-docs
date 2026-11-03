@@ -48,11 +48,12 @@ The GC Scripts Hub includes connectors that automatically gather data from vario
 - **[CoMapeo](/reference/core-integrations/comapeo/)**: Import community mapping data and observations, with support for photos and other attachments.
 - **[CyberTracker](https://www.cybertracker.org/)**: Import data collected using CyberTracker.
 - **[Locus Map](https://www.locusmap.app/)**: Import GPS tracks and mapping data.
-- **[Mapbox](https://www.mapbox.com/)**: [Update Mapbox tilesets](/reference/gc-toolkit/externally-hosted/mapbox/update-tileset/) with data on Guardian Connector.
+- **[Mapbox](https://www.mapbox.com/)**: [Update Mapbox tilesets](/reference/gc-toolkit/externally-hosted/mapbox/update-tileset/) with data on Guardian Connector, or [download and reconstruct vector tiles from Mapbox](/reference/gc-toolkit/externally-hosted/mapbox/download-vector-tiles/) into GeoJSON.
 - **[QField](https://qfield.org/)**: Import GeoPackage files generated using QField.
 - **[SMART](https://smartconservationtools.org/)**: Import patrol data from SMART Desktop.
 
 ### 🌿 Biodiversity Monitoring
+- **[eBird](https://ebird.org/)**: Import biodiversity observation occurrences from eBird.
 - **[GBIF](https://www.gbif.org/)**: Import biodiversity observation occurrences from GBIF. See the [GBIF](/guides/biodiversity/guide-gbif/) guide for more details.
 - **[iNaturalist](https://www.inaturalist.org/)**: Import plant and animal observations from iNaturalist. See the [iNaturalist](/guides/biodiversity/guide-inaturalist/) guide for more details.
 - **[Sensing Clues](https://sensingclues.org/)**: Import observations from Sensing Clues / Cluey.

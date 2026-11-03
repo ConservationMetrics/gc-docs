@@ -78,7 +78,7 @@ For comprehensive guidance on account setup and collaboration, see [Mapbox colla
 **Tilesets**
 - **Public tilesets**: Can be referenced by other accounts but not truly transferred
 - **Private tilesets**: Cannot be directly copied; require re-upload of source data
-- **Data loss risk**: If source data is lost, tilesets cannot be reconstructed
+- **Data loss risk**: If source data is lost, tilesets cannot be exported directly from Mapbox Studio, but vector features can be downloaded and reconstructed into GeoJSON using the [Downloading and Reconstructing Vector Tiles](/reference/gc-toolkit/externally-hosted/mapbox/download-vector-tiles/) script
 
 ## Data Upload and Preservation Strategies
 
@@ -126,8 +126,13 @@ graph
 
 Always restrict your Mapbox access token to specific URLs and referrers to prevent unauthorized usage. Configure URL restrictions in your Mapbox account settings.
 
+:::
+
 ## Related Documentation
 
+- [Customizing your Mapbox styles](./customization.md) - Modify Mapbox styles and add custom map layers for Guardian Connector
+- [Updating a Mapbox Tileset](./update-tileset.md) - Automatically sync a GeoJSON file on Guardian Connector to a Mapbox tileset
+- [Downloading and Reconstructing Vector Tiles](./download-vector-tiles.md) - Download Mapbox vector tiles for a bounding box and reconstruct them into GeoJSON
 - [Mapbox Studio Manual](https://docs.mapbox.com/studio-manual/) - Comprehensive guide to data management and styling
 - [Mapbox Style Specification](https://docs.mapbox.com/style-spec/) - Technical specification for map styles
 - [Mapbox Account Management](https://docs.mapbox.com/accounts/guides/) - Account settings and security configuration

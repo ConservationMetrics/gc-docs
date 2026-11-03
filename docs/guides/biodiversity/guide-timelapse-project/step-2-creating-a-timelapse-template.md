@@ -10,7 +10,7 @@ For detailed instructions, see the [Timelapse Template Guide](https://timelapse.
 
 :::
 
-This step is where you create custom database fields for your project. The Timelapse interface uses the fields defined in the template to structure the database during the image review process. The template must be stored in the root folder of your image dataset (following the folder structure above, this will be the latest retrieval folder).
+This step is where you create custom database fields for your project. The Timelapse interface uses the fields defined in the template to structure the database during the image review process. The template must be stored in the root folder of your image dataset (the project folder from [Step 1: Organizing Media](./step-1-organizing-imagery.md)).
 
 :::tip
 

@@ -48,7 +48,7 @@ A practical guide for documenting camera trap deployments, maintenance, and retr
 A detailed, hands-on guide for setting up camera trap data analysis projects using Timelapse software. Designed to help communities document wildlife presence and biodiversity in their territories.
 
 **What you'll learn:**
-- Organizing camera trap imagery for efficient analysis
+- Organizing camera trap media for analysis in Timelapse
 - Creating custom annotation templates with community-specific species names
 - Metadata management and folder organization
 - Image review and tagging workflows

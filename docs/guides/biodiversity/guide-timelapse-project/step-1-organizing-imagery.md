@@ -2,85 +2,40 @@
 sidebar_position: 1
 tags: [itu-3, opu, tsp]
 ---
-# Step 1: Organizing Imagery
+# Step 1: Organizing Media
 
-It’s important that images are carefully organized. All images that are to be analyzed together, or your "image dataset", should have the same root folder and can be separated into sub-folders under the root. Below is a suggested folder structure, however it may vary depending on the setup of your project’s deployments and retrievals.
+Organize the files before you create a Timelapse project. The folder layout is one project folder, a Monitoring Session folder for each data drop (`MS01`, `MS02`), and a camera folder named with the camera id from the deployment data.
 
-```
-ProjectName/
-├── Springfield/
-│ ├── Deployment_20240319/
-│ │ ├── Camera1/
-│ │ └── Camera2/
-│ ├── Deployment_20240425/
-│ │ ├── Camera1/
-│ │ └── Camera2/
-├── Fairfax/
-│ ├── Deployment_20240512/
-│ │ ├── Camera1/
-...
-```
+That layout, including SD cards that contain more than one media folder, is in [Step 5: Organizing camera trap photos and videos](/guides/biodiversity/guide-camera-trap-deployment/step-5-organizing-media) of the deployment guide. Follow that page. This page covers only what changes once those folders are opened in Timelapse.
 
-In this example, a new retrieval folder is created for each camera check. The retrieval folders serve as the root folders for your image dataset. All photos from an SD card should be placed at the lowest folder level. For instance, photos from an SD card pulled from Camera 1 on March 19, 2024, would be copied into `Springfield/Deployment_20240319/Camera1`. This structure makes it easier to organize new imagery as additional retrievals are added.
+## How Timelapse uses the folder path
 
-:::important
+When Timelapse exports `ImageData.csv`, each file has a `RelativePath` such as `MS01\LC1`. That path is split into the folder levels from the [example folder structure](/guides/biodiversity/guide-camera-trap-deployment/step-5-organizing-media#example-folder-structure) and joined to the deployment spreadsheet.
 
-**Handling SD cards with more than 10,000 images**
+With the recommended layout, the columns are the Monitoring Session and the camera id. The camera folder is the join key. It matches the camera name in the deployment spreadsheet, and the image datetime comes from the camera's EXIF `DateTime`, matched to that camera's deploy and retrieve dates.
 
-Many camera models name images using a four-digit counter (e.g., `IMG_0001.JPG` → `IMG_9999.JPG`).  
-When more than 9,999 images are captured on a single SD card, the camera automatically creates an additional folder on the card and continues numbering from `IMG_0001.JPG` again.
+If the project uses an [extra folder level](/guides/biodiversity/guide-camera-trap-deployment/step-5-organizing-media#extra-folder-level), that level is another column. The join has to be given the full list.
 
-When copying imagery from the SD card:
+:::important Decide the structure, then leave it alone
 
-- If there is **only one folder containing images**, copy the images directly into the camera folder.
-- If there are **two or more folders containing images**, **copy the folders exactly as they appear on the SD card into the camera folder** rather than merging their contents.
+Once Timelapse has created `TimelapseData.ddb`, do **not** rename, move, or reorganize any folder or file inside the project folder. Timelapse stores each file's `RelativePath` in that database. Changing a folder name breaks the link between the image and its annotations.
 
-Do **not combine the images from multiple folders into a single folder.** Because filenames repeat (e.g., `IMG_0001.JPG`), merging folders can:
+You can move or copy the project folder itself. You can add a new Monitoring Session folder for a later retrieval, as described [below](#adding-new-images-to-an-existing-timelapse-project). Folders that are already in the project keep their names.
 
-- **Overwrite files**, resulting in permanent data loss, or  
-- Cause the operating system to rename files (e.g., `IMG_0001 (1).JPG`), making it difficult to determine whether files are duplicates or distinct images.
-
-Preserving the original folder structure ensures that all images are retained and prevents confusion during later processing.
-
-Example  folder structure
-
-```
-ProjectName/
-├── Springfield/
-│ ├── Deployment_20240319/
-│ │ ├── Camera1/
-│ │ ├──── 100_BTCF/
-│ │ ├──── 101_BTCF/
-│ │ └── Camera2/
-│ ├── Deployment_20240425/
-│ │ ├── Camera1/
-│ │ └── Camera2/
-├── Fairfax/
-│ ├── Deployment_20240512/
-│ │ ├── Camera1/
-...
-```
 :::
 
 ![Screenshot of imagery organization in the Timelapse practice image set](/img/guides/guide-timelapse-project/organizing-imagery.jpg)
-_Example of a Timelapse project folder structure, using the practice image set._
+_Example of a Timelapse project folder, using the practice image set._
 
 :::info
 
-Once you start a project in Timelapse, the software will create several files in your root folder:
+Once you start a project in Timelapse, the software will create several files in the project folder:
 
 * A project template database (`TimelapseTemplate.tdb`)
 * A project data database (`TimelapseData.ddb`)
 * A `backups/` directory where Timelapse will periodically make data backups
 
 :::
-
-:::important
-
-Once you begin analysis in Timelapse, do not rename, move, or reorganize any folders or files within the root folder. You _can_ move or copy the root folder itself.
-
-:::
-
 
 ---
 
@@ -90,25 +45,23 @@ In many camera trap workflows, images are collected periodically as SD cards are
 
 ### 1. Copy the new images into the existing project folder
 
-First, copy the new images into the appropriate location within your project’s root folder. The new images should follow the same folder structure used for the rest of the project (e.g., station → deployment → camera).
+Copy the new images into the project folder, using the same folder levels as the rest of the project. Those levels are defined in [Organizing camera trap photos and videos](/guides/biodiversity/guide-camera-trap-deployment/step-5-organizing-media#example-folder-structure).
 
 For example:
 
-```
-ProjectName/
-├── Springfield/
-│ ├── Deployment_20240319/
-│ │ └── Camera1/
-│ ├── Deployment_20240425/
-│ │ └── Camera1/ ← newly added images
+```text
+Upper_Jatapu_Camera_Trap_Project/
+├── MS01/
+│   └── LC1/
+└── MS02/
+    └── LC1/ ← newly added images
 ```
 
-
-Typically, SD cards retrieved "around" the same date go into a **new deployment folder**. This keeps images organized and makes it easier to track when cameras were checked or moved.
+SD cards from the same retrieval go into a **new Monitoring Session folder** (`MS02`, and so on). Copy them with the same rules as the first retrieval, including [SD cards with more than 10,000 images](/guides/biodiversity/guide-camera-trap-deployment/step-5-organizing-media#copying-files-from-sd-cards).
 
 :::important
 
-After you have started analyzing images in Timelapse, **do not rename or reorganize folders that already exist in the project**. Changing folder names or structure can break the connection between the images and the Timelapse database. However, you may safely **add new folders containing additional images** within the project’s root directory.
+After you have started analyzing images in Timelapse, **do not rename or reorganize folders that already exist in the project**. Changing folder names or structure breaks the connection between the images and the Timelapse database. You can **add new folders containing additional images** within the project folder.
 
 :::
 
@@ -117,7 +70,7 @@ After you have started analyzing images in Timelapse, **do not rename or reorgan
 Once the images are in place on disk:
 
 1. Open the existing project in Timelapse.
-2. From the menu bar, select  
+2. From the menu bar, select
    **File → Add image and video files to this image set…**
 3. Navigate to the folder containing the newly added images.
 4. Select the folder and click **Open**.
@@ -126,13 +79,13 @@ Timelapse will scan the selected folder and add the images to the project databa
 
 :::note
 
-If you have set up folder metadata and the new images do not match the existing folder sturcture, you will see a warning when adding the images. You can add a new folder metadata field in the Template editor or ignore this warning at your own risk. It is not clear how ignoring the warning might manifest when using the folder metadata and it is strongly suggested that you test this out before moving forward with labeling work.
+If you have set up folder metadata and the new images do not match the existing folder structure, you will see a warning when adding the images. You can add a new folder metadata field in the Template editor or ignore this warning at your own risk. It is not clear how ignoring the warning might manifest when using the folder metadata and it is strongly suggested that you test this out before moving forward with labeling work.
 
 :::
 
 ### 3. Initialize metadata for new folders
 
-If the new images are stored in a **new folder** (for example a new deployment), Timelapse will recognize that the folder has not yet been associated with metadata.
+If the new images are stored in a **new folder** (for example a new Monitoring Session), Timelapse will recognize that the folder has not yet been associated with metadata.
 
 To complete setup:
 

@@ -1,5 +1,6 @@
 ---
-sidebar_position: 5
+sidebar_position: 2
+slug: /reference/common-workflows/from-comapeo-to-explorer
 tags: [itu-3, opu, tsp]
 ---
 import ParamText from '@site/src/components/ParamText';
@@ -7,15 +8,15 @@ import ParamLink from '@site/src/components/ParamLink';
 
 # From CoMapeo to Explorer
 
-This guide is for Guardian Connector [operators](/reference/gc-toolkit/gc-scripts-hub/user-roles/#operator) to be able to create a data workflow from **CoMapeo** to a **GuardianConnector Explorer** map and gallery views. This process starts with CoMapeo data collection and ends with a configurable map and gallery visualizations.
+This guide is for Guardian Connector [operators](/reference/gc-toolkit/gc-scripts-hub/user-roles/#operator) to be able to create a data workflow from **CoMapeo** to a **Guardian Connector Explorer** map and gallery views. This process starts with CoMapeo data collection and ends with a configurable map and gallery visualizations.
 The goal is to preserve your CoMapeo data, and to visualize it through interactive maps. This is useful for monitoring ongoing data collection and creating clear visualizations for analysis.
 
 The workflow involves the following tools:
 
-- **[CoMapeo](../../core-integrations/comapeo/)** – The territory monitoring & mapping application.
-- **[Windmill](../../gc-toolkit/gc-scripts-hub/)** – Handles data ingestion and processing, transferring it from CoMapeo to the data warehouse.
+- **[CoMapeo](/reference/core-integrations/comapeo/)** – The territory monitoring & mapping application.
+- **[Windmill](/reference/gc-toolkit/gc-scripts-hub/)** – Handles data ingestion and processing, transferring it from CoMapeo to the data warehouse.
 - **PostgreSQL** – The database where Guardian Connector stores and makes your data available for analysis.
-- **[GuardianConnector Explorer](../../gc-toolkit/gc-explorer/)** – The visualization tool used to create map views based on the stored data.
+- **[Guardian Connector Explorer](/reference/gc-toolkit/gc-explorer/)** – The visualization tool used to create map views based on the stored data.
 
 ## 1. Data Collection: CoMapeo
 

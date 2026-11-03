@@ -3,6 +3,9 @@ sidebar_position: 3
 tags: [itu-1, itu-2, itu-3, idm, opu, tsp]
 ---
 
+import ParamText from '@site/src/components/ParamText';
+import ParamLink from '@site/src/components/ParamLink';
+
 # GC Explorer
 
 [Guardian Connector Explorer (GC Explorer)](https://github.com/conservationmetrics/gc-explorer) is a web-based data visualization tool that transforms your community's tabular data into interactive maps, galleries, and dashboards. Built specifically for Guardian Connector, it connects directly to your PostgreSQL database to display data collected from tools like CoMapeo, KoboToolbox, and other data collection platforms.
@@ -49,6 +52,12 @@ Currently supported export formats include:
 * **KML**: Export geospatial data for use in applications such as Google Earth and other mapping platforms.
 
 These exports make it easy to continue working with your data outside of GC Explorer using the tools and formats that best fit your community’s needs.
+
+:::tip Filters apply to exports
+
+Active **date** and **column** filters on the Map View are included in the export request. Set the date range and any category/column filters first, then download CSV, GeoJSON, or KML — the file contains only the filtered subset. That subset is ready for further work in a spreadsheet or GIS tool; see [Use your data in QGIS](/reference/common-workflows/use-your-data-in-qgis/) for opening GeoJSON in QGIS.
+
+:::
 
 :::tip Format Conversion and GIS Compatibility
 
@@ -98,7 +107,7 @@ The **time filter** on the Alerts Dashboard applies to both of these downloads. 
 
 You can create a new **Map**, **Gallery**, or **Alerts Dashboard** view — and possibly other view types in the future.
 
-When you create a view, you choose a **primary dataset**. Map and Alerts views also support an optional **secondary dataset** containing geospatial data. For example, you can combine observations from two datasets or overlay mapping data with camera-trap deployment points. Both views display secondary points, lines, multipart lines, polygons, and multipart polygons. Click a secondary feature to open its information and supported media in the sidebar.
+When you create a view, you choose a **primary dataset**. Map and Alerts views also support an optional **secondary dataset** containing geospatial data. For example, you can combine observations from two datasets or overlay mapping data with camera-trap deployment points. Both views display secondary points, lines, multipart lines, polygons, and multipart polygons. Click a secondary feature to open its information in the sidebar. Media attachments are not supported for secondary datasets.
 
 In Map View, the legend automatically includes a visibility toggle for each dataset with valid features. A toggle controls the whole dataset, including polygon outlines, and keeps its state when you change the basemap. You can also add specific Mapbox style layers to the legend through the view configuration.
 
@@ -108,14 +117,58 @@ The options that appear next depend on the view type; the form itself is the bes
 
 For a **map** or **alerts dashboard**, you can set things like:
 
-- A **Mapbox access token**
-- A **map style**
-- **Map parameters** such as zoom level
+- Up to three **Mapbox background maps**, each with its own **Mapbox style** and **access token**
+- **Map parameters** such as center coordinates, zoom level, pitch, bearing, projection, and 3D terrain
+- **Map legend layer IDs** for toggling custom Mapbox style layers
 
-If the view includes **media**, you can set things like:
+If the view includes **media** or **filters**, you can set things like:
 
-- A **base URL** for where to load media
-- **Filters**
-- A **header background**, such as a thumbnail image
+- A **base URL** (such as a [File Browser share link](/reference/gc-toolkit/filebrowser/#generating-share-links)) for where to load media attachments, alert imagery, or custom map icons
+- **Filter columns** for category dropdowns and date-range sliders
 
 If another view already has many of the same settings, you can **copy the config from that view** to bootstrap the new one instead of filling everything in from scratch.
+
+### 🏷️ View Identification and Branding {#view-identification}
+
+To make views easier to recognize and navigate as your data library grows, you can enrich each dataset view with identifying details:
+
+- **View Display Name**: Replace the raw database table name with a clear, human-readable title.
+- **View Description**: Provide context and metadata about the dataset's contents, purpose, or update frequency.
+- **View Header Image**: Provide an image URL to display as a thumbnail and header background so users can distinguish views at a glance.
+- **Logo URL**: Optionally display your organization or community logo in the view sidebar.
+
+### 🔒 Dataset Visibility Control {#dataset-visibility-control}
+
+For every dataset view in GC Explorer, you must set a **Visibility** level that controls who can see and interact with the view. This lets you protect sensitive or proprietary community information while still collaborating with partners or sharing public-facing views when needed.
+
+Visibility levels map directly to the [Guardian Connector user roles](/reference/gc-toolkit/gc-landing-page/#user-management) assigned by administrators on the Landing Page:
+
+| Visibility Level | Who Can Access the View |
+| --- | --- |
+| **Admins** | Only signed-in users with the **Admin** role. |
+| **Members** | Signed-in users with the **Member** or **Admin** role. |
+| **Guest** | Signed-in users with the **Guest**, **Member**, or **Admin** role. |
+| **Public — no sign-in required** | Anyone with the link, including visitors who are not signed in and signed-in users with the **Signed In** role. |
+
+Each view card on the GC Explorer home page displays its active **Permission level** badge so administrators and members can verify access settings at a glance.
+
+## ℹ️ Which Version of the App Am I Using?
+
+If you ever need to know which version of GC Explorer you are using — for example, when reporting a problem — open the `/_info` endpoint on the app. Add `/_info` to the end of the Explorer address in your browser (for example, <ParamLink template="https://explorer.{alias}.guardianconnector.net/_info" paramName="alias" defaultValue="alias">https://explorer.<ParamText paramName="alias" defaultValue="alias" />.guardianconnector.net/_info</ParamLink>). You do not need to sign in.
+
+It will look like this:
+
+```json
+{
+  "tag": "20261012-189",
+  "commit": "1234567890abcdef1234567890abcdef12345678",
+  "buildId": "abcdef1234567890abcdef1234567890abcdef12",
+  "startedAt": "2026-10-12T12:00:00.000Z"
+}
+```
+
+The response identifies the running build:
+
+- **tag**: the deployed version, written as a date and build number (`YYYYMMDD-<run>`)
+- **commit**: the source commit that version was built from
+- **startedAt**: the date and time the application was started

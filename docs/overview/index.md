@@ -25,6 +25,10 @@ About the technical design principles used in building Guardian Connector.
 
 A practical look at whether Guardian Connector is a good fit for an Indigenous or local community organization, or for an organization you support.
 
+### [News and Articles](./news-and-articles/)
+
+Articles, blog posts, and other writing about Guardian Connector, with dates.
+
 ### [Frequently Asked Questions](./faq/)
 
 Short answers to common questions about the platform.

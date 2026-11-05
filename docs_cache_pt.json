@@ -1,0 +1,74 @@
+{
+  "c783b6c2": {
+    "pt": "Isso se alinha ao objetivo do Guardian Connector de permitir que as comunidades controlem tanto seus dados quanto os aplicativos construídos em torno deles. Carregue uma pasta para o data lake com [File Browser](/reference/gc-toolkit/filebrowser/), aponte o servidor para esse diretório, e o site estará disponível na web. O CapRover também pode proteger o aplicativo com autenticação integrada quando o acesso precisar ser restrito."
+  },
+  "ad6595e6": {
+    "pt": "O [GC HTTP Server](https://github.com/conservationmetrics/gc-http-server) é um serviço leve para servir conteúdo estático diretamente do data lake do Guardian Connector. Ele executa um servidor web HTTPD mínimo e expõe HTML, JavaScript, CSS, imagens e outros ativos estáticos via HTTP—sem uma pipeline de build ou hospedagem separada."
+  },
+  "72a03735": {
+    "pt": "O aplicativo funciona com exportações do [Timelapse](/reference/core-integrations/timelapse/) -- dados tabulares (CSV), imagens ou vídeos exportados e miniaturas geradas -- juntamente com dados de implantação de armadilhas fotográficas. As comunidades podem navegar por mídias de vida selvagem por localização e atributos sem precisar abrir o Timelapse para cada sessão de revisão."
+  },
+  "a8a8cdf3": {
+    "pt": "Um aplicativo personalizado precisa ser mantido. Um parceiro de suporte técnico precisa mantê-lo funcionando à medida que seus dados e o Guardian Connector mudam, e dar suporte às pessoas que o utilizam. Isso exige o maior esforço contínuo para algo construído especificamente para um único projeto. Um aplicativo gerado por uma ferramenta de IA acarreta os mesmos custos e riscos."
+  },
+  "606e24fe": {
+    "pt": "Além do toolkit principal, as instâncias do Guardian Connector podem incluir serviços adicionais que suportam fluxos de trabalho especializados. Essas ferramentas são opcionais: implante-as quando um projeto precisar de uma experiência web personalizada, exploração de mídia de vida selvagem ou outra capacidade que não seja coberta apenas pelo GC Explorer ou Superset."
+  },
+  "43e4aa8f": {
+    "pt": "O [GC Wildlife Viewer](https://github.com/conservationmetrics/gc-wildlife-viewer) é um aplicativo R Shiny para explorar mídias de armadilhas fotográficas (imagens e vídeos) anotadas em um mapa com filtros. Ele foi projetado para ser implantado como parte de uma instância CapRover do Guardian Connector junto com o restante do toolkit."
+  },
+  "fdf1f5a3": {
+    "pt": "Antes de solicitar ou adicionar um, pergunte se o [GC Explorer](/reference/gc-toolkit/gc-explorer/) ou o [Superset](/reference/gc-toolkit/superset/) já podem fornecer a experiência, ou se um aplicativo existente poderia ser adotado."
+  },
+  "0e00599f": {
+    "pt": "É possível exibir cartões para essas ferramentas na [Página Inicial](/reference/gc-toolkit/gc-landing-page/) acessando a página **Custom Apps** como usuário Administrador. Lá, você pode adicionar cartões para cada ferramenta à página inicial.\n:::"
+  },
+  "411d00c1": {
+    "pt": "O GC Explorer e o Superset cobrem muitas necessidades de visualização. Use o GC HTTP Server quando um projeto precisar de uma experiência totalmente personalizada—por exemplo, um mapa com qualidade de apresentação, um site de storytelling ou um painel bespoke para um público específico."
+  },
+  "17143cb4": {
+    "pt": "Como essas ferramentas não fazem parte do toolkit regular do Guardian Connector, você pode precisar de assistência de um administrador de sistema do Guardian Connector para implantá-las ou configurá-las.\n:::"
+  },
+  "a27be213": {
+    "pt": "Consulte o [README do GC Wildlife Viewer](https://github.com/conservationmetrics/gc-wildlife-viewer/blob/main/README.md) para obter mais informações sobre como implantar e usar o aplicativo."
+  },
+  "cf6ed00b": {
+    "pt": "Tanto os conjuntos de dados quanto o aplicativo web residem no data lake, mantendo a experiência leve e sob controle da comunidade."
+  },
+  "a2d18813": {
+    "pt": "Ingerir dados de campo com o [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) (por exemplo, observações do CoMapeo)."
+  },
+  "d604ed2f": {
+    "pt": "Implante o GC HTTP Server e defina a variável de ambiente $CODEVAR[0] para o local da pasta carregada."
+  },
+  "6a158455": {
+    "pt": "Carregue o aplicativo para o data lake com o [File Browser](/reference/gc-toolkit/filebrowser/)."
+  },
+  "826534b3": {
+    "pt": "Crie seu próprio frontend (Leaflet, Mapbox GL JS, OpenLayers ou outra estrutura)."
+  },
+  "44aa729d": {
+    "pt": "🐻 GC Wildlife Viewer"
+  },
+  "5e5f6529": {
+    "pt": "Aplicativos Personalizados"
+  },
+  "c0fb425c": {
+    "pt": "Um fluxo de trabalho típico:"
+  },
+  "476f7015": {
+    "pt": "🌐 GC HTTP Server"
+  },
+  "098576d3": {
+    "pt": "Quando usá-lo"
+  },
+  "7f282eee": {
+    "pt": ":::caution"
+  },
+  "fecc0bd8": {
+    "pt": ":::note"
+  },
+  "1d05fb6b": {
+    "pt": ":::tip"
+  }
+}

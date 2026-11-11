@@ -10,9 +10,11 @@ tags: [opu, tsp]
 
 Auth0 enables secure user authentication and access control across Guardian Connector tools:
 
-- **Single Sign-On (SSO)** - Users authenticate once to access multiple Guardian Connector services
+- **Single Sign-On (SSO)** - Users authenticate once and can move between the Landing Page, GC Explorer, Superset, Windmill, and Auth0-protected custom apps such as GC HTTP Server and GC Wildlife Viewer without signing in again
 - **User management** - Centralized user registration, login, and profile management
 - **Role-based access control** - Different permission levels for administrators and community members
+
+Username and password authentication remains available for some custom apps. Use either Auth0 or the app's built-in authentication, not both. See [Custom Applications](/reference/gc-toolkit/custom-applications/) for details.
 
 ## Getting Started
 

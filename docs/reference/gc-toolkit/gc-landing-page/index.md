@@ -22,6 +22,12 @@ When you first visit the Landing Page, you may be asked to sign up or sign in. A
 
 **What you see on the Landing Page depends on your role.** Different people need different tools, so the page only shows the services you have permission to use. If a service you expect is missing, it may not be turned on for your community, or your role may not include access to it yet — reach out to your community's administrator.
 
+### 🔐 One Sign-In Across Guardian Connector {#shared-sessions}
+
+Once you sign in to the Landing Page, your session is shared with GC Explorer, Superset, Windmill, and any custom apps protected by Auth0. You can open these services from the Landing Page without signing in again.
+
+Apps that use a separate username and password may still ask you to sign in when you open them.
+
 ### 👤 User Identification {#user-identification}
 
 Once you are signed in, the center of the top header displays your email address. This helps you quickly confirm which account is currently active — particularly when working on shared computers.

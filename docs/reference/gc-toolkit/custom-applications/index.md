@@ -21,7 +21,7 @@ It is possible to show cards for these tools on the [Landing Page](/reference/gc
 
 The [GC HTTP Server](https://github.com/conservationmetrics/gc-http-server) is a lightweight service for serving static content directly from the Guardian Connector data lake. It runs a minimal HTTPD web server and exposes HTML, JavaScript, CSS, images, and other static assets over HTTP—without a separate build or hosting pipeline.
 
-This fits Guardian Connector's goal of letting communities control both their data and the applications built around it. Upload a folder into the data lake with [File Browser](/reference/gc-toolkit/filebrowser/), point the server at that directory, and the site is available on the web. CapRover can also protect the app with built-in authentication when access should be restricted.
+This fits Guardian Connector's goal of letting communities control both their data and the applications built around it. Upload a folder into the data lake with [File Browser](/reference/gc-toolkit/filebrowser/), point the server at that directory, and the site is available on the web. You can protect the app with Auth0 or CapRover's built-in HTTP Basic Auth when access should be restricted.
 
 ### When to use it
 
@@ -32,9 +32,26 @@ A typical workflow:
 1. Ingest field data with the [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) (for example CoMapeo observations).
 2. Build your own frontend (Leaflet, Mapbox GL JS, OpenLayers, or another framework).
 3. Upload the application into the data lake with [File Browser](/reference/gc-toolkit/filebrowser/).
-4. Deploy GC HTTP Server and set the `DIRECTORY` environment variable to the location of the uploaded folder.
+4. Deploy GC HTTP Server and set the `DIRECTORY` environment variable to the location of the uploaded folder. Optionally set `DATA_DIRECTORY` to expose a separate data folder at `/data/`, and choose an access-control method.
 
 Both the datasets and the web application then live in the data lake, keeping the experience lightweight and under community control.
+
+### Environment variables
+
+| Variable | Required | Purpose |
+| --- | --- | --- |
+| `DIRECTORY` | Yes | The app folder under the data lake served at `/`. |
+| `DATA_DIRECTORY` | No | An additional folder exposed at `/data/`, so data can live separately from the application code. Only the selected folder is exposed. |
+| `AUTH_ENABLED` | No | Set to `true` to require Auth0 sign-in before serving files. |
+
+When `DATA_DIRECTORY` is set, the server links the app folder and the selected data folder into a temporary document root. The source folders are not modified, and no other data lake directories are exposed.
+
+### Access control
+
+Use one access-control method, not both:
+
+- **Auth0** (recommended): users sign in with their Guardian Connector account, reusing the shared session. Only users with the **Member** or **Admin** role can access the app.
+- **CapRover HTTP Basic Auth**: one shared username and password for everyone who needs access. Leave Auth0 disabled.
 
 :::caution
 
@@ -50,4 +67,13 @@ The [GC Wildlife Viewer](https://github.com/conservationmetrics/gc-wildlife-view
 
 The app works with exports from [Timelapse](/reference/core-integrations/timelapse/) -- tabular data (CSV), exported images or video, and generated thumbnails -- along with camera trap deployment data. Communities can browse wildlife media by location and attributes without needing to open Timelapse for every review session.
 
-See the [GC Wildlife Viewer README](https://github.com/conservationmetrics/gc-wildlife-viewer/blob/main/README.md) for more information on how to deploy and use the app.
+### Access control
+
+The viewer supports the same two access-control options. Use one, not both:
+
+- **Auth0**: set `AUTH_ENABLED=true` and configure the Auth0 environment variables. Users sign in with their Guardian Connector account, reusing the shared session, and must have the **Member** or **Admin** role.
+- **CapRover HTTP Basic Auth**: leave Auth0 disabled and configure one shared username and password.
+
+When Auth0 is enabled, all application and media paths require a session.
+
+See the [GC Wildlife Viewer README](https://github.com/conservationmetrics/gc-wildlife-viewer/blob/main/README.md) for more information on how to deploy and use the app, including the required Auth0 variables.

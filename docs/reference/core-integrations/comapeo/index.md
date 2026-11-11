@@ -69,6 +69,11 @@ These generated fields help preserve the visual organization and categorization 
 
 :::
 
+## Excluding Projects from a Fetch
+
+The CoMapeo fetch script includes an optional **project blocklist** (`comapeo_project_blocklist`). Add project **names** to skip them when fetching data. Names must match the project name shown in CoMapeo.
+
+You can copy names directly from the results of a previous run. The blocklist uses project names rather than project IDs, so you do not need to look up IDs separately. This is useful for excluding training projects, test projects, or other projects that should not be brought into Guardian Connector.
 
 ## Other Resources
 

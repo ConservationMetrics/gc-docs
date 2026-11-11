@@ -48,7 +48,7 @@ Prefer [Explorer](/reference/gc-toolkit/gc-explorer/) or [Superset](/reference/g
 1. **Ingest data** with GC Scripts Hub so datasets and any static GeoJSON/media sit in the data lake.
 2. **Build a frontend** as a static app that loads files you control on the instance.
 3. **Upload** the app folder (and any data folder it needs) into the data lake via File Browser.
-4. **Deploy GC HTTP Server** and point it at that folder — follow the [gc-http-server README](https://github.com/conservationmetrics/gc-http-server/blob/main/README.md) for CapRover setup, `DIRECTORY` / `DATA_DIRECTORY`, and troubleshooting.
+4. **Deploy GC HTTP Server** and point it at that folder — follow the [gc-http-server README](https://github.com/conservationmetrics/gc-http-server/blob/main/README.md) for CapRover setup, `DIRECTORY` / `DATA_DIRECTORY`, and troubleshooting. Choose Auth0 (recommended) or CapRover HTTP Basic Auth for access control; do not enable both.
 
 ---
 

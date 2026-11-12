@@ -17,6 +17,10 @@ Reference information for common tasks that involve Guardian Connector and relat
 - [Bring CoMapeo observations into Explorer](/reference/common-workflows/from-comapeo-to-explorer/)
 - [Import data from third-party platforms](/reference/common-workflows/getting-data-in/import-from-third-party-platforms/) (GBIF, iNaturalist, ArcGIS, and more)
 
+### Cleaning & preparing data
+
+- [Data Cleaning](/guides/data-collection/guide-data-cleaning/) — get raw data out, clean it, and re-import it without breaking views or connector workflows
+
 ### Monitoring & analysis
 
 - [Monitor data collection progress in Superset](/reference/common-workflows/monitoring-and-analysis/monitor-data-collection-progress/)

@@ -17,6 +17,10 @@ Creating a single virtual dataset for the entire dataset with all of the columns
 These queries are written in SQL, which is a language for querying databases. If you are not familiar with SQL, you can learn more about it [here](https://www.w3schools.com/sql/). There is also a "linter" available for SQL that can help you troubleshoot your queries and ensure they are correct: [SQLFluff](https://online.sqlfluff.com/).
 :::
 
+:::note
+These recipes transform data at query time — they do not change the stored table. If the dataset itself needs cleaning, see [Data Cleaning](/guides/data-collection/guide-data-cleaning/).
+:::
+
 ## Using LLMs to generate SQL queries
 
 Tools like Claude, ChatGPT, GitHub Copilot, and similar assistants can help you draft or debug the SQL expressions on this page — especially when you need a one-off transform for a chart column and do not want to write the `CASE` / `REPLACE` / cast logic from scratch.

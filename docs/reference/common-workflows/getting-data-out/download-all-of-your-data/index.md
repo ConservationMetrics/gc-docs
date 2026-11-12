@@ -34,6 +34,10 @@ Guardian Connector stores different types of data, and the export options vary d
 
 Guardian Connector provides several methods for downloading your data, each suited to different scenarios:
 
+:::tip
+For routine data cleaning, you usually need one dataset rather than a full export. See [Data Cleaning](/guides/data-collection/guide-data-cleaning/) for getting a single file or table out and putting the cleaned version back.
+:::
+
 ### Method 1: Download via GC Scripts Hub (Recommended)
 
 The most comprehensive approach uses scripts in the [GC Scripts Hub](/reference/gc-toolkit/gc-scripts-hub/) to export your project data:

@@ -30,6 +30,19 @@ A comprehensive 4-week self-paced learning program that takes you from KoboToolb
 
 **Format:** Weekly modules with video tutorials, reading materials, and practical exercises.
 
+### [Data Cleaning: Working with Raw Data](./data-collection/guide-data-cleaning/)
+
+A practical guide to the full cleaning loop on Guardian Connector: get raw data out of File Browser or the warehouse, clean it with OpenRefine or another tool, and put the cleaned version back without breaking charts, views, or connector workflows.
+
+**What you'll learn:**
+- Choosing between File Browser, Windmill Database Manager, Superset, and Explorer exports
+- Protecting dataset structure and record identity during cleaning
+- Using the Dataset Importer's Create, Append, Merge, and Sync goals
+- Handling connector-managed datasets and dating derived snapshots
+- Repointing Superset charts and Explorer views after a structural change
+
+**Format:** Single-page workflow guide with decision tables and links to tool-specific documentation.
+
 ### [Camera Traps: Deployment and Collecting Data](./biodiversity/guide-camera-trap-deployment/)
 
 A practical guide for documenting camera trap deployments, maintenance, and retrievals. Includes a field protocol for preparing equipment, deploying and servicing cameras, and processing SD cards. Designed to help communities keep a reliable record of which camera was placed where, during what period, and under what conditions — so later imagery can still be mapped, compared, and reused.

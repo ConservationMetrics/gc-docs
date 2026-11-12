@@ -5,134 +5,148 @@ tags: [itu-3, opu, tsp]
 
 # GC Dataset Importer
 
-Upload a dataset file and turn it into a clean PostgreSQL table in your Guardian Connector data warehouse. The app guides you through choosing or naming the dataset, uploading a file, optionally tagging the **data source**, and finalizing the import. It also saves the original and transformed files to your deployment’s data lake (accessible via [File Browser](/reference/gc-toolkit/filebrowser/)).
+Upload a file and write it to a new or existing PostgreSQL table in your Guardian Connector data warehouse. You can import into a dataset created by the importer or by a connector. The importer detects the file format automatically; you do not need to choose a data source.
 
----
+![Choose what the import should do to existing data](/img/reference/gc-toolkit/gc-scripts-hub/dataset-importer-goals.png)
+_Choose what the import should do to existing data._
 
-## 📦 What this tool does
+## When to use the Dataset Importer {#when-to-use}
 
-* Converts and validates common **tabular** files (`.csv`, `.xlsx/.xls`, `.json`) to CSV for ingestion; or, to GeoJSON if the file has spatial data.
-* Converts and validates common **spatial** files (`.geojson`, `.kml`, `.gpx`, `.kmz`, `.xml` (if it's a SMART XML file), Shapefiles (`.shp` and accompanying files)), GeoPackage files (`.gpkg`), and CyberTracker files (`.json`) to GeoJSON for ingestion.
-* Optionally applies **source-specific** transformations (e.g., KoboToolbox, CoMapeo, ODK, Locus Map)
-* Writes the result to a **new** or **existing** Postgres table and archives files to file storage
+Prefer a connector whenever one is available for your source tool. Connectors keep data synchronized, handle source-specific structure, and preserve metadata such as translations and attachments.
 
----
+Use the Dataset Importer when the data you need cannot be retrieved through a connector, for example:
 
-## Step-by-Step: Import a Dataset
+- A backup of an archived or deleted project.
+- A historical export from a tool that no longer provides access to the data.
+- A file from a tool that has no connector.
+- A cleaned or modified copy of a dataset that originally came from a connector. For example, you exported a connector-generated table from Guardian Connector, cleaned it in a spreadsheet or QGIS, and now need to bring the cleaned version back in. The connector will re-fetch the upstream source, not your edited copy.
 
-### 1. Open the app in Windmill
+This applies to every source tool. If a connector can fetch the data, use the connector. The Dataset Importer is the fallback for files.
 
-From **GC Scripts Hub → Apps**, click **GC Dataset Importer**.
+If you are bringing back a cleaned copy of an existing Guardian Connector dataset, use **Merge** or **Sync** with a stable identity column so the cleaned rows update the existing table instead of creating duplicates.
 
-![Open the GC Dataset Importer app](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-1.jpg)
-
-### 2. Choose or name your dataset
-
-In the **Choose your dataset** step, you can either:
-
-* **Select an existing dataset** from the interactive dropdown menu — which searches and filters existing tables in your data warehouse as you type — to append new data to that dataset, or
-* **Create a new dataset** by entering a clear, human-readable name in the **Dataset name** field below.
-
-![Choose an existing dataset or enter a new dataset name](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-2.jpg)
-
-As you select or enter a name, the importer automatically checks the database in the background and displays the resulting table name in the warehouse.
-
-:::tip Appending to an existing table
-
-If you select an existing dataset from the dropdown (or enter a name that matches an existing table), the importer alerts you that new records will be appended directly to that table.
-
+:::note KoboToolbox and ODK
+These exports include structure that is specific to those tools, such as repeat groups, translations, and media attachments. Use their connectors when the data is still available. If you import one as a file, use the submission UUID or ID (`_uuid`, `instanceID` / `instanceId`, or `__id`) as the identity column.
 :::
 
-### 3. Upload your file
+## Import goals {#import-goals}
 
-Select your file and click **Upload File**. When the upload completes, proceed to the next step.
+| Goal | What it does | Existing rows not in the upload |
+| --- | --- | --- |
+| **Create** | Creates a new dataset from the uploaded file. | Not applicable |
+| **Append** | Adds every uploaded row without matching. | Kept |
+| **Merge** | Matches and updates existing rows, and adds new rows. | Kept |
+| **Sync** | Matches and updates existing rows, and adds new rows. | Deleted |
 
-![Upload your file and confirm success](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-4.jpg)
+Choose a goal, upload a file, and review the preview before confirming. **Create** asks for a new dataset name. **Append**, **Merge**, and **Sync** ask you to select an existing dataset. **Merge** and **Sync** also ask you to choose identity columns and an update policy.
 
-**Accepted formats**: CSV, GeoJSON, GPX, JSON, KML, XLS, XLSX, KMZ, XML (SMART), GeoPackage (`.gpkg`), and Shapefiles.
+To replace a dataset, create a new one and then delete the old one.
 
-### 4. (Optional) Choose a known data source
+No import goal removes columns. Columns remain in the dataset even if the uploaded file does not contain them.
 
-If the file originates from a known tool, toggle **Is this dataset from a known source or tool?** and select it. This adds a `data_source` tag and, for some sources, applies smart formatting.
+## Merging and syncing {#merging-and-syncing}
 
-![Choose a known data source](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-5.jpg)
+Merge and Sync match uploaded rows to existing rows using **record identity**.
 
-**Examples**
+### Choose identity columns
 
-* **KoboToolbox**: standardizes survey exports for consistent column names and types
-* **CoMapeo / Mapeo / Locus Map**: normalizes fields for observations and waypoints
+- Choose one to three columns from the uploaded file.
+- The values must exist in both the upload and the target dataset.
+- Every selected value must be complete and unique in the upload. Missing, empty, whitespace-only, or duplicate identities are rejected.
+- The dropdown shows how uploaded fields map to stored columns and marks fields that are not in the target dataset.
 
-### 5. Review and finalize
+### Identity guidance for common sources
 
-Confirm the summary and click **Save & Finish** to write the data.
+When importing a file from a known tool, these fields usually make good identity columns:
 
-![Review summary and save](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-6.jpg)
+| Source | Identity guidance |
+| --- | --- |
+| CoMapeo | Use the observation or track document ID (`docId`), or the GeoJSON feature ID. |
+| eBird | Use `subId` with `speciesCode`; use `obsId` when present. |
+| GBIF | Use the GBIF occurrence ID (`gbifID` / `gbif_id`). |
+| iNaturalist | Use the observation `id` or `uuid`. |
+| ArcGIS | Use `globalid` when present; otherwise use `objectid`. |
+| CyberTracker | Use the record `uid` when present. |
+| Timelapse | Use the image or media `id`. |
+| Locus Map | Use a stable source ID if the export has one. Otherwise use a composite such as name + date/time, or choose **Append**. |
+| SMART | Use the patrol ID with the waypoint ID, or choose **Append** if those are not available. |
 
-You’ll see a success message when the import is complete.
+If the export has no stable unique ID, prefer **Append** rather than Merge or Sync. If you need to match rows, use a combination of fields that together identify a row, such as site + date + observer.
 
-![Success confirmation](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-7.jpg)
+### Choose an update policy
 
----
+- **Imported records win**: matching rows are updated with the uploaded values. Omitted fields stay unchanged. Empty values in the upload can overwrite existing values.
+- **Existing records win**: matching rows stay unchanged.
 
-## After You Import
+:::danger Sync deletes rows
+Sync deletes every unmatched row in the entire selected table, including rows from other sources. This happens even when **Existing records win** is selected.
+
+Sync deletes rows, not columns. Existing columns remain in the dataset even if the uploaded file does not contain them.
+:::
+
+## Safe preview and permanent changes {#preview-and-permanent-changes}
+
+:::note Nothing is written yet
+Choosing a goal, uploading a file, choosing identity, and generating a preview do not change your dataset.
+:::
+
+The **Review** step shows what will happen if you continue:
+
+- The source file and detected format.
+- The goal, target dataset, identity, and update policy.
+- How many rows will be deleted, updated, and added.
+- How many columns will be added.
+- How many records are unchanged and the final record count.
+- A warning when Sync will delete rows.
+- **Field mappings** between uploaded fields and stored columns.
+- How many imported records have valid map geometry.
+
+:::warning Confirm import makes permanent changes
+Clicking **Confirm import** writes the changes to your dataset. There is no undo in the app.
+:::
+
+If you leave before confirming, no changes are applied. If the dataset changes while you are reviewing, the app may ask you to review again before confirming.
+
+## Supported files and limits {#supported-files}
+
+The importer supports:
+
+- CSV, Excel (`.xls`, `.xlsx`), JSON arrays, GeoJSON, GeoPackage, GPX, KML, SMART XML, and ZIP archives.
+- Shapefile ZIPs and ZIPs containing other supported files.
+- CyberTracker backup JSON and SMART XML, detected automatically.
+
+Notes:
+
+- Maximum upload size: **25 MiB**.
+- GeoPackages must contain one spatial layer.
+- GeoJSON files containing `GeometryCollection` are not supported.
+
+## After you import {#after-you-import}
 
 ### Use your new table in GC Explorer
 
-Open **GC Explorer** and add your newly created table to a View to explore or publish.
+Open **GC Explorer** and add the table to a View to explore or publish. See [GC Explorer](/reference/gc-toolkit/gc-explorer/).
 
-![Add the new table in GC Explorer](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-9.jpg)
+If you use [Superset](/reference/gc-toolkit/superset/) or another tool that connects to PostgreSQL, the table is available there too.
 
-See: [GC Explorer](/reference/gc-toolkit/gc-explorer/)
+### Find the uploaded file in File Browser
 
-:::info
+The importer stores the original upload in the data lake under the dataset folder. Find it in [File Browser](/reference/gc-toolkit/filebrowser/) for downloads or share links.
 
-If you are using [Superset](/reference/gc-toolkit/superset/), or any other tool that uses PostgreSQL as a data source, you can use also access the uploaded data there.
+### Upload media attachments
 
-:::
+If the dataset refers to photos, audio, or video, upload those files with [File Browser](/reference/gc-toolkit/filebrowser/). Put them in a folder under the dataset folder, then use a share link in GC Explorer to display them. See [File Browser: generating share links](/reference/gc-toolkit/filebrowser/#generating-share-links).
 
+## Troubleshooting {#troubleshooting}
 
-### Access your uploaded files in File Browser
+- **Identity field is rejected.** Every selected identity value must be complete and unique in the upload, and must exist in the target dataset.
+- **The import has no changes.** Check the preview counts. Create and Sync require at least one row; Append and Merge with no rows do nothing.
+- **`GeometryCollection` is not supported.** Convert the file to a supported geometry type before uploading.
+- **You need to replace a dataset.** Create a new dataset and delete the old one; the importer does not have a Replace mode.
+- **A file is too large.** Reduce the file size, or split the data into smaller imports.
 
-The importer saves both the **original** file and any **transformed** output in a folder named after your table (e.g., `my_kobo_toolbox_data`).
+## See also {#see-also}
 
-![Find original and transformed files in File Browser](/img/reference/gc-toolkit/gc-scripts-hub/dataset-uploader-8.jpg)
-
-See: [File Browser](/reference/gc-toolkit/filebrowser/) for share links or downloads.
-
-:::tip
-
-If you uploaded a spatial data file, you can download it here to use in a tool like [QGIS](/reference/companion-applications/qgis/).
-
-:::
-
-### Upload media attachments in File Browser
-
-Often, datasets from tools like CoMapeo, Mapeo, or Locus Map, include media attachments like photos, audio, or video files. You can upload these to File Browser.
-
-1. Open File Browser.
-2. Navigate to the dataset folder.
-3. Create a new folder for the media attachments like `media`, `photos` or `attachments`. (It is recommended to use the same folder name as what was exported from the tool.)
-4. Open the new folder, and upload the media files (either using the drag-and-drop interface, or by clicking the **Upload** button).
-
-:::tip
-
-You can now generate a share link for the media attachments folder and use it in a tool like [GC Explorer](/reference/gc-toolkit/gc-explorer/) to embed the media attachments in a view. See [File Browser: generating share links](/reference/gc-toolkit/filebrowser/#generating-share-links) for more details.
-
-:::
-
----
-
-## Tips & Troubleshooting
-
-* **Unsupported file type.** Convert it locally to one of the supported formats, then re-upload.
-* **Large files.** If the upload stalls, the file might be too large. Try resizing the file to a smaller size. A recommended maximum size for a file is 5MB on a computer, or 1-2MB on a mobile device.
-* **Accidental upload.** If you accidentally upload a file, but did not click **Save & Finish**, you can just refresh the page. (It will be cleaned up automatically.) If you did click **Save & Finish**, the database table will have to be deleted manually. (In the future, we will add a way to delete the table.)
-
-_For any other issues, please contact us at [guardianconnector@conservationmetrics.com](mailto:guardianconnector@conservationmetrics.com) or file an issue on [GitHub](https://github.com/ConservationMetrics/gc-scripts-hub/issues)._
-
----
-
-## See also
-
-* [**File Browser**](/reference/gc-toolkit/filebrowser/) - for sharing links or downloads of the original and transformed files, or uploading media attachments associated with the dataset.
-* [**Technical overview & architecture**](https://github.com/ConservationMetrics/gc-scripts-hub/blob/main/f/apps/gc_dataset_importer.app/README.md) - for developers, and includes a [to-do list](https://github.com/ConservationMetrics/gc-scripts-hub/blob/main/f/apps/gc_dataset_importer.app/README.md#todo) for future features.
+- [File Browser](/reference/gc-toolkit/filebrowser/) — for the original upload and media attachments.
+- [GC Explorer](/reference/gc-toolkit/gc-explorer/) — for exploring and publishing the imported data.
+- [Technical reference](https://github.com/ConservationMetrics/gc-scripts-hub/blob/main/f/apps/gc_dataset_importer_v2.raw_app/README.md) — implementation details for developers.

@@ -69,12 +69,12 @@ The GC Scripts Hub includes connectors that automatically gather data from vario
 ---
 
 ## 💾 Dataset Importer
-- **Dataset Importer**: An application to import datasets in file format to the Guardian Connector data warehouse. See the [Dataset Importer](/reference/gc-toolkit/gc-scripts-hub/dataset-importer/) page for more details.
+- **Dataset Importer**: Create a new dataset or append, merge, or sync an existing one, including tables created by connectors. The importer previews changes before anything is written and can match records using one or more identity columns. Use it for files that cannot be fetched through a connector, such as backups of archived projects or cleaned copies of data exported from Guardian Connector. See the [Dataset Importer](/reference/gc-toolkit/gc-scripts-hub/dataset-importer/) page for more details.
 - **Broad File Format Support**: Robust ingestion capabilities for diverse geospatial and administrative data standards:
-  - Vector data: Shapefile, GeoJSON, KML/KMZ, GPX, GeoPackage
+  - Vector data: Shapefile, GeoJSON, KML, GPX, GeoPackage
   - Tabular data: CSV, XLS, XLSX
-  - Other structured data: JSON, XML
-- **Source-specific transformations**: Apply transformations specific to the source tool, such as KoboToolbox, CoMapeo, ODK, Locus Map.
+  - Other structured data: JSON, XML, ZIP archives, CyberTracker JSON, SMART XML
+- **Automatic format detection**: Detects supported file formats automatically. For ongoing data from a source tool, use its connector.
 
 
 ---

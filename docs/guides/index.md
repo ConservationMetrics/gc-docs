@@ -152,6 +152,18 @@ A post-fieldwork workflow for monitoring teams: take the GPS tracks already reco
 - Building a one-page field trip report: route map, effort box, and per-site findings table
 - Archiving tracks into the instance so cumulative effort per season accumulates automatically
 
+### [Responsible Use of AI Assistants](./llms-and-ai/guide-responsible-llm-usage/)
+
+A practical guide for anyone using ChatGPT, Claude, or similar tools, including Indigenous Peoples' organizations and other groups. You can follow it with or without Guardian Connector. It explains which information stays in your own systems, how to turn off model training, and how to keep communications in your own words.
+
+**What you'll learn:**
+- Which files, locations, names, recordings, and partner messages to keep out of AI chats
+- How to ask a general question, or get help with a formula, using column names and made-up examples
+- Where to turn off training in ChatGPT and Claude, and what that switch does and does not change
+- Why reports, emails, and community briefings should be written by a person who knows the context
+
+**Format:** Single-page guide with a simple test, setting steps, and a short example of a safe prompt.
+
 ## Support and Community
 
 These tutorials are living documents that evolve based on community feedback and needs. If you have questions, suggestions, or would like to share how you've adapted these workflows for your community, we encourage you to reach out and contribute to the collective learning process.

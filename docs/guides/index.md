@@ -154,7 +154,7 @@ A post-fieldwork workflow for monitoring teams: take the GPS tracks already reco
 
 ### [Responsible Use of AI Assistants](./llms-and-ai/guide-responsible-llm-usage/)
 
-A practical guide for partners who use ChatGPT, Claude, or similar tools alongside Guardian Connector. It explains which information stays in your own systems, how to turn off model training, and how to keep community communications in your own words.
+A practical guide for anyone using ChatGPT, Claude, or similar tools, including Indigenous Peoples' organizations and other groups. You can follow it with or without Guardian Connector. It explains which information stays in your own systems, how to turn off model training, and how to keep communications in your own words.
 
 **What you'll learn:**
 - Which files, locations, names, recordings, and partner messages to keep out of AI chats

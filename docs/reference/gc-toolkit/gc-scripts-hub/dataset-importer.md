@@ -5,20 +5,20 @@ tags: [itu-3, opu, tsp]
 
 # GC Dataset Importer
 
-Upload a file and write it to a new or existing PostgreSQL table in your Guardian Connector data warehouse. You can import into a dataset created by the importer or by a connector. The importer detects the file format automatically; you do not need to choose a data source.
+Upload a file and write it to a new or existing PostgreSQL table in your Guardian Connector data warehouse. You can import into a dataset created by the importer or by a connector script. The importer detects the file format automatically; you do not need to choose a data source.
 
 ![Choose what the import should do to existing data](/img/reference/gc-toolkit/gc-scripts-hub/dataset-importer-goals.png)
-_Choose what the import should do to existing data._
+_Choose what the import should do in relation to an existing dataset._
 
 ## When to use the Dataset Importer {#when-to-use}
 
-Prefer a connector whenever one is available for your source tool. Connectors keep data synchronized, handle source-specific structure, and preserve metadata such as translations and attachments.
+You should always prefer using a connector (script) whenever one is available for your source tool. Connectors keep data synchronized, handle source-specific structure, and preserve metadata such as translations and attachments.
 
 Use the Dataset Importer when the data you need cannot be retrieved through a connector, for example:
 
-- A backup of an archived or deleted project.
+- A backup of an archived or deleted data project.
 - A historical export from a tool that no longer provides access to the data.
-- A file from a tool that has no connector.
+- A file that has no associated connector. (Either because the tool is not supported, or because it's just a plain spreadsheet, GeoJSON file, etc.)
 - A cleaned or modified copy of a dataset that originally came from a connector. For example, you exported a connector-generated table from Guardian Connector, cleaned it in a spreadsheet or QGIS, and now need to bring the cleaned version back in. The connector will re-fetch the upstream source, not your edited copy.
 
 This applies to every source tool. If a connector can fetch the data, use the connector. The Dataset Importer is the fallback for files.
@@ -135,7 +135,9 @@ The importer stores the original upload in the data lake under the dataset folde
 
 ### Upload media attachments
 
-If the dataset refers to photos, audio, or video, upload those files with [File Browser](/reference/gc-toolkit/filebrowser/). Put them in a folder under the dataset folder, then use a share link in GC Explorer to display them. See [File Browser: generating share links](/reference/gc-toolkit/filebrowser/#generating-share-links).
+If the dataset refers to photos, audio, or video, upload those files with [File Browser](/reference/gc-toolkit/filebrowser/). Put them in a folder under the dataset folder.
+
+This is a good practice to keep your media attachments together with your dataset. Additionally, you can generate a share link to embed them in a tool like GC Explorer. See [File Browser: generating share links](/reference/gc-toolkit/filebrowser/#generating-share-links).
 
 ## Troubleshooting {#troubleshooting}
 

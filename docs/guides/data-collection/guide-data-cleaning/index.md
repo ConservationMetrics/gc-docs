@@ -7,7 +7,7 @@ tags: [itu-3, opu, tsp]
 
 Data cleaning usually happens outside Guardian Connector: you export a copy, clean it in a tool you trust, and bring the cleaned version back. This guide covers that round trip. It focuses on the Guardian Connector-specific decisions — where to get the data, how to protect record identity, and how to re-import without breaking charts or connector workflows.
 
-For cleaning techniques — duplicates, missing values, typos, data types, outliers — see [Week 4: Data Cleaning](/guides/data-collection/syllabus-data-management-with-kobotoolbox/week-4). For the recommended tool, see [OpenRefine](/reference/companion-applications/openrefine/).
+For cleaning techniques — duplicates, missing values, typos, data types, outliers — see [Week 4: Data Cleaning](/guides/data-collection/syllabus-data-management-with-kobotoolbox/week-4) in the KoboToolbox Data Management  Syllabus. For the tool recommended there, see [OpenRefine](/reference/companion-applications/openrefine/).
 
 ## Different ways to work with raw data
 
@@ -123,9 +123,9 @@ If you do not have a reliable identity, do not force a merge. Create a new deriv
 
 Sometimes the data is fine but a chart needs friendlier values — for example mapping `0` and `1` to “No” and “Yes”, or joining Kobo choice labels. Use a Superset virtual dataset or a calculated column instead of cleaning the stored table.
 
-These recipes change the query, not the data. See [Helpful SQL Queries](/reference/gc-toolkit/superset/queries). If the underlying data itself needs correcting, continue with the import step below.
+These recipes change the query, not the data. See [Helpful SQL Queries](/reference/gc-toolkit/superset/queries) for Superset. If the underlying data itself needs correcting, continue with the import step below.
 
-## 3. Put the cleaned data back
+## 3. Upload the cleaned data
 
 Use the [GC Dataset Importer](/reference/gc-toolkit/gc-scripts-hub/dataset-importer/) to upload the cleaned file. Its [import goals](/reference/gc-toolkit/gc-scripts-hub/dataset-importer/#import-goals) section covers the step-by-step behavior; the important decision here is which goal fits the cleaning job.
 

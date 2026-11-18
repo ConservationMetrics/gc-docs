@@ -44,6 +44,20 @@ To replace a dataset, create a new one and then delete the old one.
 
 No import goal removes columns. Columns remain in the dataset even if the uploaded file does not contain them.
 
+## Supported files and limits {#supported-files}
+
+The importer supports:
+
+- CSV, Excel (`.xls`, `.xlsx`), JSON arrays, GeoJSON, GeoPackage, GPX, KML, SMART XML, and ZIP archives.
+- Shapefile ZIPs and ZIPs containing other supported files.
+- CyberTracker backup JSON and SMART XML, detected automatically.
+
+Notes:
+
+- Maximum upload size: **25 MiB**.
+- GeoPackages must contain one spatial layer.
+- GeoJSON files containing `GeometryCollection` are not supported.
+
 ## Merging and syncing {#merging-and-syncing}
 
 Merge and Sync match uploaded rows to existing rows using **record identity**.
@@ -107,31 +121,23 @@ Clicking **Confirm import** writes the changes to your dataset. There is no undo
 
 If you leave before confirming, no changes are applied. If the dataset changes while you are reviewing, the app may ask you to review again before confirming.
 
-## Supported files and limits {#supported-files}
-
-The importer supports:
-
-- CSV, Excel (`.xls`, `.xlsx`), JSON arrays, GeoJSON, GeoPackage, GPX, KML, SMART XML, and ZIP archives.
-- Shapefile ZIPs and ZIPs containing other supported files.
-- CyberTracker backup JSON and SMART XML, detected automatically.
-
-Notes:
-
-- Maximum upload size: **25 MiB**.
-- GeoPackages must contain one spatial layer.
-- GeoJSON files containing `GeometryCollection` are not supported.
-
 ## After you import {#after-you-import}
 
-### Use your new table in GC Explorer
+### Use your new table in one of the GC data analysis tools
 
-Open **GC Explorer** and add the table to a View to explore or publish. See [GC Explorer](/reference/gc-toolkit/gc-explorer/).
+Your new table is a regular PostgreSQL table, so any Guardian Connector analysis tool can use it:
 
-If you use [Superset](/reference/gc-toolkit/superset/) or another tool that connects to PostgreSQL, the table is available there too.
+- **GC Explorer**: Add the table to a View to explore or publish it. See [GC Explorer](/reference/gc-toolkit/gc-explorer/).
+- **Superset**: Connect to the warehouse database to build charts and dashboards. See [Superset](/reference/gc-toolkit/superset/).
+- **Other PostgreSQL tools**: Any client that connects to PostgreSQL can query the table.
 
 ### Find the uploaded file in File Browser
 
 The importer stores the original upload in the data lake under the dataset folder. Find it in [File Browser](/reference/gc-toolkit/filebrowser/) for downloads or share links.
+
+:::tip Why might you want to download the file instead?
+The stored original lets you work with exactly the file you uploaded — for example, to open it in QGIS, keep an offline copy, or re-import it later. See [Use your data in QGIS](/reference/common-workflows/use-your-data-in-qgis).
+:::
 
 ### Upload media attachments
 

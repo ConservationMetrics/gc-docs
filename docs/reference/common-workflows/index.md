@@ -19,7 +19,7 @@ Reference information for common tasks that involve Guardian Connector and relat
 
 ### Cleaning & preparing data
 
-- [Data Cleaning](/guides/data-collection/guide-data-cleaning/) — get raw data out, clean it, and re-import it without breaking views or connector workflows
+- [Clean and re-import a dataset](/reference/common-workflows/cleaning-and-preparing-data/data-cleaning/) — get raw data out, clean it, and bring it back without breaking views or connector workflows
 
 ### Monitoring & analysis
 

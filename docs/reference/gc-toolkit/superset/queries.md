@@ -18,7 +18,7 @@ These queries are written in SQL, which is a language for querying databases. If
 :::
 
 :::note
-These recipes transform data at query time — they do not change the stored table. If the dataset itself needs cleaning, see [Data Cleaning](/guides/data-collection/guide-data-cleaning/).
+These recipes transform data at query time — they do not change the stored table. If the dataset itself needs cleaning, see [Clean and re-import a dataset](/reference/common-workflows/cleaning-and-preparing-data/data-cleaning/).
 :::
 
 ## Using LLMs to generate SQL queries

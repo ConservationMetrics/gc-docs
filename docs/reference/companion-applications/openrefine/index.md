@@ -19,7 +19,7 @@ OpenRefine excels at tasks such as:
 One of its strengths is that it allows you to **create reusable transformation steps**. Once you've cleaned one dataset, you can apply the same steps to future datasets with similar structures. This makes it a great companion for iterative data work, where your understanding and structure evolve over time.
 
 :::tip
-For the full workflow around this tool — getting data out of Guardian Connector and putting the cleaned version back — see [Data Cleaning](/guides/data-collection/guide-data-cleaning/).
+For the full workflow around this tool — getting data out of Guardian Connector and putting the cleaned version back — see [Clean and re-import a dataset](/reference/common-workflows/cleaning-and-preparing-data/data-cleaning/).
 :::
 
 ---

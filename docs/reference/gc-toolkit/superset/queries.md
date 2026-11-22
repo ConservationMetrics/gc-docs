@@ -23,6 +23,12 @@ Tools like Claude, ChatGPT, GitHub Copilot, and similar assistants can help you 
 
 Give the model the column name(s), a short before → after example, what you want to happen, and that you are using it with PostgreSQL in Superset. Then paste the resulting expression into the chart metric, calculated column, or virtual dataset SQL Lab editor.
 
+:::tip Responsible LLM usage
+
+ChatGPT, Claude, and similar tools send whatever you paste to the company's servers. Before you use one with Guardian Connector data, read [Responsible Use of AI Assistants](/guides/llms-and-ai/guide-responsible-llm-usage/). Column names and made-up examples are enough for the recipes on this page. Real survey answers, locations, names, and other community or partner information stay in your own systems.
+
+:::
+
 ### Mitigating risks
 
 Do **not** paste confidential or personally identifiable data into a public LLM chat.

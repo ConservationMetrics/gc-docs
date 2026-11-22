@@ -33,7 +33,7 @@ GC Explorer transforms raw data into accessible, visual formats that help commun
 
 :::note Data Limitations
 
-To keep visualization responsive, GC Explorer loads up to a configured row limit, normally **10,000 records**. In Map and Alerts views, this limit applies separately to the primary and secondary datasets. When either dataset reaches the limit, a toast notification appears to indicate that more records may be available. Records without valid geometry are excluded from the map.
+To keep visualization responsive, GC Explorer loads up to a configured row limit, normally **10,000 records**. In Map and Alerts views, this limit applies separately to the primary and secondary datasets. When either dataset reaches the limit, a **Partial results** toast explains that the view shows up to that many features, that they are not a sorted first 10,000 features of the table, and that more features may be available. It also points to downloading the full dataset from [File Browser](/reference/gc-toolkit/filebrowser/) or viewing the data in another application. Records without valid geometry are excluded from the map.
 
 :::
 

@@ -6,17 +6,11 @@ description: How anyone, including Indigenous Peoples' organizations, can use Ch
 
 # Responsible Use of AI Assistants
 
-ChatGPT, Claude, Gemini, and similar tools can help you draft a paragraph, explain a chart, or sketch a formula. They are also someone else's computers. Whatever you type or paste is sent to that company, stored there, and, unless you change your settings, may be used to train later models.
+ChatGPT, Claude, Gemini, Copilot, and similar tools can help you draft a paragraph, explain a chart, or sketch a formula. They are also someone else's computers. Whatever you type or paste is sent to that company, stored there, and, unless you change your settings, may be used to train later models.
 
 This guide is for anyone who needs to decide what is safe to type or paste. That includes Indigenous Peoples' organizations, community groups, and other organizations. You can follow it whether or not you use Guardian Connector. You do not need to be a programmer.
 
 A **large language model (LLM)** is the system behind these chat tools. In this guide, "AI assistant" means ChatGPT, Claude, Gemini, and other LLM chat products, including assistants built into email, documents, or code editors.
-
-:::tip A simple test
-
-If you would not hand this text, file, or recording to a company you do not control, keep it out of the chat. A general question about how a tool works can go in. A spreadsheet, a map, a photo, a recording, or a message about your work stays in your own systems.
-
-:::
 
 :::warning Policies and settings change often
 
@@ -28,7 +22,7 @@ For the latest Indigenous-led resources on AI, data sovereignty, and community p
 
 ## What happens when you paste something in
 
-The chat window feels private. It is a message to the company that runs the service.
+When you use an LLM chat tool, the chat window can feel private, but when you send a message to an online AI service, you are sharing its contents with the company operating it.
 
 On a typical free or personal account, that company can:
 
@@ -38,13 +32,25 @@ On a typical free or personal account, that company can:
 
 Turning off training, covered [below](#turn-off-model-training), limits the second item for new chats. The conversation still leaves your computer. The company still receives it.
 
+A large company that runs this kind of service is hard to audit. You can accept a setting or a contract that says your chats will not be used for training. You cannot see the systems, the staff access, or the later product changes that would show whether that promise holds. The reliable protection is to keep sensitive records from reaching the company at all, including on an account that says the data will not be used.
+
 There is no reliable way to pull information back out of a model that has already been trained on it. Treat a paste as permanent.
+
+:::note What "trained on your information" means
+
+Training is how a company builds the next version of a model, or a newer revision of the one people are using now. Conversations become part of the material that shapes how that version responds. It picks up patterns from what was sent: the words, the facts, and the kind of answer that followed.
+
+A chat can follow the thread you are already in. Training reaches past your account. The newer model then answers anyone who uses it, anywhere, with that influence baked in. You do not get a private copy, and other people do not see your chat history. They meet a model that has been nudged by what you gave it.
+
+Distinctive details, such as a place name, a family name, or a phrase that appears almost nowhere else, can sometimes come back out in a later answer. That is less common than a general shift in how the model responds. Either way, you cannot aim the effect, and you cannot undo it.
+
+:::
 
 This sits alongside the wider duty to keep authority over community information with the community. See [Data Sharing Protocols Grounded in Indigenous Data Sovereignty](/guides/data-sovereignty/guide-data-sovereignty-and-protocols/).
 
 ## Keep sensitive information in your own systems
 
-The people a record is about, or the community authority that governs it, decide whether it can leave your systems. Having the file on your laptop does not grant that permission. Pasting it into ChatGPT or Claude shares it with an outside company.
+The people a record is about, or the community authority that governs it, decide whether it can leave your systems. Having the file on your laptop does not grant that permission. Pasting it into ChatGPT, Claude, Google Gemini, Microsoft Copilot, or Meta (i.e. via WhatsApp) shares it with an outside company.
 
 Keep all of the following out of AI assistants unless those people have agreed to this specific use:
 
@@ -57,6 +63,12 @@ Keep all of the following out of AI assistants unless those people have agreed t
 Locations deserve extra care. A nest site, a patrol route, a sacred place, or a household coordinate can cause harm if it spreads, even when the chat only asked for a summary.
 
 When you are unsure, leave it out and ask. The people the information is about, or the body that governs it, are the ones who can agree to share it. Someone who helps with the technology cannot agree for them.
+
+:::tip A simple test
+
+If you would not hand this text, file, or recording to a company you do not control, keep it out of the chat. A general question about how a tool works can go in. A spreadsheet, a map, a photo, a recording, or a message about your work stays in your own systems.
+
+:::
 
 ## Questions you can still ask
 
@@ -82,17 +94,23 @@ The same pattern works for formulas and database queries: send the column names 
 
 Use the first kind.
 
-## Use the website, and choose every word you send
+## Notice where an assistant is listening
 
-The safest habit is the website, where nothing is sent until you type or paste it. [claude.ai](https://claude.ai) and [ChatGPT](https://chatgpt.com) work this way.
+These tools are showing up inside programs people already trust: email, documents, search, messaging, and the web browser itself. A familiar screen can start reading what you type after an update. Before you put sensitive information into a tool, look for an assistant on that screen.
 
-Desktop apps, browser extensions, and assistants inside email or document tools can read more than the chat box. Some can see open files, a connected Drive folder, or the page you are on. A question you thought was general can leave with a spreadsheet, a map, or a password that was sitting in the same folder.
+Sharing with another person can continue the trip. A file you send to a colleague, a funder, or a support contact may be pasted into their assistant, or summarized by an assistant their email offers automatically. Ask what will happen to it, the same way you would ask before handing over a paper copy.
 
-Be selective before you install those. If you already use one, disconnect folders that hold sensitive records, exports, and sign-in details.
+A page open in your browser can feel like your own workspace. It sits inside the boundary of whoever hosts that website. What you type, upload, or display there is on their servers, including when the page shows your map, your dashboard, or your draft.
+
+If you do use a chat tool, prefer its website and choose every word you send. [claude.ai](https://claude.ai) and [ChatGPT](https://chatgpt.com) work this way: nothing goes until you type or paste it. That is a narrower door than a desktop app, a browser extension, or an assistant inside email or documents, which can read open files, a connected Drive folder, or the page you are on. A question you thought was general can leave with a spreadsheet, a map, or a password that was sitting in the same folder.
+
+Be selective before you install those. If you already use one, disconnect folders that hold sensitive records, exports, and sign-in details. The website is still the host's computer. Choosing what to paste limits the amount that goes. The host still holds whatever you send.
 
 ## Turn off model training
 
-For work that is sensitive but is not community or personal data — an unpublished workflow, a draft method, an internal planning note your organization allows you to process with an assistant — use a service that commits not to train on your chats. Sign in first. On personal ChatGPT and Claude accounts, training is on until you turn it off.
+Turn training off on any account you use. The switch is worth setting, and it is still a promise you cannot audit. Community records, personal information, and anything else you would not hand to an outside company stay off their servers.
+
+If your organization has already decided that a particular note may be processed with an assistant — for example a draft method with the sensitive details removed — use a service that commits not to train on chats, and sign in first. On personal ChatGPT and Claude accounts, training is on until you turn it off. When the work can be done without sending the material, do it that way.
 
 Check the setting in the account you are using, and read the provider's current help page before you trust a menu name from this guide. Companies rename these controls. Look for the switch about improving or training the model, and check it again after the product updates.
 
@@ -124,11 +142,13 @@ Claude can build an **Artifact**: an interactive page such as a chart or a dashb
 
 That arrangement works against data sovereignty. The community no longer holds the only copy, and turning off model training does not move the dashboard onto your own systems. If you want help with layout, use made-up numbers. Keep the real dashboard, and the real records, in a tool your organization controls. See [Data Sharing Protocols Grounded in Indigenous Data Sovereignty](/guides/data-sovereignty/guide-data-sovereignty-and-protocols/).
 
+ChatGPT has a similar feature, called [Sites](https://chatgpt.com/features/sites/).
+
 :::
 
 ### A few limits that survive the switch
 
-- The conversation is still sent to and stored by the company.
+- The conversation is still sent to and stored by the company. A setting that says it will not be used for training is difficult to verify from the outside.
 - A thumbs-up or thumbs-down on a reply can allow that conversation to be used for training. Skip those buttons when the chat includes anything you would not want reused.
 - Chats the company flags for safety review can still be read and used for safety systems.
 - A temporary or incognito chat is still sent to the company. It is a shorter retention setting. It is a poor place for community records.
@@ -140,25 +160,17 @@ That arrangement works against data sovereignty. The community no longer holds t
 
 If a new product appears, read its privacy terms before anyone on the team uses it for work. A tool being free, or good at drafting, does not tell you where the text goes.
 
-## Read the records yourself
-
-When the task is to understand records about a place, a household, a species, or a community decision, do that reading with people who know the context. An assistant does not know the place, the season, or what a number can and cannot say.
-
-Ask it how a formula or a filter works. Keep the actual rows, tracks, and findings with the people responsible for them.
-
-## Write the words other people will read
-
-Emails, reports, briefing notes, slides, and messages should come from a person who understands the situation and can stand behind each sentence.
-
-You can ask an assistant to check grammar or tighten a paragraph you wrote, after anything sensitive has been removed. Then read the result and change anything you would not say yourself. Cut repeated or padded sentences. If you use an assistant to help you think, edit the result before you send it. You are responsible for the words you pass on.
-
-An assistant has no relationship with the people you are writing to, no duty to your protocols, and no way to know what should stay unsaid. A clear paragraph can still misstate the facts or ignore a protocol.
-
-## Energy use and bias
+## Additional concerns: energy use and bias
 
 These tools use a lot of electricity, which sits uneasily with work to care for land and community. They also repeat biases present in the text they were trained on, including biased descriptions of people, places, and species. This guide leaves both topics open. The choice you can make today is what information you send, and whether a person remains responsible for the words and the analysis.
 
 The Humanitarian OpenStreetMap Team and the Red Cross published a [Responsible AI Guide](https://responsibleai.guide/) that covers these topics, including energy and emissions, in more depth.
+
+## :warning: If you are unsure
+
+Ask before you paste. Talk with your organizational lead and with the community that governs the information. If a new AI product might be used for organizational work, decide that with those people before anyone tries it on real data.
+
+When a provider announces a policy change, or when you open a new account, read their latest commitment and re-check the training switch before you send anything.
 
 ## Further reading
 
@@ -166,9 +178,3 @@ The Humanitarian OpenStreetMap Team and the Red Cross published a [Responsible A
 - [Data Sharing Protocols Grounded in Indigenous Data Sovereignty](/guides/data-sovereignty/guide-data-sovereignty-and-protocols/)
 - [Responsible AI Guide](https://responsibleai.guide/) (HOT and the Red Cross)
 - If you use Guardian Connector, [Helpful SQL Queries for Superset](/reference/gc-toolkit/superset/queries/#using-llms-to-generate-sql-queries) shows how to request a formula without pasting live rows
-
-## If you are unsure
-
-Ask before you paste. Talk with your organizational lead and with the community that governs the information. If a new AI product might be used for organizational work, decide that with those people before anyone tries it on real data.
-
-When a provider announces a policy change, or when you open a new account, read their latest commitment and re-check the training switch before you send anything.

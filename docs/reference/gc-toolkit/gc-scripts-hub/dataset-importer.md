@@ -19,11 +19,11 @@ Use the Dataset Importer when the data you need cannot be retrieved through a co
 - A backup of an archived or deleted data project.
 - A historical export from a tool that no longer provides access to the data.
 - A file that has no associated connector. (Either because the tool is not supported, or because it's just a plain spreadsheet, GeoJSON file, etc.)
-- A cleaned or modified copy of a dataset that originally came from a connector. For example, you exported a connector-generated table from Guardian Connector, cleaned it in a spreadsheet or QGIS, and now need to bring the cleaned version back in. The connector will re-fetch the upstream source, not your edited copy.
+- A [cleaned or modified copy](/reference/common-workflows/cleaning-and-preparing-data/data-cleaning/) of a dataset that originally came from a connector. For example, you exported a connector-generated table from Guardian Connector, cleaned it in a spreadsheet or QGIS, and now need to bring the cleaned version back in. The connector will re-fetch the upstream source, not your edited copy.
 
 This applies to every source tool. If a connector can fetch the data, use the connector. The Dataset Importer is the fallback for files.
 
-If you are bringing back a cleaned copy of an existing Guardian Connector dataset, use **Merge** or **Sync** with a stable identity column so the cleaned rows update the existing table instead of creating duplicates.
+If you are bringing back a cleaned copy of an existing Guardian Connector dataset, and updating the existing data is the right decision instead of creating a new dataset (see [Clean and re-import a dataset](/reference/common-workflows/cleaning-and-preparing-data/data-cleaning/#3-upload-the-cleaned-data)), use **Merge** or **Sync** with a stable identity column so the cleaned rows update the existing table instead of creating duplicates.
 
 :::note KoboToolbox and ODK
 These exports include structure that is specific to those tools, such as repeat groups, translations, and media attachments. Use their connectors when the data is still available. If you import one as a file, use the submission UUID or ID (`_uuid`, `instanceID` / `instanceId`, or `__id`) as the identity column.
@@ -54,7 +54,10 @@ The importer supports:
 
 Notes:
 
-- Maximum upload size: **25 MiB**.
+- Maximum upload size: **25 MiB** per file.
+- Maximum uncompressed size for ZIP and Excel (`.xls`, `.xlsx`) uploads: **100 MiB**.
+- Maximum **150 columns** per dataset.
+- A ZIP archive can contain at most **1,000 files**.
 - GeoPackages must contain one spatial layer.
 - GeoJSON files containing `GeometryCollection` are not supported.
 
@@ -121,6 +124,10 @@ Clicking **Confirm import** writes the changes to your dataset. There is no undo
 
 If you leave before confirming, no changes are applied. If the dataset changes while you are reviewing, the app may ask you to review again before confirming.
 
+:::note
+An unconfirmed preview expires after 24 hours. If yours expires, upload the file again and review it.
+:::
+
 ## After you import {#after-you-import}
 
 ### Use your new table in one of the GC data analysis tools
@@ -151,10 +158,12 @@ This is a good practice to keep your media attachments together with your datase
 - **The import has no changes.** Check the preview counts. Create and Sync require at least one row; Append and Merge with no rows do nothing.
 - **`GeometryCollection` is not supported.** Convert the file to a supported geometry type before uploading.
 - **You need to replace a dataset.** Create a new dataset and delete the old one; the importer does not have a Replace mode.
-- **A file is too large.** Reduce the file size, or split the data into smaller imports.
+- **A file is too large.** Uploads are limited to 25 MiB per file, and ZIP or Excel uploads must also be 100 MiB or less once uncompressed. Reduce the file size, or split the data into smaller imports.
 
 ## See also {#see-also}
 
 - [File Browser](/reference/gc-toolkit/filebrowser/) — for the original upload and media attachments.
 - [GC Explorer](/reference/gc-toolkit/gc-explorer/) — for exploring and publishing the imported data.
+- [Clean and re-import a dataset](/reference/common-workflows/cleaning-and-preparing-data/data-cleaning/) — how to export, clean, and re-import without duplicating records.
 - [Technical reference](https://github.com/ConservationMetrics/gc-scripts-hub/blob/main/f/apps/gc_dataset_importer_v2.raw_app/README.md) — implementation details for developers.
+- [Feature specification and limits](https://github.com/ConservationMetrics/gc-scripts-hub/blob/main/f/apps/gc_dataset_importer_v2.raw_app/SPEC.md) — full requirements and constraints, including the limits above.

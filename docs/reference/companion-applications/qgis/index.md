@@ -17,3 +17,5 @@ This makes QGIS a flexible and community-friendly tool for anyone working with l
 ## How to use QGIS with Guardian Connector
 
 Please see the [Use your data in QGIS](/reference/common-workflows/use-your-data-in-qgis/) guide for detailed instructions.
+
+To turn GPS tracks into a polygon and calculate its area, see [Create polygons from walked tracks](/reference/common-workflows/cleaning-and-preparing-data/create-polygons-from-tracks/).

@@ -20,6 +20,7 @@ Reference information for common tasks that involve Guardian Connector and relat
 ### Cleaning & preparing data
 
 - [Clean and re-import a dataset](/reference/common-workflows/cleaning-and-preparing-data/data-cleaning/) — get raw data out, clean it, and bring it back without breaking views or connector workflows
+- [Create polygons from walked tracks](/reference/common-workflows/cleaning-and-preparing-data/create-polygons-from-tracks/) — turn a GPS track into one polygon and get its area in hectares
 
 ### Monitoring & analysis
 

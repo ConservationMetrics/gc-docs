@@ -64,11 +64,17 @@ If the merge stops with the error `Merge failed: An error during the merge opera
 If it still fails, go to **Vector** → **Geometry Tools** → **Check Validity** to find the features that are still invalid.
 :::
 
-## 5. Check the area in hectares
+## 5. (Optional) Check the area
+
+This step is optional. Skip it if you only need the shape of the area.
 
 1. Go to **Project** → **Properties** → **General** → **Measurements** and set **Area units** to **Hectares**. Click **OK**.
 2. Click the **Identify Features** tool and click the polygon.
 3. In the results, open **Derived**. The **Area** value is your area in hectares.
+
+:::tip Other area units
+The **Area** value uses the unit set under **Area units**. For square meters, choose **Square meters** instead. To convert by hand, 1 hectare = 10,000 square meters.
+:::
 
 ## 6. Export as GeoJSON
 

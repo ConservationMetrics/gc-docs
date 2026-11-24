@@ -27,6 +27,10 @@ For detailed information about using CoMapeo, visit the [official CoMapeo docume
 
 * For ready-to-use category collections, see [Category Collections](./templates.md).
 
+## Tracks
+
+* To turn a walked CoMapeo track into a polygon and calculate its area in hectares, see [Create polygons from walked tracks](/reference/common-workflows/cleaning-and-preparing-data/create-polygons-from-tracks/).
+
 ## CoMapeo Archive Server
 
 The CoMapeo Archive Server acts both as a peer within a CoMapeo project and as a centralized API endpoint for accessing synchronized project data. Guardian Connector integrates directly with the Archive Server to support automated ingestion, visualization, and long-term storage of CoMapeo observations and media attachments.

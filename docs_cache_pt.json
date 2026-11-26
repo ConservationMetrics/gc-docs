@@ -1,0 +1,308 @@
+{
+  "524b6f62": {
+    "pt": "[Timelapse](https://timelapse.ucalgary.ca/) é um **software para Windows OS para revisar dados de armadilhas fotográficas e transformar arquivos brutos de imagem e vídeo em dados estruturados** que podem fornecer insights sobre a presença de espécies, diversidade e tendências populacionais. Esta é uma introdução rápida ao uso do software."
+  },
+  "b8ee6451": {
+    "pt": "O Timelapse pode ser baixado [aqui](https://timelapse.ucalgary.ca/download/). Existem três métodos de instalação diferentes. Recomendamos usar o \"1 MSI Per-User Installer (recomendado para a maioria)\", a menos que haja alguma razão pela qual você precise usar um dos outros métodos de instalação."
+  },
+  "49d40d14": {
+    "pt": ":::note\nO Timelapse está sendo ativamente desenvolvido, é de código aberto ([repositório GitHub](https://github.com/saulgreenberg/Timelapse)) e possui documentação abrangente. Para informações detalhadas, consulte os seguintes recursos.\n:::"
+  },
+  "709ea0df": {
+    "pt": ":::tip\nEste guia é apenas para **anotar** imagens e vídeos de armadilhas fotográficas que já foram coletados. Não é um guia para configurar um projeto de armadilha fotográfica ou gerenciar a implantação."
+  },
+  "f5e1a06b": {
+    "pt": ":::tip\nExistem muitos outros recursos na [página inicial do Timelapse](https://timelapse.ucalgary.ca/) para explorar à medida que você se familiariza mais com a ferramenta.\n:::"
+  },
+  "74898ace": {
+    "pt": "Este guia explica como associar metadados em nível de pasta ao seu conjunto de imagens e como preenchê-los. Ele também inclui vários padrões de metadados."
+  },
+  "7a9c464a": {
+    "pt": "**[Vídeo Complementar: Guia de Início Rápido (~13 min)](https://saul.cpsc.ucalgary.ca/timelapse/uploads/Videos/Video-TimelapseQuickStartGuide.mp4)**"
+  },
+  "31d7bb2c": {
+    "pt": "**[Um Tour Rápido pelo Timelapse (~16 min)](https://saul.cpsc.ucalgary.ca/timelapse/uploads/Videos/WhirlwindTourOfTimelapse.mp4)**"
+  },
+  "ac47765b": {
+    "pt": "**[Guia de Reconhecimento de Imagens (PDF)](https://timelapse.ucalgary.ca/wp-content/uploads/Guides/TimelapseImageRecognitionGuide.pdf)**"
+  },
+  "fc8c457c": {
+    "pt": "**[Vídeo Complementar: Guia de Modelos (~7 min)](https://saul.cpsc.ucalgary.ca/timelapse/uploads/Videos/TemplateEditor.mp4)**"
+  },
+  "a1f612d8": {
+    "pt": ":bar_chart: [Conjunto de imagens para prática do Timelapse](https://timelapse.ucalgary.ca/wp-content/uploads/Guides/PracticeImageSet.zip)"
+  },
+  "63a870da": {
+    "pt": "[Guias de drones Healthy Country AI sobre o uso do Timelapse, para guardas indígenas](https://healthycountryai.org/training.php)"
+  },
+  "e6c7de10": {
+    "pt": "**[Guia de Metadados (PDF)](https://timelapse.ucalgary.ca/wp-content/uploads/Guides/TimelapseImageRecognitionGuide.pdf)**"
+  },
+  "8fa038de": {
+    "pt": "**[Guia de Início Rápido (PDF)](https://timelapse.ucalgary.ca/wp-content/uploads/Guides/TimelapseQuickStartGuide.pdf)**"
+  },
+  "dc1d7cb5": {
+    "pt": "Para implantação, consulte o guia [Implantação de Armadilhas Fotográficas](/guides/biodiversity/guide-camera-trap-deployment/).\n:::"
+  },
+  "d29a8d03": {
+    "pt": "**[Guia de Referência (PDF)](https://saul.cpsc.ucalgary.ca/timelapse/uploads/Guides/TimelapseReferenceGuide.pdf)**"
+  },
+  "98615a9a": {
+    "pt": "**[Guia de Modelos (PDF)](https://timelapse.ucalgary.ca/wp-content/uploads/Guides/TimelapseReferenceGuide.pdf)**"
+  },
+  "e9a46bab": {
+    "pt": "[Implantação de Armadilhas Fotográficas](/guides/biodiversity/guide-camera-trap-deployment/) — configurando um projeto de armadilha fotográfica"
+  },
+  "0c4cfad4": {
+    "pt": "**[Guia de Banco de Dados (PDF)](https://timelapse.ucalgary.ca/wp-content/uploads/Guides/TimelapseDatabaseGuide.pdf)**"
+  },
+  "3b812dd9": {
+    "pt": "Um guia prático que o orienta no carregamento, inspeção e marcação de um conjunto de imagens e vídeos para prática."
+  },
+  "761b9191": {
+    "pt": "Detalha a estrutura interna do banco de dados. Útil se você planeja acessar o banco de dados diretamente."
+  },
+  "c3c77d8b": {
+    "pt": "Abrange todos os recursos disponíveis em detalhes. Altamente recomendado para otimizar seu fluxo de trabalho."
+  },
+  "e72ea8b2": {
+    "pt": "Este guia explica como usar o recurso de reconhecimento automático de imagens no Timelapse."
+  },
+  "2846071c": {
+    "pt": ":arrow_down: [Download e Instalação](https://timelapse.ucalgary.ca/download/)"
+  },
+  "8474bea7": {
+    "pt": "Explica como criar e gerenciar modelos usando o Editor de Modelos do Timelapse."
+  },
+  "d94f08dd": {
+    "pt": ":open_book: [Guias e Tutoriais do Usuário](https://timelapse.ucalgary.ca/guides/)"
+  },
+  "10ceba65": {
+    "pt": "Isso é realmente útil como um modelo para construir seu próprio projeto Timelapse."
+  },
+  "8dbbfe9e": {
+    "pt": ":movie_camera: [Tutoriais em Vídeo](https://timelapse.ucalgary.ca/videos/)"
+  },
+  "cc6042e5": {
+    "pt": ":house: [Página Inicial do Timelapse](https://timelapse.ucalgary.ca/)"
+  },
+  "401fe9c8": {
+    "pt": "Recursos Principais dos Desenvolvedores do Timelapse {#key-resources}"
+  },
+  "2ee2546f": {
+    "pt": "Timelapse: Configurando um Projeto para Anotação de Armadilhas Fotográficas"
+  },
+  "ff85555a": {
+    "pt": "Documentação relacionada"
+  },
+  "dc3fe914": {
+    "pt": "Instalando o Timelapse"
+  },
+  "4567c7fe": {
+    "pt": "📚 Leitura adicional"
+  },
+  "f5ee0611": {
+    "pt": ":::nota\nO DJI Fly não oferece uma forma para ferramentas externas *criarem* uma missão, então o **MavenBridge funciona substituindo uma missão que já existe no controlador**. Faça isso uma vez com antecedência: salve qualquer pequena missão de waypoint no DJI Fly e, em seguida, permita que cada transferência do MavenBridge sobrescreva esse slot com sua grade planejada — o controlador sempre mantém sua missão mais recente. Uma ressalva: a missão a ser substituída deve ser armazenada *fisicamente no dispositivo*, não na sua nuvem DJI; se o MavenBridge não a listar, abra a missão uma vez no DJI Fly e feche-a, o que a baixará localmente. A [página de documentação do MavenBridge](https://www.mavenpilot.com/mavenbridge/) detalha a transferência completa (com um vídeo de demonstração), e o [hub de tutoriais em vídeo](https://www.mavenpilot.com/tutorial/) da Maven cobre o fluxo de trabalho do planeador ao voo de ponta a ponta.\n:::"
+  },
+  "084552fb": {
+    "pt": "Se nenhum computador da equipe puder suportar a RAM, o [Geostitch](https://geostitch.io/) é um frontend web gratuito que impulsiona o mesmo motor ODM (via NodeODM): crie uma conta, carregue as imagens de voo e escolha onde o processamento acontece — seu próprio nó NodeODM se você tiver uma máquina potente, um servidor alugado por mês, ou computação em nuvem **paga por trabalho**. A interface, projetos e exportações não custam nada; o processamento sim — o modo “pago por trabalho” usa créditos pré-pagos cujo custo escala com a contagem de imagens e a predefinição de qualidade, e os servidores alugados começam com uma taxa mensal fixa. Ainda assim, a conta é uma pequena fração do custo de uma estação de trabalho capaz de costurar os mesmos conjuntos de dados localmente, e você nunca paga por hardware parado entre expedições."
+  },
+  "8dc61393": {
+    "pt": "A missão agora voa sozinha — altitude, velocidade, intervalos de foto exatamente como configurado. Essa automação é o ponto principal, porque a **fotogrametria só é bem-sucedida se cada foto atender às condições das quais a costura depende**: sobreposição suficiente com suas vizinhas, escala consistente de uma altura constante, quadros nítidos o suficiente para corresponder e carimbos GPS precisos. Quando alguém voa um local manualmente e tira fotos por instinto, uma ou mais dessas condições geralmente falham *silenciosamente* — e você só descobre isso no momento do processamento, longe do local, quando o mapa tem buracos ou se recusa a alinhar. Uma grade planejada é uma garantia, definida com antecedência, de que o conjunto de dados produzirá um mapa."
+  },
+  "5385b818": {
+    "pt": ":::info Análise opcional — apenas quando uma questão permanece\nSe o mapa em papel ainda deixar uma questão em aberto, o QGIS pode responder a duas que importam para relatórios de mineração: medir a área perturbada em hectares (Calculadoras de Campo / *$area* numa pegada digitalizada) e digitalizar o contorno **verificado** para substituir o polígono de alerta ao registrar o local num [incidente](/reference/gc-toolkit/gc-explorer/incidents/). Qualquer coisa além disso — volumes, mudança de profundidade entre voos — precisa do DSM e pertence a um projeto separado e posterior.\n:::"
+  },
+  "c203ae0f": {
+    "pt": "Um voo de drone automatizado é uma forma barata de “visitar” o local sem ir. O drone voa um caminho planejado, captura várias fotos geotagged sobrepostas, e o software as costura num **ortomosaico** — um mapa contínuo e de alta resolução. Esse mapa responde à maioria das perguntas que uma visita de campo faria: o que aconteceu aqui, quão grande é, se as máquinas estão funcionando, em que direção está crescendo. A equipe então decide se a viagem presencial é realmente necessária."
+  },
+  "2166bd9a": {
+    "pt": ":::important\nKML é o formato a ser usado aqui — os planejadores de missão aceitam um polígono ou contorno KML diretamente como a área de pesquisa. A exportação GeoJSON do [guia de briefing de campo](/guides/land-monitoring/guide-mining-alert-field-briefings/) continua sendo a escolha certa para a análise do QGIS; as duas exportações descrevem o mesmo local e se alinharão exatamente, pois tudo o que o Guardian Connector publica está em WGS84.\n:::"
+  },
+  "cfe931c7": {
+    "pt": "O principal trabalho é a impressão. Substitua o ortomosaico **sob os layouts de impressão existentes** do [guia de briefing de campo](/guides/land-monitoring/guide-mining-alert-field-briefings/): as mesmas páginas por local que o conselho já reconhece — título, rótulos, barra de escala, legenda — agora mostram o local com detalhes suficientes para contar máquinas e ler o caminho de acesso. Esse já é todo o retorno; resista a adicionar trabalho."
+  },
+  "78b471d8": {
+    "pt": "Ferramentas comerciais (Pix4D, Metashape, DJI Terra, DroneDeploy) também fazem isso; este guia foca na família gratuita e de código aberto **OpenDroneMap**: o motor de linha de comando **ODM**, a interface de navegador **WebODM** e a API de rede **NodeODM**. Existem várias outras ferramentas neste espaço que não abordaremos — a escolha importa menos do que a captura que você traz para elas."
+  },
+  "30d99e4c": {
+    "pt": ":::tip\nDimensione o voo de acordo com o que você precisa *ver*. Uma operação de 2 hectares e um lago de 20 hectares são missões diferentes — em caso de dúvida, voe a área alertada mais uma margem de 30–50 m de cada lado, para que o mapa mostre um contexto que o alerta via satélite não pode, e/ou monitore o voo automatizado enquanto ele acontece para detectar qualquer mudança que valha a pena capturar.\n:::"
+  },
+  "5db56155": {
+    "pt": "Escolha a altura pelo detalhe que você deve resolver, não o contrário: voe baixo o suficiente para que as trilhas de veículos, bordas de poços ou maquinário sejam identificáveis, mas tão alto quanto consistente com isso, para que um voo cubra o local. A altitude define diretamente sua resolução (distância de amostra do solo) — ~300 metros é geralmente o ponto ideal."
+  },
+  "b198f1f5": {
+    "pt": "Qualquer planejador que transforme um polígono em uma grade de fotos servirá. Este guia detalha o **MavenRoute**, o planejador de missão web do ecossistema [MavenPilot](https://www.mavenpilot.com/) — mas cada etapa é a mesma em qualquer outra ferramenta: abra uma área, defina altitude e sobreposição, gere a grade, envie-a para o controlador."
+  },
+  "14cffb1a": {
+    "pt": "Carregue $CODEVAR[0] como uma camada raster (Camada → Adicionar Camada → Adicionar Camada Raster). Ele carrega suas coordenadas, então ele se posiciona exatamente sobre o polígono de alerta — que é em si a primeira descoberta: um mapa em escala de centímetros ou confirma ou anula o alerta, e muitas vezes mostra a verdadeira pegada estendendo-se além do que o satélite sinalizou."
+  },
+  "35c070b8": {
+    "pt": "Este fluxo de trabalho anda de mãos dadas com [Preparação de Briefings de Campo de Alerta de Mineração](/guides/land-monitoring/guide-mining-alert-field-briefings/): os mesmos alertas, os mesmos pacotes de briefing e relatórios — só que agora as páginas do local são geradas a partir de mapas de drones com resolução de centímetros em vez de imagens de satélite."
+  },
+  "c680388f": {
+    "pt": "ou inicie a interface WebODM ([guia de instalação](https://webodm.org/download/)) e crie a tarefa no navegador: carregue a pasta de imagens, mantenha as opções padrão e abra o resultado quando a tarefa terminar. O ortomosaico está sempre em $CODEVAR[0]."
+  },
+  "d9e59aa3": {
+    "pt": "Mantenha cada missão dentro de **uma bateria**: a grade deve terminar com uma reserva confortável, e um local que precise de troca de bateria no meio da missão produz dois mapas parcialmente cobertos. Se a área for muito grande, divida-a em duas missões sobre metades adjacentes, em vez de forçar um único voo."
+  },
+  "aa10c137": {
+    "pt": ":::nota\nO processamento na nuvem ainda exige *upload* — algumas centenas de fotos são 5–20 GB. No campo, traga as imagens para casa no cartão SD; execute a partir daí, seja localmente ou na nuvem. A internet lenta no campo quebra o fluxo de trabalho de qualquer forma, não apenas a opção de nuvem.\n:::"
+  },
+  "3315df7c": {
+    "pt": "**No ecossistema Maven**: transfira do MavenRoute para o aplicativo **Maven** no controlador via MavenShare; para aeronaves DJI Fly que não podem executar aplicativos de terceiros, exporte a missão como **KMZ** e envie-a para o controlador com a ferramenta desktop gratuita **MavenBridge**."
+  },
+  "5169c9df": {
+    "pt": ":::nota\nO campo de aplicativos de planejamento move-se rapidamente e inclui DroneDeploy, Pix4Dcapture, UgCS, Dronelink, QGroundControl e mais; veja a comparação de software de mapeamento no [guia de mapeamento de drones da UAV Coach](https://uavcoach.com/drone-mapping/) para uma visão geral atual.\n:::"
+  },
+  "3a61e915": {
+    "pt": "Quando [alertas de detecção de mudança](/reference/gc-toolkit/gc-explorer/) mostram nova atividade de mineração, a parte difícil é muitas vezes a distância: um local pode estar a horas de qualquer rio ou estrada, e uma expedição de campo custa dias do tempo da equipe. Nem todo alerta justifica essa viagem."
+  },
+  "9b8fb2df": {
+    "pt": ":::tip\nPara um mapa de triagem rápido, use a configuração **fast-orthomosaic** ($CODEVAR[0]) mais $CODEVAR[1] apenas se precisar de elevações. Você obtém um mapa do local utilizável em uma fração do tempo; reprocesse com qualidade total apenas para locais que provarem ser importantes.\n:::"
+  },
+  "442eb486": {
+    "pt": "[MavenPilot / MavenRoute](https://www.mavenpilot.com/) — o planejador de exemplo usado aqui, com [MavenShare](https://www.mavenpilot.com/maven-ecosystem/) e [MavenBridge](https://www.mavenpilot.com/mavenbridge/) para transferência para o controlador"
+  },
+  "c783d4a6": {
+    "pt": ":::tip\nSalve o arquivo da missão. Voar o *mesmo* caminho sobre o mesmo local meses depois fornece mapas diretamente comparáveis — é assim que um voo de drone se transforma em monitoramento repetido, em vez de documentação única.\n:::"
+  },
+  "6ec60e1b": {
+    "pt": "Crie uma nova missão de **fotogrametria / mapeamento** no planejador e importe o KML do alerta como a área de levantamento. Gire a grade para correr ao longo do eixo maior da área — menos voltas, voo mais curto, mesma cobertura."
+  },
+  "87044510": {
+    "pt": "No **Painel de Alertas** do [GC Explorer](/reference/gc-toolkit/gc-explorer/), revise o que se acumulou desde sua última viagem de campo, descarte artefatos e exporte os locais que valem a pena voar como **KML**:"
+  },
+  "b86ef479": {
+    "pt": "Este guia assume que você já trabalha confortavelmente com QGIS e GC Explorer, e que sua organização possui um drone capaz de mapeamento e um piloto que o opera de acordo com as regras nacionais de drones."
+  },
+  "cee696c3": {
+    "pt": "**Caso contrário**: use o caminho nativo do seu drone — o DJI Pilot 2 importa rotas planejadas e possui missões de mapeamento integradas, plataformas empresariais como eBee ou Wingtra têm seus próprios planejadores."
+  },
+  "697c8304": {
+    "pt": "Antes de arrumar, dê uma olhada na cobertura capturada. Uma lacuna ou uma série de quadros borrados pode ser corrigida voando novamente *agora*, e é impossível de corrigir depois que você está a horas do local."
+  },
+  "cdde9533": {
+    "pt": "Visualize a grade gerada sobre imagens de satélite e ajuste manualmente se uma linha obviamente perder a área ativa. Em seguida, mova a missão do planejador para o controlador:"
+  },
+  "7689b1e6": {
+    "pt": "[Preparando Briefings de Campo de Alerta de Mineração](/guides/land-monitoring/guide-mining-alert-field-briefings/) — o fluxo de trabalho complementar que este alimenta"
+  },
+  "b995d0b3": {
+    "pt": "[UAV Coach: Guia de Mapeamento de Drones](https://uavcoach.com/drone-mapping/) — comparação atualizada regularmente de drones e software de mapeamento"
+  },
+  "9a74d9a1": {
+    "pt": "Mantenha a mesma disciplina de pastas do guia de briefing — uma pasta por viagem de campo, projeto apontando para caminhos relativos:"
+  },
+  "fdea8a01": {
+    "pt": "[Incidentes no GC Explorer](/reference/gc-toolkit/gc-explorer/incidents/) — registre a pegada verificada e feche o ciclo"
+  },
+  "5b37bad7": {
+    "pt": "[Tutoriais em vídeo da Maven](https://www.mavenpilot.com/tutorial/) — demonstrações completas do fluxo de trabalho do planejamento ao voo"
+  },
+  "36500e1c": {
+    "pt": "Câmera em **nadir** (diretamente para baixo), disparo em intervalo controlado pela missão — não o substitua por quadros manuais."
+  },
+  "572537ac": {
+    "pt": "[Geostitch](https://geostitch.io/) — frontend gratuito para processamento ODM em seu próprio nó, um servidor alugado ou pago por trabalho"
+  },
+  "20ee5992": {
+    "pt": "ou um **[incidente](/reference/gc-toolkit/gc-explorer/incidents/)** completo se o local tiver acionado alertas várias vezes."
+  },
+  "d2916be8": {
+    "pt": "[Use seus dados no QGIS](/reference/common-workflows/use-your-data-in-qgis/) — dados do Guardian Connector para o QGIS"
+  },
+  "49f81ab7": {
+    "pt": "[Diretrizes de drones da Healthy Country AI para guardas indígenas](https://healthycountryai.org/training.php)"
+  },
+  "a274c393": {
+    "pt": "[Documentação do OpenDroneMap](https://docs.opendronemap.org/) — instalação, opções e saídas"
+  },
+  "f350fa2f": {
+    "pt": "um **relatório** de qualidade e a nuvem de pontos georreferenciada bruta, para os casos raros que precisam deles."
+  },
+  "07328762": {
+    "pt": "um **DEM** (modelo de elevação) — opcional, se você se importa com a profundidade do poço ou volumes de estoque,"
+  },
+  "ba94b7fe": {
+    "pt": "Observe a tela: confirme que as fotos estão realmente sendo tiradas na taxa planejada."
+  },
+  "8d01951f": {
+    "pt": "A configuração mais fácil é o Docker — solte as imagens em uma pasta de conjunto de dados e execute:"
+  },
+  "ad30f9ec": {
+    "pt": "O processamento consome muita memória; a regra honesta é *mais fotos → mais RAM*."
+  },
+  "d2859c5d": {
+    "pt": "A costura (fotogrametria por estrutura-a-partir-do-movimento) transforma as imagens em:"
+  },
+  "42a822e7": {
+    "pt": "**exportação em lote** de todos os alertas visíveis (respeitando o filtro de tempo),"
+  },
+  "3aae2995": {
+    "pt": "~50% de frente e lateral é suficiente para um ortomosaico limpo de um local."
+  },
+  "61d896eb": {
+    "pt": "um **ortomosaico** (GeoTIFF) — o mapa que você realmente usará,"
+  },
+  "7a511cd0": {
+    "pt": "Passo 1: Exportar o local de mineração do GC Explorer"
+  },
+  "82a16bb8": {
+    "pt": "Passo 5: Carregue no QGIS, imprima, relate"
+  },
+  "abe6e5ef": {
+    "pt": "[Documentação do QGIS](https://docs.qgis.org/)"
+  },
+  "383b053a": {
+    "pt": "Passo 3: Voe e verifique antes de sair"
+  },
+  "7aa23a49": {
+    "pt": "um **alerta único** clicado no mapa,"
+  },
+  "a6389e25": {
+    "pt": "Passo 4: Processe as fotos em um mapa"
+  },
+  "4718fc4c": {
+    "pt": "Ajuste e exporte para o controlador"
+  },
+  "9efa01ff": {
+    "pt": "Na nuvem, sem o hardware"
+  },
+  "837fe461": {
+    "pt": "De Alertas de Mineração a Mapas de Drone"
+  },
+  "5e6d292b": {
+    "pt": "<div className=\"center-diagram\">"
+  },
+  "88335550": {
+    "pt": "Regra geral para alertas de mineração"
+  },
+  "c3c4feee": {
+    "pt": "Localmente, em um computador potente"
+  },
+  "4c331049": {
+    "pt": "Passo 2: Planeje a missão"
+  },
+  "f2c27918": {
+    "pt": "Definir os parâmetros"
+  },
+  "6a235498": {
+    "pt": "**Tamanho da missão**"
+  },
+  "17145b2d": {
+    "pt": "Importar o local"
+  },
+  "a8ba14d7": {
+    "pt": "No campo:"
+  },
+  "dddb4456": {
+    "pt": "**Altitude**"
+  },
+  "32d74430": {
+    "pt": "**Sobreposição**"
+  },
+  "0a3a0b59": {
+    "pt": "</div>"
+  }
+}

@@ -60,4 +60,10 @@ Timelapse can be downloaded [here](https://timelapse.ucalgary.ca/download/). The
 There are many more resources on the [Timelapse homepage](https://timelapse.ucalgary.ca/) to explore as you become more familiar with the tool.
 :::
 
----
+## Related documentation
+
+- [Deploying Camera Traps](/guides/biodiversity/guide-camera-trap-deployment/) — setting up a camera trap project
+
+## 📚 Further reading
+
+- [Healthy Country AI drone guides on using Timelapse, for Indigenous rangers](https://healthycountryai.org/training.php)

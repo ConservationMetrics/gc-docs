@@ -100,3 +100,4 @@ Once the camera trap media have been copied and organized, see the [Timelapse Ca
 - [CoMapeo Documentation](https://docs.comapeo.app/)
 - [ODK — Introduction to Entities](https://docs.getodk.org/entities-intro/)
 - [KoboToolbox — Dynamic Data Attachments](https://support.kobotoolbox.org/dynamic_data_attachment.html)
+- [Healthy Country AI drone guide on setting up camera traps for biodiversity monitoring projects, for Indigenous rangers](https://healthycountryai.org/training.php)

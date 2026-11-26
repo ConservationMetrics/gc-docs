@@ -1,0 +1,206 @@
+{
+  "d81008f1": {
+    "es": "Esta guía se centra principalmente en **documentar el despliegue, mantenimiento y recuperación de trampas de cámara**. Incluye un protocolo de campo práctico para preparar el equipo, desplegar y dar servicio a las cámaras, y procesar las tarjetas SD después de las visitas de campo. No prescribe un diseño de estudio ecológico particular ni indica exactamente dónde o a qué altura colocar las cámaras, ya que esas decisiones dependen de los objetivos y las especies objetivo del proyecto."
+  },
+  "30cb8616": {
+    "es": "Si falta o es inconsistente información como el ID de despliegue, la ubicación, las coordenadas, el ID de la cámara y las fechas de despliegue, las imágenes y videos recolectados por la cámara ya no podrán conectarse de manera fiable a **dónde, cuándo y cómo fueron recolectados**. Esto puede limitar severamente su valor para mapeo, análisis, comparación entre sitios y reutilización a largo plazo."
+  },
+  "f75f0d82": {
+    "es": "El sistema de archivos se organiza, por lo tanto, en torno a conceptos con los que es fácil trabajar para las personas — **proyecto, Monitoring Session y cámara** — mientras que los metadatos conservan el concepto científico más preciso de un **despliegue** individual."
+  },
+  "325ca22d": {
+    "es": "Colocar una trampa de cámara en el campo es solo una parte de un despliegue. Un despliegue útil de trampa de cámara también crea un registro fiable de **qué cámara se colocó dónde, durante qué período y bajo qué condiciones**."
+  },
+  "30e368ba": {
+    "es": "Una vez que los medios de la trampa de cámara se hayan copiado y organizado, consulta la [Guía de anotación de trampas de cámara Timelapse](/guides/biodiversity/guide-timelapse-project/) para revisar y anotar imágenes y videos."
+  },
+  "3a5fad25": {
+    "es": "Prepara el equipo y el equipo de monitoreo, planifica una Monitoring Session, estandariza los ajustes de la cámara y sigue procedimientos consistentes para el despliegue, mantenimiento, recuperación y el regreso del campo."
+  },
+  "88222a7e": {
+    "es": "Los campos de despliegue de Camtrap DP que todo proyecto debería recopilar, además de campos adicionales recomendados como Monitoring Session y ID de tarjeta SD, con especial atención a las coordenadas."
+  },
+  "79c8baed": {
+    "es": "Distingue cuatro conceptos relacionados — Monitoring Session, ubicación, cámara y despliegue — y cómo construir identificadores que sigan siendo compatibles con GBIF y Camtrap DP."
+  },
+  "291b1c37": {
+    "es": "Si estas relaciones se conservan de manera consistente, las imágenes de las trampas de cámara pueden seguir siendo comprendidas, mapeadas, analizadas y reutilizadas mucho después de su recolección original."
+  },
+  "7e040974": {
+    "es": "**Los metadatos de despliegue son datos esenciales de las trampas de cámara**. También son una de las partes más fáciles de pasar por alto o de reconstruir solo a posteriori en un proyecto de trampa de cámara."
+  },
+  "e2857697": {
+    "es": "[Guía de drones Healthy Country AI para configurar trampas de cámara para proyectos de monitoreo de biodiversidad, para guardaparques indígenas](https://healthycountryai.org/training.php)"
+  },
+  "fb051ea7": {
+    "es": "Estos metadatos son los que luego permiten que las imágenes y videos se conecten a un sitio, se mapeen correctamente, se comparen entre despliegues y se analicen a lo largo del tiempo."
+  },
+  "a92f484f": {
+    "es": "Recopila esta información **en el momento del despliegue, mantenimiento y recuperación**, en lugar de depender de la memoria o intentar reconstruirla más tarde."
+  },
+  "15ac3c6b": {
+    "es": "Elijas la herramienta que elijas, lo más importante no es la aplicación en sí. Es mantener una relación consistente entre:"
+  },
+  "d1a8e519": {
+    "es": "Cómo elegir entre CoMapeo, ODK, KoboToolbox o un formulario en hoja de cálculo/papel, dependiendo del flujo de trabajo existente del equipo."
+  },
+  "15c0ad8e": {
+    "es": "Cómo organizar los medios por proyecto, Monitoring Session y cámara, incluyendo tarjetas SD con múltiples carpetas de medios."
+  },
+  "8c7e263d": {
+    "es": "[GBIF — Mejores prácticas para gestionar y publicar datos de trampas de cámara](https://docs.gbif.org/camera-trap-guide/en/)"
+  },
+  "9b1df1de": {
+    "es": "[KoboToolbox — Archivos adjuntos de datos dinámicos](https://support.kobotoolbox.org/dynamic_data_attachment.html)"
+  },
+  "74710950": {
+    "es": "[**1. Comprender las sesiones de monitoreo, las cámaras, las ubicaciones y los despliegues**](step-1-concepts)"
+  },
+  "a034af01": {
+    "es": "[**3. Elección de una herramienta para la recopilación de datos de despliegue**](step-3-choosing-a-tool)"
+  },
+  "e323db60": {
+    "es": "[Camtrap DP — Campos de despliegue](https://camtrap-dp.tdwg.org/data/#deployments)"
+  },
+  "82cc0c58": {
+    "es": "[**5. Organización de fotos y videos de trampas de cámara**](step-5-organizing-media)"
+  },
+  "c025336d": {
+    "es": "[ODK — Introducción a las entidades](https://docs.getodk.org/entities-intro/)"
+  },
+  "74a6dc19": {
+    "es": "[Camtrap DP — Paquete de datos de trampa de cámara](https://camtrap-dp.tdwg.org/)"
+  },
+  "0d33a736": {
+    "es": "[**2. ¿Qué información debe registrarse?**](step-2-what-to-record)"
+  },
+  "4061fe95": {
+    "es": "[**4. Protocolo de campo para trampas de cámara**](step-4-field-protocol)"
+  },
+  "b82e61d1": {
+    "es": "La estructura de archivos correspondiente puede ser mucho más sencilla:"
+  },
+  "42ceae39": {
+    "es": "[Documentación de CoMapeo](https://docs.comapeo.app/)"
+  },
+  "0c8627a1": {
+    "es": "Trampas de Cámara: Despliegue y Recopilación de Datos"
+  },
+  "85231d0f": {
+    "es": "Enfoque recomendado"
+  },
+  "4567c7fe": {
+    "es": "📚 Lectura adicional"
+  },
+  "df1cb745": {
+    "es": "Resumen de la guía"
+  },
+  "d9caff61": {
+    "es": ":::important"
+  },
+  "506c2c0c": {
+    "es": "Por ejemplo:"
+  },
+  "58eaebf9": {
+    "es": "¿Qué sigue?"
+  },
+  "524b6f62": {
+    "es": "[Timelapse](https://timelapse.ucalgary.ca/) es un **software para sistema operativo Windows para revisar datos de trampas de cámara y transformar archivos de imagen y video sin procesar en datos estructurados** que pueden proporcionar información sobre la presencia, diversidad y tendencias poblacionales de especies. Esta es una introducción rápida al uso del software."
+  },
+  "b8ee6451": {
+    "es": "Timelapse se puede descargar [aquí](https://timelapse.ucalgary.ca/download/). Existen tres métodos de instalación diferentes. Recomendamos usar el \"1 MSI Per-User Installer (recomendado para la mayoría)\" a menos que haya alguna razón por la que necesite usar uno de los otros métodos de instalación."
+  },
+  "49d40d14": {
+    "es": ":::note\nTimelapse está en desarrollo activo, es de código abierto ([repositorio de GitHub](https://github.com/saulgreenberg/Timelapse)) y cuenta con documentación completa. Para obtener información detallada, consulte los siguientes recursos.\n:::"
+  },
+  "709ea0df": {
+    "es": ":::tip\nEsta guía es solo para **anotar** imágenes y videos de trampas de cámara que ya han sido recopilados. No es una guía para configurar un proyecto de trampa de cámara o para manejar la implementación."
+  },
+  "f5e1a06b": {
+    "es": ":::tip\nHay muchos más recursos en la [página de inicio de Timelapse](https://timelapse.ucalgary.ca/) para explorar a medida que te familiarices con la herramienta.\n:::"
+  },
+  "74898ace": {
+    "es": "Esta guía explica cómo asociar metadatos a nivel de carpeta con tu conjunto de imágenes y cómo rellenarlos. También incluye varios estándares de metadatos."
+  },
+  "7a9c464a": {
+    "es": "**[Video Complementario: Guía de Inicio Rápido (~13 min)](https://saul.cpsc.ucalgary.ca/timelapse/uploads/Videos/Video-TimelapseQuickStartGuide.mp4)**"
+  },
+  "31d7bb2c": {
+    "es": "**[Un Recorrido Rápido por Timelapse (~16 min)](https://saul.cpsc.ucalgary.ca/timelapse/uploads/Videos/WhirlwindTourOfTimelapse.mp4)**"
+  },
+  "ac47765b": {
+    "es": "**[Guía de Reconocimiento de Imágenes (PDF)](https://timelapse.ucalgary.ca/wp-content/uploads/Guides/TimelapseImageRecognitionGuide.pdf)**"
+  },
+  "fc8c457c": {
+    "es": "**[Video Complementario: Guía de Plantillas (~7 min)](https://saul.cpsc.ucalgary.ca/timelapse/uploads/Videos/TemplateEditor.mp4)**"
+  },
+  "a1f612d8": {
+    "es": ":bar_chart: [Conjunto de imágenes de práctica de Timelapse](https://timelapse.ucalgary.ca/wp-content/uploads/Guides/PracticeImageSet.zip)"
+  },
+  "63a870da": {
+    "es": "[Guías de drones de IA de Healthy Country sobre el uso de Timelapse, para guardaparques indígenas](https://healthycountryai.org/training.php)"
+  },
+  "e6c7de10": {
+    "es": "**[Guía de Metadatos (PDF)](https://timelapse.ucalgary.ca/wp-content/uploads/Guides/TimelapseImageRecognitionGuide.pdf)**"
+  },
+  "8fa038de": {
+    "es": "**[Guía de Inicio Rápido (PDF)](https://timelapse.ucalgary.ca/wp-content/uploads/Guides/TimelapseQuickStartGuide.pdf)**"
+  },
+  "dc1d7cb5": {
+    "es": "Para la implementación, consulta la guía [Implementación de trampas de cámara](/guides/biodiversity/guide-camera-trap-deployment/).\n:::"
+  },
+  "d29a8d03": {
+    "es": "**[Guía de Referencia (PDF)](https://saul.cpsc.ucalgary.ca/timelapse/uploads/Guides/TimelapseReferenceGuide.pdf)**"
+  },
+  "98615a9a": {
+    "es": "**[Guía de Plantillas (PDF)](https://timelapse.ucalgary.ca/wp-content/uploads/Guides/TimelapseReferenceGuide.pdf)**"
+  },
+  "e9a46bab": {
+    "es": "[Implementación de Trampas de Cámara](/guides/biodiversity/guide-camera-trap-deployment/) — configuración de un proyecto de trampa de cámara"
+  },
+  "0c4cfad4": {
+    "es": "**[Guía de Base de Datos (PDF)](https://timelapse.ucalgary.ca/wp-content/uploads/Guides/TimelapseDatabaseGuide.pdf)**"
+  },
+  "3b812dd9": {
+    "es": "Una guía práctica que te acompaña en la carga, inspección y etiquetado de un conjunto de imágenes y videos de práctica."
+  },
+  "761b9191": {
+    "es": "Detalla la estructura interna de la base de datos. Útil si planeas acceder directamente a la base de datos."
+  },
+  "c3c77d8b": {
+    "es": "Cubre todas las características disponibles en detalle. Muy recomendado para optimizar tu flujo de trabajo."
+  },
+  "e72ea8b2": {
+    "es": "Esta guía explica cómo usar la función de reconocimiento automático de imágenes en Timelapse."
+  },
+  "2846071c": {
+    "es": ":arrow_down: [Descarga e Instalación](https://timelapse.ucalgary.ca/download/)"
+  },
+  "8474bea7": {
+    "es": "Explica cómo crear y gestionar plantillas usando el Editor de Plantillas de Timelapse."
+  },
+  "d94f08dd": {
+    "es": ":open_book: [Guías de Usuario y Tutoriales](https://timelapse.ucalgary.ca/guides/)"
+  },
+  "10ceba65": {
+    "es": "Esto es realmente útil como plantilla para construir tu propio proyecto Timelapse."
+  },
+  "8dbbfe9e": {
+    "es": ":movie_camera: [Tutoriales en Video](https://timelapse.ucalgary.ca/videos/)"
+  },
+  "cc6042e5": {
+    "es": ":house: [Página de Inicio de Timelapse](https://timelapse.ucalgary.ca/)"
+  },
+  "401fe9c8": {
+    "es": "Recursos Clave de los Desarrolladores de Timelapse {#key-resources}"
+  },
+  "2ee2546f": {
+    "es": "Timelapse: Configuración de un Proyecto para Anotación de Trampas de Cámara"
+  },
+  "ff85555a": {
+    "es": "Documentación relacionada"
+  },
+  "dc3fe914": {
+    "es": "Instalación de Timelapse"
+  }
+}

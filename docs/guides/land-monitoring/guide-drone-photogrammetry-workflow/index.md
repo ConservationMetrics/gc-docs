@@ -161,3 +161,4 @@ If the map on paper still leaves a question open, QGIS can answer two that matte
 - [OpenDroneMap documentation](https://docs.opendronemap.org/) — installation, options, and outputs
 - [Geostitch](https://geostitch.io/) — free front end for ODM processing on your own node, a rented server, or pay-per-job
 - [QGIS Documentation](https://docs.qgis.org/)
+- [Healthy Country AI drone guidelines for Indigenous rangers](https://healthycountryai.org/training.php)
